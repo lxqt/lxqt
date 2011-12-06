@@ -81,7 +81,7 @@ QT4_WRAP_UI(UIS ${razorqt_UIS})
 
 include(RazorLibSuffix)
 
-add_library ( razorqt SHARED ${razorqt_SRCS} ${UIS} ${RSCS} ${TRS} ${MOCS} )
+add_library ( razorqt SHARED ${razorqt_SRCS} ${UIS} ${RSCS} ${TRS} ${MOCS} ${RAZORQT_QM_FILES})
 
 target_link_libraries ( razorqt  ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
                                  ${QT_QTDBUS_LIBRARY}
@@ -96,7 +96,7 @@ set_target_properties(razorqt PROPERTIES
 
 install(TARGETS razorqt DESTINATION lib${LIB_SUFFIX})
 install(FILES ${razorqt_HDRS} DESTINATION include/razorqt)
-#install(FILES ${RAZORQT_QM_FILES}     DESTINATION ${APP_SHARE_DIR})
+install(FILES ${RAZORQT_QM_FILES}     DESTINATION ${APP_SHARE_DIR})
 
 
 find_package(Doxygen)
