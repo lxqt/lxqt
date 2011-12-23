@@ -100,3 +100,5 @@ install(TARGETS razorqt DESTINATION lib${LIB_SUFFIX})
 install(FILES ${razorqt_HDRS} DESTINATION include/razorqt)
 install(FILES ${RAZORQT_QM_FILES}     DESTINATION ${APP_SHARE_DIR})
 
+include(create_pkgconfig_file)
+create_pkgconfig_file(razorqt "Shared library for Razor-qt applications")
