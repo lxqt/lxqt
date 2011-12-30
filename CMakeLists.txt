@@ -25,6 +25,7 @@ set(razorqt_HDRS
     librazor-upower/upower.h
     libtranslate.h
     pageselectwidget.h
+    razorpower/razorpower.h
 )
 
 set(razorqt_SRCS
@@ -42,6 +43,8 @@ set(razorqt_SRCS
     librazor-upower/ucpufreq.cpp
     librazor-upower/upower.cpp
     pageselectwidget.cpp
+    razorpower/razorpower.cpp
+    razorpower/razorpowerproviders.cpp
 )
 
 set(razorqt_MOCS
@@ -57,6 +60,8 @@ set(razorqt_MOCS
     librazor-upower/ucpufreq.h
     librazor-upower/upower.h
     pageselectwidget.h
+    razorpower/razorpower.h
+    razorpower/razorpowerproviders.h
 )
 
 # Translations **********************************
