@@ -20,9 +20,9 @@ set(razorqt_HDRS
     razorshortcutbutton.h
     razorshortcutbutton_p.h
     # upower. Maybe standalone lib?
-    librazor-upower/battery.h
-    librazor-upower/ucpufreq.h
-    librazor-upower/upower.h
+    #librazor-upower/battery.h
+    #librazor-upower/ucpufreq.h
+    #librazor-upower/upower.h
     libtranslate.h
     pageselectwidget.h
     razorpower/razorpower.h
@@ -39,9 +39,9 @@ set(razorqt_SRCS
     screensaver.cpp
     razorshortcutbutton.cpp
     # upower. Maybe standalone lib?
-    librazor-upower/battery.cpp
-    librazor-upower/ucpufreq.cpp
-    librazor-upower/upower.cpp
+    #librazor-upower/battery.cpp
+    #librazor-upower/ucpufreq.cpp
+    #librazor-upower/upower.cpp
     pageselectwidget.cpp
     razorpower/razorpower.cpp
     razorpower/razorpowerproviders.cpp
@@ -56,9 +56,9 @@ set(razorqt_MOCS
     razorshortcutbutton.h
     razorshortcutbutton_p.h
     # upower. Maybe standalone lib?
-    librazor-upower/battery.h
-    librazor-upower/ucpufreq.h
-    librazor-upower/upower.h
+    #librazor-upower/battery.h
+    #librazor-upower/ucpufreq.h
+    #librazor-upower/upower.h
     pageselectwidget.h
     razorpower/razorpower.h
     razorpower/razorpowerproviders.h
