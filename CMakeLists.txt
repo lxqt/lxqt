@@ -11,7 +11,6 @@ include_directories (
 set(razorqt_HDRS
     razoraboutdlg.h
     razorsettings.h
-    xdgautostart.h
     xfitman.h
     razorplugininfo.h
     powermanager.h
@@ -30,7 +29,6 @@ set(razorqt_HDRS
 
 set(razorqt_SRCS
     razoraboutdlg.cpp
-    xdgautostart.cpp
     xfitman.cpp
     razorplugininfo.cpp
     powermanager.cpp
