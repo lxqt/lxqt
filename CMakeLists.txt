@@ -24,6 +24,7 @@ set(razorqt_HDRS
     #librazor-upower/upower.h
     libtranslate.h
     pageselectwidget.h
+    razorconfigdialog.h
     razorpower/razorpower.h
 )
 
@@ -41,6 +42,7 @@ set(razorqt_SRCS
     #librazor-upower/ucpufreq.cpp
     #librazor-upower/upower.cpp
     pageselectwidget.cpp
+    razorconfigdialog.cpp
     razorpower/razorpower.cpp
     razorpower/razorpowerproviders.cpp
 )
@@ -58,6 +60,7 @@ set(razorqt_MOCS
     #librazor-upower/ucpufreq.h
     #librazor-upower/upower.h
     pageselectwidget.h
+    razorconfigdialog.h
     razorpower/razorpower.h
     razorpower/razorpowerproviders.h
 )
@@ -78,6 +81,7 @@ add_definitions(-DTRANSLATIONS_DIR=\"${APP_SHARE_DIR}\")
 
 set ( razorqt_UIS
     razoraboutdlg.ui
+    razorconfigdialog.ui
     addplugindialog/addplugindialog.ui
 )
 
