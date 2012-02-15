@@ -16,6 +16,7 @@ set(razorqt_HDRS
     powermanager.h
     addplugindialog/addplugindialog.h
     screensaver.h
+    razorapplication.h
     razorshortcutbutton.h
     razorshortcutbutton_p.h
     # upower. Maybe standalone lib?
@@ -36,6 +37,7 @@ set(razorqt_SRCS
     addplugindialog/addplugindialog.cpp
     razorsettings.cpp
     screensaver.cpp
+    razorapplication.cpp
     razorshortcutbutton.cpp
     # upower. Maybe standalone lib?
     #librazor-upower/battery.cpp
@@ -53,6 +55,7 @@ set(razorqt_MOCS
     addplugindialog/addplugindialog.h
     razorsettings.h
     screensaver.h
+    razorapplication.h
     razorshortcutbutton.h
     razorshortcutbutton_p.h
     # upower. Maybe standalone lib?
