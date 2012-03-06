@@ -27,6 +27,7 @@ set(razorqt_HDRS
     pageselectwidget.h
     razorconfigdialog.h
     razorpower/razorpower.h
+    razorglobalshort/globalshortcutmanager.h
 )
 
 set(razorqt_SRCS
@@ -47,7 +48,26 @@ set(razorqt_SRCS
     razorconfigdialog.cpp
     razorpower/razorpower.cpp
     razorpower/razorpowerproviders.cpp
+    razorglobalshort/globalshortcutmanager.cpp
 )
+
+if(WIN32)
+    set(razorqt_SRCS
+        ${razorqt_SRCS}
+        razorglobalshort/globalshortcutmanager_win.cpp
+    )
+elseif(APPLE)
+    set(razorqt_SRCS
+        ${razorqt_SRCS}
+        razorglobalshort/globalshortcutmanager_mac.cpp
+    )
+else()
+    set(razorqt_SRCS
+        ${razorqt_SRCS}
+        razorglobalshort/globalshortcutmanager_x11.cpp
+    )
+endif()
+
 
 set(razorqt_MOCS
     razoraboutdlg.h
@@ -66,6 +86,7 @@ set(razorqt_MOCS
     razorconfigdialog.h
     razorpower/razorpower.h
     razorpower/razorpowerproviders.h
+    razorglobalshort/globalshortcuttrigger.h
 )
 
 # Translations **********************************
@@ -73,7 +94,6 @@ file(GLOB RAZORQT_TS_FILES
     translations/*.ts
 )
 #************************************************
-
 
 QT4_WRAP_CPP(MOCS ${razorqt_MOCS})
 qt4_add_translation(RAZORQT_QM_FILES ${RAZORQT_TS_FILES})
