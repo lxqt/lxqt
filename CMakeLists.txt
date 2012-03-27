@@ -70,6 +70,9 @@ set(razorqt_MOCS
     razorpower/razorpowerproviders.h
 )
 
+message(STATUS "+++++++++++++++++++"  ${dbus_generated})
+
+
 # Translations **********************************
 file(GLOB RAZORQT_TS_FILES
     translations/*.ts
@@ -84,7 +87,7 @@ qt4_add_translation(RAZORQT_QM_FILES ${RAZORQT_TS_FILES})
 set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/librazorqt)
 add_definitions(-DTRANSLATIONS_DIR=\"${APP_SHARE_DIR}\")
 
-set ( razorqt_UIS
+set( razorqt_UIS
     razoraboutdlg.ui
     razorconfigdialog.ui
     addplugindialog/addplugindialog.ui
@@ -95,7 +98,7 @@ QT4_WRAP_UI(UIS ${razorqt_UIS})
 
 include(RazorLibSuffix)
 
-add_library ( razorqt SHARED ${razorqt_SRCS} ${UIS} ${RSCS} ${TRS} ${MOCS} ${RAZORQT_QM_FILES})
+add_library ( razorqt SHARED ${razorqt_SRCS} ${dbus_generated} ${UIS} ${RSCS} ${TRS} ${MOCS} ${RAZORQT_QM_FILES})
 
 target_link_libraries ( razorqt  ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
                                  ${QT_QTDBUS_LIBRARY}
