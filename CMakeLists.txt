@@ -18,7 +18,6 @@ set(razorqt_HDRS
     screensaver.h
     razorapplication.h
     razorshortcutbutton.h
-    razorshortcutbutton_p.h
     # upower. Maybe standalone lib?
     #librazor-upower/battery.h
     #librazor-upower/ucpufreq.h
