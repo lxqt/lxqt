@@ -26,7 +26,7 @@ set(razorqt_HDRS
     pageselectwidget.h
     razorconfigdialog.h
     razorpower/razorpower.h
-    razornotification.h
+    #razornotification.h
 )
 
 set(razorqt_SRCS
@@ -47,7 +47,7 @@ set(razorqt_SRCS
     razorconfigdialog.cpp
     razorpower/razorpower.cpp
     razorpower/razorpowerproviders.cpp
-    razornotification.cpp
+    #razornotification.cpp
 )
 
 set(razorqt_MOCS
