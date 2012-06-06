@@ -26,7 +26,7 @@ set(razorqt_HDRS
     pageselectwidget.h
     razorconfigdialog.h
     razorpower/razorpower.h
-    #razornotification.h
+    razornotification.h
 )
 
 set(razorqt_SRCS
@@ -47,7 +47,7 @@ set(razorqt_SRCS
     razorconfigdialog.cpp
     razorpower/razorpower.cpp
     razorpower/razorpowerproviders.cpp
-    #razornotification.cpp
+    razornotification.cpp
 )
 
 set(razorqt_MOCS
@@ -65,8 +65,15 @@ set(razorqt_MOCS
     #librazor-upower/upower.h
     pageselectwidget.h
     razorconfigdialog.h
+    razornotification.h
+    razornotification_p.h
     razorpower/razorpower.h
     razorpower/razorpowerproviders.h
+)
+
+QT4_ADD_DBUS_INTERFACE(razorqt_SRCS
+    ../../razorqt-resources/dbus/org.freedesktop.Notifications.xml
+    notifications_interface
 )
 
 message(STATUS "+++++++++++++++++++"  ${dbus_generated})
