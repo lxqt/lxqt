@@ -84,6 +84,8 @@ set( razorqt_UIS
 
 #message(STATUS "+++++++++++++++++++"  ${dbus_generated})
 
+set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/librazorqt)
+add_definitions(-DTRANSLATIONS_DIR=\"${APP_SHARE_DIR}\")
 
 # Translations **********************************
 include(RazorTranslate)
@@ -101,13 +103,6 @@ razor_translate_ts(RAZORQT_QM_FILES
 
 
 QT4_WRAP_CPP(MOCS ${razorqt_MOCS})
-
-
-set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/librazorqt)
-add_definitions(-DTRANSLATIONS_DIR=\"${APP_SHARE_DIR}\")
-
-
-
 QT4_WRAP_UI(UIS ${razorqt_UIS})
 
 
