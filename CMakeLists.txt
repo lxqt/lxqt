@@ -27,6 +27,7 @@ set(razorqt_HDRS
     razorconfigdialog.h
     razorpower/razorpower.h
     razornotification.h
+    translatorsinfo/translatorsinfo.h
 )
 
 set(razorqt_SRCS
@@ -48,6 +49,7 @@ set(razorqt_SRCS
     razorpower/razorpower.cpp
     razorpower/razorpowerproviders.cpp
     razornotification.cpp
+    translatorsinfo/translatorsinfo.cpp
 )
 
 set(razorqt_MOCS
@@ -108,7 +110,11 @@ QT4_WRAP_UI(UIS ${razorqt_UIS})
 
 include(RazorLibSuffix)
 
-add_library ( razorqt SHARED ${razorqt_SRCS} ${dbus_generated} ${UIS} ${RSCS} ${TRS} ${MOCS} ${RAZORQT_QM_FILES})
+include(translatorsinfo/CMakeLists.txt)
+get_translatorsinfo_qrc(translatorsinfo_qrc)
+qt4_add_resources(QRC_CXX_SOURCES ${translatorsinfo_qrc})
+
+add_library ( razorqt SHARED ${razorqt_SRCS} ${dbus_generated} ${UIS} ${RSCS} ${TRS} ${MOCS} ${RAZORQT_QM_FILES} ${QRC_CXX_SOURCES})
 
 target_link_libraries ( razorqt  ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
                                  ${QT_QTDBUS_LIBRARY}
