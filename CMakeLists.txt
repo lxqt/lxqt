@@ -54,6 +54,7 @@ set(razorqt_SRCS
 
 set(razorqt_MOCS
     razoraboutdlg.h
+    razoraboutdlg_p.h
     powermanager.h
     addplugindialog/addplugindialog.h
     razorsettings.h
