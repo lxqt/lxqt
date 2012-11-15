@@ -8,8 +8,8 @@ include_directories (
     ${CMAKE_SOURCE_DIR}/libraries
 )
 
-set(razorqt_HDRS
-    razoraboutdlg.h
+set(razorqt_PUB_HDRS
+    aboutdialog/razoraboutdlg.h
     razorsettings.h
     xfitman.h
     razorplugininfo.h
@@ -30,8 +30,14 @@ set(razorqt_HDRS
     translatorsinfo/translatorsinfo.h
 )
 
+set(razorqt_PRIV_HDRS
+    aboutdialog/razoraboutdlg_p.h
+    aboutdialog/technicalinfo.h
+)
+
 set(razorqt_SRCS
-    razoraboutdlg.cpp
+    aboutdialog/razoraboutdlg.cpp
+    aboutdialog/technicalinfo.cpp
     xfitman.cpp
     razorplugininfo.cpp
     powermanager.cpp
@@ -50,11 +56,12 @@ set(razorqt_SRCS
     razorpower/razorpowerproviders.cpp
     razornotification.cpp
     translatorsinfo/translatorsinfo.cpp
+
 )
 
 set(razorqt_MOCS
-    razoraboutdlg.h
-    razoraboutdlg_p.h
+    aboutdialog/razoraboutdlg.h
+    aboutdialog/razoraboutdlg_p.h
     powermanager.h
     addplugindialog/addplugindialog.h
     razorsettings.h
@@ -80,7 +87,7 @@ QT4_ADD_DBUS_INTERFACE(razorqt_SRCS
 )
 
 set( razorqt_UIS
-    razoraboutdlg.ui
+    aboutdialog/razoraboutdlg.ui
     razorconfigdialog.ui
     addplugindialog/addplugindialog.ui
 )
@@ -94,7 +101,8 @@ add_definitions(-DTRANSLATIONS_DIR=\"${APP_SHARE_DIR}\")
 include(RazorTranslate)
 razor_translate_ts(RAZORQT_QM_FILES
     SOURCES
-        ${razorqt_HDRS}
+        ${razorqt_PUB_HDRS}
+        ${razorqt_PRIV_HDRS}
         ${razorqt_SRCS}
         ${razorqt_MOCS}
         ${razorqt_UIS}
@@ -115,7 +123,7 @@ include(translatorsinfo/CMakeLists.txt)
 get_translatorsinfo_qrc(translatorsinfo_qrc)
 qt4_add_resources(QRC_CXX_SOURCES ${translatorsinfo_qrc})
 
-add_library ( razorqt SHARED ${razorqt_SRCS} ${dbus_generated} ${UIS} ${RSCS} ${TRS} ${MOCS} ${RAZORQT_QM_FILES} ${QRC_CXX_SOURCES})
+add_library ( razorqt SHARED ${razorqt_PUB_HDRS} ${razorqt_PRIV_HDRS} ${razorqt_SRCS} ${dbus_generated} ${UIS} ${MOCS} ${RAZORQT_QM_FILES} ${QRC_CXX_SOURCES})
 
 target_link_libraries ( razorqt  ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
                                  ${QT_QTDBUS_LIBRARY}
@@ -129,7 +137,7 @@ set_target_properties(razorqt PROPERTIES
 )
 
 install(TARGETS razorqt DESTINATION lib${LIB_SUFFIX})
-install(FILES ${razorqt_HDRS} DESTINATION include/razorqt)
+install(FILES ${razorqt_PUB_HDRS} DESTINATION include/razorqt)
 
 include(create_pkgconfig_file)
 create_pkgconfig_file(razorqt "Shared library for Razor-qt applications")
