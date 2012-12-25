@@ -27,6 +27,7 @@ set(razorqt_PUB_HDRS
     razorconfigdialog.h
     razorpower/razorpower.h
     razornotification.h
+    razorautostartentry.h
     translatorsinfo/translatorsinfo.h
 )
 
@@ -55,8 +56,8 @@ set(razorqt_SRCS
     razorpower/razorpower.cpp
     razorpower/razorpowerproviders.cpp
     razornotification.cpp
+    razorautostartentry.cpp
     translatorsinfo/translatorsinfo.cpp
-
 )
 
 set(razorqt_MOCS
