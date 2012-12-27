@@ -28,6 +28,7 @@ set(razorqt_HDRS
     razorpower/razorpower.h
     razornotification.h
     translatorsinfo/translatorsinfo.h
+    razorgridlayout.h
 )
 
 set(razorqt_SRCS
@@ -50,6 +51,7 @@ set(razorqt_SRCS
     razorpower/razorpowerproviders.cpp
     razornotification.cpp
     translatorsinfo/translatorsinfo.cpp
+    razorgridlayout.cpp
 )
 
 set(razorqt_MOCS
@@ -72,6 +74,7 @@ set(razorqt_MOCS
     razornotification_p.h
     razorpower/razorpower.h
     razorpower/razorpowerproviders.h
+    razorgridlayout.h
 )
 
 QT4_ADD_DBUS_INTERFACE(razorqt_SRCS
