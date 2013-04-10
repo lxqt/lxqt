@@ -17,7 +17,6 @@ set(razorqt_PUB_HDRS
     addplugindialog/addplugindialog.h
     screensaver.h
     razorapplication.h
-    razorshortcutbutton.h
     # upower. Maybe standalone lib?
     #librazor-upower/battery.h
     #librazor-upower/ucpufreq.h
@@ -49,7 +48,6 @@ set(razorqt_SRCS
     razorsettings.cpp
     screensaver.cpp
     razorapplication.cpp
-    razorshortcutbutton.cpp
     # upower. Maybe standalone lib?
     #librazor-upower/battery.cpp
     #librazor-upower/ucpufreq.cpp
@@ -74,8 +72,6 @@ set(razorqt_MOCS
     razorsettings.h
     screensaver.h
     razorapplication.h
-    razorshortcutbutton.h
-    razorshortcutbutton_p.h
     # upower. Maybe standalone lib?
     #librazor-upower/battery.h
     #librazor-upower/ucpufreq.h
