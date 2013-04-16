@@ -24,6 +24,7 @@ set(razorqt_PUB_HDRS
     #librazor-upower/upower.h
     libtranslate.h
     pageselectwidget.h
+    programfinder.h
     razorconfigdialog.h
     razorpower/razorpower.h
     razornotification.h
@@ -53,6 +54,7 @@ set(razorqt_SRCS
     #librazor-upower/ucpufreq.cpp
     #librazor-upower/upower.cpp
     pageselectwidget.cpp
+    programfinder.cpp
     razorconfigdialog.cpp
     razorpower/razorpower.cpp
     razorpower/razorpowerproviders.cpp
