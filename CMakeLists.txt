@@ -123,7 +123,6 @@ QT4_WRAP_CPP(MOCS ${razorqt_MOCS})
 QT4_WRAP_UI(UIS ${razorqt_UIS})
 
 
-include(RazorLibSuffix)
 
 include(translatorsinfo/CMakeLists.txt)
 get_translatorsinfo_qrc(translatorsinfo_qrc)
