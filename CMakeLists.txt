@@ -31,6 +31,7 @@ set(razorqt_PUB_HDRS
     razorautostartentry.h
     translatorsinfo/translatorsinfo.h
     razorgridlayout.h
+    rotatedwidget.h
 )
 
 set(razorqt_PRIV_HDRS
@@ -62,6 +63,7 @@ set(razorqt_SRCS
     razorautostartentry.cpp
     translatorsinfo/translatorsinfo.cpp
     razorgridlayout.cpp
+    rotatedwidget.cpp
 )
 
 set(razorqt_MOCS
@@ -85,6 +87,7 @@ set(razorqt_MOCS
     razorpower/razorpower.h
     razorpower/razorpowerproviders.h
     razorgridlayout.h
+    rotatedwidget.h
 )
 
 QT4_ADD_DBUS_INTERFACE(razorqt_SRCS
