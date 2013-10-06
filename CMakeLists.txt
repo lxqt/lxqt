@@ -8,7 +8,7 @@ set(LXQT_PATCH_VERSION 0)
 
 
 set(PUB_HDRS
-    aboutdialog/razoraboutdlg.h
+    aboutdialog/lxqtaboutdialog.h
     razorsettings.h
     xfitman.h
     razorplugininfo.h
@@ -29,16 +29,17 @@ set(PUB_HDRS
 )
 
 set(PUB_LINKS
-    aboutdialog/RazorAboutDialog
+
+    aboutdialog/LxQtAboutDialog
 )
 
 set(PRIV_HDRS
-    aboutdialog/razoraboutdlg_p.h
+    aboutdialog/lxqtaboutdialog_p.h
     aboutdialog/technicalinfo.h
 )
 
 set(SRCS
-    aboutdialog/razoraboutdlg.cpp
+    aboutdialog/lxqtaboutdialog.cpp
     aboutdialog/technicalinfo.cpp
     xfitman.cpp
     razorplugininfo.cpp
@@ -60,8 +61,8 @@ set(SRCS
 )
 
 set(MOCS
-    aboutdialog/razoraboutdlg.h
-    aboutdialog/razoraboutdlg_p.h
+    aboutdialog/lxqtaboutdialog.h
+    aboutdialog/lxqtaboutdialog_p.h
     powermanager.h
     addplugindialog/addplugindialog.h
     razorsettings.h
@@ -78,7 +79,7 @@ set(MOCS
 )
 
 set(FORMS
-    aboutdialog/razoraboutdlg.ui
+    aboutdialog/lxqtaboutdialog.ui
     razorconfigdialog.ui
     addplugindialog/addplugindialog.ui
 )
