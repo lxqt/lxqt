@@ -15,7 +15,7 @@ set(PUB_HDRS
     powermanager.h
     addplugindialog/addplugindialog.h
     screensaver.h
-    razorapplication.h
+    lxqtapplication.h
     libtranslate.h
     programfinder.h
 
@@ -49,7 +49,7 @@ set(SRCS
     addplugindialog/addplugindialog.cpp
     razorsettings.cpp
     screensaver.cpp
-    razorapplication.cpp
+    lxqtapplication.cpp
     programfinder.cpp
 
     configdialog/configdialog.cpp
@@ -71,7 +71,7 @@ set(MOCS
     addplugindialog/addplugindialog.h
     razorsettings.h
     screensaver.h
-    razorapplication.h
+    lxqtapplication.h
 
     configdialog/configdialog.h
     configdialog/pageselectwidget.h
