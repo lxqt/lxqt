@@ -26,7 +26,7 @@ set(PUB_HDRS
     razornotification.h
     lxqtautostartentry.h
     translatorsinfo/translatorsinfo.h
-    razorgridlayout.h
+    lxqtgridlayout.h
     rotatedwidget.h
 )
 
@@ -60,7 +60,7 @@ set(SRCS
     razornotification.cpp
     lxqtautostartentry.cpp
     translatorsinfo/translatorsinfo.cpp
-    razorgridlayout.cpp
+    lxqtgridlayout.cpp
     rotatedwidget.cpp
 )
 
@@ -80,7 +80,7 @@ set(MOCS
     razornotification_p.h
     lxqtpower/lxqtpower.h
     lxqtpower/lxqtpowerproviders.h
-    razorgridlayout.h
+    lxqtgridlayout.h
     rotatedwidget.h
 )
 
