@@ -16,15 +16,11 @@ set(PUB_HDRS
     addplugindialog/addplugindialog.h
     screensaver.h
     razorapplication.h
-    # upower. Maybe standalone lib?
-    #librazor-upower/battery.h
-    #librazor-upower/ucpufreq.h
-    #librazor-upower/upower.h
     libtranslate.h
     pageselectwidget.h
     programfinder.h
     razorconfigdialog.h
-    razorpower/razorpower.h
+    lxqtpower/lxqtpower.h
     razornotification.h
     razorautostartentry.h
     translatorsinfo/translatorsinfo.h
@@ -51,15 +47,11 @@ set(SRCS
     razorsettings.cpp
     screensaver.cpp
     razorapplication.cpp
-    # upower. Maybe standalone lib?
-    #librazor-upower/battery.cpp
-    #librazor-upower/ucpufreq.cpp
-    #librazor-upower/upower.cpp
     pageselectwidget.cpp
     programfinder.cpp
     razorconfigdialog.cpp
-    razorpower/razorpower.cpp
-    razorpower/razorpowerproviders.cpp
+    lxqtpower/lxqtpower.cpp
+    lxqtpower/lxqtpowerproviders.cpp
     razornotification.cpp
     razorautostartentry.cpp
     translatorsinfo/translatorsinfo.cpp
@@ -75,16 +67,12 @@ set(MOCS
     razorsettings.h
     screensaver.h
     razorapplication.h
-    # upower. Maybe standalone lib?
-    #librazor-upower/battery.h
-    #librazor-upower/ucpufreq.h
-    #librazor-upower/upower.h
     pageselectwidget.h
     razorconfigdialog.h
     razornotification.h
     razornotification_p.h
-    razorpower/razorpower.h
-    razorpower/razorpowerproviders.h
+    lxqtpower/lxqtpower.h
+    lxqtpower/lxqtpowerproviders.h
     razorgridlayout.h
     rotatedwidget.h
 )
@@ -96,7 +84,7 @@ set(FORMS
 )
 
 
-find_package(Qt4 REQUIRED)
+find_package(Qt4 REQUIRED QUIET)
 include(${QT_USE_FILE})
 
 QT4_ADD_DBUS_INTERFACE(SRCS
@@ -104,9 +92,9 @@ QT4_ADD_DBUS_INTERFACE(SRCS
     notifications_interface
 )
 
-find_package(X11 REQUIRED)
+find_package(X11 REQUIRED QUIET)
 
-find_package(QTXDG REQUIRED)
+find_package(QTXDG REQUIRED QUIET)
 include(${QTXDG_USE_FILE})
 
 
