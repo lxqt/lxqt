@@ -9,7 +9,7 @@ set(LXQT_PATCH_VERSION 0)
 
 set(PUB_HDRS
     aboutdialog/lxqtaboutdialog.h
-    razorsettings.h
+    lxqtsettings.h
     xfitman.h
     lxqtplugininfo.h
     powermanager.h
@@ -47,7 +47,7 @@ set(SRCS
     lxqtplugininfo.cpp
     powermanager.cpp
     addplugindialog/addplugindialog.cpp
-    razorsettings.cpp
+    lxqtsettings.cpp
     screensaver.cpp
     lxqtapplication.cpp
     programfinder.cpp
@@ -69,7 +69,7 @@ set(MOCS
     aboutdialog/lxqtaboutdialog_p.h
     powermanager.h
     addplugindialog/addplugindialog.h
-    razorsettings.h
+    lxqtsettings.h
     screensaver.h
     lxqtapplication.h
 
