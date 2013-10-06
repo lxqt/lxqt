@@ -23,7 +23,7 @@ set(PUB_HDRS
     configdialog/pageselectwidget.h
 
     lxqtpower/lxqtpower.h
-    razornotification.h
+    lxqtnotification.h
     lxqtautostartentry.h
     translatorsinfo/translatorsinfo.h
     lxqtgridlayout.h
@@ -57,7 +57,7 @@ set(SRCS
 
     lxqtpower/lxqtpower.cpp
     lxqtpower/lxqtpowerproviders.cpp
-    razornotification.cpp
+    lxqtnotification.cpp
     lxqtautostartentry.cpp
     translatorsinfo/translatorsinfo.cpp
     lxqtgridlayout.cpp
@@ -76,8 +76,8 @@ set(MOCS
     configdialog/configdialog.h
     configdialog/pageselectwidget.h
 
-    razornotification.h
-    razornotification_p.h
+    lxqtnotification.h
+    lxqtnotification_p.h
     lxqtpower/lxqtpower.h
     lxqtpower/lxqtpowerproviders.h
     lxqtgridlayout.h
