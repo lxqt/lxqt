@@ -119,24 +119,6 @@ function(lxqt_translate_desktop _RESULT)
         endif()
 
         set(__result ${__result} ${_outFile})
-
-
-        # TX file ***********************************************
-        set(_txFile "${CMAKE_BINARY_DIR}/tx/${_fileName}${_fileExt}.tx.sh")
-        string(REPLACE "${CMAKE_SOURCE_DIR}/" "" _tx_translationDir ${_translationDir})
-        string(REPLACE "${CMAKE_SOURCE_DIR}/" "" _tx_inFile ${_inFile})
-        string(REPLACE "." "" _fileType ${_fileExt})
-
-        file(WRITE ${_txFile}
-            "[ -f ${_inFile} ] || exit 0\n"
-            "echo '[razor-qt.${_fileName}_${_fileType}]'\n"
-            "echo 'type = DESKTOP'\n"
-            "echo 'source_lang = en'\n"
-            "echo 'source_file = ${_tx_inFile}'\n"
-            "echo 'file_filter = ${_tx_translationDir}/${_fileName}_<lang>${_fileExt}'\n"
-            "echo ''\n"
-        )
-
     endforeach()
 
     set(${_RESULT} ${__result} PARENT_SCOPE)
