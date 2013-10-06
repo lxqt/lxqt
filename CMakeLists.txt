@@ -11,7 +11,7 @@ set(PUB_HDRS
     aboutdialog/lxqtaboutdialog.h
     razorsettings.h
     xfitman.h
-    razorplugininfo.h
+    lxqtplugininfo.h
     powermanager.h
     addplugindialog/addplugindialog.h
     screensaver.h
@@ -44,7 +44,7 @@ set(SRCS
     aboutdialog/lxqtaboutdialog.cpp
     aboutdialog/technicalinfo.cpp
     xfitman.cpp
-    razorplugininfo.cpp
+    lxqtplugininfo.cpp
     powermanager.cpp
     addplugindialog/addplugindialog.cpp
     razorsettings.cpp
