@@ -17,9 +17,11 @@ set(PUB_HDRS
     screensaver.h
     razorapplication.h
     libtranslate.h
-    pageselectwidget.h
     programfinder.h
-    razorconfigdialog.h
+
+    configdialog/configdialog.h
+    configdialog/pageselectwidget.h
+
     lxqtpower/lxqtpower.h
     razornotification.h
     razorautostartentry.h
@@ -48,9 +50,11 @@ set(SRCS
     razorsettings.cpp
     screensaver.cpp
     razorapplication.cpp
-    pageselectwidget.cpp
     programfinder.cpp
-    razorconfigdialog.cpp
+
+    configdialog/configdialog.cpp
+    configdialog/pageselectwidget.cpp
+
     lxqtpower/lxqtpower.cpp
     lxqtpower/lxqtpowerproviders.cpp
     razornotification.cpp
@@ -68,8 +72,10 @@ set(MOCS
     razorsettings.h
     screensaver.h
     razorapplication.h
-    pageselectwidget.h
-    razorconfigdialog.h
+
+    configdialog/configdialog.h
+    configdialog/pageselectwidget.h
+
     razornotification.h
     razornotification_p.h
     lxqtpower/lxqtpower.h
@@ -80,7 +86,9 @@ set(MOCS
 
 set(FORMS
     aboutdialog/lxqtaboutdialog.ui
-    razorconfigdialog.ui
+
+    configdialog/configdialog.ui
+
     addplugindialog/addplugindialog.ui
 )
 
