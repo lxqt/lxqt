@@ -109,6 +109,10 @@ set(FORMS
     addplugindialog/lxqtaddplugindialog.ui
 )
 
+file(GLOB TS_FILES
+    ${CMAKE_CURRENT_SOURCE_DIR}/translations/liblxqt_*.ts
+)
+
 # additional cmake files
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
@@ -161,28 +165,16 @@ include_directories(${LXQT_INCLUDE_DIR})
 set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/liblxqrt)
 add_definitions(-DTRANSLATIONS_DIR=\"${APP_SHARE_DIR}\")
 
-# Translations **********************************
-include(cmake/lxqt_use.cmake)
-razor_translate_ts(QM_FILES
-    SOURCES
-        ${PUB_HDRS}
-        ${PRIV_HDRS}
-        ${SRCS}
-        ${MOCS}
-        ${FORMS}
-    INSTALLATION_DIR
-        ${APP_SHARE_DIR}
-)
-
-#************************************************
-
 # create the portable headers *******************
 include(create_portable_headers)
 create_portable_headers(PORTABLE_HEADERS ${PUBLIC_CLASSES})
 #************************************************
 
-QT4_WRAP_CPP(MOCS ${MOCS})
-QT4_WRAP_UI(UIS ${FORMS})
+qt4_wrap_cpp(MOCS ${MOCS})
+qt4_wrap_ui(UIS ${FORMS})
+qt4_add_translation(QM_FILES ${TS_FILES})
+include(cmake/lxqt_use.cmake)
+
 
 include(translatorsinfo/CMakeLists.txt)
 get_translatorsinfo_qrc(translatorsinfo_qrc)
@@ -212,6 +204,7 @@ set_target_properties(lxqt PROPERTIES
 install(TARGETS lxqt DESTINATION lib${LIB_SUFFIX})
 install(FILES ${PUB_HDRS}  DESTINATION ${LXQT_INCLUDE_DIR})
 install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INCLUDE_DIR})
+install(FILES ${QM_FILES} DESTINATION share/liblxqt)
 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/lxqt-config.cmake DESTINATION share/cmake/lxqt)
 install(FILES cmake/lxqt_use.cmake DESTINATION share/cmake/lxqt)
