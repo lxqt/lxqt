@@ -10,50 +10,67 @@ set(LXQT_PATCH_VERSION 0)
 set(PUB_HDRS
     aboutdialog/lxqtaboutdialog.h
     lxqtsettings.h
-    xfitman.h
+    lxqtxfitman.h
     lxqtplugininfo.h
-    powermanager.h
-    addplugindialog/addplugindialog.h
-    screensaver.h
+    lxqtpowermanager.h
+    addplugindialog/lxqtaddplugindialog.h
+    lxqtscreensaver.h
     lxqtapplication.h
-    libtranslate.h
-    programfinder.h
+    lxqtlibtranslate.h
+    lxqtprogramfinder.h
 
-    configdialog/configdialog.h
-    configdialog/pageselectwidget.h
+    configdialog/lxqtconfigdialog.h
+    configdialog/lxqtpageselectwidget.h
 
     lxqtpower/lxqtpower.h
     lxqtnotification.h
     lxqtautostartentry.h
-    translatorsinfo/translatorsinfo.h
     lxqtgridlayout.h
-    rotatedwidget.h
+    lxqtrotatedwidget.h
 )
 
-set(PUB_LINKS
+set(PUBLIC_CLASSES
+    LxQtAboutDialog
+    LxQtSettings
+    LxQtXfitMan
+    LxQtPluginInfo
+    LxQtPowerManager
+    LxQtAddPluginDialog
+    LxQtScreenSaver
+    LxQtApplication
+    LxQtLibTranslate
+    LxQtProgramFinder
 
-    aboutdialog/LxQtAboutDialog
+    LxQtConfigDialog
+    LxQtPageSelectWidget
+
+    LxQtPower
+    LxQtNotification
+    LxQtAutostartEntry
+    LxQtGridLayout
+    LxQtRotatedWidget
 )
 
 set(PRIV_HDRS
     aboutdialog/lxqtaboutdialog_p.h
     aboutdialog/technicalinfo.h
+    translatorsinfo/translatorsinfo.h
 )
 
 set(SRCS
     aboutdialog/lxqtaboutdialog.cpp
     aboutdialog/technicalinfo.cpp
-    xfitman.cpp
+    lxqtxfitman.cpp
     lxqtplugininfo.cpp
-    powermanager.cpp
-    addplugindialog/addplugindialog.cpp
+    lxqtpowermanager.cpp
+    addplugindialog/lxqtaddplugindialog.cpp
     lxqtsettings.cpp
-    screensaver.cpp
+    lxqtscreensaver.cpp
     lxqtapplication.cpp
-    programfinder.cpp
+    lxqtprogramfinder.cpp
 
-    configdialog/configdialog.cpp
-    configdialog/pageselectwidget.cpp
+    configdialog/lxqtconfigdialog.cpp
+    configdialog/lxqtpageselectwidget.cpp
 
     lxqtpower/lxqtpower.cpp
     lxqtpower/lxqtpowerproviders.cpp
@@ -61,37 +78,39 @@ set(SRCS
     lxqtautostartentry.cpp
     translatorsinfo/translatorsinfo.cpp
     lxqtgridlayout.cpp
-    rotatedwidget.cpp
+    lxqtrotatedwidget.cpp
 )
 
 set(MOCS
     aboutdialog/lxqtaboutdialog.h
     aboutdialog/lxqtaboutdialog_p.h
-    powermanager.h
-    addplugindialog/addplugindialog.h
+    lxqtpowermanager.h
+    addplugindialog/lxqtaddplugindialog.h
     lxqtsettings.h
-    screensaver.h
+    lxqtscreensaver.h
     lxqtapplication.h
 
-    configdialog/configdialog.h
-    configdialog/pageselectwidget.h
+    configdialog/lxqtconfigdialog.h
+    configdialog/lxqtpageselectwidget.h
 
     lxqtnotification.h
     lxqtnotification_p.h
     lxqtpower/lxqtpower.h
     lxqtpower/lxqtpowerproviders.h
     lxqtgridlayout.h
-    rotatedwidget.h
+    lxqtrotatedwidget.h
 )
 
 set(FORMS
     aboutdialog/lxqtaboutdialog.ui
 
-    configdialog/configdialog.ui
+    configdialog/lxqtconfigdialog.ui
 
-    addplugindialog/addplugindialog.ui
+    addplugindialog/lxqtaddplugindialog.ui
 )
 
+# additional cmake files
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 find_package(Qt4 REQUIRED QUIET)
 include(${QT_USE_FILE})
@@ -157,6 +176,10 @@ razor_translate_ts(QM_FILES
 
 #************************************************
 
+# create the portable headers *******************
+include(create_portable_headers)
+create_portable_headers(PORTABLE_HEADERS ${PUBLIC_CLASSES})
+#************************************************
 
 QT4_WRAP_CPP(MOCS ${MOCS})
 QT4_WRAP_UI(UIS ${FORMS})
@@ -188,7 +211,7 @@ set_target_properties(lxqt PROPERTIES
 
 install(TARGETS lxqt DESTINATION lib${LIB_SUFFIX})
 install(FILES ${PUB_HDRS}  DESTINATION ${LXQT_INCLUDE_DIR})
-install(FILES ${PUB_LINKS} DESTINATION ${LXQT_INCLUDE_DIR})
+install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INCLUDE_DIR})
 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/lxqt-config.cmake DESTINATION share/cmake/lxqt)
 install(FILES cmake/lxqt_use.cmake DESTINATION share/cmake/lxqt)
