@@ -162,7 +162,7 @@ configure_file(
 #************************************************
 include_directories(${LXQT_INCLUDE_DIR})
 
-set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/liblxqrt)
+set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/liblxqt)
 add_definitions(-DTRANSLATIONS_DIR=\"${APP_SHARE_DIR}\")
 
 # create the portable headers *******************
