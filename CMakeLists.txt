@@ -16,7 +16,7 @@ set(PUB_HDRS
     addplugindialog/lxqtaddplugindialog.h
     lxqtscreensaver.h
     lxqtapplication.h
-    lxqtlibtranslate.h
+    lxqttranslator.h
     lxqtprogramfinder.h
 
     configdialog/lxqtconfigdialog.h
@@ -38,7 +38,7 @@ set(PUBLIC_CLASSES
     LxQtAddPluginDialog
     LxQtScreenSaver
     LxQtApplication
-    LxQtLibTranslate
+    LxQtTranslator
     LxQtProgramFinder
 
     LxQtConfigDialog
@@ -67,6 +67,7 @@ set(SRCS
     lxqtsettings.cpp
     lxqtscreensaver.cpp
     lxqtapplication.cpp
+    lxqttranslator.cpp
     lxqtprogramfinder.cpp
 
     configdialog/lxqtconfigdialog.cpp
@@ -147,11 +148,11 @@ message(STATUS "")
 #************************************************
 # Build config.cmake files
 #************************************************
-set(LXQT_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/lxqt/)
+set(LXQT_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/lxqt)
+set(LXQT_TRANSLATIONS_DIR ${LXQT_SHARE_DIR}/translations)
 include(cmake/FindInstallConfigPath.cmake)
 
 set(LXQT_INCLUDE_DIR ${CMAKE_INSTALL_PREFIX}/include/lxqt)
-
 configure_file(
     ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt-config.cmake.in
     ${CMAKE_CURRENT_BINARY_DIR}/lxqt-config.cmake
@@ -163,11 +164,12 @@ configure_file(
 include_directories(${LXQT_INCLUDE_DIR})
 
 set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/liblxqt)
-add_definitions(-DTRANSLATIONS_DIR=\"${APP_SHARE_DIR}\")
+
 
 # create the portable headers *******************
 include(create_portable_headers)
 create_portable_headers(PORTABLE_HEADERS ${PUBLIC_CLASSES})
+check_portable_headers("${PUB_HDRS}")
 #************************************************
 
 qt4_wrap_cpp(MOCS ${MOCS})
@@ -193,7 +195,7 @@ target_link_libraries(lxqt
     ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
     ${QT_QTDBUS_LIBRARY}
     ${X11_X11_LIB}
-    qtxdg
+    ${QTXDG_LIBRARY}
 )
 
 set_target_properties(lxqt PROPERTIES
@@ -204,7 +206,7 @@ set_target_properties(lxqt PROPERTIES
 install(TARGETS lxqt DESTINATION lib${LIB_SUFFIX})
 install(FILES ${PUB_HDRS}  DESTINATION ${LXQT_INCLUDE_DIR})
 install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INCLUDE_DIR})
-install(FILES ${QM_FILES} DESTINATION share/liblxqt)
+install(FILES ${QM_FILES} DESTINATION ${LXQT_TRANSLATIONS_DIR})
 
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/lxqt-config.cmake DESTINATION share/cmake/lxqt)
 install(FILES cmake/lxqt_use.cmake DESTINATION share/cmake/lxqt)

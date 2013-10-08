@@ -28,3 +28,28 @@ function(create_portable_headers outfiles)
     set(${outfiles} ${${outfiles}} PARENT_SCOPE)
 endfunction()
 
+
+function(check_portable_headers)
+    file(GLOB links ${CMAKE_CURRENT_BINARY_DIR}/portableHeders/*)
+
+    foreach(f ${links})
+        file(READ ${f} content)
+
+        set(found False)
+        foreach(line ${content})
+            string(REGEX MATCH "#include \"(.*)\"" v ${line})
+            set(hFile ${CMAKE_MATCH_1})
+
+            string(REGEX MATCH ";.*${hFile};" v ";${ARGN};")
+            if(NOT v)
+                set(found True)
+            endif()
+        endforeach()
+
+        if(found)
+            message(FATAL_ERROR "Incorrect portable header: '${f}'")
+        endif()
+    endforeach()
+
+endfunction()
+
