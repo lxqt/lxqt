@@ -1,0 +1,69 @@
+[submodule "libfm"]
+	path = libfm
+	url = https://github.com/lxde/libfm.git
+[submodule "menu-cache"]
+	path = menu-cache
+	url = https://github.com/lxde/menu-cache.git
+[submodule "liblxqt"]
+	path = liblxqt
+	url = https://github.com/lxde/liblxqt.git
+[submodule "libqtxdg"]
+	path = libqtxdg
+	url = https://github.com/lxde/libqtxdg.git
+[submodule "lxqt-about"]
+	path = lxqt-about
+	url = https://github.com/lxde/lxqt-about.git
+[submodule "lxsession"]
+	path = lxsession
+	url = https://github.com/lxde/lxsession.git
+[submodule "lxqt-powermanagement"]
+	path = lxqt-powermanagement
+	url = https://github.com/lxde/lxqt-powermanagement.git
+[submodule "pcmanfm-qt"]
+	path = pcmanfm-qt
+	url = https://github.com/lxde/pcmanfm-qt.git
+[submodule "libsysstat"]
+	path = libsysstat
+	url = https://github.com/lxde/libsysstat.git
+[submodule "liblxqt-mount"]
+	path = liblxqt-mount
+	url = https://github.com/lxde/liblxqt-mount.git
+[submodule "lxqt-runner"]
+	path = lxqt-runner
+	url = https://github.com/lxde/lxqt-runner.git
+[submodule "lxqt-power"]
+	path = lxqt-power
+	url = https://github.com/lxde/lxqt-power.git
+[submodule "lxqt-policykit"]
+	path = lxqt-policykit
+	url = https://github.com/lxde/lxqt-policykit.git
+[submodule "lxqt-panel"]
+	path = lxqt-panel
+	url = https://github.com/lxde/lxqt-panel.git
+[submodule "lxqt-openssh-askpass"]
+	path = lxqt-openssh-askpass
+	url = https://github.com/lxde/lxqt-openssh-askpass.git
+[submodule "lxqt-notificationd"]
+	path = lxqt-notificationd
+	url = https://github.com/lxde/lxqt-notificationd.git
+[submodule "lxqt-globalkeyshortcuts"]
+	path = lxqt-globalkeyshortcuts
+	url = https://github.com/lxde/lxqt-globalkeyshortcuts.git
+[submodule "lxqt-config"]
+	path = lxqt-config
+	url = https://github.com/lxde/lxqt-config.git
+[submodule "lxqt-appswitcher"]
+	path = lxqt-appswitcher
+	url = https://github.com/lxde/lxqt-appswitcher.git
+[submodule "obconf-qt"]
+	path = obconf-qt
+	url = https://github.com/lxde/obconf-qt.git
+[submodule "lximage-qt"]
+	path = lximage-qt
+	url = https://github.com/lxde/lximage-qt.git
+[submodule "lxrandr-qt"]
+	path = lxrandr-qt
+	url = https://github.com/lxde/lxrandr-qt.git
+[submodule "lxinput-qt"]
+	path = lxinput-qt
+	url = https://github.com/lxde/lxinput-qt.git
