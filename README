@@ -1,0 +1,5 @@
+This is a superproject which contains all lxde-qt components.
+After checking out this repo, please do the following to initialize git submodules.
+
+git submodule init
+git submodule update
