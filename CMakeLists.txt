@@ -195,7 +195,7 @@ target_link_libraries(lxqt
     ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
     ${QT_QTDBUS_LIBRARY}
     ${X11_X11_LIB}
-    ${QTXDG_LIBRARY}
+    ${QTXDG_LIBRARIES}
 )
 
 set_target_properties(lxqt PROPERTIES
