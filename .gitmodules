@@ -46,9 +46,6 @@
 [submodule "lxqt-notificationd"]
 	path = lxqt-notificationd
 	url = https://github.com/lxde/lxqt-notificationd.git
-[submodule "lxqt-globalkeyshortcuts"]
-	path = lxqt-globalkeyshortcuts
-	url = https://github.com/lxde/lxqt-globalkeyshortcuts.git
 [submodule "lxqt-config"]
 	path = lxqt-config
 	url = https://github.com/lxde/lxqt-config.git
@@ -67,3 +64,6 @@
 [submodule "lxinput-qt"]
 	path = lxinput-qt
 	url = https://github.com/lxde/lxinput-qt.git
+[submodule "lxqt-globalkeys"]
+	path = lxqt-globalkeys
+	url = https://github.com/lxde/lxqt-globalkeys.git
