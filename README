@@ -1,5 +1,20 @@
 This is a superproject which contains all lxde-qt components.
 After checking out this repo, please do the following to initialize git submodules.
 
-git submodule init
-git submodule update
+> git submodule init
+> git submodule update
+
+Note:
+There are some limitations of older versions of git.
+Because git submodule does not track the latest HEAD automatically, the submodules always stick to specific commits
+unless manually changed. Besides, after initial checkout, the submodule repos are detached from master branch.
+
+Consider doing this manually to checkout master branches for every module.
+> git submodule foreach git checkout master
+
+To pull the latest changes for all modules at once, try this:
+> git submodule foreach git pull --rebase
+
+These restrictions no long applies to the latest git 1.8.x since it can be configured to track the latest changes in 
+submodules automatically.
+

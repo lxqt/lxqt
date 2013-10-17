@@ -67,3 +67,6 @@
 [submodule "lxqt-globalkeys"]
 	path = lxqt-globalkeys
 	url = https://github.com/lxde/lxqt-globalkeys.git
+[submodule "lxqt-common"]
+	path = lxqt-common
+	url = https://github.com/lxde/lxqt-common.git
