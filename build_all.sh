@@ -4,6 +4,7 @@
 # CMAKE_BUILD_TYPE can specify a build (debug|release|...) build type
 # LIB_SUFFIX can set the ${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}
 #     useful fro 64 bit distros
+# PREFIX changes default /usr/local prefix
 #
 # example:
 # $ LIB_SUFFIX=64 ./build_all.sh
@@ -14,11 +15,18 @@ AUTOMAKE_REPOS=" \
 	menu-cache \
 	lxsession"
 
+if env | grep -q ^LXQT_PREFIX ; then
+        PREF="--prefix=$LXQT_PREFIX"
+else
+        PREF=""
+fi
+
+
 for d in $AUTOMAKE_REPOS;
 do
-	echo "";echo "";echo "building: $d";echo ""
+	echo "";echo "";echo "building: $d into $PREF";echo ""
 	cd "$d"
-	./autogen.sh && ./configure && make && sudo make install
+	./autogen.sh && ./configure $PREF && make && sudo make install
 	cd ..
 done
 
@@ -56,11 +64,18 @@ else
 	LS=""
 fi
 
+if env | grep -q ^LXQT_PREFIX ; then
+        CMAKEPREF="-DCMAKE_INSTALL_PREFIX=$LXQT_PREFIX"
+else
+        CMAKEPREF=""
+fi
+
+
 for d in $CMAKE_REPOS;
 do
-	echo "";echo "";echo "building: $d using externally specified options: $CBT $LS";echo ""
+	echo "";echo "";echo "building: $d using externally specified options: $CBT $LS $CMAKEPREF";echo ""
 	mkdir -p "$d/build"
 	cd "$d/build"
-	cmake $CBT $LS .. && make && sudo make install
+	cmake $CBT $LS $CMAKEPREF .. && make && sudo make install
 	cd ../..
 done
