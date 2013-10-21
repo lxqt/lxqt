@@ -40,6 +40,7 @@ CMAKE_REPOS=" \
 	lximage-qt \
 	lxinput-qt \
 	lxqt-about \
+	lxqt-appswitcher \
 	lxqt-common \
 	lxqt-config \
 	lxqt-openssh-askpass \
