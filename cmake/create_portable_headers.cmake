@@ -9,7 +9,7 @@
 # PORTABLE_HEADER is an return value that contains the full name of the
 #   generated headers.
 
-function(create_portable_headers outfiles)
+function(create_portable_headers outfiles outDir)
     set(options)
     set(oneValueArgs)
     set(multiValueArgs)
@@ -19,20 +19,21 @@ function(create_portable_headers outfiles)
     foreach(f ${class_list})
         string(TOLOWER "${f}.h" _filename)
 
-        file(WRITE ${CMAKE_CURRENT_BINARY_DIR}/portableHeders/${f}
-            "#include \"${_filename}\"")
+        file(WRITE ${outDir}/${f}
+            "#include \"lxqt${_filename}\"\n")
 
-        list(APPEND ${outfiles} ${CMAKE_CURRENT_BINARY_DIR}/portableHeders/${f})
+        list(APPEND ${outfiles} ${outDir}/${f})
     endforeach()
 
     set(${outfiles} ${${outfiles}} PARENT_SCOPE)
 endfunction()
 
 
-function(check_portable_headers)
-    file(GLOB links ${CMAKE_CURRENT_BINARY_DIR}/portableHeders/*)
 
-    foreach(f ${links})
+function(check_portable_headers)
+    cmake_parse_arguments(__ARGS "" "" "H_FILES;LINKS" ${ARGN})
+
+    foreach(f ${__ARGS_LINKS})
         file(READ ${f} content)
 
         set(found False)
@@ -40,16 +41,18 @@ function(check_portable_headers)
             string(REGEX MATCH "#include \"(.*)\"" v ${line})
             set(hFile ${CMAKE_MATCH_1})
 
-            string(REGEX MATCH ";.*${hFile};" v ";${ARGN};")
+            string(REGEX MATCH "[;/]${hFile};" v ";${__ARGS_H_FILES};")
+
             if(NOT v)
                 set(found True)
             endif()
         endforeach()
 
+
         if(found)
             message(FATAL_ERROR "Incorrect portable header: '${f}'")
         endif()
-    endforeach()
 
+    endforeach()
 endfunction()
 

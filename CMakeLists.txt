@@ -30,25 +30,25 @@ set(PUB_HDRS
 )
 
 set(PUBLIC_CLASSES
-    LxQtAboutDialog
-    LxQtSettings
-    LxQtXfitMan
-    LxQtPluginInfo
-    LxQtPowerManager
-    LxQtAddPluginDialog
-    LxQtScreenSaver
-    LxQtApplication
-    LxQtTranslator
-    LxQtProgramFinder
+    AboutDialog
+    Settings
+    XfitMan
+    PluginInfo
+    PowerManager
+    AddPluginDialog
+    ScreenSaver
+    Application
+    Translator
+    ProgramFinder
 
-    LxQtConfigDialog
-    LxQtPageSelectWidget
+    ConfigDialog
+    PageSelectWidget
 
-    LxQtPower
-    LxQtNotification
-    LxQtAutostartEntry
-    LxQtGridLayout
-    LxQtRotatedWidget
+    Power
+    Notification
+    AutostartEntry
+    GridLayout
+    RotatedWidget
 )
 
 set(PRIV_HDRS
@@ -145,32 +145,71 @@ message(STATUS "liblxqt version: ${LXQT_VERSION}")
 message(STATUS "")
 
 
-#************************************************
-# Build config.cmake files
-#************************************************
 set(LXQT_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/lxqt)
 set(LXQT_TRANSLATIONS_DIR ${LXQT_SHARE_DIR}/translations)
 include(cmake/FindInstallConfigPath.cmake)
+include(create_portable_headers)
 
-set(LXQT_INCLUDE_DIR ${CMAKE_INSTALL_PREFIX}/include/lxqt)
+#************************************************
+# Create in-tree build infrastructure
+#************************************************
+if(INTREE_ROOT_DIR)
+    # Copy public headers
+    foreach(h ${PUB_HDRS})
+        get_filename_component(bh ${h} NAME)
+        configure_file(${h} ${INTREE_ROOT_DIR}/include/LxQt/${bh} COPYONLY)
+        configure_file(${h} ${INTREE_ROOT_DIR}/include/lxqt/${bh} COPYONLY)
+    endforeach()
+
+    # Create the portable headers
+    create_portable_headers(INTREE_PORTABLE_HEADERS ${INTREE_ROOT_DIR}/include/lxqt ${PUBLIC_CLASSES})
+    check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
+
+    create_portable_headers(INTREE_PORTABLE_HEADERS ${INTREE_ROOT_DIR}/include/LxQt ${PUBLIC_CLASSES})
+    check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
+
+
+    # Create config.cmake & use.cmake files
+    set(LXQT_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR};${INTREE_ROOT_DIR}/include")
+    configure_file(
+        ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt-config.cmake.in
+        ${INTREE_ROOT_DIR}/cmake/lxqt-config.cmake
+        @ONLY
+    )
+
+    configure_file(
+        ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt_use.cmake
+        ${INTREE_ROOT_DIR}/cmake/lxqt_use.cmake
+        @ONLY
+    )
+endif()
+
+
+#************************************************
+# Create instalable build infrastructure
+#************************************************
+
+# Create the portable headers
+create_portable_headers(PORTABLE_HEADERS ${CMAKE_CURRENT_BINARY_DIR}/include ${PUBLIC_CLASSES})
+check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${PORTABLE_HEADERS})
+
+
+# Create config.cmake & use.cmake files
+set(LXQT_INCLUDE_DIR ${CMAKE_INSTALL_PREFIX}/include)
 configure_file(
     ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt-config.cmake.in
-    ${CMAKE_CURRENT_BINARY_DIR}/lxqt-config.cmake
+    ${CMAKE_CURRENT_BINARY_DIR}/cmake/lxqt-config.cmake
     @ONLY
 )
-#************************************************
-# End of build config.cmake
-#************************************************
-include_directories(${LXQT_INCLUDE_DIR})
 
-set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/liblxqt)
+configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt_use.cmake
+    ${CMAKE_CURRENT_BINARY_DIR}/cmake/lxqt_use.cmake
+    @ONLY
+)
 
-
-# create the portable headers *******************
-include(create_portable_headers)
-create_portable_headers(PORTABLE_HEADERS ${PUBLIC_CLASSES})
-check_portable_headers("${PUB_HDRS}")
 #************************************************
+
 
 qt4_wrap_cpp(MOCS ${MOCS})
 qt4_wrap_ui(UIS ${FORMS})
@@ -204,12 +243,18 @@ set_target_properties(lxqt PROPERTIES
 )
 
 install(TARGETS lxqt DESTINATION lib${LIB_SUFFIX})
-install(FILES ${PUB_HDRS}  DESTINATION ${LXQT_INCLUDE_DIR})
-install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INCLUDE_DIR})
+
+# Install in two places for inclusions like "include <lxde/lxdeclass.h>" and "include <LxQt/Class>".
+install(FILES ${PUB_HDRS}         DESTINATION ${LXQT_INCLUDE_DIR}/lxqt)
+install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INCLUDE_DIR}/lxqt)
+
+install(FILES ${PUB_HDRS}         DESTINATION ${LXQT_INCLUDE_DIR}/LxQt)
+install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INCLUDE_DIR}/LxQt)
+
 install(FILES ${QM_FILES} DESTINATION ${LXQT_TRANSLATIONS_DIR})
 
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/lxqt-config.cmake DESTINATION share/cmake/lxqt)
-install(FILES cmake/lxqt_use.cmake DESTINATION share/cmake/lxqt)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/cmake/lxqt-config.cmake DESTINATION share/cmake/lxqt)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/cmake/lxqt_use.cmake    DESTINATION share/cmake/lxqt)
 
 include(cmake/create_pkgconfig_file.cmake)
 create_pkgconfig_file(lxqt "Shared library for LXQt applications")
