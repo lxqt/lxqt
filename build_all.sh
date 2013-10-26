@@ -15,20 +15,21 @@ AUTOMAKE_REPOS=" \
 	menu-cache \
 	lxsession"
 
-if env | grep -q ^LXQT_PREFIX ; then
-        PREF="--prefix=$LXQT_PREFIX"
+if env | grep -q ^LXQT_PREFIX= ; then
+	PREF="--prefix=$LXQT_PREFIX"
 else
-        PREF=""
+	PREF=""
 fi
 
 
-for d in $AUTOMAKE_REPOS;
+for d in $AUTOMAKE_REPOS
 do
-	echo "";echo "";echo "building: $d into $PREF";echo ""
+	echo ""; echo ""; echo "building: $d into $PREF"; echo ""
 	cd "$d"
 	./autogen.sh && ./configure $PREF && make && sudo make install
 	cd ..
 done
+
 
 CMAKE_REPOS=" \
 	libqtxdg \
@@ -53,30 +54,32 @@ CMAKE_REPOS=" \
 	obconf-qt \
 	pcmanfm-qt"
 
-if env | grep -q ^CMAKE_BUILD_TYPE ; then
-	CBT="-DCMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE"
+if env | grep -q ^CMAKE_BUILD_TYPE= ; then
+	CMAKE_BUILD_TYPE="-DCMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE"
 else
-	CBT="-DCMAKE_BUILD_TYPE=debug"
+	CMAKE_BUILD_TYPE="-DCMAKE_BUILD_TYPE=debug"
 fi
 
-if env | grep -q ^LIB_SUFFIX ; then
-	LS="-DLIB_SUFFIX=$LIB_SUFFIX"
+if env | grep -q ^LXQT_PREFIX= ; then
+	CMAKE_INSTALL_PREFIX="-DCMAKE_INSTALL_PREFIX=$LXQT_PREFIX"
 else
-	LS=""
+	CMAKE_INSTALL_PREFIX=""
 fi
 
-if env | grep -q ^LXQT_PREFIX ; then
-        CMAKEPREF="-DCMAKE_INSTALL_PREFIX=$LXQT_PREFIX"
+if env | grep -q ^LIB_SUFFIX= ; then
+	CMAKE_LIB_SUFFIX="-DLIB_SUFFIX=$LIB_SUFFIX"
 else
-        CMAKEPREF=""
+	CMAKE_LIB_SUFFIX=""
 fi
 
 
-for d in $CMAKE_REPOS;
+ALL_CMAKE_FLAGS="$CMAKE_BUILD_TYPE $CMAKE_INSTALL_PREFIX $CMAKE_LIB_SUFFIX"
+
+for d in $CMAKE_REPOS
 do
-	echo "";echo "";echo "building: $d using externally specified options: $CBT $LS $CMAKEPREF";echo ""
-	mkdir -p "$d/build"
-	cd "$d/build"
-	cmake $CBT $LS $CMAKEPREF .. && make && sudo make install
+	echo ""; echo ""; echo "building: $d using externally specified options: $ALL_CMAKE_FLAGS"; echo ""
+	mkdir -p $d/build
+	cd $d/build
+	cmake $ALL_CMAKE_FLAGS .. && make && sudo make install
 	cd ../..
 done
