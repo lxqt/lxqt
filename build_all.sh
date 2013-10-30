@@ -13,8 +13,8 @@
 # etc.
 
 AUTOMAKE_REPOS=" \
-	libfm \
 	menu-cache \
+	libfm \
 	lxsession"
 
 if env | grep -q ^LXQT_PREFIX= ; then
@@ -28,7 +28,7 @@ for d in $AUTOMAKE_REPOS
 do
 	echo ""; echo ""; echo "building: $d into $PREF"; echo ""
 	cd "$d"
-	./autogen.sh && ./configure $PREF && make && sudo make install
+	./autogen.sh && ./configure $PREF && make -j2 && sudo make install
 	cd ..
 done
 
@@ -94,6 +94,6 @@ do
 	echo ""; echo ""; echo "building: $d using externally specified options: $ALL_CMAKE_FLAGS"; echo ""
 	mkdir -p $d/build
 	cd $d/build
-	cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM && sudo $CMAKE_MAKE_PROGRAM install
+	cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM -j2 && sudo $CMAKE_MAKE_PROGRAM install
 	cd ../..
 done
