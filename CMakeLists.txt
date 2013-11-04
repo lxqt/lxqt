@@ -6,6 +6,8 @@ set(LXQT_MAJOR_VERSION 0)
 set(LXQT_MINOR_VERSION 5)
 set(LXQT_PATCH_VERSION 0)
 
+# Set default installation paths
+set(LIB_INSTALL_DIR lib CACHE PATH "Installation path for libraries")
 
 set(PUB_HDRS
     aboutdialog/lxqtaboutdialog.h
@@ -212,7 +214,7 @@ set_target_properties(lxqt PROPERTIES
     SOVERSION ${LXQT_MAJOR_VERSION}
 )
 
-install(TARGETS lxqt DESTINATION lib${LIB_SUFFIX})
+install(TARGETS lxqt DESTINATION ${LIB_INSTALL_DIR}${LIB_SUFFIX})
 install(FILES ${PUB_HDRS}  DESTINATION ${LXQT_INCLUDE_DIR})
 install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INCLUDE_DIR})
 install(FILES ${QM_FILES} DESTINATION ${LXQT_TRANSLATIONS_DIR})
