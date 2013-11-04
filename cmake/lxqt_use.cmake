@@ -27,7 +27,7 @@
 #  -DLXQT_SHARE_DIR      - This allows to install and read the configs from non-standard locations
 #
 #  -DLXQT_ETC_XDG_DIR    - XDG standards expects system-wide configuration files in the
-#                          /etc/xdg/razor location. Unfortunately QSettings we are using internally
+#                          /etc/xdg/lxqt location. Unfortunately QSettings we are using internally
 #                          can be overriden in the Qt compilation time to use different path for
 #                          system-wide configs. (for example configure ... -sysconfdir /etc/settings ...)
 #                          This path can be found calling Qt4's qmake:
@@ -44,9 +44,9 @@ add_definitions(-DLXQT_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\")
 add_definitions(-DLXQT_VERSION=\"${LXQT_VERSION}\")
 
 # for backward compatability ----->
-add_definitions(-DRAZOR_SHARE_DIR=\"${LXQT_SHARE_DIR}\")
-add_definitions(-DRAZOR_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\")
-add_definitions(-DRAZOR_VERSION=\"${LXQT_VERSION}\")
+add_definitions(-DLXQT_SHARE_DIR=\"${LXQT_SHARE_DIR}\")
+add_definitions(-DLXQT_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\")
+add_definitions(-DLXQT_VERSION=\"${LXQT_VERSION}\")
 # for backward compatability <-----
 
 find_package(Qt4 REQUIRED QUIET)

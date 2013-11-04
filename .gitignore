@@ -11,9 +11,9 @@ lib*.so
 lib*.so.*
 ui_*.h
 *.qm
-razorqt-appswitcher/razor-appswitcher
-razorqt-desktop/razor-desktop
-razorqt-panel/panel/razor-panel
+lxqt-appswitcher/lxqt-appswitcher
+lxqt-desktop/lxqt-desktop
+lxqt-panel/panel/lxqt-panel
 *~
 *.autosave
 *-swp
