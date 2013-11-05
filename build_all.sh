@@ -4,7 +4,7 @@
 # CMAKE_BUILD_TYPE can specify a build (debug|release|...) build type
 # LIB_SUFFIX can set the ${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}
 #     useful fro 64 bit distros
-# PREFIX changes default /usr/local prefix
+# LXQT_PREFIX changes default /usr/local prefix
 #
 # example:
 # $ LIB_SUFFIX=64 ./build_all.sh
@@ -38,6 +38,7 @@ CMAKE_REPOS=" \
 	liblxqt \
 	liblxqt-mount \
 	libsysstat \
+	libxdsettings \
 	lxqt-globalkeys \
 	lxqt-notificationd \
 	lximage-qt \
