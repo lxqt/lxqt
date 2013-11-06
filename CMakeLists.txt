@@ -117,25 +117,81 @@ file(GLOB TS_FILES
 # additional cmake files
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-find_package(Qt4 REQUIRED QUIET)
-include(${QT_USE_FILE})
 
-QT4_ADD_DBUS_INTERFACE(SRCS
-    dbus/org.freedesktop.Notifications.xml
-    notifications_interface
-)
+option(USE_QT5 "Force use the Qt5." $ENV{USE_QT5})
+option(USE_QT4 "Force use the Qt4." $ENV{USE_QT4})
+message("Qt4:${USE_QT4}|Qt5:${USE_QT5}")
 
+if((USE_QT4 AND USE_QT5) OR
+   (NOT USE_QT4 AND NOT USE_QT5))
+
+    # Autodetect Qt version
+    find_package(Qt5Core QUIET)
+    if (Qt5Core_FOUND)
+        set(USE_QT4 OFF)
+        set(USE_QT5 ON)
+    else()
+        set(USE_QT4 ON)
+        set(USE_QT5 OFF)
+    endif()
+endif()
+
+
+if(USE_QT5)
+    cmake_minimum_required(VERSION 2.8.3)
+
+    set(CMAKE_INCLUDE_CURRENT_DIR ON)
+    set(CMAKE_AUTOMOC ON)
+    set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+    find_package(Qt5Widgets REQUIRED QUIET)
+    message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
+    find_package(Qt5X11Extras REQUIRED QUIET)
+    find_package(Qt5LinguistTools REQUIRED QUIET)
+
+    set(LXQT_QT_VERSION "5")
+    set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets Qt5Xml")
+
+    include_directories(${Qt5Widgets_INCLUDE_DIRS})
+    add_definitions(${Qt5Widgets_DEFINITIONS})
+
+    QT5_WRAP_UI(UIS ${FORMS})
+    QT5_ADD_TRANSLATION(QM_FILES ${TS_FILES})
+    #set(CMAKE_CXX_FLAGS
+    #    "${CMAKE_CXX_FLAGS} ${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}"
+    #)
+
+    set(QT_LIBRARIES ${Qt5Widgets_LIBRARIES})
+
+    find_package(XDGQT5 REQUIRED QUIET)
+else()
+    find_package(Qt4 REQUIRED QUIET)
+    message(STATUS "Building with Qt ${QTVERSION}")
+
+    include(${QT_USE_FILE})
+
+    QT4_WRAP_CPP(MOCS ${MOCS})
+    QT4_WRAP_UI(UIS ${FORMS})
+    QT4_ADD_TRANSLATION(QM_FILES ${TS_FILES})
+    QT4_ADD_DBUS_INTERFACE(SRCS
+        dbus/org.freedesktop.Notifications.xml
+        notifications_interface
+    )
+
+    set(LXQT_QT_VERSION "4")
+    find_package(XDGQT4 REQUIRED QUIET)
+
+
+endif()
+
+include(${XDGQT_USE_FILE})
 find_package(X11 REQUIRED QUIET)
-
-find_package(QTXDG REQUIRED QUIET)
-include(${QTXDG_USE_FILE})
-
 
 include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}
     ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTDBUS_INCLUDE_DIR}
     ${X11_INCLUDE_DIR}
-    ${QTXDG_INCLUDE_DIRS}
+    ${XDGQT_INCLUDE_DIRS}
 )
 
 set(LXQT_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_PATCH_VERSION})
@@ -178,8 +234,15 @@ if(INTREE_ROOT_DIR)
     )
 
     configure_file(
+        ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqtX-config.cmake.in
+        ${INTREE_ROOT_DIR}/cmake/lxqt${LXQT_QT_VERSION}-config.cmake
+        @ONLY
+    )
+
+
+    configure_file(
         ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt_use.cmake
-        ${INTREE_ROOT_DIR}/cmake/lxqt_use.cmake
+        ${INTREE_ROOT_DIR}/cmake/lxqt${LXQT_QT_VERSION}_use.cmake
         @ONLY
     )
 endif()
@@ -203,17 +266,20 @@ configure_file(
 )
 
 configure_file(
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqtX-config.cmake.in
+    ${CMAKE_CURRENT_BINARY_DIR}/cmake/lxqt{LXQT_QT_VERSION}-config.cmake
+    @ONLY
+)
+
+
+configure_file(
     ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt_use.cmake
-    ${CMAKE_CURRENT_BINARY_DIR}/cmake/lxqt_use.cmake
+    ${CMAKE_CURRENT_BINARY_DIR}/cmake/lxqt{LXQT_QT_VERSION}_use.cmake
     @ONLY
 )
 
 #************************************************
 
-
-qt4_wrap_cpp(MOCS ${MOCS})
-qt4_wrap_ui(UIS ${FORMS})
-qt4_add_translation(QM_FILES ${TS_FILES})
 include(cmake/lxqt_use.cmake)
 
 
@@ -234,7 +300,7 @@ target_link_libraries(lxqt
     ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
     ${QT_QTDBUS_LIBRARY}
     ${X11_X11_LIB}
-    ${QTXDG_LIBRARIES}
+    ${XDGQT_LIBRARIES}
 )
 
 set_target_properties(lxqt PROPERTIES

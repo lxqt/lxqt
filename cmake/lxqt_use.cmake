@@ -49,8 +49,15 @@ add_definitions(-DRAZOR_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\")
 add_definitions(-DRAZOR_VERSION=\"${LXQT_VERSION}\")
 # for backward compatability <-----
 
-find_package(Qt4 REQUIRED QUIET)
-include(${QT_USE_FILE})
+#if(LXQT_QT_VERSION STREQUAL "5")
+
+
+
+#else()
+#    find_package(Qt4 REQUIRED QUIET)
+#    include(${QT_USE_FILE})
+
+#endif()
 
 #**********************************************************
 # DESKTOP files
