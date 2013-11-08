@@ -76,3 +76,6 @@
 [submodule "libxdsettings"]
 	path = libxdsettings
 	url = https://github.com/lxde/libxdsettings.git
+[submodule "compton-conf"]
+	path = compton-conf
+	url = https://github.com/lxde/compton-conf.git
