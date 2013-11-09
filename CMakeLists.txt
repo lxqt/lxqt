@@ -27,6 +27,7 @@ set(PUB_HDRS
     lxqtautostartentry.h
     lxqtgridlayout.h
     lxqtrotatedwidget.h
+    lxqtglobals.h
 )
 
 set(PUBLIC_CLASSES
@@ -165,6 +166,13 @@ include_directories(${LXQT_INCLUDE_DIR})
 
 set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/liblxqt)
 
+
+# use gcc visibility feature to decrease unnecessary exported symbols
+if (CMAKE_COMPILER_IS_GNUCXX)
+  # set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
+  set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions")
+endif()
+add_definitions(-DCOMPILE_LIBLXQT)
 
 # create the portable headers *******************
 include(create_portable_headers)
