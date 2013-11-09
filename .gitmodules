@@ -79,3 +79,6 @@
 [submodule "compton-conf"]
 	path = compton-conf
 	url = https://github.com/lxde/compton-conf.git
+[submodule "lxmenu-data"]
+	path = lxmenu-data
+	url = https://github.com/lxde/lxmenu-data.git
