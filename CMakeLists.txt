@@ -170,7 +170,7 @@ set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/liblxqt)
 # use gcc visibility feature to decrease unnecessary exported symbols
 if (CMAKE_COMPILER_IS_GNUCXX)
   # set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
-  set(CMAKE_CXX_FLAGS "-fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -Wl,-no-undefined -Wall")
 endif()
 add_definitions(-DCOMPILE_LIBLXQT)
 
