@@ -110,3 +110,7 @@
 	path = lxmenu-data
 	url = https://github.com/lxde/lxmenu-data.git
 	branch = master
+[submodule "lxqt-qtplugin"]
+	path = lxqt-qtplugin
+	url = https://github.com/lxde/lxqt-qtplugin.git
+	branch = master
