@@ -12,17 +12,17 @@
 # $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ ./build_all.sh
 # etc.
 
+# autotools-based projects
+
 AUTOMAKE_REPOS=" \
 	menu-cache \
-	libfm \
-	lxsession"
+	lxmenu-data"
 
 if env | grep -q ^LXQT_PREFIX= ; then
 	PREF="--prefix=$LXQT_PREFIX"
 else
 	PREF=""
 fi
-
 
 for d in $AUTOMAKE_REPOS
 do
@@ -32,7 +32,19 @@ do
 	cd ..
 done
 
+# build libfm
+echo ""; echo ""; echo "building: libfm into $PREF"; echo ""
+cd "libfm"
+./autogen.sh && ./configure $PREF --enable-debug --without-gtk --disable-demo && make -j2 && sudo make install
+cd ..
 
+# build lxsession
+echo ""; echo ""; echo "building: lxsession into $PREF"; echo ""
+cd "lxsession"
+./autogen.sh && ./configure $PREF --enable-debug --disable-gtk --disable-gtk3 --disable-buildin-clipboard --disable-buildin-polkit && make -j2 && sudo make install
+cd ..
+
+# cmake-based projects
 CMAKE_REPOS=" \
 	libqtxdg \
 	liblxqt \
