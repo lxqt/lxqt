@@ -137,7 +137,9 @@ include_directories (
     ${QTXDG_INCLUDE_DIRS}
 )
 
-set(LXQT_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_PATCH_VERSION})
+set(LXQT_VERSION
+    ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_PATCH_VERSION}
+)
 
 message(STATUS "")
 message(STATUS "liblxqt version: ${LXQT_VERSION}")
@@ -167,8 +169,9 @@ set(APP_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/liblxqt)
 
 # use gcc visibility feature to decrease unnecessary exported symbols
 if (CMAKE_COMPILER_IS_GNUCXX)
-  # set visibility to hidden to hide symbols, unlesss they're exporeted manually in the code
-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -Wl,-no-undefined -Wall")
+    # set visibility to hidden to hide symbols, unlesss they're exporeted
+    # manually in the code
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -Wl,-no-undefined -Wall")
 endif()
 add_definitions(-DCOMPILE_LIBLXQT)
 
@@ -214,7 +217,10 @@ install(FILES ${PUB_HDRS}  DESTINATION ${LXQT_INCLUDE_DIR})
 install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INCLUDE_DIR})
 install(FILES ${QM_FILES} DESTINATION ${LXQT_TRANSLATIONS_DIR})
 
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/lxqt-config.cmake DESTINATION share/cmake/lxqt)
+install(FILES
+    ${CMAKE_CURRENT_BINARY_DIR}/lxqt-config.cmake
+    DESTINATION share/cmake/lxqt
+)
 install(FILES cmake/lxqt_use.cmake DESTINATION share/cmake/lxqt)
 
 include(cmake/create_pkgconfig_file.cmake)
