@@ -105,9 +105,7 @@ set(MOCS
 
 set(FORMS
     aboutdialog/lxqtaboutdialog.ui
-
     configdialog/lxqtconfigdialog.ui
-
     addplugindialog/lxqtaddplugindialog.ui
 )
 
