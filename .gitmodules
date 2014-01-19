@@ -114,3 +114,6 @@
 	path = lxqt-qtplugin
 	url = https://github.com/lxde/lxqt-qtplugin.git
 	branch = master
+[submodule "lxqt-session"]
+	path = lxqt-session
+	url = https://github.com/lxde/lxqt-session.git

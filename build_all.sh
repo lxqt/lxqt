@@ -51,6 +51,7 @@ CMAKE_REPOS=" \
 	liblxqt-mount \
 	libsysstat \
 	libxdsettings \
+	lxqt-session \
 	lxqt-qtplugin \
 	lxqt-globalkeys \
 	lxqt-notificationd \
