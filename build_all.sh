@@ -50,7 +50,6 @@ CMAKE_REPOS=" \
 	liblxqt \
 	liblxqt-mount \
 	libsysstat \
-	libxdsettings \
 	lxqt-session \
 	lxqt-qtplugin \
 	lxqt-globalkeys \
