@@ -98,10 +98,6 @@
 	path = lxqt-lightdm-greeter
 	url = https://github.com/lxde/lxqt-lightdm-greeter.git
 	branch = master
-[submodule "libxdsettings"]
-	path = libxdsettings
-	url = https://github.com/lxde/libxdsettings.git
-	branch = master
 [submodule "compton-conf"]
 	path = compton-conf
 	url = https://github.com/lxde/compton-conf.git
