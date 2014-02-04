@@ -7,7 +7,7 @@ set(LXQT_MINOR_VERSION 5)
 set(LXQT_PATCH_VERSION 0)
 
 # Set default installation paths
-set(LIB_INSTALL_DIR lib CACHE PATH "Installation path for libraries")
+set(LIB_INSTALL_DIR "lib" CACHE PATH "Installation path for libraries")
 
 set(PUB_HDRS
     aboutdialog/lxqtaboutdialog.h
