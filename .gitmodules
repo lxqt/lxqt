@@ -113,3 +113,6 @@
 [submodule "lxqt-session"]
 	path = lxqt-session
 	url = https://github.com/lxde/lxqt-session.git
+[submodule "lxqt-config-randr"]
+	path = lxqt-config-randr
+	url = https://github.com/lxde/lxqt-config-randr.git

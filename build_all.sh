@@ -38,12 +38,6 @@ cd "libfm"
 ./autogen.sh && ./configure $PREF --enable-debug --without-gtk --disable-demo && make -j2 && sudo make install
 cd ..
 
-# build lxsession
-echo ""; echo ""; echo "building: lxsession into $PREF"; echo ""
-cd "lxsession"
-./autogen.sh && ./configure $PREF --enable-debug --disable-gtk --disable-gtk3 --disable-buildin-clipboard --disable-buildin-polkit && make -j2 && sudo make install
-cd ..
-
 # cmake-based projects
 CMAKE_REPOS=" \
 	libqtxdg \
@@ -66,7 +60,8 @@ CMAKE_REPOS=" \
 	lxqt-power \
 	lxqt-powermanagement \
 	lxqt-runner \
-	lxrandr-qt \
+	lxqt-config-randr \
+	compton-conf \
 	obconf-qt \
 	pcmanfm-qt"
 
