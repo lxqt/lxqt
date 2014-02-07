@@ -18,10 +18,6 @@
 	path = lxqt-about
 	url = https://github.com/lxde/lxqt-about.git
 	branch = master
-[submodule "lxsession"]
-	path = lxsession
-	url = https://github.com/lxde/lxsession.git
-	branch = master
 [submodule "lxqt-powermanagement"]
 	path = lxqt-powermanagement
 	url = https://github.com/lxde/lxqt-powermanagement.git
@@ -77,10 +73,6 @@
 [submodule "lximage-qt"]
 	path = lximage-qt
 	url = https://github.com/lxde/lximage-qt.git
-	branch = master
-[submodule "lxrandr-qt"]
-	path = lxrandr-qt
-	url = https://github.com/lxde/lxrandr-qt.git
 	branch = master
 [submodule "lxinput-qt"]
 	path = lxinput-qt
