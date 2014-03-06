@@ -48,7 +48,6 @@ CMAKE_REPOS=" \
 	lxqt-qtplugin \
 	lxqt-globalkeys \
 	lxqt-notificationd \
-	lximage-qt \
 	lxinput-qt \
 	lxqt-about \
 	lxqt-appswitcher \
@@ -63,7 +62,8 @@ CMAKE_REPOS=" \
 	lxqt-config-randr \
 	compton-conf \
 	obconf-qt \
-	pcmanfm-qt"
+	pcmanfm-qt \
+	lximage-qt"
 
 if env | grep -q ^CMAKE_BUILD_TYPE= ; then
 	CMAKE_BUILD_TYPE="-DCMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE"
