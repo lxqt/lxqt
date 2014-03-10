@@ -12,6 +12,13 @@
 # $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ ./build_all.sh
 # etc.
 
+# detect processor numbers (Linux only)
+JOB_NUM=1
+if test -e /proc/cpuinfo; then
+	JOB_NUM=`cat /proc/cpuinfo | grep processor | wc -l`
+fi
+echo "make job number: $JOB_NUM"
+
 # autotools-based projects
 
 AUTOMAKE_REPOS=" \
@@ -28,14 +35,14 @@ for d in $AUTOMAKE_REPOS
 do
 	echo ""; echo ""; echo "building: $d into $PREF"; echo ""
 	cd "$d"
-	./autogen.sh && ./configure $PREF && make -j2 && sudo make install
+	./autogen.sh && ./configure $PREF && make -j$JOB_NUM && sudo make install
 	cd ..
 done
 
 # build libfm
 echo ""; echo ""; echo "building: libfm into $PREF"; echo ""
 cd "libfm"
-./autogen.sh && ./configure $PREF --enable-debug --without-gtk --disable-demo && make -j2 && sudo make install
+./autogen.sh && ./configure $PREF --enable-debug --without-gtk --disable-demo && make -j$JOB_NUM && sudo make install
 cd ..
 
 # cmake-based projects
@@ -103,6 +110,6 @@ do
 	echo ""; echo ""; echo "building: $d using externally specified options: $ALL_CMAKE_FLAGS"; echo ""
 	mkdir -p $d/build
 	cd $d/build
-	cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM -j2 && sudo $CMAKE_MAKE_PROGRAM install
+	cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM -j$JOB_NUM && sudo $CMAKE_MAKE_PROGRAM install
 	cd ../..
 done
