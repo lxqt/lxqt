@@ -13,10 +13,7 @@
 # etc.
 
 # detect processor numbers (Linux only)
-JOB_NUM=1
-if test -e /proc/cpuinfo; then
-	JOB_NUM=`cat /proc/cpuinfo | grep processor | wc -l`
-fi
+JOB_NUM=`nproc`
 echo "make job number: $JOB_NUM"
 
 # autotools-based projects
@@ -42,7 +39,7 @@ done
 # build libfm
 echo ""; echo ""; echo "building: libfm into $PREF"; echo ""
 cd "libfm"
-./autogen.sh && ./configure $PREF --enable-debug --without-gtk --disable-demo && make -j$JOB_NUM && sudo make install
+./autogen.sh $PREF --enable-debug --without-gtk --disable-demo && make -j$JOB_NUM && sudo make install
 cd ..
 
 # cmake-based projects
@@ -55,7 +52,6 @@ CMAKE_REPOS=" \
 	lxqt-qtplugin \
 	lxqt-globalkeys \
 	lxqt-notificationd \
-	lxinput-qt \
 	lxqt-about \
 	lxqt-appswitcher \
 	lxqt-common \

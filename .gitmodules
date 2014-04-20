@@ -74,10 +74,6 @@
 	path = lximage-qt
 	url = git@git.lxde.org:/lxde/lximage-qt.git
 	branch = master
-[submodule "lxinput-qt"]
-	path = lxinput-qt
-	url = git@git.lxde.org:/lxde/lxinput-qt.git
-	branch = master
 [submodule "lxqt-globalkeys"]
 	path = lxqt-globalkeys
 	url = git@git.lxde.org:/lxde/lxqt-globalkeys.git
