@@ -38,10 +38,6 @@
 	path = lxqt-runner
 	url = git@git.lxde.org:/lxde/lxqt-runner.git
 	branch = master
-[submodule "lxqt-power"]
-	path = lxqt-power
-	url = git@git.lxde.org:/lxde/lxqt-power.git
-	branch = master
 [submodule "lxqt-policykit"]
 	path = lxqt-policykit
 	url = git@git.lxde.org:/lxde/lxqt-policykit.git
