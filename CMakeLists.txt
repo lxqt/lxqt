@@ -3,8 +3,8 @@ cmake_minimum_required( VERSION 2.6 )
 project(liblxqt)
 
 set(LXQT_MAJOR_VERSION 0)
-set(LXQT_MINOR_VERSION 5)
-set(LXQT_PATCH_VERSION 0)
+set(LXQT_MINOR_VERSION 6)
+set(LXQT_PATCH_VERSION 99)
 
 # Set default installation paths
 set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
