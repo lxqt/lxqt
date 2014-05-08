@@ -22,5 +22,12 @@ macro (create_pkgconfig_file name desc)
             "\n"
     )
 
-    install(FILES ${_pkgfname} DESTINATION lib${LIB_SUFFIX}/pkgconfig)
+    # FreeBSD loves to install files to different locations
+    # http://www.freebsd.org/doc/handbook/dirstructure.html
+    if(${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
+        install(FILES ${_pkgfname} DESTINATION libdata/pkgconfig)
+    else()
+        install(FILES ${_pkgfname} DESTINATION lib${LIB_SUFFIX}/pkgconfig)
+    endif()
+
 endmacro()
