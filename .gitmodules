@@ -1,102 +1,102 @@
 [submodule "libfm"]
 	path = libfm
-	url = git@git.lxde.org:/lxde/libfm.git
+	url = git@github.com:lxde/libfm.git
 	branch = master
 [submodule "menu-cache"]
 	path = menu-cache
-	url = git@git.lxde.org:/lxde/menu-cache.git
+	url = git@github.com:lxde/menu-cache.git
 	branch = master
 [submodule "liblxqt"]
 	path = liblxqt
-	url = git@git.lxde.org:/lxde/liblxqt.git
+	url = git@github.com:lxde/liblxqt.git
 	branch = master
 [submodule "libqtxdg"]
 	path = libqtxdg
-	url = git@git.lxde.org:/lxde/libqtxdg.git
+	url = git@github.com:lxde/libqtxdg.git
 	branch = master
 [submodule "lxqt-about"]
 	path = lxqt-about
-	url = git@git.lxde.org:/lxde/lxqt-about.git
+	url = git@github.com:lxde/lxqt-about.git
 	branch = master
 [submodule "lxqt-powermanagement"]
 	path = lxqt-powermanagement
-	url = git@git.lxde.org:/lxde/lxqt-powermanagement.git
+	url = git@github.com:lxde/lxqt-powermanagement.git
 	branch = master
 [submodule "pcmanfm-qt"]
 	path = pcmanfm-qt
-	url = git@git.lxde.org:/lxde/pcmanfm-qt.git
+	url = git@github.com:lxde/pcmanfm-qt.git
 	branch = master
 [submodule "libsysstat"]
 	path = libsysstat
-	url = git@git.lxde.org:/lxde/libsysstat.git
+	url = git@github.com:lxde/libsysstat.git
 	branch = master
 [submodule "liblxqt-mount"]
 	path = liblxqt-mount
-	url = git@git.lxde.org:/lxde/liblxqt-mount.git
+	url = git@github.com:lxde/liblxqt-mount.git
 	branch = master
 [submodule "lxqt-runner"]
 	path = lxqt-runner
-	url = git@git.lxde.org:/lxde/lxqt-runner.git
+	url = git@github.com:lxde/lxqt-runner.git
 	branch = master
 [submodule "lxqt-policykit"]
 	path = lxqt-policykit
-	url = git@git.lxde.org:/lxde/lxqt-policykit.git
+	url = git@github.com:lxde/lxqt-policykit.git
 	branch = master
 [submodule "lxqt-panel"]
 	path = lxqt-panel
-	url = git@git.lxde.org:/lxde/lxqt-panel.git
+	url = git@github.com:lxde/lxqt-panel.git
 	branch = master
 [submodule "lxqt-openssh-askpass"]
 	path = lxqt-openssh-askpass
-	url = git@git.lxde.org:/lxde/lxqt-openssh-askpass.git
+	url = git@github.com:lxde/lxqt-openssh-askpass.git
 	branch = master
 [submodule "lxqt-notificationd"]
 	path = lxqt-notificationd
-	url = git@git.lxde.org:/lxde/lxqt-notificationd.git
+	url = git@github.com:lxde/lxqt-notificationd.git
 	branch = master
 [submodule "lxqt-config"]
 	path = lxqt-config
-	url = git@git.lxde.org:/lxde/lxqt-config.git
+	url = git@github.com:lxde/lxqt-config.git
 	branch = master
 [submodule "lxqt-appswitcher"]
 	path = lxqt-appswitcher
-	url = git@git.lxde.org:/lxde/lxqt-appswitcher.git
+	url = git@github.com:lxde/lxqt-appswitcher.git
 	branch = master
 [submodule "obconf-qt"]
 	path = obconf-qt
-	url = git@git.lxde.org:/lxde/obconf-qt.git
+	url = git@github.com:lxde/obconf-qt.git
 	branch = master
 [submodule "lximage-qt"]
 	path = lximage-qt
-	url = git@git.lxde.org:/lxde/lximage-qt.git
+	url = git@github.com:lxde/lximage-qt.git
 	branch = master
 [submodule "lxqt-globalkeys"]
 	path = lxqt-globalkeys
-	url = git@git.lxde.org:/lxde/lxqt-globalkeys.git
+	url = git@github.com:lxde/lxqt-globalkeys.git
 	branch = master
 [submodule "lxqt-common"]
 	path = lxqt-common
-	url = git@git.lxde.org:/lxde/lxqt-common.git
+	url = git@github.com:lxde/lxqt-common.git
 	branch = master
 [submodule "lxqt-lightdm-greeter"]
 	path = lxqt-lightdm-greeter
-	url = git@git.lxde.org:/lxde/lxqt-lightdm-greeter.git
+	url = git@github.com:lxde/lxqt-lightdm-greeter.git
 	branch = master
 [submodule "compton-conf"]
 	path = compton-conf
-	url = git@git.lxde.org:/lxde/compton-conf.git
+	url = git@github.com:lxde/compton-conf.git
 	branch = master
 [submodule "lxmenu-data"]
 	path = lxmenu-data
-	url = git@git.lxde.org:/lxde/lxmenu-data.git
+	url = git@github.com:lxde/lxmenu-data.git
 	branch = master
 [submodule "lxqt-qtplugin"]
 	path = lxqt-qtplugin
-	url = git@git.lxde.org:/lxde/lxqt-qtplugin.git
+	url = git@github.com:lxde/lxqt-qtplugin.git
 	branch = master
 [submodule "lxqt-session"]
 	path = lxqt-session
-	url = git@git.lxde.org:/lxde/lxqt-session.git
+	url = git@github.com:lxde/lxqt-session.git
 [submodule "lxqt-config-randr"]
 	path = lxqt-config-randr
-	url = git@git.lxde.org:/lxde/lxqt-config-randr.git
+	url = git@github.com:lxde/lxqt-config-randr.git
