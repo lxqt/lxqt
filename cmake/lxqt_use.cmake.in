@@ -52,6 +52,8 @@
 
 include_directories(${LXQT_INCLUDE_DIRS})
 
+link_directories(${LXQT_LIBRARY_DIRS})
+
 #cmake_policy(SET CMP0005 NEW)
 add_definitions(-DLXQT_SHARE_DIR=\"${LXQT_SHARE_DIR}\")
 add_definitions(-DLXQT_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\")
