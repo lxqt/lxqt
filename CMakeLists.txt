@@ -374,10 +374,8 @@ lxqt_create_pkgconfig_file(${LXQT_LIBRARY_NAME}
     ${LXQT_VERSION}
 )
 #************************************************
-install(FILES cmake/lxqt_use.cmake DESTINATION share/cmake/lxqt)
-
-include(cmake/create_pkgconfig_file.cmake)
-create_pkgconfig_file(lxqt "Shared library for LXQt applications")
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}_use.cmake
+        DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME})
 
 # building tarball with CPack -------------------------------------------------
 include (InstallRequiredSystemLibraries)
