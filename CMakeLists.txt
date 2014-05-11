@@ -137,18 +137,21 @@ if((USE_QT4 AND USE_QT5) OR
     endif()
 endif()
 
+cmake_minimum_required(VERSION 2.8.9)
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 if(USE_QT5)
-    cmake_minimum_required(VERSION 2.8.9)
-
-    set(CMAKE_INCLUDE_CURRENT_DIR ON)
+    #FIXME: Work only when build with Qt5
     set(CMAKE_AUTOMOC ON)
-    set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
     find_package(Qt5Widgets REQUIRED QUIET)
     find_package(Qt5DBus REQUIRED QUIET)
     find_package(Qt5X11Extras REQUIRED QUIET)
     find_package(Qt5LinguistTools REQUIRED QUIET)
+    find_package(Qt5Xdg REQUIRED)
+
     message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
 
     QT5_WRAP_UI(UIS ${FORMS})
@@ -159,9 +162,10 @@ if(USE_QT5)
     )
 
     set(LXQT_QT_VERSION "5")
-    set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets Qt5Xml")
+    set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets Qt5Xml Qt5DBus Qt5X11Extras")
 else()
-    find_package(Qt4 REQUIRED QUIET)
+    find_package(Qt4 REQUIRED QtCore QtGui QUIET)
+    find_package(qtxdg REQUIRED)
     message(STATUS "Building with Qt ${QTVERSION}")
 
     include(${QT_USE_FILE})
@@ -178,10 +182,9 @@ else()
     set(LXQT_PKG_CONFIG_REQUIRES "QtCore, QtXml")
 endif()
 
-find_package(X11 REQUIRED QUIET)
-
-find_package(qtxdg REQUIRED)
 include(${QTXDG_USE_FILE})
+
+find_package(X11 REQUIRED QUIET)
 
 include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}
@@ -195,7 +198,7 @@ include(GNUInstallDirs)
 
 set(LXQT_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_PATCH_VERSION})
 set(LXQT_LIBRARY_NAME "lxqt${LXQT_QT_VERSION}")
-set(LXQT_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/lxqt)
+set(LXQT_SHARE_DIR ${CMAKE_INSTALL_PREFIX}/share/lxqt${LXQT_QT_VERSION})
 set(LXQT_TRANSLATIONS_DIR ${LXQT_SHARE_DIR}/translations)
 
 set(LXQT_INTREE_INCLUDE_DIR     ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/include)
@@ -225,7 +228,6 @@ check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
 
 create_portable_headers(INTREE_PORTABLE_HEADERS ${LXQT_INTREE_INCLUDE_DIR}/LxQt ${PUBLIC_CLASSES})
 check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
-
 
 #************************************************
 # Create in-tree build infrastructure
@@ -274,9 +276,9 @@ endif()
 add_definitions(-DCOMPILE_LIBLXQT)
 
 # create the portable headers *******************
-include(create_portable_headers)
-create_portable_headers(PORTABLE_HEADERS ${PUBLIC_CLASSES})
-check_portable_headers("${PUB_HDRS}")
+#include(create_portable_headers)
+#create_portable_headers(PORTABLE_HEADERS ${PUBLIC_CLASSES})
+#check_portable_headers("${PUB_HDRS}")
 #************************************************
 
 configure_file(
@@ -286,8 +288,8 @@ configure_file(
 )
 
 install(FILES 
-    ${CMAKE_CURRENT_BINARY_DIR}/install/lxqt-config.cmake
-    DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/lxqt
+    ${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}-config.cmake
+    DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}
     COMPONENT Devel
 )
 
@@ -308,7 +310,11 @@ install(EXPORT
 
 include(translatorsinfo/CMakeLists.txt)
 get_translatorsinfo_qrc(translatorsinfo_qrc)
-qt4_add_resources(QRC_CXX_SOURCES ${translatorsinfo_qrc})
+if(USE_QT5)
+    qt5_add_resources(QRC_CXX_SOURCES ${translatorsinfo_qrc})
+else()
+    qt4_add_resources(QRC_CXX_SOURCES ${translatorsinfo_qrc})
+endif()
 
 add_library(${LXQT_LIBRARY_NAME}
     SHARED ${PUB_HDRS}
@@ -348,12 +354,13 @@ install(TARGETS
 
 export(TARGETS ${LXQT_LIBRARY_NAME} ${QTXDG_TARGET} FILE ${LXQT_INTREE_TRAGETS_FILE})
 
-# Install in two places for inclusions like "include <lxde/lxdeclass.h>" and "include <LxQt/Class>".
-install(FILES ${PUB_HDRS}         DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/lxqt)
-install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/lxqt)
+# Install in two places for inclusions like "include <lxqt/lxdeclass.h>" and "include <LxQt/Class>".
+# FIXME: Install in different path for Qt5 to make possible installation of 2 version of the library 
+install(FILES ${PUB_HDRS}                DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/lxqt${LXQT_QT_VERSION})
+install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/lxqt${LXQT_QT_VERSION})
 
-install(FILES ${PUB_HDRS}         DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LxQt)
-install(FILES ${PORTABLE_HEADERS} DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LxQt)
+install(FILES ${PUB_HDRS}                DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LxQt${LXQT_QT_VERSION})
+install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LxQt${LXQT_QT_VERSION})
 
 install(FILES ${QM_FILES} DESTINATION ${LXQT_TRANSLATIONS_DIR})
 
