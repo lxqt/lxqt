@@ -56,6 +56,7 @@ CMAKE_REPOS=" \
 	lxqt-appswitcher \
 	lxqt-common \
 	lxqt-config \
+	lxqt-admin \
 	lxqt-openssh-askpass \
 	lxqt-panel \
 	lxqt-policykit \

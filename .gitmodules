@@ -100,3 +100,6 @@
 [submodule "lxqt-config-randr"]
 	path = lxqt-config-randr
 	url = git@git.lxde.org:/lxde/lxqt-config-randr.git
+[submodule "lxqt-admin"]
+	path = lxqt-admin
+	url = git@git.lxde.org:/lxde/lxqt-admin.git
