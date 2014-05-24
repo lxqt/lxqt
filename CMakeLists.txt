@@ -1,4 +1,4 @@
-cmake_minimum_required( VERSION 2.6 )
+cmake_minimum_required(VERSION 2.8.9)
 
 project(liblxqt)
 
@@ -8,7 +8,7 @@ set(LXQT_PATCH_VERSION 0)
 
 # Set default installation paths
 set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
-set(LXGQT_PKG_CONFIG_DESCRIPTION "Shared library for LXQt applications")
+set(LXQT_PKG_CONFIG_DESCRIPTION "Shared library for LXQt applications")
 
 set(PUB_HDRS
     aboutdialog/lxqtaboutdialog.h
@@ -137,21 +137,16 @@ if((USE_QT4 AND USE_QT5) OR
     endif()
 endif()
 
-cmake_minimum_required(VERSION 2.8.9)
-
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set(CMAKE_AUTOMOC ON)
 
 if(USE_QT5)
-    #FIXME: Work only when build with Qt5
-    set(CMAKE_AUTOMOC ON)
-
     find_package(Qt5Widgets REQUIRED QUIET)
     find_package(Qt5DBus REQUIRED QUIET)
     find_package(Qt5X11Extras REQUIRED QUIET)
     find_package(Qt5LinguistTools REQUIRED QUIET)
     find_package(Qt5Xdg REQUIRED)
-
     message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
 
     QT5_WRAP_UI(UIS ${FORMS})
@@ -204,7 +199,7 @@ set(LXQT_TRANSLATIONS_DIR ${LXQT_SHARE_DIR}/translations)
 set(LXQT_INTREE_INCLUDE_DIR     ${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/include)
 set(LXQT_INTREE_TRAGETS_FILE    ${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-targets.cmake)
 
-set(LXQT_INSTALL_INCLUDE_DIR   ${CMAKE_INSTALL_FULL_INCLUDEDIR})
+set(LXQT_INSTALL_INCLUDE_DIR   ${CMAKE_INSTALL_FULL_INCLUDEDIR}/lxqt${LXQT_QT_VERSION})
 set(LXQT_INSTALL_CMAKE_DIR     ${CMAKE_INSTALL_PREFIX}/share/cmake/)
 
 include(cmake/FindInstallConfigPath.cmake)
@@ -223,9 +218,6 @@ foreach(h ${PUB_HDRS})
 endforeach()
 
 # Create the portable headers
-create_portable_headers(INTREE_PORTABLE_HEADERS ${LXQT_INTREE_INCLUDE_DIR}/lxqt ${PUBLIC_CLASSES})
-check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
-
 create_portable_headers(INTREE_PORTABLE_HEADERS ${LXQT_INTREE_INCLUDE_DIR}/LxQt ${PUBLIC_CLASSES})
 check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
 
@@ -248,7 +240,6 @@ configure_file(
     ${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}_use.cmake
     @ONLY
 )
-
 
 include(${CFG_LXQT_USE_FILE})
 
@@ -354,13 +345,8 @@ install(TARGETS
 
 export(TARGETS ${LXQT_LIBRARY_NAME} ${QTXDG_TARGET} FILE ${LXQT_INTREE_TRAGETS_FILE})
 
-# Install in two places for inclusions like "include <lxqt/lxdeclass.h>" and "include <LxQt/Class>".
-# FIXME: Install in different path for Qt5 to make possible installation of 2 version of the library 
-install(FILES ${PUB_HDRS}                DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/lxqt${LXQT_QT_VERSION})
-install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/lxqt${LXQT_QT_VERSION})
-
-install(FILES ${PUB_HDRS}                DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LxQt${LXQT_QT_VERSION})
-install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LxQt${LXQT_QT_VERSION})
+install(FILES ${PUB_HDRS}                DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LXQt)
+install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LXQt)
 
 install(FILES ${QM_FILES} DESTINATION ${LXQT_TRANSLATIONS_DIR})
 
@@ -368,7 +354,7 @@ install(FILES ${QM_FILES} DESTINATION ${LXQT_TRANSLATIONS_DIR})
 # Create pkgconfig file
 #************************************************
 lxqt_create_pkgconfig_file(${LXQT_LIBRARY_NAME}
-    ${LXGQT_PKG_CONFIG_DESCRIPTION}
+    ${LXQT_PKG_CONFIG_DESCRIPTION}
     ${LXQT_PKG_CONFIG_REQUIRES}
     ${LXQT_LIBRARY_NAME}
     ${LXQT_VERSION}
