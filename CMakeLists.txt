@@ -139,9 +139,9 @@ endif()
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
-set(CMAKE_AUTOMOC ON)
 
 if(USE_QT5)
+    set(CMAKE_AUTOMOC ON)
     find_package(Qt5Widgets REQUIRED QUIET)
     find_package(Qt5DBus REQUIRED QUIET)
     find_package(Qt5X11Extras REQUIRED QUIET)
