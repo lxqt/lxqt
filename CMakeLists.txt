@@ -183,10 +183,15 @@ find_package(X11 REQUIRED QUIET)
 
 include_directories (
     ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}
-    ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTDBUS_INCLUDE_DIR}
     ${X11_INCLUDE_DIR}
     ${QTXDG_INCLUDE_DIRS}
 )
+
+if (NOT USE_QT5)
+    include_directories (
+        ${QT_QTCORE_INCLUDE_DIR} ${QT_QTGUI_INCLUDE_DIR} ${QT_QTDBUS_INCLUDE_DIR}
+    )
+endif()
 
 # Standard directories for installation
 include(GNUInstallDirs)
@@ -306,16 +311,19 @@ add_library(${LXQT_LIBRARY_NAME}
            
 )
 
-
-target_link_libraries(${LXQT_LIBRARY_NAME}
-    ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
-    ${QT_QTDBUS_LIBRARY}
-    ${X11_X11_LIB}
-    ${QTXDG_LIBRARIES}
-)
-
-if(USE_QT5)
+if (USE_QT5)
 	qt5_use_modules(${LXQT_LIBRARY_NAME} Widgets DBus X11Extras)
+    target_link_libraries(${LXQT_LIBRARY_NAME}
+        ${X11_X11_LIB}
+        ${QTXDG_LIBRARIES}
+    )
+else()
+    target_link_libraries(${LXQT_LIBRARY_NAME}
+        ${QT_QTCORE_LIBRARY} ${QT_QTGUI_LIBRARY}
+        ${QT_QTDBUS_LIBRARY}
+        ${X11_X11_LIB}
+        ${QTXDG_LIBRARIES}
+    )
 endif()
 
 set_target_properties(${LXQT_LIBRARY_NAME} PROPERTIES
