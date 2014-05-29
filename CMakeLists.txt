@@ -266,11 +266,6 @@ if (CMAKE_COMPILER_IS_GNUCXX)
 endif()
 add_definitions(-DCOMPILE_LIBLXQT)
 
-# create the portable headers *******************
-#include(create_portable_headers)
-#create_portable_headers(PORTABLE_HEADERS ${PUBLIC_CLASSES})
-#check_portable_headers("${PUB_HDRS}")
-#************************************************
 
 configure_file(
     ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt_use.cmake.in
