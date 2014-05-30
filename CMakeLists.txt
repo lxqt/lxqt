@@ -221,7 +221,9 @@ message(STATUS "")
 foreach(h ${PUB_HDRS})
     get_filename_component(bh ${h} NAME)
     configure_file(${h} ${LXQT_INTREE_INCLUDE_DIR}/LXQt/${bh} COPYONLY)
-    configure_file(${h} ${LXQT_INTREE_INCLUDE_DIR}/lxqt/${bh} COPYONLY)
+    if (USE_QT4)
+        configure_file(${h} ${LXQT_INTREE_INCLUDE_DIR}/lxqt/${bh} COPYONLY)
+    endif()
 endforeach()
 
 # Create the portable headers
@@ -344,6 +346,11 @@ install(TARGETS
 export(TARGETS ${LXQT_LIBRARY_NAME} ${QTXDG_TARGET} FILE ${LXQT_INTREE_TARGETS_FILE})
 
 install(FILES ${PUB_HDRS}                DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LXQt)
+
+if (USE_QT4)
+    install(FILES ${PUB_HDRS}   DESTINATION ${LXQT_INSTALL_INCLUDE_DIR})
+endif()
+
 install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LXQt)
 
 install(FILES ${QM_FILES} DESTINATION ${LXQT_TRANSLATIONS_DIR})
