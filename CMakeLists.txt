@@ -218,12 +218,12 @@ message(STATUS "")
 # Copy public headers
 foreach(h ${PUB_HDRS})
     get_filename_component(bh ${h} NAME)
-    configure_file(${h} ${LXQT_INTREE_INCLUDE_DIR}/LxQt/${bh} COPYONLY)
+    configure_file(${h} ${LXQT_INTREE_INCLUDE_DIR}/LXQt/${bh} COPYONLY)
     configure_file(${h} ${LXQT_INTREE_INCLUDE_DIR}/lxqt/${bh} COPYONLY)
 endforeach()
 
 # Create the portable headers
-create_portable_headers(INTREE_PORTABLE_HEADERS ${LXQT_INTREE_INCLUDE_DIR}/LxQt ${PUBLIC_CLASSES})
+create_portable_headers(INTREE_PORTABLE_HEADERS ${LXQT_INTREE_INCLUDE_DIR}/LXQt ${PUBLIC_CLASSES})
 check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
 
 #************************************************
