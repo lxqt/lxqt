@@ -75,6 +75,9 @@ SET_SOURCE_FILES_PROPERTIES(LXQT_LIBRARIES PROPERTIES OBJECT_DEPENDS lxqt${LXQT_
 if (LXQT_QT_VERSION EQUAL "4")
     find_package(Qt4 REQUIRED QUIET)
     include(${QT_USE_FILE})
+
+    find_package(qtxdg REQUIRED)
+    include(${QTXDG_USE_FILE})
 elseif(LXQT_QT_VERSION EQUAL "5")
     find_package(Qt5Widgets REQUIRED QUIET)
     find_package(Qt5DBus REQUIRED QUIET)
