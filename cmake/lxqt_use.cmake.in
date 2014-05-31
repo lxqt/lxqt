@@ -77,7 +77,6 @@ if (LXQT_QT_VERSION EQUAL "4")
     include(${QT_USE_FILE})
 
     find_package(QTXDG REQUIRED)
-    include(${QTXDG_USE_FILE})
 elseif(LXQT_QT_VERSION EQUAL "5")
     find_package(Qt5Widgets REQUIRED QUIET)
     find_package(Qt5DBus REQUIRED QUIET)
@@ -88,6 +87,8 @@ else()
     message(FATAL "Qt${LXQT_QT_VERSION} is not supported.")
 endif()
 
+# Works for Qt4 and Qt5
+include(${QTXDG_USE_FILE})
 
 #else()
 #    find_package(Qt4 REQUIRED QUIET)
