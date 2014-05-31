@@ -5,6 +5,11 @@
 #   qmake -query QT_INSTALL_CONFIGURATION
 #
 if(NOT DEFINED LXQT_ETC_XDG_DIR)
+    if (USE_QT5)
+        get_target_property(QT_QMAKE_EXECUTABLE ${Qt5Core_QMAKE_EXECUTABLE} IMPORTED_LOCATION)
+        message(STATUS "${QT_QMAKE_EXECUTABLE}")
+    endif()
+
     if(NOT QT_QMAKE_EXECUTABLE)
         message(FATAL_ERROR "LXQT_ETC_XDG_DIR: qmake not found or wrongly detected (inlude before qt configured?)")
     endif()
