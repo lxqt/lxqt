@@ -76,7 +76,7 @@ if (LXQT_QT_VERSION EQUAL "4")
     find_package(Qt4 REQUIRED QUIET)
     include(${QT_USE_FILE})
 
-    find_package(qtxdg REQUIRED)
+    find_package(QTXDG REQUIRED)
     include(${QTXDG_USE_FILE})
 elseif(LXQT_QT_VERSION EQUAL "5")
     find_package(Qt5Widgets REQUIRED QUIET)
