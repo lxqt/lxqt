@@ -161,7 +161,7 @@ if(USE_QT5)
     set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets Qt5Xml Qt5DBus Qt5X11Extras")
 else()
     find_package(Qt4 REQUIRED QtCore QtGui QUIET)
-    find_package(qtxdg REQUIRED)
+    find_package(QTXDG REQUIRED)
     message(STATUS "Building with Qt ${QTVERSION}")
 
     include(${QT_USE_FILE})
