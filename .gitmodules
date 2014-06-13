@@ -103,3 +103,6 @@
 [submodule "lxqt-admin"]
 	path = lxqt-admin
 	url = git@git.lxde.org:/lxde/lxqt-admin.git
+[submodule "qtmimetypes"]
+	path = mimetypes
+	url = git@gitorious.org:qtplayground/mimetypes.git
