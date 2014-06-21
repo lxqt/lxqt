@@ -120,22 +120,7 @@ file(GLOB TS_FILES
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 
-option(USE_QT5 "Force use the Qt5." $ENV{USE_QT5})
-option(USE_QT4 "Force use the Qt4." $ENV{USE_QT4})
-
-if((USE_QT4 AND USE_QT5) OR
-   (NOT USE_QT4 AND NOT USE_QT5))
-
-    # Autodetect Qt version
-    find_package(Qt4 QUIET)
-    if (QT4_FOUND)
-        set(USE_QT4 ON)
-        set(USE_QT5 OFF)
-    else()
-        set(USE_QT4 OFF)
-        set(USE_QT5 ON)
-    endif()
-endif()
+option(USE_QT5 "Build with Qt5." $ENV{USE_QT5})
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
@@ -221,7 +206,7 @@ message(STATUS "")
 foreach(h ${PUB_HDRS})
     get_filename_component(bh ${h} NAME)
     configure_file(${h} ${LXQT_INTREE_INCLUDE_DIR}/LXQt/${bh} COPYONLY)
-    if (USE_QT4)
+    if (NOT USE_QT5)
         configure_file(${h} ${LXQT_INTREE_INCLUDE_DIR}/lxqt/${bh} COPYONLY)
     endif()
 endforeach()
@@ -347,7 +332,7 @@ export(TARGETS ${LXQT_LIBRARY_NAME} ${QTXDG_TARGET} FILE ${LXQT_INTREE_TARGETS_F
 
 install(FILES ${PUB_HDRS}                DESTINATION ${LXQT_INSTALL_INCLUDE_DIR}/LXQt)
 
-if (USE_QT4)
+if (NOT USE_QT5)
     install(FILES ${PUB_HDRS}   DESTINATION ${LXQT_INSTALL_INCLUDE_DIR})
 endif()
 
