@@ -11,13 +11,14 @@ After checking out this repo, please do the following to initialize git submodul
 Please note, this repo works best with git version >= 1.8.2.
 With older versions, you have to do many manual operations. Please use the latest git if you can.
 
-> git submodule init
-> git submodule update --remote --rebase
+    git submodule init
+    git submodule update --remote --rebase
 
 Note:
+
 1. The command line option --remote requires git >= 1.8.2. If you're using git version >= 1.8.2, then it's done.
-2. If you're unfortunately using an older version of git, omit the "--remote" part and please read the following notes.
-3. Adding the --rebase option is suggested. Without --rebase, the submodules will all be detached commits and not in "master" branches.
+1. If you're unfortunately using an older version of git, omit the "--remote" part and please read the following notes.
+1. Adding the --rebase option is suggested. Without --rebase, the submodules will all be detached commits and not in "master" branches.
 
 ====================================================================================
 
@@ -28,10 +29,10 @@ Because git submodule does not track the latest HEAD automatically, the submodul
 unless manually changed. Besides, after initial checkout, the submodule repos are detached from master branch.
 
 Consider doing this manually to checkout master branches for every module.
-> git submodule foreach git checkout master
+    git submodule foreach git checkout master
 
 To pull the latest changes for all modules at once, try this:
-> git submodule foreach git pull --rebase
+    git submodule foreach git pull --rebase
 
 These restrictions no long applies to the latest git 1.8.x since it can be configured to track the latest changes in
 submodules automatically.
