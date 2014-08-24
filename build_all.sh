@@ -53,14 +53,12 @@ CMAKE_REPOS=" \
 	lxqt-globalkeys \
 	lxqt-notificationd \
 	lxqt-about \
-	lxqt-appswitcher \
 	lxqt-common \
 	lxqt-config \
 	lxqt-admin \
 	lxqt-openssh-askpass \
 	lxqt-panel \
 	lxqt-policykit \
-	lxqt-power \
 	lxqt-powermanagement \
 	lxqt-runner \
 	lxqt-config-randr \
