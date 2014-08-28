@@ -1,108 +1,108 @@
 [submodule "libfm"]
 	path = libfm
-	url = ./libfm.git
+	url = ../libfm.git
 	branch = master
 [submodule "menu-cache"]
 	path = menu-cache
-	url = ./menu-cache.git
+	url = ../menu-cache.git
 	branch = master
 [submodule "liblxqt"]
 	path = liblxqt
-	url = ./liblxqt.git
+	url = ../liblxqt.git
 	branch = master
 [submodule "libqtxdg"]
 	path = libqtxdg
-	url = ./libqtxdg.git
+	url = ../libqtxdg.git
 	branch = master
 [submodule "lxqt-about"]
 	path = lxqt-about
-	url = ./lxqt-about.git
+	url = ../lxqt-about.git
 	branch = master
 [submodule "lxqt-powermanagement"]
 	path = lxqt-powermanagement
-	url = ./lxqt-powermanagement.git
+	url = ../lxqt-powermanagement.git
 	branch = master
 [submodule "pcmanfm-qt"]
 	path = pcmanfm-qt
-	url = ./pcmanfm-qt.git
+	url = ../pcmanfm-qt.git
 	branch = master
 [submodule "libsysstat"]
 	path = libsysstat
-	url = ./libsysstat.git
+	url = ../libsysstat.git
 	branch = master
 [submodule "liblxqt-mount"]
 	path = liblxqt-mount
-	url = ./liblxqt-mount.git
+	url = ../liblxqt-mount.git
 	branch = master
 [submodule "lxqt-runner"]
 	path = lxqt-runner
-	url = ./lxqt-runner.git
+	url = ../lxqt-runner.git
 	branch = master
 [submodule "lxqt-policykit"]
 	path = lxqt-policykit
-	url = ./lxqt-policykit.git
+	url = ../lxqt-policykit.git
 	branch = master
 [submodule "lxqt-panel"]
 	path = lxqt-panel
-	url = ./lxqt-panel.git
+	url = ../lxqt-panel.git
 	branch = master
 [submodule "lxqt-openssh-askpass"]
 	path = lxqt-openssh-askpass
-	url = ./lxqt-openssh-askpass.git
+	url = ../lxqt-openssh-askpass.git
 	branch = master
 [submodule "lxqt-notificationd"]
 	path = lxqt-notificationd
-	url = ./lxqt-notificationd.git
+	url = ../lxqt-notificationd.git
 	branch = master
 [submodule "lxqt-config"]
 	path = lxqt-config
-	url = ./lxqt-config.git
+	url = ../lxqt-config.git
 	branch = master
 [submodule "lxqt-appswitcher"]
 	path = lxqt-appswitcher
-	url = ./lxqt-appswitcher.git
+	url = ../lxqt-appswitcher.git
 	branch = master
 [submodule "obconf-qt"]
 	path = obconf-qt
-	url = ./obconf-qt.git
+	url = ../obconf-qt.git
 	branch = master
 [submodule "lximage-qt"]
 	path = lximage-qt
-	url = ./lximage-qt.git
+	url = ../lximage-qt.git
 	branch = master
 [submodule "lxqt-globalkeys"]
 	path = lxqt-globalkeys
-	url = ./lxqt-globalkeys.git
+	url = ../lxqt-globalkeys.git
 	branch = master
 [submodule "lxqt-common"]
 	path = lxqt-common
-	url = ./lxqt-common.git
+	url = ../lxqt-common.git
 	branch = master
 [submodule "lxqt-lightdm-greeter"]
 	path = lxqt-lightdm-greeter
-	url = ./lxqt-lightdm-greeter.git
+	url = ../lxqt-lightdm-greeter.git
 	branch = master
 [submodule "compton-conf"]
 	path = compton-conf
-	url = ./compton-conf.git
+	url = ../compton-conf.git
 	branch = master
 [submodule "lxmenu-data"]
 	path = lxmenu-data
-	url = ./lxmenu-data.git
+	url = ../lxmenu-data.git
 	branch = master
 [submodule "lxqt-qtplugin"]
 	path = lxqt-qtplugin
-	url = ./lxqt-qtplugin.git
+	url = ../lxqt-qtplugin.git
 	branch = master
 [submodule "lxqt-session"]
 	path = lxqt-session
-	url = ./lxqt-session.git
+	url = ../lxqt-session.git
 [submodule "lxqt-config-randr"]
 	path = lxqt-config-randr
-	url = ./lxqt-config-randr.git
+	url = ../lxqt-config-randr.git
 [submodule "lxqt-admin"]
 	path = lxqt-admin
-	url = ./lxqt-admin.git
+	url = ../lxqt-admin.git
 [submodule "qtmimetypes"]
 	path = mimetypes
-	url = git@gitorious.org:qtplayground/mimetypes.git
+	url = https://gitorious.org/qtplayground/mimetypes.git
