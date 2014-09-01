@@ -1,6 +1,18 @@
 #!/bin/sh
 mkdir -p release
 
+if env | grep -q ^CMAKE_GENERATOR= ; then
+	echo "x$CMAKE_GENERATOR"
+	if [ "x$CMAKE_GENERATOR" = "xNinja" ] ; then
+		CMAKE_MAKE_PROGRAM="ninja"
+		CMAKE_GENERATOR="-G $CMAKE_GENERATOR -DCMAKE_MAKE_PROGRAM=$CMAKE_MAKE_PROGRAM"
+	fi
+fi
+
+if [ "x$CMAKE_MAKE_PROGRAM" = "x" ] ; then
+	CMAKE_MAKE_PROGRAM="make"
+fi
+
 # cmake projects
 for cmake_file in `find . -mindepth 2 -maxdepth 2 -name 'CMakeLists.txt'`;
 do
