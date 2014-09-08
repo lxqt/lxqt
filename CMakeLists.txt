@@ -119,8 +119,9 @@ file(GLOB TS_FILES
 # additional cmake files
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-
 option(USE_QT5 "Build with Qt5." $ENV{USE_QT5})
+
+option (UPDATE_TRANSLATIONS "Update source translation translations/*.ts files")
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
@@ -135,7 +136,11 @@ if(USE_QT5)
     message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
 
     QT5_WRAP_UI(UIS ${FORMS})
-    QT5_ADD_TRANSLATION(QM_FILES ${TS_FILES})
+    if (UPDATE_TRANSLATIONS)
+        qt5_create_translation(QM_FILES ${SRCS} ${UIS} ${TS_FILES})
+    else()
+        QT5_ADD_TRANSLATION(QM_FILES ${TS_FILES})
+    endif()
     QT5_ADD_DBUS_INTERFACE(SRCS
         dbus/org.freedesktop.Notifications.xml
         notifications_interface
@@ -153,7 +158,11 @@ else()
 
     QT4_WRAP_CPP(MOCS ${MOCS})
     QT4_WRAP_UI(UIS ${FORMS})
-    QT4_ADD_TRANSLATION(QM_FILES ${TS_FILES})
+    if (UPDATE_TRANSLATIONS)
+        qt4_create_translation(QM_FILES ${SRCS} ${UIS} ${TS_FILES})
+    else()
+        QT4_ADD_TRANSLATION(QM_FILES ${TS_FILES})
+    endif()
     QT4_ADD_DBUS_INTERFACE(SRCS
         dbus/org.freedesktop.Notifications.xml
         notifications_interface
