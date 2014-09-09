@@ -23,7 +23,7 @@ echo "make job number: $JOB_NUM"
 #   use_qt_config. Then we read it back and delete it.
 
 cmake -P UseQtDetection.cmake
-QT_MAJOR_VERSION=$(cat $"./use_qt_config")
+QT_MAJOR_VERSION=$(cat "./use_qt_config")
 echo "Building for Qt${QT_MAJOR_VERSION}"
 rm -rf ./use_qt_config
 
