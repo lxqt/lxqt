@@ -48,7 +48,7 @@ do
 done
 
 # Build QtMimeType
-if [[ "4" == "$QT_MAJOR_VERSION" ]]; then
+if [ "x$QT_MAJOR_VERSION" = "x4" ] ; then
     QMAKE_EXECUTABLES="  \
     qmake-qt4 \
     qmake"
@@ -60,7 +60,7 @@ if [[ "4" == "$QT_MAJOR_VERSION" ]]; then
             break
         esac
     done
-    if [[ -z "${QMAKE4_EXECUTABLE}" ]]; then
+    if [ -z "${QMAKE4_EXECUTABLE}" ] ; then
         echo "Warning: Qt4 qmake not found. Skipping mimetypes build"
     else
         echo ""; echo ""; echo "building mimetypes into ${LXQT_PREFIX}"; echo""
@@ -115,7 +115,7 @@ else
 fi
 
 if env | grep -q ^CMAKE_GENERATOR= ; then
-	echo "x$CMAKE_GENERATOR"
+	#echo "x$CMAKE_GENERATOR"
 	if [ "x$CMAKE_GENERATOR" = "xNinja" ] ; then
 		CMAKE_MAKE_PROGRAM="ninja"
 		CMAKE_GENERATOR="-G $CMAKE_GENERATOR -DCMAKE_MAKE_PROGRAM=$CMAKE_MAKE_PROGRAM"
