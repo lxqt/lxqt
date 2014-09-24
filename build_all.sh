@@ -27,7 +27,15 @@ QT_MAJOR_VERSION=$(cat "./use_qt_config")
 echo "Building for Qt${QT_MAJOR_VERSION}"
 rm -rf ./use_qt_config
 
+
 # autotools-based projects
+
+# build libfm-extras
+echo "\n\nbuilding: libfm into $PREF\n"
+cd "libfm"
+./autogen.sh $PREF --enable-debug --without-gtk --disable-demo && ./configure $PREF --with-extra-only && make -j$JOB_NUM && sudo make install
+cd ..
+
 
 AUTOMAKE_REPOS=" \
 	menu-cache \
@@ -74,7 +82,7 @@ fi
 # build libfm
 echo "\n\nbuilding: libfm into $PREF\n"
 cd "libfm"
-./autogen.sh $PREF --enable-debug --without-gtk --disable-demo && make -j$JOB_NUM && sudo make install
+./autogen.sh $PREF --enable-debug --without-gtk --disable-demo && ./configure $PREF && make -j$JOB_NUM && sudo make install
 cd ..
 
 
