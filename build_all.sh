@@ -41,7 +41,7 @@ fi
 
 for d in $AUTOMAKE_REPOS
 do
-	echo ""; echo ""; echo "building: $d into $PREF"; echo ""
+	echo "\n\nbuilding: $d into $PREF\n"
 	cd "$d"
 	./autogen.sh && ./configure $PREF && make -j$JOB_NUM && sudo make install
 	cd ..
@@ -63,7 +63,7 @@ if [ "x$QT_MAJOR_VERSION" = "x4" ] ; then
     if [ -z "${QMAKE4_EXECUTABLE}" ] ; then
         echo "Warning: Qt4 qmake not found. Skipping mimetypes build"
     else
-        echo ""; echo ""; echo "building mimetypes into ${LXQT_PREFIX}"; echo""
+        echo "\n\nbuilding mimetypes into ${LXQT_PREFIX}\n"
         cd "mimetypes"
         ${QMAKE4_EXECUTABLE} PREFIX=${LXQT_PREFIX} && make && sudo make install
         cd ..
@@ -72,10 +72,11 @@ fi
 
 
 # build libfm
-echo ""; echo ""; echo "building: libfm into $PREF"; echo ""
+echo "\n\nbuilding: libfm into $PREF\n"
 cd "libfm"
 ./autogen.sh $PREF --enable-debug --without-gtk --disable-demo && make -j$JOB_NUM && sudo make install
 cd ..
+
 
 # cmake-based projects
 CMAKE_REPOS=" \
@@ -137,7 +138,7 @@ ALL_CMAKE_FLAGS="$CMAKE_BUILD_TYPE $CMAKE_INSTALL_PREFIX $CMAKE_LIB_SUFFIX $CMAK
 
 for d in $CMAKE_REPOS
 do
-	echo ""; echo ""; echo "building: $d using externally specified options: $ALL_CMAKE_FLAGS"; echo ""
+	echo "\n\nbuilding: $d using externally specified options: $ALL_CMAKE_FLAGS\n"
 	mkdir -p $d/build
 	cd $d/build
 	cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM -j$JOB_NUM && sudo $CMAKE_MAKE_PROGRAM install
