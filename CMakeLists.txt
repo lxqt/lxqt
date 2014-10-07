@@ -112,6 +112,7 @@ set(FORMS
     addplugindialog/lxqtaddplugindialog.ui
 )
 
+set(TRANSLATION_TEMPLATE "${CMAKE_CURRENT_SOURCE_DIR}/translations/source.ts")
 file(GLOB TS_FILES
     ${CMAKE_CURRENT_SOURCE_DIR}/translations/liblxqt_*.ts
 )
@@ -138,6 +139,11 @@ if(USE_QT5)
     QT5_WRAP_UI(UIS ${FORMS})
     if (UPDATE_TRANSLATIONS)
         qt5_create_translation(QM_FILES ${SRCS} ${FORMS} ${TS_FILES} OPTIONS -locations absolute)
+        qt5_create_translation(TS_SOURCE_FILE
+            ${SRCS} ${FORMS}
+            ${TRANSLATION_TEMPLATE}
+            OPTIONS -locations absolute
+        )
     else()
         QT5_ADD_TRANSLATION(QM_FILES ${TS_FILES})
     endif()
@@ -160,6 +166,11 @@ else()
     QT4_WRAP_UI(UIS ${FORMS})
     if (UPDATE_TRANSLATIONS)
         qt4_create_translation(QM_FILES ${SRCS} ${FORMS} ${TS_FILES} OPTIONS -locations absolute)
+        qt4_create_translation(TS_SOURCE_FILE
+            ${SRCS} ${FORMS}
+            ${TRANSLATION_TEMPLATE}
+            OPTIONS -locations absolute
+        )
     else()
         QT4_ADD_TRANSLATION(QM_FILES ${TS_FILES})
     endif()
@@ -305,6 +316,7 @@ add_library(${LXQT_LIBRARY_NAME}
            ${dbus_generated}
            ${UIS} ${MOCS}
            ${QM_FILES}
+           ${TS_SOURCE_FILE}
            ${QRC_CXX_SOURCES}
            
 )
