@@ -1,5 +1,5 @@
 #!/bin/sh
-LAST_LXQT_VER="0.7.0"
+LAST_LXQT_VER="0.8.0"
 CURRENT_LXQT_VER="HEAD"
 
 LAST_QTXDG_VER="0.5.3"
@@ -18,7 +18,6 @@ LAST_COMPTON_CONF_VER="0.1.0"
 CURRENT_COMPTON_QT_VER="HEAD"
 
 # change log for main lxqt components
-LAST_VER="0.7.0"
 COMPONENTS="
 	liblxqt \
 	liblxqt-mount \
@@ -47,7 +46,7 @@ done
 # change log for newly-added lxqt components
 COMPONENTS="
 	lxqt-admin"
-	
+
 for component in $COMPONENTS
 do
 	echo ""; echo "Changes of $component:";
