@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.9)
 project(liblxqt)
 
 set(LXQT_MAJOR_VERSION 0)
-set(LXQT_MINOR_VERSION 7)
+set(LXQT_MINOR_VERSION 8)
 set(LXQT_PATCH_VERSION 0)
 
 # Set default installation paths
@@ -246,7 +246,7 @@ set(CFG_LXQT_USE_FILE       ${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}_use.cmake)
 set(CFG_LXQT_TARGETS_FILE   ${LXQT_INTREE_TARGETS_FILE})
 
 configure_file(
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqtX-config.cmake.in 
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqtX-config.cmake.in
     ${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-config.cmake
     @ONLY
 )
@@ -269,7 +269,7 @@ set(CFG_LXQT_USE_FILE       ${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/${LXQ
 set(CFG_LXQT_TARGETS_FILE   ${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/${LXQT_LIBRARY_NAME}-targets.cmake)
 
 configure_file(
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqtX-config.cmake.in 
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqtX-config.cmake.in
     ${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}-config.cmake
     @ONLY
 )
@@ -289,14 +289,14 @@ configure_file(
     @ONLY
 )
 
-install(FILES 
+install(FILES
     ${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}-config.cmake
     ${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}_use.cmake
     DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}
     COMPONENT Devel
 )
 
-install(EXPORT 
+install(EXPORT
     ${LXQT_LIBRARY_NAME}-targets
     DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}
     COMPONENT Devel
@@ -320,7 +320,7 @@ add_library(${LXQT_LIBRARY_NAME}
            ${QM_FILES}
            ${TS_SOURCE_FILE}
            ${QRC_CXX_SOURCES}
-           
+
 )
 
 if (USE_QT5)
@@ -343,9 +343,9 @@ set_target_properties(${LXQT_LIBRARY_NAME} PROPERTIES
     SOVERSION ${LXQT_MAJOR_VERSION}
 )
 
-install(TARGETS 
-    ${LXQT_LIBRARY_NAME} 
-    DESTINATION ${CMAKE_INSTALL_LIBDIR} 
+install(TARGETS
+    ${LXQT_LIBRARY_NAME}
+    DESTINATION ${CMAKE_INSTALL_LIBDIR}
     EXPORT ${LXQT_LIBRARY_NAME}-targets
     LIBRARY DESTINATION ${CMAKE_INSTALL_FULL_LIBDIR}
 )
