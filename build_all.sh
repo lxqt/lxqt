@@ -18,15 +18,6 @@
 JOB_NUM=`nproc`
 echo "make job number: $JOB_NUM"
 
-# Detect the Qt version we are building for. CMake scripts doesn't allow return
-#   values so, as an workaround, we write the Qt version in a file called
-#   use_qt_config. Then we read it back and delete it.
-
-cmake -P UseQtDetection.cmake
-QT_MAJOR_VERSION=$(cat "./use_qt_config")
-echo "Building for Qt${QT_MAJOR_VERSION}"
-rm -rf ./use_qt_config
-
 
 # autotools-based projects
 
@@ -54,29 +45,6 @@ do
 	./autogen.sh && ./configure $PREF && make -j$JOB_NUM && sudo make install
 	cd ..
 done
-
-# Build QtMimeType
-if [ "x$QT_MAJOR_VERSION" = "x4" ] ; then
-    QMAKE_EXECUTABLES="  \
-    qmake-qt4 \
-    qmake"
-    for q in ${QMAKE_EXECUTABLES}
-    do
-        case `${q} -query QT_VERSION` in
-        4*)
-            QMAKE4_EXECUTABLE=${q}
-            break
-        esac
-    done
-    if [ -z "${QMAKE4_EXECUTABLE}" ] ; then
-        echo "Warning: Qt4 qmake not found. Skipping mimetypes build"
-    else
-        echo "\n\nbuilding mimetypes into ${LXQT_PREFIX}\n"
-        cd "mimetypes"
-        ${QMAKE4_EXECUTABLE} PREFIX=${LXQT_PREFIX} && make && sudo make install
-        cd ..
-    fi
-fi
 
 
 # build libfm
