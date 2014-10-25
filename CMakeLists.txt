@@ -120,7 +120,7 @@ file(GLOB TS_FILES
 # additional cmake files
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
-option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files")
+option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
