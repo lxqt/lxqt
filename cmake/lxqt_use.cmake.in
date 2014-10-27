@@ -90,6 +90,8 @@ else()
     message(FATAL "Qt${LXQT_QT_VERSION} is not supported.")
 endif()
 
+list(APPEND CMAKE_MODULE_PATH ${LXQT_CMAKE_MODULES_DIR})
+
 # Works for Qt4 and Qt5
 include(${QTXDG_USE_FILE})
 
