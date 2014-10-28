@@ -265,7 +265,11 @@ install(EXPORT
     COMPONENT Devel
 )
 
-file(GLOB toInstallModules "${PROJECT_SOURCE_DIR}/cmake/modules/*.cmake")
+file(GLOB toInstallModules
+    "${PROJECT_SOURCE_DIR}/cmake/modules/*.cmake"
+    "${PROJECT_SOURCE_DIR}/cmake/modules/*.in"
+)
+
 install(
     FILES ${toInstallModules}
     DESTINATION  "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/modules"
