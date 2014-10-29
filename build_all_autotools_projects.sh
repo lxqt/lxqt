@@ -18,6 +18,11 @@
 JOB_NUM=`nproc`
 echo "Make job number: $JOB_NUM"
 
+if env | grep -q ^LXQT_PREFIX= ; then
+	PREF="--prefix=$LXQT_PREFIX"
+else
+	PREF=""
+fi
 
 # autotools-based projects
 
@@ -32,11 +37,6 @@ AUTOMAKE_REPOS=" \
 	menu-cache \
 	lxmenu-data"
 
-if env | grep -q ^LXQT_PREFIX= ; then
-	PREF="--prefix=$LXQT_PREFIX"
-else
-	PREF=""
-fi
 
 for d in $AUTOMAKE_REPOS
 do
