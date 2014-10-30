@@ -46,12 +46,6 @@ add_definitions(-DLXQT_SHARE_TRANSLATIONS_DIR=\"${LXQT_TRANSLATIONS_DIR}\")
 add_definitions(-DLXQT_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\")
 add_definitions(-DLXQT_VERSION=\"${LXQT_VERSION}\")
 
-# for backward compatability ----->
-add_definitions(-DLXQT_SHARE_DIR=\"${LXQT_SHARE_DIR}\")
-add_definitions(-DLXQT_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\")
-add_definitions(-DLXQT_VERSION=\"${LXQT_VERSION}\")
-# for backward compatability <-----
-
 #if(NOT "${PROJECT_NAME}" STREQUAL "liblxqt")
 #    message("#################${PROJECT_NAME} liblxqt${LXQT_QT_VERSION}")
 #    add_dependencies("lxqt${LXQT_QT_VERSION}")
