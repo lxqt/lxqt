@@ -38,7 +38,6 @@ include_directories(${LXQT_INCLUDE_DIRS})
 
 link_directories(${LXQT_LIBRARY_DIRS})
 
-#cmake_policy(SET CMP0005 NEW)
 add_definitions(-DLXQT_RELATIVE_SHARE_DIR=\"${LXQT_RELATIVE_SHARE_DIR}\")
 add_definitions(-DLXQT_SHARE_DIR=\"${LXQT_SHARE_DIR}\")
 add_definitions(-DLXQT_RELATIVE_SHARE_TRANSLATIONS_DIR=\"${LXQT_RELATIVE_TRANSLATIONS_DIR}\")
@@ -46,11 +45,7 @@ add_definitions(-DLXQT_SHARE_TRANSLATIONS_DIR=\"${LXQT_TRANSLATIONS_DIR}\")
 add_definitions(-DLXQT_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\")
 add_definitions(-DLXQT_VERSION=\"${LXQT_VERSION}\")
 
-#if(NOT "${PROJECT_NAME}" STREQUAL "liblxqt")
-#    message("#################${PROJECT_NAME} liblxqt${LXQT_QT_VERSION}")
-#    add_dependencies("lxqt${LXQT_QT_VERSION}")
 SET_SOURCE_FILES_PROPERTIES(LXQT_LIBRARIES PROPERTIES OBJECT_DEPENDS lxqt${LXQT_QT_VERSION})
-#endif()
 
 
 if (LXQT_QT_VERSION EQUAL "4")
@@ -72,12 +67,6 @@ list(APPEND CMAKE_MODULE_PATH ${LXQT_CMAKE_MODULES_DIR})
 
 # Works for Qt4 and Qt5
 include(${QTXDG_USE_FILE})
-
-#else()
-#    find_package(Qt4 REQUIRED QUIET)
-#    include(${QT_USE_FILE})
-
-#endif()
 
 
 macro(lxqt_set_default_value VAR_NAME VAR_VALUE)
