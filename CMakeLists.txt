@@ -14,7 +14,6 @@ set(PUB_HDRS
     aboutdialog/lxqtaboutdialog.h
     addplugindialog/lxqtaddplugindialog.h
     lxqtsettings.h
-    lxqtxfitman.h
     lxqtplugininfo.h
     lxqtpowermanager.h
     lxqtscreensaver.h
@@ -36,7 +35,6 @@ set(PUB_HDRS
 set(PUBLIC_CLASSES
     AboutDialog
     Settings
-    XfitMan
     PluginInfo
     PowerManager
     AddPluginDialog
@@ -64,7 +62,6 @@ set(PRIV_HDRS
 set(SRCS
     aboutdialog/lxqtaboutdialog.cpp
     aboutdialog/technicalinfo.cpp
-    lxqtxfitman.cpp
     lxqtplugininfo.cpp
     lxqtpowermanager.cpp
     addplugindialog/lxqtaddplugindialog.cpp
