@@ -50,3 +50,5 @@ Other
 
 For anything else, you can always drop by our mailing list and say hello!
   https://lists.sourceforge.net/lists/listinfo/lxde-list
+
+If you prefer IRC, we also have a #lxde channel on chat.freenode.net.
