@@ -13,6 +13,7 @@ set(LXQT_PKG_CONFIG_DESCRIPTION "Shared library for LXQt applications")
 set(PUB_HDRS
     aboutdialog/lxqtaboutdialog.h
     addplugindialog/lxqtaddplugindialog.h
+    lxqthtmldelegate.h
     lxqtsettings.h
     lxqtplugininfo.h
     lxqtpowermanager.h
@@ -34,6 +35,7 @@ set(PUB_HDRS
 
 set(PUBLIC_CLASSES
     AboutDialog
+    HtmlDelegate
     Settings
     PluginInfo
     PowerManager
@@ -62,6 +64,7 @@ set(PRIV_HDRS
 set(SRCS
     aboutdialog/lxqtaboutdialog.cpp
     aboutdialog/technicalinfo.cpp
+    lxqthtmldelegate.cpp
     lxqtplugininfo.cpp
     lxqtpowermanager.cpp
     addplugindialog/lxqtaddplugindialog.cpp
@@ -87,6 +90,7 @@ set(MOCS
     aboutdialog/lxqtaboutdialog.h
     aboutdialog/lxqtaboutdialog_p.h
     addplugindialog/lxqtaddplugindialog.h
+    lxqthtmldelegate.h
     lxqtpowermanager.h
     lxqtsettings.h
     lxqtscreensaver.h
@@ -152,12 +156,7 @@ set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets Qt5Xml Qt5DBus Qt5X11Extras")
 
 include(${QTXDG_USE_FILE})
 
-find_package(X11 REQUIRED QUIET)
-
 include_directories(
-    "${CMAKE_CURRENT_SOURCE_DIR}"
-    "${CMAKE_CURRENT_BINARY_DIR}"
-    "${X11_INCLUDE_DIR}"
     "${QTXDG_INCLUDE_DIRS}"
 )
 
@@ -292,7 +291,6 @@ add_library(${LXQT_LIBRARY_NAME}
 
 qt5_use_modules(${LXQT_LIBRARY_NAME} Widgets DBus X11Extras)
 target_link_libraries(${LXQT_LIBRARY_NAME}
-    ${X11_X11_LIB}
     ${QTXDG_LIBRARIES}
 )
 
