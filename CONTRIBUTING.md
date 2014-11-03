@@ -35,11 +35,14 @@ Bug reports
 -----------
 
 All our issues are tracked on Github.
-Please file all general LXQt bug reports on the general LXDE-Qt bug tracker:
-  https://github.com/lxde/lxde-qt.
+Please file all general LXQt bug reports on the general LXQt bug tracker:
+  https://github.com/lxde/lxqt.
 
-Some components, such as QtXDG, have their own issue tracker on Github:
-  https://github.com/lxde/libqtxdg
+Some components and independent apps have their own issue tracker on Github:
+  https://github.com/lxde/lximage-qt/issues
+  https://github.com/lxde/libqtxdg/issues
+  https://github.com/lxde/libsysstat/issues
+  https://github.com/lxde/menu-cache/issues
 
 
 Other
