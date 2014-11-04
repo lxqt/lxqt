@@ -42,4 +42,4 @@ Contributing
 ============
 
 If you are interested in helping or joining LXQt, please take a look at our
-[CONTRIBUTING document](https://github.com/lxde/lxde-qt/blob/master/CONTRIBUTING)
+[CONTRIBUTING document](https://github.com/lxde/lxde-qt/blob/master/CONTRIBUTING.md)
