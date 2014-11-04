@@ -1,0 +1,64 @@
+# jhbuildrc for building LXDE-Qt
+
+# TODO: Figure out how to do this without jhbuild throwing a warning
+HERE = os.path.abspath(os.path.dirname(__file__))
+
+# Module set
+moduleset = os.path.join(HERE, 'modules-dev.xml')
+
+# Modules to build. Feel free to modify this list to your liking.
+modules = [
+# Base libraries
+    'libfm',
+    'liblxqt-mount',
+    'liblxqt',
+    'libqtxdg',
+    'libsysstat',
+    'menu-cache',
+# Core components
+    'lxmenu-data',
+    'lxqt-about',
+    'lxqt-appswitcher',
+    'lxqt-common',
+    'lxqt-globalkeys',
+    'lxqt-notificationd',
+    'lxqt-panel',
+    'lxqt-power',
+    'lxqt-powermanagement',
+    'lxqt-qtplugin',
+    'lxqt-runner',
+    'lxqt-session',
+    'pcmanfm-qt',
+# Optional components
+#    'lxqt-lightdm-greeter',
+    'lxqt-openssh-askpass',
+    'lxqt-policykit',
+# Other
+#    'qt-gtk-engine',
+# System configuration tools
+    'compton-conf',
+    'lxinput-qt',
+    'lxqt-config-randr',
+    'lxqt-config',
+    'obconf-qt',
+# Utilities
+    'lximage-qt'
+]
+
+# Check out sources to src/
+checkoutroot = os.path.join(HERE, 'src/')
+
+# Build out of tree at build/
+buildroot = os.path.join(HERE, 'build/')
+
+# Install to install/
+prefix = os.path.join(HERE, 'install/')
+
+# Use the installation prefix for XDG data and configuration
+os.environ['XDG_DATA_DIRS'] = os.path.join(prefix, 'share/')
+os.environ['XDG_CONFIG_DIRS'] = os.path.join(prefix, 'etc', 'xdg/')
+
+# Save all user data inside the installation directory
+os.environ['XDG_DATA_HOME'] = os.path.join(prefix, '.local', 'share/')
+os.environ['XDG_CONFIG_HOME'] = os.path.join(prefix, '.config/')
+os.environ['XDG_CACHE_HOME'] = os.path.join(prefix, '.cache/')
