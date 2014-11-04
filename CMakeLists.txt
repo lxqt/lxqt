@@ -113,13 +113,11 @@ set(FORMS
     addplugindialog/lxqtaddplugindialog.ui
 )
 
-set(TRANSLATION_TEMPLATE "${CMAKE_CURRENT_SOURCE_DIR}/translations/source.ts")
-file(GLOB TS_FILES
-    "${CMAKE_CURRENT_SOURCE_DIR}/translations/liblxqt_*.ts"
-)
-
 # additional cmake files
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+list(APPEND CMAKE_MODULE_PATH
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmake
+    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules
+)
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
 
@@ -135,16 +133,21 @@ find_package(Qt5Xdg REQUIRED)
 message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
 
 QT5_WRAP_UI(UIS ${FORMS})
-if (UPDATE_TRANSLATIONS)
-    qt5_create_translation(QM_FILES ${SRCS} ${FORMS} ${TS_FILES} OPTIONS -locations absolute)
-    qt5_create_translation(TS_SOURCE_FILE
-        ${SRCS} ${FORMS}
-        ${TRANSLATION_TEMPLATE}
-        OPTIONS -locations absolute
-    )
-else()
-    QT5_ADD_TRANSLATION(QM_FILES ${TS_FILES})
-endif()
+
+## Translations
+include(LXQtTranslateTs)
+
+lxqt_translate_ts(QM_FILES
+    UPDATE_TRANSLATIONS
+        ${UPDATE_TRANSLATIONS}
+    SOURCES
+        ${SRCS}
+        ${FORMS}
+    INSTALL_DIR
+        ${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}
+)
+
+
 QT5_ADD_DBUS_INTERFACE(SRCS
     dbus/org.freedesktop.Notifications.xml
     notifications_interface
@@ -284,7 +287,6 @@ add_library(${LXQT_LIBRARY_NAME}
            ${dbus_generated}
            ${UIS} ${MOCS}
            ${QM_FILES}
-           ${TS_SOURCE_FILE}
            ${QRC_CXX_SOURCES}
 
 )
@@ -311,7 +313,6 @@ export(TARGETS ${LXQT_LIBRARY_NAME} ${QTXDG_TARGET} FILE ${LXQT_INTREE_TARGETS_F
 
 install(FILES ${PUB_HDRS} DESTINATION "${LXQT_INSTALL_INCLUDE_DIR}/LXQt")
 install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION "${LXQT_INSTALL_INCLUDE_DIR}/LXQt")
-install(FILES ${QM_FILES} DESTINATION "${LXQT_TRANSLATIONS_DIR}/liblxqt")
 
 #************************************************
 # Create pkgconfig file
