@@ -18,27 +18,20 @@ modules = [
 # Core components
     'lxmenu-data',
     'lxqt-about',
-    'lxqt-appswitcher',
     'lxqt-common',
     'lxqt-globalkeys',
     'lxqt-notificationd',
     'lxqt-panel',
-    'lxqt-power',
     'lxqt-powermanagement',
-#    'lxqt-qtplugin',
     'lxqt-runner',
     'lxqt-session',
     'pcmanfm-qt',
 # Optional components
-#    'lxqt-lightdm-greeter',
     'lxqt-openssh-askpass',
     'lxqt-policykit',
-# Other
-#    'qt-gtk-engine',
 # System configuration tools
     'compton-conf',
     'lxinput-qt',
-    'lxqt-config-randr',
     'lxqt-config',
     'obconf-qt',
 # Utilities

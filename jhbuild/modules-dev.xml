@@ -112,7 +112,7 @@
         <branch module="lxinput-qt.git" />
         <dependencies>
             <dep package="lxqt-session" />
-        </dependencies> 
+        </dependencies>
     </cmake>
 
     <cmake id="obconf-qt">
@@ -123,22 +123,11 @@
         <branch module="compton-conf.git" />
     </cmake>
 
-    <cmake id="lxqt-config-randr">
-        <branch module="lxqt-config-randr.git" />
-    </cmake>
-
     <cmake id="lxqt-runner">
         <branch module="lxqt-runner.git" />
         <dependencies>
             <dep package="menu-cache" />
             <dep package="liblxqt" />
-        </dependencies>
-    </cmake>
-
-    <cmake id="lxqt-appswitcher">
-        <branch module="lxqt-appswitcher.git" />
-        <dependencies>
-            <dep package="lxqt-globalkeys" />
         </dependencies>
     </cmake>
 
@@ -152,13 +141,6 @@
 
     <cmake id="lxqt-openssh-askpass">
         <branch module="lxqt-openssh-askpass.git" />
-        <dependencies>
-            <dep package="liblxqt" />
-        </dependencies>
-    </cmake>
-
-    <cmake id="lxqt-power">
-        <branch module="lxqt-power.git" />
         <dependencies>
             <dep package="liblxqt" />
         </dependencies>

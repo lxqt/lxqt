@@ -36,7 +36,6 @@ CMAKE_REPOS=" \
 	lxqt-policykit \
 	lxqt-powermanagement \
 	lxqt-runner \
-	lxqt-config-randr \
 	pcmanfm-qt \
 	lximage-qt"
 
