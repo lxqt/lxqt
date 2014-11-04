@@ -58,6 +58,8 @@
 # CMake v2.8.3 needed to use the CMakeParseArguments module
 cmake_minimum_required(VERSION 2.8.3 FATAL_ERROR)
 
+# We use our patched version to round a annoying bug.
+include(Qt5PatchedLinguistToolsMacros)
 
 function(lxqt_translate_ts qmFiles)
     set(oneValueArgs USE_QT5 UPDATE_TRANSLATIONS TEMPLATE TRANSLATION_DIR INSTALL_DIR)
@@ -86,18 +88,18 @@ function(lxqt_translate_ts qmFiles)
     if(TR_USE_QT5)
         # Qt5
         if (TR_UPDATE_TRANSLATIONS)
-            qt5_create_translation(QMS
+            qt5_patched_create_translation(QMS
                 ${TR_SOURCES}
                 ${templateFile}
                 OPTIONS -locations absolute
             )
-            qt5_create_translation(QM
+            qt5_patched_create_translation(QM
                 ${TR_SOURCES}
                 ${tsFiles}
                 OPTIONS -locations absolute
             )
         else()
-            qt5_add_translation(QM ${tsFiles})
+            qt5_patched_add_translation(QM ${tsFiles})
         endif()
     else()
         # Qt4

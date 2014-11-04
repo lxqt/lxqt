@@ -32,7 +32,7 @@
 
 include(CMakeParseArguments)
 
-function(QT5_CREATE_TRANSLATION _qm_files)
+function(QT5_PATCHED_CREATE_TRANSLATION _qm_files)
     set(options)
     set(oneValueArgs)
     set(multiValueArgs OPTIONS)
@@ -52,12 +52,15 @@ function(QT5_CREATE_TRANSLATION _qm_files)
             list(APPEND _my_sources ${_abs_FILE})
         endif()
     endforeach()
-    message(STATUS "_my_tsfiles: ${_my_tsfiles}")
     foreach(_ts_file ${_my_tsfiles})
         if(_my_sources)
           # make a list file to call lupdate on, so we don't make our commands too
           # long for some systems
-          get_filename_component(_ts_name ${_ts_file} NAME_WE)
+#          get_filename_component(_ts_name ${_ts_file} NAME_WE)
+
+          get_filename_component(_name ${_ts_file} NAME)
+          string(REGEX REPLACE "^(.+)(\\.[^.]+)$" "\\1" _ts_name ${_name})
+
           set(_ts_lst_file "${CMAKE_CURRENT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/${_ts_name}_lst_file")
           set(_lst_file_srcs)
           foreach(_lst_file_src ${_my_sources})
@@ -77,15 +80,19 @@ function(QT5_CREATE_TRANSLATION _qm_files)
             ARGS ${_lupdate_options} "@${_ts_lst_file}" -ts ${_ts_file}
             DEPENDS ${_my_sources} ${_ts_lst_file} VERBATIM)
     endforeach()
-    qt5_add_translation(${_qm_files} ${_my_tsfiles})
+    qt5_patched_add_translation(${_qm_files} ${_my_tsfiles})
     set(${_qm_files} ${${_qm_files}} PARENT_SCOPE)
 endfunction()
 
 
-function(QT5_ADD_TRANSLATION _qm_files)
+function(QT5_PATCHED_ADD_TRANSLATION _qm_files)
     foreach(_current_FILE ${ARGN})
         get_filename_component(_abs_FILE ${_current_FILE} ABSOLUTE)
-        get_filename_component(qm ${_abs_FILE} NAME_WE)
+#        get_filename_component(qm ${_abs_FILE} NAME_WE)
+
+        get_filename_component(_name ${_abs_FILE} NAME)
+        string(REGEX REPLACE "^(.+)(\\.[^.]+)$" "\\1" qm ${_name})
+
         get_source_file_property(output_location ${_abs_FILE} OUTPUT_LOCATION)
         if(output_location)
             file(MAKE_DIRECTORY "${output_location}")
