@@ -134,20 +134,6 @@ message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
 
 QT5_WRAP_UI(UIS ${FORMS})
 
-## Translations
-include(LXQtTranslateTs)
-
-lxqt_translate_ts(QM_FILES
-    UPDATE_TRANSLATIONS
-        ${UPDATE_TRANSLATIONS}
-    SOURCES
-        ${SRCS}
-        ${FORMS}
-    INSTALL_DIR
-        ${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}
-)
-
-
 QT5_ADD_DBUS_INTERFACE(SRCS
     dbus/org.freedesktop.Notifications.xml
     notifications_interface
@@ -181,6 +167,19 @@ set(LXQT_INSTALL_CMAKE_DIR "${CMAKE_INSTALL_PREFIX}/share/cmake")
 
 include(cmake/FindInstallConfigPath.cmake)
 include(create_portable_headers)
+
+## Translations
+include(LXQtTranslateTs)
+
+lxqt_translate_ts(QM_FILES
+    UPDATE_TRANSLATIONS
+        ${UPDATE_TRANSLATIONS}
+    SOURCES
+        ${SRCS}
+        ${FORMS}
+    INSTALL_DIR
+        ${LXQT_SHARE_DIR}/${PROJECT_NAME}
+)
 
 message(STATUS "")
 message(STATUS "liblxqt version: ${LXQT_VERSION}")
