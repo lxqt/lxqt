@@ -20,6 +20,8 @@ For more information on git, see the official website:
 
 Please make sure you adhere to the project's styleguide when proposing changes.
 
+A more in-depth document for aspiring contributors is located on the LXQt wiki:
+  https://github.com/lxde/lxqt/wiki/Contributing-code
 
 Translations
 ------------
