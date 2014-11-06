@@ -178,7 +178,7 @@ lxqt_translate_ts(QM_FILES
         ${SRCS}
         ${FORMS}
     INSTALL_DIR
-        ${LXQT_SHARE_DIR}/${PROJECT_NAME}
+        ${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}
 )
 
 message(STATUS "")
