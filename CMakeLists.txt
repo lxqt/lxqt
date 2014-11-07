@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.9)
+cmake_minimum_required(VERSION 2.8.11)
 
 project(liblxqt)
 
@@ -290,8 +290,10 @@ add_library(${LXQT_LIBRARY_NAME}
 
 )
 
-qt5_use_modules(${LXQT_LIBRARY_NAME} Widgets DBus X11Extras)
 target_link_libraries(${LXQT_LIBRARY_NAME}
+    Qt5::Widgets
+    Qt5::DBus
+    Qt5::X11Extras
     ${QTXDG_LIBRARIES}
 )
 
