@@ -19,6 +19,7 @@ set(PUB_HDRS
     lxqtpowermanager.h
     lxqtscreensaver.h
     lxqtapplication.h
+    lxqtsingleapplication.h
     lxqttranslator.h
     lxqtprogramfinder.h
 
@@ -42,6 +43,7 @@ set(PUBLIC_CLASSES
     AddPluginDialog
     ScreenSaver
     Application
+    SingleApplication
     Translator
     ProgramFinder
 
@@ -71,6 +73,7 @@ set(SRCS
     lxqtsettings.cpp
     lxqtscreensaver.cpp
     lxqtapplication.cpp
+    lxqtsingleapplication.cpp
     lxqttranslator.cpp
     lxqtprogramfinder.cpp
 
@@ -130,6 +133,7 @@ find_package(Qt5DBus REQUIRED QUIET)
 find_package(Qt5X11Extras REQUIRED QUIET)
 find_package(Qt5LinguistTools REQUIRED QUIET)
 find_package(Qt5Xdg REQUIRED)
+find_package(KF5WindowSystem REQUIRED QUIET)
 message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
 
 QT5_WRAP_UI(UIS ${FORMS})
@@ -139,8 +143,15 @@ QT5_ADD_DBUS_INTERFACE(SRCS
     notifications_interface
 )
 
+QT5_ADD_DBUS_ADAPTOR(SRCS
+    dbus/org.lxqt.SingleApplication.xml
+    lxqtsingleapplication.h LxQt::SingleApplication
+)
+
 set(LXQT_QT_VERSION "5")
 set(LXQT_QT_VERSION_SUFFIX "-qt5")
+
+# KF5WindowSystem is missing here. KF5WindowSystem doesn't provide an .pc file.
 set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets Qt5Xml Qt5DBus Qt5X11Extras")
 
 include(${QTXDG_USE_FILE})
@@ -291,6 +302,7 @@ add_library(${LXQT_LIBRARY_NAME}
 )
 
 target_link_libraries(${LXQT_LIBRARY_NAME}
+    KF5::WindowSystem
     Qt5::Widgets
     Qt5::DBus
     Qt5::X11Extras
