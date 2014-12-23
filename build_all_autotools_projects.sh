@@ -27,7 +27,10 @@ fi
 # autotools-based projects
 
 # build libfm-extras
-echo "\n\nBuilding: libfm extras into ${PREF:-<default>}\n"
+echo
+echo
+echo "Building: libfm extras into ${PREF:-<default>}"
+echo
 cd "libfm"
 (./autogen.sh $PREF --enable-debug --without-gtk --disable-demo && ./configure $PREF --with-extra-only && make -j$JOB_NUM && sudo make install) || exit 1
 cd ..
@@ -48,7 +51,10 @@ done
 
 
 # build libfm
-echo "\n\nBuilding: libfm into ${PREF:-<default>}\n"
+echo
+echo
+echo "Building: libfm into ${PREF:-<default>}"
+echo
 cd "libfm"
 (./autogen.sh $PREF --enable-debug --without-gtk --disable-demo && ./configure $PREF && make -j$JOB_NUM && sudo make install) || exit 1
 cd ..

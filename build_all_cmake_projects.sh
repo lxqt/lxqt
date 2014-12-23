@@ -78,7 +78,10 @@ ALL_CMAKE_FLAGS="$CMAKE_BUILD_TYPE $CMAKE_INSTALL_PREFIX $CMAKE_LIB_SUFFIX $CMAK
 
 for d in $CMAKE_REPOS
 do
-	echo "\n\nBuilding: $d using externally specified options: $ALL_CMAKE_FLAGS\n"
+	echo
+	echo
+	echo "Building: $d using externally specified options: $ALL_CMAKE_FLAGS"
+	echo
 	mkdir -p $d/build
 	cd $d/build
 	(cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM -j$JOB_NUM && sudo $CMAKE_MAKE_PROGRAM install) || exit 1
@@ -87,7 +90,10 @@ done
 
 for d in $OPTIONAL_CMAKE_REPOS
 do
-	echo "\n\nBuilding: $d using externally specified options: $ALL_CMAKE_FLAGS\n"
+	echo
+	echo
+	echo "Building: $d using externally specified options: $ALL_CMAKE_FLAGS"
+	echo
 	mkdir -p $d/build
 	cd $d/build
 	cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM -j$JOB_NUM && sudo $CMAKE_MAKE_PROGRAM install
