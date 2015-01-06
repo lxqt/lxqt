@@ -4,39 +4,44 @@
 #
 # Original Author: Alexander Sokolov <sokoloff.a@gmail.com>
 #
+# funtion lxqt_translate_desktop(_RESULT
+#                           SOURCES <sources>
+#                           [TRANSLATIONS_DIR] translation_directory
+#                    )
+#     Output:
+#       _RESULT The generated .desktop (.desktop) files
+#
+#     Input:
+#
+#       SOURCES List of input desktop files (.destktop.in) to be translated
+#               (merged), relative to the CMakeList.txt.
+#
+#       TRANSLATIONS_DIR Optional path to the directory with the .ts files,
+#                        relative to the CMakeList.txt. Defaults to
+#                        "translations".
+#
 #=============================================================================
 
 function(lxqt_translate_desktop _RESULT)
-    set(_translationDir "translations")
-
     # Parse arguments ***************************************
-    set(_state "")
-    foreach (_arg ${ARGN})
-        if (
-            ("${_arg}_I_HATE_CMAKE" STREQUAL "SOURCES_I_HATE_CMAKE") OR
-            ("${_arg}_I_HATE_CMAKE" STREQUAL "TRANSLATION_DIR_I_HATE_CMAKE")
-           )
+    set(oneValueArgs TRANSLATION_DIR)
+    set(multiValueArgs SOURCES)
 
-            set(_state ${_arg})
+    cmake_parse_arguments(_ARGS "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
-        else()
-            if("${_state}" STREQUAL "SOURCES")
-                get_filename_component (__file ${_arg} ABSOLUTE)
-                set(_sources  ${_sources} ${__file})
-                #set(_sources  ${_sources} ${_arg})
+    # check for unknown arguments
+    set(_UNPARSED_ARGS ${_ARGS_UNPARSED_ARGUMENTS})
+    if (NOT ${_UNPARSED_ARGS} STREQUAL "")
+        MESSAGE(FATAL_ERROR
+          "Unknown arguments '${_UNPARSED_ARGS}'.\n"
+          "See lxqt_translate_desktop() documenation for more information.\n"
+        )
+    endif()
 
-            elseif("${_state}" STREQUAL "TRANSLATION_DIR")
-                set(_translationDir ${_arg})
-                set(_state "")
-
-            else()
-                MESSAGE(FATAL_ERROR
-                  "Unknown argument '${_arg}'.\n"
-                  "See ${CMAKE_CURRENT_LIST_FILE} for more information.\n"
-                )
-            endif()
-        endif()
-    endforeach(_arg)
+    if (NOT DEFINED _ARGS_TRANSLATION_DIR)
+        set(_translationDir "translations")
+    endif()
+    set(_sources ${_ARGS_SOURCES})
 
     get_filename_component (_translationDir ${_translationDir} ABSOLUTE)
 
