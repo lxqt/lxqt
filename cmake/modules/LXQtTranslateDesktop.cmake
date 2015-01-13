@@ -63,7 +63,7 @@ function(lxqt_translate_desktop _RESULT)
         if (_translations)
             add_custom_command(OUTPUT ${_outFile}
                 COMMAND grep -v "'#TRANSLATIONS_DIR='" ${_inFile} > ${_outFile}
-                COMMAND grep --no-filename ${_pattern} ${_translations} >> ${_outFile}
+                COMMAND grep -h ${_pattern} ${_translations} >> ${_outFile}
                 COMMENT "Generating ${_fileName}${_fileExt}"
             )
         else()
