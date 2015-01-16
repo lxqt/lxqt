@@ -30,7 +30,7 @@
 #                           [UPDATE_TRANSLATIONS [Yes | No]]
 #                           SOURCES <sources>
 #                           [TEMPLATE] translation_template
-#                           [TRANSLATIONS_DIRECTORY] translation_directory
+#                           [TRANSLATION_DIR] translation_directory
 #                           [INSTALL_DIR] install_directory
 #                    )
 #     Output:
@@ -46,7 +46,7 @@
 #       TEMPLATE Optional translations files base name. Defaults to
 #                ${PROJECT_NAME}. An .ts extensions is added.
 #
-#       TRANSLATIONS_DIR Optional path to the directory with the .ts files,
+#       TRANSLATION_DIR Optional path to the directory with the .ts files,
 #                        relative to the CMakeList.txt. Defaults to
 #                        "translations".
 #

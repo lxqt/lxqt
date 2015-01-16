@@ -6,7 +6,7 @@
 #
 # funtion lxqt_translate_desktop(_RESULT
 #                           SOURCES <sources>
-#                           [TRANSLATIONS_DIR] translation_directory
+#                           [TRANSLATION_DIR] translation_directory
 #                    )
 #     Output:
 #       _RESULT The generated .desktop (.desktop) files
@@ -16,7 +16,7 @@
 #       SOURCES List of input desktop files (.destktop.in) to be translated
 #               (merged), relative to the CMakeList.txt.
 #
-#       TRANSLATIONS_DIR Optional path to the directory with the .ts files,
+#       TRANSLATION_DIR Optional path to the directory with the .ts files,
 #                        relative to the CMakeList.txt. Defaults to
 #                        "translations".
 #
@@ -38,10 +38,19 @@ function(lxqt_translate_desktop _RESULT)
         )
     endif()
 
+    if (NOT DEFINED _ARGS_SOURCES)
+        set(${_RESULT} "" PARENT_SCOPE)
+        return()
+    else()
+        set(_sources ${_ARGS_SOURCES})
+    endif()
+
     if (NOT DEFINED _ARGS_TRANSLATION_DIR)
         set(_translationDir "translations")
+    else()
+        set(_translationDir ${_ARGS_TRANSLATION_DIR})
     endif()
-    set(_sources ${_ARGS_SOURCES})
+
 
     get_filename_component (_translationDir ${_translationDir} ABSOLUTE)
 
