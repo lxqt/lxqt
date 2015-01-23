@@ -32,6 +32,7 @@ We use Pootle for all our translations.
 For more information on Pootle, please see the official documentation:
   http://docs.translatehouse.org/projects/pootle/
 
+NOTE: Due to issues regarding pootle.lxde.org translators are asked to commit temporarily on GitHub. Pootle server will be deployed again once LXQt 0.9 is released.
 
 Bug reports
 -----------
@@ -40,11 +41,12 @@ All our issues are tracked on Github.
 Please file all general LXQt bug reports on the general LXQt bug tracker:
   https://github.com/lxde/lxqt.
 
-Some components and independent apps have their own issue tracker on Github:
-  https://github.com/lxde/lximage-qt/issues
-  https://github.com/lxde/libqtxdg/issues
-  https://github.com/lxde/libsysstat/issues
-  https://github.com/lxde/menu-cache/issues
+Some components and independent apps have their own issue tracker on GitHub:
+  libqtxdg (https://github.com/lxde/libqtxdg/issues),
+  libsysstat (https://github.com/lxde/libsysstat/issues),
+  menu-cache (https://github.com/lxde/menu-cache/issues),
+  LXImage (https://github.com/lxde/lximage-qt/issues) and
+  PCManFM Qt (https://github.com/lxde/pcmanfm-qt/issues)
 
 
 Other
