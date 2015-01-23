@@ -32,7 +32,7 @@ We use Pootle for all our translations.
 For more information on Pootle, please see the official documentation:
   http://docs.translatehouse.org/projects/pootle/
 
-NOTE: Due to issues regarding pootle.lxde.org translators are asked to commit temporarily on GitHub. Pootle server will be deployed again once LXQt 0.9 is released.
+NOTE: Due to issues regarding pootle.lxde.org translators are asked to commit temporarily on GitHub. Pootle server will be deployed again some time after LXQt 0.9 is released.
 
 Bug reports
 -----------
