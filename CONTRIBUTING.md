@@ -42,12 +42,14 @@ Please file all general LXQt bug reports on the general LXQt bug tracker:
   https://github.com/lxde/lxqt.
 
 Some components and independent apps have their own issue tracker on GitHub:
-  libqtxdg (https://github.com/lxde/libqtxdg/issues),
+* components: libqtxdg (https://github.com/lxde/libqtxdg/issues),
   libsysstat (https://github.com/lxde/libsysstat/issues),
-  menu-cache (https://github.com/lxde/menu-cache/issues),
+  menu-cache (https://github.com/lxde/menu-cache/issues)
+* GUI tools, applications: ComptonConf (https://github.com/lxde/compton-conf/issues),
   ObConf Qt (https://github.com/lxde/obconf-qt/issues),
-  LXImage (https://github.com/lxde/lximage-qt/issues) and
-  PCManFM Qt (https://github.com/lxde/pcmanfm-qt/issues)
+  PCManFM Qt (https://github.com/lxde/pcmanfm-qt/issues),
+  LXImage (https://github.com/lxde/lximage-qt/issues)
+* web site lxqt.org (https://github.com/lxde/lxde.github.io/issues)
 
 
 Other
