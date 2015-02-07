@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.11)
 project(liblxqt)
 
 set(LXQT_MAJOR_VERSION 0)
-set(LXQT_MINOR_VERSION 8)
+set(LXQT_MINOR_VERSION 9)
 set(LXQT_PATCH_VERSION 0)
 
 # Set default installation paths
