@@ -28,7 +28,7 @@ files=(
 
 for f in ${files[@]}; do
 	cd "$f"
-	git tag -fam "Release v$1" $1 && git push --tags --force
+	git tag -fsm "Release v$1" $1 && git push --tags --force
 
 	echo "Packaging $f"
 	git archive --prefix=$f-$1/ $1 -o "../dist/$1/$f-$1.tar.gz"
