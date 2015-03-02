@@ -8,12 +8,8 @@ whether they are a developer, translator or user.
 Code contributions
 ------------------
 
-LXDE uses Git as a version control system. All our code is available online:
-  http://git.lxde.org/
-
-Aspiring contributors may choose to use our Github mirrors instead.
+LXDE uses Git as a version control system. All our code is available online (https://github.com/LXDE).
 Pull Requests directly from Github are accepted.
-  https://github.com/LXDE
 
 For more information on git, see the official website:
   http://git-scm.com/
