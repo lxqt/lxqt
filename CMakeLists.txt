@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.11)
+cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 
 project(liblxqt)
 
@@ -158,11 +158,6 @@ set(LXQT_QT_VERSION "5")
 # KF5WindowSystem is missing here. KF5WindowSystem doesn't provide an .pc file.
 set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets Qt5Xml Qt5DBus Qt5X11Extras")
 
-include(${QTXDG_USE_FILE})
-
-include_directories(
-    "${QTXDG_INCLUDE_DIRS}"
-)
 
 
 set(LXQT_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_PATCH_VERSION})
@@ -307,7 +302,7 @@ target_link_libraries(${LXQT_LIBRARY_NAME}
     Qt5::Widgets
     Qt5::DBus
     Qt5::X11Extras
-    ${QTXDG_LIBRARIES}
+    Qt5Xdg
 )
 
 set_target_properties(${LXQT_LIBRARY_NAME} PROPERTIES
