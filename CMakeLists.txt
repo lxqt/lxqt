@@ -23,7 +23,6 @@ set(LXQT_PKG_CONFIG_DESCRIPTION "Shared library for LXQt applications")
 
 set(PUB_HDRS
     aboutdialog/lxqtaboutdialog.h
-    addplugindialog/lxqtaddplugindialog.h
     lxqthtmldelegate.h
     lxqtsettings.h
     lxqtplugininfo.h
@@ -51,7 +50,6 @@ set(PUBLIC_CLASSES
     Settings
     PluginInfo
     PowerManager
-    AddPluginDialog
     ScreenSaver
     Application
     SingleApplication
@@ -80,7 +78,6 @@ set(SRCS
     lxqthtmldelegate.cpp
     lxqtplugininfo.cpp
     lxqtpowermanager.cpp
-    addplugindialog/lxqtaddplugindialog.cpp
     lxqtsettings.cpp
     lxqtscreensaver.cpp
     lxqtapplication.cpp
@@ -103,7 +100,6 @@ set(SRCS
 set(MOCS
     aboutdialog/lxqtaboutdialog.h
     aboutdialog/lxqtaboutdialog_p.h
-    addplugindialog/lxqtaddplugindialog.h
     lxqthtmldelegate.h
     lxqtpowermanager.h
     lxqtsettings.h
@@ -124,7 +120,6 @@ set(MOCS
 set(FORMS
     aboutdialog/lxqtaboutdialog.ui
     configdialog/lxqtconfigdialog.ui
-    addplugindialog/lxqtaddplugindialog.ui
 )
 
 # additional cmake files
