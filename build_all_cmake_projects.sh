@@ -35,7 +35,8 @@ CMAKE_REPOS=" \
 	lxqt-powermanagement \
 	lxqt-runner \
 	pcmanfm-qt \
-	lximage-qt"
+	lximage-qt \
+	lxqt-sudo"
 
 OPTIONAL_CMAKE_REPOS=" \
 	compton-conf \

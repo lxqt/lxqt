@@ -92,3 +92,6 @@
 [submodule "lxqt-admin"]
 	path = lxqt-admin
 	url = ../lxqt-admin.git
+[submodule "lxqt-sudo"]
+	path = lxqt-sudo
+	url = ../lxqt-sudo
