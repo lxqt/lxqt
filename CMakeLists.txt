@@ -156,7 +156,7 @@ QT5_ADD_DBUS_ADAPTOR(SRCS
 set(LXQT_QT_VERSION "5")
 
 # KF5WindowSystem is missing here. KF5WindowSystem doesn't provide an .pc file.
-set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets, Qt5Xml, Qt5DBus, Qt5X11Extras")
+set(LXQT_PKG_CONFIG_REQUIRES "Qt5Xdg >= 1.2.0, Qt5Widgets, Qt5Xml, Qt5DBus, Qt5X11Extras")
 
 
 # Standard directories for installation
