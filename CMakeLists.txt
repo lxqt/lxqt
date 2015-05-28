@@ -156,9 +156,11 @@ QT5_ADD_DBUS_ADAPTOR(SRCS
 set(LXQT_QT_VERSION "5")
 
 # KF5WindowSystem is missing here. KF5WindowSystem doesn't provide an .pc file.
-set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets Qt5Xml Qt5DBus Qt5X11Extras")
+set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets, Qt5Xml, Qt5DBus, Qt5X11Extras")
 
 
+# Standard directories for installation
+include(LXQtCreatePkgConfigFile)
 
 set(LXQT_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_PATCH_VERSION})
 set(LXQT_LIBRARY_NAME "lxqt" CACHE STRING "lxqt")
@@ -324,13 +326,17 @@ install(FILES ${PUB_HDRS} DESTINATION "${LXQT_INSTALL_INCLUDE_DIR}/LXQt")
 install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION "${LXQT_INSTALL_INCLUDE_DIR}/LXQt")
 
 #************************************************
-# Create pkgconfig file
+# Create and install pkgconfig file
 #************************************************
-lxqt_create_pkgconfig_file(${LXQT_LIBRARY_NAME}
-    ${LXQT_PKG_CONFIG_DESCRIPTION}
-    ${LXQT_PKG_CONFIG_REQUIRES}
-    ${LXQT_LIBRARY_NAME}
-    ${LXQT_VERSION}
+lxqt_create_pkgconfig_file(
+    PACKAGE_NAME ${LXQT_LIBRARY_NAME}
+    DESCRIPTIVE_NAME ${LXQT_LIBRARY_NAME}
+    DESCRIPTION ${LXQT_PKG_CONFIG_DESCRIPTION}
+    INCLUDEDIRS ${LXQT_LIBRARY_NAME}
+    LIBS ${LXQT_LIBRARY_NAME}
+    REQUIRES ${LXQT_PKG_CONFIG_REQUIRES}
+    VERSION ${LXQT_VERSION}
+    INSTALL
 )
 #************************************************
 
