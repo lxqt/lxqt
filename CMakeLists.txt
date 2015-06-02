@@ -259,6 +259,11 @@ if (CMAKE_COMPILER_IS_GNUCXX)
 endif()
 add_definitions(-DCOMPILE_LIBLXQT)
 
+string (TOLOWER "${CMAKE_BUILD_TYPE}" CMAKE_BUILD_TYPE)
+if (CMAKE_BUILD_TYPE STREQUAL "release")
+    add_definitions(-DQT_NO_DEBUG_OUTPUT -DQT_NO_WARNING_OUTPUT)
+endif()
+
 
 configure_file(
     ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt_use.cmake.in
