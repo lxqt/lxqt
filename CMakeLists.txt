@@ -260,7 +260,7 @@ endif()
 add_definitions(-DCOMPILE_LIBLXQT)
 
 string (TOLOWER "${CMAKE_BUILD_TYPE}" CMAKE_BUILD_TYPE)
-if (CMAKE_BUILD_TYPE STREQUAL "release")
+if (NOT CMAKE_BUILD_TYPE STREQUAL "debug")
     add_definitions(-DQT_NO_DEBUG_OUTPUT -DQT_NO_WARNING_OUTPUT)
 endif()
 
