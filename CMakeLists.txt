@@ -22,7 +22,6 @@ set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for librari
 set(LXQT_PKG_CONFIG_DESCRIPTION "Shared library for LXQt applications")
 
 set(PUB_HDRS
-    aboutdialog/lxqtaboutdialog.h
     lxqthtmldelegate.h
     lxqtsettings.h
     lxqtplugininfo.h
@@ -45,7 +44,6 @@ set(PUB_HDRS
 )
 
 set(PUBLIC_CLASSES
-    AboutDialog
     HtmlDelegate
     Settings
     PluginInfo
@@ -66,15 +64,7 @@ set(PUBLIC_CLASSES
     RotatedWidget
 )
 
-set(PRIV_HDRS
-    aboutdialog/lxqtaboutdialog_p.h
-    aboutdialog/technicalinfo.h
-    translatorsinfo/translatorsinfo.h
-)
-
 set(SRCS
-    aboutdialog/lxqtaboutdialog.cpp
-    aboutdialog/technicalinfo.cpp
     lxqthtmldelegate.cpp
     lxqtplugininfo.cpp
     lxqtpowermanager.cpp
@@ -94,12 +84,9 @@ set(SRCS
     lxqtnotification.cpp
     lxqtgridlayout.cpp
     lxqtrotatedwidget.cpp
-    translatorsinfo/translatorsinfo.cpp
 )
 
 set(MOCS
-    aboutdialog/lxqtaboutdialog.h
-    aboutdialog/lxqtaboutdialog_p.h
     lxqthtmldelegate.h
     lxqtpowermanager.h
     lxqtsettings.h
@@ -118,7 +105,6 @@ set(MOCS
 )
 
 set(FORMS
-    aboutdialog/lxqtaboutdialog.ui
     configdialog/lxqtconfigdialog.ui
 )
 
@@ -295,14 +281,8 @@ install(
     COMPONENT Devel
 )
 
-
-include(translatorsinfo/CMakeLists.txt)
-get_translatorsinfo_qrc(translatorsinfo_qrc)
-qt5_add_resources(QRC_CXX_SOURCES ${translatorsinfo_qrc})
-
 add_library(${LXQT_LIBRARY_NAME}
     SHARED ${PUB_HDRS}
-           ${PRIV_HDRS}
            ${SRCS}
            ${dbus_generated}
            ${UIS} ${MOCS}
