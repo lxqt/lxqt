@@ -248,12 +248,6 @@ if (CMAKE_COMPILER_IS_GNUCXX)
     # manually in the code
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -Wl,-no-undefined -Wall")
 endif()
-add_definitions(-DCOMPILE_LIBLXQT)
-
-if (NOT CMAKE_BUILD_TYPE MATCHES Debug)
-    add_definitions(-DQT_NO_DEBUG_OUTPUT -DQT_NO_WARNING_OUTPUT)
-endif()
-
 
 write_basic_package_version_file(
     "${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-config-version.cmake"
@@ -306,6 +300,22 @@ target_link_libraries(${LXQT_LIBRARY_NAME}
 set_target_properties(${LXQT_LIBRARY_NAME} PROPERTIES
     VERSION   ${LXQT_VERSION}
     SOVERSION ${LXQT_MAJOR_VERSION}
+)
+
+target_compile_definitions(${LXQT_LIBRARY_NAME}
+    PRIVATE "LXQT_RELATIVE_SHARE_DIR=\"${LXQT_RELATIVE_SHARE_DIR}\""
+    PRIVATE "LXQT_SHARE_DIR=\"${LXQT_SHARE_DIR}\""
+    PRIVATE "LXQT_RELATIVE_SHARE_TRANSLATIONS_DIR=\"${LXQT_RELATIVE_TRANSLATIONS_DIR}\""
+    PRIVATE "LXQT_SHARE_TRANSLATIONS_DIR=\"${LXQT_TRANSLATIONS_DIR}\""
+    PRIVATE "LXQT_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\""
+    PRIVATE "LXQT_DATA_DIR=\"${LXQT_DATA_DIR}\""
+    PRIVATE "LXQT_VERSION=\"${LXQT_VERSION}\""
+    PRIVATE "COMPILE_LIBLXQT"
+)
+
+target_compile_definitions(${LXQT_LIBRARY_NAME}
+    PRIVATE "$<$<CONFIG:Release>:QT_NO_DEBUG_OUTPUT>"
+    PRIVATE "$<$<CONFIG:Release>:QT_NO_WARNING_OUTPUT>"
 )
 
 target_include_directories(${LXQT_LIBRARY_NAME}
