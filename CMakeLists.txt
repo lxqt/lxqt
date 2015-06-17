@@ -290,11 +290,12 @@ add_library(${LXQT_LIBRARY_NAME}
 )
 
 target_link_libraries(${LXQT_LIBRARY_NAME}
-    KF5::WindowSystem
-    Qt5::Widgets
-    Qt5::DBus
-    Qt5::X11Extras
-    Qt5Xdg
+    PUBLIC
+        KF5::WindowSystem
+        Qt5::Widgets
+        Qt5::DBus
+        Qt5::X11Extras
+        Qt5Xdg
 )
 
 set_target_properties(${LXQT_LIBRARY_NAME} PROPERTIES
