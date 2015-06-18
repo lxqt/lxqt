@@ -7,6 +7,8 @@ set(LXQT_MINOR_VERSION 9)
 set(LXQT_PATCH_VERSION 0)
 
 include(CheckCXXCompilerFlag)
+include(GNUInstallDirs) # Standard directories for installation
+
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
 if(COMPILER_SUPPORTS_CXX11)
@@ -15,6 +17,17 @@ elseif(COMPILER_SUPPORTS_CXX0X)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
 else()
     message(FATAL "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. C++11 support is required")
+endif()
+
+#-----------------------------------------------------------------------------
+# LXQT_DATA_DIR defaults to CMAKE_INSTALL_FULL_DATADIR. It's added to
+#   XDG_DATA_DIRS by the startlxqt script
+# Warning: Setting LXQT_DATA_DIR must be done after including GNUInstallDirs
+#-----------------------------------------------------------------------------
+if (NOT DEFINED LXQT_DATA_DIR)
+    set(LXQT_DATA_DIR "${CMAKE_INSTALL_FULL_DATADIR}" CACHE PATH
+        "LXQt base directory relative to which data files should be searched"
+    )
 endif()
 
 # Set default installation paths
@@ -151,8 +164,6 @@ include_directories(
     "${QTXDG_INCLUDE_DIRS}"
 )
 
-# Standard directories for installation
-include(GNUInstallDirs)
 
 set(LXQT_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_PATCH_VERSION})
 set(LXQT_LIBRARY_NAME "lxqt" CACHE STRING "lxqt")
