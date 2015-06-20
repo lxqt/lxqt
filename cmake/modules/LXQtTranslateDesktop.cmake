@@ -1,6 +1,6 @@
 #=============================================================================
-# The lxqt_translate_desktop() function was copied from the the
-# LXQt LxQtTranste.cmake
+# The lxqt_translate_desktop() function was copied from the
+# LXQt LxQtTranslate.cmake
 #
 # Original Author: Alexander Sokolov <sokoloff.a@gmail.com>
 #
@@ -34,7 +34,7 @@ function(lxqt_translate_desktop _RESULT)
     if (NOT ${_UNPARSED_ARGS} STREQUAL "")
         MESSAGE(FATAL_ERROR
           "Unknown arguments '${_UNPARSED_ARGS}'.\n"
-          "See lxqt_translate_desktop() documenation for more information.\n"
+          "See lxqt_translate_desktop() documentation for more information.\n"
         )
     endif()
 
@@ -65,11 +65,11 @@ function(lxqt_translate_desktop _RESULT)
 
         file(GLOB _translations
             ${_translationDir}/${_fileName}_*${_fileExt}
-            ${_translationDir}/local/${_fileName}_*${_fileExt}
         )
 
         set(_pattern "'\\[.*]\\s*='")
         if (_translations)
+            list(SORT _translations)
             add_custom_command(OUTPUT ${_outFile}
                 COMMAND grep -v "'#TRANSLATIONS_DIR='" ${_inFile} > ${_outFile}
                 COMMAND grep -h ${_pattern} ${_translations} >> ${_outFile}
