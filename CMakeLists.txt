@@ -38,8 +38,6 @@ if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
-# Set default installation paths
-set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
 set(LXQT_PKG_CONFIG_DESCRIPTION "Shared library for LXQt applications")
 
 set(PUB_HDRS
