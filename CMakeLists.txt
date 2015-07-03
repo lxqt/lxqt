@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.11)
+cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 
 project(liblxqt)
 
@@ -6,6 +6,7 @@ set(LXQT_MAJOR_VERSION 0)
 set(LXQT_MINOR_VERSION 9)
 set(LXQT_PATCH_VERSION 0)
 
+include(CMakePackageConfigHelpers)
 include(CheckCXXCompilerFlag)
 include(GNUInstallDirs) # Standard directories for installation
 
@@ -30,8 +31,13 @@ if (NOT DEFINED LXQT_DATA_DIR)
     )
 endif()
 
-# Set default installation paths
-set(LIB_INSTALL_DIR "lib${LIB_SUFFIX}" CACHE PATH "Installation path for libraries")
+#-----------------------------------------------------------------------------
+# Release is the default build type
+#-----------------------------------------------------------------------------
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+
 set(LXQT_PKG_CONFIG_DESCRIPTION "Shared library for LXQt applications")
 
 set(PUB_HDRS
@@ -156,14 +162,13 @@ QT5_ADD_DBUS_ADAPTOR(SRCS
 set(LXQT_QT_VERSION "5")
 
 # KF5WindowSystem is missing here. KF5WindowSystem doesn't provide an .pc file.
-set(LXQT_PKG_CONFIG_REQUIRES "Qt5Widgets Qt5Xml Qt5DBus Qt5X11Extras")
+set(LXQT_PKG_CONFIG_REQUIRES "Qt5Xdg >= 1.2.0, Qt5Widgets, Qt5Xml, Qt5DBus, Qt5X11Extras")
 
-include(${QTXDG_USE_FILE})
 
-include_directories(
-    "${QTXDG_INCLUDE_DIRS}"
-)
-
+# Standard directories for installation
+include(LXQtCreatePkgConfigFile)
+include(cmake/FindInstallConfigPath.cmake) # sets LXQT_ETC_XDG_DIR, if unset
+include(create_portable_headers)
 
 set(LXQT_VERSION ${LXQT_MAJOR_VERSION}.${LXQT_MINOR_VERSION}.${LXQT_PATCH_VERSION})
 set(LXQT_LIBRARY_NAME "lxqt" CACHE STRING "lxqt")
@@ -172,14 +177,12 @@ set(LXQT_SHARE_DIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_DATAROOTDIR}/${LXQT_
 set(LXQT_RELATIVE_TRANSLATIONS_DIR "${LXQT_LIBRARY_NAME}/translations")
 set(LXQT_TRANSLATIONS_DIR "${LXQT_SHARE_DIR}/translations")
 
-set(LXQT_INTREE_INCLUDE_DIR "${CMAKE_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/include")
+set(LXQT_INTREE_INCLUDE_DIR "${CMAKE_CURRENT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/include")
 set(LXQT_INTREE_TARGETS_FILE "${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-targets.cmake")
 
 set(LXQT_INSTALL_INCLUDE_DIR "${CMAKE_INSTALL_FULL_INCLUDEDIR}/${LXQT_LIBRARY_NAME}")
 set(LXQT_INSTALL_CMAKE_DIR "${CMAKE_INSTALL_PREFIX}/share/cmake")
 
-include(cmake/FindInstallConfigPath.cmake)
-include(create_portable_headers)
 
 ## Translations
 include(LXQtTranslateTs)
@@ -214,38 +217,27 @@ check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
 #************************************************
 set(CFG_LXQT_INCLUDE_DIR    ${LXQT_INTREE_INCLUDE_DIR})
 set(CFG_LXQT_LIBRARY        ${LXQT_LIBRARY_NAME})
-set(CFG_LXQT_USE_FILE       ${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}_use.cmake)
 set(CFG_LXQT_TARGETS_FILE   ${LXQT_INTREE_TARGETS_FILE})
 set(CFG_LXQT_CMAKE_MODULES_DIR "${PROJECT_SOURCE_DIR}/cmake/modules")
 
-configure_file(
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqtX-config.cmake.in
-    ${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-config.cmake
-    @ONLY
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt-config.cmake.in"
+    "${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-config.cmake"
+    INSTALL_DESTINATION "neverland"     # required, altough we don't install it
 )
-
-configure_file(
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt_use.cmake.in
-    ${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}_use.cmake
-    @ONLY
-)
-
-include(${CFG_LXQT_USE_FILE})
-
 
 #************************************************
 # Create installable build infrastructure
 #************************************************
 set(CFG_LXQT_INCLUDE_DIR "${LXQT_INSTALL_INCLUDE_DIR}")
 set(CFG_LXQT_LIBRARY ${LXQT_LIBRARY_NAME})
-set(CFG_LXQT_USE_FILE "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/${LXQT_LIBRARY_NAME}_use.cmake")
 set(CFG_LXQT_TARGETS_FILE "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/${LXQT_LIBRARY_NAME}-targets.cmake")
 set(CFG_LXQT_CMAKE_MODULES_DIR "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/modules")
 
-configure_file(
-    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqtX-config.cmake.in"
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt-config.cmake.in"
     "${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}-config.cmake"
-    @ONLY
+    INSTALL_DESTINATION "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}"
 )
 
 # use gcc visibility feature to decrease unnecessary exported symbols
@@ -254,30 +246,23 @@ if (CMAKE_COMPILER_IS_GNUCXX)
     # manually in the code
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -Wl,-no-undefined -Wall")
 endif()
-add_definitions(-DCOMPILE_LIBLXQT)
 
-string (TOLOWER "${CMAKE_BUILD_TYPE}" CMAKE_BUILD_TYPE)
-if (NOT CMAKE_BUILD_TYPE STREQUAL "debug")
-    add_definitions(-DQT_NO_DEBUG_OUTPUT -DQT_NO_WARNING_OUTPUT)
-endif()
-
-
-configure_file(
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt_use.cmake.in
-    ${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}_use.cmake
-    @ONLY
+write_basic_package_version_file(
+    "${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-config-version.cmake"
+    VERSION ${LXQT_VERSION}
+    COMPATIBILITY AnyNewerVersion
 )
 
 install(FILES
-    ${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}-config.cmake
-    ${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}_use.cmake
+    "${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}-config.cmake"
+    "${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-config-version.cmake"
     DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}
     COMPONENT Devel
 )
 
 install(EXPORT
     ${LXQT_LIBRARY_NAME}-targets
-    DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}
+    DESTINATION "${CMAKE_INSTALL_DATADIR}/cmake/${LXQT_LIBRARY_NAME}"
     COMPONENT Devel
 )
 
@@ -303,11 +288,12 @@ add_library(${LXQT_LIBRARY_NAME}
 )
 
 target_link_libraries(${LXQT_LIBRARY_NAME}
-    KF5::WindowSystem
-    Qt5::Widgets
-    Qt5::DBus
-    Qt5::X11Extras
-    ${QTXDG_LIBRARIES}
+    PUBLIC
+        KF5::WindowSystem
+        Qt5::Widgets
+        Qt5::DBus
+        Qt5::X11Extras
+        Qt5Xdg
 )
 
 set_target_properties(${LXQT_LIBRARY_NAME} PROPERTIES
@@ -315,27 +301,57 @@ set_target_properties(${LXQT_LIBRARY_NAME} PROPERTIES
     SOVERSION ${LXQT_MAJOR_VERSION}
 )
 
+target_compile_definitions(${LXQT_LIBRARY_NAME}
+    PRIVATE "LXQT_RELATIVE_SHARE_DIR=\"${LXQT_RELATIVE_SHARE_DIR}\""
+    PRIVATE "LXQT_SHARE_DIR=\"${LXQT_SHARE_DIR}\""
+    PRIVATE "LXQT_RELATIVE_SHARE_TRANSLATIONS_DIR=\"${LXQT_RELATIVE_TRANSLATIONS_DIR}\""
+    PRIVATE "LXQT_SHARE_TRANSLATIONS_DIR=\"${LXQT_TRANSLATIONS_DIR}\""
+    PRIVATE "LXQT_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\""
+    PRIVATE "LXQT_DATA_DIR=\"${LXQT_DATA_DIR}\""
+    PRIVATE "LXQT_VERSION=\"${LXQT_VERSION}\""
+    PRIVATE "COMPILE_LIBLXQT"
+)
+
+target_compile_definitions(${LXQT_LIBRARY_NAME}
+    PRIVATE "$<$<CONFIG:Release>:QT_NO_DEBUG_OUTPUT>"
+    PRIVATE "$<$<CONFIG:Release>:QT_NO_WARNING_OUTPUT>"
+)
+
+target_include_directories(${LXQT_LIBRARY_NAME}
+    INTERFACE "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${LXQT_LIBRARY_NAME}>"
+    INTERFACE "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${LXQT_LIBRARY_NAME}/LXQt>"
+)
+
+target_include_directories(${LXQT_LIBRARY_NAME}
+    INTERFACE "$<BUILD_INTERFACE:${LXQT_INTREE_INCLUDE_DIR}>"
+    INTERFACE "$<BUILD_INTERFACE:${LXQT_INTREE_INCLUDE_DIR}/LXQt>"
+)
+
 install(TARGETS
     ${LXQT_LIBRARY_NAME}
     DESTINATION ${CMAKE_INSTALL_LIBDIR}
     EXPORT ${LXQT_LIBRARY_NAME}-targets
-    LIBRARY DESTINATION ${CMAKE_INSTALL_FULL_LIBDIR}
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 )
 
 
-export(TARGETS ${LXQT_LIBRARY_NAME} ${QTXDG_TARGET} FILE ${LXQT_INTREE_TARGETS_FILE})
+export(TARGETS ${LXQT_LIBRARY_NAME} APPEND FILE "${LXQT_INTREE_TARGETS_FILE}")
 
 install(FILES ${PUB_HDRS} DESTINATION "${LXQT_INSTALL_INCLUDE_DIR}/LXQt")
 install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION "${LXQT_INSTALL_INCLUDE_DIR}/LXQt")
 
 #************************************************
-# Create pkgconfig file
+# Create and install pkgconfig file
 #************************************************
-lxqt_create_pkgconfig_file(${LXQT_LIBRARY_NAME}
-    ${LXQT_PKG_CONFIG_DESCRIPTION}
-    ${LXQT_PKG_CONFIG_REQUIRES}
-    ${LXQT_LIBRARY_NAME}
-    ${LXQT_VERSION}
+lxqt_create_pkgconfig_file(
+    PACKAGE_NAME ${LXQT_LIBRARY_NAME}
+    DESCRIPTIVE_NAME ${LXQT_LIBRARY_NAME}
+    DESCRIPTION ${LXQT_PKG_CONFIG_DESCRIPTION}
+    INCLUDEDIRS ${LXQT_LIBRARY_NAME}
+    LIBS ${LXQT_LIBRARY_NAME}
+    REQUIRES ${LXQT_PKG_CONFIG_REQUIRES}
+    VERSION ${LXQT_VERSION}
+    INSTALL
 )
 #************************************************
 
