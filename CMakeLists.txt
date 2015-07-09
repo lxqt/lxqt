@@ -215,8 +215,6 @@ check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
 #************************************************
 # Create in-tree build infrastructure
 #************************************************
-set(CFG_LXQT_INCLUDE_DIR    ${LXQT_INTREE_INCLUDE_DIR})
-set(CFG_LXQT_LIBRARY        ${LXQT_LIBRARY_NAME})
 set(CFG_LXQT_TARGETS_FILE   ${LXQT_INTREE_TARGETS_FILE})
 set(CFG_LXQT_CMAKE_MODULES_DIR "${PROJECT_SOURCE_DIR}/cmake/modules")
 
@@ -229,8 +227,6 @@ configure_package_config_file(
 #************************************************
 # Create installable build infrastructure
 #************************************************
-set(CFG_LXQT_INCLUDE_DIR "${LXQT_INSTALL_INCLUDE_DIR}")
-set(CFG_LXQT_LIBRARY ${LXQT_LIBRARY_NAME})
 set(CFG_LXQT_TARGETS_FILE "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/${LXQT_LIBRARY_NAME}-targets.cmake")
 set(CFG_LXQT_CMAKE_MODULES_DIR "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/modules")
 
