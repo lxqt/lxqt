@@ -19,13 +19,13 @@ function(create_portable_headers outfiles outDir)
     foreach(f ${class_list})
         string(TOLOWER "${f}.h" _filename)
 
-        file(WRITE ${outDir}/${f}
+        file(WRITE "${outDir}/${f}"
             "#include \"lxqt${_filename}\"\n")
 
-        list(APPEND ${outfiles} ${outDir}/${f})
+        list(APPEND ${outfiles} "${outDir}/${f}")
     endforeach()
 
-    set(${outfiles} ${${outfiles}} PARENT_SCOPE)
+    set(${outfiles} "${${outfiles}}" PARENT_SCOPE)
 endfunction()
 
 

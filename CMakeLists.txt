@@ -129,8 +129,8 @@ set(FORMS
 
 # additional cmake files
 list(APPEND CMAKE_MODULE_PATH
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmake
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules"
 )
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
@@ -139,6 +139,8 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+
 find_package(Qt5Widgets REQUIRED QUIET)
 find_package(Qt5DBus REQUIRED QUIET)
 find_package(Qt5X11Extras REQUIRED QUIET)
@@ -146,8 +148,6 @@ find_package(Qt5LinguistTools REQUIRED QUIET)
 find_package(Qt5Xdg REQUIRED QUIET)
 find_package(KF5WindowSystem REQUIRED QUIET)
 message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
-
-QT5_WRAP_UI(UIS ${FORMS})
 
 QT5_ADD_DBUS_INTERFACE(SRCS
     dbus/org.freedesktop.Notifications.xml
@@ -194,7 +194,7 @@ lxqt_translate_ts(QM_FILES
         ${SRCS}
         ${FORMS}
     INSTALL_DIR
-        ${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}
+        "${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}"
 )
 
 message(STATUS "")
@@ -209,15 +209,13 @@ foreach(h ${PUB_HDRS})
 endforeach()
 
 # Create the portable headers
-create_portable_headers(INTREE_PORTABLE_HEADERS ${LXQT_INTREE_INCLUDE_DIR}/LXQt ${PUBLIC_CLASSES})
-check_portable_headers(H_FILES ${PUB_HDRS} LINKS ${INTREE_PORTABLE_HEADERS})
+create_portable_headers(INTREE_PORTABLE_HEADERS "${LXQT_INTREE_INCLUDE_DIR}/LXQt" ${PUBLIC_CLASSES})
+check_portable_headers(H_FILES ${PUB_HDRS} LINKS "${INTREE_PORTABLE_HEADERS}")
 
 #************************************************
 # Create in-tree build infrastructure
 #************************************************
-set(CFG_LXQT_INCLUDE_DIR    ${LXQT_INTREE_INCLUDE_DIR})
-set(CFG_LXQT_LIBRARY        ${LXQT_LIBRARY_NAME})
-set(CFG_LXQT_TARGETS_FILE   ${LXQT_INTREE_TARGETS_FILE})
+set(CFG_LXQT_TARGETS_FILE   "${LXQT_INTREE_TARGETS_FILE}")
 set(CFG_LXQT_CMAKE_MODULES_DIR "${PROJECT_SOURCE_DIR}/cmake/modules")
 
 configure_package_config_file(
@@ -229,8 +227,6 @@ configure_package_config_file(
 #************************************************
 # Create installable build infrastructure
 #************************************************
-set(CFG_LXQT_INCLUDE_DIR "${LXQT_INSTALL_INCLUDE_DIR}")
-set(CFG_LXQT_LIBRARY ${LXQT_LIBRARY_NAME})
 set(CFG_LXQT_TARGETS_FILE "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/${LXQT_LIBRARY_NAME}-targets.cmake")
 set(CFG_LXQT_CMAKE_MODULES_DIR "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/modules")
 
@@ -256,7 +252,7 @@ write_basic_package_version_file(
 install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}-config.cmake"
     "${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-config-version.cmake"
-    DESTINATION ${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}
+    DESTINATION "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}"
     COMPONENT Devel
 )
 
@@ -273,7 +269,7 @@ file(GLOB toInstallModules
 
 install(
     FILES ${toInstallModules}
-    DESTINATION  "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/modules"
+    DESTINATION "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/modules"
     COMPONENT Devel
 )
 
@@ -329,13 +325,15 @@ target_include_directories(${LXQT_LIBRARY_NAME}
 
 install(TARGETS
     ${LXQT_LIBRARY_NAME}
-    DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    DESTINATION "${CMAKE_INSTALL_LIBDIR}"
     EXPORT ${LXQT_LIBRARY_NAME}-targets
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}"
 )
 
-
-export(TARGETS ${LXQT_LIBRARY_NAME} APPEND FILE "${LXQT_INTREE_TARGETS_FILE}")
+export(TARGETS ${LXQT_LIBRARY_NAME}
+    APPEND FILE "${LXQT_INTREE_TARGETS_FILE}"
+    EXPORT_LINK_INTERFACE_LIBRARIES
+)
 
 install(FILES ${PUB_HDRS} DESTINATION "${LXQT_INSTALL_INCLUDE_DIR}/LXQt")
 install(FILES ${INTREE_PORTABLE_HEADERS} DESTINATION "${LXQT_INSTALL_INCLUDE_DIR}/LXQt")
