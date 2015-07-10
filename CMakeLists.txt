@@ -139,6 +139,8 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTOUIC ON)
+
 find_package(Qt5Widgets REQUIRED QUIET)
 find_package(Qt5DBus REQUIRED QUIET)
 find_package(Qt5X11Extras REQUIRED QUIET)
@@ -146,8 +148,6 @@ find_package(Qt5LinguistTools REQUIRED QUIET)
 find_package(Qt5Xdg REQUIRED QUIET)
 find_package(KF5WindowSystem REQUIRED QUIET)
 message(STATUS "Building with Qt ${Qt5Core_VERSION_STRING}")
-
-QT5_WRAP_UI(UIS ${FORMS})
 
 QT5_ADD_DBUS_INTERFACE(SRCS
     dbus/org.freedesktop.Notifications.xml
