@@ -40,7 +40,8 @@
 #                         [LIB_INSTALLDIR <dir>]
 #                         [CFLAGS <cflags>]
 #                         [PATH <path>]
-#                         [INSTALL])
+#                         [INSTALL]
+#                         [COMPONENT] component)
 #
 #
 # PACKAGE_NAME and VERSION are mandatory. Everything else is optional
@@ -61,6 +62,7 @@ function(lxqt_create_pkgconfig_file)
             URL
             VERSION
             PATH
+            COMPONENT
     )
     set(multiValueArgs
             INCLUDEDIRS
@@ -237,9 +239,14 @@ function(lxqt_create_pkgconfig_file)
             set(_PKGCONFIG_INSTALL_DESTINATION "${CMAKE_INSTALL_LIBDIR}/pkgconfig")
         endif()
 
-        # Make the COMPONENT an parameter ?
+        if (DEFINED USER_COMPONENT)
+            set(_COMPONENT "${USER_COMPONENT}")
+        else()
+            set(_COMPONENT "Devel")
+        endif()
+
         install(FILES "${_PKGCONFIG_FILE}"
                 DESTINATION "${_PKGCONFIG_INSTALL_DESTINATION}"
-                COMPONENT Devel)
+                COMPONENT "${_COMPONENT}")
     endif()
 endfunction()
