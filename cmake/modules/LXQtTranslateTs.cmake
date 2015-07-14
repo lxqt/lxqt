@@ -32,6 +32,7 @@
 #                           [TEMPLATE] translation_template
 #                           [TRANSLATION_DIR] translation_directory
 #                           [INSTALL_DIR] install_directory
+#                           [COMPONENT] component
 #                    )
 #     Output:
 #       qmFiles The generated compiled translations (.qm) files
@@ -52,8 +53,9 @@
 #
 #       INSTALL_DIR Optional destination of the file compiled files (qmFiles).
 #                    If not present no installation is performed
-
-
+#
+#       COMPONENT Optional install component. Only effective if INSTALL_DIR
+#                   present. Defaults to "Runtime".
 
 # CMake v2.8.3 needed to use the CMakeParseArguments module
 cmake_minimum_required(VERSION 2.8.3 FATAL_ERROR)
@@ -62,7 +64,7 @@ cmake_minimum_required(VERSION 2.8.3 FATAL_ERROR)
 include(Qt5PatchedLinguistToolsMacros)
 
 function(lxqt_translate_ts qmFiles)
-    set(oneValueArgs USE_QT5 UPDATE_TRANSLATIONS TEMPLATE TRANSLATION_DIR INSTALL_DIR)
+    set(oneValueArgs USE_QT5 UPDATE_TRANSLATIONS TEMPLATE TRANSLATION_DIR INSTALL_DIR COMPONENT)
     set(multiValueArgs SOURCES)
     cmake_parse_arguments(TR "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
@@ -124,7 +126,14 @@ function(lxqt_translate_ts qmFiles)
     endif()
 
     if(DEFINED TR_INSTALL_DIR)
-        install(FILES ${QM} DESTINATION ${TR_INSTALL_DIR})
+        if(NOT DEFINED TR_COMPONENT)
+            set(TR_COMPONENT "Runtime")
+        endif()
+
+        install(FILES ${QM}
+            DESTINATION "${TR_INSTALL_DIR}"
+            COMPONENT "${TR_COMPONENT}"
+        )
     endif()
 
     set(${qmFiles} ${QM} PARENT_SCOPE)
