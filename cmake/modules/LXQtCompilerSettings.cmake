@@ -93,3 +93,18 @@ elseif(COMPILER_SUPPORTS_CXX0X)
 else()
     message(FATAL "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. C++11 support is required")
 endif()
+
+
+#-----------------------------------------------------------------------------
+# Enable exceptions for an target
+#
+# lxqt_enable_target_exceptions(<target>
+#    <INTERFACE|PUBLIC|PRIVATE>
+# )
+#
+#-----------------------------------------------------------------------------
+function(lxqt_enable_target_exceptions target mode)
+    target_compile_options(${target} ${mode}
+        "$<$<OR:$<CXX_COMPILER_ID:GNU>,$<CXX_COMPILER_ID:Clang>>:-fexceptions>"
+    )
+endfunction()
