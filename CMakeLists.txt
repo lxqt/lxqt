@@ -7,18 +7,7 @@ set(LXQT_MINOR_VERSION 9)
 set(LXQT_PATCH_VERSION 0)
 
 include(CMakePackageConfigHelpers)
-include(CheckCXXCompilerFlag)
 include(GNUInstallDirs) # Standard directories for installation
-
-CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
-CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
-if(COMPILER_SUPPORTS_CXX11)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
-elseif(COMPILER_SUPPORTS_CXX0X)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
-else()
-    message(FATAL "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. C++11 support is required")
-endif()
 
 #-----------------------------------------------------------------------------
 # LXQT_DATA_DIR defaults to CMAKE_INSTALL_FULL_DATADIR. It's added to
@@ -166,6 +155,7 @@ set(LXQT_PKG_CONFIG_REQUIRES "Qt5Xdg >= 1.2.0, Qt5Widgets, Qt5Xml, Qt5DBus, Qt5X
 
 
 # Standard directories for installation
+include(LXQtCompilerSettings)
 include(LXQtCreatePkgConfigFile)
 include(cmake/FindInstallConfigPath.cmake) # sets LXQT_ETC_XDG_DIR, if unset
 include(create_portable_headers)
@@ -235,13 +225,6 @@ configure_package_config_file(
     "${CMAKE_CURRENT_BINARY_DIR}/install/${LXQT_LIBRARY_NAME}-config.cmake"
     INSTALL_DESTINATION "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}"
 )
-
-# use gcc visibility feature to decrease unnecessary exported symbols
-if (CMAKE_COMPILER_IS_GNUCXX)
-    # set visibility to hidden to hide symbols, unlesss they're exported
-    # manually in the code
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fvisibility=hidden -fvisibility-inlines-hidden -fno-exceptions -Wl,-no-undefined -Wall")
-endif()
 
 write_basic_package_version_file(
     "${CMAKE_BINARY_DIR}/${LXQT_LIBRARY_NAME}-config-version.cmake"
