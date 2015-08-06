@@ -27,6 +27,37 @@
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #=============================================================================
 
+#-----------------------------------------------------------------------------
+# Honor visibility properties for all target types.
+#
+# The ``<LANG>_VISIBILITY_PRESET`` and
+# ``VISIBILITY_INLINES_HIDDEN`` target properties affect visibility
+# of symbols during dynamic linking.  When first introduced these properties
+# affected compilation of sources only in shared libraries, module libraries,
+# and executables with the ``ENABLE_EXPORTS`` property set.  This
+# was sufficient for the basic use cases of shared libraries and executables
+# with plugins.  However, some sources may be compiled as part of static
+# libraries or object libraries and then linked into a shared library later.
+# CMake 3.3 and above prefer to honor these properties for sources compiled
+# in all target types.  This policy preserves compatibility for projects
+# expecting the properties to work only for some target types.
+#
+# The ``OLD`` behavior for this policy is to ignore the visibility properties
+# for static libraries, object libraries, and executables without exports.
+# The ``NEW`` behavior for this policy is to honor the visibility properties
+# for all target types.
+#
+# This policy was introduced in CMake version 3.3.  CMake version
+# 3.3.0 warns when the policy is not set and uses ``OLD`` behavior. Use
+# the ``cmake_policy()`` command to set it to ``OLD`` or ``NEW``
+# explicitly.
+#-----------------------------------------------------------------------------
+if(COMMAND CMAKE_POLICY)
+    if (POLICY CMP0063)
+        cmake_policy(SET CMP0063 NEW)
+    endif()
+endif()
+
 include(CheckCXXCompilerFlag)
 
 #-----------------------------------------------------------------------------
