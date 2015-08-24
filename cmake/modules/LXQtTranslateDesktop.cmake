@@ -1,6 +1,6 @@
 #=============================================================================
 # The lxqt_translate_desktop() function was copied from the
-# LXQt LxQtTranslate.cmake
+# LXQt LXQtTranslate.cmake
 #
 # Original Author: Alexander Sokolov <sokoloff.a@gmail.com>
 #

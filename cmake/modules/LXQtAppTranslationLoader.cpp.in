@@ -9,7 +9,7 @@
 
 static void loadAppTranslation()
 {
-    LxQt::Translator::translateApplication(QStringLiteral("@catalog_name@"));
+    LXQt::Translator::translateApplication(QStringLiteral("@catalog_name@"));
 }
 
 Q_COREAPP_STARTUP_FUNCTION(loadAppTranslation)

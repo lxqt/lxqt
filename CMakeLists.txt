@@ -145,7 +145,7 @@ QT5_ADD_DBUS_INTERFACE(SRCS
 
 QT5_ADD_DBUS_ADAPTOR(SRCS
     dbus/org.lxqt.SingleApplication.xml
-    lxqtsingleapplication.h LxQt::SingleApplication
+    lxqtsingleapplication.h LXQt::SingleApplication
 )
 
 set(LXQT_QT_VERSION "5")
