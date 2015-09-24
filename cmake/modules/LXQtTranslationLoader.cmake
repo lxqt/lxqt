@@ -59,3 +59,15 @@ function(lxqt_lib_translation_loader source_files catalog_name)
     )
     set(${source_files} ${${source_files}} ${CMAKE_CURRENT_BINARY_DIR}/LXQtLibTranslationLoader.cpp PARENT_SCOPE)
 endfunction()
+
+# lxqt_plugin_translation_loader(<source_files> <catalog_name>)
+#       <source_files> The generated .cpp file is added to <source_files>
+#       <catalog_name> Translations catalog to be loaded
+#       <plugin_type> Plugin type. Example: lxqt-panel
+function(lxqt_plugin_translation_loader source_files catalog_name plugin_type)
+    configure_file(
+        ${LXQT_CMAKE_MODULES_DIR}/LXQtPluginTranslationLoader.cpp.in
+        LXQtPluginTranslationLoader.cpp @ONLY
+    )
+    set(${source_files} ${${source_files}} ${CMAKE_CURRENT_BINARY_DIR}/LXQtPluginTranslationLoader.cpp PARENT_SCOPE)
+endfunction()
