@@ -7,6 +7,12 @@
 #include <QCoreApplication>
 #include <LXQt/Translator>
 
+/* Dummy helper symbol for referencing.
+ * In case plugin is linked as static (lib*.a) unreferenced objects are stripped in linking time
+ *  => we need to reference some symbol from this file to be not stripped as a whole.
+ */
+void * loadPluginTranslation_@catalog_name@_helper = nullptr;
+
 static void loadPluginTranslation()
 {
     LXQt::Translator::translatePlugin(QStringLiteral("@catalog_name@"), QStringLiteral("@plugin_type@"));
