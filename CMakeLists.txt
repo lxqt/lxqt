@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
 project(liblxqt)
 
 set(LXQT_MAJOR_VERSION 0)
-set(LXQT_MINOR_VERSION 9)
+set(LXQT_MINOR_VERSION 10)
 set(LXQT_PATCH_VERSION 0)
 
 include(CMakePackageConfigHelpers)
