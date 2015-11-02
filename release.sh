@@ -5,11 +5,14 @@ if [[ -z $1 ]]; then
 	exit 1
 fi
 
-mkdir -p "dist/$1"
+BASEDIR="$(readlink -f $(dirname $0))"
+PROJECT="lxqt"
+VERSION="$1"
+
+mkdir -p "$BASEDIR/dist/$VERSION"
 
 files=(
 	"liblxqt"
-	"liblxqt-mount"
 	"lxqt-about"
 	"lxqt-admin"
 	"lxqt-common"
@@ -23,25 +26,24 @@ files=(
 	"lxqt-qtplugin"
 	"lxqt-runner"
 	"lxqt-session"
+	"lxqt-sudo"
 	"pcmanfm-qt"
 )
 
-for f in ${files[@]}; do
-	cd "$f"
-	git tag -fsm "Release v$1" $1 && git push --tags --force
-
+for f in "${files[@]}"; do
 	echo "Packaging $f"
-	git archive --prefix=$f-$1/ $1 -o "../dist/$1/$f-$1.tar.gz"
-	gpg --armor --detach-sign "../dist/$1/$f-$1.tar.gz"
-	git archive --prefix=$f-$1/ $1 -o "../dist/$1/$f-$1.tar.xz"
-	gpg --armor --detach-sign "../dist/$1/$f-$1.tar.xz"
-	cd ..
+	cd "$BASEDIR/$f"
+	git tag -fsm "Release v$VERSION" $1 # && git push --tags --force
+
+	git archive --prefix=$f-$VERSION/ $1 -o "../dist/$1/$f-$1.tar.gz"
+	gpg --armor --detach-sign "../dist/$VERSION/$f-$1.tar.gz"
+	git archive --prefix=$f-$VERSION/ $1 -o "../dist/$1/$f-$1.tar.xz"
+	gpg --armor --detach-sign "../dist/$VERSION/$f-$1.tar.xz"
 done
 
 echo "Done. Uploading..."
 
-cd "dist/$1"
-sha1sum --tag *-$1.*z > CHECKSUMS
-sha256sum --tag *-$1.*z >> CHECKSUMS
-cd ..
-scp -r $1 lxde.org:/var/www/lxqt/downloads/lxqt
+cd "$BASEDIR/dist/$VERSION"
+sha1sum --tag *-$VERSION.*z > CHECKSUMS
+sha256sum --tag *-$VERSION.*z >> CHECKSUMS
+scp -r "$BASEDIR/dist/$VERSION" "downloads.lxqt.org:/srv/downloads.lxqt.org/$PROJECT/"
