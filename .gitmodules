@@ -30,10 +30,6 @@
 	path = libsysstat
 	url = ../libsysstat.git
 	branch = master
-[submodule "liblxqt-mount"]
-	path = liblxqt-mount
-	url = ../liblxqt-mount.git
-	branch = master
 [submodule "lxqt-runner"]
 	path = lxqt-runner
 	url = ../lxqt-runner.git

@@ -20,13 +20,6 @@
         </dependencies>
     </cmake>
 
-    <cmake id="liblxqt-mount">
-        <branch module="liblxqt-mount.git" />
-        <dependencies>
-            <dep package="liblxqt" />
-        </dependencies>
-    </cmake>
-
     <cmake id="libsysstat">
         <branch module="libsysstat.git" />
     </cmake>

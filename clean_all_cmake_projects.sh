@@ -2,7 +2,6 @@
 CMAKE_REPOS=" \
 	libqtxdg \
 	liblxqt \
-	liblxqt-mount \
 	libsysstat \
 	lxqt-qtplugin \
 	lxqt-globalkeys \

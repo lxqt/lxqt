@@ -10,7 +10,6 @@ moduleset = os.path.join(HERE, 'modules-dev.xml')
 modules = [
 # Base libraries
     'libfm',
-    'liblxqt-mount',
     'liblxqt',
     'libqtxdg',
     'libsysstat',

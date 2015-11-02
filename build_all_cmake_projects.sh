@@ -19,7 +19,6 @@ echo "Make job number: $JOB_NUM"
 CMAKE_REPOS=" \
 	libqtxdg \
 	liblxqt \
-	liblxqt-mount \
 	libsysstat \
 	lxqt-session \
 	lxqt-qtplugin \

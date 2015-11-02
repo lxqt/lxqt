@@ -8,7 +8,6 @@ endif()
 
 add_subdirectory(libqtxdg)
 add_subdirectory(liblxqt)
-add_subdirectory(liblxqt-mount)
 add_subdirectory(libsysstat)
 add_subdirectory(lxqt-qtplugin)
 add_subdirectory(lxqt-globalkeys)

@@ -20,7 +20,6 @@ CURRENT_COMPTON_QT_VER="HEAD"
 # change log for main lxqt components
 COMPONENTS="
 	liblxqt \
-	liblxqt-mount \
 	lxqt-session \
 	lxqt-qtplugin \
 	lxqt-globalkeys \
