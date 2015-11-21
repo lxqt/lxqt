@@ -120,6 +120,7 @@ set(FORMS
 list(APPEND CMAKE_MODULE_PATH
     "${CMAKE_CURRENT_SOURCE_DIR}/cmake"
     "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules"
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/find-modules"
 )
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
@@ -207,6 +208,8 @@ check_portable_headers(H_FILES ${PUB_HDRS} LINKS "${INTREE_PORTABLE_HEADERS}")
 #************************************************
 set(CFG_LXQT_TARGETS_FILE   "${LXQT_INTREE_TARGETS_FILE}")
 set(CFG_LXQT_CMAKE_MODULES_DIR "${PROJECT_SOURCE_DIR}/cmake/modules")
+set(CFG_LXQT_CMAKE_FIND_MODULES_DIR "${PROJECT_SOURCE_DIR}/cmake/find-modules")
+
 
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt-config.cmake.in"
@@ -219,6 +222,7 @@ configure_package_config_file(
 #************************************************
 set(CFG_LXQT_TARGETS_FILE "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/${LXQT_LIBRARY_NAME}-targets.cmake")
 set(CFG_LXQT_CMAKE_MODULES_DIR "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/modules")
+set(CFG_LXQT_CMAKE_FIND_MODULES_DIR "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/find-modules")
 
 configure_package_config_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/cmake/lxqt-config.cmake.in"
@@ -242,6 +246,16 @@ install(FILES
 install(EXPORT
     ${LXQT_LIBRARY_NAME}-targets
     DESTINATION "${CMAKE_INSTALL_DATADIR}/cmake/${LXQT_LIBRARY_NAME}"
+    COMPONENT Devel
+)
+
+file(GLOB toInstallFindModules
+    "${PROJECT_SOURCE_DIR}/cmake/find-modules/*.cmake"
+)
+
+install(
+    FILES ${toInstallFindModules}
+    DESTINATION "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_LIBRARY_NAME}/find-modules"
     COMPONENT Devel
 )
 
