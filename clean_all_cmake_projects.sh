@@ -3,21 +3,25 @@ CMAKE_REPOS=" \
 	libqtxdg \
 	liblxqt \
 	libsysstat \
+	lxqt-session \
 	lxqt-qtplugin \
 	lxqt-globalkeys \
 	lxqt-notificationd \
-	lximage-qt \
-	lxinput-qt \
 	lxqt-about \
 	lxqt-common \
 	lxqt-config \
+	lxqt-admin \
 	lxqt-openssh-askpass \
 	lxqt-panel \
 	lxqt-policykit \
 	lxqt-powermanagement \
 	lxqt-runner \
-	obconf-qt \
-	pcmanfm-qt"
+	libfm-qt \
+	pcmanfm-qt \
+	lximage-qt \
+	lxqt-sudo \
+	compton-conf \
+	obconf-qt"
 
 for d in $CMAKE_REPOS
 do
