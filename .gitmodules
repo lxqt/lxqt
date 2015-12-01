@@ -91,3 +91,7 @@
 [submodule "lxqt-sudo"]
 	path = lxqt-sudo
 	url = ../lxqt-sudo
+[submodule "libfm-qt"]
+	path = libfm-qt
+	url = ../libfm-qt
+	branch = master

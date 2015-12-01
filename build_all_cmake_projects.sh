@@ -33,6 +33,7 @@ CMAKE_REPOS=" \
 	lxqt-policykit \
 	lxqt-powermanagement \
 	lxqt-runner \
+	libfm-qt \
 	pcmanfm-qt \
 	lximage-qt \
 	lxqt-sudo"
