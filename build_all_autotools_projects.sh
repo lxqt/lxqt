@@ -5,6 +5,8 @@
 # LIB_SUFFIX can set the ${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}
 #     useful fro 64 bit distros
 # LXQT_PREFIX changes default /usr/local prefix
+# LXQT_JOB_NUM Number of jobs to run in parallel while building. Defaults to
+#   whatever nproc returns.
 #
 # example:
 # $ LIB_SUFFIX=64 ./build_all.sh
@@ -12,8 +14,12 @@
 # $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ ./build_all.sh
 # etc.
 
-# detect processor numbers (Linux only)
-JOB_NUM=`nproc`
+if [[ -n "$LXQT_JOB_NUM" ]]; then
+    JOB_NUM="$LXQT_JOB_NUM"
+else
+    # detect processor numbers (Linux only)
+    JOB_NUM=`nproc`
+fi
 echo "Make job number: $JOB_NUM"
 
 if env | grep -q ^LXQT_PREFIX= ; then
