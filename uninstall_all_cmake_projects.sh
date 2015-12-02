@@ -31,8 +31,9 @@ do
     INSTALL_MANIFEST_FULL_PATH="${d}/build/${INSTALL_MANIFEST}"
     if [ -f "${INSTALL_MANIFEST_FULL_PATH}" ]
     then
-        xargs rm < "${INSTALL_MANIFEST_FULL_PATH}"
+        echo "Uninstalling component ${d} ,,,"
+        xargs rm -f < "${INSTALL_MANIFEST_FULL_PATH}" || exit $?
     else
-        echo "${d}: ${INSTALL_MANIFEST} not found"
+        echo "${d}: ${INSTALL_MANIFEST} not found, component probably wasn't installed" >&2
     fi
 done
