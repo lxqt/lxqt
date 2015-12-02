@@ -73,7 +73,7 @@ fi
 
 ALL_CMAKE_FLAGS="$CMAKE_BUILD_TYPE $CMAKE_INSTALL_PREFIX $CMAKE_LIB_SUFFIX $CMAKE_GENERATOR"
 
-for d in $CMAKE_REPOS
+for d in $CMAKE_REPOS $OPTIONAL_CMAKE_REPOS
 do
 	echo
 	echo
@@ -82,17 +82,5 @@ do
 	mkdir -p $d/build
 	cd $d/build
 	(cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM -j$JOB_NUM && sudo $CMAKE_MAKE_PROGRAM install) || exit 1
-	cd ../..
-done
-
-for d in $OPTIONAL_CMAKE_REPOS
-do
-	echo
-	echo
-	echo "Building: $d using externally specified options: $ALL_CMAKE_FLAGS"
-	echo
-	mkdir -p $d/build
-	cd $d/build
-	cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM -j$JOB_NUM && sudo $CMAKE_MAKE_PROGRAM install
 	cd ../..
 done
