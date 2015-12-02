@@ -5,11 +5,14 @@
 # LIB_SUFFIX can set the ${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}
 #     useful for 64 bit distros
 # LXQT_PREFIX changes default /usr/local prefix
+# DO_BUILD flag if components should be built (default 1)
+# DO_INSTALL flag if components should be installed (default 1)
+# DO_INSTALL_ROOT flag if rights should be elevated during install (default 1)
 #
 # example:
 # $ LIB_SUFFIX=64 ./build_all.sh
 # or
-# $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ ./build_all.sh
+# $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ DO_INSTALL=0 ./build_all.sh
 # etc.
 
 # detect processor numbers (Linux only)
@@ -70,17 +73,30 @@ else
 	CMAKE_LIB_SUFFIX=""
 fi
 
+[[ -n "$DO_BUILD" ]] || DO_BUILD=1
+
+[[ -n "$DO_INSTALL" ]] || DO_INSTALL=1
+
+[[ -n "$DO_INSTALL_ROOT" ]] || DO_INSTALL_ROOT=1
+
 
 ALL_CMAKE_FLAGS="$CMAKE_BUILD_TYPE $CMAKE_INSTALL_PREFIX $CMAKE_LIB_SUFFIX $CMAKE_GENERATOR"
 
 for d in $CMAKE_REPOS $OPTIONAL_CMAKE_REPOS
 do
-	echo
-	echo
-	echo "Building: $d using externally specified options: $ALL_CMAKE_FLAGS"
-	echo
-	mkdir -p $d/build
-	cd $d/build
-	(cmake $ALL_CMAKE_FLAGS .. && $CMAKE_MAKE_PROGRAM -j$JOB_NUM && sudo $CMAKE_MAKE_PROGRAM install) || exit 1
+	echo $'\n'$'\n'"Building: $d using externally specified options: $ALL_CMAKE_FLAGS"$'\n'
+	mkdir -p "$d/build" \
+		&& cd "$d/build" \
+		|| exit 1
+	if [[ "$DO_BUILD" = 1 ]]; then
+		cmake $ALL_CMAKE_FLAGS .. && "$CMAKE_MAKE_PROGRAM" -j$JOB_NUM || exit 1
+	fi
+	if [[ "$DO_INSTALL" = 1 ]]; then
+		if [[ "$DO_INSTALL_ROOT" = 1 ]]; then
+			sudo "$CMAKE_MAKE_PROGRAM" install || exit 1
+		else
+			"$CMAKE_MAKE_PROGRAM" install || exit 1
+		fi
+	fi
 	cd ../..
 done
