@@ -98,7 +98,6 @@ function(lxqt_translate_ts qmFiles)
             qt5_patched_create_translation(QM
                 ${TR_SOURCES}
                 ${tsFiles}
-                OPTIONS -locations absolute
             )
         else()
             qt5_patched_add_translation(QM ${tsFiles})
@@ -114,7 +113,6 @@ function(lxqt_translate_ts qmFiles)
             qt4_create_translation(QM
                 ${TR_SOURCES}
                 ${tsFiles}
-                OPTIONS -locations absolute
             )
         else()
             qt4_add_translation(QM ${tsFiles})
