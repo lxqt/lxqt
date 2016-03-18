@@ -29,6 +29,7 @@
 #                           [USE_QT5 [Yes | No]]
 #                           [UPDATE_TRANSLATIONS [Yes | No]]
 #                           SOURCES <sources>
+#                           [UPDATE_OPTIONS] update_options
 #                           [TEMPLATE] translation_template
 #                           [TRANSLATION_DIR] translation_directory
 #                           [INSTALL_DIR] install_directory
@@ -43,6 +44,9 @@
 #       UPDATE_TRANSLATIONS Optional flag. Setting it to Yes, extracts and
 #                           compiles the translations. Setting it No, only
 #                           compiles them.
+#
+#       UPDATE_OPTIONS Optional options to lupdate when UPDATE_TRANSLATIONS
+#                       is True.
 #
 #       TEMPLATE Optional translations files base name. Defaults to
 #                ${PROJECT_NAME}. An .ts extensions is added.
@@ -65,11 +69,15 @@ include(Qt5PatchedLinguistToolsMacros)
 
 function(lxqt_translate_ts qmFiles)
     set(oneValueArgs USE_QT5 UPDATE_TRANSLATIONS TEMPLATE TRANSLATION_DIR INSTALL_DIR COMPONENT)
-    set(multiValueArgs SOURCES)
+    set(multiValueArgs SOURCES UPDATE_OPTIONS)
     cmake_parse_arguments(TR "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
     if (NOT DEFINED TR_UPDATE_TRANSLATIONS)
         set(TR_UPDATE_TRANSLATIONS "No")
+    endif()
+
+    if (NOT DEFINED TR_UPDATE_OPTIONS)
+        set(TR_UPDATE_OPTIONS "")
     endif()
 
     if (NOT DEFINED TR_USE_QT5)
@@ -93,12 +101,12 @@ function(lxqt_translate_ts qmFiles)
             qt5_patched_create_translation(QMS
                 ${TR_SOURCES}
                 ${templateFile}
-                OPTIONS -locations absolute
+                OPTIONS ${TR_UPDATE_OPTIONS}
             )
             qt5_patched_create_translation(QM
                 ${TR_SOURCES}
                 ${tsFiles}
-                OPTIONS -locations absolute
+                OPTIONS ${TR_UPDATE_OPTIONS}
             )
         else()
             qt5_patched_add_translation(QM ${tsFiles})
@@ -109,12 +117,12 @@ function(lxqt_translate_ts qmFiles)
             qt4_create_translation(QMS
                 ${TR_SOURCES}
                 ${templateFile}
-                OPTIONS -locations absolute
+                OPTIONS ${TR_UPDATE_OPTIONS}
             )
             qt4_create_translation(QM
                 ${TR_SOURCES}
                 ${tsFiles}
-                OPTIONS -locations absolute
+                OPTIONS ${TR_UPDATE_OPTIONS}
             )
         else()
             qt4_add_translation(QM ${tsFiles})
