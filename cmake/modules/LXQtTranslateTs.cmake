@@ -168,14 +168,19 @@ function(lxqt_translate_ts qmFiles)
         endif ()
         if (NOT EXISTS "${TR_TRANSLATION_DIR}/${TR_REPO_SUBDIR}")
             message(STATUS "Setting git repository in the translations dir '${TR_TRANSLATION_DIR}' ...")
+            if (EXISTS "${TR_TRANSLATION_DIR}/.git")
+                execute_process(COMMAND rm -Rf .git
+                    WORKING_DIRECTORY  "${TR_TRANSLATION_DIR}"
+                    RESULT_VARIABLE ex_result
+                    )
 
-            execute_process(COMMAND rm -Rf .git
-                WORKING_DIRECTORY  "${TR_TRANSLATION_DIR}"
-                RESULT_VARIABLE ex_result
-                )
-            if (NOT "${ex_result}" EQUAL 0)
-                message(FATAL_ERROR "Initialization(cleanup) of translations dir failed!")
-            endif ()
+                if (NOT "${ex_result}" EQUAL 0)
+                    message(FATAL_ERROR "Initialization(cleanup) of translations dir failed!")
+                endif ()
+            endif()
+
+            # make sure the dir exist, otherwise git init will fail
+            file(MAKE_DIRECTORY "${TR_TRANSLATION_DIR}")
 
             execute_process(COMMAND "${GIT_EXECUTABLE}" init
                 WORKING_DIRECTORY  "${TR_TRANSLATION_DIR}"
