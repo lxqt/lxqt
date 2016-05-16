@@ -222,10 +222,11 @@ function(lxqt_translate_ts qmFiles)
     #project/module can use it's own translations (not from external)
     if (EXISTS "${TR_TRANSLATION_DIR}/${TR_REPO_SUBDIR}/")
         file(GLOB tsFiles "${TR_TRANSLATION_DIR}/${TR_REPO_SUBDIR}/*_*.ts")
+        set(templateFile "${TR_TRANSLATION_DIR}/${TR_REPO_SUBDIR}/${TR_TEMPLATE}.ts")
     else ()
         file(GLOB tsFiles "${TR_TRANSLATION_DIR}/${TR_TEMPLATE}_*.ts")
+        set(templateFile "${TR_TRANSLATION_DIR}/${TR_TEMPLATE}.ts")
     endif ()
-    set(templateFile "${TR_TRANSLATION_DIR}/${TR_TEMPLATE}.ts")
 
     if(TR_USE_QT5)
         # Qt5
