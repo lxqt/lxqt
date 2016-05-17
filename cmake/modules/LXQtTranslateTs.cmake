@@ -90,7 +90,7 @@ cmake_minimum_required(VERSION 2.8.3 FATAL_ERROR)
 # We use our patched version to round a annoying bug.
 include(Qt5PatchedLinguistToolsMacros)
 
-option(PULL_TRANSLATIONS "Pull translations" No)
+option(PULL_TRANSLATIONS "Pull translations" Yes)
 option(CLEAN_TRANSLATIONS "Clean translations" No)
 
 function(lxqt_translate_ts qmFiles)
