@@ -131,6 +131,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 
+find_package(X11 REQUIRED QUIET)
 find_package(Qt5Widgets REQUIRED QUIET)
 find_package(Qt5DBus REQUIRED QUIET)
 find_package(Qt5X11Extras REQUIRED QUIET)
@@ -296,6 +297,9 @@ target_link_libraries(${LXQT_LIBRARY_NAME}
         Qt5::DBus
         Qt5::X11Extras
         Qt5Xdg
+    PRIVATE
+        ${X11_Xscreensaver_LIB}
+        ${X11_X11_LIB}
 )
 
 set_target_properties(${LXQT_LIBRARY_NAME} PROPERTIES
