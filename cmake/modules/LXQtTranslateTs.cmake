@@ -79,7 +79,7 @@
 #
 #       TRANSLATIONS_REPO External git repository with translations - only the ${TEMPLATE} directory
 #           is pulled (using the "sparse checkout").
-#           Optional (defaults to "https://github.com/lxde/translations.git").
+#           Optional (defaults to "https://github.com/lxde/lxqt-l10n.git").
 #
 #       TRANSLATIONS_REFSPEC Optional refspec of external repository. Used in git pull.
 #           Defaults to "master".
@@ -142,7 +142,7 @@ function(lxqt_translate_ts qmFiles)
     endif()
 
     if (NOT DEFINED TR_TRANSLATIONS_REPO)
-        set(TR_TRANSLATIONS_REPO "https://github.com/lxde/translations.git")
+        set(TR_TRANSLATIONS_REPO "https://github.com/lxde/lxqt-l10n.git")
     endif()
 
     if (NOT DEFINED TR_TRANSLATIONS_REFSPEC)
