@@ -36,10 +36,13 @@ CMAKE_REPOS=" \
 	lxqt-runner \
 	libfm-qt \
 	pcmanfm-qt \
-	lximage-qt \
-	lxqt-sudo"
+	lxqt-sudo \
+	pavucontrol-qt"
 
 OPTIONAL_CMAKE_REPOS=" \
+	qtermwidget \
+	qterminal \
+	lximage-qt \
 	compton-conf \
 	obconf-qt"
 

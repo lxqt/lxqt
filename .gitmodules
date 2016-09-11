@@ -95,3 +95,12 @@
 	path = libfm-qt
 	url = ../libfm-qt
 	branch = master
+[submodule "pavucontrol-qt"]
+	path = pavucontrol-qt
+	url = ../pavucontrol-qt
+[submodule "qtermwidget"]
+	path = qtermwidget
+	url = ../qtermwidget
+[submodule "qterminal"]
+	path = qterminal
+	url = ../qterminal
