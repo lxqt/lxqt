@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 CMAKE_REPOS=" \
 	libqtxdg \
 	liblxqt \

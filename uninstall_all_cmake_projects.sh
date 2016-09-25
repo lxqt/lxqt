@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 INSTALL_MANIFEST="install_manifest.txt"
 

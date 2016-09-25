@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 LAST_LXQT_VER="0.8.0"
 CURRENT_LXQT_VER="HEAD"
 

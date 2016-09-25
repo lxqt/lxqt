@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/bash
+
 mkdir -p release
 
 if env | grep -q ^CMAKE_GENERATOR= ; then

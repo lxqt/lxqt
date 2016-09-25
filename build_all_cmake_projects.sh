@@ -1,5 +1,5 @@
 #!/bin/bash
-#
+
 # various options for cmake based builds:
 # CMAKE_BUILD_TYPE can specify a build (debug|release|...) build type
 # LIB_SUFFIX can set the ${CMAKE_INSTALL_PREFIX}/lib${LIB_SUFFIX}
