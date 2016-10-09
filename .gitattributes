@@ -11,7 +11,6 @@
 
 .*~        export-ignore
 .kdev4     export-ignore
-release.sh export-ignore
 
 /build export-ignore
 /temp  export-ignore
