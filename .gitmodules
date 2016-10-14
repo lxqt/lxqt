@@ -104,3 +104,6 @@
 [submodule "qterminal"]
 	path = qterminal
 	url = ../qterminal
+[submodule "lxqt-build-tools"]
+	path = lxqt-build-tools
+	url = ../lxqt-build-tools

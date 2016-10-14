@@ -18,6 +18,7 @@
 # etc.
 
 CMAKE_REPOS=" \
+	lxqt-build-tools \
 	libqtxdg \
 	liblxqt \
 	libsysstat \
