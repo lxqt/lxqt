@@ -10,6 +10,45 @@ set(LXQT_BUILD_TOOLS_VERSION ${LXQT_BUILD_TOOLS_MAJOR_VERSION}.${LXQT_BUILD_TOOL
 include(CMakePackageConfigHelpers)
 include(GNUInstallDirs) # Standard directories for installation
 
+file(GLOB toInstallFindModules
+    "${PROJECT_SOURCE_DIR}/cmake/find-modules/*.cmake"
+)
+
+file(GLOB toInstallModules
+    "${PROJECT_SOURCE_DIR}/cmake/modules/*.cmake"
+    "${PROJECT_SOURCE_DIR}/cmake/modules/*.in"
+)
+
+
+#-----------------------------------------------------------------------------
+# Superbuild mode
+#-----------------------------------------------------------------------------
+set(FIND_MODULES_INSTALL_DIR "${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/lxqt-build-tools/cmake/find-modules/")
+set(MODULES_INSTALL_DIR "${PROJECT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/lxqt-build-tools/cmake/modules/")
+
+file(COPY
+    ${toInstallFindModules}
+    DESTINATION "${FIND_MODULES_INSTALL_DIR}"
+)
+
+file(COPY
+    ${toInstallModules}
+    DESTINATION "${MODULES_INSTALL_DIR}"
+)
+
+configure_package_config_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/lxqt-build-tools-config.cmake.in"
+    "${CMAKE_BINARY_DIR}/lxqt-build-tools.cmake"
+    INSTALL_DESTINATION "neverland"     # required, altough we don't install it
+    PATH_VARS
+        MODULES_INSTALL_DIR
+        FIND_MODULES_INSTALL_DIR
+)
+
+
+#-----------------------------------------------------------------------------
+# Installable mode
+#-----------------------------------------------------------------------------
 set(CMAKECONFIG_INSTALL_DIR "${CMAKE_INSTALL_DATAROOTDIR}/cmake/lxqt-build-tools/")
 set(FIND_MODULES_INSTALL_DIR "${CMAKE_INSTALL_DATAROOTDIR}/cmake/lxqt-build-tools/find-modules/")
 set(MODULES_INSTALL_DIR "${CMAKE_INSTALL_DATAROOTDIR}/cmake/lxqt-build-tools/modules/")
@@ -23,6 +62,7 @@ configure_package_config_file(
         FIND_MODULES_INSTALL_DIR
 )
 
+# The package version file is common to superbuild and installable mode
 write_basic_package_version_file(
     "${CMAKE_BINARY_DIR}/lxqt-build-tools-config-version.cmake"
     VERSION ${LXQT_BUILD_TOOLS_VERSION}
@@ -35,18 +75,9 @@ install(FILES
     DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
 )
 
-file(GLOB toInstallFindModules
-    "${PROJECT_SOURCE_DIR}/cmake/find-modules/*.cmake"
-)
-
 install(
     FILES ${toInstallFindModules}
     DESTINATION "${FIND_MODULES_INSTALL_DIR}"
-)
-
-file(GLOB toInstallModules
-    "${PROJECT_SOURCE_DIR}/cmake/modules/*.cmake"
-    "${PROJECT_SOURCE_DIR}/cmake/modules/*.in"
 )
 
 install(
