@@ -10,7 +10,7 @@ These tools used to be spread over the repositories of various other components 
 
 ### Compiling sources
 
-To build only CMake is needed, optionally Git to pull VCS checkouts. Runtime dependencies do not exist.   
+To build only CMake and Qt5Core are needed, optionally Git to pull VCS checkouts. Runtime dependencies do not exist.   
 
 Code configuration is handled by CMake. CMake variable `CMAKE_INSTALL_PREFIX` has to be set to `/usr` on most operating systems.   
 
