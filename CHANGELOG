@@ -1,7 +1,17 @@
 
-lxqt-build-tools-0.1.0 / 2016-10-14
+lxqt-build-tools-0.2.0 / 2016-10-30
 ===================================
 
+  * Bump minor to 2 (#7)
+  * Added Qt5Core to README.md (#6)
+  * Adds an LXQtConfigVars module
+  * Adds superbuild support
+  * README.md: Update dependencies
+
+0.1.0 / 2016-10-14
+==================
+
+  * Release 0.1.0: Update changelog
   * Adds LXQtCreatePortableHeaders module
   * Authors and license (#2)
   * Add README.md
