@@ -3,6 +3,7 @@
 INSTALL_MANIFEST="install_manifest.txt"
 
 CMAKE_REPOS=" \
+	lxqt-build-tools \
 	libqtxdg \
 	liblxqt \
 	libsysstat \
@@ -21,12 +22,17 @@ CMAKE_REPOS=" \
 	lxqt-runner \
 	libfm-qt \
 	pcmanfm-qt \
-	lximage-qt \
 	lxqt-sudo \
+	pavucontrol-qt"
+
+OPTIONAL_CMAKE_REPOS=" \
+	qtermwidget \
+	qterminal \
+	lximage-qt \
 	compton-conf \
 	obconf-qt"
 
-for d in ${CMAKE_REPOS}
+for d in ${CMAKE_REPOS} ${OPTIONAL_CMAKE_REPOS}
 do
     INSTALL_MANIFEST_FULL_PATH="${d}/build/${INSTALL_MANIFEST}"
     if [ -f "${INSTALL_MANIFEST_FULL_PATH}" ]
