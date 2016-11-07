@@ -1,0 +1,30 @@
+CMAKE_REPOS=" \
+	lxqt-build-tools \
+	libqtxdg \
+	liblxqt \
+	libsysstat \
+	lxqt-session \
+	lxqt-qtplugin \
+	lxqt-globalkeys \
+	lxqt-notificationd \
+	lxqt-about \
+	lxqt-common \
+	lxqt-config \
+	lxqt-admin \
+	lxqt-openssh-askpass \
+	lxqt-panel \
+	lxqt-policykit \
+	lxqt-powermanagement \
+	lxqt-runner \
+	libfm-qt \
+	pcmanfm-qt \
+	lxqt-sudo \
+	pavucontrol-qt"
+
+OPTIONAL_CMAKE_REPOS=" \
+	qtermwidget \
+	qterminal \
+	lximage-qt \
+	compton-conf \
+	obconf-qt"
+

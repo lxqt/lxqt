@@ -2,31 +2,9 @@
 
 INSTALL_MANIFEST="install_manifest.txt"
 
-CMAKE_REPOS=" \
-	libqtxdg \
-	liblxqt \
-	libsysstat \
-	lxqt-session \
-	lxqt-qtplugin \
-	lxqt-globalkeys \
-	lxqt-notificationd \
-	lxqt-about \
-	lxqt-common \
-	lxqt-config \
-	lxqt-admin \
-	lxqt-openssh-askpass \
-	lxqt-panel \
-	lxqt-policykit \
-	lxqt-powermanagement \
-	lxqt-runner \
-	libfm-qt \
-	pcmanfm-qt \
-	lximage-qt \
-	lxqt-sudo \
-	compton-conf \
-	obconf-qt"
+source "cmake_repos.list"
 
-for d in ${CMAKE_REPOS}
+for d in ${CMAKE_REPOS} ${OPTIONAL_CMAKE_REPOS}
 do
     INSTALL_MANIFEST_FULL_PATH="${d}/build/${INSTALL_MANIFEST}"
     if [ -f "${INSTALL_MANIFEST_FULL_PATH}" ]

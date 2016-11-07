@@ -17,36 +17,7 @@
 # $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ DO_INSTALL=0 ./build_all.sh
 # etc.
 
-CMAKE_REPOS=" \
-	lxqt-build-tools \
-	libqtxdg \
-	liblxqt \
-	libsysstat \
-	lxqt-session \
-	lxqt-qtplugin \
-	lxqt-globalkeys \
-	lxqt-notificationd \
-	lxqt-about \
-	lxqt-common \
-	lxqt-config \
-	lxqt-admin \
-	lxqt-openssh-askpass \
-	lxqt-panel \
-	lxqt-policykit \
-	lxqt-powermanagement \
-	lxqt-runner \
-	libfm-qt \
-	pcmanfm-qt \
-	lxqt-sudo \
-	pavucontrol-qt"
-
-OPTIONAL_CMAKE_REPOS=" \
-	qtermwidget \
-	qterminal \
-	lximage-qt \
-	compton-conf \
-	obconf-qt"
-
+source "cmake_repos.list"
 
 if [[ -n "$LXQT_JOB_NUM" ]]; then
     JOB_NUM="$LXQT_JOB_NUM"
