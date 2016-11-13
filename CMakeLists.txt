@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
-
 project(lxqt-build-tools)
+
+cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
 
 option(WITH_XDG_DIRS_FALLBACK "Use our XDG_CONFIG_DIRS fallback" ON)
 
