@@ -129,6 +129,20 @@ endif()
 
 
 #-----------------------------------------------------------------------------
+# Turn on more aggrassive optimizations not supported by CMake
+# References: https://wiki.qt.io/Performance_Tip_Startup_Time
+#-----------------------------------------------------------------------------
+if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
+    # -flto: use link-time optimizations to generate more efficient code
+    # -Bsymbolic-functions: replace dynamic symbols used internally in 
+    #                       shared libs with direct addresses.
+    set(LTO_FLAGS "-flto -fuse-linker-plugin")
+    # apply these options to "Release" build type only
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${LTO_FLAGS} -Wl,-Bsymbolic-functions")
+endif()
+
+
+#-----------------------------------------------------------------------------
 # CXX11 and CXX0X requirements
 #-----------------------------------------------------------------------------
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
