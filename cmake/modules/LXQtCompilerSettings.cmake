@@ -28,6 +28,13 @@
 #=============================================================================
 
 #-----------------------------------------------------------------------------
+# Build with release mode by default (turn on compiler optimizations)
+#-----------------------------------------------------------------------------
+if (NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
+
+#-----------------------------------------------------------------------------
 # Honor visibility properties for all target types.
 #
 # The ``<LANG>_VISIBILITY_PRESET`` and
