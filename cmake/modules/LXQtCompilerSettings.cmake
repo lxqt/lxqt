@@ -171,6 +171,15 @@ endif()
 
 
 #-----------------------------------------------------------------------------
+# Enable colored diagnostics for the CLang/Ninja combination
+#-----------------------------------------------------------------------------
+if (LXQT_COMPILER_IS_CLANGCXX AND CMAKE_GENERATOR STREQUAL "Ninja")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fcolor-diagnostics")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fcolor-diagnostics")
+endif()
+
+
+#-----------------------------------------------------------------------------
 # Enable exceptions for an target
 #
 # lxqt_enable_target_exceptions(<target>
