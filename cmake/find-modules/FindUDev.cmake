@@ -50,7 +50,8 @@ if(UDEV_INCLUDE_DIR AND UDEV_LIBS)
 endif()
 
 include(FindPackageHandleStandardArgs)
-find_package_handle_standard_args(UDev DEFAULT_MSG UDEV_INCLUDE_DIR UDEV_LIBS)
+find_package_handle_standard_args(UDev
+    REQUIRED_VARS UDEV_INCLUDE_DIR UDEV_LIBS)
 
 mark_as_advanced(UDEV_INCLUDE_DIR UDEV_LIBS)
 
