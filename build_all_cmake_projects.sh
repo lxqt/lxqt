@@ -14,7 +14,7 @@
 # example:
 # $ LIB_SUFFIX=64 ./build_all.sh
 # or
-# $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ DO_INSTALL=0 ./build_all.sh
+# $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ DO_INSTALL=0 ./build_all_cmake_projects.sh
 # etc.
 
 source "cmake_repos.list"
