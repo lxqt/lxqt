@@ -31,8 +31,13 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-find_path(UDEV_INCLUDE_DIR libudev.h)
-find_library(UDEV_LIBS udev)
+find_package(PkgConfig)
+pkg_check_modules(PC_UDEV QUIET libudev)
+
+find_path(UDEV_INCLUDE_DIR libudev.h
+    HINTS ${PC_UDEV_INCLUDEDIR} ${PC_UDEV_INCLUDE_DIRS})
+
+find_library(UDEV_LIBS udev HINTS ${PC_UDEV_LIBDIR} ${PC_UDEV_LIBRARY_DIRS})
 
 if(UDEV_INCLUDE_DIR AND UDEV_LIBS)
    include(CheckFunctionExists)
