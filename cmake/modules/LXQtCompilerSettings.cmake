@@ -119,12 +119,21 @@ endif()
 # Do not allow undefined symbols
 #-----------------------------------------------------------------------------
 if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
+    # -Bsymbolic-functions: replace dynamic symbols used internally in 
+    #                       shared libs with direct addresses.
+    set(SYMBOLIC_FLAGS
+        "-Wl,-Bsymbolic-functions -Wl,-Bsymbolic"
+    )
     set(CMAKE_SHARED_LINKER_FLAGS
-        "-Wl,--no-undefined ${CMAKE_SHARED_LINKER_FLAGS}"
+        "-Wl,--no-undefined ${SYMBOLIC_FLAGS} ${CMAKE_SHARED_LINKER_FLAGS}"
     )
     set(CMAKE_MODULE_LINKER_FLAGS
-        "-Wl,--no-undefined ${CMAKE_MODULE_LINKER_FLAGS}"
+        "-Wl,--no-undefined ${SYMBOLIC_FLAGS} ${CMAKE_MODULE_LINKER_FLAGS}"
     )
+    set(CMAKE_EXE_LINKER_FLAGS
+        "${SYMBOLIC_FLAGS} ${CMAKE_EXE_LINKER_FLAGS}"
+    )
+
 endif()
 
 
@@ -134,11 +143,13 @@ endif()
 #-----------------------------------------------------------------------------
 if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
     # -flto: use link-time optimizations to generate more efficient code
-    # -Bsymbolic-functions: replace dynamic symbols used internally in 
-    #                       shared libs with direct addresses.
-    set(LTO_FLAGS "-flto -fuse-linker-plugin")
+    if (CMAKE_COMPILER_IS_GNUCXX)
+        set(LTO_FLAGS "-flto -fuse-linker-plugin")
+    elseif (LXQT_COMPILER_IS_CLANGCXX)
+        set(LTO_FLAGS "-flto")
+    endif()
     # apply these options to "Release" build type only
-    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${LTO_FLAGS} -Wl,-Bsymbolic-functions")
+    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${LTO_FLAGS}")
 endif()
 
 
