@@ -6,6 +6,7 @@
 #  UDEV_LIBS - The libudev libraries
 
 # Copyright (c) 2010, Rafael Fernández López, <ereslibre@kde.org>
+# Copyright (c) 2016, Luís Pereira, <luis.artur.pereira@gmail.com>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -49,9 +50,12 @@ if(UDEV_INCLUDE_DIR AND UDEV_LIBS)
 
 endif()
 
+set(UDEV_VERSION_STRING ${PC_UDEV_VERSION})
+
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(UDev
-    REQUIRED_VARS UDEV_INCLUDE_DIR UDEV_LIBS)
+    REQUIRED_VARS UDEV_INCLUDE_DIR UDEV_LIBS
+    VERSION_VAR ${UDEV_VERSION_STRING})
 
 mark_as_advanced(UDEV_INCLUDE_DIR UDEV_LIBS)
 
