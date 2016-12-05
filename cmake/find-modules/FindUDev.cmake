@@ -48,3 +48,8 @@ include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(UDev DEFAULT_MSG UDEV_INCLUDE_DIR UDEV_LIBS)
 
 mark_as_advanced(UDEV_INCLUDE_DIR UDEV_LIBS)
+
+include(FeatureSummary)
+set_package_properties(UDev PROPERTIES
+   URL "https://www.kernel.org/pub/linux/utils/kernel/hotplug/udev/udev.html"
+   DESCRIPTION "Linux dynamic device management")
