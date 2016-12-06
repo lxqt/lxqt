@@ -119,7 +119,7 @@ endif()
 # Do not allow undefined symbols
 #-----------------------------------------------------------------------------
 if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
-    # -Bsymbolic-functions: replace dynamic symbols used internally in 
+    # -Bsymbolic-functions: replace dynamic symbols used internally in
     #                       shared libs with direct addresses.
     set(SYMBOLIC_FLAGS
         "-Wl,-Bsymbolic-functions -Wl,-Bsymbolic"
@@ -146,7 +146,10 @@ if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
     if (CMAKE_COMPILER_IS_GNUCXX)
         set(LTO_FLAGS "-flto -fuse-linker-plugin")
     elseif (LXQT_COMPILER_IS_CLANGCXX)
-        set(LTO_FLAGS "-flto")
+        # The link-time optimization of clang++/llvm seems to be too aggrassive.
+        # After testing, it breaks the signal/slots of QObject sometimes.
+        # So disable it for now until there is a solution.
+        # set(LTO_FLAGS "-flto")
     endif()
     # apply these options to "Release" build type only
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} ${LTO_FLAGS}")
