@@ -1,7 +1,29 @@
 
-lxqt-build-tools-0.2.0 / 2016-10-30
+lxqt-build-tools-0.3.0 / 2016-12-06
 ===================================
 
+  * Adds an FindXCB CMake module
+  * FindUDev: Add VERSION_STRING support
+  * FindUDev: Set REQUIRED_VARS
+  * FindUdev: Feed pkg_modules_modules results to find_library/path
+  * FindUDev: Adds Feature Summary
+  * Adds FindUDev module
+  * Enables colored diagnostics for CLang/Ninja combination
+  * Disable link-time optimization for clang++/llvm since after some testing it breaks QObject signal/slot sometimes. * Remove trailing spaces.
+  * Use different link-time optimization compiler options for gcc and clang and move -Bsymbolic flags to linker flags.
+  * Add more linker options to turn on linker-time optimizations for gcc & clang.
+  * Set CMAKE_BUILD_TYPE to Release by default if it's value is not set.
+  * FindGLIB: Improve gio-unix handling
+  * Adds a FindGLIB CMake module
+  * Adds a FindMenuCache CMake module
+  * Adds a FindFm CMake module
+  * move project name to top
+  * Fixes the name of package config file name in superbuild mode
+
+0.2.0 / 2016-10-30
+==================
+
+  * Release 0.2.0: Update changelog
   * Bump minor to 2 (#7)
   * Added Qt5Core to README.md (#6)
   * Adds an LXQtConfigVars module
