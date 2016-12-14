@@ -145,6 +145,16 @@ if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
     # -flto: use link-time optimizations to generate more efficient code
     if (CMAKE_COMPILER_IS_GNUCXX)
         set(LTO_FLAGS "-flto -fuse-linker-plugin")
+        # When building static libraries with LTO in gcc >= 4.9,
+        # "gcc-ar" and "gcc-ranlib" should be used instead of "ar" and "ranlib".
+        # references:
+        #   https://gcc.gnu.org/gcc-4.9/changes.html
+        #   http://hubicka.blogspot.tw/2014/04/linktime-optimization-in-gcc-2-firefox.html
+        #   https://github.com/monero-project/monero/pull/1065/commits/1855213c8fb8f8727f4107716aab8e7ba826462b
+        if (NOT CMAKE_CXX_COMPILER_VERSION VERSION_LESS "4.9.0")  # gcc >= 4.9
+            set(CMAKE_AR "gcc-ar")
+            set(CMAKE_RANLIB "gcc-ranlib")
+        endif()
     elseif (LXQT_COMPILER_IS_CLANGCXX)
         # The link-time optimization of clang++/llvm seems to be too aggrassive.
         # After testing, it breaks the signal/slots of QObject sometimes.
