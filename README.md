@@ -16,6 +16,6 @@ Code configuration is handled by CMake. CMake variable `CMAKE_INSTALL_PREFIX` ha
 
 To build run `make`, to install `make install` which accepts variable `DESTDIR` as usual. (Strictly speaking `make` isn't even needed right now. On the other hand it doesn't hurt so packagers may just include it in case it'll be needed one day.)
 
-### Binary packages
+## Packagers
 
-The repository was introduced in September 2016 and binary packages are rare so far. On Arch Linux an [AUR](https://aur.archlinux.org/) package [lxqt-build-tools-git](https://aur.archlinux.org/packages/lxqt-build-tools-git/) can be used to build current checkouts of branch `master`.
+Please keep in mind that lxqt-build-tools are arch dependend - the package picks up **32/64bit-ness** at build time of the package - so the package has to be built for the respective architecture, arch: all will **not** fly.
