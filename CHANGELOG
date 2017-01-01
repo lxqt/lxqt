@@ -1,7 +1,15 @@
 
-lxqt-build-tools-0.3.0 / 2016-12-06
+lxqt-build-tools-0.3.1 / 2017-01-01
 ===================================
 
+  * Bump LXQT_PATCH_VERSION and build tools version (#13)
+  * 32 64 bit ness (#12)
+  * Use "gcc-ar" and "gcc-ranlib" tools when building static libs with gcc link-time optimization. (#11)
+
+0.3.0 / 2016-12-06
+==================
+
+  * Release 0.3.0: Update changelog
   * Adds an FindXCB CMake module
   * FindUDev: Add VERSION_STRING support
   * FindUDev: Set REQUIRED_VARS
