@@ -1,7 +1,15 @@
 
-lxqt-build-tools-0.3.1 / 2017-01-01
+lxqt-build-tools-0.3.2 / 2017-01-14
 ===================================
 
+  * Bump version to 0.3.2 - finally the build tools are arch: all (#15)
+  * Warnings (#16)
+  * Remove arched bits from version.cmake-file (#14)
+
+0.3.1 / 2017-01-01
+==================
+
+  * Release 0.3.1: Update changelog
   * Bump LXQT_PATCH_VERSION and build tools version (#13)
   * 32 64 bit ness (#12)
   * Use "gcc-ar" and "gcc-ranlib" tools when building static libs with gcc link-time optimization. (#11)
