@@ -103,14 +103,20 @@ endif()
 #-----------------------------------------------------------------------------
 # Common warning flags
 #-----------------------------------------------------------------------------
-set(__LXQT_COMMON_WARNING_FLAGS "-Wall")
+set(__LXQT_COMMON_WARNING_FLAGS "-Wall -Wextra -Wchar-subscripts -Wno-long-long -Wpointer-arith -Wundef -Wformat-security")
 
 
 #-----------------------------------------------------------------------------
 # Warning flags
 #-----------------------------------------------------------------------------
 if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${__LXQT_COMMON_WARNING_FLAGS}")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${__LXQT_COMMON_WARNING_FLAGS} -Wnon-virtual-dtor -Woverloaded-virtual -Wpedantic")
+endif()
+
+if (LXQT_COMPILER_IS_CLANGCXX)
+    # qCDebug(), qCWarning, etc trigger a very verbose warning, about.... nothing. Disable it.
+    # Found when building lxqt-session.
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-gnu-zero-variadic-macro-arguments")
 endif()
 
 
