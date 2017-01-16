@@ -75,6 +75,10 @@ add_definitions(
     -DQT_USE_QSTRINGBUILDER
 )
 
+if (CMAKE_BUILD_TYPE MATCHES "Debug")
+  add_definitions(-DQT_STRICT_ITERATORS)
+endif()
+
 
 #-----------------------------------------------------------------------------
 # Detect Clang compiler
