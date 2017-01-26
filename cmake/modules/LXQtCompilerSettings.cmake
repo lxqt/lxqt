@@ -193,9 +193,12 @@ endif()
 #-----------------------------------------------------------------------------
 # Enable colored diagnostics for the CLang/Ninja combination
 #-----------------------------------------------------------------------------
-if (LXQT_COMPILER_IS_CLANGCXX AND CMAKE_GENERATOR STREQUAL "Ninja")
-    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fcolor-diagnostics")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fcolor-diagnostics")
+if (CMAKE_GENERATOR STREQUAL "Ninja" AND
+    # Rationale: https://public.kitware.com/Bug/view.php?id=15502
+    ((CMAKE_COMPILER_IS_GNUCXX  AND NOT CMAKE_CXX_COMPILER_VERSION VERSION_LESS 4.9) OR
+     (LXQT_COMPILER_IS_CLANGCXX AND NOT CMAKE_CXX_COMPILER_VERSION VERSION_LESS 3.5)))
+        set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fcolor-diagnostics=always")
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fdiagnostics-color=always")
 endif()
 
 
