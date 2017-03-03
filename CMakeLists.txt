@@ -103,7 +103,7 @@ configure_file(
 # The package version file is common to superbuild and installable mode
 configure_file(
     "${CMAKE_CURRENT_SOURCE_DIR}/lxqt-build-tools-config-version.cmake.in"
-    "${CMAKE_CURRENT_BINARY_DIR}/lxqt-build-tools-config-version.cmake"
+    "${CMAKE_BINARY_DIR}/lxqt-build-tools-config-version.cmake"
     @ONLY
 )
 
