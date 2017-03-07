@@ -10,6 +10,11 @@ option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" O
 option(PULL_TRANSLATIONS "Pull translations" Yes)
 option(CLEAN_TRANSLATIONS "Clean translations" No)
 
+option(LXQT_BUILD_OBCONF_QT "Build OBConfQt" Yes)
+option(LXQT_BUILD_QTERMWIDGET "Build QTermWidget" Yes)
+option(LXQT_BUILD_QTERMINAL, "Build QTerminal" Yes)
+option(LXQT_BUILD_LXIMAGE_QT "Build LXImageQt" Yes)
+
 add_subdirectory(lxqt-build-tools)
 add_subdirectory(libqtxdg)
 add_subdirectory(liblxqt)
@@ -31,3 +36,19 @@ add_subdirectory(libfm-qt)
 add_subdirectory(pcmanfm-qt)
 add_subdirectory(lxqt-sudo)
 add_subdirectory(pavucontrol-qt)
+
+if (LXQT_BUILD_OBCONF_QT)
+    add_subdirectory(obconf-qt)
+endif()
+
+if (LXQT_BUILD_QTERMWIDGET)
+    add_subdirectory(qtermwidget)
+endif()
+
+if (LXQT_BUILD_QTERMINAL)
+    add_subdirectory(qterminal)
+endif()
+
+if (LXQT_BUILD_LXIMAGE_QT)
+    add_subdirectory(lximage-qt)
+endif()
