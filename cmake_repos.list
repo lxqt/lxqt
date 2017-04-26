@@ -8,7 +8,6 @@ CMAKE_REPOS=" \
 	lxqt-globalkeys \
 	lxqt-notificationd \
 	lxqt-about \
-	lxqt-common \
 	lxqt-config \
 	lxqt-admin \
 	lxqt-openssh-askpass \
