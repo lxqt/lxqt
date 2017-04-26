@@ -15,7 +15,6 @@ files=(
 	"liblxqt"
 	"lxqt-about"
 	"lxqt-admin"
-	"lxqt-common"
 	"lxqt-config"
 	"lxqt-globalkeys"
 	"lxqt-notificationd"

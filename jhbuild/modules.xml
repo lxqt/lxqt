@@ -159,10 +159,6 @@
     </cmake>
 
     <!-- Data files -->
-    <cmake id="lxqt-common">
-        <branch module="lxqt-common.git" />
-    </cmake>
-
     <autotools id="lxmenu-data" supports-non-srcdir-builds="no">
         <branch module="lxmenu-data.git" />
     </autotools>

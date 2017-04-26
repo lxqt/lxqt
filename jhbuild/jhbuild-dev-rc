@@ -17,7 +17,6 @@ modules = [
 # Core components
     'lxmenu-data',
     'lxqt-about',
-    'lxqt-common',
     'lxqt-globalkeys',
     'lxqt-notificationd',
     'lxqt-panel',
