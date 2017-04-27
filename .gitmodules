@@ -103,3 +103,6 @@
 [submodule "lxqt-build-tools"]
 	path = lxqt-build-tools
 	url = ../lxqt-build-tools
+[submodule "lxqt-themes"]
+	path = lxqt-themes
+	url = ../lxqt-themes
