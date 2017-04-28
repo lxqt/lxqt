@@ -86,23 +86,23 @@
 	url = ../lxqt-admin.git
 [submodule "lxqt-sudo"]
 	path = lxqt-sudo
-	url = ../lxqt-sudo
+	url = ../lxqt-sudo.git
 [submodule "libfm-qt"]
 	path = libfm-qt
-	url = ../libfm-qt
+	url = ../libfm-qt.git
 	branch = master
 [submodule "pavucontrol-qt"]
 	path = pavucontrol-qt
-	url = ../pavucontrol-qt
+	url = ../pavucontrol-qt.git
 [submodule "qtermwidget"]
 	path = qtermwidget
-	url = ../qtermwidget
+	url = ../qtermwidget.git
 [submodule "qterminal"]
 	path = qterminal
-	url = ../qterminal
+	url = ../qterminal.git
 [submodule "lxqt-build-tools"]
 	path = lxqt-build-tools
-	url = ../lxqt-build-tools
+	url = ../lxqt-build-tools.git
 [submodule "lxqt-themes"]
 	path = lxqt-themes
-	url = ../lxqt-themes
+	url = ../lxqt-themes.git
