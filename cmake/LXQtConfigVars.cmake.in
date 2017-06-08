@@ -16,11 +16,6 @@
 #                       added to XDG_DATA_DIRS by the startlxqt script.
 
 
-set(LXQT_MAJOR_VERSION      "@LXQT_MAJOR_VERSION@")
-set(LXQT_MINOR_VERSION      "@LXQT_MINOR_VERSION@")
-set(LXQT_PATCH_VERSION      "@LXQT_PATCH_VERSION@")
-set(LXQT_VERSION            "@LXQT_VERSION@")
-
 set(LXQT_LIBRARY_NAME "@LXQT_LIBRARY_NAME@")
 set(LXQT_RELATIVE_SHARE_DIR "@LXQT_RELATIVE_SHARE_DIR@")
 set(LXQT_SHARE_DIR          "@LXQT_SHARE_DIR@")
@@ -37,4 +32,3 @@ add_definitions("-DLXQT_SHARE_TRANSLATIONS_DIR=\"${LXQT_TRANSLATIONS_DIR}\"")
 add_definitions("-DLXQT_GRAPHICS_DIR=\"${LXQT_GRAPHICS_DIR}\"")
 add_definitions("-DLXQT_ETC_XDG_DIR=\"${LXQT_ETC_XDG_DIR}\"")
 add_definitions("-DLXQT_DATA_DIR=\"${LXQT_DATA_DIR}\"")
-add_definitions("-DLXQT_VERSION=\"${LXQT_VERSION}\"")
