@@ -9,6 +9,13 @@ set(LXQT_BUILD_TOOLS_MINOR_VERSION 3)
 set(LXQT_BUILD_TOOLS_PATCH_VERSION 2)
 set(LXQT_BUILD_TOOLS_VERSION ${LXQT_BUILD_TOOLS_MAJOR_VERSION}.${LXQT_BUILD_TOOLS_MINOR_VERSION}.${LXQT_BUILD_TOOLS_PATCH_VERSION})
 
+
+# Check for needed versions
+# We need at least Qt 5.6 and glib-2.0 >= 2.50 to build all LXQt parts 
+find_package(PkgConfig REQUIRED)
+find_package(Qt5Core "5.6.1"  REQUIRED)
+pkg_check_modules(GLIB2 glib-2.0>=2.50 REQUIRED)
+
 include(CMakePackageConfigHelpers)
 include(GNUInstallDirs) # Standard directories for installation
 include(cmake/FindInstallConfigPath.cmake) # sets LXQT_ETC_XDG_DIR, if unset
