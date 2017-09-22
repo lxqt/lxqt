@@ -1,7 +1,21 @@
 
-lxqt-build-tools-0.3.2 / 2017-01-14
+lxqt-build-tools-0.4.0 / 2017-09-22
 ===================================
 
+  * Bump version to 0.4.0
+  * Added needed versions
+  * remove version set from LXQtConfigVars.in
+  * Move LXQt version to liblxqt
+  * Fixes a FTBFS with superbuild mode
+  * Adds a FindExif module
+  * LXQtCompilerSettings: Fixes a typo in diagnostics-color
+  * Adds (Ninja) colored diagnostics for GCC (>=4.9)
+  * Enable strict iterators for debug builds
+
+0.3.2 / 2017-01-14
+==================
+
+  * Release 0.3.2: Update changelog
   * Bump version to 0.3.2 - finally the build tools are arch: all (#15)
   * Warnings (#16)
   * Remove arched bits from version.cmake-file (#14)
