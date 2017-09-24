@@ -1,7 +1,8 @@
 # remove files from deployment using `git archive`
 
-# git files
+# git* files
 .gitattributes export-ignore
+.github        export-ignore
 .gitignore     export-ignore
 
 
