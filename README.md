@@ -6,7 +6,7 @@ merge between Razor-qt and LXDE-Qt.
 
 
 ## About this repository
-This is a superproject which contains all lxde-qt components.
+This is a super project which contains all lxde-qt components.
 After checking out this repo, please do the following to initialize git submodules.
 Please note, this repo works best with git version >= 1.8.2.
 With older versions, you have to do many manual operations. Please use the latest git if you can.
