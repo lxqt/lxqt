@@ -26,7 +26,7 @@ Note:
 
 There are some limitations of older versions of git.
 Because git submodule does not track the latest HEAD automatically, the submodules always stick to specific commits
-unless manually changed. Besides, after initial checkout, the submodule repos are detached from master branch.
+unless manually changed. Besides, after initial checkout, the submodule repos are detached from the master branch.
 
 Consider doing this manually to checkout master branches for every module.
     git submodule foreach git checkout master
