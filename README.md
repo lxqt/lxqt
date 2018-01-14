@@ -20,7 +20,7 @@ Note:
 1. If you're unfortunately using an older version of git, omit the "--remote" part and please read the following notes.
 1. Adding the --rebase option is suggested. Without --rebase, the submodules will all be detached commits and not in "master" branches.
 
-====================================================================================
+---
 
 ### Notes for git with version < 1.8.2:
 
