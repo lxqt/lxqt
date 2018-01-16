@@ -73,6 +73,7 @@ include(CheckCXXCompilerFlag)
 #-----------------------------------------------------------------------------
 add_definitions(
     -DQT_USE_QSTRINGBUILDER
+    -DQT_NO_FOREACH
 )
 
 if (CMAKE_BUILD_TYPE MATCHES "Debug")
