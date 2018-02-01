@@ -93,6 +93,7 @@ endif()
 # Set visibility to hidden to hide symbols, unless they're exported manually
 # in the code
 #-----------------------------------------------------------------------------
+set(CMAKE_C_VISIBILITY_PRESET hidden)
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
 
