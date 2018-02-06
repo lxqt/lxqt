@@ -12,7 +12,7 @@ option(CLEAN_TRANSLATIONS "Clean translations" No)
 
 option(LXQT_BUILD_OBCONF_QT "Build OBConfQt" Yes)
 option(LXQT_BUILD_QTERMWIDGET "Build QTermWidget" Yes)
-option(LXQT_BUILD_QTERMINAL, "Build QTerminal" Yes)
+option(LXQT_BUILD_QTERMINAL "Build QTerminal" Yes)
 option(LXQT_BUILD_LXIMAGE_QT "Build LXImageQt" Yes)
 
 add_subdirectory(lxqt-build-tools)
