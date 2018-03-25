@@ -93,7 +93,7 @@ function(lxqt_translate_desktop _RESULT)
 
         file(WRITE ${_txFile}
             "[ -f ${_inFile} ] || exit 0\n"
-            "echo '[lxde-qt.${_fileName}_${_fileType}]'\n"
+            "echo '[lxqt.${_fileName}_${_fileType}]'\n"
             "echo 'type = DESKTOP'\n"
             "echo 'source_lang = en'\n"
             "echo 'source_file = ${_tx_inFile}'\n"

@@ -145,7 +145,7 @@ lxqt-build-tools-0.4.0 / 2017-09-22
   * Removes lxqt_translate_desktop() from the _use.cnake
   * Adds Qt5TranslationLoader cmake module
   * Fix HtmlDelegate and move it to its own file. Also get rid of X11 on CMakeLists.txt.
-  * Delete XfitMan class. Fixes lxde/lxde-qt#226
+  * Delete XfitMan class. Fixes lxqt/lxqt#226
   * Don't update (extract) translations by default.
   * Includes all LXQt translation modules
   * Adds automatic translations loaders for LXQt libs and apps
@@ -177,7 +177,7 @@ lxqt-build-tools-0.4.0 / 2017-09-22
   * Use newer version of cmake 2.8.9
   * Detect the path of qmake correctly for Qt5.
   * Fix after merging from master, by removing dupplicated items
-  * Merge branch 'master' of https://github.com/lxde/liblxqt into qt5
+  * Merge branch 'master' of https://github.com/lxqt/liblxqt into qt5
   * Update qt5 porting
   * Install pkgconfig file to /usr/local/libdata/pkgconfig when FreeBSD is detected.
   * Set link directories properly
