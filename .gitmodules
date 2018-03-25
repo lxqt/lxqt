@@ -1,10 +1,10 @@
 [submodule "libfm"]
 	path = libfm
-	url = ../libfm.git
+	url = ../../lxde/libfm.git
 	branch = master
 [submodule "menu-cache"]
 	path = menu-cache
-	url = ../menu-cache.git
+	url = ../../lxde/menu-cache.git
 	branch = master
 [submodule "liblxqt"]
 	path = liblxqt
@@ -72,7 +72,7 @@
 	branch = master
 [submodule "lxmenu-data"]
 	path = lxmenu-data
-	url = ../lxmenu-data.git
+	url = ../../lxde/lxmenu-data.git
 	branch = master
 [submodule "lxqt-qtplugin"]
 	path = lxqt-qtplugin
