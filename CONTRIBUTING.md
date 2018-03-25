@@ -1,14 +1,14 @@
 Contributing to LXQt
 ====================
 
-The LXDE team is always looking for contributors. Everyone is welcome to join,
+The LXQt team is always looking for contributors. Everyone is welcome to join,
 whether they are a developer, translator or user.
 
 
 Code contributions
 ------------------
 
-LXDE uses Git as a version control system. All our code is available online (https://github.com/LXDE).
+LXQt uses Git as a version control system. All our code is available online (https://github.com/lxqt).
 Pull Requests directly from Github are accepted.
 
 For more information on git, see the official website:
@@ -17,7 +17,7 @@ For more information on git, see the official website:
 Please make sure you adhere to the project's styleguide when proposing changes.
 
 A more in-depth document for aspiring contributors is located on the LXQt wiki:
-  https://github.com/lxde/lxqt/wiki/Contributing-code
+  https://github.com/lxqt/lxqt/wiki/Contributing-code
 
 Also see Github's guide on Contributing to Open Source:
   https://guides.github.com/activities/contributing-to-open-source/
@@ -26,30 +26,25 @@ Also see Github's guide on Contributing to Open Source:
 Translations
 ------------
 
-We use Pootle for all our translations.
-  http://pootle.lxde.org/
+We use QtLinguist for all our translations.
 
-For more information on Pootle, please see the official documentation:
-  http://docs.translatehouse.org/projects/pootle/
-
-NOTE: Due to issues regarding pootle.lxde.org translators are asked to commit temporarily on GitHub. Pootle server will be deployed again some time after LXQt 0.9 is released.
 
 Bug reports
 -----------
 
 All our issues are tracked on Github.
 Please file all general LXQt bug reports on the general LXQt bug tracker:
-  https://github.com/lxde/lxqt/issues.
+  https://github.com/lxqt/lxqt/issues.
 
 Some components and independent apps have their own issue tracker on GitHub:
-* components: libqtxdg (https://github.com/lxde/libqtxdg/issues),
-  libsysstat (https://github.com/lxde/libsysstat/issues),
-  menu-cache (https://github.com/lxde/menu-cache/issues)
-* GUI tools, applications: ComptonConf (https://github.com/lxde/compton-conf/issues),
-  ObConf-Qt (https://github.com/lxde/obconf-qt/issues),
-  PCManFM-Qt (https://github.com/lxde/pcmanfm-qt/issues),
-  LXImage-Qt (https://github.com/lxde/lximage-qt/issues)
-* web site lxqt.org (https://github.com/lxde/lxde.github.io/issues)
+* components: libqtxdg (https://github.com/lxqt/libqtxdg/issues),
+  libsysstat (https://github.com/lxqt/libsysstat/issues),
+  menu-cache (https://github.com/lxqt/menu-cache/issues)
+* GUI tools, applications: ComptonConf (https://github.com/lxqt/compton-conf/issues),
+  ObConf-Qt (https://github.com/lxqt/obconf-qt/issues),
+  PCManFM-Qt (https://github.com/lxqt/pcmanfm-qt/issues),
+  LXImage-Qt (https://github.com/lxqt/lximage-qt/issues)
+* web site lxqt.org (https://github.com/lxqt/lxqt.github.io/issues)
 
 
 Other
