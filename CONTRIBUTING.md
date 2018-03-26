@@ -12,7 +12,7 @@ LXQt uses Git as a version control system. All our code is available online (htt
 Pull Requests directly from Github are accepted.
 
 For more information on git, see the official website:
-  http://git-scm.com/
+  https://git-scm.com/
 
 Please make sure you adhere to the project's styleguide when proposing changes.
 
