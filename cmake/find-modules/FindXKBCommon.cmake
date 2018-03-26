@@ -102,6 +102,6 @@ find_package_handle_standard_args(XKBCommon
 
 include(FeatureSummary)
 set_package_properties(XKBCommon PROPERTIES
-    URL "http://xkbcommon.org"
+    URL "https://xkbcommon.org"
     DESCRIPTION "A library to handle keyboard descriptions"
 )

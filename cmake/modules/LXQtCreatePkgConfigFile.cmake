@@ -232,7 +232,7 @@ function(lxqt_create_pkgconfig_file)
 
     if (DEFINED USER_INSTALL)
         # FreeBSD loves to install files to different locations
-        # http://www.freebsd.org/doc/handbook/dirstructure.html
+        # https://www.freebsd.org/doc/handbook/dirstructure.html
         if(${CMAKE_SYSTEM_NAME} STREQUAL "FreeBSD")
             set(_PKGCONFIG_INSTALL_DESTINATION "libdata/pkgconfig")
         else()

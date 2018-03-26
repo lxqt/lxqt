@@ -161,7 +161,7 @@ if (CMAKE_COMPILER_IS_GNUCXX OR LXQT_COMPILER_IS_CLANGCXX)
         # "gcc-ar" and "gcc-ranlib" should be used instead of "ar" and "ranlib".
         # references:
         #   https://gcc.gnu.org/gcc-4.9/changes.html
-        #   http://hubicka.blogspot.tw/2014/04/linktime-optimization-in-gcc-2-firefox.html
+        #   https://hubicka.blogspot.tw/2014/04/linktime-optimization-in-gcc-2-firefox.html
         #   https://github.com/monero-project/monero/pull/1065/commits/1855213c8fb8f8727f4107716aab8e7ba826462b
         if (NOT CMAKE_CXX_COMPILER_VERSION VERSION_LESS "4.9.0")  # gcc >= 4.9
             set(CMAKE_AR "gcc-ar")

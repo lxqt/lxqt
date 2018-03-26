@@ -31,7 +31,7 @@
 
 include(FeatureSummary)
 set_package_properties(XCB PROPERTIES
-   URL "http://xcb.freedesktop.org/"
+   URL "https://xcb.freedesktop.org/"
    DESCRIPTION "X protocol C-language Binding")
 
 find_package(PkgConfig)
