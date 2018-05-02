@@ -19,6 +19,7 @@ pkg_check_modules(GLIB2 glib-2.0>=2.50 REQUIRED)
 include(CMakePackageConfigHelpers)
 include(GNUInstallDirs) # Standard directories for installation
 include(cmake/FindInstallConfigPath.cmake) # sets LXQT_ETC_XDG_DIR, if unset
+include(cmake/modules/LXQtPreventInSourceBuilds.cmake)
 
 #-----------------------------------------------------------------------------
 # LXQT_DATA_DIR defaults to CMAKE_INSTALL_FULL_DATADIR. It's added to
