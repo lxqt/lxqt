@@ -21,7 +21,7 @@ source "cmake_repos.list"
 
 if [[ -n "$LXQT_JOB_NUM" ]]; then
     JOB_NUM="$LXQT_JOB_NUM"
-elif which nproc > /dev/null then
+elif which nproc > /dev/null; then
     # detect processor numbers (Linux only)
     JOB_NUM=`nproc`
 else
