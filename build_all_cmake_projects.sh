@@ -19,7 +19,7 @@
 
 source "cmake_repos.list"
 
-if [[ -n "$LXQT_JOB_NUM" ]]; then
+if [ -n "$LXQT_JOB_NUM" ]; then
     JOB_NUM="$LXQT_JOB_NUM"
 elif which nproc > /dev/null; then
     # detect processor numbers (Linux only)
@@ -30,39 +30,39 @@ else
 fi
 echo "Make job number: $JOB_NUM"
 
-if [[ -n "$CMAKE_BUILD_TYPE" ]]; then
+if [ -n "$CMAKE_BUILD_TYPE" ]; then
 	CMAKE_BUILD_TYPE="-DCMAKE_BUILD_TYPE=$CMAKE_BUILD_TYPE"
 else
 	CMAKE_BUILD_TYPE="-DCMAKE_BUILD_TYPE=debug"
 fi
 
-if [[ -n "$LXQT_PREFIX" ]]; then
+if [ -n "$LXQT_PREFIX" ]; then
 	CMAKE_INSTALL_PREFIX="-DCMAKE_INSTALL_PREFIX=$LXQT_PREFIX"
 else
 	CMAKE_INSTALL_PREFIX=""
 fi
 
-if [[ -n  "$CMAKE_GENERATOR" ]]; then
+if [ -n  "$CMAKE_GENERATOR" ]; then
 	#echo "x$CMAKE_GENERATOR"
-	if [[ "$CMAKE_GENERATOR" = "Ninja" ]]; then
+	if [ "$CMAKE_GENERATOR" = "Ninja" ]; then
 		CMAKE_MAKE_PROGRAM="ninja"
 		CMAKE_GENERATOR="-G $CMAKE_GENERATOR -DCMAKE_MAKE_PROGRAM=$CMAKE_MAKE_PROGRAM"
 	fi
 fi
 
-[[ -n "$CMAKE_MAKE_PROGRAM" ]] || CMAKE_MAKE_PROGRAM="make"
+[ -n "$CMAKE_MAKE_PROGRAM" ] || CMAKE_MAKE_PROGRAM="make"
 
-if [[ -n "$LIB_SUFFIX" ]]; then
+if [ -n "$LIB_SUFFIX" ]; then
 	CMAKE_LIB_SUFFIX="-DLIB_SUFFIX=$LIB_SUFFIX"
 else
 	CMAKE_LIB_SUFFIX=""
 fi
 
-[[ -n "$DO_BUILD" ]] || DO_BUILD=1
+[ -n "$DO_BUILD" ] || DO_BUILD=1
 
-[[ -n "$DO_INSTALL" ]] || DO_INSTALL=1
+[ -n "$DO_INSTALL" ] || DO_INSTALL=1
 
-[[ -n "$DO_INSTALL_ROOT" ]] || DO_INSTALL_ROOT=1
+[ -n "$DO_INSTALL_ROOT" ] || DO_INSTALL_ROOT=1
 
 
 ALL_CMAKE_FLAGS="$CMAKE_BUILD_TYPE $CMAKE_INSTALL_PREFIX $CMAKE_LIB_SUFFIX $CMAKE_GENERATOR"
@@ -73,11 +73,11 @@ do
 	mkdir -p "$d/build" \
 		&& cd "$d/build" \
 		|| exit 1
-	if [[ "$DO_BUILD" = 1 ]]; then
+	if [ "$DO_BUILD" = 1 ]; then
 		cmake $ALL_CMAKE_FLAGS .. && "$CMAKE_MAKE_PROGRAM" -j$JOB_NUM || exit 1
 	fi
-	if [[ "$DO_INSTALL" = 1 ]]; then
-		if [[ "$DO_INSTALL_ROOT" = 1 ]]; then
+	if [ "$DO_INSTALL" = 1 ]; then
+		if [ "$DO_INSTALL_ROOT" = 1 ]; then
 			sudo "$CMAKE_MAKE_PROGRAM" install || exit 1
 		else
 			"$CMAKE_MAKE_PROGRAM" install || exit 1
