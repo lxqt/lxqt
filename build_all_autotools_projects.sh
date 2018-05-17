@@ -14,7 +14,7 @@
 # $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ ./build_all.sh
 # etc.
 
-if [[ -n "$LXQT_JOB_NUM" ]]; then
+if [ -n "$LXQT_JOB_NUM" ]; then
     JOB_NUM="$LXQT_JOB_NUM"
 elif which nproc > /dev/null; then
     # detect processor numbers (Linux only)
