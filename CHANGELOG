@@ -1,7 +1,24 @@
 
-lxqt-build-tools-0.4.0 / 2017-09-22
+lxqt-build-tools-0.5.0 / 2018-05-21
 ===================================
 
+  * Bump version to 0.5.0
+  * Prevent in-source builds
+  * Adds an PreventInSourceBuilds module
+  * http --> https
+  * Fixed some LXDE mentions
+  * LXQtCompilerSettings: Set CMAKE_C_VISIBILITY_PRESET to hidden
+  * Don't allow Qt foreach/Q_FOREACH
+  * Update CMakeLists.txt
+  * Require Qt 5.7.1
+  * Adds a FindXKBCommon CMake module
+  * Adds ECMFindModuleHelpers CMake module
+  * Don't export github templates
+
+0.4.0 / 2017-09-22
+==================
+
+  * Release 0.4.0: Update changelog
   * Bump version to 0.4.0
   * Added needed versions
   * remove version set from LXQtConfigVars.in
@@ -145,7 +162,7 @@ lxqt-build-tools-0.4.0 / 2017-09-22
   * Removes lxqt_translate_desktop() from the _use.cnake
   * Adds Qt5TranslationLoader cmake module
   * Fix HtmlDelegate and move it to its own file. Also get rid of X11 on CMakeLists.txt.
-  * Delete XfitMan class. Fixes lxqt/lxqt#226
+  * Delete XfitMan class. Fixes lxde/lxde-qt#226
   * Don't update (extract) translations by default.
   * Includes all LXQt translation modules
   * Adds automatic translations loaders for LXQt libs and apps
@@ -177,7 +194,7 @@ lxqt-build-tools-0.4.0 / 2017-09-22
   * Use newer version of cmake 2.8.9
   * Detect the path of qmake correctly for Qt5.
   * Fix after merging from master, by removing dupplicated items
-  * Merge branch 'master' of https://github.com/lxqt/liblxqt into qt5
+  * Merge branch 'master' of https://github.com/lxde/liblxqt into qt5
   * Update qt5 porting
   * Install pkgconfig file to /usr/local/libdata/pkgconfig when FreeBSD is detected.
   * Set link directories properly
