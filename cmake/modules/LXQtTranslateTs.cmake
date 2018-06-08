@@ -34,11 +34,6 @@
 #                           [TRANSLATION_DIR] translation_directory
 #                           [INSTALL_DIR] install_directory
 #                           [COMPONENT] component
-#                           [PULL_TRANSLATIONS [Yes | No]]
-#                           [CLEAN_TRANSLATIONS [Yes | No]]
-#                           [REPO_SUBDIR] repository_subdirectory
-#                           [TRANSLATIONS_REPO] remote_translation_repo
-#                           [TRANSLATIONS_REFSPEC] translations_remote_branch
 #                    )
 #     Output:
 #       qmFiles The generated compiled translations (.qm) files
@@ -81,11 +76,6 @@ function(lxqt_translate_ts qmFiles)
         TRANSLATION_DIR
         INSTALL_DIR
         COMPONENT
-        PULL_TRANSLATIONS
-        CLEAN_TRANSLATIONS
-        REPO_SUBDIR
-        TRANSLATIONS_REPO
-        TRANSLATIONS_REFSPEC
     )
     set(multiValueArgs SOURCES UPDATE_OPTIONS)
     cmake_parse_arguments(TR "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
