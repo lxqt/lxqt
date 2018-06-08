@@ -7,8 +7,6 @@ if (NOT DEFINED CMAKE_PREFIX_PATH AND NOT DEFINED ENV{CMAKE_PREFIX_PATH})
 endif()
 
 option(UPDATE_TRANSLATIONS "Update source translation translations/*.ts files" OFF)
-option(PULL_TRANSLATIONS "Pull translations" Yes)
-option(CLEAN_TRANSLATIONS "Clean translations" No)
 
 option(LXQT_BUILD_OBCONF_QT "Build OBConfQt" Yes)
 option(LXQT_BUILD_QTERMWIDGET "Build QTermWidget" Yes)
