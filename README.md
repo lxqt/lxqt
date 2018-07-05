@@ -21,12 +21,12 @@ If you are interested in helping or joining LXQt, please take a look at our
 
 ## Translation (Weblate)
 
-<a href="https://weblate.lxqt.org/projects/lxqt/lxqt-archiver/">
+<a href="https://weblate.lxqt.org/projects/lxqt/">
 <img src="https://weblate.lxqt.org/widgets/lxqt/-/287x66-grey.png" alt="Translation status" />
 </a>  
 
 --- 
 
-<a href="https://weblate.lxqt.org/projects/lxqt/lxqt-archiver/">
+<a href="https://weblate.lxqt.org/projects/lxqt/">
 <img src="https://weblate.lxqt.org/widgets/lxqt/-/multi-auto.svg" alt="Translation status" />
 </a>
