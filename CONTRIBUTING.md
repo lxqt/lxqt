@@ -26,7 +26,7 @@ Also see Github's guide on Contributing to Open Source:
 Translations
 ------------
 
-We use QtLinguist for all our translations.
+We use [Weblate](https://weblate.lxqt.org) for all our translations. QtLinguist will still work.
 
 
 Bug reports
