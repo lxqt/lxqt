@@ -106,3 +106,6 @@
 [submodule "lxqt-themes"]
 	path = lxqt-themes
 	url = ../lxqt-themes
+[submodule "lxqt-archiver"]
+	path = lxqt-archiver
+	url = ../lxqt-archiver
