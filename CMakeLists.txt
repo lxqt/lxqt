@@ -34,6 +34,7 @@ add_subdirectory(lxqt-runner)
 add_subdirectory(pcmanfm-qt)
 add_subdirectory(lxqt-sudo)
 add_subdirectory(pavucontrol-qt)
+add_subdirectory(lxqt-archiver)
 
 if (LXQT_BUILD_OBCONF_QT)
     add_subdirectory(obconf-qt)

@@ -19,7 +19,8 @@ CMAKE_REPOS=" \
 	lxqt-sudo \
 	pcmanfm-qt \
 	lxqt-panel \
-	lxqt-runner"
+	lxqt-runner \
+	lxqt-archiver"
 
 OPTIONAL_CMAKE_REPOS=" \
 	compton-conf \
