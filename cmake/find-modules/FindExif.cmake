@@ -21,8 +21,8 @@
 
 # use pkg-config to get the directories and then use these values
 # in the find_path() and find_library() calls
-find_package(PkgConfig QUIET)
-pkg_check_modules(PC_EXIF QUIET libexif)
+find_package(PkgConfig)
+pkg_check_modules(PC_EXIF libexif)
 set(EXIF_DEFINITIONS ${PC_EXIF_CFLAGS_OTHER})
 
 find_path(EXIF_INCLUDE_DIR NAMES libexif/exif-data.h

@@ -226,7 +226,7 @@ macro(ecm_find_package_handle_library_components module_name)
         endif()
 
         if(NOT ECM_FPWC_SKIP_PKG_CONFIG AND ${module_name}_${ecm_fpwc_comp}_pkg_config)
-            pkg_check_modules(PKG_${module_name}_${ecm_fpwc_comp} QUIET
+            pkg_check_modules(PKG_${module_name}_${ecm_fpwc_comp}
                               ${${module_name}_${ecm_fpwc_comp}_pkg_config})
         endif()
 

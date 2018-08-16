@@ -43,7 +43,7 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 find_package(PkgConfig)
-pkg_check_modules(PC_GLIB QUIET glib-2.0)
+pkg_check_modules(PC_GLIB glib-2.0)
 
 find_library(GLIB_LIBRARIES
     NAMES glib-2.0
@@ -99,7 +99,7 @@ foreach (_component ${GLIB_FIND_COMPONENTS})
         find_library(GLIB_GTHREAD_LIBRARIES NAMES gthread-2.0 HINTS ${_GLIB_LIBRARY_DIR})
         set(ADDITIONAL_REQUIRED_VARS ${ADDITIONAL_REQUIRED_VARS} GLIB_GTHREAD_LIBRARIES)
     elseif (${_component} STREQUAL "gio-unix")
-        pkg_check_modules(GIO_UNIX QUIET gio-unix-2.0)
+        pkg_check_modules(GIO_UNIX gio-unix-2.0)
         find_path(GLIB_GIO_UNIX_INCLUDE_DIR
                   NAMES gio/gunixconnection.h
                   HINTS ${GIO_UNIX_INCLUDEDIR}

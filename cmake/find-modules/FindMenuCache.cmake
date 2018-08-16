@@ -21,8 +21,8 @@
 
 # use pkg-config to get the directories and then use these values
 # in the find_path() and find_library() calls
-find_package(PkgConfig QUIET)
-pkg_check_modules(PC_MENUCACHE QUIET libmenu-cache)
+find_package(PkgConfig)
+pkg_check_modules(PC_MENUCACHE libmenu-cache)
 set(MENUCACHE_DEFINITIONS ${PC_MENUCACHE_CFLAGS_OTHER})
 
 find_path(MENUCACHE_INCLUDE_DIRS

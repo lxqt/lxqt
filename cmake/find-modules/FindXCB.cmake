@@ -35,7 +35,7 @@ set_package_properties(XCB PROPERTIES
    DESCRIPTION "X protocol C-language Binding")
 
 find_package(PkgConfig)
-pkg_check_modules(PC_XCB QUIET xcb ${XCB_FIND_COMPONENTS})
+pkg_check_modules(PC_XCB xcb ${XCB_FIND_COMPONENTS})
 
 find_library(XCB_LIBRARIES xcb HINTS ${PC_XCB_LIBRARY_DIRS})
 find_path(XCB_INCLUDE_DIRS xcb/xcb.h PATH_SUFFIXES xcb HINTS ${PC_XCB_INCLUDE_DIRS})

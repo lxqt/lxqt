@@ -33,7 +33,7 @@
 # SUCH DAMAGE.
 
 find_package(PkgConfig)
-pkg_check_modules(PC_UDEV QUIET libudev)
+pkg_check_modules(PC_UDEV libudev)
 
 find_path(UDEV_INCLUDE_DIR libudev.h
     HINTS ${PC_UDEV_INCLUDEDIR} ${PC_UDEV_INCLUDE_DIRS})
