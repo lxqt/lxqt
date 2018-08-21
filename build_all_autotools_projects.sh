@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # various options for cmake based builds:
 # CMAKE_BUILD_TYPE can specify a build (debug|release|...) build type
@@ -14,11 +14,14 @@
 # $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ ./build_all.sh
 # etc.
 
-if [[ -n "$LXQT_JOB_NUM" ]]; then
+if [ -n "$LXQT_JOB_NUM" ]; then
     JOB_NUM="$LXQT_JOB_NUM"
-else
+elif which nproc > /dev/null; then
     # detect processor numbers (Linux only)
     JOB_NUM=`nproc`
+else
+    # assume default job number of 1 (non-Linux systems)
+    JOB_NUM=1
 fi
 echo "Make job number: $JOB_NUM"
 
