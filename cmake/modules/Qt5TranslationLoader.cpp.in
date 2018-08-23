@@ -6,6 +6,7 @@
 
 #include <QCoreApplication>
 #include <QLocale>
+#include <QLatin1String>
 #include <QTranslator>
 #include <QLibraryInfo>
 
@@ -14,14 +15,14 @@ static void loadQtTranslation()
     QString locale = QLocale::system().name();
     QTranslator *qtTranslator = new QTranslator(qApp);
 
-    if (qtTranslator->load("qt_" + locale, QLibraryInfo::location(QLibraryInfo::TranslationsPath))) {
+    if (qtTranslator->load(QLatin1String("qt_") + locale, QLibraryInfo::location(QLibraryInfo::TranslationsPath))) {
         qApp->installTranslator(qtTranslator);
     } else {
         delete qtTranslator;
     }
 
     QTranslator *appTranslator = new QTranslator(qApp);
-    if (appTranslator->load(QString("@translations_dir@/@catalog_name@_%1.qm").arg(locale))) {
+    if (appTranslator->load(QString::fromLocal8Bit("@translations_dir@/@catalog_name@_%1.qm").arg(locale))) {
         QCoreApplication::installTranslator(appTranslator);
     } else if (locale == QLatin1String("C") ||
                 locale.startsWith(QLatin1String("en"))) {
