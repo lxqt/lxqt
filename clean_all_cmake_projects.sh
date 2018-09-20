@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 source "cmake_repos.list"
 
