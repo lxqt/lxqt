@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # various options for cmake based builds:
 # CMAKE_BUILD_TYPE can specify a build (debug|release|...) build type
@@ -17,7 +17,7 @@
 # $ CMAKE_BUILD_TYPE=debug CMAKE_GENERATOR=Ninja CC=clang CXX=clang++ DO_INSTALL=0 ./build_all_cmake_projects.sh
 # etc.
 
-source "cmake_repos.list"
+. ./cmake_repos.list
 
 if [ -n "$LXQT_JOB_NUM" ]; then
     JOB_NUM="$LXQT_JOB_NUM"
@@ -69,7 +69,7 @@ ALL_CMAKE_FLAGS="$CMAKE_BUILD_TYPE $CMAKE_INSTALL_PREFIX $CMAKE_LIB_SUFFIX $CMAK
 
 for d in $CMAKE_REPOS $OPTIONAL_CMAKE_REPOS
 do
-	echo $'\n'$'\n'"Building: $d using externally specified options: $ALL_CMAKE_FLAGS"$'\n'
+	echo "\n\nBuilding: $d using externally specified options: $ALL_CMAKE_FLAGS\n"
 	mkdir -p "$d/build" \
 		&& cd "$d/build" \
 		|| exit 1

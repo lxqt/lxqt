@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # various options for cmake based builds:
 # CMAKE_BUILD_TYPE can specify a build (debug|release|...) build type
