@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 INSTALL_MANIFEST="install_manifest.txt"
 
-source "cmake_repos.list"
+. ./cmake_repos.list
 
 for d in ${CMAKE_REPOS} ${OPTIONAL_CMAKE_REPOS}
 do
