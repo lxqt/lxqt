@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# copyright 2018 Alf Gaida <agaida@siduction>
+# License: WTFPL-2
+#     0. You just DO WHAT THE FUCK YOU WANT TO.
+
+# .translation-update should be in the repository root and contain
+# the path(es) to the translations as in:
+# translations='./src'
+
+LANG=C
+
+if [ ! -f .translation-update ]; then
+  echo "File .translation-update not found in directory!"
+  exit 100
+else
+  source .translation-update
+fi
+
+for i in $translations; do
+  echo -e "\n\n==== $i/translations ====\n"
+  pushd "$i" &>/dev/null
+    echo -e "lupdate . -ts translations/*.ts -locations absolute -no-sort -no-obsolete\n"
+    lupdate . -ts translations/*.ts -locations absolute -no-sort -no-obsolete
+  popd
+  echo
+done
