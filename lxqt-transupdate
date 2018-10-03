@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #=============================================================================
-# Copyright 2018 Alf Gaida <agaida@siduction>
+# Copyright 2018 Alf Gaida <agaida@siduction.org>
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions
@@ -40,14 +40,15 @@ if [ ! -f .translation-update ]; then
   echo "File .translation-update not found in directory!"
   exit 100
 else
-  . .translation-update
+  . ./.translation-update
 fi
 
 for i in $translations; do
-  echo -e "\n\n==== $i/translations ====\n"
-  pushd "$i" &>/dev/null
-    echo -e "lupdate . -ts translations/*.ts -locations absolute -no-sort -no-obsolete\n"
-    lupdate . -ts translations/*.ts -locations absolute -no-sort -no-obsolete
-  popd
-  echo
+  echo "\n\n==== $i/translations ====\n"
+  if [ -d "$i" ]; then
+    cd "$i"
+      echo "lupdate . -ts translations/*.ts -locations absolute -no-sort -no-obsolete\n"
+      lupdate . -ts translations/*.ts -locations absolute -no-sort -no-obsolete
+    cd ..
+  fi
 done
