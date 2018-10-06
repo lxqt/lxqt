@@ -1,11 +1,13 @@
 project(lxqt-build-tools)
-
-cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
+# CMP0000 - A minimum required CMake version must be specified.
+# Note that the command invocation must appear in the CMakeLists.txt
+# file itself; a call in an included file is not sufficient.
+cmake_minimum_required(VERSION 3.6.2 FATAL_ERROR)
 
 option(WITH_XDG_DIRS_FALLBACK "Use our XDG_CONFIG_DIRS fallback" ON)
 
 set(LXQT_BUILD_TOOLS_MAJOR_VERSION 0)
-set(LXQT_BUILD_TOOLS_MINOR_VERSION 5)
+set(LXQT_BUILD_TOOLS_MINOR_VERSION 6)
 set(LXQT_BUILD_TOOLS_PATCH_VERSION 0)
 set(LXQT_BUILD_TOOLS_VERSION ${LXQT_BUILD_TOOLS_MAJOR_VERSION}.${LXQT_BUILD_TOOLS_MINOR_VERSION}.${LXQT_BUILD_TOOLS_PATCH_VERSION})
 

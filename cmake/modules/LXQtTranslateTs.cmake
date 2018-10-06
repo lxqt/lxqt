@@ -62,9 +62,6 @@
 #                   present. Defaults to "Runtime".
 #
 
-# CMake v2.8.3 needed to use the CMakeParseArguments module
-cmake_minimum_required(VERSION 2.8.3 FATAL_ERROR)
-
 # We use our patched version to round a annoying bug.
 include(Qt5PatchedLinguistToolsMacros)
 

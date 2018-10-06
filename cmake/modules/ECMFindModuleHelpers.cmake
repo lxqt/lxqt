@@ -126,11 +126,11 @@
 include(CMakeParseArguments)
 
 macro(ecm_find_package_version_check module_name)
-    if(CMAKE_VERSION VERSION_LESS 2.8.12)
-        message(FATAL_ERROR "CMake 2.8.12 is required by Find${module_name}.cmake")
+    if(CMAKE_VERSION VERSION_LESS 3.6.2)
+        message(FATAL_ERROR "CMake 3.6.2 is required by Find${module_name}.cmake")
     endif()
-    if(CMAKE_MINIMUM_REQUIRED_VERSION VERSION_LESS 2.8.12)
-        message(AUTHOR_WARNING "Your project should require at least CMake 2.8.12 to use Find${module_name}.cmake")
+    if(CMAKE_MINIMUM_REQUIRED_VERSION VERSION_LESS 3.6.2)
+        message(AUTHOR_WARNING "Your project should require at least CMake 3.6.2 to use Find${module_name}.cmake")
     endif()
 endmacro()
 
