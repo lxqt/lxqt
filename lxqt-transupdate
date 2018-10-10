@@ -34,8 +34,6 @@
 # the path(es) to the translations as in:
 # translations='./src'
 
-LANG=C
-
 if [ ! -f .translation-update ]; then
   echo "File .translation-update not found in directory!"
   exit 100
