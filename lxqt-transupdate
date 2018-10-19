@@ -34,6 +34,10 @@
 # the path(es) to the translations as in:
 # translations='./src'
 
+# just to be sure - for distributions that user qtchooser
+# Debian and derivatives, Fedora, FreeBSD, Mageia, OpenMandriva, PCLinuxOS
+export QT_SELECT=5
+
 if [ ! -f .translation-update ]; then
   echo "File .translation-update not found in directory!"
   exit 100
