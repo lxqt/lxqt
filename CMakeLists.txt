@@ -1,8 +1,10 @@
+cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
+# CMP0000: Call the cmake_minimum_required() command at the beginning of the top-level
+# CMakeLists.txt file even before calling the project() command.
+# The cmake_minimum_required(VERSION) command implicitly invokes the cmake_policy(VERSION)
+# command to specify that the current project code is written for the given range of CMake
+# versions.
 project(lxqt-build-tools)
-# CMP0000 - A minimum required CMake version must be specified.
-# Note that the command invocation must appear in the CMakeLists.txt
-# file itself; a call in an included file is not sufficient.
-cmake_minimum_required(VERSION 3.6.2 FATAL_ERROR)
 
 option(WITH_XDG_DIRS_FALLBACK "Use our XDG_CONFIG_DIRS fallback" ON)
 
