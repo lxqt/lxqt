@@ -31,3 +31,18 @@ one day.)
 
 This package is arch-independent now.  You can simply package it as
 `BuildArch: noarch` (rpm) or `arch: all` (deb).
+
+## Current Minimum Versions
+
+|                              |        |
+|------------------------------|--------|
+| KF5_MINIMUM_VERSION          | 5.36.0 |
+| KF5SCREEN_MINIMUM_VERSION    | 5.2.0  |
+| LIBFM_QT_MINIMUM_VERSION     | 0.14.0 |
+| LIBFMQT_MINIMUM_VERSION      | 0.14.0 |
+| LIBMENUCACHE_MINIMUM_VERSION | 1.1.0  |
+| LXQTBT_MINIMUM_VERSION       | 0.6.0  |
+| LXQT_MINIMUM_VERSION         | 0.14.0 |
+| QTERMWIDGET_MINIMUM_VERSION  | 0.14.0 |
+| QT_MINIMUM_VERSION           | 5.7.1  |
+| QTXDG_MINIMUM_VERSION        | 3.3.0  |
