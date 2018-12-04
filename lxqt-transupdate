@@ -30,27 +30,21 @@
 # lxqt-transupdate
 # Update LXQt translation files.
 
-# .translation-update should be in the repository root and contain
-# the path(es) to the translations as in:
-# translations='./src'
-
 # just to be sure - for distributions that user qtchooser
 # Debian and derivatives, Fedora, FreeBSD, Mageia, OpenMandriva, PCLinuxOS
 export QT_SELECT=5
 
-if [ ! -f .translation-update ]; then
-  echo "File .translation-update not found in directory!"
-  exit 100
-else
-  . ./.translation-update
-fi
-
-for i in $translations; do
-  echo "\n\n==== $i/translations ====\n"
-  if [ -d "$i" ]; then
-    cd "$i"
-      echo "lupdate . -ts translations/*.ts -locations absolute -no-sort -no-obsolete\n"
-      lupdate . -ts translations/*.ts -locations absolute -no-sort -no-obsolete
-    cd ..
-  fi
+TEMPLATES=$(find . -name \*.ts | grep -v '_')
+for i in $TEMPLATES; do
+  echo "\n\n==== $i ====\n"
+  TRANSDIR=$(dirname $i)
+  SOURCEDIR=$(dirname $TRANSDIR)
+  # template-update
+  echo "== Template Update =="
+  echo "lupdate $SOURCEDIR -ts $i -locations absolute -no-obsolete\n"
+  lupdate  $SOURCEDIR -ts $i -locations absolute -no-obsolete
+  echo
+  echo "== Language updates =="
+  echo "lupdate $SOURCEDIR -ts $TRANSDIR/*.ts -locations absolute -no-obsolete\n"
+  lupdate  $SOURCEDIR -ts $TRANSDIR/*_*.ts -locations absolute -no-obsolete
 done
