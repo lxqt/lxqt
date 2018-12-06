@@ -34,7 +34,7 @@ This package is arch-independent now.  You can simply package it as
 
 ## Current Minimum Versions
 
-|                              |        |
+| Package                      | Version|
 |------------------------------|--------|
 | KF5_MINIMUM_VERSION          | 5.36.0 |
 | KF5SCREEN_MINIMUM_VERSION    | 5.2.0  |
