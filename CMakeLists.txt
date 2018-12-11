@@ -135,7 +135,7 @@ install(
 
 # Tools install
 install(
-    FILES
+    PROGRAMS
         "lxqt-transupdate"
     DESTINATION
         "${CMAKE_INSTALL_BINDIR}")
