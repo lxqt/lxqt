@@ -50,7 +50,7 @@ Some components and independent apps have their own issue tracker on GitHub:
 Other
 -----
 
-For anything else, you can always drop by our mailing list and say hello!
-  https://lists.sourceforge.net/lists/listinfo/lxde-list
+For anything else, you can always drop by our forum and say hello!
+  https://forum.lxqt.org
 
-If you prefer IRC, we also have a #lxde channel on chat.freenode.net.
+If you prefer IRC, we also have the channels #lxqt and #lxqt-dev on irc.oftc.net.
