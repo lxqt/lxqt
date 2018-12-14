@@ -27,5 +27,5 @@ OPTIONAL_CMAKE_REPOS=" \
 	obconf-qt \
 	lximage-qt \
 	qtermwidget \
-	qterminal"
-
+	qterminal \
+        qps"

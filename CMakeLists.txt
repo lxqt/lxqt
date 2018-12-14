@@ -12,6 +12,7 @@ option(LXQT_BUILD_OBCONF_QT "Build OBConfQt" Yes)
 option(LXQT_BUILD_QTERMWIDGET "Build QTermWidget" Yes)
 option(LXQT_BUILD_QTERMINAL "Build QTerminal" Yes)
 option(LXQT_BUILD_LXIMAGE_QT "Build LXImageQt" Yes)
+option(LXQT_BUILD_QPS "Build QPS" Yes)
 
 add_subdirectory(lxqt-build-tools)
 add_subdirectory(libqtxdg)
@@ -51,3 +52,8 @@ endif()
 if (LXQT_BUILD_LXIMAGE_QT)
     add_subdirectory(lximage-qt)
 endif()
+
+if (LXQT_BUILD_QPS)
+    add_subdirectory(qps)
+endif()
+

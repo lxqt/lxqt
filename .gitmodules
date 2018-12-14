@@ -109,3 +109,6 @@
 [submodule "lxqt-archiver"]
 	path = lxqt-archiver
 	url = ../lxqt-archiver
+[submodule "qps"]
+	path = qps
+	url = git@github.com:lxqt/qps
