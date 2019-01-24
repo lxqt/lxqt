@@ -1,4 +1,22 @@
 
+lxqt-build-tools-0.6.0 / 2018-01-25
+===================================
+
+  * Bump version to 0.6.0
+  * Don't use automatic string conversions
+  * Introduced lxqt-transupdate for translation updates
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Consider QT_SELECT - some distributions use this tool
+    - Drop 0X and 11 support, require c++14
+    - Remvoed QUIET from any finds
+    - Cleaned up LXQtTranslateTs module
+    - Removed translation pulling and cleanup external repos
+      after translations moved back to their original repos
+    - Remove link-time optimization for gcc since it breaks
+      qobject_cast() in some cases.
+    - Removed obsolete FindFm module
+
 lxqt-build-tools-0.5.0 / 2018-05-21
 ===================================
 
