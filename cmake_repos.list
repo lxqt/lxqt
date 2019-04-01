@@ -1,6 +1,6 @@
 CMAKE_REPOS=" \
-	libqtxdg \
 	lxqt-build-tools \
+	libqtxdg \
 	liblxqt \
 	libsysstat \
 	libfm-qt \
