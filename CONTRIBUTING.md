@@ -26,7 +26,9 @@ Also see Github's guide on Contributing to Open Source:
 Translations
 ------------
 
-We use [Weblate](https://weblate.lxqt.org) for all our translations. QtLinguist will still work.
+We use [Weblate](https://weblate.lxqt.org) for all our translations. *Offline at the moment*. 
+QtLinguist will still work.
+
 
 
 Bug reports
@@ -51,6 +53,6 @@ Other
 -----
 
 For anything else, you can always drop by our forum and say hello!
-  https://forum.lxqt.org
+  https://forum.lxqt.org *Offline at the moment*. 
 
 If you prefer IRC, we also have the channels #lxqt and #lxqt-dev on irc.oftc.net.
