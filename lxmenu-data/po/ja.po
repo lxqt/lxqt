@@ -1,0 +1,246 @@
+# ja.po for gnome-menus.
+# Copyright (C) 2004-2007 THE gnome-menus' COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-menus package.
+# Satoru SATOH <ss@gnome.gr.jp>, 2004.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005-2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus trunk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-07-08 00:00+0900\n"
+"Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "サウンドとビデオ"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "マルチメディア関連のプログラムです"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "プログラミング"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "ソフトウェア開発者向けのツールです"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "教育・教養"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "ゲーム"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "気晴しにゲームをどうぞ"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "グラフィックス"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "グラフィックス関連のアプリケーションです"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "ハードウェア"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "使用するハードウェア・デバイスを設定します"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "インターネットとネットワーク"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "ネットワークに関連する設定を行います"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "ルック＆フィール"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "デスクトップの外観や動きを調整します"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "アプリケーション"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "システム"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "個人設定と管理者向けの設定ツールです"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "インターネット"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "ウェブやメールなどインターネットにアクセスのためのプログラムです"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "オフィス"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "オフィス・アプリケーションです"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "その他"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "他のカテゴリにあてはまらないアプリケーション"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "ユーザ向け"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "ユーザ向けの設定を変更します"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "設定"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "ユーザ専用の設定"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "システム管理"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "システム規模の設定を変更します (全てのユーザに影響します)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "システム規模の設定を変更します"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "システムツール"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "システムの設定と監視を行うプログラムです"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "ユニバーサル・アクセス"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "ユニバーサル・アクセスの設定を変更します"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "アクセサリ"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "デスクトップ用のアクセサリーです"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "ユニバーサル・アクセスに関連する設定を変更します"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "ユーザ向けの設定を変更します"
+
+#~ msgid "Menu Editor"
+#~ msgstr "メニュー・エディタ"
+
+#~ msgid "Edit Menus"
+#~ msgstr "メニューの編集"
+
+#~ msgid "_Applications:"
+#~ msgstr "アプリケーション(_A):"
+
+#~ msgid "_Defaults"
+#~ msgstr "デフォルト(_D)"
+
+#~ msgid "_Menus:"
+#~ msgstr "メニュー(_M):"
+
+#~ msgid "Name"
+#~ msgstr "名前"
+
+#~ msgid "Show"
+#~ msgstr "表示"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "ホーム・フォルダが見つかりません: \"/etc/passwd\" に記述されていないか、環"
+#~ "境変数 $HOME の値が空です。"
+
+#~ msgid "Menu file"
+#~ msgstr "メニュー・ファイル"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "メニューの変更を監視する"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "<Exclude> のエントリを含める"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "NoDisplay=true のエントリを含める"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr ".desktop ファイルの ID が間違っています"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[ファイル名が間違っています]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== メニューが変更されました (再読込中...) ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "メニューのツリーが空です"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- GNOME のデスクトップ・メニューの実装をテストします"

@@ -1,0 +1,170 @@
+# Danish translation of gnome-menus.
+# Copyright (C) 2010 the package holder.
+# This file is distributed under the same license as the lxde.lxmenu-data package.
+# Joe Hansen <joedalton2@yahoo.dk>, 2010
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2017-08-18 19:26+0000\n"
+"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1503084383.389881\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Lyd og video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multimediemenu"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programmering"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Værktøjer til programudvikling"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Læringsprogrammer"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Spil"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Spil og underholdning"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafik"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafikprogrammer"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Indstillinger for flere enheder af hardware"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet og netværk"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Netværksrelaterede indstillinger"
+
+# det er et fast udtryk på engelsk, skal ikke opfattes bogstaveligt
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Udseende og opførsel"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Indstillinger for kontrol af skrivebordets udseende og opførelse"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Programmer"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "System"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Personlige indstillinger og administrationskonfiguration"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programmer til internetadgang, såsom web og e-post"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Kontor"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Kontorprogrammer"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Andre"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Programmer som ikke passer i andre katagorier"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Personlig"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Personlige indstillinger"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Indstillinger"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Personlige indstillinger"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administration"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Ændre systemindstillinger (påvirker alle brugere)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Systemindstillinger"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Systemværktøjer"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Systemkonfiguration og -overvågning"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Universel adgang"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Indstillinger for universel adgang"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Tilbehør"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Skrivebordstilbehør"

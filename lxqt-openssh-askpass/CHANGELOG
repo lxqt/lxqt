@@ -1,0 +1,125 @@
+lxqt-openssh-askpass-0.15.0 / 2020-04-23
+========================================
+  * Bumped version to 0.15.0.
+  * Removed (duplicated) string casts definitions.
+
+lxqt-openssh-askpass-0.14.1 / 2019-02-25
+========================================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+lxqt-openssh-askpass-0.14.0 / 2019-01-25
+========================================
+
+  * Bumped version to 0.14.0
+  * Don't use automatic string conversions
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Added locale compile definitons
+    - Installed man page
+  * Moved translations from lxqt-l10n back to lxqt-openssh-askpass
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+
+lxqt-openssh-askpass-0.13.0 / 2018-05-21
+========================================
+
+  * CMake: Prevent in-source builds
+  * fix razor-qt -> lxqt and http -> https
+  * Fixed mentions of LXDE
+
+lxqt-openssh-askpass-0.12.0 / 2017-10-21
+========================================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version
+  * Don't export github templates
+  * Drops Qt5Core_VERSION_STRING
+  * set Qt::AA_UseHighDpiPixmaps to true
+  * Added QCommandLineParser and basic cli interface to lxqt-openssh-askpass
+  * Added default CMAKE_BUILD_TYPE and LXQT_ASKPASS_PATCH_VERSION
+  * Bump year
+
+lxqt-openssh-askpass-0.11.1 / 2017-01-01
+========================================
+
+  * Release 0.11.1: Update changelog
+  * Make CMakeLists.txt more uniform.
+  * Remove cpack (#21)
+
+lxqt-openssh-askpass-0.11.0 / 2016-09-24
+========================================
+
+  * Release 0.11.0: Add changelog
+  * Rework README.md
+  * build: Use external translations
+  * ts-files removal (#19)
+  * Fix typo in German translation (#18)
+  * Bump year Fix licenses, lxqt-openssh-askpass is LGPL only
+  * Italian translation update
+  * Fix target language in translation file template
+  * Remove ru_RU translation file
+  * new: lxqt-openssh-askpass_hu.ts
+
+lxqt-openssh-askpass-0.10.0 / 2015-10-31
+========================================
+
+  * Update translations
+  * Improve README
+  * Fix license file
+  * Fix typos in man page
+  * Add Greek (el) translation
+  * Rename LxQt to LXQt everywhere
+  * Fix typos
+  * Handles CMake policy CMP0063
+  * Use the LXQtCompilerSettings CMake module
+  * Adds Runtime COMPONENT
+  * Coding style changes
+  * Use GNUInstallDirs
+  * Use CMAKE_AUTOUIC, drop qt5_wrap_ui()
+  * Use CMAKE_AUTOMOC, drop qt5_wrap_cpp()
+  * Removes unneeded entries from include_directories()
+  * Updates the build system to use the Targets infrastructure
+  * Fix naming and links
+
+lxqt-openssh-askpass-0.9.0 / 2015-01-25
+=======================================
+
+  * Added german translation.
+  * File name was ok but language name wasn´t. My mistake.
+  * Makes translation filename  match language="pt_PT"
+  * Portuguese update
+  * - Unify naming for a unique lxqt. No more suffixes
+  * CMakeLists.txt maintenance.
+  * Pass the UPDATE_TRANSLATIONS value to lxqt_translate_ts()
+  * Renames translations sources template from .ts.src to .ts
+  * Don't update (extract) translations by default.
+  * Handle translations
+  * Add Russian translation
+  * Clean up CMakeLists.txt and drop Qt 4
+
+lxqt-openssh-askpass-0.8.0 / 2014-07-01
+=======================================
+
+  * Qt4/Qt5 switching fixed booth Qt4 and Qt5 build now without errors
+  * Add Qt5 support.
+  * Use new LXQt header files.
+
+lxqt-openssh-askpass-0.7.0 / 2014-05-01
+=======================================
+
+  * Update AUTHORS and COPYING files
+  * Add CPack rules for creating tarball
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Fix broken build and use liblxqt instead. * Rename binary to lxqt-openssh-askpass.
+  * Add COPYING and AUTHORS
+  * preliminary manpages primary for razorqt and usefully in venenux
+  * Remove stray code
+  * Generate translation files
+  * Fix components missing translations
+  * openssh-askpass: stay on top; don't hide under windows
+  * Small fixes (typo and a wrong parameter)
+  * new module "ssh-askpass helper"

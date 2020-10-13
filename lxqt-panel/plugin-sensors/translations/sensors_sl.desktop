@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Sensors
+Comment=View readings from hardware sensors.
+
+
+# Translations
+Name[sl]=Senzorji
+Comment[sl]=Oglejte si meritve senzorjev za strojno opremo (trenutno lm_sensors)

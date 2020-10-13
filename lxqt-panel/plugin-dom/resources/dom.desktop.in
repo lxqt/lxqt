@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Panel DOM tree
+Comment=Show a DOM tree of the LXQt panel.
+Icon=view-web-browser-dom-tree
+
+#TRANSLATIONS_DIR=../translations

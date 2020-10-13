@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Leave
+Comment=Leave Session
+Icon=system-shutdown
+Type=Directory
+
+Comment[de]=Sitzung verlassen
+Name[de]=Verlassen

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Application menu
+Comment=A menu of all your applications.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[zh_CN]=基于菜单的程序启动器
+Name[zh_CN]=程序菜单

@@ -1,0 +1,200 @@
+obconf-qt-0.15.0 / 2020-04-24
+=============================
+
+  * Bumped version to 0.15.0.
+  * Avoid char raw strings literals memory allocations.
+  * Don't use automatic string conversions.
+  * Removed (duplicated) string casts definitions.
+  * Fixed the instllation message in archive_install().
+
+obconf-qt-0.14.1 / 2019-02-25
+=============================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+obconf-qt-0.14.0 / 2019-01-25
+=============================
+
+  * Bumped version to 0.14.0
+  * Implementation fixed:
+    - Don't use automatic string conversions
+    - Fixed disfunctional *.obt Archive generation
+    - Fixed reorder compiler warning
+    - Fixed usage of memory after freed
+    - Removed unused variables
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Use lxqt-build-tools FindGLib CMake module
+    - Removed locale compile definitons
+    - Handle ldflags when the module library is not installed in a system dir.
+  * Moved translations from lxqt-l10n back to obconf-qt
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+
+obconf-qt-0.13.0 / 2018-05-21
+=============================
+
+  * Bumped minor version to 13
+  * Spanish translation update
+  * CMake: Prevent in-source builds
+  * fixed lxde mentions
+  * Add Traditional Chinese translation
+  * Add Traditional Chinese translation
+  * Add Simplified Chinese translation
+  * Fixes Qt4 build
+  * cmake: Use LXQtCompilerSettings
+  * cmake: Handle CMP0071
+  * cmake: Make it compile with Qt4
+  * cmake: Update CMake minimum required version
+
+obconf-qt-0.12.0 / 2017-09-24
+=============================
+
+  * Release 0.12.0: Update changelog
+  * Bump version to 0.12.0
+  * Don't export github templates
+  * Added Lithuanian language
+  * liblxqt dont make sense here
+  * Copied issue template
+  * Drops Qt5Core_VERSION_STRING
+  * set Qt::AA_UseHighDpiPixmaps to true
+  * Added default CMAKE_BUILD_TYPE and versioning (#29)
+  * added Polish translation
+  * Add obconf-qt_ca.desktop (Catalan)
+  * Update AUTHORS
+  * Added *da.desktop
+
+obconf-qt-0.11.1 / 2016-12-11
+=============================
+
+  * Release 0.11.1: Update changelog
+  * Create obconf-qt_fr.desktop
+  * Use the LXQtCompilerSettings
+  * Use lxqt-build-tools translation modules
+  * Use the new lxqt-build-tools package
+  * Remove cpack (#22)
+  * README.md: Update dependencies
+
+obconf-qt-0.11.0 / 2016-09-24
+=============================
+
+  * Release 0.11.0: Add changelog
+  * Bump version to 0.2.0 (#20)
+  * Extend README.md
+  * occured -> occurred
+  * build: Use external translations
+  * ts-files removal
+  * Bump year
+  * Work around grep 2.23 new behaviour
+  * Don't track $IDE settings
+  * Japanese translation update
+  * Reflect replacement README --> README.md in CMakeLists.txt
+  * Use markdown for README
+  * Update translations
+  * Fix license file
+  * Hungarian translations added
+  * src/CMakeLists.txt: do not completely overwrite CMAKE_CXX_FLAGS
+  * Use GNUInstallDirs
+  * Small build fix (themes dir path)
+  * Update German translation
+  * Update translations.
+  * Update the About dialog.
+  * Port missing "Dock" options from obconf gtk+ version.
+  * Support changing the name of desktops.
+  * German translation
+  * Default to Qt5
+
+obconf-qt-0.9.0 / 2015-02-25
+============================
+
+  * Generate .desktop file again
+  * Enhance Portuguese translations
+  * Portuguese update with fixes
+  * Fix COPYING and AUTHORS information. The license should be GPL2, not LGPL. * Also update AUTHORS file to include more information of upstream obconf project.
+  * remove the old and outdated packaging stub
+  * lxqt_translate_desktop: pass -h instead of --no-filename to grep which is compatible with Busybox
+  * lxqt_translate_desktop: Updates code to cope with the cmake-policy CMP0054
+  * Adds .gitigore
+  * Fixes the app icon install location
+  * Adds .desktop translations support
+  * Update translations
+  * Makes it extract and compile and load translations
+  * Renames the translations files to their proper names
+  * Translate to Russian .desktop file
+  * Update Russian translation
+  * Commit from LXDE Pootle server by user andika.: 611 of 611 strings translated (0 need review).
+  * Commit from LXDE Pootle server by user rago1975.: 611 of 611 strings translated (0 need review).
+  * Support Qt5.
+
+obconf-qt-0.1.0 / 2014-05-07
+============================
+
+  * Sync COPYING file with the actual used license
+  * Commit from LXDE Pootle server by user knedlyk.: 72 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user knedlyk.: 54 of 108 strings translated (1 fuzzy).
+  * Commit from LXDE Pootle server by user strebski.: 108 of 108 strings translated (0 fuzzy).
+  * Update AUTHORS and COPYING
+  * Do not re-generate *.ts files everytime
+  * Commit from LXDE Pootle server by user strebski.: 105 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user strebski.: 102 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user strebski.: 95 of 108 strings translated (1 fuzzy).
+  * Commit from LXDE Pootle server by user strebski.: 89 of 108 strings translated (1 fuzzy).
+  * Commit from LXDE Pootle server by user zvacet.: 73 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle  * Bumped version to 0.14.0
+  * Don't use automatic string conversions
+  * Translation updates
+  * Improved cmake scripting
+    - set cmake_minimum_required to 3.1.0
+    - removed locale compile definitons
+    - installed man page
+  * Moved translations from lxqt-l10n back to compton-conf
+    - removed obsolete translation fuctionality
+ server by user hirkmt.: 108 of 108 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * Handle translations correctly.
+  * Commit from LXDE Pootle server by user zvacet.: 72 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user Fitoschido.: 107 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user strebski.: 83 of 108 strings translated (1 fuzzy).
+  * Commit from LXDE Pootle server by user Fitoschido.: 103 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user mbouzada.: 108 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user Fitoschido.: 98 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user zvacet.: 64 of 108 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * Commit from LXDE Pootle server by user strebski.: 82 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user smarquespt.: 106 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user andika.: 108 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user andika.: 65 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user Fitoschido.: 87 of 108 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * Commit from LXDE Pootle server by user smarquespt.: 56 of 108 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * Commit from LXDE Pootle server by user strebski.: 63 of 108 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user strebski.: 54 of 108 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * Commit from LXDE Pootle server by user brother.: 108 of 108 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * Implement changing font and remove unnecessary files. This commit is done in front of our presidential palace during a protest.
+  * Add a debian directory
+  * Fix signal/slot auto-connection problems. Add contents for README and AUTHORS.
+  * Remove unnecessary files.
+  * Remove unused files.
+  * Implement theme configuration.
+  * Fix text labels. Replace _ with & for keyboard shortcuts.
+  * Fix mouse page.
+  * Fix move & resize page.
+  * Ask openbox to reload confie file correctly. * Remove unnecessary files.
+  * Split different tab page into different *.cpp files.
+  * Partially handle combobox.
+  * Little UI polishing.
+  * Partially implement config options.
+  * Initial import into git repo.

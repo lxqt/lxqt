@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Sensors
+Comment=View readings from hardware sensors.
+
+
+# Translations
+Name[lt]=Jutikliai
+Comment[lt]=Rodo aparatinės įrangos jutiklių duomenis.

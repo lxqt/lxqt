@@ -1,0 +1,556 @@
+lxqt-session-0.15.0 / 2020-04-22
+================================
+  * Bumped version to 0.15.0.
+  * C++11 code updates.
+  * Removed redundant variable SAL_USE_VCLPLUGIN from startlxqt.
+  * Fixed lxqt-session memory leak (triggered by wine and specific games).
+  * Remove deprecated QDesktopWidget.
+  * Corrected dialog location with muti-screen setups.
+
+lxqt-session-0.14.1 / 2019-02-25
+================================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+lxqt-session-0.14.0 / 2019-01-25
+================================
+
+  * Bumped version to 0.14.0
+  * Fixed implementations
+    - Don't use automatic string conversions
+    - confg-session: Emit each change of default app
+    - lockscreenmanager: Fix renewal of inhibitor lock
+    - lxqt-config-session: Fix showing translations
+    - Simplify device events/actions lookup
+    - Completed our WM list
+    - Don't default on Openbox, make the automatic WM selection
+      more reliable
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+  * Moved translations from lxqt-l10n back to lxqt-session
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+  * Cleaned up desktop file translations
+
+lxqt-session-0.13.0 / 2018-05-21
+================================
+
+  * Spanish translation update
+  * CMake: Prevent in-source builds
+  * use devnode instead of devpath, so FreeBSD
+  * fixed razor-qt -> lxqt and http -> https
+  * Fixed some mentions of LXDE
+  * Update Simplified Chinese translations (#120)
+  * Use constant iterators
+  * Use static QFileInfo::exists()
+  * Drop Qt foreach
+  * cmake: Handle CMP0063
+  * install session configs in /usr/share/lxqt
+  * startlxqt: Add /usr/share & /etc into XDG_CONFIG_DIRS
+  * Remove left over file from the lxqt-common split
+  * Add Spanish desktop entries
+
+lxqt-session-0.12.0 / 2017-10-21
+================================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version
+  * lxqt-session: Unify arguments parsing
+  * Don't export github templates
+  * Add/Update Lithuanian language
+  * c'n'p bug
+  * add basic cli to lxqt-session
+  * lxqt-session: Provide reboot/powerOff methods
+  * Drops Qt5Core_VERSION_STRING
+  * lxqt-config-session: set Qt::AA_UseHighDpiPixmaps to true
+  * lxqt-leave: set Qt::AA_UseHighDpiPixmaps to true
+  * improved --version
+  * Added QCommandLineParser and basic cli interface to lxqt-conf-session
+  * Added default CMAKE_BUILD_TYPE and LXQT_SESSION_PATCH_VERSION
+  * String encoding (#103)
+  * Fixes a FTBFS in superbuild mode (#102)
+  * lxqt-leave: Fix "disabled items" key navigation
+  * Address "unused parameter" compiler warnings
+  * lxqt-leave: Redesign dialog for good key navigation
+  * Removed superfluous include(LXQtTranslateDesktop)
+  * fixed config/CMakeLists.txt
+  * Merged relevant parts of CMakeLists.txt.lxqt-common into CMakeLists.txt
+  * Rename CMakeLists.txt -> CMakeLists.txt.lxqt-common
+  * Add Basque translation of lxqt-leave and update Basque translation of lxqt-config-session
+  * leavedialog: Use "expected" tab order
+  * LeaveDialog: Accept enter key for action/cancel firing
+  * LeaveDialog: Use "override" keyword
+  * leavedialog: Don't trigger "cancel" on Enter
+  * LeaveDialog: Use correct method
+  * startlxqt: Consider $XDG_RUNTIME_DIR/bus for DBus
+  * Updated *_da.desktop files and removed *_da_DK.desktop files
+  * Bump year
+  * Update desktop entries and Replace fr_FR by fr
+  * Use the LXQtConfigVars module
+  * Fixed typo
+  * Remove cpack (#61)
+  * startlxqt: Consider LXQT_DEFAULT_OPENBOX_CONFIG
+  * startlxqt: Honor the pre-defined SAL_USE_VLCPLUGIN
+  * Replace lxqt-rc.xml with latest openbox version
+  * startlxqt: Consider pre-exising LXDE OB config also
+  * build: Revert @6d6d2bef54
+  * build: Add xmessage as "dependency"
+  * Openbox: Fix informational message about adoption of rc.xml
+  * lxqt-rc.xml: Change default config install path
+  * startlxqt: Copy existing openbox config preferably
+  * Improves changed Openbox default path startup message (#51)
+  * Disable gtk+ 3 overlay scrollbars by default.
+  * Don't add XDG_DATA_HOME to XDG_DATA_DIRS (#47)
+  * Message about Openbox default path changed.
+  * Warning message about openbox settings path changed.
+  * startlxqt: Force XDG_CONFIG_DIRS to contain @LXQT_ETC_XDG_DIR@
+  * Copy openbox defaults at session start.
+  * Rename openbox/rc.xml to openbox/lxqt-openbox-rc.xml
+  * Openbox aero snap using mouse wheel over title bar.
+  * Settings Openbox updated.
+  * Default key shortcuts added to lxqt-globalkeysd.
+  * CMakeLists: Use LXQT_GRAPHICS_DIR for graphics
+  * Add startlxqt man page
+  * Fixes #807 – Add XDG_CACHE_HOME definition
+  * startlxqt: optimization of XDG_DATA_DIRS
+  * corrected indentation
+  * startlxqt: Set proper prefix for XDG_DATA_DIRS
+  * Update Greek translation (el) Remove country variant from language code
+  * Rename LxQt to LXQt everywhere
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Removes no added value comments
+  * Adds double quotes to everything that may break
+  * Use GNUINnstallDirs
+  * Updates the build system to use the Targets infrastructure
+  * Enable the "leave confirmation dialog" by default
+  * TryExec to detect proper installed lxqt-session
+  * Uniforms indentation
+  * Sets env variable XDG_CONFIG_DIRS
+  * Drops hardcoded /etc/xdg paths
+  * Set LibreOffice's plugin env var to kde4
+  * config: auto-detect succesfully kwin on recent kwin versions
+  * Updated german translation, replaced Qt4 by Qt in all xsession/translations
+  * Adds an scalable start-here-lxqt icon
+  * use LXQt-specific menu file
+  * Renames some .desktop files
+  * Portuguese update for .desktop files
+  * - Unify naming for a unique lxqt. No more suffixes
+  * Make frost the default theme
+  * Defines XDG_DATA_HOME and XDG_DATA_DIRS environment variables
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * Clean up CMakeLists.txt and drop Qt 4 support
+  * Set environment variable GTK_CSD=0 to turn off the default client side decoration for gtk+ 3 programs. (This will not always work if a gtk+3 program explicitly sets a title bar and turns on CSD.)
+  * Add some more default values for Qt settings.
+  * Update default config file.
+  * Add Qt5 support.
+  * Support Qt5 platform plugin and add some more comments.
+  * Remove XDG_CURRENT_DESKTOP=Razor from environment variables.
+  * Set XDG_CURRENT_DESKTOP to LXQt
+  * remove dead template lines switch OnlyShowIn from Razor -> LXQt stringchanges LxQt -> LXQt
+  * Use LXQt as desktop name
+  * Add CPack rules for creating tarball
+  * Add session.conf and windowmanagers.conf.
+  * Change XDG_CURRENT_DESKTOP to Razor for now. (May rename to LxQt or something else in the future.)
+  * Export environment varialbe QT_PLATFORM_PLUGIN=lxqt to let all Qt programs load lxqt-qtplugin and apply lxqt settings.
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Run lxde-qt with XDG_CURRENT_DESKTOP=RAZOR
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Rename dirs and replace razor with lxqt. Install lxqt.conf to /etc/xdg/lxqt and provide theme config.
+  * Properly set default wallpaper for pcmanfm-qt. Comment out openbox config handling in startlxde-qt since it's not needed.
+  * Remove custom openbox config file in desktop.conf temporarily until lxsession is fixed.
+  * Fix file paths, replacing razor with lxqt. * Remove Alt+F2 and Ctrl+Esc from openbox config file to avoid conflicts with lxqt-panel & lxqt-globalkeys.
+  * Add default configuration files for lxde-qt session.
+
+lxqt-session-0.11.1 / 2017-01-01
+================================
+
+  * Release 0.11.1: Update changelog
+  * Adds an nullptr check when restarting a module (#90)
+  * Fixes a session logout crash (#88)
+  * Updated da.desktop files and removed da_DK.desktop files
+  * Moves FindUDev to the lxqt-build-tools repo
+  * Reworks X11 CMake libraries
+  * Removes all XCB stuff from CMake
+  * Update french desktop entries
+  * lxqt-config-session: Use localized comment
+  * Make CMakeLists.txt more uniform.
+  * Remove cpack (#83)
+
+lxqt-session-0.11.0 / 2016-09-24
+================================
+
+  * Release 0.11.0: Add changelog
+  * lockscreenmanager: always listen to the session provider's lock signal (#79)
+  * Update Polish translation
+  * Add README.md
+  * lxqt-config-session: Warn about restart required when removing env variable
+  * Add Catalan translations
+  * lockscreenmanager: use categorized logger
+  * Make screen locking before power actions optional
+  * Add and Update Arabic Translations for Desktop Files
+  * lxqt-session: Replace qCInfo() by qCWarning()
+  * Adds an WITH_LIBUDEV CMake option (#74)
+  * lockscreenmanager: add more log messages
+  * Add logic to lock screen before system sleeps
+  * lxqt-session: Use QLoggingCategory for logging/debug
+  * lxqt-session: Use the base name to compare Wm's names
+  * build: Use external translations
+  * ts-files removal (#72)
+  * Use const references with the foreach iterator
+  * leave: ask or not for confirmation from main dialog
+  * Adjust config dialog's size on startup
+  * Make it compile using QT_USE_QSTRINGBUILDER
+  * Fix lxqt-leave tab order
+  * lxqt-session doesn't copy openbox defaults at session start. startlxqt from lxqt-common will copy it.
+  * fixup...centering & spacing
+  * leave: do not set maximum size as minimum size
+  * Use XdgDir to find default path.
+  * Openbox default settings removed.
+  * Load LXQt default settings for Openbox.
+  * UserLocations: An user entered empty string represents the default value
+  * lxqt-config-session: Adds tooltips to the User Directories edits
+  * lxqt-config-session: Replaces Locations by User Directories
+  * Bump year Fix used licenses. lxqt-session is LGPL only
+  * Re-arrange the buttons
+  * lxqt-leave: Reworks window flags
+  * lxqt-leave: Make all buttons of equal width
+  * lxqt-leave: Center the dialog relative to the screen
+  * lxqt-leave: Removes window border and makes it stay on top
+  * lxqt-leave: Make the icons bigger and improves button alignement
+  * Updated german translation.
+  * Fix realloc() usage Check malloc() call result against NULL
+  * Add HR translations
+  * lxqt-session: Update man pages and make session the overview
+  * Update italian translation
+  * Updated Russian translations Removed ru_RU files
+  * Makes the dependency on xdg-user-dirs-update explicit
+  * Fix ending session and stopping modules
+  * upd: lxqt-config-session_hu.ts del: lxt-config-session_hu_HU.ts
+  * Fix desktop file
+  * Make desktop files valid
+  * CMakeLists.txt: Add cmake minimum required version
+
+lxqt-session-0.10.0 / 2015-10-31
+================================
+
+  * Fix license file
+  * Update translations
+  * Use AutostartUtils class
+  * Use QLatin1String when appropriate
+  * lxqt-config-session: Handle Basic Settings>Modules 'Restart Needed' trigger
+  * lxqt-config-session: Adds an 'Restarted Needed' trigger to Autostart page
+  * Adds a way to edit xdg user-dirs (Personal Files Locations)
+  * Install missing man pages
+  * ATTN: Set LIBUDEV_MONITOR to OFF by default
+  * Improve Session Restart Required info message
+  * Allow only one Leave Dialog instance
+  * lxqt-config-session: Adjust Environment and Default Applications 'Restarted Needed' trigger
+  * lxqt-config-session: Adjust Basic Settings page 'Restarted Needed' trigger
+  * Fix Japanese translations.
+  * Fix typos in lxqt-config-session and lxqt-config manpages
+  * lxqt-session: CMakeLists.txt build fix for X11 module
+  * lxqt-session: CMakeLists.txt using link/include options from pkg-config modules (xcb, x11, libudev)
+  * Support automatically turning on numlock after login (X11 only).
+  * Fix some invalid categories and missed main categories
+  * Fix typos
+  * Fix typo in Greek (el) translation
+  * Rename LxQt to LXQt everywhere
+  * Update Greek translation Remove country variant from language code
+  * Update Greek (el) translation
+  * Updated german translations.
+  * Better title of leave dialog. Updated template for modified leave strings.
+  * Handles CMake policy CMP0063
+  * Use the LXQtCompilerSettings CMake module
+  * Removes appending to CMAKE_MODULE_PATH
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Removes already included LXQtTranslate
+  * Use CMAKE_AUTOUIC, drop qt5_wrap_ui()
+  * Removes unneeded include_directories()
+  * Use GNUInstallDirs
+  * lxqt-session: execute setxkbmap only if there is something to set
+  * Updates the build system to use the Targets infrastructure
+  * Updated italian translation, discarding it_IT
+  * config: fix "leave confirmation dialog" label
+  * Leave confimation: disable by default if not set
+  * Remove trailing whitespaces
+  * Replace LXDE-Qt with LXQt in desktop file
+  * Replace LXDE-Qt with LXQt
+  * Fix naming and links
+  * lxqt-leave: lockscreen button in dialog
+  * Fix italian translation of lxqt-hibernate.desktop
+  * Add man page to lxqt-leave
+  * More german translation
+  * Update lxqt-config-session_it.desktop
+  * Create lxqt-hibernate_it.desktop
+  * Hungarian translations update
+  * Change CMakeLists.txt for new translation
+  * Update Russian translation
+  * Use qt5_wrap_ui macro for CMake 2.8.11
+  * lxqt-leave: rename folder lxqtleave to lxqt-leave
+  * lxqt-leave: show the gui by default
+  * lxqt-session: keyboard layout/settings reload after new input device added
+  * lxqt-leave: switch to QCommandLineParser to deal with options
+  * lxqt-leave: close leave dialog before power action
+  * lxqt-leave: fixed size of leave dialog
+  * Fix position of lxqt leave dialog and add .desktop
+  * Better C++11 detection
+  * Set C++11 to lxqt-session and add leave dialog
+  * Add KDevelop 4 format to .gitignore
+  * lxqtleave: *.dekstop translations cleanup
+  * Update Russian translation
+  * Create lxqt-suspend_it.desktop
+  * Moves lxqt-lockscreen_it.desktop to the proper place
+  * Create lxqt-lockscreen_it.desktop
+  * Moves lxqt-reboot_it.desktop to the proper place
+  * Create lxqt-reboot_it.desktop
+  * Create lxqt-shutdown_it.desktop
+  * Create lxqt-logout_it.desktop
+  * remove KF5/ prefix from includes
+
+lxqt-session-0.9.0 / 2015-01-29
+===============================
+
+  * Adjust the positions of buttons in autostart and environment variable settings pages.
+  * Revert "don't show the lxqt-leave actions in the "other" section of the menu"
+  * don't show the lxqt-leave actions in the "other" section of the menu
+  * Portuguese update
+  * add lxqtleave to lxqt-session, refs #22
+  * - Unify naming for a unique lxqt. No more suffixes
+  * Use the new LxQt::SingleApplication
+  * CMakeLists coding style reformatting
+  * CMakeLists.txt maintenance.
+  * Removes duplicated cmake_minimum_required()
+  * Add .gitignore
+  * Updates translations
+  * Use the new LXQtTranslate modules
+  * Linking to X11 again, need it for mouse pointer settings.
+  * Better window manager detection
+  * Add Russian translation
+  * Port to KWindowSystem
+  * Drop support for very old xdg-utils
+  * Remove unused startrazor binary
+  * Drop Qt4 support in code
+  * CMakeLists.txt cleanup, drop Qt4 support
+
+lxqt-session-0.8.0 / 2014-10-10
+===============================
+
+  * Adapt to the translation infrastructure
+  * Add option to disable confirmation dialogs to leave session
+  * Fix incorrect waiting for system tray and fix lxde/lxde-qt bug #38 - Battery icon doesn't show.
+  * Cleanup for Qt5 ready includes
+  * Fix broken build with Qt4.
+  * Simplify qt5 support. * Use cmake 2.8.9 for qt4 and 2.8.11 for qt5.
+  * Initial Qt5 support.
+  * Use new LXQt header files.
+  * Minor string fixes
+  * Update LxQt -> LXQt
+  * Update LXQt Session Settings title
+  * Update the shipped xdg-tools
+  * Update WM selection dialog
+
+lxqt-session-0.7.0 / 2014-05-07
+===============================
+
+  * Rename X-LxQt-Module to X-LXQt-Module and fix broken lxqt module configurations.
+
+lxqt-session-0.6.99 / 2014-05-01
+================================
+
+  * Update manpages
+  * remove old translation templates remove translated icon names
+  * Avoid using alloca, which is not portable.
+  * Add AUTHORS and COPYING
+  * Add CPack rules for creating tarball
+  * Load xkb settings with setxkbmap when available.
+  * Improvements to .desktop file
+  * Stop setting font antialias and hinting with xrdb. (We use fontconfig now)
+  * Fix bugs in font configurations
+  * Make lxqt-config-session read/write the same keys as lxqt-sesion.
+  * Make names of config groups and keys more consistent.
+  * export LXQT_SESSION_CONFIG environment variable.
+  * Load font settings, including dpi and antialiasing Fix xrdb merging problems.
+  * Update copyright info.
+  * Load keyboard and mouse settings during session startup.
+  * Do not hard-code "XDG_MENU_PREFIX=lxqt-".
+  * Avoid using busy loop to wait for creation of the system tray.
+  * Avoid waiting for the window manager with a busy loop.
+  * Rename razor(qt) to lxqt and fix broken build.
+  * X-RAZOR changed to Razor in desktop files
+  * Qt version check added. Fix for: https://github.com/Razor-qt/razor-qt/issues/531#issuecomment-18248309
+  * Theme change autodetection
+  * Allow commandline arguments for windowmanager setting
+  * Session: Prevent unresponsiveness during startup
+  * Fix moc warning
+  * Add autostart entry API into the library
+  * Prevent run razor-session without WM.
+  * Preventing run razor-session without WM.
+  * Some debug prints removed. Timeout for Systray to load increased to 1 minute. Module crash detection improved.
+  * Simplify and clean up AutoStartItem
+  * preliminary manpages primary for razorqt and usefully in venenux
+  * Translations updated
+  * first part of fixes based on Coverity Scan (code static analysis)
+  * Delete bad en_GB translations
+  * Update translations
+  * Fix dbus race condition during startup
+  * Minor fixes
+  * Translations updated
+  * Removed line num from TS files.
+  * Do not display blank entries if xfce creates invalid files
+  * Emit a signal when a module is started/stopped
+  * Translations
+  * Deleted old translation methods.
+  * Translations for librazorqt
+  * Don't log out if the WM quits
+  * Fix for when no item is selected
+  * Rudimentary implementation of start/stop ui
+  * Start and stop modules over dbus
+  * Return module configuration to basic settings page
+  * Split autostart config logic out of the model
+  * Fixed Issue #395
+  * razor-session and razor-config-session now have a separate CMakeLists files.
+  * Updated .ts.src files
+  * Translation for razor-config-sesion
+  * Translation for razor-sesion 2
+  * Translation for razor-sesion
+  * Updated ts.src files
+  * Removed dead code from the razormodman (HAL)
+  * Starting the razor-confupdate from the razor-session.
+  * Small fixes (typo and a wrong parameter)
+  * Handle cases where browser/terminal are unset
+  * add module names to includes and tidy up the coding style
+  * Ts.src files updated.
+  * Language name zh_CN.GB2312 braked cmake process.
+  * Translations updated
+  * Add a "wait for system tray" checkbox
+  * Split sessionconfigwindow and remove old module config
+  * Use XDG autostart for modules
+  * Improved autostart dialog
+  * Don't quit session after a crash limit is reached
+  * Razor-session doesn't do variable expansion, and prepends it literally Closes #280
+  * add qupzilla to the browser list
+  * Adding auto start option of global shortcut daemon
+  * issue #260 - notification: implementation of session module config
+  * reworked config stuff. No more special config registering. All 'Settings' desktop files are displayed in razor-config (grouped)
+  * Make bundling xdg-utils optional
+  * Revert "Make bundling xdg-tools optional"
+  * Make bundling xdg-tools optional
+  * Add some missing headers
+  * Move autostart directory code to XdgDirs
+  * fix for infinite loop when there is no systray implementation loaded
+  * Improvement in the WmSelectDialog
+  * Transifex desktop: sr_BA.ts should be a local
+  * Transifex desktop: local translations
+  * Transifex desktop: cmake files
+  * Transifex desktop: Translations pulled
+  * Transifex desktop: Reomove translations from desktop.in
+  * Transifex desktop: desktop->desktop.in
+  * Update Tradidtional Chinese Translations
+  * fixed #218 Use <razor-dir>/session.log instead of ~/.razor-session.log
+  * RazorApplication class implemented; all modules ported to this class
+  * Translations update
+  * Added support for the online translation service. www.transifex.net
+  * Wait until system tray becomes available
+  * Update razorqt-session/translations/razor-session_it_IT.ts
+  * Serbian translation files
+  * Serbian translations (2 variants)
+  * Greek translation by iosifidis
+  * Added danish translations
+  * Make xdg scripts use bash
+  * X-RAZOR -> Razor for autostart
+  * Russian translation
+  * RAZOR -> X-RAZOR
+  * Razor-session:  Wait until the WM loads
+  * Razor-session:  Wait until the WM loads
+  * fix #169: italian translation
+  * add razor-policykit-agent into config
+  * prevent the forever autorestart of still-crashing-app in the session. The count of crashes is limited now.
+  * Relicense
+  * XdgAutoStart rewriten (lgpl2+)
+  * Fix gmail.ru -> gmail.com
+  * menus are adopted to the new backends; old code removed; check for running razor-session to allow/disallow "logout" item
+  * Sawfish DE
+  * Czech translations (cs_CZ) Desktop files
+  * Replace old autostart
+  * Make XDG autostart fully editable
+  * Update german [de] translation
+  * Add settings page to view and toggle XDG autostart entries
+  * fixed #138: system settings icons
+  * SVK translation finalized
+  * Replaces return"" by return QString()
+  * License audit
+  * License audit
+  * Add Chinese(simplified) translation files.
+  * HU translation by Kristóf Kiszel
+  * Initial spanish translation
+  * Add detection of Xfwm4
+  * Add Slovak (sk) translation
+  * Adds newline to the end of .desktop files
+  * Fixes typo
+  * Czech translations (cs_CZ)
+  * huge refactoring of the libraries build organization
+  * show icons in the config tools
+  * Razor-session: Added startrazor script (cmake & deb)
+  * Razor-session: Added startrazor script
+  * GPL->LGPL where I'm the author
+  * config: remove toolbars
+  * Plugins translations
+  * Russian translation for razorqt-session
+  * Translation for session
+  * window manager detection is shared in session and its config tool
+  * Razor-session: Improved WM handling.   * If WM already running we not start new one.   * If is a first start we show WM select dialog.
+  * session: new argument -w windowmanager
+  * Polish translation part X
+  * Garbage in the code.
+  * Fix: Desktop Menu Specification category must be X-RAZOR.
+  * Russian translations
+  * better implementation of razor- menu discovering regarding the XDG standards
+  * removed unneeded parts after new config gui
+  * Added razor-application.menu
+  * New design of the razor-config-session
+  * fixed desktop files
+  * fix donfig desktp files install for rpm
+  * issue #37 - settings restore works
+  * homepage updated + auto replacement script
+  * show only in RAZOR; close/undo changes actions
+  * issue #37 config list widgets: no dnd, no editation
+  * config tools are registered in config center; desktop file for CC
+  * "pause" session for a while until all razor modules are set up and running
+  * Fixed incorrect incude <razorqt/xdgicon.h>
+  * session config: missing actions
+  * initial version of "session config". In progress.
+  * XDG-files are splitted into qtxdg library.
+  * implementation of issue #19: environment variables for razor-session
+  * The project uses RazorTheme. All except the desktop, switched to RazorSettings.
+  * initial support for screensaver/screen locking
+  * Fixed multithreaded building. Thanks Gustavo.
+  * fix for install 64bit
+  * install custom xdg-tools into lib directory (LSB requires it)
+  * set default razor icon for all apps
+  * our own (temporary) xdg scripts to handle mime/files directly
+  * copyrights
+  * removed obsolete/generated files
+  * XDG autostart for session; session cleanups
+  * fixed logout calls; ask for confirmation on power management calls
+  * Allow to call logout over DBus; removed unneeded file
+  * typo fixes
+  * allow more sessions for KDM/GDM. razor-session gets optional argument -c for session config file specification
+  * better logging for session logout
+  * session: logout from panel works now; splashscreen removed; internals rearranged to be smaller
+  * logout from openbox works now. Need review
+  * session simplified; session autostart user apps; qprocesses termination instead of bruteforce killing
+  * session's splash dialog is back...
+  * fixed processes restarting in session
+  * forgotten paths
+  * configuration reworked (may require to drop ~/.razor); plugins code split; new plugin: spacer
+  * debug outputs to help finding the session xorg resource consuming issue
+  * src formatted with astyle -A1
+  * settings refactored a bit: SHARE_DIR dependen on th CMAKE_INSTALL_PREFIX is defined for the compilation phase (it allows to have more razors installed eg. for development); SHARE_DIR is searched in the startup too; optimized cfg file access (1x vs. 4x as before for every file); redundant conversions merged into Razorsettings; usage of QSettings to read the settings (it does the error handling for us).
+  * fixed cmake stuff (debug,lib location,do not install .svn,make uninstall,etc.); fixes for qss skinning
+

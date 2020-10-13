@@ -1,0 +1,4 @@
+#ifndef __CONFIG_H__
+#define ICON_PATH "${CMAKE_INSTALL_FULL_DATAROOTDIR}/lxqt/icons/"
+#define __CONFIG_H__
+#endif

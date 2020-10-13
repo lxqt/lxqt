@@ -1,0 +1,10 @@
+<RCC>
+  <qresource>
+    <file>icon/letters.png</file>
+    <file>icon/vista.png</file>
+    <file>icon/vpointer.png</file>
+    <file>icon/vcross.png</file>
+    <file>icon/pause.png</file>
+    <file>icon/superman.png</file>
+  </qresource>
+</RCC>

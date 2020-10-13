@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Volume control
+Comment=Control the system's volume and launch your preferred mixer.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[zh_TW]=控制系統音量並啟動您喜愛的音量控制器
+Name[zh_TW]=音量控制

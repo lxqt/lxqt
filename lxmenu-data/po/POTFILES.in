@@ -1,0 +1,23 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+desktop-directories/lxde-audio-video.directory.in
+desktop-directories/lxde-development.directory.in
+desktop-directories/lxde-education.directory.in
+desktop-directories/lxde-game.directory.in
+desktop-directories/lxde-graphics.directory.in
+desktop-directories/lxde-hardware.directory.in
+desktop-directories/lxde-internet-and-network.directory.in
+desktop-directories/lxde-look-and-feel.directory.in
+desktop-directories/lxde-menu-applications.directory.in
+desktop-directories/lxde-menu-system.directory.in
+desktop-directories/lxde-network.directory.in
+desktop-directories/lxde-office.directory.in
+desktop-directories/lxde-other.directory.in
+desktop-directories/lxde-personal.directory.in
+desktop-directories/lxde-science-math.directory.in
+desktop-directories/lxde-settings.directory.in
+desktop-directories/lxde-settings-system.directory.in
+desktop-directories/lxde-system.directory.in
+desktop-directories/lxde-system-tools.directory.in
+desktop-directories/lxde-utility-accessibility.directory.in
+desktop-directories/lxde-utility.directory.in

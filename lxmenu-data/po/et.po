@@ -1,0 +1,252 @@
+# GNOME menüüde eesti keele tõlge
+# Estonian translation of Gnome-menus
+#
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# Copyright (C) 2007 The GNOME Project
+# This file is distributed under the same license as the Gnome-menus package.
+#
+# Priit Laes <amd@store20.com>, 2005.
+# Ivar Smolin <okul@linux.ee>, 2005, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2011-09-06 16:44+0200\n"
+"Last-Translator: Anari <anari.jalakas@gmail.com>\n"
+"Language-Team: Estonian <gnome-et@linux.ee>\n"
+"Language: et\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Audio ja video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multimeediamenüü"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programmeerimine"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Tarkvaraarenduse tööriistad"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Õppeprogrammid"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Mängud"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Mängud ja meelelahutus"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Graafika"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Graafikatöötlusprogrammid"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Riistvara"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Mõnede riistvaraliste seadmete sätted"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet ja võrk"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Võrguga seotud sätted"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Välimus ja tunnetus"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Töölaua välimuse ja käitumise juhtimine"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Rakendused"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Süsteem"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Isiklikud eelistused ja haldussätted"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Internetirakendused - näiteks veebi ja e-posti jaoks"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Kontor"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Kontoritarkvara"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Muu"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Rakendused, mis ei sobinud teistesse kategooriatesse"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Isiklik"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Isiklikud sätted"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Eelistused"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Isiklikud eelistused"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Haldamine"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Ülesüsteemiliste sätete muutmine (mõjutab kõiki kasutajaid)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Süsteemi sätted"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Süsteemi tööriistad"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Süsteemi seadistamine ja jälgimine"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Universaalne ligipääs"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Universaalse ligipääsu sätted"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Tarvikud"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Töölaua tarvikud"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Universaalse ligipääsuga seotud eelistused"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Isiklikud eelistused ja sätted"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Menüüredaktor"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Menüüde redigeermine"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Rakendused:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Vaikimisi"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menüüd:"
+
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgid "Show"
+#~ msgstr "Vaade"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Kodukausta pole võimalik leida: seda pole määratud ei /etc/passwd failis "
+#~ "ega $HOME keskkonnamuutujas"
+
+#~ msgid "Menu file"
+#~ msgstr "Menüüfail"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Jälgi muudatusi menüüs"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Kaasa ka <välistatud> kirjed"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Kaasa ka <NoDisplay=true> kirjed"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Vigane töölauafaili ID"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Vigane failinimi]"
+
+#~ msgid " <excluded>"
+#~ msgstr "<välistatud>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menüü muudetud, laaditakse uuesti ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Menüüpuu on tühi"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- testi GNOME'ipoolset teostust Töölauamenüü spetsifikatsioonist"

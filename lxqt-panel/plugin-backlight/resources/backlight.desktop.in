@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Backlight
+Comment=Sets display backlight
+Icon=brightnesssettings
+
+#TRANSLATIONS_DIR=../translations

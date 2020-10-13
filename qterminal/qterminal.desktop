@@ -1,0 +1,71 @@
+[Desktop Entry]
+Name=QTerminal
+Type=Application
+GenericName=Terminal emulator
+GenericName[ca]=Emulador de terminal
+GenericName[cs]=Emulátor terminálu
+GenericName[es]=Emulador de terminal
+GenericName[hu]=Terminál emulátor
+
+
+Comment=Terminal emulator
+Comment[ca]=Emulador de terminal
+Comment[cs]=Emulátor terminálu
+Comment[de]=Befehlszeile verwenden
+Comment[el]=Προσομοιωτής τερματικού
+Comment[es]=Emulador de terminal
+Comment[fr]=Terminal
+Comment[hu]=Terminál emulátor
+Comment[lt]=Terminalo emuliatorius
+Comment[pl]=Emulator terminala
+Comment[pt]=Emulador de terminal
+Comment[pt_BR]=Emulador de terminal
+Comment[ru_RU]=Эмулятор терминала
+Comment[ja]=ターミナル　エミュレータ
+
+Icon=utilities-terminal
+Exec=qterminal
+Terminal=false
+Categories=Qt;System;TerminalEmulator;
+Actions=Dropdown;
+
+[Desktop Action Dropdown]
+Name=Drop-down terminal
+Exec=qterminal --drop
+Icon=utilities-terminal
+
+Name[en_GB]=Drop-down Terminal
+Name[bg]=Падащ терминал
+Name[ca]=Terminal desplegable
+Name[ca@valencia]=Terminal desplegable
+Name[cs]=Vysouvací terminál
+Name[da]=Terminal der ruller ned
+Name[de]=Aufklapp-Terminal
+Name[el]=Αναπτυσσόμενο τερματικό
+Name[es]=Terminal desplegable
+Name[et]=Lahtikeriv terminal
+Name[fr]=Terminal déroulant
+Name[hr]=Spuštajući terminal
+Name[hu]=Legördülő terminál
+Name[it]=Terminale a discesa
+Name[ja]=ドロップダウン式ターミナル
+Name[km]=ស្ថានីយ​ទម្លាក់​ចុះ
+Name[ko]=위에서 내려오는 터미널
+Name[lt]=Išskleidžiamasis terminalas
+Name[nb]=Nedtrekksterminal
+Name[nds]=Utklapp-Konsool
+Name[nl]=Uitvouwbare terminalemulator
+Name[pa]=ਲਟਕਦਾ ਟਰਮੀਨਲ
+Name[pl]=Rozwijany emulator terminala
+Name[pt]=Terminal suspenso
+Name[pt_BR]=Terminal suspenso
+Name[ro]=Terminal derulant
+Name[ru]=Выпадающий терминал
+Name[sk]=Rozbaľovací terminál
+Name[sv]=Rullgardinsterminal
+Name[th]=เทอร์มินัลแบบหย่อนลง
+Name[tr]=Yukarıdan Açılan Uçbirim
+Name[uk]=Спадний термінал
+Name[x-test]=xxDrop-down Terminalxx
+Name[zh_CN]=拉幕式终端
+Name[zh_TW]=下拉式終端機

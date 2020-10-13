@@ -1,0 +1,240 @@
+# Icelandic translation of Gnome.
+# Icelandic translation of gnome-menus.
+# Copyright (C) 2008 Free Software Foundation, Inc.
+# Anna Jonna Ármannsdóttir <annajonna@gmail.com>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2008-05-14 01:40+0000\n"
+"Last-Translator: Anna Jonna Ármannsdóttir <annajonna@gmail.com>\n"
+"Language-Team: Icelandic\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Hljóð og mynd"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Margmiðlun"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Forritun"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Þróunarverkfæri"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Menntun"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Leikir"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Leikir og gaman"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Myndefni"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Myndefnisforrit"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Vélbúnaður"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Uppsetning á ýmsum vélbúnaði"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet og netkerfi"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Netkerfistengdar stillingar"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Útlit og viðmót"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Stillingar sem stjórna útliti og hegðun skjáborðsins"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Forrit"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Kerfið"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Persónulegir valmöguleikar og stjórnunar stillingar"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Forrit til að nálgast netið eins og vefinn og tölvupóst"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Skrifstofa"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Skrifstofuforrit"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Aðrir"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Forrit sem passa ekki í aðra flokka"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Persónuleg"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Persónulegar stillingar"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Stillingar"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Persónulegir valmöguleikar"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Stjórnun"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Breyta stillingum fyrir allt kerfið (hefur áhrif á alla notendur)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Kerfisstillingar"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Kerfistól"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Kerfisstillingar og vöktun"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Altækur aðgangur"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Stillingar fyrir altækan aðgang"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Aukahlutir"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Skjáborðs aukahlutir"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Valmyndaritill"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Breyta valmyndum"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Forrit:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Sjálfgefið"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Valmyndir:"
+
+#~ msgid "Name"
+#~ msgstr "Nafn"
+
+#~ msgid "Show"
+#~ msgstr "Sýna"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Gat ekki fundið heimamöppu: ekki stillt í /etc/passwd og ekkert gildi "
+#~ "fyrir $HOME í víðværumbreytum"
+
+#~ msgid "Menu file"
+#~ msgstr "Valmyndaskrá"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "VALMYNDAR_SKRÁ"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Vakt eftir breytingum í valmynd"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Taka <útilokað> færslur með"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Taka NoDisplay=true færslur með"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Kenni skjáborðsskrár er ógilt"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Ólöglegt skráarnafn]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <útilokað>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Valmynd breytt, endurhleð ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Valmyndatréð er tómt"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- prófa útfærslu GNOME á Desktop Menu Specification"

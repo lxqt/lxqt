@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LXQtSysStatColours</class>
+ <widget class="QDialog" name="LXQtSysStatColours">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>562</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>System Statistics Colors</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="3" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QDialogButtonBox" name="buttonBox_1">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="standardButtons">
+          <set>QDialogButtonBox::Reset</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDialogButtonBox" name="buttonBox_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="standardButtons">
+          <set>QDialogButtonBox::RestoreDefaults</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QDialogButtonBox" name="buttonBox_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="standardButtons">
+          <set>QDialogButtonBox::Ok</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDialogButtonBox" name="buttonBox_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="standardButtons">
+          <set>QDialogButtonBox::Cancel</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDialogButtonBox" name="buttonBox_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="standardButtons">
+          <set>QDialogButtonBox::Apply</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="graphGB">
+         <property name="title">
+          <string>Graph</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="gridL">
+            <property name="text">
+             <string>&amp;Grid</string>
+            </property>
+            <property name="buddy">
+             <cstring>gridB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="gridB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="titleL">
+            <property name="text">
+             <string>T&amp;itle</string>
+            </property>
+            <property name="buddy">
+             <cstring>titleB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="titleB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="cpuGB">
+         <property name="title">
+          <string>CPU</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="1">
+           <widget class="QPushButton" name="cpuUserB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="cpuNiceL">
+            <property name="text">
+             <string>&amp;Nice</string>
+            </property>
+            <property name="buddy">
+             <cstring>cpuNiceB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="cpuFrequencyB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="cpuOtherL">
+            <property name="text">
+             <string>Ot&amp;her</string>
+            </property>
+            <property name="buddy">
+             <cstring>cpuOtherB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="cpuFrequencyL">
+            <property name="text">
+             <string>&amp;Frequency</string>
+            </property>
+            <property name="buddy">
+             <cstring>cpuFrequencyB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="cpuSystemB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="cpuSystemL">
+            <property name="text">
+             <string>S&amp;ystem</string>
+            </property>
+            <property name="buddy">
+             <cstring>cpuSystemB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="cpuUserL">
+            <property name="text">
+             <string>&amp;User</string>
+            </property>
+            <property name="buddy">
+             <cstring>cpuUserB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="cpuNiceB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="cpuOtherB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QGroupBox" name="memoryGB">
+         <property name="title">
+          <string>Memory</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="1" column="1">
+           <widget class="QPushButton" name="memBuffersB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="memCachedL">
+            <property name="text">
+             <string>Cache&amp;d</string>
+            </property>
+            <property name="buddy">
+             <cstring>memCachedB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="memSwapL">
+            <property name="text">
+             <string>S&amp;wap</string>
+            </property>
+            <property name="buddy">
+             <cstring>memSwapB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="memAppsB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="memAppsL">
+            <property name="text">
+             <string>&amp;Applications</string>
+            </property>
+            <property name="buddy">
+             <cstring>memAppsB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="memBuffersL">
+            <property name="text">
+             <string>&amp;Buffers</string>
+            </property>
+            <property name="buddy">
+             <cstring>memBuffersB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="memCachedB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QPushButton" name="memSwapB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="networkGB">
+         <property name="title">
+          <string>Network</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QLabel" name="netReceivedL">
+            <property name="text">
+             <string>&amp;Received</string>
+            </property>
+            <property name="buddy">
+             <cstring>netReceivedB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="netReceivedB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="netTransmittedL">
+            <property name="text">
+             <string>&amp;Transmitted</string>
+            </property>
+            <property name="buddy">
+             <cstring>netTransmittedB</cstring>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="netTransmittedB">
+            <property name="text">
+             <string>Change ...</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>gridB</tabstop>
+  <tabstop>titleB</tabstop>
+  <tabstop>cpuSystemB</tabstop>
+  <tabstop>cpuUserB</tabstop>
+  <tabstop>cpuNiceB</tabstop>
+  <tabstop>cpuOtherB</tabstop>
+  <tabstop>cpuFrequencyB</tabstop>
+  <tabstop>memAppsB</tabstop>
+  <tabstop>memBuffersB</tabstop>
+  <tabstop>memCachedB</tabstop>
+  <tabstop>memSwapB</tabstop>
+  <tabstop>netReceivedB</tabstop>
+  <tabstop>netTransmittedB</tabstop>
+  <tabstop>buttonBox_1</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>on_buttons_clicked(QAbstractButton*)</slot>
+ </slots>
+</ui>

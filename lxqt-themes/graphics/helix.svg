@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350"
+   height="350"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="lxqt_logo.svg"
+   inkscape:export-filename="./lxqt_logo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <title
+     id="title4078">LXQt logo</title>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="175"
+     inkscape:cy="166.5"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-page="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1029"
+     inkscape:window-x="0"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:object-paths="false"
+     inkscape:object-nodes="true"
+     inkscape:snap-nodes="true"
+     inkscape:guide-bbox="true"
+     inkscape:bbox-paths="false"
+     inkscape:snap-bbox-edge-midpoints="false"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-global="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:snap-grids="true">
+    <inkscape:grid
+       originy="-404.51465px"
+       originx="-575.98291px"
+       snapvisiblegridlinesonly="true"
+       enabled="true"
+       visible="true"
+       empspacing="5"
+       id="grid3064"
+       type="xygrid" />
+    <sodipodi:guide
+       id="guide4059"
+       position="209.01709,300.48532"
+       orientation="0,1" />
+    <sodipodi:guide
+       id="guide3804"
+       position="286.01709,80.485352"
+       orientation="0,1" />
+    <sodipodi:guide
+       id="guide3145"
+       position="308.01709,242.48535"
+       orientation="1,0" />
+    <sodipodi:guide
+       id="guide3148"
+       position="382.01709,241.48535"
+       orientation="0,1" />
+    <sodipodi:guide
+       id="guide3150"
+       position="669.01709,49.485352"
+       orientation="0,1" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="129.08716,94.530832"
+       id="guide3288" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="42.017092,285.13117"
+       id="guide3008" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3250-6"
+       effect="spiro" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect3252-9"
+       is_visible="true" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3254-3"
+       effect="spiro" />
+    <inkscape:path-effect
+       is_visible="true"
+       id="path-effect3260-0"
+       effect="spiro" />
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>LXQt logo</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Giacomo Barazzetti</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="colors"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <g
+       transform="translate(-426,-529)"
+       id="g3156">
+      <rect
+         style="fill:#0192d3;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="rect3020"
+         width="64"
+         height="64"
+         x="427"
+         y="885" />
+      <rect
+         y="885"
+         x="493"
+         height="64"
+         width="64"
+         id="rect3790"
+         style="fill:#1a1a1a;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+    </g>
+  </g>
+  <g
+     transform="translate(-575.98291,-445.48535)"
+     inkscape:label="Logo"
+     id="layer2"
+     inkscape:groupmode="layer"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <flowRoot
+       transform="translate(-249.22717,-823.47169)"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:FontAwesome;-inkscape-font-specification:FontAwesome"
+       id="flowRoot3012"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3014"><rect
+           y="1114"
+           x="927"
+           height="137"
+           width="213"
+           id="rect3016" /></flowRegion><flowPara
+         id="flowPara3018" /></flowRoot>    <g
+       transform="matrix(0.99888162,0,0,0.99809723,-380.89834,-1118.5405)"
+       id="g3147-6">
+      <path
+         inkscape:original-d="m 1116.8938,1689.4194 c 0,0 14.9134,-73.0531 36.7143,-72.5715 21.801,0.4816 33.618,22.9295 33.618,22.9295 l 79.0542,10.904 -90.1007,0 c 0,0 -6.4908,-10.9499 -23.1583,-13.3266 -16.6675,-2.3767 -36.1275,52.0645 -36.1275,52.0646 z"
+         inkscape:path-effect="#path-effect3250-6"
+         sodipodi:nodetypes="czccczc"
+         inkscape:connector-curvature="0"
+         id="path3149-8"
+         d="m 1116.8938,1689.4194 c -5.9501,-6.4533 -9.8718,-14.7504 -11.0814,-23.4444 -1.2096,-8.694 0.2983,-17.7464 4.2608,-25.5789 3.9625,-7.8325 10.362,-14.4102 18.0827,-18.5864 7.7206,-4.1761 16.7282,-5.9321 25.4522,-4.9618 14.0311,1.5606 27.0437,10.436 33.618,22.9295 l 79.0542,10.904 -90.1007,0 c -5.6213,-7.1952 -14.1129,-12.0817 -23.1583,-13.3266 -6.4597,-0.889 -13.1604,0.045 -19.131,2.6661 -5.9705,2.6213 -11.1929,6.9222 -14.9103,12.2794 -3.7173,5.3573 -5.9185,11.7546 -6.2844,18.265 -0.3659,6.5104 1.1045,13.1141 4.1982,18.8541"
+         style="fill:#1a1a1a;fill-opacity:1;stroke:none" />
+      <g
+         transform="translate(15,2)"
+         id="g3159-3">
+        <path
+           style="fill:#0192d3;fill-opacity:1;stroke:none"
+           d="m 1113.0085,1717 -121.00003,-87 c -5.79688,11.4486 -8.0911,24.6415 -6.49942,37.3749 1.59169,12.7335 7.06282,24.9557 15.49945,34.6251 11.0648,12.6815 27.2298,20.7807 44.0118,22.0513 -7.9223,-2.5599 -15.1793,-7.1499 -20.8872,-13.2109 -5.7079,-6.0609 -9.8546,-13.5801 -11.935,-21.6416 -2.383,-9.2343 -2.0312,-19.1565 1,-28.1988 l 99.8104,56"
+           id="path3151-3"
+           inkscape:path-effect="#path-effect3252-9"
+           inkscape:original-d="m 1113.0085,1717 -121.00003,-87 c 0,0 -6.41776,53.3642 9.00003,72 21.4411,25.9164 44.0118,22.0513 44.0118,22.0513 0,0 -15.3698,-10.3696 -32.8222,-34.8525 -5.5412,-7.7734 1,-28.1988 1,-28.1988 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ccscscc" />
+        <path
+           sodipodi:nodetypes="ccscscc"
+           inkscape:connector-curvature="0"
+           inkscape:original-d="m 1106.2919,1740.501 -106.31654,-29.9171 c 0,0 10.05684,41.7896 25.51744,50.8597 21.5007,12.6135 42.7334,6.2881 42.7334,6.2881 0,0 -18.6477,-5.9336 -37.0072,-18.5599 -5.8293,-4.009 -8.6296,-22.3704 -8.6296,-22.3704 z"
+           inkscape:path-effect="#path-effect3254-3"
+           id="path3153-6"
+           d="m 1106.2919,1740.501 -106.31654,-29.9171 c -0.85695,9.9442 1.09424,20.1153 5.57014,29.0365 4.476,8.9212 11.4632,16.5656 19.9473,21.8232 12.5858,7.7995 28.4343,10.1316 42.7334,6.2881 -14.3249,0.096 -28.5169,-7.0219 -37.0072,-18.5599 -4.7934,-6.514 -7.8065,-14.3248 -8.6296,-22.3704 l 83.7025,13.6996"
+           style="fill:#0192d3;fill-opacity:1;stroke:none" />
+      </g>
+      <path
+         style="fill:#0192d3;fill-opacity:1;stroke:none"
+         d="m 1169.7781,1675.729 c -1.9753,4.1002 -3.3486,8.4898 -4.0625,12.9847 -2.2142,13.9416 1.9287,28.0237 6.0575,41.5228 4.1289,13.499 8.3376,27.5466 6.255,41.5085 -1.5555,10.428 -6.6401,20.1889 -13.7567,27.9681 -7.1166,7.7792 -16.2003,13.6286 -25.9621,17.6121 -16.0797,6.5616 -34.1667,8.1034 -51.125,4.3581 l 0,46.4118 13.9455,-33.13 c 18.0735,4.1247 37.4229,2.4559 54.5233,-4.7024 12.2473,-5.1268 23.4211,-13.1088 31.4777,-23.6621 8.0567,-10.5533 12.8628,-23.7392 12.5223,-37.0119 -0.4093,-15.9555 -7.944,-30.7436 -15.2368,-44.9408 -7.2927,-14.1972 -14.6821,-29.0987 -14.7632,-45.0592 -0.01,-1.2875 0.035,-2.5753 0.125,-3.8597"
+         id="path3155-5"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccssccccssc"
+         inkscape:path-effect="#path-effect3260-0"
+         inkscape:original-d="m 1169.7781,1675.729 c -1.7122,3.4387 -3.1498,7.8083 -4.0625,12.9847 -4.6099,26.1433 16.154,61.2451 12.3125,83.0313 -3.8415,21.7862 -10.5022,32.7611 -39.7188,45.5802 -13.9596,6.1249 -33.9959,6.1081 -51.125,4.3581 -9.3737,13.1053 0,46.4118 0,46.4118 0,0 4.458,-26.1276 13.9455,-33.13 28.8172,3.7353 36.0671,7.9947 54.5233,-4.7024 30,-20 44,-35.674 44,-60.674 0,-25 -30,-60 -30,-90 0,-1.2836 0.056,-2.6645 0.125,-3.8597 z" />
+    </g>
+  </g>
+</svg>

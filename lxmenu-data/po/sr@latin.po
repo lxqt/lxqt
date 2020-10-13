@@ -1,0 +1,259 @@
+# Serbian translation of gnome-menus
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2004, 2005, 2006, 2007.
+#
+# This file is distributed under the same license as the gnome-menus package.
+#
+# Maintainer: Danilo Šegan <dsegan@gmx.net>
+# Reviewed on 2005-09-03 by: Danilo Šegan <danilo@gnome.org>"
+# Transalted on 2006-01-31 by: Slobodan D. Sredojević <slobo@akrep.be> 
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-09-12 01:22+0200\n"
+"Last-Translator: Goran Rakić <grakic@devbase.net>\n"
+"Language-Team: Serbian (sr) <gnome@prevod.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Zvuk i pokretne slike"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Meni za multimediju"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programiranje"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Alati za razvoj softvera"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Obrazovanje"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Igre"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Igre i zabava"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafika"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafički programi"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Uređaji"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Podešavanja za neke uređaje"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet i mreža"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Mrežna podešavanja"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Izgled i ponašanje"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Podešavanje izgleda i ponašanja radnog okruženja"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Programi"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Sistemski alati"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Lične postavke i administratorska podešavanja"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programi za pristup Internetu kao što je veb i e-pošta"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Kancelarija"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Programi za kancelariju"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Ostalo"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Programi koji ne pripadaju ostalim kategorijama"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Lično"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Lična podešavanja"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Postavke"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Lične postavke"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administracija"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Promenite sistemska podešavanja (utiče na sve korisnike)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Podešavanja sistema"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Sistemski alati"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Podešavanje i praćenje sistema"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Univerzalni pristup"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Podešavanja univerzalnog pristupa"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Alatke"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Alatke okruženja"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Postavke u vezi univerzalnog pristupa"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Lične postavke i podešavanja"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Uređivač menija"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Uredi menije"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Programi:"
+
+#~ msgid "_Defaults"
+#~ msgstr "Po_drazumevani"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Meniji:"
+
+#~ msgid "Name"
+#~ msgstr "Naziv"
+
+#~ msgid "Show"
+#~ msgstr "Prikaži"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Ne mogu da nađem lični direktorijum: nije postavljen u /etc/passwd a nema "
+#~ "ni vrednosti $HOME u okruženju"
+
+#~ msgid "Menu file"
+#~ msgstr "Datoteka menija"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "DATOTEKA_MENIJA"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Prati izmene menija"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Uključi izuzete stavke"
+
+# bug(slobo): može li bolje?
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Uključi stavke koje ne treba da se vide"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Neispravan IB .desktop datoteke"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Neispravno ime datoteke]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <isključena>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Meni je izmenjen, ponovno učitavanje je u toku ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Stablo menija je prazno"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "— isprobava Gnomovu izvedbu Specifikacije za menije okruženja"
+
+#~ msgid "Accessibility"
+#~ msgstr "Pristupačnost"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Podešavanja pristupačnosti"
+
+#~ msgid "Desktop"
+#~ msgstr "Okruženje"

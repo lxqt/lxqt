@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Notification Daemon
+TryExec=lxqt-notificationd
+Exec=lxqt-notificationd
+OnlyShowIn=LXQt;
+X-LXQt-Module=true
+
+#TRANSLATIONS_DIR=translations

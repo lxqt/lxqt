@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+
+Name=Network monitor
+Comment=Displays network status and activity.
+
+
+
+
+# Translations
+Comment[sr@latin]=Automatsko suspendovanje
+Name[sr@latin]=Meni pokretača programa

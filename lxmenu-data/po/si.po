@@ -1,0 +1,247 @@
+# translation of gnome-menus.po to Sinhala
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Danishka Navin <snavin@redhat.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2010-12-06 11:24+0200\n"
+"Last-Translator: danishka <danishka@gmail.com>\n"
+"Language-Team: Sinhala <en@li.org>\n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "ශබ්ද සහ දෘශ්‍ය"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "බහුමාද්‍ය මෙනුව"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "කේතරචනය"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "මෘදුකාංග සංවර්ධන මෙවලම්"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "අධ්‍යාපනික"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "ක්‍රිඩා"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "ක්‍රිඩා සහ විනොදාශ්වාද"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "චිත්‍ර"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "චිත්‍රක යෙදුම්"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "දෘඩාංග"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "විවිධ දෘඩාංග උපාංග සදහා සැකසුම්"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "අන්තර්ජාලය සහ ජාලය"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "ජාලය සම්බන්ද සැකසුම්"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "පෙනුම සහ දැනිම"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "මුලිකතිතයෙ පෙනුම සහ ක්‍රියාකාරිත්වය පාලනය කරන්නාවු සැකසුම්"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "යෙදුම්"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "පද්දති"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "පුත්ගලික අභිප්‍රේත සහ පාලන සැකසුම්"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "අන්තර්ජාලය"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "අන්තර්ජාලය පිවිසුමට වියුණු සහ ඉලෙක්ට්‍රොනික තැපෑල වැනි කේතයන්"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "කාර්‍යයාලීය"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "කාර්‍යාලිය යෙදුම්"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "වෙනත්"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "වෙනත් ප්‍රභේද වලට අයත් නොවු යෙදුම්"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "පුද්ගලික"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "පුද්ගලික සැකසුම්"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "අභිප්‍රේත"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "පුද්ගලික අභිප්‍රේත"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "පරිපාලනය"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "පද්ධති පුරා සැකසුම් වෙනස් කරන්න (සියළුම පරිශීලකයන්ට බලපානු ඇත)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "පද්දති සැකසුම්"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "පද්දති මෙවලම්"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "පද්දති සුසර කිරිම සහ නිරික්ෂණය"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "විශ්ව පිවිසුම"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "විශ්ව පිවිසුම් සැකසුම්"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "උපාංග"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "මූලික තිරය උපාංග"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "විශ්ව පිවිසුම් හා සබැදි අභිප්‍රේත"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "පුද්ගලික අභිප්‍රේත සහ සැකසුම්"
+
+#~ msgid "Menu Editor"
+#~ msgstr "මෙනු සංස්කරණය"
+
+#~ msgid "Edit Menus"
+#~ msgstr "මෙනු වෙනස්කරන්න"
+
+#~ msgid "_Applications:"
+#~ msgstr "යෙදුම්: (_A)"
+
+#~ msgid "_Defaults"
+#~ msgstr "සාමාන්‍ය (_D)"
+
+#~ msgid "_Menus:"
+#~ msgstr "මෙනු: (_M)"
+
+#~ msgid "Name"
+#~ msgstr "නම"
+
+#~ msgid "Show"
+#~ msgstr "පෙන්වීම"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "හොම් ඩිරෙක්ටරිය සොයාගත නොහැක: /etc/passwd සකසා නැති අතර පරිසරයෙ $HOME සදහා අගයක් "
+#~ "නැත"
+
+#~ msgid "Menu file"
+#~ msgstr "මෙනු ගොනුව"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "මෙනු වෙනස්කම් සඳහා නිරික්ෂණය"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "<Exclude>ඇතුලත් කිරිම් අඩංගුව ඇත"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "NoDisplay=true ඇතුලත් කිරිම් අඩංගුව ඇත"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "සාවද්‍ය මූලික තිරයෙ ගොනු අංකය"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[සාවද්‍ය ගොනු නම]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== මෙනුව වෙනස්විය, රිලොඩ් වෙමින් පවතියි ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "ම්නුව අන්තර්ගතය හිස්"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- GNOME හි මූලික තිරයෙ මෙනුවෙ ග විශේෂ ක්‍රියාවෙහි යෙදවිම පරික්‍ෂාකරනය"

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ScreenGrab
+Comment=Screen capture
+GenericName=Screen Capture Program
+Exec=screengrab
+Icon=screengrab
+Terminal=false
+Type=Application
+Categories=Graphics;RasterGraphics;Qt;
+X-KDE-StartupNotify=false
+
+#TRANSLATIONS_DIR=translations

@@ -1,0 +1,152 @@
+lxqt-policykit-0.15.0 / 2020-04-22
+==================================
+  * Bumped version to 0.15.0.
+  * Delete Password from line-edit.
+  * Made the infobox non-modal.
+  * Removed (duplicated) string casts definitions.
+
+lxqt-policykit-0.14.1 / 2019-02-25
+==================================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+lxqt-policykit-0.14.0 / 2019-01-25
+==================================
+
+  * Bumped version to 0.14.0
+  * Don't use automatic string conversions
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Use POLKIT_AGENT_LDFLAGS instead of use POLKIT_AGENT_LIBRARIES
+    - Removed locale compile definitons
+    - Installed man page
+  * Moved translations from lxqt-l10n back to lxqt-policykit
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+  * Deleted superfluous *cs_CZ.desktop files
+
+lxqt-policykit-0.13.0 / 2018-05-21
+==================================
+
+  * CMake: Prevent in-source builds
+  * fix razor-qt -> lxqt and http -> https
+  * Fixed some LXDE mentions
+  * Drop Qt foreach
+
+lxqt-policykit-0.12.0 / 2017-10-21
+==================================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version
+  * Don't export github templates
+  * Updated Lithuanian translation
+  * Drops Qt5Core_VERSION_STRING
+  * Added QCommandLineParser and basic cli interface to lxqt-policykit-agent
+  * Added default CMAKE_BUILD_TYPE and LXQT_POLKITAGENT_PATCH_VERSION
+  * Fixes a FTBFS in superbuild mode
+  * Added merged autostart to CMakeLists.txt
+  * Updated *_da.desktop files and removed *_da_DK.desktop files
+  * Update desktop entries and Replace fr_FR by fr
+  * Update Greek translation (el) Remove country variant from language code
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Updates the build system to use the Targets infrastructure
+  * Drops hardcoded /etc/xdg paths
+  * Updated german translation, replaced Qt4 by Qt in all xsession/translations
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * remove dead template lines switch OnlyShowIn from Razor -> LXQt stringchanges LxQt -> LXQt
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Fix typo and correct some sentences
+  * Fixed some more typos
+  * Bump year
+
+lxqt-policykit-0.11.1 / 2017-01-01
+==================================
+
+  * Release 0.11.1: Update changelog
+  * Make CMakeLists.txt more uniform.
+  * Remove cpack (#25)
+
+lxqt-policykit-0.11.0 / 2016-09-24
+==================================
+
+  * Release 0.11.0: Add changelog
+  * agentGui: Use default icon
+  * agentGui: Choose current user in identities combo
+  * agentGui: Handle setting the prompt correctly
+  * agent: Handle multiple identities correctly
+  * Update README.md
+  * Fixed typo prefered -> preferred
+  * Add README.md
+  * build: Use external translations
+  * ts-files removal (#21)
+  * Bump year in AUTHORS
+  * Italian translation update
+  * Updated Russian translation Removed ru_RU file
+  * update: lxqt-policykit-agent_hu.ts
+
+lxqt-policykit-0.10.0 / 2015-10-31
+==================================
+
+  * Update translations
+  * Fix license file
+  * GPL2 not used - removed in AUTHORS Fixed link to Github LXQt issues Fix wording in manpage - 'can be used by others' was nuts for a file under LGPL root license
+  * Add Greek (el) translation
+  * Rename LxQt to LXQt everywhere
+  * Added german translation.
+  * Added missing tr() call.
+  * Handles CMake policy CMP0063
+  * Use the LXQtCompilerSettings CMake module
+  * Adds Runtime install COMPONENT
+  * Use GNUInstallDirs
+  * Removes unneede entries from include_directories()
+  * Uses CMAKE_AUTOUIC
+  * Updates the build system to use the Targets infrastructure
+  * Remove trailing whitespaces
+  * Fix naming and links
+  * Hungarian translation
+  * - Add a choice option for install binary. Some distributions use libexec instead os default usr/bin installs. It defauls to bin
+
+lxqt-policykit-0.9.0 / 2015-01-19
+=================================
+
+  * File name was ok but language name wasn´t. My mistake.
+  * Makes filename match translation language
+  * Portuguese update
+  * - Unify naming for a unique lxqt. No more suffixes
+  * CMakeLists.txt maintenance.
+  * Uses the new translations cmake modules
+  * Add Russian translation
+  * CMakeLists.txt cleanups
+
+lxqt-policykit-0.8.0 / 2014-06-28
+=================================
+
+  * Use portable Polkit headers
+  * Deal with a bug in polkit-qt1 cmake file
+  * Choose Qt5 version of PolkitQt when build with Qt5.
+  * Add initial Qt5 support.
+  * Use new LXQt header files.
+
+lxqt-policykit-0.7.0 / 2014-05-01
+=================================
+
+  * Update AUTHORS and COPYING files
+  * Add CPack rules for creating tarball
+  * Removed CMAKE_SOURCE_DIR usage from CMakeLists.txt
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Rename binary to lxqt-policykit-agent and migrate to the latest liblxqt.
+  * Add COPYING and AUTHORS
+  * Fix authentization->authentication misspelling
+  * Trtanslations
+  * Translation support for policykit agent
+  * preliminary manpages primary for razorqt and usefully in venenux
+  * Add build option to make policykit optional, even if installed.
+  * RazorApplication class implemented; all modules ported to this class
+  * Relicense
+  * initial but finally working policykit integration (agent)
+  * initial revision of the policykit integration (non-functional)

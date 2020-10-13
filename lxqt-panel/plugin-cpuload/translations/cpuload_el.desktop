@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+
+Name=Cpu monitor
+Comment=Displays the current CPU load.
+
+
+
+
+# Translations
+Name[el]=Επόπτης του επεξεργαστή
+Comment[el]=Εμφανίζει το φορτίο του επεξεργαστή.
+

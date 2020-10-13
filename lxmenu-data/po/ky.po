@@ -1,0 +1,252 @@
+# Translation of gnome-menus to Kirghiz
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2003,2004, 2005 Free Software Foundation, Inc.
+# Timur Jamakeev <ztimur@gmail.com>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus 2.12.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2005-10-29 09:18+0600\n"
+"Last-Translator: Timur Jamakeev <ztimur@gmail.com>\n"
+"Language-Team: Kirghiz\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Аудио и видео"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Мультимедиа"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Программалоо"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Программа иштеп чыгуу аспаптары"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Билим берүү иштемелери"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Оюндар"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Оюндар жана эс алуу"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Графика"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Графикалык иштемелер"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr ""
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr ""
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr ""
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr ""
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr ""
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr ""
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Иштемелер"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+#, fuzzy
+msgid "System"
+msgstr "Системалык аспаптар"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Өздүк жактыруулар жана административдик параметрлер"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Интернет"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Интернет менен иштөө программалары (почта, аралагыч ж.б.)"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Офис"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Офистик иштемелер"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Башкалар"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Эч бир категорияга туура келбеген иштемелер"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr ""
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+#, fuzzy
+msgid "Personal settings"
+msgstr "Өздүк ырастоолор жана параметрлер"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Ырастоолор"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Өздүк жактыруулар"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Системаны башкаруу"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+#, fuzzy
+msgid "Change system-wide settings (affects all users)"
+msgstr "Системалык ырастоолорду өзгөртүү (бардык колдонуучуларга таасир этет)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr ""
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Системалык аспаптар"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Системаны конфигурациялоо жана аны байкоо аспаптары"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr ""
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+#, fuzzy
+msgid "Universal Access Settings"
+msgstr "Ыңгайлуулуктарды ырастоо"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Стандарттык иштемелер"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Иш столунун иштемелери"
+
+#~ msgid "Accessibility"
+#~ msgstr "Ыңгайлуулуктар"
+
+#~ msgid "Desktop"
+#~ msgstr "Иш столу"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "Атайын мүмкүнчүлүктөргө байланышкан ырастоолор"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Меню оңдогучу"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Менюну оңдоо"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Иштемелер:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Баштапкы"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Меню:"
+
+#~ msgid "Name"
+#~ msgstr "Аты"
+
+#~ msgid "Show"
+#~ msgstr "Көрсөтүү"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Өздүк каталог табылбады: /etc/passwd ичинде дагы, $HOME өзгөрмөсү аркылуу "
+#~ "дагы көрсөтүлгөн эмес"
+
+#~ msgid "Menu file"
+#~ msgstr "Меню файлы"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Менюдагы өзгөрүлүүлөрдү байкоо"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Алынып салынган (<Exclude>) элементтерди кошуу"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "desktop-файлынын туура эмес IDси"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[туура эмес файл аты]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Меню өзгөртүлдү, кайра жүктөлүүдө ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Меню дарагы бош"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr ""
+#~ "- GNOMEдо колдонулуучу Desktop Menu спецификациясынын ишке ашырылгандыгын "
+#~ "текшерүү"

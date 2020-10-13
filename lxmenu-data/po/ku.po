@@ -1,0 +1,261 @@
+# translation of ku.po to Kurdish
+# translation of gnome-menus.HEAD.po to Kurdish
+# Kurdish translation for gnome-menus
+# Copyright (c) (c) 2005 Canonical Ltd, and Rosetta Contributors 2005
+# This file is distributed under the same license as the gnome-menus package.
+# Erdal Ronahi <erdal.ronahi@gmail.com>, 2005.
+# Erdal Ronahi <erdal.ronahi@gmail.com>, 2005.
+# Erdal Ronahi <erdal.ronahi@gmail.com, pckurd@hotmail.com>, 2005, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ku\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-08-13 14:13+0000\n"
+"Last-Translator: Erdal Ronahi <erdal.ronahi@gmail.com>\n"
+"Language-Team: Kurdish <ku@li.org>\n"
+"Language: ku\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2008-01-08 10:24+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+"X-Poedit-Language: Kurdish\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Deng & Vîdeo"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Pêşeka multîmedya"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Bernamekirin"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Amûrên ji bo pêşdebirina nivîsbariyê"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Perwerdehî"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Lîstik"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Lîstik û demxweşî"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafîk"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Sepanên grafîkê"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Hişkalav"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Mîhengên çend cîhazên hişkalavê"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Înternet û Tor"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Mîhengên têkildarî torê"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Dîtin û Hestkirin"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Mîhengên xuyabûn û tevgerînên sermasê"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Sepan"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Pergal"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Vebijêrkên takekesî û mîhengên rêveberiyê"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Înternet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Bernameyên wekî epeyam û gerokan yên ji bo pêwendiya înternetê"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Nivîsgeh"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Sepandinên Ofîsê"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Yên din"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Sepanên ku nakevin kategoriyên din"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Takekesî"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Mîhengên takekesî"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Vebijêrk"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Vebijêrkên takekesî"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Rêveberî"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Eyarên hemû pergalê biguherîne (ji bo hemû bikarhêneran derbas dibe)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Mîhengên pergalê"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Amûrên Pergalê"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Avakirin û şopandina pergalê"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Gihîştina Gerdûnî"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Mîhengên Gihîştina Gerdûnî"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Bernameyên Alîkar"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Bernameyên alîkar ên sermaseyê"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Vebijêrkên têkildarî gihîştina gerdûnî"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Mîheng û vebijêrkên takekesî"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Edîtorê Pêşekê"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Pêşekan biguherîne"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Sepan:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Standard"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Pêşek:"
+
+#~ msgid "Name"
+#~ msgstr "Nav"
+
+#~ msgid "Show"
+#~ msgstr "Nîşan bide"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Peldanka mal nayê dîtin: di /etc/passwd nehat mîheng kirin û di "
+#~ "environment de nirxa $HOME tune"
+
+#~ msgid "Menu file"
+#~ msgstr "Pelê pêşekê"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "PELÊ_PÊŞEKÊ"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Guherînên pêşekê temaşe bike"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Yên <hatiye derxistin> bihundirîne"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Ketinên (entry) NoDisplay=true bihundirîne"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "ID ya dosiya sermaseyê ne derbasdar e"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Navê pelî yê nederbasdar]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <hatiye derxistin>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Pêşek hat guherandin, ji nû ve tê bar kirin====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Dara pêşekê vala ye"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- bikaranîna Desktop Menu Specification a GNOME'yê test bike"
+
+#~ msgid "Accessibility"
+#~ msgstr "Gihîstin"
+
+#~ msgid "Desktop"
+#~ msgstr "Sermasê"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "Vebijêrkên gihîştinê"

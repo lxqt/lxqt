@@ -1,0 +1,22 @@
+translations='
+              ./panel
+              ./plugin-colorpicker
+              ./plugin-cpuload
+              ./plugin-desktopswitch
+              ./plugin-directorymenu
+              ./plugin-dom
+              ./plugin-kbindicator
+              ./plugin-mainmenu
+              ./plugin-mount
+              ./plugin-networkmonitor
+              ./plugin-quicklaunch
+              ./plugin-sensors
+              ./plugin-showdesktop
+              ./plugin-spacer
+              ./plugin-statusnotifier
+              ./plugin-sysstat
+              ./plugin-taskbar
+              ./plugin-tray
+              ./plugin-volume
+              ./plugin-worldclock
+'

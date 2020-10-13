@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name[ru]=Дерево DOM панели.
+Comment[ru]=Показать дерево DOM панели LXQt.

@@ -1,0 +1,57 @@
+.TH lxqt-openssh-askpass "1" "September 2012" "LXQt\ 0.5.0" "LXQt\ Module"
+.SH NAME
+lxqt-openssh-askpass \- Password access over ssh module of \fBLXQt\fR: the faster and lighter Qt Desktop Environment
+.SH SYNOPSIS
+.B lxqt-openssh-askpass
+[\fICurrently No command line arguments\fR]
+.br
+.SH DESCRIPTION
+This module handles openssh security password access for \fBLXQt\fR. The openssh askpass module, will perform 
+security tasks over scale access privileges.
+.P
+.P
+The \fBLXQt modules\fR are desktop independent tools, 
+and operate as daemons for the local user for desktop-specific operations.
+.P
+\fBLXQt\fR is an advanced, easy-to-use, and fast desktop environment based on Qt
+technologies, ships several core desktop components, all of which are optional:
+.P
+ * Panel
+ * Desktop
+ * Application launcher
+ * Settings center
+ * Session handler
+ * Polkit handler
+ * SSH password access \fI(this)\fR
+ * Display manager handler
+.P
+These components perform similar actions to those available in other desktop
+environments, and their names are self-descriptive.  They are usually not launched
+by hand but automatically, when choosing a \fBLXQt\fR session in the Display
+Manager.
+.SH BEHAVIOR
+The module detected on shares privilege access, and maintains a security dialog
+that asks for the user's key needed for access over another machine host.
+.P
+This module is very early stage, and not enabled by default, so you must added an env
+by the \fBlxqt\-settings\fR application as \fISSH_ASKPASS=\fR 
+with \fBlxqt\-openssh\-askpass\fR value, openssl and openssh-client packages must be required.
+.SH AUTOSTART
+The module is only showed on \fBLXQt\fR desktop, but you can create an autostart action
+for your preferred desktop environment.
+.SH "REPORTING BUGS"
+Report bugs to https://github.com/lxqt/lxqt/issues
+.SH "SEE ALSO"
+\fBLXQt\fR has been tailored for users who value simplicity, speed, and
+an intuitive interface, also intended for less powerful machines. See also:
+.\" any module must refers to session app, for more info on start it
+.P
+\fBlxqt-session.1\fR  LXQt for manage LXQt complete environment
+.P
+\fBlxqt-policykit-agent.1\fR  LXQt policykit agent module for privilege scalation
+.P
+\fBlxqt-config-session.1\fR  LXQt application for performing session autostart applications
+.P
+.SH AUTHOR
+This manual page was created by \fBPICCORO Lenz McKAY\fR \fI<mckaygerhard@gmail.com>\fR
+for a project and VENENUX GNU/Linux but can be used by others.

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Reboot
+GenericName=Reboot
+Comment=reboot the machine
+Exec=lxqt-leave --reboot
+Icon=system-reboot
+Categories=System;X-Leave;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=../translations

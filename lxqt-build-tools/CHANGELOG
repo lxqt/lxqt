@@ -1,0 +1,293 @@
+lxqt-build-tools-0.7.0 / 2020-04-21
+===================================
+  * Bump version to 0.7.0.
+  * Initial support for Xcode (AppleClang and ld64).
+  * Added a section for settings related to CMake build.
+  * Set C++ extensions to be disabled.
+  * Forbid string casts in LXQtCompilerSettings.
+  * Added a FindClazy CMake module.
+  * Enabled Clazy option when building with clang.
+  * Adds CMake find modules for some xdg-utils tools.
+  * The minimum Qt version is bumped to 5.10.0.
+
+lxqt-build-tools-0.6.0 / 2018-01-25
+===================================
+
+  * Bump version to 0.6.0
+  * Don't use automatic string conversions
+  * Introduced lxqt-transupdate for translation updates
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Consider QT_SELECT - some distributions use this tool
+    - Drop 0X and 11 support, require c++14
+    - Remvoed QUIET from any finds
+    - Cleaned up LXQtTranslateTs module
+    - Removed translation pulling and cleanup external repos
+      after translations moved back to their original repos
+    - Remove link-time optimization for gcc since it breaks
+      qobject_cast() in some cases.
+    - Removed obsolete FindFm module
+
+lxqt-build-tools-0.5.0 / 2018-05-21
+===================================
+
+  * Bump version to 0.5.0
+  * Prevent in-source builds
+  * Adds an PreventInSourceBuilds module
+  * http --> https
+  * Fixed some LXDE mentions
+  * LXQtCompilerSettings: Set CMAKE_C_VISIBILITY_PRESET to hidden
+  * Don't allow Qt foreach/Q_FOREACH
+  * Update CMakeLists.txt
+  * Require Qt 5.7.1
+  * Adds a FindXKBCommon CMake module
+  * Adds ECMFindModuleHelpers CMake module
+  * Don't export github templates
+
+0.4.0 / 2017-09-22
+==================
+
+  * Release 0.4.0: Update changelog
+  * Bump version to 0.4.0
+  * Added needed versions
+  * remove version set from LXQtConfigVars.in
+  * Move LXQt version to liblxqt
+  * Fixes a FTBFS with superbuild mode
+  * Adds a FindExif module
+  * LXQtCompilerSettings: Fixes a typo in diagnostics-color
+  * Adds (Ninja) colored diagnostics for GCC (>=4.9)
+  * Enable strict iterators for debug builds
+
+0.3.2 / 2017-01-14
+==================
+
+  * Release 0.3.2: Update changelog
+  * Bump version to 0.3.2 - finally the build tools are arch: all (#15)
+  * Warnings (#16)
+  * Remove arched bits from version.cmake-file (#14)
+
+0.3.1 / 2017-01-01
+==================
+
+  * Release 0.3.1: Update changelog
+  * Bump LXQT_PATCH_VERSION and build tools version (#13)
+  * 32 64 bit ness (#12)
+  * Use "gcc-ar" and "gcc-ranlib" tools when building static libs with gcc link-time optimization. (#11)
+
+0.3.0 / 2016-12-06
+==================
+
+  * Release 0.3.0: Update changelog
+  * Adds an FindXCB CMake module
+  * FindUDev: Add VERSION_STRING support
+  * FindUDev: Set REQUIRED_VARS
+  * FindUdev: Feed pkg_modules_modules results to find_library/path
+  * FindUDev: Adds Feature Summary
+  * Adds FindUDev module
+  * Enables colored diagnostics for CLang/Ninja combination
+  * Disable link-time optimization for clang++/llvm since after some testing it breaks QObject signal/slot sometimes. * Remove trailing spaces.
+  * Use different link-time optimization compiler options for gcc and clang and move -Bsymbolic flags to linker flags.
+  * Add more linker options to turn on linker-time optimizations for gcc & clang.
+  * Set CMAKE_BUILD_TYPE to Release by default if it's value is not set.
+  * FindGLIB: Improve gio-unix handling
+  * Adds a FindGLIB CMake module
+  * Adds a FindMenuCache CMake module
+  * Adds a FindFm CMake module
+  * move project name to top
+  * Fixes the name of package config file name in superbuild mode
+
+0.2.0 / 2016-10-30
+==================
+
+  * Release 0.2.0: Update changelog
+  * Bump minor to 2 (#7)
+  * Added Qt5Core to README.md (#6)
+  * Adds an LXQtConfigVars module
+  * Adds superbuild support
+  * README.md: Update dependencies
+
+0.1.0 / 2016-10-14
+==================
+
+  * Release 0.1.0: Update changelog
+  * Adds LXQtCreatePortableHeaders module
+  * Authors and license (#2)
+  * Add README.md
+  * Make lxqt-build-tools be usable
+
+0.0.0 / 2016-09-30
+==================
+
+  * Remove cpack (#107)
+  * Bump version ot 0.11.0 (#105)
+  * Settings: Add "homemade" XDG_CONFIG_DIRS support
+  * translations: Change default translations repository
+  * Don't lock the screen when it's already locked.
+  * LXQtTranslateTs.cmake: Enable PULL_TRANSLATIONS by default
+  * LXQtTranslateTs.cmake: Use/update template in remote repo
+  * .gitignore: Cleanup
+  * build: Use external translations
+  * translations: Fix external translations logic
+  * translations: Add external translations support
+  * Adds CMAKE_INSTALL_PREFIX to the LXQt Theme search paths
+  * LXQtCompilerSettings: Add QT_USE_QSTRINGBUILDER to the compile definitions
+  * TranslateDesktopTs: Adds UPDATE_OPTIONS options
+  * TranslateDesktop: Remove lupdate absolute option
+  * TranslateDesktop: Use -a switch in grep commands
+  * Use CMAKE_INSTALL_FULL_DATAROOTDIR
+  * Add LXQT_GRAPHICS_DIR directory definition
+  * Adds FindXdgUserDirs CMake find_package module
+  * Release 0.10.0
+  * pluginTranslation: removed using QStringLiteral as it was causing SEGFAULT in static finalization time
+  * pluginTranslation: add some symbol for referencing (for file to be not stripped out in static linking time)
+  * Adds "automatic" plugin translations loader support
+  * Rename LxQt to LXQt everywhere
+  * Handles CMake policy CMP0063
+  * Adds an lxqt_enable_target_exceptions() CMake function
+  * Adds LXQtCompilerSettings CMake module
+  * LXQtCreatePkgConfigFile.cmake: Makes install COMPONENT configurable
+  * LXQtTranslateTs.cmake Adds install COMPONENT option
+  * Adds Runtime install COMPONENT
+  * Fixes an SuperBuild/NormalBuild FTBFS
+  * CMake: Use CMAKE_AUTOUIC, drop qt5_wrap()
+  * CMake: Quote variables
+  * CMake: Removes unused variables
+  * Removes LIB_INSTALL_DIR CACHE PATH variable
+  * Use relative paths in install DESTINATION
+  * Marks link libraries as PUBLIC
+  * Use target_compile_definitions() instead of add_definitions()
+  * Make Release the default build type
+  * Simplifies build type matching
+  * lxqt-config.cmake.in: Use find_dependency()
+  * Updates the build system to the Targets infrastructure
+  * Sort .desktop translations. Fix typos in the comments. Remove local dir artifact.
+  * pkg-config: Adds Qt5Xdg to the required dependencies
+  * Updates lxqt_create_pkgconfig_file()
+  * Stops using Qt5Xdg dropped stuff
+  * Adds LXQT_DATA_DIR configuration variable
+  * Moves the about dialog to lxqt-about
+  * debug: showing qDebug()/qWarning() only in "debug" build
+  * debug: strip debug messages in "release" build
+  * Remove AddPluginDialog as it is no longer used
+  * Add KDevelop4 project type to .gitignore
+  * require c++11 support
+  * Release 0.9.0
+  * - Remove KF5 from prefix. This will fix compilation when KDE framework headers are not in standard paths.
+  * i18n/i10n: Updates documentation and behavior
+  * remove lxqtleave from liblxqt
+  * lxqt_translate_desktop: pass -h instead of --no-filename to grep which is compatible with Busybox
+  * add executable to handle leave actions
+  * lxqt_translate_desktop: Updates code to cope with the cmake-policy CMP0054
+  * - Use simple approach to data dir. Current setup of code not allows both   qt4 and qt5 cohexists, and data files are same for both libraries.   If a different data dir is required for specifics reason, is possible   to set in cmake run -DLXQT_LIBRARY_NAME:STRING="string"
+  * Adds the LxQt::SingleApplication class.
+  * CMakeLists.txt maintenaince
+  * Fixes yet another translations install dir mistake
+  * Fixes translations install dir
+  * Use the new LXQtTranslate modules.
+  * Fixes Qt5LinguistToolsMacros file extension bug
+  * Copied Qt5LinguistToolsMacros.cmake
+  * Removes cmake commented code
+  * Removes duplicates add_definitions()
+  * Removes lxqt_translate_desktop() from the _use.cnake
+  * Adds Qt5TranslationLoader cmake module
+  * Fix HtmlDelegate and move it to its own file. Also get rid of X11 on CMakeLists.txt.
+  * Delete XfitMan class. Fixes lxde/lxde-qt#226
+  * Don't update (extract) translations by default.
+  * Includes all LXQt translation modules
+  * Adds automatic translations loaders for LXQt libs and apps
+  * Adds LXQtTranslateDesktop module
+  * Adds the LXQtranslateTs cmake module
+  * Clean up CMakeLists.txt and drop Qt 4 support
+  * Release v0.8.0
+  * Updates translations installation and search paths
+  * Generate source.ts when updating translations
+  * Don't translate uic generated files
+  * Add -locations absolute option to lupdate so our *.ts files can contain informations about the source lines.
+  * Add code to update the *.ts files when the UPDATE_TRANSLATIONS option is turned on.
+  * remove magic from cmake. USE_QT5 should be the only trigger
+  * Use the "new" CMake FIND_PACKAGE case policy
+  * Add include(${QTXDG_USE_FILE}) to Qt5 also.
+  * Use the "new" CMake FIND_PACKAGE case policy
+  * Adds missing libqtxdg dependency
+  * Don't allow #include <lxqt-qt5/lxqtxxxxx.h>
+  * Updates the Qt4 and Qt5 library names and related stuff
+  * Use the same header namespace everywhere
+  * Don't use undefined variables
+  * Find liblxqt dependencies automatically
+  * Removes another duplicated installation of a file
+  * Removes duplicate installation of a file
+  * Fixes extra misleading slashes in path names
+  * Cleans commented unneeded stuff
+  * Fix a typo in variable name
+  * Fix broken build of qt4 version
+  * Use newer version of cmake 2.8.9
+  * Detect the path of qmake correctly for Qt5.
+  * Fix after merging from master, by removing dupplicated items
+  * Merge branch 'master' of https://github.com/lxde/liblxqt into qt5
+  * Update qt5 porting
+  * Install pkgconfig file to /usr/local/libdata/pkgconfig when FreeBSD is detected.
+  * Set link directories properly
+  * Release 0.7.0
+  * Release 0.6.99 (0.7.0pre alpha)
+  * Add CPack rules for creating tarball
+  * Don't append library suffix to library path and use it by default
+  * CMakeLists.txt: Adds quotes to the lib string
+  * Respect standard LIB_INSTALL_DIR
+  * Reformats CMakeLists.txt to fit in an 80x24 terminal
+  * Removes blank lines
+  * Use cmake export functionality.
+  * Retain old CMAKE_CXX_FLAGS while adding visibility stuff. Add -Wl,-no-undefined -Wall flags to ensure correctness.
+  * Use gcc visibility feature to decrease number of exported symbols to half.
+  * Qt5 support (step 1)
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Intree build
+  * Rename razor to lxqt and fix XdgDir header inclusion.
+  * Fix namespace for LxQt::xFitMan() to avoid undefined reference when linking with liblxqt.
+  * The Translatator class added, all translations moved to /usr/<local>/share/lxde/transalations
+  * Descriptions for translators
+  * Simplify translations script
+  * Simplify translations script
+  * All public files has lxqt prefix
+  * Razorsettings => LxQt::Settings
+  * RazorPluginInfo => LxQt::PluginInfo
+  * RazorNotification => LxQt::Notification
+  * RazorGridLayout => LxQt::GridLayout
+  * RazorAutostartEntry => LxQt::AutostartEntry
+  * RazorApplication => LxQt::Application
+  * RazorConfigDialog=>LxQt::ConfigDialog
+  * RazorAboutDlg => LxQt::AboutDialog
+  * RazorPower => LxQt::Power
+  * Cmake find_package files
+  * Fix broken CMakeLists.txt and make the lib compile again.
+  * Make liblxqt (original librazorqt) compiles independently.
+  * Old files removed
+  * Rotated widget added
+  * libraries: Removes unneeded include(RazorLibSuffix)
+  * ProgramFinder: a set of functions to check if programs are installed
+  * Improved razorpanellayout and new razorgridlayout.
+  * Add autostart entry API into the library
+  * Added "Copy to clipboard" button to razor-about->technical information.
+  * Fix components missing translations
+  * Translators info & refactoring of the About dialog
+  * Fixed librazorqt.qm directory
+  * Translations for librazorqt
+  * Implement new RazorNotification class
+  * Remove RazorNotification classes (no license/copyright)
+  * fixed #277 cmake installs private class
+  * Remove custom settings, use razor ones
+  * Moving notification client library to razorqt
+  * Revert "Global shortcuts now based on PSI code."
+  * Global shortcuts now based on PSI code
+  * RazorApplication class implemented; all modules ported to this class
+  * Create a "standardized" configuration dialog
+  * XdgAutoStart rewriten (lgpl2+)
+  * menus are adopted to the new backends; old code removed; check for running razor-session to allow/disallow "logout" item
+  * New power engine & razor-power program
+  * SVK translation finalized
+  * implemented #70: pkg-config for libs
+  * razorqt: add find_package(X11) as ${X11_X11_LIB} is used
+  * New doxygen ifrastructure
+  * missing translations in CMakeLists
+  * XdgDesktopFile is implicitly shared
+  * huge refactoring of the libraries build organization

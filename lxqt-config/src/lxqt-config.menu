@@ -1,0 +1,71 @@
+<!DOCTYPE Menu PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd'>
+<Menu>
+    <Name>Settings</Name>
+    <Directory>lxqt-menu-applications.directory</Directory>
+    <!-- Read standard .directory and .desktop file locations -->
+    <DefaultAppDirs/>
+    <DefaultDirectoryDirs/>
+    <!-- Read in overrides and child menus from applications-merged/ -->
+    <DefaultMergeDirs/>
+    <Include>
+        <Category>Settings</Category>
+    </Include>
+
+    <Menu>
+        <Name>LXQt settings</Name>
+        <Directory>lxqt-settings-lxqt.directory</Directory>
+        <Include>
+            <And>
+                <Category>DesktopSettings</Category>
+                <Or>
+                    <Category>LXQt</Category>
+                    <Category>X-LXQt</Category>
+                    <!-- Include some optional components here -->
+                    <Filename>obconf-qt.desktop</Filename>
+                    <Filename>compton-conf.desktop</Filename>
+                    <Filename>pcmanfm-qt-desktop-pref.desktop</Filename>
+                </Or>
+                <Not>
+                    <Filename>lxqt-config.desktop</Filename>
+                    <Category>System</Category>
+                </Not>
+            </And>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>System settings</Name>
+        <Directory>lxqt-settings-system.directory</Directory>
+        <Include>
+            <And>
+                <Category>Settings</Category>
+                <Category>System</Category>
+            </And>
+        </Include>
+    </Menu>
+
+    <Menu>
+        <Name>Other settings</Name>
+        <Directory>lxqt-settings-other.directory</Directory>
+        <OnlyUnallocated />
+        <Include>
+            <And>
+                <Category>Settings</Category>
+                <Not>
+                    <Or>
+                        <Category>LXQt</Category>
+                        <Category>LXDE</Category>
+                        <Category>System</Category>
+                    </Or>
+                </Not>
+            </And>
+         </Include>
+     </Menu>
+
+    <Layout>
+        <Menuname>LXQt settings</Menuname>
+        <Menuname>System settings</Menuname>
+        <Merge type="menus"/>
+    </Layout>
+</Menu>
+

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Quick launch
+Comment=Easy access to your favourite applications.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[sl]=Zaženite svoje priljubljene programe
+Name[sl]=Hitri zagon

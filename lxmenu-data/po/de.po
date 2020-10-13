@@ -1,0 +1,257 @@
+# German translation of gnome-menus.
+# Copyright (C) 2004 THE gnome-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-menus package.
+# Hendrik Brandt <heb@gnome-de.org>, 2004-2005.
+# Hendrik Richter <hendrikr@gnome.org>, 2006, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2009-07-11 15:14+0200\n"
+"Last-Translator: Christoph Wickert <christoph.wickert@googlemail.com>\n"
+"Language-Team: German <gnome-de@gnome.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Unterhaltungsmedien"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multimedia-Menü"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Entwicklung"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Werkzeuge zur Software-Entwicklung"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Bildung"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Spiele"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Spiel und Spaß"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafik"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Anwendungen zur Grafikbearbeitung"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Einstellungen für Hardware"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet und Netzwerk"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Netzwerkbezogene Einstellungen"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Darstellung"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Einstellungen für das Aussehen und das Verhalten der Arbeitsoberfläche"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Anwendungen"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "System"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Persönliche Anpassungen und Administratoreinstellungen"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programme, um Internet-Dienste wie E-Mail oder das WWW zu nutzen"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Büro"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Büroanwendungen"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Sonstige"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Anwendungen, die in keine andere Kategorie eingeordnet werden können"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Persönlich"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Persönliche Vorlieben und Einstellungen"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Persönliche Einstellungen"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Systemverwaltung"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Systemweite Einstellungen ändern (dies betrifft alle Benutzer)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Systemeinstellungen"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Systemwerkzeuge"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Systemkonfiguration und -überwachung"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Barrierefreiheit"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Einstellungen zur Barrierefreiheit"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Zubehör"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Desktop-Zubehör"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Einstellungen zur Barrierefreiheit"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Persönliche Vorlieben und Einstellungen"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Menüeditor"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Menüs bearbeiten"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Anwendungen:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Vorgaben"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menüs:"
+
+#~ msgid "Name"
+#~ msgstr "Name"
+
+#~ msgid "Show"
+#~ msgstr "Anzeigen"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Das Heimatverzeichnis des Benutzers konnte nicht gefunden werden: es ist "
+#~ "weder in /etc/passwd angegeben, noch gibt es einen Wert für die "
+#~ "Umgebungsvariable $HOME"
+
+#~ msgid "Menu file"
+#~ msgstr "Menüdatei"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENÜ_DATEI"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Menüänderungen überwachen"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Mit »<ausschließen>« markierte Einträge einbeziehen"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Mit »NoDisplay=true« markierte Einträge einbeziehen"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Ungültige Desktop-Dateikennung"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Ungültiger Dateiname]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <ausschließen>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menü wurde geändert, wird neu geladen ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Der Menübaum ist leer"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- testen der GNOME-Implementation der Desktop-Menü-Spezifikation"
+
+#~ msgid "Accessibility"
+#~ msgstr "Barrierefreiheit"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Einstellungen zur Barrierefreiheit"
+
+#~ msgid "Desktop"
+#~ msgstr "Desktop"

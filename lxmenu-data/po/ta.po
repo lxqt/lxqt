@@ -1,0 +1,253 @@
+# translation of gnome-menus.HEAD.po to TAMIL
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Shakthi Kannan <shaks@shakthimaan.com>, 2006.
+# Jayaradha N <jayaradhaa@gmail.com>, 2006.
+# Dr.T.Vasudevan <agnihot3@gmail.com>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-06-20 17:43+0530\n"
+"Last-Translator: Dr.T.Vasudevan <agnihot3@gmail.com>\n"
+"Language-Team: TAMIL <ubuntu-l10n-tam@lists.ubuntu.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"\n"
+"\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "ஒலி மற்றும் படக்காட்சி"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "பல்முனை ஊடகப் பட்டியல்"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "நிரலாக்கம்"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "மென்பொருள் உற்பத்திக்கான கருவிகள்"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "கல்வி"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "விளையாட்டுகள்"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "விளையாட்டுகள் மற்றும் பொழுதுப்போக்குகள்"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "வரைகலை"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "வரைகலை பயன்பாடுகள்"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "வண் பொருட்கள்"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "பல வண் பொருட்களுக்கான அமைப்புகள்"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "இணையம் மற்றும் வலையமைப்பு"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "வலையமைப்பு சார்ந்த வடிவமைப்புகள்"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "பார்வையும் உணர்வும்"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "மேல்மேசையின் தோற்றம் மற்றும் நடத்தைகளை கட்டுப்படுத்தும் வடிவமைப்பு"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "பயன்பாடுகள்"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "கணிப்பொறி"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "தனிநபர் விருப்பங்கள் மற்றும் நிர்வாக அமைப்புகள்"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "இணையம்"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "வலைப்பின்னல் மற்றும் மின்னஞ்சல் போன்ற இணைய அணுகலுக்கான நிரல்கள் "
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "அலுவலகம்"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "அலுவலகப் பயன்பாடுகள்"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "மற்றவை"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "இதர இனங்களில் பொருந்தாத பயன்பாடுகள்"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "தனிப்பயன்"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "தனிப்பயன் அமைப்புகள்"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "விருப்பங்கள்"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "தனிப்பயன் விருப்பங்கள்"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "நிர்வாகம்"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr ""
+"கணிப்பொறியின் அனைத்து அமைப்புகளை மாற்றுக (பயன்படுத்துவோர் அனைவரையும் பாதிக்கும்)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "கணினி அமைப்புகள்"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "கணிப்பொறிக் கருவிகள்"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "கணிப்பொறி அமைப்பு மற்றும் கண்காணித்தல்"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "உலகளாவிய அணுகல்"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "உலகளாவிய அணுகல் அமைப்புகள்"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "துணைப்பொருள்கள்"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "மேஜை துணைப்பொருள்கள்"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "உலகளாவிய அணுகல் சார்ந்த விருப்பங்கள்"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "தனிநபர் விருப்பங்கள் மற்றும் அமைப்புகள்"
+
+#~ msgid "Menu Editor"
+#~ msgstr "பட்டியல் திருத்தி"
+
+#~ msgid "Edit Menus"
+#~ msgstr "பட்டியலைத் திருத்த"
+
+#~ msgid "_Applications:"
+#~ msgstr "பயன்பாடுகள்(_A):"
+
+#~ msgid "_Defaults"
+#~ msgstr "முன்னிருப்பு மதிப்புகள்(_D)"
+
+#~ msgid "_Menus:"
+#~ msgstr "பட்டியல்கள்(_M)"
+
+#~ msgid "Name"
+#~ msgstr "பெயர்"
+
+#~ msgid "Show"
+#~ msgstr "காட்டு"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "இல்ல அடைவு காண முடியவில்லை: /etc/passwd-ல் அமைக்கப்படவில்லை, மற்றும் சுற்றுச்சூழலில் "
+#~ "$HOME மதிப்பு ஏதும் அமைக்கப்படவில்லை"
+
+#~ msgid "Menu file"
+#~ msgstr "பட்டியல் கோப்பு"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "பட்டியல் மாற்றங்களுக்கான கண்காணிப்பு"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "<Exclude>d என்ற உள்ளீடுகளை சேர்க்க"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "NoDisplay=true உள்ளீடுகளை சேர்க்க"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "செல்லுபடியாகாத  மேஜைக் கோப்பு ஐடி"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[செல்லுபடியாகாத  கோப்புப் பெயர்]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <சேர்க்காதவை>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "=== பட்டியல் மாற்றப்பட்டுள்ளது, மீண்டும் ஏற்றப்படுகிறது ===\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "பட்டியல் தூண் காலியாக உள்ளது"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr ""
+#~ "- கணோம் உடைய மேஜைப் பட்டியல் விவரக்குறிப்பின் கணோம் செயல்பாட்டைப் பரிசோதிக்கவும்"

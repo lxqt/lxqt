@@ -1,0 +1,44 @@
+Notification {
+    background:palette(text);
+    padding: 1px;
+    margin: 0px;
+}
+
+QLabel {
+    color: palette(window);
+}
+
+QToolButton {
+    margin: 1px;
+    border: 0px solid transparent;
+    padding: 0px;
+    font-size: 9pt;
+    color: hsv(0, 0, 64);
+}
+
+QToolButton:focus {
+    border: 0px solid hsv(0, 0, 160);
+}
+
+QToolButton:hover {
+    border: 0px solid hsv(0, 0, 240);
+    margin: 2px;
+    padding: 2px;
+}
+
+QToolButton:focus:hover {
+    border: 1px dashed hsv(0, 0, 255);
+}
+
+QToolButton:pressed {
+    background: hsv(0, 0, 160);
+}
+
+#appLabel {
+    color: palette(window);
+}
+
+#closeButton {
+    qproperty-icon: url(lxqt-runner/close.svg);
+    qproperty-iconSize: 18px;
+}

@@ -1,0 +1,344 @@
+lxqt-globalkeys-0.15.0 / 2020-04-22
+===================================
+  * Removed (duplicated) string casts definitions.
+  * Removed obsolete `qBinaryFind`.
+  * Added some translation context to `main_window.ui`.
+  * Don't mix const and non-const iterators.
+
+lxqt-globalkeys-0.14.3 / 2019-10-14
+===================================
+
+  * In write_basic_package_version_file use the right package version
+
+lxqt-globalkeys-0.14.2 / 2019-10-09
+===================================
+
+  * Better handling of default shortcuts
+  * gui: Prevent exactly the same shortcut from being repeated at startup
+  * gui: Remember config window size on exiting
+  * gui: Better column widths with single-line texts
+  * daemon: Use XDG hierarchy if no config file given
+  * daemon: move shortcuts config fom /etc/xdg/lxqt to /usr/share/lxqt
+  * daemon: Fixed loading of settings
+  * cmake: Enhances Qt minimum required versions handling
+  * cmake: Matches lxqt-globalkeys/ui required versions
+  * cmake: Updates self version handling
+  * Port towards C++ headers
+  * Port towards C++11 override
+  * Port towards C++11 nullptr
+  * Updated translations
+
+lxqt-globalkeys-0.14.1 / 2019-02-24
+===================================
+
+  * Don't rename a widget or a class without a full refactoring
+  * Updated translations
+  * Note for packagers: lxqt-globalkeys now depends on liblxqt >= 0.14.1
+
+lxqt-globalkeys-0.14.0 / 2019-01-25
+===================================
+
+  * Bumped version to 0.14.0
+  * Don't use automatic string conversions
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+    - Remove QUIET from find_package
+  * Moved translations from lxqt-l10n back to lxqt-globalkeys
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Deleted superfluous *cs_CZ.desktop files
+  * Translation updates
+
+lxqt-globalkeys-0.13.0 / 2018-05-21
+===================================
+
+  * Update lxqt-config-globalkeyshortcuts_es.desktop
+  * Spanish translation update
+  * Add shortcut for lockscreen
+  * CMake: Prevent in-source builds
+  * fixed razor-qt -> lxqt and http -> https
+  * Fixed some LXDE mentions
+  * Update zh_CN translation
+  * Triggering shortcuts with meta keys
+  * Register meta keys for shortcuts
+  * Daemon triggers on KeyRelease
+  * free the storage returned by XGetKeyboardMapping
+  * Drop Qt foreach.
+  * Avoid polluting the the x11 shortcut map.
+  * Handle CMake CMP0024
+  * cmake: Handle CMP0071
+  * Fixes wrong radio buttons when changing shortcuts
+
+lxqt-globalkeys-0.12.0 / 2017-10-21
+===================================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version
+  * Don't export github templates
+  * fix deadlock - don't accept keyPress when processing dbus call (#56)
+  * Added Lithuanian language
+  * lxqt-config-globalkeys: set Qt::AA_UseHighDpiPixmaps to true
+  * Added QCommandLineParser and basic cli interface to lxqt-config-globalkeys
+  * Adeed LXQT_GLOBALKEYS_PATCH_VERSION
+  * Fixes a FTBFS in superbuild mode (#51)
+  * Added autostart and xdg to CMakeLists.txt
+  * changed xdg/CmakeLists.txt
+  * fixed xdg/CMakeLists.txt renamed config to xdg - merge preparation
+  * Use const iterators
+  * globalkeys: Open "empty" browser on activation
+  * Updated *_da.desktop files and removed *_da_DK.desktop files
+  * Update AUTHORS
+  * Open https://duckduckgo.com instead of google.com as default
+  * Update desktop entries and Replace fr_FR by fr
+  * lxqt-rc.xml: Change default config install path
+  * Settings Openbox updated.
+  * Screenshot (Shift+Print), file manager (ctl+Alt+e) and web browser (Ctl+atl+i) key shortcuts added.
+  * Default key shortcuts added to lxqt-globalkeysd.
+  * Update Greek translation (el) Remove country variant from language code
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Adds double quotes to everything that may break
+  * Updates the build system to use the Targets infrastructure
+  * Drops hardcoded /etc/xdg paths
+  * Updated german translation, replaced Qt4 by Qt in all xsession/translations
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * remove dead template lines switch OnlyShowIn from Razor -> LXQt stringchanges LxQt -> LXQt
+  * Add session.conf and windowmanagers.conf.
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Rename dirs and replace razor with lxqt. Install lxqt.conf to /etc/xdg/lxqt and provide theme config.
+  * Properly set default wallpaper for pcmanfm-qt. Comment out openbox config handling in startlxde-qt since it's not needed.
+  * Fix file paths, replacing razor with lxqt. * Remove Alt+F2 and Ctrl+Esc from openbox config file to avoid conflicts with lxqt-panel & lxqt-globalkeys.
+  * Add default configuration files for lxde-qt session.
+
+lxqt-globalkeys-0.11.1 / 2017-01-01
+===================================
+
+  * Release 0.11.1: Update changelog
+  * Added *da.desktop
+  * Use the lxqt-build-tools/lxqt_create_portable_headers
+  * Use the new lxqt-build-tools package
+  * Create lxqt-config-globalkeyshortcuts_fr.desktop
+  * Remove cpack (#41)
+
+lxqt-globalkeys-0.11.0 / 2016-09-24
+===================================
+
+  * Release 0.11.0: Add changelog
+  * Add README.md
+  * Add Catalan translation
+  * daemon: Use QDBusServiceWatcher
+  * Fix typo in German translation for desktop file (#38)
+  * build: Use external translations
+  * ts-files removal (#35)
+  * Improve foreach iterator use
+  * daemon/core: Optimize Core startup string stuff
+  * Client: Fix memory leak (static data)
+  * Fix untranslated string in French translation
+  * fix reseting the state of the edit dialog
+  * Default configs from /etc/xdg/lxqt must be loaded.
+  * static_cast<error_t>, fixes FTBFS for the Hurd
+  * lxqt-globalkeys is LGPL only, there are no GPL files in it
+  * Update italian translation, remove country-specific variant
+  * Italian translation update
+  * Update Russian translation Remove ru_RU files
+  * Update French translation
+  * client: Fix typo in pkg-config dependencies
+  * upd: lxqt-config-globalkeyshortcuts_hu.ts
+  * Fix warning
+
+lxqt-globalkeys-0.10.0 / 2015-10-31
+===================================
+
+  * Fix license file
+  * Update translations
+  * Fix regression for config add dialog
+  * Remove shortcut grabbing from the main window
+  * Add KDevelop project type to .gitignore
+  * OnlyShowIn=LXQt;
+  * Rename LxQt to LXQt everywhere
+  * Update Greek translation Remove country variant from language code
+  * Updated german translation, make it common for all german speaking regions.
+  * Updated template.
+  * Handles CMake policy CMP0063
+  * Export the ShortutSelector class
+  * Use LXQtCompilerSettings CMake module
+  * Install lxqt-globalkeysd to where it belongs
+  * Renames development and runtime CMake COMPONENT's
+  * Use target_compile_definitions()
+  * Coding style changes
+  * Double Quote CMake variables that may contain blanks
+  * Removes unneeded CMake stuff
+  * Use CMAKE_AUTOUIC
+  * Removes not needed include_directories()
+  * Removes hardcoded install dirs
+  * Drops LIB_SUFFIX. Use GNUInstallDirs.
+  * Fix three memory leaks in daemon error handling
+  * Fix FTBFS after new CMake Targets
+  * main: use standard liblxqt unix signal handling to quit
+  * Adds intree/superbuild support
+  * Generate -config-version.cmake files
+  * Drops xxx_use.cmake files. Adopt Targets
+  * Makes the config.cmake usable in an super build
+  * Update to use the new liblxqt Targets infrastructure
+  * daemon: fix two memory leaks
+  * Removes commented CMake code
+  * Removes unused FindInstallConfigPath.cmake
+  * Hungarian translation added
+  * Add additional map to track disabled actions
+  * daemon: not grabbing disabled shortcuts
+  * Update lxqt-config-globalkeyshortcuts_it_IT.desktop
+  * client: emitting registrationFinished signal
+  * Add check for NULL pointer. See lxde/lxqt#521
+  * Use ~ instead of / as working dir. Fixes lxde/lxqt#521
+  * Make DBus calls to addClientAction async
+
+lxqt-globalkeys-0.9.0 / 2015-01-07
+==================================
+
+  * Portuguese update
+  * - Unify naming for a unique lxqt. No more suffixes
+  * Use the new LxQt::SingleApplication
+  * CMakeLists maitenance
+  * Uses the new translations cmake modules
+  * Update Russian translation
+  * Drop Qt4 support in code
+  * Clean up CMakeLists.txt and drop Qt 4 support
+
+lxqt-globalkeys-0.8.0 / 2014-10-10
+==================================
+
+  * Adapt to the translation infrastructure
+  * - Fix Greek translation to conform with desktopfile validation
+  * Link to correct version of lxqt-globalkeys for lxqt-globalkeys-ui.
+  * Updates translations files install destination
+  * Adds include_directories() to the _use.cmake file
+  * Adds portable headers
+  * Fix broken qt4 build and make lib and include paths of qt4 and qt5 versions different.
+  * Do simplification and cleanup for the qt5 port. * Use cmake 2.8.9 by default and require 2.8.11 for qt5.
+  * Initial Qt5 support
+  * Use new LXQt header files.
+  * Improve FreeBSD support
+
+lxqt-globalkeys-0.7.0 / 2014-05-07
+==================================
+
+  * Update COPYING
+
+lxqt-globalkeys-0.6.99 / 2014-04-30
+===================================
+
+  * remove old translation templates remove translated icon names
+  * Add #include <libgen.h> for using basename(). Add typedef for error_t if it's not defined.
+  * Update AUTHORS
+  * Add CPack rules for creating tarball
+  * Bring desktop file in line with the others
+  * Don't append library suffix to library install path, but use it by default
+  * Respect standard LIB_INSTALL_DIR
+  * Removed CMAKE_SOURCE_DIR usage from CMakeLists.txt files
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Project name added to cmake file
+  * Fix incorrect header inclusion.
+  * Fix broken cmake config and use files.
+  * Rename to lxqt-globalkeys. * Add cmake config and use files for liblxqt-globalkeys and liblxqt-globalkeys-ui.
+  * Add client and ui libs (original razor-global-key-shortcuts-client and razor-global-key-shortcut-selector).
+  * Fix incorrect dbus address by replacing razorqt with lxqt.
+  * Fix broken build and rename binary to lxqt-globalshortcutsd.
+  * Add COPYING and AUTHORS
+  * Desktop file for global key shortcut configurator added to install
+  * X-RAZOR changed to Razor in desktop files
+  * Small CMake improvements
+  * Qt 4.8.2+ compatibility improved
+  * C includes fixed
+  * Qt 4.6 compatibility
+  * No dependencies on STL
+  * Fix build
+  * Fix #601
+  * Typo really fixed (https://github.com/Razor-qt/razor-qt/commit/a8e71608fad71dfe8ad6be6ff1057067a19d93dc#commitcomment-3111401)
+  * Fix 'Unknown CMake command "razor_translate_ts"' error.
+  * Global key shortcuts config behaviour fixed
+  * TODO file removed (github issues to be used)
+  * Todo list updated
+  * Shortcut selectors fix for reset by timeout
+  * Shortcut selectors unified
+  * Shortcut can be changed just in the table
+  * Typo fixed
+  * New shortcut can be automatically applied to the selector text
+  * Should not set empty shortcuts - there is "enabled" feature for this
+  * Never allow to grab printable keys
+  * Todo list updated
+  * Shortcuts can be cleared from manager
+  * Stricter checks for client actions
+  * Inactive client actions can be removed from manager
+  * Todo list updated
+  * Todo list updated
+  * Temp files removed
+  * Global shortcuts client library added and all support for it refactored and fixed.
+  * Todo list updated
+  * Run as app by default
+  * Using PROJECT_NAME variable instead of PROJECT in CMake files
+  * Configurator ready for translation
+  * Header guards updated
+  * HPP files renamed to H and AStyle applied
+  * Missing license header added
+  * Unused files removed
+  * AStyle applied
+  * Initial import of global shortcut configurator
+  * Initial import of global shortcut daemon
+  * Todo updated
+  * Edit action dialog added
+  * Model indexes fixed
+  * Smart column autoresize
+  * Better dbus proxy usage
+  * Better optimisation handling
+  * Always printing a message in case of action failure
+  * Grabbing already grabbed shortcut releases keyboard
+  * Better command line info
+  * Todo file added
+  * Disabled actions grayed out
+  * Duplicate shortcuts highlighted Algorithm speed increased
+  * Unorderness of QSet fixed
+  * Shortcut editor added (but not used yet) Multiple actions behaviour selector added Some minor code style changes
+  * Minor style changes
+  * Manager has complete default read-only model
+  * More headers included
+  * Delayed actions model initialisation (allows correct signals handling)
+  * Correct daemon service name
+  * Correct command action info generation
+  * Prevent actions from multiplying when saving to the settings file
+  * Fixed meta types
+  * getAllActionsById renamed to getAllActions
+  * The simplest proxy model added to the manager
+  * More info returned by daemon
+  * Standard Qt header used
+  * Demo client app
+  * Qt4 compatibility issues fixed
+  * CMakefiles standardised
+  * Better actions IDs code Enable action methods exposed to DBus Config file fixed
+  * Daemon presence can be detected by native library - and it can reconnect
+  * Library refactored heavily
+  * Checking X11 error after each call CancelShortcutGrab method added Freshly grabbed shortcut checked More verbose X11 error output
+  * Removed non existing signal connection
+  * daemon_native* renamed to native* grabShortcut method duplicated in native* interface now install/uninstall added to project
+  * Native client library
+  * Meta types improved Better request functions
+  * Initial copy of Qt-based global action system
+  * globalkeyshortucts: fix segfault and other bugs in daemon
+  * Translations updated
+  * Translations updated
+  * Fix components missing translations
+  * Translations
+  * Install translations into correct places
+  * Update translations
+  * Enable translations for some components that were missing them
+  * Removed line num from TS files.
+  * Deleted old translation methods.
+  * New translation infrastructure
+  * complete setting parsing part for dbus call
+  * re-define classes to make server side ready for DBUS shortcuts
+  * global keys: server settings renaming
+  * globalkeys config: UI fixes; translations; proper layouting
+  * globalkeys: missing license; display groups as a whole line in the config dialog
+  * global keyobard shortcuts: initial import from Aaron's repo. Astyle-d. License added where required. Renamed to be more descriptive.

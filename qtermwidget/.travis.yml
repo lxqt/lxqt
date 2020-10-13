@@ -1,0 +1,25 @@
+language: cpp
+
+sudo: required
+
+dist: bionic
+
+services:
+  - docker
+
+script:
+  - "curl -s https://raw.githubusercontent.com/mikkeloscar/arch-travis/master/arch-travis.sh | bash"
+
+archlinux:
+  repos:
+    - archlinuxcn=https://cdn.repo.archlinuxcn.org/$arch
+  packages:
+    # See *depends in https://github.com/archlinuxcn/repo/blob/master/archlinuxcn/qtermwidget-git/PKGBUILD
+    - git
+    - cmake
+    - lxqt-build-tools-git
+    - qt5-tools
+    - python-pyqt5
+    - python-sip
+    - sip
+  script: bash ./.ci/build.sh

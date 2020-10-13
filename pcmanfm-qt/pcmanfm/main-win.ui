@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>460</width>
+    <height>369</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>File Manager</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="folder">
+    <normaloff>.</normaloff>.</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="Fm::SidePane" name="sidePane" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+      <widget class="QSplitter" name="viewSplitter">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>460</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menuCreateNew">
+     <property name="title">
+      <string>C&amp;reate New</string>
+     </property>
+     <addaction name="actionNewFolder"/>
+     <addaction name="actionNewBlankFile"/>
+    </widget>
+    <addaction name="actionNewTab"/>
+    <addaction name="actionNewWin"/>
+    <addaction name="separator"/>
+    <addaction name="menuCreateNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionFileProperties"/>
+    <addaction name="actionFolderProperties"/>
+    <addaction name="separator"/>
+    <addaction name="actionCloseTab"/>
+    <addaction name="actionCloseWindow"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionHiddenShortcuts"/>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <widget class="QMenu" name="menuSorting">
+     <property name="title">
+      <string>&amp;Sorting</string>
+     </property>
+     <addaction name="actionByFileName"/>
+     <addaction name="actionByMTime"/>
+     <addaction name="actionByDTime"/>
+     <addaction name="actionByFileSize"/>
+     <addaction name="actionByFileType"/>
+     <addaction name="actionByOwner"/>
+     <addaction name="actionByGroup"/>
+     <addaction name="separator"/>
+     <addaction name="actionAscending"/>
+     <addaction name="actionDescending"/>
+     <addaction name="separator"/>
+     <addaction name="actionFolderFirst"/>
+     <addaction name="actionHiddenLast"/>
+     <addaction name="actionCaseSensitive"/>
+    </widget>
+    <widget class="QMenu" name="menu_View_2">
+     <property name="title">
+      <string>&amp;View</string>
+     </property>
+     <addaction name="actionIconView"/>
+     <addaction name="actionThumbnailView"/>
+     <addaction name="actionCompactView"/>
+     <addaction name="actionDetailedList"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuToolbars">
+     <property name="title">
+      <string>&amp;Toolbars</string>
+     </property>
+     <addaction name="actionFilter"/>
+     <addaction name="actionMenu_bar"/>
+    </widget>
+    <widget class="QMenu" name="menuPathBarStyle">
+     <property name="title">
+      <string>Path &amp;Bar</string>
+     </property>
+     <addaction name="actionLocationBar"/>
+     <addaction name="actionPathButtons"/>
+    </widget>
+    <widget class="QMenu" name="menuFiltering">
+     <property name="title">
+      <string>&amp;Filtering</string>
+     </property>
+     <addaction name="actionShowFilter"/>
+     <addaction name="actionUnfilter"/>
+    </widget>
+    <addaction name="actionReload"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowHidden"/>
+    <addaction name="actionShowThumbnails"/>
+    <addaction name="actionSplitView"/>
+    <addaction name="menuSorting"/>
+    <addaction name="menu_View_2"/>
+    <addaction name="actionPreserveView"/>
+    <addaction name="separator"/>
+    <addaction name="actionSidePane"/>
+    <addaction name="menuToolbars"/>
+    <addaction name="menuPathBarStyle"/>
+    <addaction name="separator"/>
+    <addaction name="menuFiltering"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <addaction name="actionCut"/>
+    <addaction name="actionCopy"/>
+    <addaction name="actionPaste"/>
+    <addaction name="actionRename"/>
+    <addaction name="actionDelete"/>
+    <addaction name="separator"/>
+    <addaction name="actionSelectAll"/>
+    <addaction name="actionInvertSelection"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="actionBulkRename"/>
+    <addaction name="separator"/>
+    <addaction name="actionPreferences"/>
+   </widget>
+   <widget class="QMenu" name="menu_Bookmarks">
+    <property name="title">
+     <string>&amp;Bookmarks</string>
+    </property>
+    <addaction name="actionAddToBookmarks"/>
+    <addaction name="actionEditBookmarks"/>
+   </widget>
+   <widget class="QMenu" name="menu_Go">
+    <property name="title">
+     <string>&amp;Go</string>
+    </property>
+    <addaction name="actionHome"/>
+    <addaction name="actionDesktop"/>
+    <addaction name="actionComputer"/>
+    <addaction name="actionTrash"/>
+    <addaction name="actionNetwork"/>
+    <addaction name="actionApplications"/>
+    <addaction name="separator"/>
+    <addaction name="actionGoBack"/>
+    <addaction name="actionGoForward"/>
+    <addaction name="actionGoUp"/>
+    <addaction name="separator"/>
+    <addaction name="actionConnectToServer"/>
+   </widget>
+   <widget class="QMenu" name="menu_Tool">
+    <property name="title">
+     <string>&amp;Tool</string>
+    </property>
+    <addaction name="actionOpenTerminal"/>
+    <addaction name="actionOpenAsRoot"/>
+    <addaction name="actionCopyFullPath"/>
+    <addaction name="actionFindFiles"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_View"/>
+   <addaction name="menu_Go"/>
+   <addaction name="menu_Bookmarks"/>
+   <addaction name="menu_Tool"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="PCManFM::StatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="contextMenuPolicy">
+    <enum>Qt::PreventContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>Main Toolbar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNewTab"/>
+   <addaction name="actionGoBack"/>
+   <addaction name="actionGoForward"/>
+   <addaction name="actionGoUp"/>
+   <addaction name="actionReload"/>
+   <addaction name="separator"/>
+   <addaction name="actionIconView"/>
+   <addaction name="actionThumbnailView"/>
+   <addaction name="actionCompactView"/>
+   <addaction name="actionDetailedList"/>
+   <addaction name="separator"/>
+   <addaction name="actionGo"/>
+   <addaction name="actionMenu"/>
+  </widget>
+  <action name="actionGoUp">
+   <property name="icon">
+    <iconset theme="go-up">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Go &amp;Up</string>
+   </property>
+   <property name="toolTip">
+    <string>Go Up</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Up</string>
+   </property>
+  </action>
+  <action name="actionHome">
+   <property name="icon">
+    <iconset theme="user-home">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Home</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Home</string>
+   </property>
+  </action>
+  <action name="actionReload">
+   <property name="icon">
+    <iconset theme="view-refresh">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Reload</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionGo">
+   <property name="icon">
+    <iconset theme="go-jump">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Go</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset theme="help-about">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+  <action name="actionNewWin">
+   <property name="icon">
+    <iconset theme="window-new">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New Window</string>
+   </property>
+   <property name="toolTip">
+    <string>New Window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionShowHidden">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show &amp;Hidden</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionComputer">
+   <property name="icon">
+    <iconset theme="computer">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Computer</string>
+   </property>
+  </action>
+  <action name="actionTrash">
+   <property name="icon">
+    <iconset theme="user-trash">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Trash</string>
+   </property>
+  </action>
+  <action name="actionNetwork">
+   <property name="text">
+    <string>&amp;Network</string>
+   </property>
+  </action>
+  <action name="actionDesktop">
+   <property name="icon">
+    <iconset theme="user-desktop">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Desktop</string>
+   </property>
+  </action>
+  <action name="actionAddToBookmarks">
+   <property name="icon">
+    <iconset theme="list-add">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Add to Bookmarks</string>
+   </property>
+  </action>
+  <action name="actionApplications">
+   <property name="text">
+    <string>&amp;Applications</string>
+   </property>
+  </action>
+  <action name="actionReload_2">
+   <property name="text">
+    <string>Reload</string>
+   </property>
+  </action>
+  <action name="actionIconView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Icon View</string>
+   </property>
+  </action>
+  <action name="actionCompactView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Compact View</string>
+   </property>
+  </action>
+  <action name="actionDetailedList">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Detailed List</string>
+   </property>
+  </action>
+  <action name="actionThumbnailView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Thumbnail View</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="icon">
+    <iconset theme="edit-cut">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Cu&amp;t</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset theme="edit-copy">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="icon">
+    <iconset theme="edit-paste">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="text">
+    <string>Select &amp;All</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionPreferences">
+   <property name="text">
+    <string>Pr&amp;eferences</string>
+   </property>
+  </action>
+  <action name="actionAscending">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Ascending</string>
+   </property>
+  </action>
+  <action name="actionDescending">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Descending</string>
+   </property>
+  </action>
+  <action name="actionByFileName">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;By File Name</string>
+   </property>
+  </action>
+  <action name="actionByMTime">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By &amp;Modification Time</string>
+   </property>
+  </action>
+  <action name="actionByDTime">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By Deletio&amp;n Time</string>
+   </property>
+  </action>
+  <action name="actionByFileType">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By File &amp;Type</string>
+   </property>
+  </action>
+  <action name="actionByOwner">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By &amp;Owner</string>
+   </property>
+  </action>
+  <action name="actionByGroup">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By &amp;Group</string>
+   </property>
+  </action>
+  <action name="actionFolderFirst">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Folder First</string>
+   </property>
+  </action>
+  <action name="actionHiddenLast">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Hidden Last</string>
+   </property>
+  </action>
+  <action name="actionPreserveSorting">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Preserve sorting for this folder</string>
+   </property>
+  </action>
+  <action name="actionNewTab">
+   <property name="icon">
+    <iconset theme="window-new">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>New &amp;Tab</string>
+   </property>
+   <property name="toolTip">
+    <string>New Tab</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionGoBack">
+   <property name="icon">
+    <iconset theme="go-previous">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Go &amp;Back</string>
+   </property>
+   <property name="toolTip">
+    <string>Go Back</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Left</string>
+   </property>
+  </action>
+  <action name="actionGoForward">
+   <property name="icon">
+    <iconset theme="go-next">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Go &amp;Forward</string>
+   </property>
+   <property name="toolTip">
+    <string>Go Forward</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Right</string>
+   </property>
+  </action>
+  <action name="actionInvertSelection">
+   <property name="text">
+    <string>&amp;Invert Selection</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset theme="edit-delete">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Delete</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionRename">
+   <property name="text">
+    <string>&amp;Rename</string>
+   </property>
+   <property name="shortcut">
+    <string>F2</string>
+   </property>
+  </action>
+  <action name="actionCloseTab">
+   <property name="text">
+    <string>C&amp;lose Tab</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionFileProperties">
+   <property name="text">
+    <string>File &amp;Properties</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+Return</string>
+   </property>
+  </action>
+  <action name="actionFolderProperties">
+   <property name="text">
+    <string>&amp;Folder Properties</string>
+   </property>
+  </action>
+  <action name="actionCaseSensitive">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Case Sensitive</string>
+   </property>
+  </action>
+  <action name="actionByFileSize">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>By File &amp;Size</string>
+   </property>
+  </action>
+  <action name="actionCloseWindow">
+   <property name="text">
+    <string>&amp;Close Window</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionEdit_Bookmarks">
+   <property name="text">
+    <string>Edit Bookmarks</string>
+   </property>
+  </action>
+  <action name="actionOpenTerminal">
+   <property name="text">
+    <string>Open &amp;Terminal</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </action>
+  <action name="actionOpenAsRoot">
+   <property name="text">
+    <string>Open as &amp;Root</string>
+   </property>
+  </action>
+  <action name="actionEditBookmarks">
+   <property name="text">
+    <string>&amp;Edit Bookmarks</string>
+   </property>
+  </action>
+  <action name="actionNewFolder">
+   <property name="icon">
+    <iconset theme="folder-new">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Folder</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="actionNewBlankFile">
+   <property name="icon">
+    <iconset theme="document-new">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Blank File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+N</string>
+   </property>
+  </action>
+  <action name="actionFindFiles">
+   <property name="text">
+    <string>&amp;Find Files</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="actionFilter">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Permanent &amp;filter bar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionUnfilter">
+   <property name="text">
+    <string>&amp;Clear All Filters</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+K</string>
+   </property>
+  </action>
+  <action name="actionCloseLeft">
+   <property name="icon">
+    <iconset theme="go-previous">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Close &amp;previous tabs</string>
+   </property>
+  </action>
+  <action name="actionCloseRight">
+   <property name="icon">
+    <iconset theme="go-next">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Close &amp;next tabs</string>
+   </property>
+  </action>
+  <action name="actionCloseOther">
+   <property name="text">
+    <string>Close &amp;other tabs</string>
+   </property>
+  </action>
+  <action name="actionMenu_bar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Menu bar</string>
+   </property>
+   <property name="toolTip">
+    <string>Menu bar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
+   </property>
+  </action>
+  <action name="actionMenu">
+   <property name="icon">
+    <iconset theme="application-menu">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Menu</string>
+   </property>
+   <property name="toolTip">
+    <string>Menu</string>
+   </property>
+  </action>
+  <action name="actionPreserveView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Preserve Settings for This Folder</string>
+   </property>
+  </action>
+  <action name="actionConnectToServer">
+   <property name="text">
+    <string>Connect to &amp;Server</string>
+   </property>
+  </action>
+  <action name="actionLocationBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Location</string>
+   </property>
+  </action>
+  <action name="actionPathButtons">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Path Buttons</string>
+   </property>
+  </action>
+  <action name="actionBulkRename">
+   <property name="text">
+    <string>&amp;Bulk Rename</string>
+   </property>
+   <property name="toolTip">
+    <string>Bulk Rename</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F2</string>
+   </property>
+  </action>
+  <action name="actionShowFilter">
+   <property name="text">
+    <string>&amp;Show/Focus Filter Bar</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Filter Bar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionSplitView">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>S&amp;plit View</string>
+   </property>
+   <property name="toolTip">
+    <string>Split View</string>
+   </property>
+   <property name="shortcut">
+    <string>F6</string>
+   </property>
+  </action>
+  <action name="actionCopyFullPath">
+   <property name="text">
+    <string>&amp;Copy Full Path</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionShowThumbnails">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Thumb&amp;nails</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Thumbnails</string>
+   </property>
+  </action>
+  <action name="actionSidePane">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>S&amp;ide Pane</string>
+   </property>
+   <property name="shortcut">
+    <string>F9</string>
+   </property>
+  </action>
+  <action name="actionHiddenShortcuts">
+   <property name="text">
+    <string>Hidden &amp;Shortcuts</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PCManFM::StatusBar</class>
+   <extends>QStatusBar</extends>
+   <header>statusbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Fm::SidePane</class>
+   <extends>QWidget</extends>
+   <header location="global">libfm-qt/sidepane.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

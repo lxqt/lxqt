@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Sensors
+Comment=View readings from hardware sensors.

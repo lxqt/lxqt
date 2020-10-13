@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libmenu-cache
+Description: Cache for freedesktop.org menu spec
+Requires: glib-2.0
+Version: @VERSION@
+Libs: ${pc_top_builddir}/${pcfiledir}/libmenu-cache.la
+Cflags: -I${pc_top_builddir}/${pcfiledir}

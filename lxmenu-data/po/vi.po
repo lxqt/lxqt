@@ -1,0 +1,258 @@
+# Vietnamese Translation for Gnome Menus.
+# Copyright © 2007 Gnome i18n Project for Vietnamese.
+# This file is distributed under the same license as the gnome-menus package.
+# Trinh Minh Thanh <tmthanh@yahoo.com>, 2004.
+# Clytie Siddall <clytie@riverland.net.au>, 2005-2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus 2.19.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2010-01-26 11:05+0200\n"
+"Last-Translator: Hiếu <scamemiv@gmail.com>\n"
+"Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.1\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Âm thanh và Ảnh động"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Trình đơn đa phương tiện"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Lập trình"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Công cụ phát triển phần mềm"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Giáo dục"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Trò chơi"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Trò chơi và giải trí"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Đồ họa"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Ứng dụng đồ họa"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Phần cứng"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Thiết lập cho các thiết bị phần cứng"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet và mạng"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Thiết lập mạng"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Sắc thái"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Thiết lập điều khiển diện mạo và cách ứng xử của hệ thống"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Ứng dụng"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Hệ thống"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Thiết lập quản lý và tùy thích cá nhân"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Mạng"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr ""
+"Chương trình truy cập Mạng như trình duyệt và trình nhận/gửi thư điện tử"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Văn phòng"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Ứng dụng văn phòng"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Khác"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Chương trình chưa phân loại"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Cá nhân"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Thiết lập cá nhân"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Tùy thích"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Tùy thích cá nhân"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Quản lý"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Thay đổi thiết lập cho toàn hệ thống (cho mọi người dùng)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Thiết lập hệ thống"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Công cụ hệ thống"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Cấu hình và theo dõi hệ thống"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Truy cập hoàn toàn"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Thiết lập Truy cập Hoàn toàn"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Bổ trợ"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Bổ trợ môi trường"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Tùy thích liên quan đến khả năng truy cập"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Thiết lập và tùy thích cá nhân"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Bộ sửa trình đơn"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Sửa trình đơn"
+
+#~ msgid "_Applications:"
+#~ msgstr "Ứ_ng dụng:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Mặc định"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Trình đơn:"
+
+#~ msgid "Name"
+#~ msgstr "Tên"
+
+#~ msgid "Show"
+#~ msgstr "Hiển thị"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Không tìm thấy thư mục chính: chưa lập trong tập tin « /etc/passwd » và "
+#~ "không có giá trị cho biến $HOME trong môi trường."
+
+#~ msgid "Menu file"
+#~ msgstr "Tập tin trình đơn"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "TẬP_TIN_TRÌNH_ĐƠN"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Bộ theo dõi thay đổi trình đơn"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Gồm các mục nhập bị <loại trừ>"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Gồm các mục nhập « NoDisplay=true » (không hiển thị là đúng)"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "ID tập tin màn hình nền không hợp lệ"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Tên tập tin không hợp lệ]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <bị loại trừ>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Trình đơn đã thay đổi nên đang nạp lại ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Cây trình đơn rỗng"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "— kiểm tra sự thực hiện GNOME của Đặc tả Trình đơn Môi trường"
+
+#~ msgid "Accessibility"
+#~ msgstr "Khả năng truy cập"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Thiết lập khả năng truy cập"
+
+#~ msgid "Desktop"
+#~ msgstr "Desktop"

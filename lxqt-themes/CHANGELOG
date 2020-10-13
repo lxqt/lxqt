@@ -1,0 +1,142 @@
+lxqt-themes-0.15.0 / 2020-04-21
+===============================
+  * Bumped version to 0.15.0.
+
+lxqt-themes-0.14.0 / 2019-01-25
+===============================
+
+  * Set cmake_minimum_required to 3.1.0
+  * Set informal version to 0.14.0
+
+lxqt-themes-0.13.0 / 2018-05-21
+===============================
+
+  * Set informal version to 0.13.0
+  * CMake: Prevent in-source builds
+  * fixed authors and bump the year (#8)
+  * fixed lxde mention (#7)
+
+lxqt-themes-0.12.0 / 2017-10-10
+===============================
+
+  * Release 0.12.0: Update changelog
+  * Fixed CHANGELOG
+  * Release 0.12.1: Update changelog
+  * Readme licenses (#6)
+  * Update README.md
+  * new README.md
+  * Added missed AUTHORS and COPYING files
+  * Release 0.12.0: Update changelog
+  * Don't export github related stuff
+  * lxqt-panel/Kbindicator: Fixes a QLabel issue in the config dialog
+  * liblxqt make no sense here
+  * Copied issue template
+
+lxqt-themes-0.11.96 / 2017-07-07
+================================
+
+  * Release 0.11.96: Update changelog
+  * Remove some more session stuff from CMakeLists.txt
+  * Remove not theme and graphic related things
+  * Made The Dark Theme Really Dark (#62)
+  * Use the LXQtConfigVars module
+  * Remove cpack (#61)
+  * themes-system: Add "background" property to panel
+  * themes: Remove Screensaver styles
+  * Move Italian desktop entry to correct path
+  * Create lxqt-powermanagement_it.desktop
+  * build: Revert @6d6d2bef54
+  * build: Add xmessage as "dependency"
+  * themes: Take layoutDirection into account
+  * Fix the search textfield style for all themes (#52)
+  * Added style for the ColorPicker plugin.
+  * Fix bg-fg color swapping in Frost (#50)
+  * theme system: Force no icon for main menu
+  * First experiment in theming the new search menu feature.
+  * icons: Add icon "lxqt"
+  * Wallpaper updated. Lighter and with the hummingbird for some identity.
+  * Use the system palette to change the main colors, this will make the theme more integrated with the whole environment. Fixed ugly buttons in the volume applet.
+  * Themes: adjust main menu icon in Light
+  * themes: Add system theme (no theme)
+  * CMakeLists: Use LXQT_GRAPHICS_DIR for graphics
+  * Add startlxqt man page
+  * Deleted and ignored *.kdev4
+  * themes: added styles to distinguish disabled QMenu entries
+  * startlxqt: optimization of XDG_DATA_DIRS
+  * Rename LxQt to LXQt everywhere
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Removes no added value comments
+  * Use GNUINnstallDirs
+  * theme-light: add plugin handle
+  * Updates the build system to use the Targets infrastructure
+  * Enable the "leave confirmation dialog" by default
+  * themes: panel volume popup rounded highlighted button corners
+  * theme-light: volume popup buttons styles
+  * themes: volume popup buttons show outline
+  * themes: avoid uneccessary (and/or orientation specific) margins
+  * Handle urgency hint in desktopswitch in themes
+  * themes: spacer as semitransparent lighter/darker line
+  * themes-panel: initial styles for taskbar groups
+  * Added style for the new Spacer plugin.
+  * Added style for the new Spacer plugin.
+  * Added style for the new Spacer plugin.
+  * theme Frost: added urgency style for TaskBar button (as in all other themes)
+  * Make themes' directories' names lowercase again
+  * Revert last commit, the folder names wasnt capitalized.
+  * Update lxqt-panel.qss
+  * Adds an scalable start-here-lxqt icon
+  * Removed deprecated files.
+  * use LXQt-specific menu file
+  * - Unify naming for a unique lxqt. No more suffixes
+  * Fixed keyboard indicator in Light theme
+  * .gitignore added
+  * Improved menu spacing Code cleaning Added style for DOM plugin Reduced icon size for the calendar's next an previous month buttons.
+  * Fix lxde/lxde-qt#364
+  * Fixed tooltips colors.
+  * Preview updated.
+  * Keyboard indicator and preview updated.
+  * Theme updated
+  * Fixed the Mount Plugin popup.
+  * Style for the new keyboard plugin.
+  * Fixed clicking area and aded style for new keyboard indicator.
+  * First approach to style in the new Keyboard Indicator plugin.
+  * Apply clicking area fix for all the plugins.
+  * Remove lxqt-appswitcher integration as we no longer offer that repo
+  * Fixed clickable areas. * The plugins should now respond to the mouse as expected. * Added a pressed state for buttons.
+  * Fixed clickable areas.
+  * Add the svg logo sources, by @Caig
+  * Small fixes.
+  * Small fixes.
+  * Theme improve.
+  * Renamed plasma-next-alpha to kde-plasma Shorter and simple naming in consonance with the other themes.
+  * Removed old themes. Deleted A-mego, Flat and Green themes. Now we have less themes to maintain and improve the overall quality.
+  * Changed menu icon.
+  * Remover border from nofications. Changed menu icon.
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * Removed font-size for the clock
+  * Removed padding from the menu
+  * Numix is now Frost and uses the LXQT logo. Clock font size not defined by the style. Runner got some fixes in the search field.
+  * Fixed action button style
+  * Merged Flat-Dark and Flat-Dark-Alpha into a new Dark theme, wallpaper and many style fixes
+  * Remove plugins' margins from themes files
+  * Clean up CMakeLists.txt and drop Qt 4 support
+  * Update themes to support urgency hint
+  * Add Qt5 support.
+  * Add Plasma Next theme
+  * Add dark aplha theme
+  * Theme changes for RGBA panel
+  * Updated qss styles for transparency
+  * Use LXQt as desktop name
+  * Update logo to Helix the Archist Hummingbird. Thanks @Caig
+  * Replace razor-specific graphics by Helix
+  * Add CPack rules for creating tarball
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Add visual feedback for pressed quicklaunch buttons in light and green themes.
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Rename dirs and replace razor with lxqt. Install lxqt.conf to /etc/xdg/lxqt and provide theme config.
+  * fixed theme loading
+  * Fix file paths, replacing razor with lxqt. * Remove Alt+F2 and Ctrl+Esc from openbox config file to avoid conflicts with lxqt-panel & lxqt-globalkeys.
+  * Add default configuration files for lxde-qt session.

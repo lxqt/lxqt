@@ -1,0 +1,33 @@
+lxqt-archiver-0.2.0 / 2020-05-16
+===================================
+  * Set json-glib dependency as required.
+  * Added an icon for lxqt-archiver.
+  * Prevent mixing extracted files with others if overwriting isn't chosen.
+  * Added expand and collapse actions.
+  * Fixed build with GCC 10.
+
+lxqt-archiver-0.1.1 / 2020-04-23
+===================================
+  * CMake: Used 'LIBEXECDIR' instead of 'LIBDIR' for executables.
+  * CMake: Removed unused qtdbus dependency.
+  * Removed comment about json-glib in CMakeLists.
+  * Fixed handling of RPM archives.
+
+lxqt-archiver-0.1.0 / 2020-04-19
+===================================
+
+  * Supported viewing (launching) current item.
+  * Supported opening archives by dropping.
+  * File DND to other apps.
+  * Remember window size and splitter position.
+  * Open file dialog in work directory on compressing/extracting.
+  * Fix infinite loop on extracting an already extracted archive.
+  * Prevent dropping into self.
+  * Fixed gzip mimetype.
+  * Fixed crash on creating impossible archives.
+  * Fixed a memory leak with archive creation.
+  * Use qint64 for modification time.
+  * Fixed item sorting.
+  * Choose an appropriate name when creating archive with `--add`.
+  * Made the toolbar unmovable.
+  * Added support for Zstd (Zstandard-compressed).

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=System tray
+Comment=Access hidden applications minimized in the system tray
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations

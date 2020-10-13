@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Sensors
+Comment=View readings from hardware sensors.
+
+
+# Translations
+Name[eu]=Sentsoreak
+Comment[eu]=Ikusi hardware-sentsoreen irakurketak (unean lm_sensors)

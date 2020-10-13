@@ -1,0 +1,254 @@
+# Ukrainian translation of gnome-menus.
+# Copyright (C) Free Software Foundation Inc., 2005
+# This file is distributed under the same license as the gnome-menus package.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2005-2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-09-11 16:17+0200\n"
+"Last-Translator: Maxim Dziumanenko <dziumanenko@gmail.com>\n"
+"Language-Team: Ukrainian <uk@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Звук та відео"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Меню мультимедіа"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Програмування"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Засоби розробки програм"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Навчання"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Ігри"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Ігри та розваги"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Графіка"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Графічні програми"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Обладнання"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Налаштування для декількох апаратних пристроїв"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Інтернет та мережа"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Мережні налаштування"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Оформлення"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Налаштування зовнішнього вигляду та поведінки робочого столу"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Програми"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Система"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Особисті налаштування та адміністративні налаштування"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Інтернет"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Програми для роботи з Інтернет (пошта, веб-переглядач, тощо)"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Офіс"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Офісні програми"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Інші"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Програми, що не входять до жодної категорії"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Особисті"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Особисті налаштування"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Налаштування"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Особисті уподобання"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Адміністрування"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Зміна системних параметрів (впливає на усіх користувачів)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Системні налаштування"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Системні утиліти"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Засоби налаштовування та контролю системи"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Універсальний доступ"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Налаштування універсального доступу"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Стандартні"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Стандартні програми"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Параметри пов'язані з універсальним доступом"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Особисті параметри"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Редактор меню"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Правка меню"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Програми:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Типові"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Меню:"
+
+#~ msgid "Name"
+#~ msgstr "Назва"
+
+#~ msgid "Show"
+#~ msgstr "Показувати"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Не вдається знайти домашній каталог: не встановлено у /etc/passwd та не "
+#~ "визначено у змінній оточення $HOME"
+
+#~ msgid "Menu file"
+#~ msgstr "Файл меню"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "ФАЙЛ_МЕНЮ"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Контролювати зміни у меню"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Включати елементи з <Exclude>"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Включати елементи з NoDisplay=true"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Неправильний ідентифікатор desktop-файлу"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Неправильна назва файлу]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Меню змінено, перезавантаження ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Дерево меню порожнє"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- перевірка реалізації у GNOME специфікації з меню робочого столу"
+
+#~ msgid "Accessibility"
+#~ msgstr "Спеціальні можливості"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Налаштовування спеціальних можливостей"
+
+#~ msgid "Desktop"
+#~ msgstr "Робочий стіл"

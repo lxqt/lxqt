@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Volume control
+Comment=Control the system's volume and launch your preferred mixer.
+Icon=multimedia-volume-control
+
+#TRANSLATIONS_DIR=../translations

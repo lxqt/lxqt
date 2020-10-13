@@ -1,0 +1,159 @@
+qps-2.1.0 / 2020-04-23
+======================
+  * Fixed IO_R column and IO_W column.
+  * Fixed sorting in SWAP column.
+  * Used radio buttons in Field menu.
+  * Fixed I/O graph.
+  * Avoided overflow.
+  * Removed CMake artifacts.
+  * Removed unused, nontrivial variables.
+  * Silenced unused parameter warnings.
+  * Explicitly ignore return values when needed.
+  * Drop C deprecated headers.
+  * Use nullptr.
+  * Use SingleApplication from LXQt.
+  * Removed screenshot capability.
+  * Dropped pre-compiled headers (PCH).
+  * Reorganized Svec class.
+  * Dropped C deprecated headers.
+  * Got rid of `proc_common.cpp`.
+  * Removed GTK conditional code.
+  * Removed unused platform files.
+  * Ported towards C++11 override.
+  * Fix sign compare warnings.
+  * Stopped using deprecated QString method `printf()`.
+  * Fix a printf() format warning.
+  * Avoid temporary heap allocations.
+
+qps-2.0.0 / 2019-10-08
+======================
+
+  * Several code cleanups:
+    - Silenced compiler warnings about QtTableView
+    - Do not detect systray on every refresh (this also fixes memory leak under some GTK DEs)
+    - Removed the method `HeadedTable::sizeHintForColumn`
+    - htable.cpp: remove unused define
+    - qps.h: remove unused define
+    - Cleaned up the classes SearchBox, ControlBar and StatusBar
+    - Do not cast bool to integer on return
+    - Removed no strings casts definitions
+    - Removed unmanaged code
+    - Remove some comments
+    - Corrected sscanf format
+    - Removed unused variable
+    - Simplified groupName
+    - Add missing "const"
+    - Apply LXQtCompilerSettings to project
+  * Fixed memory leaks:
+    - Fixed memory leak in showing process details dialogs
+    - Prevent a file descriptor leak
+    - Fixed several memory leaks
+  * UI and other improvements:
+    - Properly save font info
+    - Sort fields list alphabetically
+    - Update sort indicator on adding columns
+    - Use float for memory column if in megabytes
+    - Support HDPI pixmaps
+    - A better filter box with clear button and place holder
+    - Don't allow an unsorted table
+    - Fixed table size and scrollbars
+    - Made column DND predictable
+    - Fixes for the header, especially for its DND
+    - Fixed painting of cells, branch lines and...
+    - Fixed settings and preferences and added signal prompt
+    - Fixed SWAP column
+    - Use a smaller pixmap cache
+    - Improved translations
+
+qps-1.10.20 / 2019-02-25
+========================
+
+  * Bumped version to 1.10.20
+  * Only translations was changed.
+
+qps-1.10.19 / 2019-01-25
+========================
+
+  * Bumped version to 1.10.19
+  * Improved cmake scripting
+    - set cmake_minimum_required to 3.1.0
+    - removed locale compile definitons, use lxqt-build-tools instead
+    - use lxqt-build-tools translation scripts
+  * Added translation support and fixed some source strings
+  * Translations updated
+  * Added translation promo to README.md
+
+qps-1.10.18 / 2018-05-21
+========================
+
+  * Bumped patch version to 18 (#45)
+  * Update from Weblate. (#41)
+  * Added transltion state to README.md
+  * Add da translation
+  * translation update
+  * Added translation using Weblate (German)
+  * Create qps_da.ts
+  * Update qps.desktop.in
+  * i18n: Update Polish translation
+  * Drop Qt foreach
+  * Fix links QtDesktop --> lxqt
+
+qps-1.10.17 / 2017-09-22
+====================
+
+  * Release 1.10.17: Update changelog
+  * some whitespaces fixed
+  * l10n: Polish translation
+  * Remove obsolete cpack
+  * Removed not needed ressource file
+  * some small fixes
+  * Fixed About page
+  * Fixed outdated FSF address in license headers
+  * Removed: It may be used, distributed and modified without limitation. - not exactly true.
+  * Added license headers
+  * Fix typo
+  * Fix license headers for files with clearly known authorship
+  * remove some empty files
+  * fixed encoding and added a proper GPL2 file header
+  * Renamed LICENSE -> COPYING
+  * Another set of licenseheader fixes
+  * Fixed some typos in comments (CMakeLists.txt) Fixed licenseheader: src/wchan.cpp UTF-8 and filename Fixed licenseheader: src/watchdogdialog.*  filetype and UTF-8 Fixed licenseheader: src/watchcond.*  UTF-8 Fixed licenseheader: src/ttystr.cpp filentype and UTF-8
+  * Work around grep 2.23 new behaviour
+  * Removes not needed file
+  * Fixes CPack package version
+  * Fixes misnaming of binary qps
+  * Use CMAKE PROJECT_NAME instead of PROJECT
+  * Removes Icon related commented code
+  * Removes the custom QtIconLoader
+  * Use QIcon::fromTheme() instead of the internal QtIconLoader
+  * Adds the resources as an target dependency
+  * Puts TableField sctruct on it's own file
+  * Puts the QpsApp in it's own file
+  * Splits the command file into several files
+  * Puts Command utilities into it's own file
+  * Updates translations sources
+  * Removes toolTip, statusTip, whatsThis and accesibleName from watchdog.ui
+  * Removes stylesheets commented stuff
+  * Include a copy of the license
+  * Install application icon
+  * Updates translation sources
+  * Adds desktop entry file
+  * Adds application internationalization / localization
+  * Set the minimum required CMake version to 3.0.2
+  * Add install instruction in CMakeLists.txt
+  * Add clang-format file and format all files
+
+qps-1.10.16 / 2015-06-14
+=====================
+
+  * Ported to Qt5 and fixed all warnings
+  * Added .gitignore
+  * remove
+  * fix
+  * fix
+  * fix
+  * hashstr length  up to 128*8
+  * added
+  * fixed
+  * added source files
+  * commit

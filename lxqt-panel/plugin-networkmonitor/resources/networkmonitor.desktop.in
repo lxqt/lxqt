@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Network monitor
+Comment=Displays network status and activity.
+#Icon=network-transmit-receive
+Icon=network-wired
+

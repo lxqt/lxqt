@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Leave
+Comment=Leave Session
+Icon=system-shutdown
+Type=Directory
+
+Comment[ru]=Завершить сеанс
+Name[ru]=Выйти
+
+Comment[ru_RU]=Завершить сеанс
+Name[ru_RU]=Выйти

@@ -1,0 +1,254 @@
+# Bengali translation of gnome-menus
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Mahay Alam Khan <makl10n@yahoo.com>, 2005.
+# Samia Niamatullah <mailsamia2001@yahoo.com>, 2005.
+# Israt Jahan <israt@ankur.org.bd>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: bn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2010-02-01 22:55+0600\n"
+"Last-Translator: Israt Jahan <israt@ankur.org.bd>\n"
+"Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
+"Language: bn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "শব্দ ও ভিডিও"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "মাল্টিমিডিয়া মেনু"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "প্রোগ্রামিং"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "সফটওয়্যার ডেভেলপমেন্টের টুল"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "শিক্ষা"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "খেলা"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "খেলা ও বিনোদন"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "গ্রাফিক্স"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "গ্রাফিক্স অ্যাপ্লিকেশন"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "হার্ডওয়্যার"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "কিছু হার্ডওয়্যার ডিভাইসের জন্য সেটিং"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "ইন্টারনেট এবং নেটওয়ার্ক"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "নেটওয়ার্ক সম্পর্কিত সেটিং"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "অবয়ম এবং উপস্থাপনা"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "ডেক্সটপ অবয়ব এবং আচরণ নিয়ন্ত্রণকারী সেটিং"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "অ্যাপলিকেশন"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "সিস্টেম"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "ব্যক্তিগত পছন্দতালিকা এবং অ্যাডমিনস্ট্রেশন সেটিং"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "ইন্টারনেট"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "ইন্টারনেট ব্যবহারের প্রোগ্রাম, যেমন ওয়েব বা ইমেইল"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "অফিস"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "অফিস অ্যাপলিকেশন"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "অন্যান্য"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "অ্যাপ্লিকেশন যেগুলো অন্য কোন শ্রেণীভূক্ত নয়"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "ব্যক্তিগত"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "ব্যক্তিগত সেটিং"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "পছন্দতালিকা"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "ব্যক্তিগত পছন্দতালিকা"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "অ্যাডমিনস্ট্রেশন"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "সিস্টেমব্যাপী বৈশিষ্ট্যাবলী পরিবর্তন করা হবে (সব ব্যবহারকারীর জন্য প্রযোজ্য)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "সিস্টেম সেটিং"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "সিস্টেম টুল"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "সিস্টেম কনফিগারেশন এবং মনিটরিং"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "সার্বজনীন প্রবেশাধিকার"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "সার্বজনীন প্রবেশাধিকার সেটিং"
+
+# আনুসাঙ্গিক - mak
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "আনুসাঙ্গিক"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "ডেস্কটপের আনুসাঙ্গিক অ্যাপ্লিকেশন"
+
+# Easy to access by physically handicapped persons. Translation should be done regarding this fact. - mak
+#~ msgid "Accessibility"
+#~ msgstr "অভিগম্যতা"
+
+#~ msgid "Desktop"
+#~ msgstr "ডেস্কটপ"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "অভিগম্যতা সম্পর্কীয় পছন্দতালিকা"
+
+#~ msgid "Menu Editor"
+#~ msgstr "মেনু সম্পাদক"
+
+#~ msgid "Edit Menus"
+#~ msgstr "মেনু সম্পাদন"
+
+# the (_)underscore can be used with the English "A", but it's not possible to use with bangla অ্যা cause user canot press the Alt+অ্যা simultaneously. - mak
+#~ msgid "_Applications:"
+#~ msgstr "অ্যাপ্লিকেশন (_অ):"
+
+#~ msgid "_Defaults"
+#~ msgstr "ডিফল্ট (_ড)"
+
+#~ msgid "_Menus:"
+#~ msgstr "মেনু (_ম):"
+
+#~ msgid "Name"
+#~ msgstr "নাম"
+
+#~ msgid "Show"
+#~ msgstr "প্রদর্শন করো"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "home ডিরেক্টরি পাওয়া যায়নি: /etc/passwd তে সেট করা নেই এবং পরিবেশে $HOME "
+#~ "এর কোন মান নেই"
+
+#~ msgid "Menu file"
+#~ msgstr "মেনু ফাইল"
+
+# sam: variable?
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "মেনু পরিবর্তনের মনিটর"
+
+# <Exclude> = variable?
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "বাদ দেয়া <Exclude> অংশগুলো অন্তর্ভুক্ত করো"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "অবৈধ ডেস্কটপ ফাইল আইডি"
+
+# ত্রুটিযুক্ত ফাইলের নাম
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Invalid Filename]"
+
+#  <বাদ দেওয়া হয়েছে>
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== মেনু পরিবর্তিত হয়েছে, পুনরায় লোড করা হচ্ছে ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "মেনু ট্রী খালি"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "‌- GNOME দ্বারা ডেস্কটপ মেনু বৈশিষ্ট্যাবলীর প্রয়োগ পরীক্ষা করো"

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+
+Name=Cpu monitor
+Comment=Displays the current CPU load.
+
+
+
+
+# Translations
+Comment[fi]=Suorittimen kuormituksen seuranta
+Name[fi]=Suorittimen kuormitus

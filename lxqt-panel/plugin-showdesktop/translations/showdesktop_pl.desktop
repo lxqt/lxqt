@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Show desktop
+Comment=Minimize all windows and show the desktop
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[pl]=Minimalizuje wszystkie okna i pokazuje pulpit
+Name[pl]=Pokaż pulpit

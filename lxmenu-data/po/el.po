@@ -1,0 +1,259 @@
+# Translation of gnome-menus to Greek
+# This file is distributed under the same license as the gnome-menus package.
+# Copyright (C) Free Software Foundation.
+#
+# Simos Xenitellis <simos@gnome.org>, 2004.
+# Nikos Charonitakis <charosn@her.forthnet.gr>, 2005.
+# Kostas Papadimas <pkst@gnome.org>, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: el\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2008-03-04 00:31+0200\n"
+"Last-Translator: nikosCharonitakis <nikosx@gmail.com>\n"
+"Language-Team: Greek <team@gnome.gr>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Ήχος & βίντεο"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Μενού πολυμέσων"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Προγραμματισμός"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Εργαλεία για ανάπτυξη λογισμικού"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Εκπαίδευση"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Παιχνίδια"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Παιχνίδια και διασκέδαση"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Γραφικά"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Εφαρμογές γραφικών"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Υλικό"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Ρυθμίσεις για διάφορες συσκευές υλικού"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Διαδίκτυο και δίκτυο"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Ρυθμίσεις για το δίκτυο"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Μορφή εμφάνισης"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Ρυθμίσεις για την εμφάνιση και συμπεριφορά της επιφάνειας εργασίας"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Εφαρμογές"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Σύστημα"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Προσωπικές προτιμήσεις και ρυθμίσεις διαχείρισης"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Διαδίκτυο"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr ""
+"Προγράμματα πρόσβασης στο Διαδίκτυο όπως φυλλομετρητής και ηλεκ. αλληλογραφία"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Γραφείο"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Εφαρμογές γραφείου"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Άλλα"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Εφαρμογές που δεν ταιριάζουν στις άλλες κατηγορίες"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Προσωπικά"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Προσωπικές ρυθμίσεις"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Προτιμήσεις"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Προσωπικές προτιμήσεις"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Διαχείριση συστήματος"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Τροποποίηση ρυθμίσεων συστήματος (επηρεάζει όλους τους χρήστες)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Ρυθμίσεις συστήματος"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Εργαλεία συστήματος"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Ρύθμιση και έλεγχος συστήματος"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Γενική πρόσβαση"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Ρυθμίσεις γενικής πρόσβασης"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Βοηθήματα"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Βοηθήματα επιφάνειας εργασίας"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Προτιμήσεις σχετικά με γενική πρόσβαση"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Προσωπικές προτιμήσεις και ρυθμίσεις"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Επεξεργαστής μενού"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Επεξεργασία μενού"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Εφαρμογές:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Προεπιλεγμένα"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Μενού:"
+
+#~ msgid "Name"
+#~ msgstr "Όνομα"
+
+#~ msgid "Show"
+#~ msgstr "Εμφάνιση"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Αδυναμία εύρεσης αρχικού καταλόγου: δεν έχει ορισθεί τιμή στο /etc/passwd "
+#~ "και στο$HOME στο περιβάλλον"
+
+#~ msgid "Menu file"
+#~ msgstr "Αρχείο μενού"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Παρακολούθηση για αλλαγές στο μενού"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Να συμπεριλαμβάνονται <αποκλεισμένες> καταχωρίσεις"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Να συμπεριλαμβάνονται <αποκλεισμένες> καταχωρίσεις"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Μη έγκυρο αναγνωριστικό αρχείου επιφάνειας εργασίας"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Μη έγκυρο όνομα αρχείου]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <αποκλεισμένα>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Το μενού άλλαξε, επαναφόρτωση ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Το δέντρο μενού είναι κενό"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr ""
+#~ "- δοκιμή της εφαρμογής από το GNOME των οδηγιών μενού επιφάνειας εργασίας"
+
+#~ msgid "Accessibility"
+#~ msgstr "Προσιτότητα"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Ρυθμίσεις Προσιτότητας"
+
+#~ msgid "Desktop"
+#~ msgstr "Επιφάνεια Εργασίας"

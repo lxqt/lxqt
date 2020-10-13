@@ -1,0 +1,181 @@
+# Xhosa translation of gnome-menus
+# Copyright (C) 2005 Canonical Ltd.
+# This file is distributed under the same license as the gnome-menus package.
+# Translation by Canonical Ltd <translations@canonical.com> with thanks to
+# Translation World CC in South Africa, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2005-03-30 21:58+0200\n"
+"Last-Translator: Canonical Ltd <translations@canonical.com>\n"
+"Language-Team: Xhosa <xh-translate@ubuntu.com>\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Isandi neVidiyo"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Imenu Yezixhobo eziphathekayo zokugcina ulwazi ngokuphinda-phindeneyo"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Ukwenziwa kweenkqubo"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Izixhobo zokuphuhlisa ubucukubhede bekhompyutha"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+#, fuzzy
+msgid "Education"
+msgstr "Ukufunda ngokuzonwabisa"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Imidlalo"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Imidlalo nokuzihlekisa"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Iimo zezibonakalisi-nkqubo"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Iinkqubo ngeemo zezibonakalisi-nkqubo"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr ""
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr ""
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr ""
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr ""
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr ""
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr ""
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Iinkqubo"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+#, fuzzy
+msgid "System"
+msgstr "Izixhobo Zeenkqubo"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+#, fuzzy
+msgid "Personal preferences and administration settings"
+msgstr "Uluhlu lwezinto ezikhethwayo zaloo mntu uthile kunye nemimiselo"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "I-intanethi"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Iinkqubo zokufikelela kwi-Intanethi ezinjenge-web ne-imeyile"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "i-Ofisi"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Iinkqubo ze-Ofisi"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Ezinye"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Iinkqubo ezingangeniyo kwezinye iindidi"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr ""
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+#, fuzzy
+msgid "Personal settings"
+msgstr "Uluhlu lwezinto ezikhethwayo zaloo mntu uthile kunye nemimiselo"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Uluhlu lwezinto ezikhethwayo"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+#, fuzzy
+msgid "Personal preferences"
+msgstr "Uluhlu lwezinto ezikhethwayo zaloo mntu uthile kunye nemimiselo"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Ulawulo"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+#, fuzzy
+msgid "Change system-wide settings (affects all users)"
+msgstr ""
+"Tshintsha imimiselo yenkqubo ngokubanzi (ichukumisa bonke abasebenzisi)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr ""
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Izixhobo Zeenkqubo"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Umiselo-nkqubo lwendlela emisiweyo kunye nokuhlola"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr ""
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+#, fuzzy
+msgid "Universal Access Settings"
+msgstr "Imimiselo Yokufikeleleka"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Izinto ezongezelelwayo"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Izinto ezongezelelwayo ze-Desktop"
+
+#~ msgid "Accessibility"
+#~ msgstr "Ukufikeleleka"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "Uluhlu lwezinto ezikhethwayo olunxulumene nofikeleleko"

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Show desktop
+Comment=Minimize all windows and show the desktop
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[zh_CN]=最小化所有窗口并显示桌面
+Name[zh_CN]=显示桌面

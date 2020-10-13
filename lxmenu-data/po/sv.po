@@ -1,0 +1,308 @@
+# Swedish messages for gnome-menus.
+# Copyright (C) 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+# Daniel Nylander <po@danielnylander.se>, 2007.
+# Christian Rose <menthos@menthos.com>, 2004, 2005, 2006.
+#
+# $Id: sv.po,v 1.7 2006/01/08 20:42:48 menthos Exp $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-06-19 22:29+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Ljud och video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multimediameny"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programmering"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Verktyg för programutveckling"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Utbildning"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Spel"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Spel och underhållning"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafik"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafikprogram"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Hårdvara"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Inställningar för ett flertal hårdvaruenheter"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet och nätverk"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Nätverksrelaterade inställningar"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Utseende och beteende"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Inställningar som kontrollerar skrivbordets utseende och beteende"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Program"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "System"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Personliga inställningar och administrationsinställningar"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Program för Internetåtkomst som till exempel webben och e-post"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Kontor"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Kontorsprogram"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Övriga"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Program som inte passar in i någon annan kategori"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Personligt"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Personliga inställningar"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Personliga inställningar"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administration"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Ändra systembreda inställningar (påverkar alla användare)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Systeminställningar"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Systemverktyg"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Systemkonfiguration och systemövervakning"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Allmän åtkomst"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Inställningar för allmän åtkomst"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Tillbehör"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Skrivbordstillbehör"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Inställningar relaterade till allmän åtkomst"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Personliga inställningar"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Menyredigerare"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Redigera menyer"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Program"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Standardalternativ"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menyer:"
+
+#~ msgid "Name"
+#~ msgstr "Namn"
+
+#~ msgid "Show"
+#~ msgstr "Visa"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Kan inte hitta hemkatalogen: inte angiven i /etc/passwd och inget värde "
+#~ "för $HOME i miljön"
+
+#~ msgid "Menu file"
+#~ msgstr "Menyfil"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENYFIL"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Övervaka menyändringar"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Inkludera exkluderade poster"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Inkludera poster med NoDisplay=true"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Ogiltigt id på desktop-fil"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Ogiltigt filnamn]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <exkluderad>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menyn ändrad, läser om ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Menyträdet är tomt"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr ""
+#~ "- testa GNOME:s implementation av specifikationen för skrivbordsmenyer"
+
+#~ msgid "Accessibility"
+#~ msgstr "Tillgänglighet"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Tillgänglighetsinställningar"
+
+#~ msgid "Desktop"
+#~ msgstr "Skrivbord"
+
+#~ msgid "Personal Preferences"
+#~ msgstr "Personliga inställningar"
+
+#~ msgid "Applications:"
+#~ msgstr "Program"
+
+#~ msgid "Invalid Filename"
+#~ msgstr "Ogiltigt filnamn"
+
+#~ msgid "<excluded>"
+#~ msgstr "<exkluderad>"
+
+#~ msgid "excluded"
+#~ msgstr "exkluderad"
+
+#~ msgid "Excluded"
+#~ msgstr "Exkluderad"
+
+#~ msgid "==== Menu changed, reloading ===="
+#~ msgstr "==== Menyn ändrad, läser om ===="
+
+#~ msgid "Menu changed, reloading"
+#~ msgstr "Menyn ändrad, läser om"
+
+#~ msgid "test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "testa GNOMEs implementation av specifikationen för skrivbordsmenyer"
+
+#~ msgid "Test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "Testa GNOMEs implementation av specifikationen för skrivbordsmenyer"
+
+#~ msgid "Desktop Accessories"
+#~ msgstr "Skrivbordstillbehör"
+
+#~ msgid "Software development"
+#~ msgstr "Programutveckling"
+
+#~ msgid "Software Development"
+#~ msgstr "Programutveckling"
+
+#~ msgid "Games and Amusements"
+#~ msgstr "Spel och underhållning"
+
+#~ msgid "Graphics Applications"
+#~ msgstr "Grafikprogram"
+
+#~ msgid "Multimedia"
+#~ msgstr "Multimedia"
+
+#~ msgid "Office applications"
+#~ msgstr "Kontorsprogram"

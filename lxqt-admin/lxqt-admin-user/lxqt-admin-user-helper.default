@@ -1,0 +1,13 @@
+#!/bin/sh
+case "$1" in
+# we only allow executing these commands
+useradd|usermod|userdel|groupadd|groupmod|groupdel|passwd|gpasswd)
+    # TODO: platforms using different commands can add wrapper scripts here.
+    export LC_ALL=C
+    exec "$@"
+    ;;
+*)
+    echo "Command '$1' is not allowed!"
+    exit 1
+    ;;
+esac

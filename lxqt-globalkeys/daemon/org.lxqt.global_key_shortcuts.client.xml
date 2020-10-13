@@ -1,0 +1,11 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+	<interface name="org.lxqt.global_key_shortcuts.client">
+		<method name="activated"/>
+		<method name="shortcutChanged">
+			<arg name="oldShortcut" type="s" direction="in"/>
+			<arg name="newShortcut" type="s" direction="in"/>
+		</method>
+	</interface>
+</node>

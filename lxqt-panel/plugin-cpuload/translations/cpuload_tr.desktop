@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+
+Name=Cpu monitor
+Comment=Displays the current CPU load.
+
+
+
+
+# Translations
+Comment[tr]=İşlemci Yükü izleyici
+Name[tr]=İşlemci Yükü

@@ -1,0 +1,261 @@
+# Copyright (C) 2001-2005 Free Software Foundation, Inc.
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Aviary.pl
+# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+# gnomepl@aviary.pl
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2017-05-25 07:13+0000\n"
+"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
+"Language-Team: Aviary.pl <gnomepl@aviary.pl>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.8\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-POOTLE-MTIME: 1495696416.635184\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Dźwięk i wideo"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Menu multimediów"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programowanie"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Narzędzia do tworzenia oprogramowania"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Nauka"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Gry"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Gry i rozrywka"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafika"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Programy graficzne"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Sprzęt"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Ustawienia dla wielu urządzeń"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet i sieć"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Ustawienia związane z siecią"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Wygląd i zachowanie"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Ustawienia wyglądu i działania środowiska"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Programy"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "System"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Preferencje osobiste i ustawienia administracyjne"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programy umożliwiające dostęp do Internetu, np. do stron WWW czy e-maila"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Biuro"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Programy biurowe"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Inne"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Programy, które nie pasują do innych kategorii"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Osobiste"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Ustawienia osobiste"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Preferencje"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Preferencje osobiste"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administracja"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Zmiana ustawień systemowych (wpływa na wszystkich użytkowników)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Ustawienia systemowe"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Narzędzia systemowe"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Monitorowanie i konfiguracja systemu"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Dostęp uniwersalny"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Ustawienia uniwersalnego dostępu"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Akcesoria"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Akcesoria pulpitu"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Edytor menu"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Modyfikuje menu"
+
+#~ msgid "_Applications:"
+#~ msgstr "Progr_amy:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Domyślne"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menu:"
+
+#~ msgid "Name"
+#~ msgstr "Nazwa"
+
+#~ msgid "Show"
+#~ msgstr "Wyświetlanie"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Nie można odnaleźć katalogu domowego: brak ustawień w /etc/passwd i "
+#~ "wartości zmiennej środowiskowej $HOME"
+
+#~ msgid "Menu file"
+#~ msgstr "Plik menu"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "PLIK_MENU"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Śledzenie zmian menu"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Włącznie z <wykluczonymi> elementami"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Włącznie z niewyświetlanymi elementami"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Niepoprawny ID pliku pulpitu"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Niepoprawna nazwa pliku]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <wykluczone>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu uległo zmianie, ponowne wczytywanie ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Drzewo menu jest puste"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- testuje specyfikację menu pulpitu zaimplementowaną w GNOME"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Preferencje związane z uniwersalną dostępnością"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Ustawienia i osobiste preferencje"
+
+#~ msgid "Accessibility"
+#~ msgstr "Dostępność"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Ustawienia dostępności"
+
+#~ msgid "Desktop"
+#~ msgstr "Pulpit"

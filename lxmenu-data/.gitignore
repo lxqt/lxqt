@@ -1,0 +1,11 @@
+Makefile
+Makefile.in*
+config.*
+configure
+aclocal.m4
+install-sh
+missing
+*.directory
+LINGUAS
+POTFILES
+.intltool-merge-cache

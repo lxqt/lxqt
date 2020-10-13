@@ -1,0 +1,15 @@
+This package provides files required to build freedesktop.org 
+menu spec-compliant desktop menus for LXDE.
+
+The files are originally taken from gnome-menus, and some minor
+modifications were made.
+
+lxmenu-data package is required by lxpanel and lxlauncher.
+
+For package maintainers, please use the following configure options:
+./configure --prefix=/usr --sysconfdir=/etc
+
+Default menu file should be put into /etc/xdg/menus according to the spec.
+If you put it into /usr/etc/xdg/menus, nothing will work.
+So, please make sure that lxde-applications.menu is installed in /etc/xdg/menus.
+

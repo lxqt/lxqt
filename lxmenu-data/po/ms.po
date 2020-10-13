@@ -1,0 +1,2301 @@
+# gnome-menu Bahasa Melayu (ms)
+#
+# Hasbullah Bin Pit (sebol) <sebol@my-penguin.org>, 2004
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menu HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2009-05-24 01:19+0200\n"
+"Last-Translator: Payne Samad Loh <sploh77@yahoo.com>\n"
+"Language-Team: ms <sebol@ikhlas.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Pootle 1.1.0\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Bunyi & Video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Menu Multimedia"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Pengaturcaraan"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Alatan untuk pembangunan perisian"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Pendidikan"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Permainan"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Permainan dan hiburan"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafik"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Aplikasi Grafik"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Perkakasan"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Tetapan untuk beberapa alat-alat perkakasan"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet dan Rangkaian"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Tetapan rangkaian-berkaitan"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Lihat dan Berasa"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Tetapan pengawalan rupa desktop dan tingkah laku"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Aplikasi"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Sistem"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Tetapan kegemaran dan keutamaan peribadi"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Program untuk mengakses Internet seperti web dan emel"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Pejabat"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Aplikasi Pejabat"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Lain-lain"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Aplikasi yang tak sesuai dalam kategori lain"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Peribadi"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Tetapan peribadi"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Kegemaran"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Kegemaran peribadi"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administrasi"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Tukar tetapan seluruh sistem (melibatkan semua pengguna)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Tetapan Sistem"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Alatan Sistem"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Konfigurasi dan pemantauan sistem"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Akses sejagat"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Tetapan Akses Sejagat"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Aksesori"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Aksesori Desktop"
+
+#~ msgid "Accessibility"
+#~ msgstr "Kebolehcapaian"
+
+#~ msgid "Edutainment"
+#~ msgstr "Infodidik"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "Keutamaan berkaitan kebolahcapaian"
+
+#~ msgid "Ad_just Date & Time"
+#~ msgstr "_Betulkan Tarikh & Masa"
+
+#~ msgid "Copy _Date"
+#~ msgstr "Salin _Tarikh"
+
+#~ msgid "Copy _Time"
+#~ msgstr "Salin _Masa"
+
+#~ msgid "_About"
+#~ msgstr "_Perihal"
+
+#~ msgid "_Help"
+#~ msgstr "_Bantuan"
+
+#~ msgid "Clock"
+#~ msgstr "Jam"
+
+#~ msgid "Clock Applet Factory"
+#~ msgstr "Kilang Aplet Jam"
+
+#~ msgid "Factory for creating clock applets."
+#~ msgstr "kilang untuk mencipta aplet jam"
+
+#~ msgid "Get the current time and date"
+#~ msgstr "Dapatkan masa dan tarikh semasa"
+
+#~ msgid "%l:%M:%S %p"
+#~ msgstr "%l:%M:%S %p"
+
+#~ msgid "%l:%M %p"
+#~ msgstr "%l:%M %p"
+
+#~ msgid "%H:%M:%S"
+#~ msgstr "%H:%M:%S"
+
+#~ msgid "%H:%M"
+#~ msgstr "%H:%M"
+
+#~ msgid "%a %b %e"
+#~ msgstr "%a %e %b"
+
+#~ msgid ""
+#~ "%1$s\n"
+#~ "%2$s"
+#~ msgstr ""
+#~ "%1$s\n"
+#~ "%2$s"
+
+#~ msgid "%1$s, %2$s"
+#~ msgstr "%1$s, %2$s"
+
+#~ msgid "%A %B %d"
+#~ msgstr "%A %e %B"
+
+#~ msgid "%b %d"
+#~ msgstr "%d %b"
+
+#~ msgid "Tasks"
+#~ msgstr "Tugas"
+
+#~ msgid "All Day"
+#~ msgstr "Sepanjang Hari"
+
+#~ msgid "Appointments"
+#~ msgstr "Temujanji"
+
+#~ msgid "Calendar"
+#~ msgstr "Kalendar"
+
+#~ msgid "Computer Clock"
+#~ msgstr "Jam Komputer"
+
+#~ msgid "%I:%M:%S %p"
+#~ msgstr "%l:%M:%S %p"
+
+#~ msgid "%I:%M %p"
+#~ msgstr "%I:%M %p"
+
+#~ msgid "%A, %B %d %Y"
+#~ msgstr "%A, %d %B %Y"
+
+#~ msgid "Failed to launch time configuration tool: %s"
+#~ msgstr "Gagal mmelancarkan radas konfigurasi:%s"
+
+#~ msgid ""
+#~ "Failed to locate a program for configuring the date and time. Perhaps "
+#~ "none is installed?"
+#~ msgstr ""
+#~ "Gagal menjumpai program untuk mengkonfigurasi tarikh dan masa. Mungkin "
+#~ "tak dipasang?"
+
+#~ msgid "Custom format"
+#~ msgstr "Format Tersendiri"
+
+#~ msgid "There was an error displaying help: %s"
+#~ msgstr "Terdapat ralat memapar bantuan: %s"
+
+#~ msgid "Clock Preferences"
+#~ msgstr "Keutamaan Jam"
+
+#~ msgid "Clock _type:"
+#~ msgstr "_Jenis jam:"
+
+#~ msgid "12 hour"
+#~ msgstr "12 jam"
+
+#~ msgid "24 hour"
+#~ msgstr "24 jam"
+
+#~ msgid "UNIX time"
+#~ msgstr "Masa UNIX"
+
+#~ msgid "Custom _format:"
+#~ msgstr "_Format tersendiri:"
+
+#~ msgid "Show _seconds"
+#~ msgstr "Papar _saat"
+
+#~ msgid "Show _date"
+#~ msgstr "Papar _tarikh"
+
+#~ msgid "Use _UTC"
+#~ msgstr "Guna _UTC"
+
+#~ msgid "translator-credits"
+#~ msgstr "Hasbullah Bin Pit <sebol@ikhlas.com>, Merlimau. 2002-2004"
+
+#~ msgid "The Clock displays the current time and date"
+#~ msgstr "Jam memapar masa dan tarikh semasa"
+
+#~ msgid "24"
+#~ msgstr "24"
+
+#~ msgid "24-hour"
+#~ msgstr "24-hour"
+
+#~ msgid "Custom format of the clock"
+#~ msgstr "Format tersendiri bagi jam"
+
+#~ msgid "Hour format"
+#~ msgstr "Format Jam"
+
+#~ msgid "If true, display date in the clock, in addition to time."
+#~ msgstr "Jika benar, papar tarikh pada Jam, sebagai tambahan kepada masa."
+
+#~ msgid "If true, display seconds in time."
+#~ msgstr "Jika benar, Papar saat pada masa."
+
+#~ msgid "If true, display time in Universal Coordinated Time zone."
+#~ msgstr "Jika benar, papar masa dalam Zon Masa Koordinat Universal (UTC)"
+
+#~ msgid "If true, show date in a tooltip when the pointer is over the clock."
+#~ msgstr "Jika benar, papar tarikh pada tooltip bila tetikus di atas Jam."
+
+#~ msgid "Show date in clock"
+#~ msgstr "Papar tarikh pada jam"
+
+#~ msgid "Show date in tooltip"
+#~ msgstr "Papar tarikh di tooltip"
+
+#~ msgid "Show time with seconds"
+#~ msgstr "Papar masa bersama saat"
+
+#~ msgid ""
+#~ "The use of this key was deprecated in GNOME 2.6 in favour of the 'format' "
+#~ "key. The schema is retained for compatibility with older versions."
+#~ msgstr ""
+#~ "Kegunaan kekunci ini telah ditiadakan pada GNOME 2.6 in favour of the "
+#~ "'format' key. The schema is retained for compatibility with older "
+#~ "versions."
+
+#~ msgid ""
+#~ "This key specifies the program to run in order to configure the time."
+#~ msgstr "Kekunci menyatakan program dilaksanakan untuk mengkonfigurasi masa."
+
+#~ msgid "Use Internet time"
+#~ msgstr "Guna Masa Internet"
+
+#~ msgid "Use UNIX time"
+#~ msgstr "Guna masa UNIX"
+
+#~ msgid "Use UTC"
+#~ msgstr "Guna UTC"
+
+#~ msgid "Display a swimming fish or another animated creature"
+#~ msgstr "Papar ikan berenang atau makhluk bergerak lain"
+
+#~ msgid "Fish"
+#~ msgstr "Ikan"
+
+#~ msgid "From Whence That Stupid Fish Came"
+#~ msgstr "Daripada mana ikan bodoh itu datang"
+
+#~ msgid "Wanda Factory"
+#~ msgstr "Kilang Wanda"
+
+#~ msgid ""
+#~ "Warning:  The command appears to be something actually useful.\n"
+#~ "Since this is a useless applet, you may not want to do this.\n"
+#~ "We strongly advise you against using %s for anything\n"
+#~ "which would make the applet \"practical\" or useful."
+#~ msgstr ""
+#~ "Amaran: arahan nampaknya menjadi sesuatu yang berguna.\n"
+#~ "Oleh kerana ini adalah aplet tak berguna, anda tak perlu melakukannya.\n"
+#~ "Kami menasihatkan anda menolak penggunaan %s untuk apa-apa\n"
+#~ "yang mana menjadikan aplet \"praktikal\" atau berguna."
+
+#~ msgid "%s the Fish"
+#~ msgstr "Ikan %"
+
+#~ msgid ""
+#~ "%s has no use what-so-ever. It only takes up disk space and compilation "
+#~ "time, and if loaded it also takes up precious panel space and memory. If "
+#~ "anyone is found using it, he should be promptly sent for a psychiatric "
+#~ "evaluation."
+#~ msgstr ""
+#~ "%s ini tiada gunanya. Ianya hanya mengambil ruang cakera dan masa "
+#~ "pengkompilan, dan jika ianya dimuatkan ia juga mengambil ruang berharga "
+#~ "panel dan memori Jika sesiapa didapati menggunakan aplet ini, dia patut "
+#~ "diperiksa oleh pakar sakit jiwa."
+
+#~ msgid "(with minor help from George)"
+#~ msgstr "(dengan sedikit bantuan George)"
+
+#~ msgid "%s the Fish, a contemporary oracle"
+#~ msgstr "Ikan GNOME %s , peramal kontemporari"
+
+#~ msgid "Unable to locate the command to execute"
+#~ msgstr "Tak menjumpai arahan untuk dilaksanakan"
+
+#~ msgid "%s the Fish Says:"
+#~ msgstr "%s Ikan GNOME Berkata:"
+
+#~ msgid ""
+#~ "Unable to read output from command\n"
+#~ "\n"
+#~ "Details: %s"
+#~ msgstr ""
+#~ "Tak dapat membaca output drpd arahan\n"
+#~ "\n"
+#~ "Perincian: %s"
+
+#~ msgid ""
+#~ "Unable to execute '%s'\n"
+#~ "\n"
+#~ "Details: %s"
+#~ msgstr ""
+#~ "Tak dapat melaksanakan '%s'\n"
+#~ "\n"
+#~ "Perincian: %s"
+
+#~ msgid ""
+#~ "Unable to read from '%s'\n"
+#~ "\n"
+#~ "Details: %s"
+#~ msgstr ""
+#~ "Tak dapat membaca daripada '%s'\n"
+#~ "\n"
+#~ "Perincian: %s"
+
+#~ msgid ""
+#~ "The water needs changing!\n"
+#~ "(Look at today's date)"
+#~ msgstr ""
+#~ "Perairan memerlukan reformasi!\n"
+#~ "(lihat tarikh hari ini)"
+
+#~ msgid "%s the Fish, the fortune teller"
+#~ msgstr "Ikan  %s, penilik nasib"
+
+#~ msgid "    "
+#~ msgstr "    "
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "<b>Animation</b>"
+#~ msgstr "<b>Animasi</b>"
+
+#~ msgid "<b>General</b>"
+#~ msgstr "<b>Umum</b>"
+
+#~ msgid "Browse"
+#~ msgstr "Lungsur"
+
+#~ msgid "Co_mmand to run when clicked:"
+#~ msgstr "_Arahan dilaksanakan bila diklik:"
+
+#~ msgid "Fish Preferences"
+#~ msgstr "Keutamaan Ikan"
+
+#~ msgid "_File:"
+#~ msgstr "_Fail:"
+
+#~ msgid "_Name of fish:"
+#~ msgstr "_Nama ikan:"
+
+#~ msgid "_Pause per frame:"
+#~ msgstr "_Kaku per kerangka:"
+
+#~ msgid "_Rotate on vertical panels"
+#~ msgstr "_Kilas pada panel menegak"
+
+#~ msgid "_Total frames in animation:"
+#~ msgstr "_Jumlah kerangka pada animasi:"
+
+#~ msgid "seconds"
+#~ msgstr "saat"
+
+#~ msgid ""
+#~ "A fish without a name is a pretty dull fish. Bring your fish to life by "
+#~ "naming him."
+#~ msgstr ""
+#~ "Ikan tanpa nama adalah ikan yg membosankan. Berikan erti kehidupan "
+#~ "padanya dengan menamakanya."
+
+#~ msgid "Command to execute on click"
+#~ msgstr "Arahan untuk dilaksanakan bila diklik"
+
+#~ msgid "Frames in fish's animation"
+#~ msgstr "Kerangka pada animasi ikan"
+
+#~ msgid ""
+#~ "If true, the fish's animation will be displayed rotated on vertical "
+#~ "panels."
+#~ msgstr "Jika benar, animasi ikan akan dipaparkan dikilas pada panel menegak"
+
+#~ msgid "Pause per frame"
+#~ msgstr "Hentian per kerangka"
+
+#~ msgid "Rotate on vertical panels"
+#~ msgstr "Kilas pada panel menegak"
+
+#~ msgid "The fish's animation pixmap"
+#~ msgstr "Pixmap animasi ikan"
+
+#~ msgid "The fish's name"
+#~ msgstr "Nama ikan"
+
+#~ msgid ""
+#~ "This key specifies the command that will be tried to execute when the "
+#~ "fish is clicked."
+#~ msgstr ""
+#~ "Kekunci ini menyatakan arahan yang akan cuba dilaksanakan bila ikan di "
+#~ "klik."
+
+#~ msgid ""
+#~ "This key specifies the filename of the pixmap which will be used for the "
+#~ "animation displayed in the fish applet relative to the pixmap directory."
+#~ msgstr ""
+#~ "Kekunci ini menyatakan namafail bagi pixmap dimana akan digunakan bagi "
+#~ "animasi yg dipaparkan pada plat ikan relatif ke direktori pixmap."
+
+#~ msgid ""
+#~ "This key specifies the number of frames that will be displayed in the "
+#~ "fish's animation."
+#~ msgstr ""
+#~ "Kekunci ini menyatakan bilangan kerangka yang akan dipaparkan pada "
+#~ "animasi ikan."
+
+#~ msgid ""
+#~ "This key specifies the number of seconds each frame will be displayed."
+#~ msgstr ""
+#~ "Kekunci ini menyatakan bilangan saat setiap kerangkan akan dipaparkan."
+
+#~ msgid "Area where notification icons appear"
+#~ msgstr "Kawasan di mana ikon pemakluman muncul"
+
+#~ msgid "Notification Area"
+#~ msgstr "Kawasan Pemakluman"
+
+#~ msgid "Notification Area Factory"
+#~ msgstr "Kilang Kawasan Pemakluman"
+
+#~ msgid "The orientation of the tray."
+#~ msgstr "Orientasi bagi dulang."
+
+#~ msgid "Panel Notification Area"
+#~ msgstr "Kawasan Pemakluman Panel"
+
+#~ msgid "Factory for the window navigation related applets"
+#~ msgstr "kilang untuk navigasi tetingkap berkaitan aplet"
+
+#~ msgid "Hide application windows and show the desktop"
+#~ msgstr "Sembunyi tetingkap aplikasi dan papar desktop"
+
+#~ msgid "Show Desktop"
+#~ msgstr "Papar Desktop"
+
+#~ msgid "Switch between open windows"
+#~ msgstr "Tukar antara tetingkap dibuka"
+
+#~ msgid "Switch between workspaces"
+#~ msgstr "Tukar antara ruangkerja"
+
+#~ msgid "Window List"
+#~ msgstr "Senarai Tetingkap"
+
+#~ msgid "Window Navigation Applet Factory"
+#~ msgstr "Kilang Aplet Navigasi Tetingkap"
+
+#~ msgid "Window Selector"
+#~ msgstr "Pemilih Tetingkap"
+
+#~ msgid "Workspace Switcher"
+#~ msgstr "Penukar RuangKerja"
+
+#~ msgid "Click here to restore hidden windows."
+#~ msgstr "Klik sini untuk mengembalikan tetingkap tersembunyi."
+
+#~ msgid "Click here to hide all windows and show the desktop."
+#~ msgstr "Klik sini untuk sembunyi semua tetingkap dan papar desktop."
+
+#~ msgid "Failed to load %s: %s\n"
+#~ msgstr "Gagal memuatkan %s: %s\n"
+
+#~ msgid "File not found"
+#~ msgstr "Fail tidak dijumpai"
+
+#~ msgid "Show Desktop Button"
+#~ msgstr "Papar Butang Desktop"
+
+#~ msgid "This button lets you hide all windows and show the desktop."
+#~ msgstr ""
+#~ "Butang ini membolehkan anda sembunyi semua tetingkap dan papar desktop."
+
+#~ msgid ""
+#~ "Your window manager does not support the show desktop button, or you are "
+#~ "not running a window manager."
+#~ msgstr ""
+#~ "Pengurus tetingkap anda tak menyokong butang papar desktop, atau anda tak "
+#~ "melaksanakan pengurus tetingkap."
+
+#~ msgid "Workspace List"
+#~ msgstr "Senarai RuangKerja"
+
+#~ msgid ""
+#~ "The Window List shows a list of all windows and lets you browse them."
+#~ msgstr ""
+#~ "Senarai Tetingkap memaparkan senarai bagi semua tetingkap dan membolehkan "
+#~ "anda melihatnya."
+
+#~ msgid "<b>Restoring Minimized Windows</b>"
+#~ msgstr "<b>Memulih Tetingkap diminiatur</b>"
+
+#~ msgid "<b>Window Grouping</b>"
+#~ msgstr "<b>Pengumpulan tetingkap</b>"
+
+#~ msgid "<b>Window List Content</b>"
+#~ msgstr "<b>Kandungan Senarai Tetingkap</b>"
+
+#~ msgid "<b>Window List Size</b>"
+#~ msgstr "<b>Saiz Senarai Tetingkap</b>"
+
+#~ msgid "Behavior"
+#~ msgstr "Kelakuan"
+
+#~ msgid "Group windows when _space is limited"
+#~ msgstr "Kumpulkan tetingkap bila _ruang terhad"
+
+#~ msgid "M_inimum size:"
+#~ msgstr "Saiz m_inimum:"
+
+#~ msgid "Ma_ximum size:"
+#~ msgstr "Saiz ma_ksimum:"
+
+#~ msgid "Restore to current _workspace"
+#~ msgstr "Pulihkan ke _ruangkerja semasa"
+
+#~ msgid "Restore to na_tive workspace"
+#~ msgstr "Pulihkanke ruangkerja na_tif"
+
+#~ msgid "Sh_ow windows from current workspace"
+#~ msgstr "_Papar tetingkap dari ruangkerja semasa"
+
+#~ msgid "Show windows from a_ll workspaces"
+#~ msgstr "Papar tetingkap dari _semua ruangkerja"
+
+#~ msgid "Size"
+#~ msgstr "Saiz"
+
+#~ msgid "Window List Preferences"
+#~ msgstr "Keutamaan Senarai Tetingkap"
+
+#~ msgid "_Always group windows"
+#~ msgstr "Se_ntiasa kumpul tetingkap"
+
+#~ msgid "_Never group windows"
+#~ msgstr "_Jangan kumpul tetingkap"
+
+#~ msgid "pixels"
+#~ msgstr "piksel"
+
+#~ msgid ""
+#~ "Decides when to group windows from the same application on the window "
+#~ "list. Possible values are \"never\", \"auto\" and \"always\"."
+#~ msgstr ""
+#~ "Menentukan bila mengumpulkan tetingkap dari aplikasi sama pada senarai "
+#~ "tetingkap. Nilai yang sah adalah \"tidak sekali\", \"auto\" dan \"sentiasa"
+#~ "\"."
+
+#~ msgid ""
+#~ "If true, the window list will show windows from all workspaces. Otherwise "
+#~ "it will only display windows from the current workspace."
+#~ msgstr ""
+#~ "Jika ia benar, senarai tetingkap akan memapar tetingkap dari semua "
+#~ "ruangkerja. Sebaliknya ia akan memapar tetingkap dari ruangkerja semasa ."
+
+#~ msgid ""
+#~ "If true, then when unminimizing a window, move it to the current "
+#~ "workspace. Otherwise, switch to the workspace of the window."
+#~ msgstr ""
+#~ "Jika benar, bila nyahminimum tetingkap, membawanya ke ruangkerja semasa. "
+#~ "Sebaliknya, bertukar ke ruangkerja bagi tetingkap."
+
+#~ msgid "Maximum window list size"
+#~ msgstr "Saiz maksimum senarai tetingkap"
+
+#~ msgid "Minimum window list size"
+#~ msgstr "Saiz minimum senarai tetingkap"
+
+#~ msgid "Move windows to current workspace when unminimized"
+#~ msgstr "Pindahkan tetingkap ke ruangkerja semasa bila nyahminima"
+
+#~ msgid "Show windows from all workspaces"
+#~ msgstr "Papar tetingkap dari semua ruangkerja"
+
+#~ msgid ""
+#~ "This key specifies the maximum width that the window list requests. The "
+#~ "maximum width setting is useful to limit the size of the window list in "
+#~ "large panels, where the window list could fill the entire space available."
+#~ msgstr ""
+#~ "Nilai ini adalah nilai lebar maksimum yang senarai tetingkap akan pinta.  "
+#~ "Tetapan lebar maksimum ini berguna untuk menghadkan saiz  senarai "
+#~ "tetingkap pada panel besar, dimana senarai tetingkap boleh memenuhkan "
+#~ "keseluruhan ruang yang ada."
+
+#~ msgid "This key specifies the minimum width that the window list requests."
+#~ msgstr ""
+#~ "Kekunci ini menyatakan saiz minimum  yang senarai tetingkap akan pinta."
+
+#~ msgid "When to group windows"
+#~ msgstr "Bila mengumpul tetingkap"
+
+#~ msgid "Workspace Selector"
+#~ msgstr "Pemilih RuangKerja"
+
+#~ msgid ""
+#~ "The Window Selector shows a list of all windows and lets you browse them."
+#~ msgstr ""
+#~ "Pemilih Tetingkap memaparkan senarai semua tetingkap dan membolehkan anda "
+#~ "melihatnya."
+
+#~ msgid "Unknown Window"
+#~ msgstr "Tetingkap tak dikenali"
+
+#~ msgid "No Windows Open"
+#~ msgstr "Tiada Tetingkap Dibuka"
+
+#~ msgid "Tool to switch between windows"
+#~ msgstr "Alat unruk beralih dinatara tetingkap"
+
+#~ msgid "rows"
+#~ msgstr "baris"
+
+#~ msgid "columns"
+#~ msgstr "kolum"
+
+#~ msgid "Error loading num_rows value for Workspace Switcher: %s\n"
+#~ msgstr "Ralat memuatkan nilai num_rows bagi Penukar Ruangkerja: %s\n"
+
+#~ msgid ""
+#~ "Error loading display_workspace_names value for Workspace Switcher: %s\n"
+#~ msgstr ""
+#~ "Ralat memuatkan nilai display_workspace_names bagi Penukar Ruangkerja: "
+#~ "%s\n"
+
+#~ msgid ""
+#~ "Error loading display_all_workspaces value for Workspace Switcher: %s\n"
+#~ msgstr ""
+#~ "Ralat memuatkan nilai display_all_workspaces bagi Penukar Ruangkerja: %s\n"
+
+#~ msgid ""
+#~ "The Workspace Switcher shows you a small version of your workspaces that "
+#~ "lets you manage your windows."
+#~ msgstr ""
+#~ "Penukar RuangKerja memaparkan anda versi kecil ruangkerja anda yang "
+#~ "membolehkan anda mengurus tetingkap."
+
+#~ msgid "<b>Switcher</b>"
+#~ msgstr "<b>Penukar</b>"
+
+#~ msgid "<b>Workspaces</b>"
+#~ msgstr "<b>RuangKerja</b>"
+
+#~ msgid "Number of _workspaces:"
+#~ msgstr "Bilangan antara _ruangkerja:"
+
+#~ msgid "Show _all workspaces in:"
+#~ msgstr "Papar _semua ruangkerja pada:"
+
+#~ msgid "Show _only the current workspace"
+#~ msgstr "Papar _hanya ruangkerja semasa"
+
+#~ msgid "Show workspace _names in switcher"
+#~ msgstr "Papar _nama ruangkerja pada penukar"
+
+#~ msgid "Workspace Names"
+#~ msgstr "Nama RuangKerja"
+
+#~ msgid "Workspace Switcher Preferences"
+#~ msgstr "Keutamaan Penukar RuangKerja"
+
+#~ msgid "Workspace na_mes:"
+#~ msgstr "_Nama RuangKerja"
+
+#~ msgid "Display all workspaces"
+#~ msgstr "Papar semua ruangkerja"
+
+#~ msgid "Display workspace names"
+#~ msgstr "Papar nama ruangkerja"
+
+#~ msgid ""
+#~ "If true, the workspace switcher will show all workspaces. Otherwise it "
+#~ "will only show the current workspace."
+#~ msgstr ""
+#~ "Jika ia benar, penukar ruangkerja akan memapar semua ruangkerja. "
+#~ "Sebaliknya ia akan hanya memapar ruangkerja semasa."
+
+#~ msgid ""
+#~ "If true, the workspaces in the workspace switcher will display the names "
+#~ "of the workspaces. Otherwise they will display the windows on the "
+#~ "workspace."
+#~ msgstr ""
+#~ "Jika ia benar, ruangkerja pada penukar ruangkerja akan memaparkan nama "
+#~ "bagi ruangkerja. Sebaliknya akan memapar tetingkap pada ruangkerja"
+
+#~ msgid "Rows in workspace switcher"
+#~ msgstr "Baris pada penukar ruangkerja"
+
+#~ msgid ""
+#~ "This key specifies how many rows (for horizontal layout) or columns (for "
+#~ "vertical layout) the workspace switcher shows the workspaces in. This key "
+#~ "is only relevant if the display_all_workspaces key is true."
+#~ msgstr ""
+#~ "Kekunci ini menyatakan berapa banyak baris (bagi susunatur mengufuk) atau "
+#~ "kolum (bagi susunatur menegak) penukar ruangkerja yang mepaparkan ruang "
+#~ "kerja di dalamnya. Kekunci ini releven jika kekunci "
+#~ "display_all_workspaces adalah benar."
+
+#~ msgid "GNOME Panel Shell"
+#~ msgstr "Shell Utama GNOME"
+
+#~ msgid "_Lock"
+#~ msgstr "_Kunci"
+
+#~ msgid "_Move"
+#~ msgstr "_Pindah"
+
+#~ msgid "_Remove From Panel"
+#~ msgstr "_Buang Daripada Panel"
+
+#~ msgid "Un_lock"
+#~ msgstr "_NyahKunci"
+
+#~ msgid "???"
+#~ msgstr "[entah]"
+
+#~ msgid "Can't find an empty spot"
+#~ msgstr "Tidak dapat mencari slot kosong"
+
+#~ msgid "Failed to load image %s"
+#~ msgstr "Gagal memuatkan imej %s"
+
+#~ msgid "none"
+#~ msgstr "tiada"
+
+#~ msgid "file not found"
+#~ msgstr "fail tidak dijumpai"
+
+#~ msgid "Drawer"
+#~ msgstr "Laci"
+
+#~ msgid "_Properties"
+#~ msgstr "_Ciri-ciri"
+
+#~ msgid "Create new file in the given directory"
+#~ msgstr "Cipta fail baru pada direktori diberi"
+
+#~ msgid "Cannot save launcher to disk"
+#~ msgstr "Tak dapat menyimpan pelancar ke cakera"
+
+#~ msgid "Cannot launch icon"
+#~ msgstr "Tak dapat melancarkan ikon"
+
+#~ msgid "This launch icon does not specify a url to show."
+#~ msgstr "Ikon pelancar ini tidak menyatakan url untuk dipapar."
+
+#~ msgid "Cannot show %s"
+#~ msgstr "Tak dapat memaparkan %s"
+
+#~ msgid "No URI provided for panel launcher desktop file\n"
+#~ msgstr "Tiada URI dibekalkan untuk fail desktop pelancar panel\n"
+
+#~ msgid "Unable to open desktop file %s for panel launcher%s%s\n"
+#~ msgstr "Tak dapat membuka fail desktop %s bagi pelancar%s%s panel\n"
+
+#~ msgid "Launcher Properties"
+#~ msgstr "Ciri-ciri Pelancar"
+
+#~ msgid "Key %s is not set, can't load launcher\n"
+#~ msgstr "Kekunci %s tidak ditetapkan, tak dpaat memuatkan pelancar\n"
+
+#~ msgid "Cannot create launcher"
+#~ msgstr "Tak dapat mencipta pelancar."
+
+#~ msgid "You have to specify a name."
+#~ msgstr "Anda mesti nyatakan satu nama."
+
+#~ msgid "You have to specify a valid URL or command."
+#~ msgstr "Anda mesti nyatakan URL atau arahan yang sah."
+
+#~ msgid "Create Launcher"
+#~ msgstr "Cipta Pelancar"
+
+#~ msgid "Cannot save changes to launcher"
+#~ msgstr "Tak dapat menyimpan perubahan pada pelancar"
+
+#~ msgid "Menu"
+#~ msgstr "Menu"
+
+#~ msgid "Cannot save menu item to disk"
+#~ msgstr "Tak dapat menyimpan item menu ke cakera"
+
+#~ msgid ""
+#~ "You can not create a new launcher at this location since the location is "
+#~ "not writable."
+#~ msgstr ""
+#~ "Anda tak boleh mencipta pelancar baru pada lokasi ini kerana lokasi tidak "
+#~ "boleh ditulis."
+
+#~ msgid "And many, many others..."
+#~ msgstr "Dan banyak lagi yang lain..."
+
+#~ msgid "The GNOME Panel"
+#~ msgstr "Panel GNOME"
+
+#~ msgid ""
+#~ "This program is responsible for launching other applications and "
+#~ "embedding small applets within itself."
+#~ msgstr ""
+#~ "Program ini bertanggungjawap untuk melancarkan aplikasi lain, aplet kecil "
+#~ "embeded didalam dirinya."
+
+#~ msgid "Cannot execute '%s'"
+#~ msgstr "Tidak dapat melaksanakan '%s'"
+
+#~ msgid "%s: %s"
+#~ msgstr "%s: %s"
+
+#~ msgid "About GNOME"
+#~ msgstr "Perihal GNOME"
+
+#~ msgid "Cannot launch entry"
+#~ msgstr "Tak dapat melancarkan kemasukan"
+
+#~ msgid "Cannot load entry"
+#~ msgstr "Tak dapat memuatkan kemasukan"
+
+#~ msgid "Add this launcher to panel"
+#~ msgstr "Tambah pelancar ini pada panel"
+
+#~ msgid "Add this as drawer to panel"
+#~ msgstr "Tambah laci ini pada panel"
+
+#~ msgid "Add this as menu to panel"
+#~ msgstr "Tambah menu ini pada panel"
+
+#~ msgid "You cannot remove your last panel."
+#~ msgstr "Anda tak boleh buang panel terakhir"
+
+#~ msgid "_Delete This Panel..."
+#~ msgstr "Pa_dam Panel Ini..."
+
+#~ msgid "_Delete This Panel"
+#~ msgstr "Pa_dam Panel Ini"
+
+#~ msgid "_Add to Panel..."
+#~ msgstr "_Tambah ke Panel..."
+
+#~ msgid "_New Panel"
+#~ msgstr "Panel _Baru"
+
+#~ msgid "A_bout Panels"
+#~ msgstr "_Perihal Panel"
+
+#~ msgid "About _GNOME"
+#~ msgstr "Perihal _GNOME"
+
+#~ msgid "_Activate Screensaver"
+#~ msgstr "_Aktifkan Screensaver"
+
+#~ msgid "_Lock Screen"
+#~ msgstr "_Kunci Skrin"
+
+#~ msgid "_Kill Screensaver Daemon"
+#~ msgstr "_Bunuh Daemon Screensaver"
+
+#~ msgid "Restart _Screensaver Daemon"
+#~ msgstr "Ulanghidupkan Daemon _Screensaver"
+
+#~ msgid "Lock screen"
+#~ msgstr "Kunci skrin"
+
+#~ msgid "Protect your computer from unauthorized use"
+#~ msgstr "Lindung komputer anda daripada penggunaan yang tidak diingini"
+
+#~ msgid "Log Out"
+#~ msgstr "Log Keluar"
+
+#~ msgid ""
+#~ "Log out of this session to log in as a different user or to shut down the "
+#~ "computer"
+#~ msgstr ""
+#~ "Log keluar sesi ini untuk log masuk sebagai pengguna lain atau untuk "
+#~ "tutup komputer"
+
+#~ msgid "Run Application..."
+#~ msgstr "Laksana Aplikasi..."
+
+#~ msgid "Run an Application by entering a command"
+#~ msgstr "Laksanakan aplikasi dengan memasukkan arahan"
+
+#~ msgid "Search for Files..."
+#~ msgstr "Cari Fail..."
+
+#~ msgid "Find files, folders, and documents on your computer"
+#~ msgstr "Cari fail, folder dan dokumen pada komputer anda"
+
+#~ msgid "Take Screenshot..."
+#~ msgstr "Cekup Skrin..."
+
+#~ msgid "Take a screenshot of your desktop"
+#~ msgstr "Ambil cekupan skrin desktop anda"
+
+#~ msgid "Force Quit"
+#~ msgstr "Keluar Paksa"
+
+#~ msgid "Force a misbehaving application to quit"
+#~ msgstr "Paksa aplikasi yg berkelakuan ganjil untuk keluar"
+
+#~ msgid "Custom Application Launcher"
+#~ msgstr "Pelancar Aplikasi Tersendiri"
+
+#~ msgid "Create a new launcher"
+#~ msgstr "Cipta pelancar baru"
+
+#~ msgid "Application Launcher..."
+#~ msgstr "Pelancar Aplikasi..."
+
+#~ msgid "Launch a program that is already in the GNOME menu"
+#~ msgstr "Lancar program yang sedia ada di menu GNOME"
+
+#~ msgid "Main Menu"
+#~ msgstr "Menu Utama"
+
+#~ msgid "The main GNOME menu"
+#~ msgstr "Menu utama GNOME"
+
+#~ msgid "Menu Bar"
+#~ msgstr "Bar Menu"
+
+#~ msgid "A custom menu bar"
+#~ msgstr "Bar menu tersendiri"
+
+#~ msgid "(empty)"
+#~ msgstr "(kosong)"
+
+#~ msgid "query returned exception %s\n"
+#~ msgstr "kueri mengembalikan pengecualian %s\n"
+
+#~ msgid "Add to %s"
+#~ msgstr "Tambah ke %s"
+
+#~ msgid "Add to the panel"
+#~ msgstr "Tambah ke panel"
+
+#~ msgid "Select an _item to add to %s:"
+#~ msgstr "Pilih satu _item untuk ditambah ke %s:"
+
+#~ msgid "Select an _item to add to the panel:"
+#~ msgstr "Pilih satu _item untuk ditambah ke panel:"
+
+#~ msgid "Exception from popup_menu '%s'\n"
+#~ msgstr "Pengecualian dari popup_menu '%s'\n"
+
+#~ msgid "\"%s\" has quit unexpectedly"
+#~ msgstr "\"%s\" telah keluar tanpa diduga"
+
+#~ msgid "Panel object has quit unexpectedly"
+#~ msgstr "Objek panel keluar tanpa diduga"
+
+#~ msgid ""
+#~ "If you reload a panel object, it will automatically be added back to the "
+#~ "panel."
+#~ msgstr ""
+#~ "Jika anda ulangmuat objek panel, ia akan ditambah semula secara automatik "
+#~ "ke panel."
+
+#~ msgid "_Don't Reload"
+#~ msgstr "_Jangan Ulangmuat"
+
+#~ msgid "_Reload"
+#~ msgstr "_Ulangmuat"
+
+#~ msgid "D_on't Delete"
+#~ msgstr "Jangan Pa_dam"
+
+#~ msgid "The panel encountered a problem while loading \"%s\"."
+#~ msgstr "Panel dirundung masalah ketika memuatkan  \"%s\"."
+
+#~ msgid "Details: %s"
+#~ msgstr "Perincian: %s"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "Do you want to delete the applet from your configuration?"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "Adakah anda ingin memadam aplet drpd konfigurasi anda?"
+
+#~ msgid "Unable to obtain AppletShell interface from control\n"
+#~ msgstr "Tak boleh mendapatkan antaramuka AppletShell daripada kawalan\n"
+
+#~ msgid "Error watching gconf key '%s': %s"
+#~ msgstr "Ralat memerhati  kekunci gconf '%s': %s"
+
+#~ msgid "Error loading gconf directory '%s': %s"
+#~ msgstr "Ralat memuatkan direktori gconf '%s': %s"
+
+#~ msgid "Error getting value for '%s': %s"
+#~ msgstr "Ralat mendapatkan nilai bagi '%s': %s"
+
+#~ msgid ""
+#~ "Click on a window to force the application to quit. To cancel press <ESC>."
+#~ msgstr ""
+#~ "Klik pada tetingkap untuk memaksa aplikasi keluar. Untuk membatal tekan "
+#~ "<ESC>."
+
+#~ msgid ""
+#~ "Force this application to exit?\n"
+#~ "(Any open documents will be lost.)"
+#~ msgstr ""
+#~ "Paksa aplikasi untuk keluar?\n"
+#~ "(Semua dokumen dibuka akan hilang.)"
+
+#~ msgid ""
+#~ "A list of panel IDs. Each ID identifies an individual toplevel panel. The "
+#~ "settings for each of these panels are stored in /apps/panel/toplevels/"
+#~ "$(id)."
+#~ msgstr ""
+#~ "Senarai ID panel. Setiap ID mengcam panel aras atas secara individu. "
+#~ "Tetapan bagi setiap panel ini akan disimpan di /apps/panel/toplevels/"
+#~ "$(id)."
+
+#~ msgid ""
+#~ "A list of panel applet IDs. Each ID identifies an individual panel "
+#~ "applet. The settings for each of these applets are stored in /apps/panel/"
+#~ "applets/$(id)."
+#~ msgstr ""
+#~ "Senarai ID panel. Setiap ID mengcam aplet panel secara individu. Tetapan "
+#~ "bagi setiap panel ini akan disimpan di /apps/panel/applets/$(id)."
+
+#~ msgid ""
+#~ "A list of panel object IDs. Each ID identifies an individual panel object "
+#~ "(e.g. a launcher, action button or menu button/bar). The settings for "
+#~ "each of these objects are stored in /apps/panel/objects/$(id)."
+#~ msgstr ""
+#~ "Senarai ID panel. Setiap ID mengcam objek panel secara individu (seperti "
+#~ "pelancar, butang aksi atau bar/butang menu). Tetapan bagi setiap panel "
+#~ "ini akan disimpan di /apps/panel/objects/$(id)."
+
+#~ msgid "Enable program list in \"Run Application\" dialog"
+#~ msgstr "Hidupkan senarai program pada dialog \"Laksana Aplikasi\""
+
+#~ msgid "Expand program list in \"Run Application\" dialog"
+#~ msgstr "Kembangkan senarai program pada dialog \"Laksana Aplikasi\""
+
+#~ msgid ""
+#~ "If true, the \"Known Applications\" listing in the \"Run Application\" "
+#~ "dialog is expanded when the dialog is opened. This key is only relevant "
+#~ "if the enable_program_list key is true."
+#~ msgstr ""
+#~ "Jika benar, senarai \"Aplikasi Ddikenali\" pada dialog \"Laksana Aplikasi"
+#~ "\" dikembangkan bila dialog dibuka. Kekunci ini hanya releven bila  "
+#~ "kekunci enable_program_list adalah benar."
+
+#~ msgid ""
+#~ "If true, the \"Known Applications\" listing in the \"Run Application\" "
+#~ "dialog is made available. Whether or not the listing is expanded when the "
+#~ "dialog is shown is controlled by the show_program_list key."
+#~ msgstr ""
+#~ "Jika benar, senarai \"Known Applications\" pada dialog \"Run Application"
+#~ "\" akan ada. Samada senarai dikembangkan atau tak bila dialog dipaparkan "
+#~ "dikawal oleh kekunci show_program_list ."
+
+#~ msgid "Old profiles configuration migrated"
+#~ msgstr "Konfigurasi profil lama dimigrasikan"
+
+#~ msgid "Panel ID list"
+#~ msgstr "Senarai ID panel"
+
+#~ msgid "Panel applet ID list"
+#~ msgstr "Senarai ID aplet panel"
+
+#~ msgid "Panel object ID list"
+#~ msgstr "Senarai ID objek panel"
+
+#~ msgid "Animation speed"
+#~ msgstr "Kelajuan animasi"
+
+#~ msgid "Applet IIDs to disable from loading"
+#~ msgstr "IID aplet untuk dicegah drpd dimuatkan"
+
+#~ msgid "Autoclose drawer"
+#~ msgstr "Autotutup laci"
+
+#~ msgid "Complete panel lockdown"
+#~ msgstr "Penguncian panel lengkap"
+
+#~ msgid "Confirm panel removal"
+#~ msgstr "Kepastian membuang panel"
+
+#~ msgid "Disable Force Quit"
+#~ msgstr "Matikan Keluar Paksa"
+
+#~ msgid "Disable Lock Screen"
+#~ msgstr "Matikan Kunci Skrin"
+
+#~ msgid "Disable Logging Out"
+#~ msgstr "Matikan Log Keluar"
+
+#~ msgid "Display \"Run Application\" dialog keybinding"
+#~ msgstr "Papar ikatan kekunci dialog \"Laksana Aplikasi\""
+
+#~ msgid "Enable animations"
+#~ msgstr "Hidupkan animasi"
+
+#~ msgid "Enable keybindings"
+#~ msgstr "Hidupkan ikatan kekunci"
+
+#~ msgid "Enable tooltips"
+#~ msgstr "Hidupkan tooltip"
+
+#~ msgid "FIXME - is this resolved with the new menu stuff"
+#~ msgstr "FIXME - adakah ini akan diselesaikan dengan perkara menu baru"
+
+#~ msgid "FIXME - need to define limits"
+#~ msgstr "FIXME - perlu mentaksir had"
+
+#~ msgid "Highlight launchers on mouseover"
+#~ msgstr "Serlah pelancar pada mouseover"
+
+#~ msgid ""
+#~ "If true, a dialog is shown asking for confirmation if the user wants to "
+#~ "remove a panel."
+#~ msgstr ""
+#~ "Jika benar, dialog yg dipaparkan bertanya kepastian jika pengguna ingin "
+#~ "membuang panel."
+
+#~ msgid ""
+#~ "If true, a drawer will automatically be closed when the user clicks a "
+#~ "launcher in it."
+#~ msgstr ""
+#~ "Jike benar, laci akan ditutup automatik bila pengguna klik pelancar "
+#~ "padanya."
+
+#~ msgid ""
+#~ "If true, a launcher is highlighted when the user moves the pointer over "
+#~ "it."
+#~ msgstr ""
+#~ "Jika benar, pelancar akan diserlahkan bila pegguna menggerakkan puniding "
+#~ "di atasnya."
+
+#~ msgid "If true, panel-specific keybindings are enabled."
+#~ msgstr "Jika benar, ikatan kekunci spesifik-panel-specific akan dihidupkan."
+
+#~ msgid "If true, tooltips are shown for objects in panels."
+#~ msgstr "Jika benar, tooltip akan dipaparkan bagi objek di panel."
+
+#~ msgid "Popup panel menu keybinding"
+#~ msgstr "Popup Ikatan kekunci menu panel"
+
+#~ msgid "Take screenshot"
+#~ msgstr "Ambil cekupan skrin"
+
+#~ msgid "Take window screenshot"
+#~ msgstr "Ambil cekupan skrin tetingkap"
+
+#~ msgid "Action button type"
+#~ msgstr "Jenis butang aksi"
+
+#~ msgid "Applet Bonobo IID"
+#~ msgstr "IID Bonobo Applet"
+
+#~ msgid "Icon used for object's button"
+#~ msgstr "Ikon digunakan oleh butang objek"
+
+#~ msgid ""
+#~ "If true, the custom_icon key is used as a custom icon for the button. If "
+#~ "false, the custom_icon key is ignored. This key is only relevant if the "
+#~ "object_type key is \"menu-object\" or \"drawer-object\"."
+#~ msgstr ""
+#~ "Jika benar, kekunci custom_icon digunakan sebagai ikon tersendiri bagi "
+#~ "butang. Jika palsu, kekunci custom_icon key diabaikan. Kekunci ini hanya "
+#~ "relevan jika  kekunci object_type adalah \"menu-object\" atau \"drawer-"
+#~ "object\"."
+
+#~ msgid ""
+#~ "If true, the menu_path key is used as the path from which the menu "
+#~ "contents should be constructed. If false, the menu_path key is ignored. "
+#~ "This key is only relevant if the object_type key is \"menu-object\"."
+#~ msgstr ""
+#~ "Jika benar, kekunci menu_path digunakan sebagai laluan drpd mana "
+#~ "kandungan menu akan dibina. Jike palsu, menu_path diabaikan. Tetapan ini "
+#~ "hanya relevan jika kekunci object_type adalah \"menu-object\"."
+
+#~ msgid ""
+#~ "If true, the position of the object is interpreted relative to the right "
+#~ "(or bottom if vertical) edge of the panel."
+#~ msgstr ""
+#~ "Jika benar, posisi bagi objek ditafsirkan relatif kepada kanan (atau "
+#~ "bawah jika menegak) pinggir bagi panel."
+
+#~ msgid ""
+#~ "If true, the user may not move the applet without first unlocking the "
+#~ "object using the \"Unlock\" menuitem."
+#~ msgstr ""
+#~ "Jika benar, pengguna tak boleh memindahkan aplet tanpa nyahkunci objek "
+#~ "menggunakan item menu \"Nyahkunci\"."
+
+#~ msgid "Interpret position relative to bottom/right edge"
+#~ msgstr "Tafsir posisi relatif kepada pinggir bawah/kanan"
+
+#~ msgid "Launcher location"
+#~ msgstr "Lokasi pelancar"
+
+#~ msgid "Lock the object to the panel"
+#~ msgstr "Kunci objek kepada panel"
+
+#~ msgid "Menu content path"
+#~ msgstr "Laluan kandungan menu"
+
+#~ msgid "Object's position on the panel"
+#~ msgstr "Posisi objek pada panel"
+
+#~ msgid "Panel attached to drawer"
+#~ msgstr "Panel dilampirkan pada laci"
+
+#~ msgid "Panel object type"
+#~ msgstr "Jenis objek panel"
+
+#~ msgid ""
+#~ "The Bonobo implementation ID of the applet - e.g. \"OAFIID:"
+#~ "GNOME_ClockApplet\". This key is only relevant if the object_type key is "
+#~ "\"bonobo-applet\"."
+#~ msgstr ""
+#~ "ID implementasi Bonobo bagi aplet - cth. \"OAFIID:GNOME_ClockApplet\". "
+#~ "kekunci ini hanya relevan jika object_type adalah \"bonobo-applet\"."
+
+#~ msgid ""
+#~ "The action type this button represents. Possible values are \"lock\", "
+#~ "\"logout\", \"run\", \"search\" and \"screenshot\". This key is only "
+#~ "relevant if the object_type key is \"action-applet\"."
+#~ msgstr ""
+#~ "Jenis aksi yang diwakili butang ini. Nilai yang boleh adalah \"lock\", "
+#~ "\"logout\", \"run\", \"search\" dan \"screenshot\". Kekunci ini hanya "
+#~ "relevan jika  object_type adalah \"action-applet\"."
+
+#~ msgid ""
+#~ "The identifier of the panel attached to this drawer. This key is only "
+#~ "relevant if the object_type key is \"drawer-object\"."
+#~ msgstr ""
+#~ "Pengcam bagi panel dilampirkan pada laci ini. kekunci ini hanya relevan "
+#~ "jika object_type adalah \"drawer-object\"."
+
+#~ msgid "The identifier of the toplevel panel which contains this object."
+#~ msgstr "Pengcam bagi panel aras atas yang mengandungi objek ini."
+
+#~ msgid ""
+#~ "The location of the .desktop file describing the launcher. This key is "
+#~ "only relevant if the object_type key is \"launcher-object\"."
+#~ msgstr ""
+#~ "Lokasi bagi fail .desktop menerangkan pelancar. Kekunci ninihanya relevan "
+#~ "jika object_type adalah \"launcher-object\"."
+
+#~ msgid ""
+#~ "The location of the image file used as the icon for the object's button. "
+#~ "This key is only relevant if the object_type key is \"drawer-object\" or "
+#~ "\"menu-object\" and the use_custom_icon key is true."
+#~ msgstr ""
+#~ "Lokasi bagi fail imej digunakan sebagai ikon bagi butang objek. Kekunci "
+#~ "ini hanya relevan jika kekunci object_type adalah \"drawer-object\" atau "
+#~ "\"menu-object\" dan kekunci the use_custom_icon adalah benar."
+
+#~ msgid ""
+#~ "The path from which the menu contents is contructed. This key is only "
+#~ "relevant if the use_menu_path key is true and the object_type key is "
+#~ "\"menu-object\"."
+#~ msgstr ""
+#~ "Laluan drpd mana kandungan menu akan dibina. Kekunci ini hanya relevan "
+#~ "jika  use_menu_path adalah benar dan object_type adalah \"menu-object\"."
+
+#~ msgid ""
+#~ "The position of this panel object. The position is specified by the "
+#~ "number of pixels from the left (or top if vertical) panel edge."
+#~ msgstr ""
+#~ "Posisi bagi objek panel ini. Posisi dinyatakan oleh bilangan piksel drpd "
+#~ "kiri (atau atas jika mengufuk) pinggir panel."
+
+#~ msgid ""
+#~ "The text to display in a tooltip for this drawer or this menu. This key "
+#~ "is only relevant if the object_type key is \"drawer-object\" or \"menu-"
+#~ "object\"."
+#~ msgstr ""
+#~ "Teks untuk dipaparkan pada tooltip bagi laci atau menu ini. Kekunci ini "
+#~ "hanya relevan jika kekunci object_type adalah \"drawer-object\" atau "
+#~ "\"menu-object\"."
+
+#~ msgid ""
+#~ "The type of this panel object. Possible values are \"drawer-object\", "
+#~ "\"menu-object\", \"launcher-object\", \"bonobo-applet\", \"action-applet"
+#~ "\" and \"menu-bar\"."
+#~ msgstr ""
+#~ "Jenis bagi objek panel. Nilai yang boleh adalah \"drawer-object\", \"menu-"
+#~ "object\", \"launcher-object\", \"bonobo-applet\", \"action-applet\" dan "
+#~ "\"menu-bar\"."
+
+#~ msgid "Tooltip displayed for drawer or menu"
+#~ msgstr "Tooltip dipaparkan bagi laci atau menu"
+
+#~ msgid "Toplevel panel containing object"
+#~ msgstr "Panel aras atas mengandungi objek"
+
+#~ msgid "Use custom icon for object's button"
+#~ msgstr "Guna ikon tersendiri bagi butang objek"
+
+#~ msgid "Use custom path for menu contents"
+#~ msgstr "Guna laluan sendiri bagi menu konteks"
+
+#~ msgid "Error reading GConf string value '%s': %s"
+#~ msgstr "Ralat membaca nilai rentetan GConf  '%s': %s"
+
+#~ msgid "Error reading GConf integer value '%s': %s"
+#~ msgstr "Ralat membaca nilai integer GConf  '%s': %s"
+
+#~ msgid ""
+#~ "Panel '%s' is set to be displayed on screen %d which is not currently "
+#~ "available. Not loading this panel."
+#~ msgstr ""
+#~ "Panel '%s' ditetapkan untuk dipaparkan pada skrin %d dimana ia tak wujud. "
+#~ "Tak memuatkan panel ini."
+
+#~ msgid "Error reading GConf boolean value '%s': %s"
+#~ msgstr "Ralat membaca nilai boolean GConf  '%s': %s"
+
+#~ msgid "<small>Opaque</small>"
+#~ msgstr "<small>Opaque</small>"
+
+#~ msgid "<small>Transparent</small>"
+#~ msgstr "<small>Telus</small>"
+
+#~ msgid "Arro_ws on hide buttons"
+#~ msgstr "Pa_nah pada butang sembunyi"
+
+#~ msgid "Background"
+#~ msgstr "latar belakang"
+
+#~ msgid "Background _image:"
+#~ msgstr "Latar belakang _imej:"
+
+#~ msgid "Co_lor:"
+#~ msgstr "Wa_rna:"
+
+#~ msgid "E_xpand"
+#~ msgstr "_Kembang"
+
+#~ msgid "General"
+#~ msgstr "Umum"
+
+#~ msgid "Image Background Details"
+#~ msgstr "Perincian Imej Latarbelakang"
+
+#~ msgid "Panel Properties"
+#~ msgstr "Ciri-ciri Panel"
+
+#~ msgid "Pick a color"
+#~ msgstr "Sila pilih satu warna"
+
+#~ msgid "Rotate image when panel is _vertical"
+#~ msgstr "Kilaskan imej bila panel me_negak"
+
+#~ msgid "S_tyle:"
+#~ msgstr "_Gaya:"
+
+#~ msgid "Show hide _buttons"
+#~ msgstr "Papar _butang tersembunyi"
+
+#~ msgid "Solid c_olor"
+#~ msgstr "_Warna tegar"
+
+#~ msgid "Some of these properties are locked down"
+#~ msgstr "Sesetengah ciri-ciri ini adalah dikunci"
+
+#~ msgid "St_retch"
+#~ msgstr "_Regang"
+
+#~ msgid "_Autohide"
+#~ msgstr "_Auto-sembunyi"
+
+#~ msgid "_Icon:"
+#~ msgstr "_Ikon:"
+
+#~ msgid "_None (use system theme)"
+#~ msgstr "_Tiada (guna tema sistem default)"
+
+#~ msgid "_Orientation:"
+#~ msgstr "_Orientasi:"
+
+#~ msgid "_Scale"
+#~ msgstr "_Skala"
+
+#~ msgid "_Size:"
+#~ msgstr "_Saiz:"
+
+#~ msgid "_Tile"
+#~ msgstr "_Tile"
+
+#~ msgid "Couldn't find a suitable application"
+#~ msgstr "Tak menjumpai aplikasi yang sesuai"
+
+#~ msgid "Cannot open recently used document"
+#~ msgstr "Tak dapat membuka dokumen digunakan kebelakangan ini"
+
+#~ msgid "An unknown error occurred while trying to open %s"
+#~ msgstr "Ralat tidak diketahui berlaku bila cuba membuka %s"
+
+#~ msgid "Clear the Recent Documents list?"
+#~ msgstr "Kosongkan Dokumen Kebelakangan?"
+
+#~ msgid ""
+#~ "If you clear the Recent Documents list, you clear the following:\n"
+#~ "\n"
+#~ "• All items from the Actions → Recent Documents menu item.\n"
+#~ "• All items from the recent documents list in all applications."
+#~ msgstr ""
+#~ "Jika anda ingin mengosongkan senarai Dokumen Kebelakangan, anda "
+#~ "mengosongkan berikut:\n"
+#~ "\n"
+#~ "• Semua item drpd item menu Aksi → Dokumen Kebelakangan.\n"
+#~ "• Semua item drpd dokumen kebelakangan pada semua aplikasi."
+
+#~ msgid "Open '%s'"
+#~ msgstr "Buka '%s'"
+
+#~ msgid "Recent Documents"
+#~ msgstr "Dokumen Kebelakangan"
+
+#~ msgid "Clear Recent Documents"
+#~ msgstr "Kosongkan Dokumen Kebelakangan"
+
+#~ msgid "Clear all items from the recent documents list"
+#~ msgstr "Kosongkan semua item drpd senarai dokumen kebelakangan"
+
+#~ msgid "Cannot launch command '%s'"
+#~ msgstr "Tak dapat melancarkan '%s'"
+
+#~ msgid "Cannot display location '%s'"
+#~ msgstr "Tak dapat memapar lokasi '%s'"
+
+#~ msgid "Cannot convert '%s' from UTF-8"
+#~ msgstr "Tak dapat tukar '%s' drpd UTF-8"
+
+#~ msgid "Choose a file to append to the command..."
+#~ msgstr "Pilih fail untuk ditambah pada arahan..."
+
+#~ msgid "Will run command: '%s'"
+#~ msgstr "Akan melaksanakan arahan: '%s'"
+
+#~ msgid "Select an application to view its description."
+#~ msgstr "Pilih aplikasi untuk melihat keterangannya."
+
+#~ msgid ""
+#~ "Click this button to browse for a file whose name to append to the "
+#~ "command string."
+#~ msgstr ""
+#~ "Klik butang ini untuk melungsur fail yang dinamakan untuk menambah ke "
+#~ "rentetan arahan."
+
+#~ msgid ""
+#~ "Click this button to run the selected application or the command in the "
+#~ "command entry field."
+#~ msgstr ""
+#~ "Klik butang ini untuk melaksanakan aplikasi dipilih atau arahan pasa "
+#~ "medan kemasukan arahan."
+
+#~ msgid "Command entry"
+#~ msgstr "Kemasukan arahan"
+
+#~ msgid "Command icon"
+#~ msgstr "Ikon arahan"
+
+#~ msgid "Enter a command string here to run it."
+#~ msgstr "Masukkan rentetan arahan disini untuk dilaksanakan."
+
+#~ msgid "Run Application"
+#~ msgstr "Laksana Aplikasi"
+
+#~ msgid "Run in _terminal"
+#~ msgstr "Laksanakan di _terminal"
+
+#~ msgid "Run with _file..."
+#~ msgstr "Laksana  dengan _fail..."
+
+#~ msgid "Select this box to run the command in a terminal window."
+#~ msgstr ""
+#~ "PIlih kekotak ini untuk melaksanakan arahan pada tetingkap terminal."
+
+#~ msgid "Show list of known _applications"
+#~ msgstr "Papar senarai _aplikasi dikenali"
+
+#~ msgid "The icon of the command to be run."
+#~ msgstr "Ikon arahan untuk dilaksanakan."
+
+#~ msgid "_Run"
+#~ msgstr "_Laksana"
+
+#~ msgid ""
+#~ "I've detected a panel already running,\n"
+#~ "and will now exit."
+#~ msgstr ""
+#~ "Kami dapati panel sedia terlaksana.\n"
+#~ "dan ianya akan keluar."
+
+#~ msgid ""
+#~ "There was a problem registering the panel with the bonobo-activation "
+#~ "server.\n"
+#~ "The error code is: %d\n"
+#~ "The panel will now exit."
+#~ msgstr ""
+#~ "Terdapat masalah ketika mendaftar panel dengan pelayan bonobo-"
+#~ "activation \n"
+#~ "kod ralat ialah: %d\n"
+#~ "Panel akan keluar sekarang."
+
+#~ msgid "_Force quit"
+#~ msgstr "_Paksa keluar"
+
+#~ msgid "C_lear"
+#~ msgstr "_Kosongkan"
+
+#~ msgid "Hide Panel"
+#~ msgstr "Sorok Panel"
+
+#~ msgid "Top Expanded Edge Panel"
+#~ msgstr "Panel Pinggiran Atas Terkembang"
+
+#~ msgid "Top Centered Panel"
+#~ msgstr "Panel Ketengah Atas"
+
+#~ msgid "Top Floating Panel"
+#~ msgstr "Panel Terapung Atas"
+
+#~ msgid "Top Edge Panel"
+#~ msgstr "Panel Pinggiran Atas"
+
+#~ msgid "Bottom Expanded Edge Panel"
+#~ msgstr "Panel Pinggiran Terkembang Bawah"
+
+#~ msgid "Bottom Centered Panel"
+#~ msgstr "Panel KeTengah Bawah"
+
+#~ msgid "Bottom Floating Panel"
+#~ msgstr "Panel Terapung Bawah"
+
+#~ msgid "Bottom Edge Panel"
+#~ msgstr "Panel Pinggiran Bawah"
+
+#~ msgid "Left Expanded Edge Panel"
+#~ msgstr "Panel Pinggiran Terkembang Kiri"
+
+#~ msgid "Left Centered Panel"
+#~ msgstr "Panel Ketengah Kiri"
+
+#~ msgid "Left Floating Panel"
+#~ msgstr "Panel Terapung Kiri"
+
+#~ msgid "Left Edge Panel"
+#~ msgstr "Panel Pinggiran Kiri"
+
+#~ msgid "Right Expanded Edge Panel"
+#~ msgstr "Panel Pinggiran Terkembang Kanan"
+
+#~ msgid "Right Centered Panel"
+#~ msgstr "Panel KeTengah Kanan"
+
+#~ msgid "Right Floating Panel"
+#~ msgstr "Panel Terapung Kanan"
+
+#~ msgid "Right Edge Panel"
+#~ msgstr "Panel Pinggiran Kanan"
+
+#~ msgid "Automatically hide panel into corner"
+#~ msgstr "Automatik sorok panel ke sudut"
+
+#~ msgid "Background color"
+#~ msgstr "Warna latarbelakang"
+
+# Opacity tu apa?
+#~ msgid "Background color opacity"
+#~ msgstr "Opacity warna latarbelakang"
+
+#~ msgid "Background image"
+#~ msgstr "Imej latar belakang"
+
+#~ msgid "Background type"
+#~ msgstr "Jenis latar belakang"
+
+#~ msgid "Center panel on x-axis"
+#~ msgstr "Ketengahkan panel pada paksi-x"
+
+#~ msgid "Center panel on y-axis"
+#~ msgstr "Ketengahkan panel pada paksi-y"
+
+#~ msgid "Enable arrows on hide buttons"
+#~ msgstr "Hidupkan panah pada butang sembunyi"
+
+#~ msgid "Enable hide buttons"
+#~ msgstr "Hidupkan butang sembunyi"
+
+#~ msgid "Expand to occupy entire screen width"
+#~ msgstr "Kembangkan untuk menduduki seluruh lebar panel"
+
+#~ msgid "Fit image to panel"
+#~ msgstr "Muatkan imej ke panel"
+
+#~ msgid ""
+#~ "If true, arrows will be placed on the hide buttons. This key is only "
+#~ "relevant if the enable_buttons key is true."
+#~ msgstr ""
+#~ "Jika benar, panah akan diletakkan pada butang sembunyi. kekunci ini hanya "
+#~ "bermakna bile enable_buttons adalah benar."
+
+#~ msgid ""
+#~ "If true, buttons will be placed on each side of the panel which may be "
+#~ "used to move the panel to edge of the screen, leaving only a button "
+#~ "showing."
+#~ msgstr ""
+#~ "Jika benar, butang akan diletak pada setiap tepi panel dimana mungkin "
+#~ "digunakan untuk menggerakkan panel ke pinggir skrin, meningalkan hanya "
+#~ "satu butang dipaparkan."
+
+#~ msgid ""
+#~ "If true, hiding and un-hiding of this panel will be animated rather than "
+#~ "happening instantly."
+#~ msgstr ""
+#~ "Jika benar, penyorokan dan nyahsorok panel akan dianimasikan selain drpd "
+#~ "berlaku serta merta."
+
+#~ msgid ""
+#~ "If true, the background image will be rotated when the panel is oriented "
+#~ "vertically."
+#~ msgstr ""
+#~ "Jika benar, imej kalarbelakang akan dikilas bila panel diorientasikan "
+#~ "menegak."
+
+#~ msgid ""
+#~ "If true, the image will be scaled (retaining the aspect ratio of the "
+#~ "image) to the panel height (if horizontal)."
+#~ msgstr ""
+#~ "Jika benar, imej akan diskalakan (kekal nisbah aspek bagi imej) ke tinggi "
+#~ "panel (jika mengufuk)."
+
+#~ msgid ""
+#~ "If true, the image will be scaled to the panel dimensions. The aspect "
+#~ "ratio of the image will not be maintained."
+#~ msgstr ""
+#~ "Jika benar, imej akan diskalakan kepada dimensi panel. nisbah aspek imej "
+#~ "tak akan dikekalkan."
+
+#~ msgid ""
+#~ "If true, the panel is automatically hidden into a corner of the screen "
+#~ "when the pointer leaves the panel area. Moving the pointer to that corner "
+#~ "again will cause the panel to re-appear."
+#~ msgstr ""
+#~ "Jika benar, panel automatik disorok ke sudut skrin bila pentuding "
+#~ "meninggalkan kawasan panel. Menggerakkan pentuding ke sudut itu akan "
+#~ "menyebabkan panel muncul semula."
+
+#~ msgid ""
+#~ "In a Xinerama setup, you may have panels on each individual monitor. This "
+#~ "key identifies the current monitor the panel is displayed on."
+#~ msgstr ""
+#~ "Pada tetapan Xinerama, anda boleh mempunyai panel pada setiap monitor. "
+#~ "Kekunci ini mengenalpasti monitor semasa panel dipaparkan"
+
+#~ msgid "Name to identify panel"
+#~ msgstr "Nama untuk mengcam panel"
+
+#~ msgid "Panel autohide delay"
+#~ msgstr "Lengahan auto sorok"
+
+#~ msgid "Panel autounhide delay"
+#~ msgstr "Lengahan auto nyahsorok panel"
+
+#~ msgid "Panel orientation"
+#~ msgstr "Orientasi panel"
+
+#~ msgid "Panel size"
+#~ msgstr "Saiz panel"
+
+#~ msgid "Rotate image on vertical panels"
+#~ msgstr "Kilas imej pada panel menegak"
+
+#~ msgid "Specifies the background color for the panel in #RGB format."
+#~ msgstr "Nyatakan warna latar belakang bagi panel dalam format #RGB."
+
+#~ msgid ""
+#~ "Specifies the file to be used for the background image. If the image "
+#~ "contains an alpha channel it will be composited onto the desktop "
+#~ "background image."
+#~ msgstr ""
+#~ "Nyatakan fail untuk digunakan bagi imej latar belakang. Jika imej "
+#~ "mengandungi saluran alfa, ia akan dikompositkan ke imej latar belakang "
+#~ "desktop."
+
+#~ msgid ""
+#~ "Specifies the number of milliseconds delay after the pointer enters the "
+#~ "panel area before the panel is automatically re-shown. This key is only "
+#~ "relevant if the auto_hide key is true."
+#~ msgstr ""
+#~ "Menyatakan bilangan milisaat selepas penuding masuk ke kawasan panel "
+#~ "sebelum panel automatik dipaparkan. Kekunci ini hanya releven jika "
+#~ "kekunci auto_hide adalah benar."
+
+#~ msgid ""
+#~ "Specifies the number of milliseconds delay after the pointer leaves the "
+#~ "panel area before the panel is automatically hidden. This key is only "
+#~ "relevant if the auto_hide key is true."
+#~ msgstr ""
+#~ "Menyatakan bilangan milisaat selepas penuding meninggalkan kawasan panel "
+#~ "sebelum panel automatik disorok. Kekunci ini hanya releven jika kekunci "
+#~ "auto_hide adalah benar."
+
+#~ msgid ""
+#~ "Specifies the number of pixels visible when the panel is automatically "
+#~ "hidden into a corner. This key is only relevant if the auto_hide key is "
+#~ "true."
+#~ msgstr ""
+#~ "Menyatakan bilangan piksel yg kelihatan bila panel automatik disorok ke "
+#~ "sudut. Kekunci ini hanya releven jika kekunci auto_hide adalah benar"
+
+#~ msgid "Stretch image to panel"
+#~ msgstr "Regang imej kepada panel"
+
+#~ msgid ""
+#~ "The height (width for a vertical panel) of the panel. The panel will "
+#~ "determine at runtime a minimum size based on the font size and other "
+#~ "indicators. The maximum size is fixed at one quarter of the screen height "
+#~ "(or width)."
+#~ msgstr ""
+#~ "Tinggi bagi panel (lebar jika panel menegak) . Panel akan menentukan saiz "
+#~ "minimum berdasarkan saiz font dan menunjuk lain. Saiz maksimum adalah "
+#~ "tetaü pada suku drpd tinggi (atau lebar) skrin."
+
+#~ msgid ""
+#~ "The location of the panel along the x-axis. This key is only relevant in "
+#~ "un-expanded mode. In expanded mode this key is ignored and the panel is "
+#~ "placed at the screen edge specified by the orientation key."
+#~ msgstr ""
+#~ "Lokasi bagi panel disepanjang paksi-x. Kekunci ini hanya releven pada mod "
+#~ "un-expanded. Pada mod terkembang kekunci ini diabaikan dan panel "
+#~ "diletakkan pada pingguir skrin dinyatakan oleh kekunci orientasi."
+
+#~ msgid ""
+#~ "The location of the panel along the y-axis. This key is only relevant in "
+#~ "un-expanded mode. In expanded mode this key is ignored and the panel is "
+#~ "placed at the screen edge specified by the orientation key."
+#~ msgstr ""
+#~ "Lokasi bagi panel disepanjang paksi-y. Kekunci ini hanya releven pada mod "
+#~ "un-expanded. Pada mod terkembang kekunci ini diabaikan dan panel "
+#~ "diletakkan pada pingguir skrin dinyatakan oleh kekunci orientasi."
+
+#~ msgid ""
+#~ "The speed in which panel animations should occur. Possible values are "
+#~ "\"slow\", \"medium\" and \"fast\". This key is only relevant if the "
+#~ "enable_animations key is true."
+#~ msgstr ""
+#~ "kelajuan animasi panel . Nilai yang boleh adalah \"slow\", \"medium\" dan "
+#~ "\"fast\". Kekunci ini hanya relevan jika kekunci enable_animations adalah "
+#~ "benar."
+
+#~ msgid ""
+#~ "This is a human readable name which you can use to identify a panel. Its "
+#~ "main purpose is to serve as the panel's window title which is useful when "
+#~ "navigating between panels."
+#~ msgstr ""
+#~ "Ini adalah nama boleh dibaca manusia dimana anda boleh mengenalpasti "
+#~ "panel. Tujuan utama ia adalah untuk berlagak sebagai  tajuk tetingkap "
+#~ "panel dimana ia berguna bila navigasi antara panel."
+
+#~ msgid "Visible pixels when hidden"
+#~ msgstr "Bilangan piksel kelihatan panel tersembunyi"
+
+#~ msgid ""
+#~ "With a multi-screen setup, you may have panels on each individual screen. "
+#~ "This key identifies the current screen the panel is displayed on."
+#~ msgstr ""
+#~ "Pada pemasangan aneka-skrin, anda boleh mempunyai panel pada skrin secara "
+#~ "individu. Kekunci ini mengenalpasti skrin semasa dimana panel dipaparkan."
+
+#~ msgid "X co-ordinate of panel"
+#~ msgstr "Koordinat X bagi panel"
+
+#~ msgid "X screen where the panel is displayed"
+#~ msgstr "Skrin X dimana panel dipaparkan"
+
+#~ msgid "Xinerama monitor where the panel is displayed"
+#~ msgstr "Monitor Xinerama dimana panel dipaparkan"
+
+#~ msgid "Y co-ordinate of panel"
+#~ msgstr "Koordinat Y bagi panel"
+
+#~ msgid "Cannot display help document"
+#~ msgstr "Tak dapat memaparkan dokumen bantuan"
+
+#~ msgid "Open URL: %s"
+#~ msgstr "Buka URL: %s"
+
+#~ msgid ""
+#~ "When a drawer is deleted, the drawer and its\n"
+#~ "settings are lost. Delete this drawer?"
+#~ msgstr ""
+#~ "Bila laci dipadam, laci dan tetapannya\n"
+#~ "akan hilang. Buang laci ini?"
+
+#~ msgid "Delete Drawer"
+#~ msgstr "Padam Laci"
+
+#~ msgid ""
+#~ "When a panel is deleted, the panel and its\n"
+#~ "settings are lost. Delete this panel?"
+#~ msgstr ""
+#~ "Bila panel dipadam, panel dan\n"
+#~ "tetapannya akan hilang. Buang panel ini?"
+
+#~ msgid "Delete Panel"
+#~ msgstr "Padam Panel"
+
+#~ msgid "A simple applet for testing the GNOME-2.0 panel"
+#~ msgstr "Aplet ringkas untuk mencuba panel GNOME-2.0"
+
+#~ msgid "Test Bonobo Applet"
+#~ msgstr "Aplet Bonobo Ujian"
+
+#~ msgid "Test Bonobo Applet Factory"
+#~ msgstr "Kilang Aplet Bonobo Ujian"
+
+#~ msgid "Incomplete '%s' background type received"
+#~ msgstr "Jenis latarbelakang tidak sempurna '%s' diterima"
+
+#~ msgid "Incomplete '%s' background type received: %s"
+#~ msgstr "Jenis latarbelakang tidak sempurna '%s' diterima: %s"
+
+#~ msgid "Failed to get pixmap %s"
+#~ msgstr "Gagal untuk mendapatkan pixmap %s"
+
+#~ msgid "Unknown background type received"
+#~ msgstr "Jenis latarbelakang tidak dikenali diterima"
+
+#~ msgid "The Applet's containing Panel's orientation"
+#~ msgstr "Aplet mengandungi orientasi Panel"
+
+#~ msgid "The Applet's containing Panel's size in pixels"
+#~ msgstr "Aplet mengandungi saiz Panel dalam piksel"
+
+#~ msgid "The Applet's containing Panel's background color or pixmap"
+#~ msgstr "Aplet mengandungi warna latar Panel atau pixmap"
+
+#~ msgid "The Applet's flags"
+#~ msgstr "Flag Aplet"
+
+#~ msgid "Ranges that hint what sizes are acceptable for the applet"
+#~ msgstr "Julat yg membayangkan saiz berapa diterima oleh aplet ini"
+
+#~ msgid "The Applet's containing Panel is locked down"
+#~ msgstr "Aplet mengandungi Panel dikunci"
+
+#~ msgid "Specify an applet IID to load"
+#~ msgstr "Nyatakan IID aplet untuk dimuatkan"
+
+#~ msgid ""
+#~ "Specify a gconf location in which the applet preferences should be stored"
+#~ msgstr "Nyatakan lokasi gconf dimana keutamaan aplet patut disimpan"
+
+#~ msgid ""
+#~ "Specify the initial size of the applet (xx-small, medium, large etc.)"
+#~ msgstr "Nyatakan saiz awal bagi aplet(xx-kecil, sederhana, besar etc.)"
+
+#~ msgid ""
+#~ "Specify the initial orientation of the applet (top, bottom, left or right)"
+#~ msgstr "Nyatakan orientasi awal bai aplet (atas, bawah, kiri atau kanan)"
+
+#~ msgid "Top"
+#~ msgstr "Atas"
+
+#~ msgid "Bottom"
+#~ msgstr "Bawah"
+
+#~ msgid "Left"
+#~ msgstr "Kiri"
+
+#~ msgid "Right"
+#~ msgstr "Kanan"
+
+#~ msgid "XX Small"
+#~ msgstr "XX Kecil"
+
+#~ msgid "X Small"
+#~ msgstr "X Kecil"
+
+#~ msgid "Small"
+#~ msgstr "Kecil"
+
+#~ msgid "Medium"
+#~ msgstr "Sederhana"
+
+#~ msgid "Large"
+#~ msgstr "Besar"
+
+#~ msgid "X Large"
+#~ msgstr "X Besar"
+
+#~ msgid "XX Large"
+#~ msgstr "XX Besar"
+
+#~ msgid "Test applet utility"
+#~ msgstr "Utiliti aplet Ujian"
+
+#~ msgid "_Applet:"
+#~ msgstr "_Aplet:"
+
+#~ msgid "_Prefs Dir:"
+#~ msgstr "Dir _Pref:"
+
+#~ msgid "Specify a profile name to load"
+#~ msgstr "Nyatakan nama profil untuk dimuatkan"
+
+#~ msgid "Cannot remove menu item %s"
+#~ msgstr "Tak dapat membuang item menu %s"
+
+#~ msgid "Could not get file name from path: %s"
+#~ msgstr "Tak boleh mendapatkan nama fail daripada laluan: %s"
+
+#~ msgid "Could not get directory name from path: %s"
+#~ msgstr "Tak boleh mendapatkan nama direktori daripada laluan: %s"
+
+#~ msgid "Remove this item"
+#~ msgstr "Buang item ini"
+
+#~ msgid "Add new item to this menu"
+#~ msgstr "Tambah item baru pada menu ini"
+
+#~ msgid "Properties"
+#~ msgstr "Ciri-ciri"
+
+#~ msgid "_Name:"
+#~ msgstr "_Nama:"
+
+#~ msgid ""
+#~ "The default application for this type of file cannot handle remote files"
+#~ msgstr ""
+#~ "Aplikasi default bagi jenis fail ini tidak dapat mengendali fail jauh"
+
+#~ msgid "Unable to get the name of the command to execute"
+#~ msgstr "Tak dapat nama bagi arahan untuk dilaksanakan"
+
+#~ msgid ""
+#~ "You do not have fortune installed or you have not specified a program to "
+#~ "run.\n"
+#~ "\n"
+#~ "Please refer to fish properties dialog."
+#~ msgstr ""
+#~ "Anda tidak mempunyai fortune yang dipasang atau tidak mempunyai program "
+#~ "yang dinyatakan untuk dilaksanakan.\n"
+#~ "\n"
+#~ "Sila rujuk dialog ciri-ciri ikan. "
+
+#~ msgid "Debian GNU/Linux"
+#~ msgstr "Debian GNU/Linux"
+
+#~ msgid "Debian Menu"
+#~ msgstr "Menu Debian"
+
+#~ msgid "SuSE Linux"
+#~ msgstr "Linux SuSE"
+
+#~ msgid "SuSE Menu"
+#~ msgstr "Menu SuSE"
+
+#~ msgid "Solaris"
+#~ msgstr "Solaris"
+
+#~ msgid "CDE Menu"
+#~ msgstr "Menu CDE"
+
+#~ msgid ""
+#~ "Unable to initialize png structure.\n"
+#~ "You probably have a bad version of libpng on your system"
+#~ msgstr ""
+#~ "Tak dapat memulakan structur png.\n"
+#~ "Anda mungkin mempuniyai versi libpng tak elok pada sistem anda"
+
+#~ msgid ""
+#~ "Unable to create png info.\n"
+#~ "You probably have a bad version of libpng on your system"
+#~ msgstr ""
+#~ "Tak dapat mencipta maklumat png.\n"
+#~ "Anda mungkin mempuniyai versi libpng tak elok pada sistem anda"
+
+#~ msgid ""
+#~ "Unable to set png info.\n"
+#~ "You probably have a bad version of libpng on your system"
+#~ msgstr ""
+#~ "Tak dapat menetapkan maklumat png.\n"
+#~ "Anda mungkin mempuniyai versi libpng tak elok pada sistem anda"
+
+#~ msgid ""
+#~ "Insufficient memory to save the screenshot.\n"
+#~ "Please free up some resources and try again."
+#~ msgstr ""
+#~ "Tak cukup memori untuk menyimpan cekupanskrin.\n"
+#~ "Sila bebaskan sedikit sumber dna cuba lagi."
+
+#~ msgid "File %s already exists. Overwrite?"
+#~ msgstr "Fail %s sudah wujud. Tindih?"
+
+#~ msgid ""
+#~ "Unable to create the file:\n"
+#~ "\"%s\"\n"
+#~ "Please check your permissions of the parent directory"
+#~ msgstr ""
+#~ "Tak dapat mencipta fail:\n"
+#~ "\"%s\"\n"
+#~ "Sila periksa keizinan pada direktori pangkal"
+
+#~ msgid "Screenshot-%s.png"
+#~ msgstr "Cekupanku-%s.png"
+
+#~ msgid "Screenshot.png"
+#~ msgstr "Cekupanku.png"
+
+#~ msgid "Screenshot-%s-%d.png"
+#~ msgstr "Cekupanku-%s-%d.png"
+
+#~ msgid "Screenshot-%d.png"
+#~ msgstr "Cekupanku-%d.png"
+
+#~ msgid "Not enough room to write file %s"
+#~ msgstr "Tak cukup ruang untuk menulis fail %s"
+
+#~ msgid ""
+#~ "There was an error displaying help: \n"
+#~ "%s"
+#~ msgstr ""
+#~ "Terdapat ralat memapar bantuan: \n"
+#~ "%s"
+
+#~ msgid ""
+#~ "Glade file for the screenshot program is missing.\n"
+#~ "Please check your installation of gnome-panel"
+#~ msgstr ""
+#~ "Fail Glade bagi program cekupanskrin hilang.\n"
+#~ "Sila Periksa pemasangan gnome-core anda"
+
+#~ msgid "Unable to take a screenshot of the current desktop."
+#~ msgstr "Tak dapat mencekup skrin desktop semasa. :("
+
+#~ msgid "Save screenshot to _web page (save in %s)"
+#~ msgstr "Simpan cekupanskrin ke laman _web (simpan di %s)"
+
+#~ msgid "Grab a window instead of the entire screen"
+#~ msgstr "Genggam tetingkap selain daripada seluruh skrin"
+
+#~ msgid "Take screenshot after specified delay [in seconds]"
+#~ msgstr "Ambil cekupan skrin selepas selangmasa dinyatakan [dalam saat]"
+
+#~ msgid "<b>Options</b>"
+#~ msgstr "<b>Opsyen</b>"
+
+#~ msgid "<b>Preview</b>"
+#~ msgstr "<b>Prebiu</b>"
+
+#~ msgid "Save Screenshot"
+#~ msgstr "Simpan Cekupanskrin"
+
+#~ msgid "Save screenshot to _desktop"
+#~ msgstr "Simpan cekupanskrin ke _desktop"
+
+#~ msgid "Save screenshot to _file:"
+#~ msgstr "Simpan cekupanskrin ke _fail:"
+
+#~ msgid "Save screenshot to _web page (save in ~/public__html)"
+#~ msgstr "Simpan cekupanskrin ke laman _web (simpan di ~/public__html)"
+
+#~ msgid ""
+#~ "The user's directory in which screenshots should be saved so as to appear "
+#~ "on the web."
+#~ msgstr ""
+#~ "Direktori pengguna dimana cekupan skrin akan disimpan supaya ianya muncul "
+#~ "di web."
+
+#~ msgid "Web directory"
+#~ msgstr "Direktori web"
+
+#~ msgid "Desktop"
+#~ msgstr "Desktop"
+
+#~ msgid ""
+#~ "The \"%s\" applet appears to have died unexpectedly.\n"
+#~ "\n"
+#~ "Do you want to reload this applet?"
+#~ msgstr ""
+#~ "Aplet \"%s\" nampaknya mati tanpa diduga.\n"
+#~ "\n"
+#~ "Anda mahu ulangmuat aplet ini?"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "(If you choose not to reload it at this time you can always add it by "
+#~ "right clicking on the panel and clicking on the \"Add to Panel\" submenu)"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "(Jika anda pilih untuk tidak ulangmuatnya kali ini, anda boleh "
+#~ "menambahnya dengan klik-kanan pada panel dan klik pada submenu \"Tambah "
+#~ "ke panel\")"
+
+#~ msgid "Unable to load panel stock icon '%s'\n"
+#~ msgstr "Tak dapat memuatkan ikon stol panel '%s'\n"
+
+#~ msgid "Size:"
+#~ msgstr "Saiz:"
+
+#~ msgid ""
+#~ "The system administrator has disallowed\n"
+#~ "modification of the panel configuration"
+#~ msgstr ""
+#~ "Pentadbir sistem telah tidak mengizinkan\n"
+#~ "mengubahsuaian konfigurasi panel"
+
+#~ msgid "Error loading glade file %s"
+#~ msgstr "Ralat memuatkan fail glade %s"
+
+#~ msgid "Panel"
+#~ msgstr "Panel"
+
+#~ msgid "Select preferences for all your panels"
+#~ msgstr "Pilih keutamaan bagi semua panel anda"
+
+#~ msgid "Animation _speed:"
+#~ msgstr "Kelajuan _animasi:"
+
+#~ msgid "Close _drawer when launcher is clicked"
+#~ msgstr "_Tutup laci jika pelancar diklik"
+
+#~ msgid "Drawer and panel _animation"
+#~ msgstr "_Animasi laci dan panel"
+
+#~ msgid "Fast"
+#~ msgstr "Laju"
+
+#~ msgid "Slow"
+#~ msgstr "Perlahan"
+
+#~ msgid "Lock Screen"
+#~ msgstr "Kunci Skrin"
+
+#~ msgid "Lock the screen so that you can temporarily leave your computer"
+#~ msgstr "Kunci skrin supaya anda boleh meninggalkan komputer sekejap"
+
+#~ msgid "Log out of GNOME"
+#~ msgstr "Log keluar GNOME"
+
+#~ msgid "Search for Files"
+#~ msgstr "Cari fail"
+
+#~ msgid "Screenshot"
+#~ msgstr "Cekupanskrin"
+
+#~ msgid "Lock"
+#~ msgstr "Kunci"
+
+#~ msgid "Lock the screen so you can temporarily leave your computer"
+#~ msgstr "Kunci skrin supaya anda boleh meninggalkan komputer sekejap"
+
+#~ msgid "Search"
+#~ msgstr "Carian"
+
+#~ msgid "Run"
+#~ msgstr "Laksana"
+
+#~ msgid "Run a command"
+#~ msgstr "Laksanakan arahan"
+
+#~ msgid "Utility"
+#~ msgstr "Utiliti"
+
+#~ msgid "Clear recent document history?"
+#~ msgstr "Kosongkan sejarah dokumen kebelakangan?"

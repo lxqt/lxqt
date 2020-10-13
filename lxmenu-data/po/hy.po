@@ -1,0 +1,254 @@
+# translation of gnome-menus.HEAD.po to armenian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2005.
+# Ruzanna Khachatryan <ruzannak@hotmail.com>
+# Norayr Chilingaryan <norik@freenet.am>
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2008-10-01 18:11+0400\n"
+"Last-Translator: Norayr Chilingaryan <chnorik@gmail.com>\n"
+"Language-Team:  <norik@freenet.am>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.9.1\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Ձայն և Վիդեո"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Համասփյուռ ծրագրերի ցանկ"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Ծրագրավորում"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Ծրագրերի մշակման գործիքներ"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Ուսուցում"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Խաղեր"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Խաղեր և զվարճություններ"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Գրաֆիկա"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Գրաֆիկական ծրագրեր"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Երկաթ"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Տարբեր սարքերի հատկություններ"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Ինտերնետ և Ցանց"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Ցանցային հատկություններ"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Տեսք"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Աշխատասեղանի տեսքի և վարքի հատկություններ"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Ծրագրեր"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+#, fuzzy
+msgid "System"
+msgstr "Համակարգի գործիքներ"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Անհատական և կառավարման կարգավորումներ"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Համացանց"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Համացանցում աշխատելու ծրագրեր, ինչպես վեպ զննիչը"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Օֆիս"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Օֆիսային Ծրագրեր"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Այլ"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Ծրագրեր, որոնք այլ կատեգորիաներին չեն համապատասխանում"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Անձնական"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+#, fuzzy
+msgid "Personal settings"
+msgstr "Անհատական նախընտրանքներ"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Հատկություններ"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Անհատական նախընտրանքներ"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Կառավարում"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+#, fuzzy
+msgid "Change system-wide settings (affects all users)"
+msgstr ""
+"Փոխել ամբողջ համակարգի նախընտրանքները (վերաբերում է բոլոր գործարկողներին)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Համակարգի հատկություններ"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Համակարգի գործիքներ"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Համակարգի կարգավորում և վերահսկում"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Ընդհանուր Մատչելիություն"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+#, fuzzy
+msgid "Universal Access Settings"
+msgstr "Հնարավորությունների կարգավորումներ"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Աքսեսուարներ"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Աշխատասեղանի աքսեսուարներ"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Ցանկի Խմբագրիչ"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Ցանկերի խմբագրում"
+
+#~ msgid "_Applications:"
+#~ msgstr "Ծրագրեր"
+
+#~ msgid "_Defaults"
+#~ msgstr "Նախնական"
+
+#~ msgid "_Menus:"
+#~ msgstr "Ցանկ"
+
+#~ msgid "Name"
+#~ msgstr "Անուն"
+
+#~ msgid "Show"
+#~ msgstr "Ցուցադրում"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Չի հաջողվել գտնել տան ապանակը։ այն նշված չէ /etc/passwd ֆայլի մեջ  և "
+#~ "$HOME  միջավայրի փոփոխականը չի պարունակում ոչ մի արժեք"
+
+#~ msgid "Menu file"
+#~ msgstr "Ցանկի ֆայլ"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "ՑԱՆԿԻ―ՖԱՅԼ"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Ցանկի փոփոխությունները"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Ընդգրկել <բացառված> միավորները"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Ընդգրկել NoDisplay=true միավորները"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Սխալ ֆայլի ID"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Սխալ ֆայլանուն]"
+
+#~ msgid " <excluded>"
+#~ msgstr "<բացառված>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Ցանկը փոխցած է, վերաբեռնում ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Ցանկը դատարկ է"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr " - ստուգեք ԳՆՈՄ-ի Աշխատասեղանի Ցանկի Բնորոշման  իրագործումը"
+
+#~ msgid "Accessibility"
+#~ msgstr "Հնարավորություններ"
+
+#~ msgid "Desktop"
+#~ msgstr "Աշխատասեղան"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "Ծրագրերին առնչվող պարամետրեր"

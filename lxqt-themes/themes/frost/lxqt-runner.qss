@@ -1,0 +1,104 @@
+/*
+ * Panel
+ */
+
+#panel {
+    border: 1px solid palette(text);
+    background: palette(text);
+    padding: 2px;
+    margin: 0px;
+}
+
+/*
+ * Buttons
+ */
+
+QToolButton::menu-indicator {
+   image: none;
+}
+
+QToolButton {
+    margin: 0px;
+    border: 0px solid transparent;
+    padding: 0px;
+    font-size: 10pt;
+    color: palette(window);
+    qproperty-iconSize: 20px;
+}
+
+QToolButton:hover {
+    margin: 1px;
+    padding: 1px;
+
+}
+
+#closeButton {
+    qproperty-icon: url(lxqt-runner/close.svg);
+}
+
+#actionButton {
+    qproperty-icon: url(lxqt-runner/down-arrow.svg);
+}
+
+/*
+ *Search field
+ */
+
+#commandEd {
+    border: 1px solid palette(text);
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    color: palette(text);
+    selection-background-color: palette(highlight);
+    selection-color: palette(highlighted-text);
+}
+
+/*
+ *Search results list
+ */
+
+#commandList {
+    border: 1px solid #4C4C4C;
+}
+
+#commandList::item {
+    margin: 2px;
+    padding: 2px;
+}
+
+/*
+ * Menus
+ */
+
+QMenu {
+    background-color: palette(text);
+}
+
+QMenu::icon {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding-left: 5px;
+}
+
+QMenu::item {
+    color: palette(window);
+    padding: 5px 13px 5px 30px;
+}
+
+QMenu::item:selected {
+    background: palette(highlight);
+    color: palette(highlighted-text);
+}
+
+QMenu::item:selected:disabled {
+    background-color: palette(text);
+}
+
+QMenu::item:disabled {
+    color: #6D6D6D;
+}
+
+QMenu::right-arrow {
+    image: url(arrow-right.svg);
+}

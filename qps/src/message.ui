@@ -1,0 +1,37 @@
+<ui version="4.0" >
+ <class>ExecWindow</class>
+ <widget class="QWidget" name="ExecWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>309</width>
+    <height>162</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Qps</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff/>
+   </iconset>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QTextEdit" name="textEdit" />
+   </item>
+   <item>
+    <widget class="QPushButton" name="okButton" >
+     <property name="text" >
+      <string>Ok</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="qps.qrc" />
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Shutdown
+GenericName=Shutdown
+Comment=shutdown the machine
+Exec=lxqt-leave --shutdown
+Icon=system-shutdown
+Categories=System;X-Leave;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=../translations

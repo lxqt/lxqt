@@ -1,0 +1,166 @@
+lxqt-about-0.15.0 / 2020-04-24
+==============================
+
+  * Bumped version to 0.15.0.
+  * Avoid char raw strings literals memory allocations.
+  * Don't use automatic string conversions.
+  * Removed implicit casts definitions.
+  * Fixed Razor-qt link.
+
+lxqt-about-0.14.1 / 2019-02-25
+==============================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+lxqt-about-0.14.0 / 2019-01-25
+==============================
+
+  * Bumped version to 0.14.0
+  * Translation updates
+  * translatorsinfo: sort translators by language
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+  * Moved translations from lxqt-l10n back to lxqt-about
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+
+lxqt-about-0.13.0 / 2018-05-21
+==============================
+
+  * CMake: Prevent in-source builds
+  * Fixed razor and http -> https
+  * Fixed some LXDE mentions
+  * Drop Qt foreach
+  * Add Traditional Chinese translations
+  * Add Simplified Chinese translations
+  * Add Spanish desktop entry
+  * translators_ru: Remove "Translator X." prefix
+  * Make translators_lt.info tidy again
+
+lxqt-about-0.12.0 / 2017-10-21
+==============================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version 0
+  * Don't export github templates
+  * Added Lithuanian translation
+  * added myself
+  * set Qt::AA_UseHighDpiPixmaps to true
+  * Added a very basic cli (#39)
+  * updated Polish translation
+  * Update AUTHORS
+
+lxqt-about-0.11.1 / 2017-01-01
+==============================
+
+  * Release 0.11.1: Update changelog
+  * Removed da_DK (keep da)
+  * Added *da.desktop, renamed da_DK to da
+  * .gitignore: Fix typo
+  * Remove cpack (#34)
+
+lxqt-about-0.11.0 / 2016-09-24
+==============================
+
+  * Release 0.11.0: Add changelog
+  * Extend README.md
+  * translation: Fix language in _nl.desktop
+  * Create lxqt-about_nl.desktop
+  * Add translators_ca.info
+  * Add Catalan translation
+  * Add Arabic Translation for Desktop File and SafaAlFulaij As a Translator (#30)
+  * .gitignore: Cleanup
+  * build: Use external translations
+  * ts-files removal (#28)
+  * Bump AUTHORS year Fix license, lxqt-about is LGPL only
+  * Italian translation update
+  * Russian translation update
+  * Updated german translation.
+  * French translation:
+  * Minor update of README.md
+  * Delete country specific files
+  * Add copyright symbol © to ‘About’ tab
+  * Add simple README.md file
+
+lxqt-about-0.10.0 / 2015-10-31
+==============================
+
+  * Remove unknown contributor
+  * Fix license file
+  * Desktop file fixed
+  * Add Greek (el) translation Remove country variant from language code Update translator info in translators_el.info
+  * Rename LxQt to LXQt everywhere
+  * Handles CMake policy CMP0063
+  * Use the LXQtCompilerSettings CMake module
+  * Removes Transifex artifacts
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Uses GNUInstallDirs
+  * Removes unused stuff
+  * Uses CMAKE_AUTORCC, drops qt5_add_resources()
+  * Removes unneeded libraries from arget_link_libraries()
+  * Use CMAKE_AUTOUIC, drop qt5_wrap_ui()
+  * Removes unneeded include_directories()
+  * Removed obsolete contexts from liblxqt.
+  * Updates the build system to the Targets infrastructure
+  *  Removes .tx transaction dir artifact
+  * Don't use AUTOUIC
+  * Updates translations
+  * Translations: Removes LxQt namespace
+  * Adds .ts translation build infrastructure
+  * Updates namespaces and includes stuff
+  * CMakeLists: Handles new stuff
+  * Adds liblxqt aboutdialog and translatorsinfo files
+  * Hungarian translation
+  * Added german translation of .desktop file.
+
+lxqt-about-0.9.0 / 2015-01-11
+=============================
+
+  * Add Japanese desktop file
+  * Added Portuguese desktop file
+  * - Unify naming for a unique lxqt. No more prefixes
+  * Use lxqt_translate_desktop() from LXQtTranslateDesktop.cmake
+  * CMakeLists.txt maintenance
+  * Update translations and add french desktop file
+  * Clean up CMakeLists.txt and drop Qt 4 support
+
+lxqt-about-0.8.0 / 2014-06-01
+=============================
+
+  * Use preferred header style
+  * Use lxqt-qt5 for Qt5 build.
+  * Use new header file names.
+  * Port to liblxqt5 and qt5
+
+lxqt-about-0.7.0 / 2014-05-07
+=============================
+
+  * Update COPYING
+  * translation template removed icon translation removed
+
+lxqt-about-0.6.99 / 2014-04-29
+==============================
+
+  * Update AUTHORS
+  * Update the .desktop file
+  * Add CPack rules for creating tarball
+  * try to fix #45 About dialog shows twice in configuration center
+  * Removed CMAKE_SOURCE_DIR and CMAKE_BINARY_DIR usage from CMakeLists.txt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Buildable with liblxqt
+  * Make author and copyright info more precise.
+  * Use liblxqt find_package files
+  * Add COPYING and AUTHORS
+  * X-RAZOR changed to Razor in desktop files
+  * Fix various build falures
+  * Translations updated
+  * Fix components missing translations
+  * Translations
+  * Update translations
+  * Q is lowercase
+  * Deleted old translation methods.
+  * New translations for razorqt-about
+  * razor-about: Update name/description and category
+  * extended "razor-about" implementation. Resolves #253

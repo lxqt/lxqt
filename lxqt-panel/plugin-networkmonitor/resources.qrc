@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/knemo-modem-error.png</file>
+        <file>images/knemo-modem-idle.png</file>
+        <file>images/knemo-modem-offline.png</file>
+        <file>images/knemo-modem-receive.png</file>
+        <file>images/knemo-modem-transmit-receive.png</file>
+        <file>images/knemo-modem-transmit.png</file>
+        <file>images/knemo-monitor-error.png</file>
+        <file>images/knemo-monitor-idle.png</file>
+        <file>images/knemo-monitor-offline.png</file>
+        <file>images/knemo-monitor-receive.png</file>
+        <file>images/knemo-monitor-transmit-receive.png</file>
+        <file>images/knemo-monitor-transmit.png</file>
+        <file>images/knemo-network-error.png</file>
+        <file>images/knemo-network-idle.png</file>
+        <file>images/knemo-network-offline.png</file>
+        <file>images/knemo-network-receive.png</file>
+        <file>images/knemo-network-transmit-receive.png</file>
+        <file>images/knemo-network-transmit.png</file>
+        <file>images/knemo-wireless-error.png</file>
+        <file>images/knemo-wireless-idle.png</file>
+        <file>images/knemo-wireless-offline.png</file>
+        <file>images/knemo-wireless-receive.png</file>
+        <file>images/knemo-wireless-transmit-receive.png</file>
+        <file>images/knemo-wireless-transmit.png</file>
+    </qresource>
+</RCC>

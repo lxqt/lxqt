@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Spacer
+Comment=Space between widgets
+Icon=bookmark-new
+
+#TRANSLATIONS_DIR=../translations

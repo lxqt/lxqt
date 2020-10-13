@@ -1,0 +1,252 @@
+# Telugu translation of gnome-menus
+# Copyright (C) 2005,2007 Free Software Foundation, Andhra Pradesh
+# This file is distributed under the same license as the gnome-menus package.
+# Y.Kiran Chandra <kiran@gnu.org.in>, 2005.
+# Bharat Kumar <jonnalagaddabharat@gmail.com>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2011-09-17 11:46+0200\n"
+"Last-Translator: PraveenIlla <mail2ipn@gmail.com>\n"
+"Language-Team: Swecha Telugu Localisation Team <localisation@swecha.org>\n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "ధ్వని మరియు దృశ్యం"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "బహుళమాధ్యమాల జాబితా"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "ప్రోగ్రామింగ్"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "సాఫ్ట్‍వేర్ అభివృద్ధిచేయుట కొరకు పనిముట్లు"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "విద్య"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "ఆటలు"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "ఆటలు మరియు వినోదకాలు"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "గ్రాఫిక్స్"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "గ్రాఫిక్స్ అనువర్తనాలు"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "హార్డ్‍వేర్"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "అనేక హార్డ్‍వేర్ పరికరాల కొరకు అమరికలు"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "అంతర్జాలం మరియు నెట్‌వర్క్"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "నెట్‌వర్క్-సంబంధిత అమరికలు"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "రూపు రేఖలు"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "డెస్క్‍టాప్ రూపాన్ని మరియు ప్రవర్తనను నియంత్రణ చేయు అమరికలు"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "అనువర్తనాలు"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "వ్యవస్థ"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "వ్యక్తిగత ప్రాధాన్యతలు మరియు నిర్వాహణ అమరికలు"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "అంతర్జాలం"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "అంతర్జాలం వాడుటకు జాలం మరియు ఈమెయిల్ వంటి కార్యక్రమాలు"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "కార్యాలయం"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "కార్యాలయ అనువర్తనాలు"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "ఇతర"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "ఇతర విభాగాలలో ఇమడని అనువర్తనాలు"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "వ్యక్తిగతం"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "వ్యక్తిగత అమరికలు"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "ప్రాధాన్యతలు"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "వ్యక్తిగత ప్రాధాన్యతలు"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "నిర్వహణ"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "వ్యవస్థ మొత్తం అమరికలను మార్చు (ఈ మార్పులు వాడుకరులందరికీ వర్తిస్తాయి)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "వ్యవస్థ అమరికలు"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "వ్యవస్థ పనిముట్లు"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "వ్యవస్థ స్వరూపణం మరియు పర్యవేక్షణ"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "సార్వత్రిక సౌలభ్యత"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "సార్వత్రిక సౌలభ్యత అమరికలు"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "సహాయకాలు"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "డెస్క్‍టాప్ సహాయకాలు"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "సాంగత్యానికి సంబందించిన అభీష్టాలు "
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "వ్యక్తిగత అభీష్టాలు మరియు అమరికలు"
+
+#~ msgid "Menu Editor"
+#~ msgstr "జాబితాను సరిచేయునది"
+
+#~ msgid "Edit Menus"
+#~ msgstr "జాబితాలను సరిచేయు"
+
+#~ msgid "_Applications:"
+#~ msgstr "కార్యక్షేత్రాలు"
+
+#~ msgid "_Defaults"
+#~ msgstr "అప్రమేయాలు"
+
+#~ msgid "_Menus:"
+#~ msgstr "జాబితాలు"
+
+#~ msgid "Name"
+#~ msgstr "నామం"
+
+#~ msgid "Show"
+#~ msgstr "చూపు"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr "నివాస వివరం ను కనిపెట్టలేదు"
+
+#~ msgid "Menu file"
+#~ msgstr "జాబితా దస్త్రము"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "జాబితా _దస్త్రము"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "జాబితాలోని మార్పుల తనిఖీ "
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "d నమోదులను చేర్చు<మినహాయించు>"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "NoDisplay=true·నమోదులను చే"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "నిస్సారమైన రంగస్థల దస్త్ర గుర్తింపు చిహ్నం"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[నిస్సారమైన దస్త్ర నామము]"
+
+#~ msgid " <excluded>"
+#~ msgstr "<బహిష్కరించబడిన>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "====జాబితా మరింది, పున:స్థాపన జరుగుతున్నది·====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "జాబితా ఖాళీగా ఉంది"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "రంగస్థల యొక్క నిర్ధిష్ట జాబితాను గ్నోమ్  ఎలా  అమలు చేసిందో పరీక్షించు"
+
+#~ msgid "Accessibility"
+#~ msgstr "అందుబాటు"
+
+#~ msgid "Desktop"
+#~ msgstr "రంగస్థలం"

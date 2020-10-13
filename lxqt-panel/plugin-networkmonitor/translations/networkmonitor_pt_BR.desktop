@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+
+Name=Network monitor
+Comment=Displays network status and activity.
+
+# Translations
+Name[pt_BR]=Monitor de Rede
+Comment[pt_BR]=Mostra atividade e estado da rede

@@ -1,0 +1,170 @@
+lxqt-admin-0.15.0 / 2020-04-23
+==============================
+  * Bumped version to 0.15.0.
+  * Removed (duplicated) string casts definitions.
+  * Avoid `==` shell test usage.
+  * Allow build admin-user on NBSD.
+  * Use QString Use multi-arg.
+  * Replace deprecated QLatin1Literal.
+  * Use the static QFileInfo method `exists()`.
+  * Avoided C++11 possible range-loop Qt container detach.
+
+lxqt-admin-0.14.1 / 2019-02-25
+==============================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+lxqt-admin-0.14.0 / 2019-01-25
+==============================
+
+  * Bumped version to 0.14.0
+  * Don't use automatic string conversions
+  * Moved lxqt-admin-time and -user to LXQt settings
+  * Fixed lxqt-admin-time for FreeBSD
+  * Take into account the time that authentication takes
+  * Improved cmake scripting, set cmake_minimum_required to 3.1.0
+  * Moved translations from lxqt-l10n back to lxqt-admin
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+
+lxqt-admin-0.13.0 / 2018-05-21
+==============================
+
+  * Spanish translation update
+  * Use PolkitQt5-1 policy files install directory
+  * CMake: Prevent in-source builds
+  * Include LXQt::Settings in order to compile.
+  * http -> https
+  * Fixed lxde mentions
+  * Add Simplified Chinese Translation
+  * Use new Qt5 signal/slot notation
+  * lxqt-admin-user: Enable "show system users" checkbox
+  * lxqt-admin-user: Support sorting of user/group views
+  * Add Chinese desktop entries (#54)
+  * Change icons of lxqt-admin-apps
+  * Add Spanish desktop entries
+
+lxqt-admin-0.12.0 / 2017-10-21
+==============================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version
+  * Don't export github templates
+  * Added *lt.desktop
+  * lxqt-admin-user: set Qt::AA_UseHighDpiPixmaps to true
+  * lxqt-admin-time: set Qt::AA_UseHighDpiPixmaps to true
+  * Add basic cli to lxqt-admin (#48)
+  * lxqt-admin-user: Check for duplicates from getgrent, getpwent
+  * Fix lxqt-admin-user does not save shell change #1199 (#45)
+  * Bump year
+
+lxqt-admin-0.11.1 / 2017-01-01
+==============================
+
+  * Release 0.11.1: Update changelog
+  * lxqt-admin-user: Add FreeBSD support
+  * Added *da.desktop
+  * Add French translation
+  * Remove cpack (#40)
+
+lxqt-admin-0.11.0 / 2016-09-24
+==============================
+
+  * Release 0.11.0: Add changelog
+  * user: Add failure message box
+  * user: Provide icon name in polkit policy
+  * Update README.md
+  * Add Catalan translations
+  * Add copyright headers
+  * Add Arabic Translations for Desktop Files
+  * lxqt-admin-user: Fix a change password crash
+  * lxqt-admin-user: Makes the Refresh toolbar button visible
+  * lxqt-admin-time: Adjust dialog size on startup
+  * Update openSUSE section in README
+  * Update README.md
+  * Support NTP and Local RTC settings with timedated provided by systemd. Code cleanup.
+  * Replace calling timedatectl command with calling its dbus interface instead and provide proper error messages.
+  * Use dbus interface of timedate systemd daemon instead of timedatectl command.
+  * Add the ability to update group members.
+  * Support changing of user password.
+  * Show group members.
+  * Try to use a helper script and polkit policy configurations to do user admin.
+  * Remove liboobs dependency from lxqt-admin-time and use timedatectl to handle all time configurations.
+  * Try to handle timezones with timedatectl provided by systemd instead of liboobs.
+  * Add groupmod
+  * Try to remove liboobs dependency.
+  * Add README.md
+  * build: Use external translations
+  * ts-files removal (#32)
+  * Bump years to 2016
+  * Don't track IDE settings
+  * Italian translation update
+  * Russian translations update Remove duplicated ru_RU translations
+  * updated: *_hu.ts
+
+lxqt-admin-0.10.0 / 2015-10-31
+==============================
+
+  * Fix license file
+  * Add Greek (el) translation
+  * Rename LxQt to LXQt everywhere
+  * Removed invisible dialog titles. Updated template. Added german translation.
+  * Handles CMake policy CMP0063
+  * Initialize in the same order of declaration in the class definition
+  * Use the LXQtCompilerSettings CMake module
+  * Updates the build system to use the Targets infrastructure
+  * Remove trailing whitespaces
+  * Create lxqt-admin-time_hr.ts
+  * Create lxqt-admin-user_hr.ts
+  * Hungarian translations added
+  * Create lxqt-admin-time_it.desktop
+  * Create lxqt-admin-user_it.desktop
+  * Initial Polish translation
+  * Create lxqt-admin-user_it.desktop
+  * lxqt-admin-user: set minimum default GID value for new group to 1000
+  * Initial Polish translation
+
+lxqt-admin-0.9.0 / 2015-01-25
+=============================
+
+  * Create lxqt-admin-user_it.desktop
+  * Create lxqt-admin-user_it.ts
+  * Create lxqt-admin-time_it.ts
+  * Add Portuguese language
+  * Added Japanese translation
+  * Unify naming for a unique lxqt. No more suffixes
+  * Update Russian translation
+  * Updates translations sources
+  * Whole GUI of time/date setup has been rewritten from scratch the app has now style of LXQT config dialogs based on LxQt::ConfigDialog the time and date setting is divided into one configuration widget and timezone selection is divided into second config widget
+  * Add icon to config window
+  * Add .gitignore
+  * Make use of QApplication::exec()
+  * Use the new LxQt::SingleApplication
+  * CMakeLists.txt maintenance.
+  * Update translation a little more
+  * Add Russian translation
+  * updates Translations
+  * Updates the translations infrastructure
+  * Drop Qt4 support in CMakeLists.txt in subfolders
+  * Drop Qt4 support in code
+  * Clean up CMakeLists.txt and drop Qt 4
+
+lxqt-admin-0.8.0 / 2014-06-21
+=============================
+
+  * simplify Qt version switching
+  * Support build with Qt5.
+  * Use new LXQt header files.
+  * Update copyright notice.
+  * Support changing group members.
+  * Support adding/removing/editing users and groups.
+  * Redesign the UI.
+  * Add a group configuration dialog.
+  * Improve user dialog.
+  * Add a user config dialog.
+  * Update time every seconds unless it's changed manually by the user.
+  * Add basic skeleton for lxqt-admin-user tool.
+  * Add a very basic time config tool, lxqt-admin-time.
+  * Initial commit.

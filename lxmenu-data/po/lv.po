@@ -1,0 +1,260 @@
+# translation of lv.po to Latvian
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Raivis Dejus <orvils@gmail.com>, 2006, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: lv\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-04-08 10:29+0300\n"
+"Last-Translator: Raivis Dejus <orvils@gmail.com>\n"
+"Language-Team: Latvian <locale@laka.lv>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Skaņas un Video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multimediju izvēlne"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programmēšanas"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Programmatūras izstrādes rīki"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Izglītības"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Spēles"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Spēles un izklaides programmas"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafikas"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafikas programmas"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Aparatūra"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Dažu aparatūras ierīču iestatījumi"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internets un tīkli"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Ar tīklu saistīti iestatījumi"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Izskats un uzvedība"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Iestatījumi, kas nosaka darbavirsmas izskatu un uzvedību"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Programmas"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Sistēma"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Personīgie iestatījumi un administrācijas uzstādījumi"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Interneta"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programmas darbam internetā"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Biroja"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Biroja aplikācijas"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Citas programmas"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Aplikācijas, kas neiederas nevienā citā kategorijā"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Personiskie"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Personīgie uzstādījumi"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Iestatījumi"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Personīgie iestatījumi"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administrēšana"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Mainīt sistēmas iestatījumus (ietekmē visus lietotājus)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Sistēmas iestatījumi"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Sistēma rīki"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Sistēmas konfigurācija un pārraudzība"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+#, fuzzy
+msgid "Universal Access"
+msgstr "Universālā piekļuve"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+#, fuzzy
+msgid "Universal Access Settings"
+msgstr "Universālās piekļuves iestatījumi"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Piederumi"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Darbvirsmas piederumi"
+
+#~ msgid "Accessibility"
+#~ msgstr "Pieejamība"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Pieejamības uzstādījumi"
+
+#~ msgid "Desktop"
+#~ msgstr "Darbvirsma"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "Ar pieejamību saistītie iestatījumi"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Personīgie iestatījumi un uzstādījumi"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Izvēļņu redaktors"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Rediģēt izvēlnes"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Programmas:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Noklusētie"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Izvēlnes:"
+
+#~ msgid "Name"
+#~ msgstr "Nosaukums"
+
+#~ msgid "Show"
+#~ msgstr "Parādīt"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Nevaru atrast mājas direktoriju: tāda nav norādīta /etc/passwd un nav arī "
+#~ "$HOME vides mainīgā"
+
+#~ msgid "Menu file"
+#~ msgstr "Izvēlnes fails"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Izvēlnes izmaiņu pārraugs"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Pievienot <Exclude> ierakstus"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Pievienot NoDisplay=true ierakstus"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Nederīgs darbavirsmas faila ID"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Nederīgs Faila nosaukums]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Izvēlne izmainīta, pārlādēju ==== \n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Izvēlne koks ir tukšs"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr ""
+#~ "- pārbaudiet GNOME darbavirsmas izvēlņu specifikācijas implementāciju"

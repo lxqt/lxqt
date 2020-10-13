@@ -1,0 +1,249 @@
+# Беларускі пераклад gnome-menus.
+# Copyright (C) 2005 THE gnome-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-menus package.
+# Ales Nyakhaychyk <nab@mail.by>, 2005, 2007
+# Ihar Hrachyshka <ihar.hrachyshka@gmail.com>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus gnome-2-12\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2011-08-07 16:38+0200\n"
+"Last-Translator: Мікалай <crom-a@tut.by>\n"
+"Language-Team: Belarusian <i18n@mova.org>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Аўдыё і відэа"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Мультымедыя"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Праграмаванне"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Інструменты для распрацоўкі праграм"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Адукацыя"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Гульні"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Гульні і забавы"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Графіка"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Графічныя праграмы"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Апаратура"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Настаўленні для апаратуры"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Інтэрнэт і сетка"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Настаўленні сеткі"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Вонкавы выгляд"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Настаўленні, якія кантралююць вонкавы выгляд і паводзіны асяроддзя"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Праграмы"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Сістэма"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Асабістыя перавагі і адміністрацыйныя настаўленні"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Інтэрнэт"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Праграмы для доступу ў Інтэрнэт (Сеціва, пошта і інш.)"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Офіс"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Офісныя праграмы"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Іншыя"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Праграмы, якія не трапілі ў іншыя катэгорыі"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Персанальныя"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Персанальныя настаўленні"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Настаўленні"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Асабістыя перавагі"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Адміністраванне"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Змены сістэмных настаўленняў (датычныя ўсіх карыстальнікаў)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Сістэмныя настаўленні"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Сістэмныя інструменты"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Канфігурацыя сістэмы і маніторынг"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Універсальны доступ"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Настаўленні універсальнага доступу"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Інструменты"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Інструменты працоўнага асяроддзя"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Перавагі, якія датычацца унівэрсальнага доступу"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Пэрсанальныя перавагі і настаўленьні"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Рэдактар мэню"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Дазваляе рэдагаваць мэню"
+
+#~ msgid "_Applications:"
+#~ msgstr "Д_астасаваньні:"
+
+#~ msgid "_Defaults"
+#~ msgstr "Пра_двызначаныя значэньні"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Мэню:"
+
+#~ msgid "Name"
+#~ msgstr "Назва"
+
+#~ msgid "Show"
+#~ msgstr "Паказваць"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Немагчыма знайсьці сваю тэчку: яна ня вызначаная ў /etc/passwd, а таксама "
+#~ "зьменная асяродзьдзя $HOME нявызначаная"
+
+#~ msgid "Menu file"
+#~ msgstr "Файл мэню"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "ФАЙЛ_МЭНЮ"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Сачыць за зьменамі мэню"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Уключыць <Выключан>ыя пункты"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Уключыць NoDisplay=true элемэнты"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Кепскі ID desktop-файла"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Кепская назва файла]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <выключаны>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Мэню зьмянілася; перачытваецца... ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Мэню пустое"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- праверыць рэалізацыю спэцыфікацыі мэню стальца ў GNOME"

@@ -1,0 +1,269 @@
+# Dutch translation of the lxmenu-data package.
+# Copyright (C) the author of the lxmenu-data package.
+# This file is distributed under the same license as the 
+# lxmenu-data package.
+# Daniel van Eeden, 2004
+# Tino Meinen, 2005
+# Wouter Bolsterlee, 2007
+# Pjotr, 2011.
+msgid ""
+msgstr ""
+"Project-Id-Version: lxmenu-data\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2014-01-28 14:34+0000\n"
+"Last-Translator: Pjotr <pjotrvertaalt@gmail.com>\n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.5.0\n"
+"X-POOTLE-MTIME: 1390919676.0\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Muziek en video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multimedia-menu"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programmeren"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Gereedschap voor programmatuurontwikkeling"
+
+# leermiddelen
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Onderwijs"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Spelletjes"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Spelletjes en vermaak"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafisch"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafische toepassingen"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Apparatuur"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Instellingen voor verschillende apparaten"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet en netwerk"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Netwerkgerelateerde instellingen"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Uiterlijk en bediening"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Instellingen voor het uiterlijk en gedrag van de werkomgeving"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Toepassingen"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Systeem"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Persoonlijke voorkeuren en beheerinstellingen"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programma's voor internettoegang zoals web en e-mail"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Kantoor"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Kantoortoepassingen"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Overig"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Toepassingen die niet passen in andere categorieën"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Persoonlijk"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Persoonlijke instellingen"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Persoonlijke voorkeuren"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Beheer"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Systeembrede instellingen veranderen (voor alle gebruikers)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Systeeminstellingen"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Systeemgereedschap"
+
+# was eerst monitoring, vervangen door controle
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Systeemconfiguratie en -controle"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Toegankelijkheid"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Toegankelijkheidinstellingen"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Hulpmiddelen"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Bureaubladhulpmiddelen"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Voorkeuren inzake toegankelijkheid"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Persoonlijke voorkeuren en instellingen"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Menubewerker"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Menu's bewerken"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Toepassingen:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Standaardinstellingen"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menu's:"
+
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgid "Show"
+#~ msgstr "Tonen"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Kan de persoonlijke map niet vinden: niet ingesteld in /etc/passwd en "
+#~ "geen waarde voor $HOME in de omgevingsvariabelen"
+
+#~ msgid "Menu file"
+#~ msgstr "Menubestand"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_BESTAND"
+
+# in de gaten houden/controleren op/monitoren voor 
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Bewaken op menuwijzigingen"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Inclusief <Exclude>d elementen"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Inclusief NoDisplay=true elementen"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Ongeldig ID voor bureaubladbestand"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Ongeldige bestandnaam]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu is gewijzigd, herladen ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Menustructuur is leeg"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr ""
+#~ "- GNOME's tenuitvoerlegging van de Specificatie voor Bureaubladmenu "
+#~ "uitproberen"
+
+#~ msgid "Accessibility"
+#~ msgstr "Toegankelijkheid"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Toegankelijkheidinstellingen"
+
+# werkomgeving/bureaublad/desktop/werkblad
+#~ msgid "Desktop"
+#~ msgstr "Bureaublad"
+
+#~ msgid "Hide"
+#~ msgstr "Verbergen"

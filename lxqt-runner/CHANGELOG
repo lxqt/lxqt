@@ -1,0 +1,298 @@
+lxqt-runner-0.15.0 / 2020-04-23
+===============================
+  * cmake: Enhance lxqt-globalkeys minimum required version.
+  * Smoother search.
+  * Removed deprecated QDesktopWidget.
+
+lxqt-runner-0.14.1 / 2019-02-24
+===============================
+
+  * MathItem: Use documented API of muparser and check for possible ArgSep()
+    and DecSep() conflict. Also do not use grouping for output values.
+  * Updated translations
+  * Note for packagers: lxqt-runner now depends on liblxqt >= 0.14.1
+
+lxqt-runner-0.14.0 / 2019-01-25
+===============================
+
+  * Bumped version to 0.14.0
+  * Don't use automatic string conversions
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+    - Installed man page
+  * Moved translations from lxqt-l10n back to lxqt-runner
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+
+lxqt-runner-0.13.0 / 2018-05-21
+===============================
+
+  * Spanish translation update
+  * CMake: Prevent in-source builds
+  * USE_MENU_CACHE default OFF
+  * fix razor-qt -> lxqt and http -> https
+  * Fixed mentions of LXDE
+  * runner: Use the QIcon::fromTheme()
+  * Drop Qt foreach
+  * AppLinkItem: Make genericName searchable
+
+lxqt-runner-0.12.0 / 2017-10-21
+===============================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version
+  * Don't export github templates
+  * Update CMakeLists.txt
+  * Fixed typo in Lithuanian
+  * Drops Qt5Core_VERSION_STRING
+  * set Qt::AA_UseHighDpiPixmaps to true
+  * Fix pedantic warning
+  * ui: Add option to show particular count of items
+  * runner: Make usage of history configurable
+  * commanditemmodel: Remove unused methods
+  * Added QCommandLineParser and basic cli interface to lxqt-runner
+  * Added LXQT_RUNNER_PATCH_VERSION
+  * Fixes a FTBFS in superbuild mode
+  * Added merged autostart to CMakeLists.txt
+  * Updated *_da.desktop files and removed *_da_DK.desktop files
+  * Update desktop entries and Replace fr_FR by fr
+  * Update Greek translation (el) Remove country variant from language code
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Updates the build system to use the Targets infrastructure
+  * Drops hardcoded /etc/xdg paths
+  * Updated german translation, replaced Qt4 by Qt in all xsession/translations
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * remove dead template lines switch OnlyShowIn from Razor -> LXQt stringchanges LxQt -> LXQt
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Bump year
+
+lxqt-runner-0.11.1 / 2017-01-01
+===============================
+
+  * Release 0.11.1: Update changelog
+  * MathItem: Honor system locale (#52)
+  * Use the new MenuCache configuration CMake module
+  * Fixes FTBFS when libmenu-cache was installed to non-standard location
+  * Remove cpack (#49)
+  * - Fix endif placement when test for MATH library.
+
+lxqt-runner-0.11.0 / 2016-09-24
+===============================
+
+  * Release 0.11.0: Add changelog
+  * Add README.md
+  * Math: Enhance evaluation logic
+  * Math: Use libmuparser for math evaluation
+  * runner: Follow virtual desktop switching
+  * Properly hide the runner when it loses focus
+  * runner: Sort history items by relevance
+  * build: Use external translations (#41)
+  * ts-files removal (#40)
+  * Use QString() instead of ""
+  * Fix layout and focus to get history items right
+  * Bump year
+  * main: Add activation by running second instance
+  * Italian translation update
+  * dialog: Default icons
+  * dialog: Fill background
+  * upd: lxqt-runner_hu.ts
+  * Update lxqt-runner_it.ts
+
+lxqt-runner-0.10.0 / 2015-10-31
+===============================
+
+  * Fix license file
+  * Update translations
+  * providers: don't show custom command/binary in case existing application (.desktop) is shown
+  * providers: internal functions as static & which moved to the beginning for using it below
+  * Updated german translation, made common for all regions.
+  * Removed country variant _IT
+  * Rename LxQt to LXQt everywhere
+  * Remove country variant from language code
+  * some license fixes
+  * Handles CMake policy CMP0063
+  * lxqt-runner: search case insensitive in items for each provider
+  * lxqt-runner: correct space(s) according to conding standard
+  * Use the LXQtCompilerSettings CMake module
+  * Removes no added value, noisy debug message
+  * Fixes Action button missing (menu) icon
+  * Adds Runtime install COMPONENT
+  * Coding style changes and cleanups
+  * Use GNUInstallDirs
+  * Removes unneeded include_directories() entries.
+  * Reworks WITHOUT_MENU_CACHE option. Renames to USE_MENU_CACHE
+  * Reworks RUNNER_MATH option
+  * Reworks Virtual Box options and associated stuff
+  * Use CMAKE_AUTOUIC, drop qt5_wrap_ui()
+  * Update the build system to use the Targets infrastructure
+  * Remove trailing whitespaces
+  * Fix naming and links
+  * Hide on shortcut trigger if it's active
+  * Avoid hiding the dialog on opening the menu
+  * Remove the provider for power actions
+  * fallback for executing scripts w/o #!
+  * rempove KF5/ prefix from include    as done in lxde/liblxqt/pull/36
+
+lxqt-runner-0.9.0 / 2015-01-29
+==============================
+
+  * Sets the command list to use alternating row colors
+  * Portuguese update
+  * - Unify naming for a unique lxqt. No more suffixes
+  * Drop XdgDesktopFileCache::getFile()
+  * Add tab-completion
+  * uniform coding style
+  * Hide on loosing focus
+  * Update lxqt-runner_pl_PL.ts
+  * Fixes lxde/lxqt#347. HtmlDelegate on runner's list.
+  * Makes the UPDATE_TRANSLATIONS option actually work.
+  * Cleans up CMakeLists.txt a little bit
+  * Uses the new liblxqt modules to handle translations
+  * Moves lxqt_runner_sr_BA.ts to the translations dir.
+  * Adds an UPDATE_TRANSLATIONS option
+  * Use the LXQtranslate module to handle translations
+  * Update Russian translation
+  * Fixes dialog type, alt+tab won't focus it
+  * Fix QDesktopWidget::availableGeometry() vs KWindowSystem::workArea() bug
+  * CMakeLists cleanups
+  * Fixes lxde/lxde-qt#311, FTBFS
+  * Port lxqt-runner to KWindowSystem. Purge Qt 4.
+  * Add Ctrl-p and Ctrl-n movement shortcuts.
+  * Trim input text. Fixes lxde/lxde-qt#139
+
+lxqt-runner-0.8.0 / 2014-10-08
+==============================
+
+  * Adapt to the translation infrastructure
+  * Use QWindow::windowHandle()->winId() to replace QWidget::winId() due to a bug of Qt5.
+  * Initial Qt5 support.
+  * Use new LXQt header files.
+  * Assorted string polishing
+  * cmake option to build without menu-cache even if it is installed
+  * Update dialog.cpp
+
+lxqt-runner-0.7.0 / 2014-05-07
+==============================
+
+  * Update COPYING
+
+lxqt-runner-0.6.99 / 2014-05-01
+===============================
+
+  * Update man page
+  * Update AUTHORS
+  * LxQt Power Management -> Power Management
+  * Add CPack rules for creating tarball
+  * Update the app icons properly after the xdg menu is reloaded.
+  * Proper encoding of command arguments
+  * Removed CMAKE_SOURCE_DIR usage from CMakeLists.txt
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Convert utf8 strings to utf16 properly while using libmenu-cache.
+  * Optionally support libmenu-cache so we can load installed appS from a cache quickly.
+  * Rename razor to lxqt in some strings.
+  * Make use of the latest liblxqt & liblxqt-globalkeys. * Rename to lxqt-runnder.
+  * Add COPYING and AUTHORS
+  * compile fix: do not include private qt header files
+  * razor-runner scripting
+  * X-RAZOR changed to Razor in desktop files
+  * Experimental submenu added to shortcut selector button
+  * Global shortcuts client library added and all support for it refactored and fixed.
+  * fix "shorcut" typo
+  * ignored duplicate entries in the HistoryProvider
+  * Some debug prints removed. Timeout for Systray to load increased to 1 minute. Module crash detection improved.
+  * preliminary manpages primary for razorqt and usefully in venenux
+  * Translations updated
+  * first part of fixes based on Coverity Scan (code static analysis)
+  * Delete bad en_GB translations
+  * Update translations
+  * runner: Always select the command first and don't match directories
+  * Translations updated
+  * Removed line num from TS files.
+  * Translations
+  * Updated .ts.src files
+  * Extra explaination on compile flags
+  * indent fixes
+  * Optional runtime VBoxHeadless support
+  * Fix for Issue #290 Fails to build on BSD
+  * Removed translate.sh from razor-runner
+  * New translation infrastructure
+  * Ts.src files updated.
+  * Language name zh_CN.GB2312 braked cmake process.
+  * Translations updated
+  * typo fixes
+  * Razor-runner: history provider didn't expand env variables.
+  * Fixed a history in the razor-runner.
+  * lock screen for runner too
+  * fixed #267 Add logout/lock screen actions to razor runner
+  * Move configure button to the left of close
+  * implemented #267 Add logout/lock screen actions to razor runner
+  * Don't display any VM on empty regex ; adding author header for previously added vbox provider
+  * GUI for change razor theme.
+  * fixed #63 Razor launcher should access history on arrow up/down
+  * Improvements in the razor-runner Added a customommand provider.
+  * Set window titles for use with WM's like fvwm
+  * Typos in code. Thanks Aaron Lewis.   *  In razor-runner , providers item:  title() was typed as tile()   *  For RazorSettings class , settingsChanged() was typed as settigsChanged()
+  * Garbage in the code.
+  * Preloading menu in the razor-runner.
+  * Fix QRC_FILE definition
+  * Fix the header path
+  * Implemention of Virtualbox Runner
+  * Implemention of VirtualBox runner
+  * Transifex desktop: sr_BA.ts should be a local
+  * Transifex desktop: local translations
+  * Transifex desktop: Translations pulled
+  * Update Tradidtional Chinese Translations
+  * RazorApplication class implemented; all modules ported to this class
+  * Translations update
+  * Added support for the online translation service. www.transifex.net
+  * Serbian translation files
+  * Greek translation by iosifidis
+  * Razor-runner not activated in kwin.
+  * Razor-runner not activated in kwin.
+  * Added danish translations
+  * Russian translation
+  * fix #169: italian translation
+  * Relicense panel & runner
+  * Set icon theme before instantiating CommandItemModel
+  * Fix gmail.ru -> gmail.com
+  * Keep all parts of the theme in one place. Fix in the cmake.
+  * Keep all parts of the theme in one place
+  * SVK translation finalized
+  * Close Issue #120
+  * License audit
+  * Add Chinese(simplified) translation files.
+  * Add Slovak (sk) translation
+  * Czech translations (cs_CZ)
+  * huge refactoring of the libraries build organization
+  * Closes #64 Razor launcher should focus on alt+f2
+  * RazorRunner: IconThemeChanged handler for razor-runner.
+  * Fix: Wrong actualSize for icons from /usr/pixmaps.
+  * GPL->LGPL where I'm the author
+  * Translation for standard buttons in the razor-runner
+  * Reducing lib dependency in cmake files.
+  * Fix: Desktop Menu Specification category must be X-RAZOR.
+  * Polish translation. Closes #46
+  * potential fix (workaround) from #40: XdgMenu does not display environment related items
+  * homepage updated + auto replacement script
+  * Micro fix in razorqt-runner
+  * XDG-files are splitted into qtxdg library.
+  * History mode in razor-runner.
+  * Fixed  #23: Sorting razor-runner command list.
+  * Translation
+  * Mathematics support in razor-runner.
+  * Razor-runner refactoring - Providers classes.
+  * Small sorted fix.
+  * Fixed selection color in listview.
+  * Polish translation
+  * fix for build (includes)
+  * Closes #22
+  * Closes #21
+  * Disabled tests the global shortcut registration result.
+  * "math mode" for razor-runner (expression ends with '=')
+  * check for global shortcut duplicity (open cfg if it's in conflict)
+  * Razor-runner program

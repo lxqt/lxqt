@@ -1,0 +1,653 @@
+2.0.1 / 2020-04-23
+==================
+  * Bumped screengrab version to 2.0.1.
+  * Translation updates.
+
+2.0.0 / 2020-01-21
+==================
+
+  * Bumped screengrab version to 2.0.0
+  * Updated translations
+  * Removed Qxt
+  * Fixed typo in function name
+  * Set min. Qt version to 5.10.0
+  * Removed upload module (#183)
+  * Removed QDesktopWidget
+  * Removed (duplicated) string casts definitions
+  * Deleted useless warning fixes #174
+  * Make CMakeLists.txt a bit more strict
+  * Updated QtXdg minimum required version
+  * Use the new QtXdg XdgMimeApps class
+  * Improved Screen Area instructions (#162)
+  * Don't use automatic string conversions
+  * Avoid char raw strings literals memory allocations
+
+screengrab-1.101 / 2019-02-25
+=============================
+
+  * Bumped SCREENGRAB_VERSION to 1.101
+  * Only translations was changed..
+
+screengrab-1.100 / 2019-01-25
+=============================
+
+  * Bumped SCREENGRAB_VERSION to 1.100
+  * Don't crash with invalid config format
+  * Several codestyle improvements
+  * Added Github Issue Template
+  * Updated translations
+  * Improved translationhandling
+
+screengrab-1.99 / 2018-07-21
+============================
+
+  * Translated using Weblate (Italian)
+  * Translated using Weblate (Catalan)
+  * Translated using Weblate (català)
+  * Translated using Weblate (català)
+  * Translated using Weblate (català)
+  * Translated using Weblate (Catalan)
+  * Added translation using Weblate (català)
+  * Translated using Weblate (Spanish)
+  * Translated using Weblate (Portuguese (Brazil))
+  * Translated using Weblate (Ukrainian (uk_UA))
+  * Translated using Weblate (Polish)
+  * Added translation promo
+  * Translated using Weblate (Spanish)
+  * Translated using Weblate (Polish)
+  * Added translation using Weblate (Polish)
+  * Translated using Weblate (Hebrew)
+  * Added translation using Weblate (Hebrew)
+  * Translated using Weblate (German)
+  * Translated using Weblate (German)
+  * Translated using Weblate (Lithuanian)
+  * Added translation using Weblate (Lithuanian)
+  * Translated using Weblate (German)
+  * Add X11Extras and Network to link target
+
+1.98 / 2018-05-21
+=================
+
+  * Release 1.98: Update changelog
+  * Bumped SCREENGRAB_VERSION to 1.98
+  * Spanish translation update
+  * A more specific condition for Ctrl+C
+  * Filter out Ctrl+C in Delay box
+  * No window screenshot with shaded windows
+  * Translated using Weblate (German)
+  * Translated using Weblate (German)
+  * Translated using Weblate (German)
+  * Rewritten the debian related build infos
+  * some little changes regarding headlines and copyright
+  * removed doomer jabber
+  * added our bugtracker
+  * use our github repo as home
+  * Translated using Weblate (German)
+  * Translated using Weblate (German)
+  * Translated using Weblate (Ukrainian)
+  * Translated using Weblate (Spanish)
+  * Translated using Weblate (Russian)
+  * Translated using Weblate (Portuguese (Brazil))
+  * Translated using Weblate (Italian)
+  * Translated using Weblate (French)
+  * Translated using Weblate (German)
+  * Translated using Weblate (Russian)
+  * Translated using Weblate (French)
+  * Updated translation files again - changed the parameters for lupdate
+  * Translated using Weblate (Portuguese (Brazil))
+  * Translation maintenance
+  * Always use contents rect Fixes https://github.com/lxqt/screengrab/issues/67
+  * Never scale up beyond real size
+  * Several fixes, especially for the tray icon
+  * __DATE__ and __TIME__ macro are not very helpful for reproducible builds.
+  * Cleanup CMakeLists.txt and complete AUTHORS
+  * Added a minimum default configuration
+  * Handle invalid window screenshots
+  * Corrected a grammar mistake
+  * Always use native (LXQt) file dialog
+  * Just changed the location of a comment
+  * Cleanup and fixes
+  * Some ui polishing
+  * Improve screengrab app behaviour
+  * Drops Qt foreach
+  * fix some uris
+  * Update references in about dialog
+
+1.97 / 2017-09-26
+=================
+
+  * Release 1.97: Update changelog
+  * Added basic .gitattributes
+  * Bump SCREENGRAB_VERSION to 1.9.7
+  * Added KF5WindowSystem to build requirements
+  * Updated italian translation
+  * Update Qt Linguist files
+  * French translation
+  * Adds "snap to border" functionality
+  * Fixes a FTBFS when compiled against Qt 5.8
+
+1.96 / 2016-10-18
+=================
+
+  * Bump version to 1.96
+  * Disable the uploads the hard way - all other methods don't work right now. Only using the trigger results in a FTBFS. So for now it's the best just not to use the uploader lib.
+  * Work around grep 2.23 new behaviour
+  * Drop support for saving as bmp
+  * Remove unnecessary notification on screenshot
+  * Remove MediaCrush support as the official site shut down
+  * Some fixes regarding orthography and wording
+  * Documentation: fix some typos and HTML formatting issues
+  * Translations: drop country-specific translations in German and Italian
+  * Cleanup unused functions and defs
+  * Adds the Ui elements to support shot type saving/loading
+  * Adds methods to get/set screenshot type from/to config file
+  * imgur: Use https for uploads
+  * Make Imgur the default upload host again
+  * GPL2 header added whitespaces fixed
+  * fixed wrong fsf address the hard way
+  * Updates the CMake minimum version to v3.0.2
+  * Adapt to Qt5Xdg new way of finding the package
+  * Grab the mouse pointer only if the option is enabled
+  * Add checkboxes for enable or disable grab image of the mouse pointer
+  * Add configuration option for enable or disable grabbing image of the mouse pointer
+  * Change const DEF_ENABLE_EXT_VIEWER from "1" to "true"
+  * Add code for grab image of the cursor on the screenshots (full screen or active window)
+  * Add CMake modules for finding XCB library
+  * Install the app icon to the hicolor theme
+  * Move "quit" toolbutton to the right edge of toolbar
+  * Return simple QSystemTray notification, if D-Bus notifications is disabled
+  * Add build option "-DSG_DBUS_NOTIFY" for enable \ disable D-Bus notification support
+  * Replace QStystemTray notification at Freedesktop notificaions (via DBus)
+  * Rename method "Core::getScreen" to "Core::getScreenData"
+  * Add configuration option for url to mediacru.sh uploader
+  * "Imgur' now is default uploader
+  * Create screengrab_it.desktop
+  * Update screengrab_it_IT.ts
+
+1.95_pr1 / 2015-01-29
+=====================
+
+  * Reverse wrong cleanup in 21ad656c7284f346f5ecd4fc6914fa53b5c23093
+
+1.95 / 2015-01-29
+=================
+
+  * v2.0-beta1
+  * Small CMakeLists cleanup
+  * Refactor connections signals & slots to the Qt5-style (modules classes)
+  * Refactor connections signals & slots to the Qt5-style (core and ui classes)
+  * Incapsulate pointer to Config instance in Core instance
+  * Remove debug output prints
+  * Add ability to upload on MediaCrush vith "--upload" command line option
+  * Restore ability to upload screenshot vith "--upload" command line option
+  * Restore ability for send IPC signal from new instance to the running instance (if "Allow multiple instances" is disabled)
+  * Actions of the modules (upload & edit) moved to the right at the toolbar
+  * Restore ability to run as minimized to tray (or taskbarO
+  * Actions  of the modules (upload & edit) moved to the left at the toolbar
+  * Replace the deprecated QPixmap::grabWindow() method at the QScreen::grabWindow()
+  * Replase emitimh signal "newScreenShot" by direct call "updatePixmap" method of the MainWnd
+  * Make re-update preview after editing screenshot
+  * Fox wrong connect to slot for the "copy" action
+  * Refactor adding to main toolbar the actions for upload & edit screenshot
+  * Restore code for autosave mainwindow size on exit
+  * Change order initialization for some members of the MainWindow
+  * Kill some old unused code
+  * Refactor code for displaying tray info messages
+  * Update code fo crate / kill tray icon and tray menu actions
+  * Remove some old code
+  * Restore shortcuts
+  * Restore open screenshot in ext viewer by double click on preview
+  * Restore display tooltip on the preview image
+  * Make right resizing mainwindow preview on startup
+  * Return worked resize pixmap on resizing main window
+  * Small return show() main window code
+  * Captured screenshot now displayed again
+  * Return make first screenshot when app is running
+  * Remove old quit() method from MainWindow
+  * Rewok restoring main window after shot
+  * Fix file saving (now used Qt-based dialog for save)
+  * Refactir method for hide main window on the sho event
+  * Screenshot with delay is moved to Core::setScreen
+  * Update close event code
+  * Fix crash on exit
+  * Code from "restoreWindow()" moved to "show()" (Main window)
+  * Start refactoring MainWindos and COre
+  * Sync translation infrastrucuture with LXQt
+  * Destroy old architecture
+  * lxqt_translate_desktop: Updates code to cope with the cmake-policy CMP0054
+  * Fix translations loader path bug introduced recently
+  * Remove old Windows files and move Changelog.txt
+  * More CMake cleanups
+  * Remove call 'displayPixmap()' method from the constructor of main window.
+  * Made first screenshot not too small in main window
+  * Removes left behind commented lines
+  * Merges singleapp lib with the core.
+  * More cleanups
+  * Use QDesktopServices::openUrl instead of calling xdg-open on uploader
+  * Move configuration const variables to #defines
+  * Remove option to use XDG's home config path and use it by default
+  * Remove old unused code
+  * Remove unused include in moduleuploader class
+  * Bump minimal required Qt version to 5.2
+  * Replace old command line parser on the QCommandLineParser
+  * Extracts modules translations sources
+  * Adds translation infrastructure to the modules
+  * Updates main application translations sources
+  * Use LXQt translation infrastructure
+  * Drop the check on Qt5LinguistTools_FOUND
+  * Avoid opening two intances of external editor
+  * translations: Use install(FILES ...) instead of install(DIRECTORY ...)
+  * Fix is not loaded translations
+  * Remove unnecessary separator from toolbar
+  * Use the same actions for both toolbar and tray menu
+  * Removed code specific to X11 (using KWindowSystem now) and large code refactoring to LXQt's style
+  * GUI fixes
+  * Use libqtxdg for the external editor module
+  * Fix some smapp typos in README
+  * Bump version number to 2.0-dev
+  * Add AUTHORS list
+  * Fix wrong 'imgur' uploading result string for bb-code with preview
+  * Fix regressive starting crash with 'showTrayIcon=false' settings parameter
+  * Define and handle LIB_SUFFIX
+  * Updated German translation
+  * Move buttons on right to toolbar and clean up main window layout
+  * Add an empty toolbar
+  * Get rid of DESKTOP_SESSION hacks
+  * Normalize style to whatever extent possible..
+  * Move translations to translations/
+  * No need to mention Qt-based
+  * Update Russian translation
+  * Remove debian/
+  * Move license to COPYING
+  * Change default preferences shortcut to something more appropriate
+  * Remove unused code
+  * Get rid of a warning in dialoguploader.ui
+  * Fix a warning in Core::sleep()
+  * Fix translations
+  * Windows support removed and CMake cleanups
+  * Port to Qt5
+  * CMakeLists.txt cleanup
+  * Some clean-ups in docs/html/en/index.html
+  * Fixed some typos in CMakeLists.txt
+  * Reword help messages
+  * Clean up --help output
+  * Remove imgshack support
+  * Move Delay below the screen, next to Type
+
+1.2 / 2014-12-30
+================
+
+  * v1.2 release
+  * Add some Q_UNUSED macro
+  * Update changelog
+  * Add option for autosaving type of the last created screenshot
+  * Add ability for autosaving type of the last created screenshot
+  * Fix a warning in Core::sleep()
+
+1.1.1 / 2014-11-14
+==================
+
+  * v1.1.1
+  * Update .ts files
+  * Fix wrong 'imgur' uploading result string for bb-code with preview
+  * Fix regressive starting crash  with 'showTrayIcon=false' settings parameter
+
+1.1 / 2014-11-12
+================
+
+  * v1.1
+  * Reword help messages
+  * Clean up --help output
+  * Update 'direct link' string for Uploade::MediaCrush (made link really direct, not page with image)
+  * Hide "fade effect" bug on the kwin with enabled  compositing. issue #48
+  * Small update .ts files
+  * Change the "Exit" to a "Quit" button in the main window
+  * Updated help-file (cont.)
+  * Updated help-file (cont.)
+  * Updated help-file (cont.)
+  * Updated help-file (cont.)
+  * Updated help file (cont.)
+  * Fix non-reading local mimieifo.cache issue #42
+  * Start update docs for 1.1 release issue #43
+  * Update ChangeLog  for 1.1 release
+  * Updated help file (cont.)
+  * Updated help file (cont.)
+  * Updated help file
+  * Updated ChangeLog.txt
+  * Fixed some typos in ChangeLog.txt
+  * Updated German translation
+  * Update ts files more
+  * Update translation files
+  * Update about.cpp
+  * Update configwidget.ui
+  * Update about.cpp
+  * Update core.cpp
+  * Update dialoguploader.cpp
+  * Update screengrab.desktop
+  * Update configwidget.cpp
+  * Update README.md
+  * Add check Debian or Ubuntu, via existing '/etc/debian_version' file (for set LIB path)
+  * Add hiding label and field for display preformated html and bb code with links to uploaded screenshot, when these links not were  generated by uploader module. close #33
+  * Fix some tooltps in the window of the result uploading. issue #33
+  * Add the button for open "drect link" in the window of the result uploading. issue #33
+  * Add the button for open "delete link" in the window of the result uploading. issue #33
+  * Move "delete link" (in the window of the result uploading) into separate UI element issue #33
+  * Add empty widget for MediaCrush uploading settings. Fixed #36
+  * some typos:   omage -> image   Sset   -> Set   {A,a}utomaticaly - tically
+  * Add the delete url for MediaCrush uploads issue #27
+  * Micro refactor in MediaCrush uploder code
+  * Updated readme file
+  * Set Qt 4.8.0 as minimum required verions of Qt
+  * Add uploading to MediaCrush issue #27
+  * Move the clipboard setting below the default host. issue #28
+  * Set active tab "Saving" in the main section  on load settings dialog issue #28
+  * Remove unused section in the configuration dialog issue #28
+  * Move "Zoom area around mouse in selection mode" to the "Main" section, in the "Screenshot" tab issue #28
+  * Move the filename clipboard copy to the Main tab, in the Saving section issue #28
+  * Secyion "main" of the configuration widget were split to the two tabs issue #28
+  * Disable (instead of hiding) other tray options when the tray isn't checked issue #28
+  * Fixes some English strings in the settings dialo issue #28
+  * Fixes some English strings in the settings dialog issue #28
+  * Made "Upload" and "Edit" in as two buttons instead "Advanced" button. close #29
+  * Fix detect 'lib64' dir
+  * Make "Help" a menu-button, with "Help" and "About" as menu items issue #29
+  * Option "Always save the window size" replaced by autosave window size on exit app. issue #28
+  * Started developing version 1.1
+  * Refactor some win32-depend code
+
+1.0 / 2013-08-13
+================
+
+  * Release 1.0
+  * Fix segfault on startup, when missing configuration file close #26
+  * Update ukrainian translation
+  * Update translation files
+  * Refactor some private class members (coding style fix)
+  * Updated copyrights (2012 -> 2013 year), version 1.0
+  * Remove unused files in ExtEdit module
+  * Update docs close #22
+  * Change modules lib fron STATIC to SHARED (only linux) close #23
+  * Enable shared linking with qkeysequencewidget library issue #23
+  * Update changelog for feature, which was added in issue #20
+  * Add the ability to automaticaly upload screenshot via command line "--upload" param issue #20
+  * Add dummy code for shadow upload screenshot issue #20
+  * Remove some old an unused code
+  * Refactor comand line options code close #21
+  * Add public method to ModuleManager, for init modules outside Core constructor
+  * Add "upload" cmd line param
+  * Update docs
+  * Update changelog
+  * Add opening screenshot in external default viewer by double click issue #18
+  * Add tooltip on screenshot view in main window issue #18
+  * Add load and saving @Enable ext view@ option in gui configuration dialog issue #18
+  * Add checkbox for enable disable external view option issue #18
+  * Add config param for enable\disable external view on dbl click issue #18
+  * Refactor code for reset to default settings in modules
+  * Fix non restore ImgUr as default image host by reset setings
+  * Refactor configwidget code for load modules configwidgets and save settings
+  * Remove prereserved listitem for ploader config widget in main configdialog
+  * Add return module by num if for cycle call all modules
+  * Add method for returning modules count (modulemanager)
+  * Add returning module name method to module interface
+  * Const string for path to global app linst moved outside a ExtEdit class
+  * Add ability to editing screenshots in external app (in Win32 platforn) close issue #10
+  * Add update screenshot when it is a changed and saved in external editor.
+  * Changed Core::getPixmap() return value form QPixmap to QPixmap*.
+  * Add monitoring changes for editing screenshot in external app by QFileSystemWatcher (issue #10)
+  * Implemented opening screenshot in selected external app.  issue #10
+  * Add killing temp file after prepare screenshot for uploading
+  * Add core mrthod to kill temporary file
+  * Move method for getTempFilename from Uploader class to Core class
+  * Remove old unused code for module calls
+  * Implement base run selected external editor (without file)
+  * Set caption "Close" to DialogUploader->butClose in  uploadDone slot
+  * Set caption "Close" to DialogUploader->butClose in  uploadDone slot
+  * Refactor code for generate and display links with links on uploaded image (add delete url if it avalible) issue#17
+  * Add show delete url in "imgur uploader" #17
+  * Fix text labels on the uploader view (close #19)
+  * Temporary fix regressive crash whan display configuration dialog
+  * Remove some debug outputs
+  * make inheritance class ModuleUploader by QObject and AbstractModule and connect class action to Init() slot
+  * Refactor generate advansed menu in mainwindow
+  * Add  module base interface and modulemanager basic implementation
+  * Add implementation for get external editors list
+  * Add extedit module static lib to linl on main code
+  * Add displaing status of SG_EXT_EDIT build variable
+  * ./src/common/singleapp/singleapp.cpp:94:60: error: format not a string literal and no format arguments [-Werror=format-security] ./src/common/singleapp/singleapp.cpp:100:60: error: format not a string literal and no format arguments [-Werror=format-security] cc1plus: some warnings being treated as errors
+  * Add module ext edit implementation
+  * Add license header in extedit module files
+  * Add menu for advanced actions and reconnect "Upload" slot to it.
+  * Change butUpload to butAdvanced
+  * Add blank code  for module 'external edit'
+  * Fix override user set CXXFLAGS (close #14)
+  * Some small fix in ui and updated translation files
+  * added ability to run in minimized to ttray (or taskar, if tray is disabled) with "--minimized" comand line option
+  * Add "Previous selection" mode (issue #12)
+  * Micro fix code formating
+  * Small updates in user docs files
+  * Change preview image alignment in uploader dialog
+  * Fix  incorrect scale of preview image  in uploader dialog
+  * Fix non-selection default (first) image hosting in uploader dialog, when uploader.conf is missing
+  * Small fix in README filex
+  * Add note for building with using system version Qxt in Debian-based Linux distro (#11)
+  * Kill some compile warnings in uploader code
+
+0.9.96 / 2012-10-03
+===================
+
+  * v0.9.96 (1.0-rc, code and text strings are freezed to 1.0 release)
+  * Update translation files
+  * Remake about dialog
+  * Add layouts to "Common settings" tab in uploader config widget
+  * Implement selection uploader fron "defaultHost" settings param
+  * Add options for selectin default image hosting
+  * Change the  text align on label for the option to select host settings (uploader config widget)
+  * Fix install README file problem
+  * Add some forgotten strings to README
+  * Update README file
+  * Add ability to build with system Qxt Lib (-DSG_USE_SYSTEM_QXT=ON) #11
+  * Add FindQxt.cmake module for detecting installed Qxt Library
+  * Fix resizing list of configuration sections
+  * Remove fixed size in configuration dialog
+  * Some small modified ui of uploader module
+  * Add layout to uploaderconfigwidget_imgur
+  * Remove some debug and unused code
+  * Add autocopy to clipboard  result direct url for uploaded screenshot (if it is a set as true)
+  * Add widget for configuration uploading to image hosts (imgshack is work, imgur is not)
+  * Add .gitignore file
+  * Add save, load and deafaults setings of uploader (base, not full settings for image hostings)
+  * Add widget for uploader settings
+  * Fix incorrect defination path to user documentation files
+  * Move README file to project root directory
+  * Added forgotten license header into some new files
+  * Restore functionality for umageshack.us uploader part
+  * Add base implementation  load & save uploader config params
+  * Slider "Image Quality" is hiding, if selected default format not "jpg" (issue #8)
+  * v0.9.94
+  * Some small code formating changes and remove unused code
+
+0.9.94 / 2012-07-27
+===================
+
+  * Some small code formating changes and remove unused code
+  * Fix non-minimize main window on @Exit@ shortcut, when use "Minimize to tray" option
+  * Escape key now is default shortcut to exit (issue #7)
+  * add ability to compile without upload feature [-DSG_EXT_UPLOADS=OFF] issue#5
+  * Remaked uploader module (base functions) Add ability to upload to imgur.com (issue #4)
+  * Add "0" symbol before string of  screenshot's number (if num < 10)
+  * Remove conditional compilation in get save path function [core]
+  * Fix regression of autosaving first screenshot, when filename includes date-time
+  * Add checking existing file, when filename of saving file contains date-time string
+  * Removed compareSavename  core function
+  * Moved screen number variable to Config class And commit forgotten changes for area selection grabber code
+  * Fix crash when canceled select of screen area (by Esc key)
+  * Append scheenshot number (1,2,3,etc) to default screenshot name, if it is already exists (issu #6)
+  * Updated ChangeLog
+  * Add build option SG_XDG_CONFIG_SUPPORT for enable storage config files in XDG_CONFIG_JOME (issue
+  * [X11 only] add moving config files from old-style location ($HOME/.screengrab/) to XDG_CONFIG_HOME ($XDG_CONFIG_HOME/screengrab/)
+
+0.9.90 / 2012-04-06
+===================
+
+  * Add Spanish translation (thanks to Burjans L García D)
+  * Add Italian translation (thnks to speps)
+  * Fix for selection on dual monitor
+  * Updated copyrights (2011 -> 2012 year), version 0.9.90
+  * Fixed wrong saving screenshot, when canceled area selection (in "Screen area" mode)
+  * Removed bad and deprecated code in regionselectclass
+  *  changed applying region selection (from releasing left mouse button  to double click or  pressing enter)
+  * aligned some code lines in mainwindow.cpp
+  * Added  disabling slider for set image qualkity, when bmp format is selected
+  * Added build option for manually setting name of documentation directory in unix(e.g.  screengrab-1.0"
+  * Moved defination -DBUILD_QXT_GUI to if SG_GLOBALSHORTCUTS block
+  * Dixed some warnings
+  * Added "image quality" option for saved screenshots
+  * Removed overloaded method Core::writeScreen and moved his functionality to main Core::writeScreen method
+  * Fixed code indents  in configwidget.cpp
+  * Modified ui for uploader doalog
+  * Set minimal button size of uis to 112 px
+  * Modified configuration dialog (tabwidget replaced by stackedwidget + listwidget)
+  * button text "Information" replaced with "About"
+
+0.9.85 / 2011-08-17
+===================
+
+  * Modified CMakeLists.txt - added some target for create distro (src and windows binary)
+  * Fixed non-saving uploader settings in windows
+  * Modified changelog and CMakeLists.txt v0.9.85
+  * small fix ui
+  * v0.9.82
+  * Fixed regression with non-capturing screen when runnin another instance
+  * Changed sizePolicy for buttons on main windows changed default width from 449 to 480 fixed issue #11
+  * Fixed non-creating directory for saved screenshot, when it directory was manualy entered in config dialog (v0.9.81) changed method of creating a dev-version number (nov baed on git rev)
+  * Fixed non-creating directory for saved screenshot, when it directory was manualy entered in config dialog (v0.9.81) changed method of creating a dev-version number (nov baed on git rev)
+
+0.9.80 / 2011-05-30
+===================
+
+  * Added implementation uploader settings
+  * Added static method to get the settings storage directory
+  * Implement set username and password in uploading process
+  * Added ui elements for user's imageshack account (login|pass)
+  * Added connectyion between errorFail signal in uploader backend and errorFail slot in uploader giu
+  * Fix incorrect setting mime-type for uploaded jpeg screenshots
+  * Added parsing returned error messages
+  * Modified ui for uploader dialog (set layouts on upload page)
+  * Modified ui for uploader dialog (set layouts on upload page)
+  * Added select modes for server-side resize uploaded screenshots
+  * Implement uploaderdialog ui basic functionaly
+  * Added basic implementation of create network request for uploader
+  * Added overloaded function writeScreen() in Core
+  * Started implementation uploading
+  * Added overloaded function writeScreen() in Core
+  * added skeletons for of functions for creating upload data &  http-request
+  * Some small changes in uploader ui
+  * added connect button click to uploading slot
+  * Cleaned uploaderdialog ui (kill deprecated concept)
+  * Added copying string of saved image name (file name or full path)
+  * Small upd some include directives
+  * Implementation of the autoincrement filenames when saving screenshots in maual mode (in one running session)
+  * Updated CmakeLists.txt
+  * Added build option  SG_GLOBALSHORTCUTS for enable|disable global shortcuts support in compile time
+  * Added setup @close shortcut" on close button
+  * Added ui dialog item foe @close  shortcut"
+  * Added config key and default value for shotrcut close (load & save shortcuts modified)
+  * Changed detecting KDE session in show savefile dialog (for display KDE-based dialog in KDE SC 4.6)
+  * Starting development version 1.0
+  * added dir for debian-based pakcge cfgs
+  * Started  uploader branch
+
+0.9.1 / 2011-01-20
+==================
+
+  * v 0.9.1
+  * Remove incorrect symbol in mai.cpp
+  * added debian oackage configs
+  * Updated ts files
+  * Updaded docs files
+  * Changed years in license headers
+  * Added hack for in gnome on showing window when run second instance app
+  * Removed double grab screen in start another instance app
+  * Removed executable flag from source files
+  * Added link to X11, for building in some rpm-based linux distro (Fedora, Mandriva, etc)
+  * Removed g++ warnings on some function of CmdLine class
+  * Added return value on assignment operator of Core class
+  * Close regression with not create screenshot whe run second instace app
+  * Added question messagebox on restore settings (replace information messagebox)
+  * Fix tray visible regression (hack with reimplement MainWindow::show() method )
+  * Added grab screenshot in restore mainwindow on signal from anther instance app (tested in KDE SC 4.6)
+  * Fixed non changed "Type" combobox on restoring app window when recieved msg from another innstance
+  * Start dev 0.9.1 bugfix
+  * Changed detecting KDE session in show savefile dialog (for display KDE-based dialog in KDE SC 4.6)
+
+0.9 / 2010-11-14
+================
+
+  * v0.9
+  * Updated pt_BR help file
+  * Removed unused debug output
+  * Small fx text strings
+  * Changed value of DEF_SHOW_TRAY from false to true
+  * Updated pt_BR translation
+  * change spacing for checkbox "Save first screen" from 14 to 16 px
+  * added margin in ledt for checkAutoSaveFirst
+  * mall string fix in core.cpp
+  * Modified README.txt
+  * Modified Russian & Ukrainian translation modified
+  * updated html-based user docs
+  * v0.8.97
+  * String freeze for version 0.9
+  * fixed crash when selected  not avalible shortcuts in condig dialog (Windows)
+  * fixed non-build 0.8.95 in windows
+
+0.8.95.1 / 2010-10-20
+=====================
+
+  * fixed crash by clicking on empty shortcuts treewidget
+  * Update changelog for 0.9
+
+0.8.95 / 2010-10-17
+===================
+
+  * version 0.8.95 (0.9-rc)
+  * Added private slot for block|unblock global shortcuts in main wnd (when show config dialog)
+  * Renamed configwidget -> ConfigDialog & aboutWidget -> AboutDialog
+  * Added activation process of capturing key sequence with mouse dblClick & key enter pressed on hotkey items
+  * change method navigation on hotkeys treewidget
+  * Fixed regression incorrect displays tray messages
+  * Autoconnects replaced to manual connects in config dialog
+  * Refactored getDefaultFormatID method in Config class (ifs -> QVector.indexOf)
+  * added checkbox in configdialog for autosSaveFirst option
+  * added check of autoSaveDirst option on screenShot function
+  * fix forgotten loading autoSaveFirst option
+  * add setter & getter for aoutoSaveFirst option
+
+0.8.88 / 2010-09-24
+===================
+
+  * removed some debug code
+  * added small hack for block crash on grab selected area with globalshortcuts (whem main window is trayed) -- win32 only
+  * remove duplicate qrc file some fix on try code
+  * fix for build on win32 with mingw 4.4.0
+  * class screengrab renamed to core
+  * removed some deprecated code
+  * added non-displayed @new screen@ message on crete first screenshot (when ScreenGrab starting)
+  * remove inused code; added small hack for display autosave tray message on running screengrab
+  * restored saving mainwindow size on exit (if it enabled)
+  * restored minimization on tray on close window  button,  when is it enabled
+  * replace first call screenShot from core to mainWindow (core->screenShot() ) constructor
+  * Test commit
+  * Test commit
+  * Test commit
+  * add implementation get screens on shortcuts
+  * add shortcuts creating in mainwindow
+  * add trayed flag for check minimization to systray
+  * implement show runned aps when  run another instance app with disabled allow multiple copies
+  * modify showAbout & showOptions method (fix crash when mainwindow is trayed)
+  * change emiting nweScreen signal pos in code
+  * add display tray notitfications
+  * add block tray icon on mwe screen getting process
+  * add sending StateNotigyMessages from core to mainwindow fix #includes
+  * returned tray
+  * dlete backupp files, created kdevelop
+  * first commit

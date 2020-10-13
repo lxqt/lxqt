@@ -1,0 +1,55 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+	<interface name="org.lxqt.global_key_shortcuts.native">
+		<method name="addClientAction">
+			<arg name="shortcut" type="s" direction="in"/>
+			<arg name="path" type="o" direction="in"/>
+			<arg name="description" type="s" direction="in"/>
+			<arg name="usedShortcut" type="s" direction="out"/>
+			<arg name="id" type="t" direction="out"/>
+		</method>
+
+		<method name="modifyClientAction">
+			<arg name="path" type="o" direction="in"/>
+			<arg name="description" type="s" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+
+		<method name="changeClientActionShortcut">
+			<arg name="path" type="o" direction="in"/>
+			<arg name="shortcut" type="s" direction="in"/>
+			<arg name="usedShortcut" type="s" direction="out"/>
+		</method>
+
+		<method name="deactivateClientAction">
+			<arg name="path" type="o" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+
+		<method name="removeClientAction">
+			<arg name="path" type="o" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+
+		<method name="enableClientAction">
+			<arg name="path" type="o" direction="in"/>
+			<arg name="enabled" type="b" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="isClientActionEnabled">
+			<arg name="path" type="o" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+
+		<method name="grabShortcut">
+			<arg name="timeout" type="u" direction="in"/>
+			<arg name="shortcut" type="s" direction="out"/>
+			<arg name="failed" type="b" direction="out"/>
+			<arg name="cancelled" type="b" direction="out"/>
+			<arg name="timedout" type="b" direction="out"/>
+		</method>
+
+		<method name="cancelShortcutGrab"/>
+	</interface>
+</node>

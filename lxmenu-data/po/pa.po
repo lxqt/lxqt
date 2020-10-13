@@ -1,0 +1,249 @@
+# translation of gnome-menus.HEAD.po to Punjabi
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# Amanpreet Singh Alam <aalam@redhat.com>, 2004.
+# Amanpreet Singh Alam <amanpreetalam@yahoo.com>, 2005.
+# A S Alam <aalam@users.sf.net>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus.HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-06-03 06:26+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi <punjabi-l10n@lists.sf.net>\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "ਸਾਊਂਡ ਅਤੇ ਵੀਡਿਓ"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "ਮਲਟੀਮੀਡਿਆ ਮੇਨੂ"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "ਪਰੋਗਰਾਮਿੰਗ"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "ਸਾਫਟਵੇਅਰ ਦੇ ਵਿਕਾਸ ਲਈ ਸੰਦ"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "ਸਿੱਖਿਆ"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "ਖੇਡਾਂ"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "ਖੇਡਾਂ ਅਤੇ ਮਨੋਰੰਜਨ"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "ਗਰਾਫ਼ਿਕਸ"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "ਗਰਾਫ਼ਿਕਸ ਕਾਰਜ"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "ਹਾਰਡਵੇਅਰ"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "ਕਈ ਹਾਰਡਵੇਅਰ ਜੰਤਰਾਂ ਲਈ ਸੈਟਿੰਗ"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "ਇੰਟਰਨੈੱਟ ਅਤੇ ਨੈੱਟਵਰਕ"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "ਨੈੱਟਵਰਕ ਨਾਲ ਸਬੰਧਤ ਸੈਟਿੰਗ"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "ਦਿੱਖ ਅਤੇ ਵਰਤੋਂ"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "ਡੈਸਕਟਾਪ ਦਿੱਖ ਅਤੇ ਰਵੱਈਆ ਕੰਟਰੋਲ ਕਰਨ ਲਈ ਸੈਟਿੰਗ"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "ਕਾਰਜ"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "ਸਿਸਟਮ"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "ਨਿੱਜੀ ਪਸੰਦ ਅਤੇ ਪਰਸ਼ਾਸਨੀ ਸੈਟਿੰਗ"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "ਇੰਟਰਨੈੱਟ"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "ਇੰਟਰਨੈੱਟ ਇਸਤੇਮਾਲ ਕਰਨ ਲਈ ਕਾਰਜ, ਜਿਵੇਂ ਕਿ ਵੈੱਬ ਤੇ ਈ-ਮੇਲ"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "ਦਫ਼ਤਰ"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "ਦਫ਼ਤਰ ਕਾਰਜ"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "ਹੋਰ"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "ਕਾਰਜ, ਜੋ ਕਿ ਕਿਸੇ ਵਰਗ ਵਿੱਚ ਨਹੀਂ ਆਉਦੇ।"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "ਨਿੱਜੀ"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "ਨਿੱਜੀ ਸੈਟਿੰਗ"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "ਮੇਰੀ ਪਸੰਦ"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "ਨਿੱਜੀ ਪਸੰਦ"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "ਪਰਸ਼ਾਸਨ"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "ਪੂਰੇ ਸਿਸਟਮ ਲਈ ਸੈਟਿੰਗ ਬਦਲਾਅ (ਸਭ ਉਪਭੋਗੀਆਂ ਨੂੰ)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "ਸਿਸਟਮ ਸੈਟਿੰਗ"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "ਸਿਸਟਮ ਸੰਦ"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "ਸਿਸਟਮ ਸੰਰਚਨਾ ਅਤੇ ਨਿਗਰਾਨੀ"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "ਯੂਨੀਵਰਸਲ ਪਹੁੰਚ"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "ਯੂਨੀਵਰਸਲ ਪਹੁੰਚ ਸੈਟਿੰਗ"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "ਸਹਾਇਕ"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "ਡੈਸਕਟਾਪ ਸਹਾਇਕ"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "ਯੂਨੀਵਰਸਲ ਪਹੁੰਚ ਨਾਲ ਸਬੰਧੀ ਪਸੰਦ"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "ਨਿੱਜੀ ਪਸੰਦ ਅਤੇ ਸੈਟਿੰਗ"
+
+#~ msgid "Menu Editor"
+#~ msgstr "ਮੇਨੂ ਸੰਪਾਦਕ"
+
+#~ msgid "Edit Menus"
+#~ msgstr "ਮੇਨੂ ਸੋਧ"
+
+#~ msgid "_Applications:"
+#~ msgstr "ਕਾਰਜ(_A):"
+
+#~ msgid "_Defaults"
+#~ msgstr "ਮੂਲ(_D)"
+
+#~ msgid "_Menus:"
+#~ msgstr "ਮੇਨੂ(_M):"
+
+#~ msgid "Name"
+#~ msgstr "ਨਾਂ"
+
+#~ msgid "Show"
+#~ msgstr "ਵੇਖਾਓ"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "ਘਰ ਡਾਇਰੈਕਟਰੀ ਨਹੀਂ ਮਿਲੀ: /etc/passwd ਵਿੱਚ ਕੁਝ ਦਿੱਤਾ ਨਹੀਂ ਹੈ ਅਤੇ ਮਾਹੌਲ ਵਿੱਚ $HOME ਲਈ "
+#~ "ਕੋਈ ਮੁੱਲ ਨਹੀਂ ਹੈ।"
+
+#~ msgid "Menu file"
+#~ msgstr "ਮੇਨੂ ਫਾਇਲ"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "ਮੇਨੂ ਤਬਦੀਲੀਆਂ ਲਈ ਨਿਗਰਾਨ"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "<Exclude> ਇੰਦਰਾਜ਼ ਸ਼ਾਮਲ"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "NoDisplay=true entries ਸ਼ਾਮਲ"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "ਗਲਤ ਡੈਸਕਟਾਪ ਫਾਇਲ ID"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[ਗਲਤ ਫਾਇਲ ਨਾਂ]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== ਮੇਨੂ ਬਦਲਿਆ ਗਿਆ, ਮੁੜ ਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "ਮੇਨੂ ਲੜੀ ਖਾਲੀ ਹੈ"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- ਜਾਂਚ ਡੈਸਕਟਾਪ ਮੇਨੂ ਨਿਰਧਾਰਨ ਦਾ ਗਨੋਮ ਸਥਾਪਨ"

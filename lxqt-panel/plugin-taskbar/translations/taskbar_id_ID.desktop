@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Task Manager
+Comment=Switch between running applications
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations

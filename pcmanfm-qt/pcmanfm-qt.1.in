@@ -1,0 +1,51 @@
+.TH PCManFM-Qt "1" "September 2014" "@CMAKE_PROJECT_NAME@ @PCMANFM_QT_VERSION@" "User Commands"
+.SH NAME
+PCManFM-Qt \- A lightweight Qt-based file manager for X Window.
+.SH SYNOPSIS
+pcmanfm\-qt [OPTION...] [FILE1, FILE2,...]
+.SH DESCRIPTION
+PCMan File Manager Qt (\fBPCManFM-Qt\fP) is an extremely fast, lightweight, yet
+feature-rich file manager with tabbed browsing. It is the default file manager
+for the lightweight desktop environment \fBLXQt\fP.
+.SH OPTIONS
+.SS "Help Options:"
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+Show help options
+.SS "Application Options:"
+.TP
+\fB\-p\fR, \fB\-\-profile\fR=\fI\,PROFILE\/\fR
+Set name of configuration profile
+.TP
+\fB\-d\fR, \fB\-\-daemon\-mode\fR
+Run PCManFM as a daemon
+.TP
+\fB\-\-quit\fR
+Quit PCManFM
+.TP
+\fB\-\-desktop\fR
+Launch desktop manager
+.TP
+\fB\-\-desktop\-off\fR
+Turn off desktop manager if it's running
+.TP
+\fB\-\-desktop\-pref\fR=\fI\,NAME\/\fR
+Open desktop preference dialog on the page with the specified name
+.TP
+\fB\-w\fR, \fB\-\-set\-wallpaper\fR=\fI\,FILE\/\fR
+Set desktop wallpaper from image FILE
+.TP
+\fB\-\-wallpaper\-mode\fR=\fI\,MODE\/\fR
+Set mode of desktop wallpaper. MODE=(color|stretch|fit|center|tile)
+.TP
+\fB\-\-show\-pref\fR=\fI\,NAME\/\fR
+Open Preferences dialog on the page with the specified name
+.TP
+\fB\-n\fR, \fB\-\-new\-window\fR
+Open new window
+.TP
+\fB\-f\fR, \fB\-\-find\-files\fR
+Open Find Files utility
+.SH "AUTHORS"
+.B pcmanfm-qt
+was primarily written by Hong Jen Yee (PCMan) <pcman.tw@gmail.com>.

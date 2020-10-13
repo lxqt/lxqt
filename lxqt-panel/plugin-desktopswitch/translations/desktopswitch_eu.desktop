@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Desktop switcher
+Comment=Allows easy switching between virtual desktops.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[eu]=Mahaigain birtualen artean modu errazean aldatzeko aukera eskaintzen du.
+Name[eu]=Mahaigain-aldatzailea

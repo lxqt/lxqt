@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Task manager
+Comment=Switch between running applications
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[eu]=Aldatu martxan dauden aplikazioen artean
+Name[eu]=Ataza-kudeatzailea

@@ -1,0 +1,53 @@
+.TH lxqt-policykit-agent "1" "September 2012" "LXQt\ 0.5.0" "LXQt\ Module"
+.SH NAME
+lxqt-policykit-agent \- Polkit agent for \fBLXQt\fR: the faster and lighter QT Desktop Environment
+.SH SYNOPSIS
+.B lxqt-policykit-agent
+[\fICurrently No command line arguments\fR]
+.br
+.SH DESCRIPTION
+This module handles policykit for \fBLXQt\fR. The authentication agent is used to make the user of
+a session prove that the user of the session really is the user (by authenticating as the user) or
+an administrative user (by authenticating as a administrator).
+.P
+The \fBLXQt modules\fR are desktop independent tools and operate as daemons
+for the local user for desktop specific operations.
+.P
+\fBLXQt\fR is an advanced, easy-to-use and fast desktop environment based on Qt
+technologies, ships several core desktop components, all of which are optional:
+.P
+ * Panel
+ * Desktop
+ * Application launcher
+ * Settings center
+ * Session handler
+ * Polkit handler \fI(this)\fR
+ * Display manager handler
+.P
+These components perform similar actions to those available in other desktop
+environments and their name is self-descriptive. They are usually not launched
+by hand but automatically, when choosing a LXQt session in the Display
+Manager.
+.SH BEHAVIOR
+The module detected on shares privilege escalation and maintain a security dialog
+that ask for the user's key need for action.
+.SH AUTOSTART
+The module is only shown in \fBLXQt\fR desktop, but one can create an autostart action
+for other desktop environments.
+.SH "REPORTING BUGS"
+Report bugs to https://github.com/lxqt/lxqt/issues
+.SH "SEE ALSO"
+\fBLXQt\fR has been tailored for users who value simplicity, speed and
+an intuitive interface, it's also intended for less powerful machines. See:
+
+.\" any module must refers to session app, for more info on start it
+.P
+\fBlxqt-session.1\fR  LXQt for manage LXQt complete environment
+.P
+\fBstart-lxqt.1\fR  LXQt display management independent startup.
+.P
+\fBlxqt-config-session.1\fR  LXQt application for performing session autostart applications
+.P
+.SH AUTHOR
+This manual page was created by \fBPICCORO Lenz McKAY\fR \fI<mckaygerhard@gmail.com>\fR
+for \fBLXQt\fR project and VENENUX GNU/Linux.

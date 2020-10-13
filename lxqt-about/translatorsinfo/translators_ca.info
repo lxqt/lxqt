@@ -1,0 +1,42 @@
+# _help = Don't translate this text, it is only help. I want to thank you in the "About" dialog. So, please fill the following information about yourself. The number does not matter, all the names will be displayed in alphabetical order.
+
+
+translator_1_nameEnglish = Robert Antoni Buj Gelonch
+#translator_1_nameNative  = Translator 1. Your name in the native language.
+translator_1_contact     = rbuj@fedoraproject.org
+
+# translator_2_nameEnglish = Translator 2. Your name in English.
+# translator_2_nameNative  = Translator 2. Your name in the native language.
+# translator_2_contact     = Translator 2. Contact information, email or web site address.
+
+# translator_3_nameEnglish = Translator 3. Your name in English.
+# translator_3_nameNative  = Translator 3. Your name in the native language.
+# translator_3_contact     = Translator 3. Contact information, email or web site address.
+
+# translator_4_nameEnglish = Translator 4. Your name in English.
+# translator_4_nameNative  = Translator 4. Your name in the native language.
+# translator_4_contact     = Translator 4. Contact information, email or web site address.
+
+# translator_5_nameEnglish = Translator 5. Your name in English.
+# translator_5_nameNative  = Translator 5. Your name in the native language.
+# translator_5_contact     = Translator 5. Contact information, email or web site address.
+
+# translator_6_nameEnglish = Translator 6. Your name in English.
+# translator_6_nameNative  = Translator 6. Your name in the native language.
+# translator_6_contact     = Translator 6. Contact information, email or web site address.
+
+# translator_7_nameEnglish = Translator 7. Your name in English.
+# translator_7_nameNative  = Translator 7. Your name in the native language.
+# translator_7_contact     = Translator 7. Contact information, email or web site address.
+
+# translator_8_nameEnglish = Translator 8. Your name in English.
+# translator_8_nameNative  = Translator 8. Your name in the native language.
+# translator_8_contact     = Translator 8. Contact information, email or web site address.
+
+# translator_9_nameEnglish = Translator 9. Your name in English.
+# translator_9_nameNative  = Translator 9. Your name in the native language.
+# translator_9_contact     = Translator 9. Contact information, email or web site address.
+
+# translator_10_nameEnglish = Translator 10. Your name in English.
+# translator_10_nameNative  = Translator 10. Your name in the native language.
+# translator_10_contact     = Translator 10. Contact information, email or web site address.

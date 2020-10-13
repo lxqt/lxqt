@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Volume control
+Comment=Control the system's volume and launch your preferred mixer.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[hu]=A rendszer hangerejének beállítása
+Name[hu]=Hangerőszabályzó

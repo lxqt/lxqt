@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Show desktop
+Comment=Minimize all windows and show the desktop
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[th_TH]=ย่อเก็บหน้าต่างทั้งหมดและแสดงพื้นโต๊ะ
+Name[th_TH]=แสดงพื้นโต๊ะ

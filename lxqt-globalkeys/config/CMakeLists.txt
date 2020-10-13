@@ -1,0 +1,148 @@
+set(PROJECT_NAME lxqt-config-globalkeyshortcuts)
+project(${PROJECT_NAME})
+
+set(QT_DBUS_PREFIX "org.qtproject")
+
+set(${PROJECT_NAME}_PATH_TO_DAEMON "${LXQT_GLOBALKEYS_SOURCE_DIR}/daemon")
+
+set(${PROJECT_NAME}_SOURCES
+    main.cpp
+    main_window.cpp
+    actions.cpp
+    default_model.cpp
+    shortcut_selector.cpp
+    ${${PROJECT_NAME}_PATH_TO_DAEMON}/meta_types.cpp
+    edit_action_dialog.cpp
+)
+
+set(${PROJECT_NAME}_FORMS
+    main_window.ui
+    edit_action_dialog.ui
+)
+
+set(${PROJECT_NAME}_RESOURCES
+)
+
+set(${PROJECT_NAME}_TRANSLATIONS
+)
+
+set(${PROJECT_NAME}_CPP_HEADERS
+    ${${PROJECT_NAME}_PATH_TO_DAEMON}/meta_types.h
+)
+
+set(${PROJECT_NAME}_DBUS_ADAPTORS
+)
+
+set(${PROJECT_NAME}_DBUS_INTERFACES
+    ${${PROJECT_NAME}_PATH_TO_DAEMON}/org.lxqt.global_key_shortcuts.daemon.xml
+)
+set_source_files_properties(${${PROJECT_NAME}_PATH_TO_DAEMON}/org.lxqt.global_key_shortcuts.daemon.xml PROPERTIES
+    BASENAME org.lxqt.global_key_shortcuts.daemon
+    INCLUDE ${${PROJECT_NAME}_PATH_TO_DAEMON}/meta_types.h
+)
+
+set(${PROJECT_NAME}_HEADERS
+    ${${PROJECT_NAME}_CPP_HEADERS}
+)
+
+set(${PROJECT_NAME}_TRANSLATABLE
+    ${${PROJECT_NAME}_SOURCES}
+    ${${PROJECT_NAME}_HEADERS}
+    ${${PROJECT_NAME}_FORMS}
+)
+
+foreach(DBUS_ADAPTOR ${${PROJECT_NAME}_DBUS_ADAPTORS})
+    get_filename_component(DBUS_ADAPTOR_FILENAME ${DBUS_ADAPTOR} NAME)
+    configure_file(
+        ${DBUS_ADAPTOR}
+        "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_ADAPTOR_FILENAME}"
+        @ONLY
+    )
+    get_source_file_property(DBUS_ADAPTOR_INCLUDE ${DBUS_ADAPTOR} INCLUDE)
+    get_source_file_property(DBUS_ADAPTOR_PARENT_CLASSNAME ${DBUS_ADAPTOR} PARENT_CLASSNAME)
+    get_source_file_property(DBUS_ADAPTOR_BASENAME ${DBUS_ADAPTOR} BASENAME)
+    get_source_file_property(DBUS_ADAPTOR_CLASSNAME ${DBUS_ADAPTOR} CLASSNAME)
+    if(DBUS_ADAPTOR_BASENAME)
+        if(DBUS_ADAPTOR_CLASSNAME)
+            qt5_add_dbus_adaptor(${PROJECT_NAME}_DBUS_ADAPTOR_FILES "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_ADAPTOR_FILENAME}" ${DBUS_ADAPTOR_INCLUDE} ${DBUS_ADAPTOR_PARENT_CLASSNAME} ${DBUS_ADAPTOR_BASENAME} ${DBUS_ADAPTOR_CLASSNAME})
+        else()
+            qt5_add_dbus_adaptor(${PROJECT_NAME}_DBUS_ADAPTOR_FILES "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_ADAPTOR_FILENAME}" ${DBUS_ADAPTOR_INCLUDE} ${DBUS_ADAPTOR_PARENT_CLASSNAME} ${DBUS_ADAPTOR_BASENAME})
+        endif()
+    else()
+        qt5_add_dbus_adaptor(${PROJECT_NAME}_DBUS_ADAPTOR_FILES "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_ADAPTOR_FILENAME}" ${DBUS_ADAPTOR_INCLUDE} ${DBUS_ADAPTOR_PARENT_CLASSNAME})
+    endif()
+endforeach()
+
+foreach(DBUS_INTERFACE ${${PROJECT_NAME}_DBUS_INTERFACES})
+    get_filename_component(DBUS_INTERFACE_FILENAME ${DBUS_INTERFACE} NAME)
+    configure_file(
+        ${DBUS_INTERFACE}
+        "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_INTERFACE_FILENAME}"
+        @ONLY
+    )
+    get_source_file_property(DBUS_INTERFACE_BASENAME ${DBUS_INTERFACE} BASENAME)
+    get_source_file_property(DBUS_INTERFACE_INCLUDE ${DBUS_INTERFACE} INCLUDE)
+    get_source_file_property(DBUS_INTERFACE_CLASSNAME ${DBUS_INTERFACE} CLASSNAME)
+    get_source_file_property(DBUS_INTERFACE_NO_NAMESPACE ${DBUS_INTERFACE} NO_NAMESPACE)
+    set_source_files_properties("${CMAKE_CURRENT_BINARY_DIR}/${DBUS_INTERFACE_FILENAME}" PROPERTIES
+        INCLUDE ${DBUS_INTERFACE_INCLUDE}
+        CLASSNAME ${DBUS_INTERFACE_CLASSNAME}
+        NO_NAMESPACE ${DBUS_INTERFACE_NO_NAMESPACE}
+    )
+    qt5_add_dbus_interface(${PROJECT_NAME}_DBUS_INTERFACE_FILES "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_INTERFACE_FILENAME}" ${DBUS_INTERFACE_BASENAME})
+endforeach()
+
+qt5_add_resources(${PROJECT_NAME}_RESOURCE_FILES ${${PROJECT_NAME}_RESOURCES})
+
+set_property(SOURCE
+        ${${PROJECT_NAME}_DBUS_INTERFACE_FILES}
+        ${${PROJECT_NAME}_DBUS_ADAPTOR_FILES}
+    PROPERTY SKIP_AUTOGEN ON
+)
+
+# Translations **********************************
+lxqt_translate_ts(${PROJECT_NAME}_QM_FILES
+    UPDATE_TRANSLATIONS ${UPDATE_TRANSLATIONS}
+    SOURCES
+    ${${PROJECT_NAME}_TRANSLATABLE}
+    INSTALL_DIR
+    ${LXQT_TRANSLATIONS_DIR}/${PROJECT_NAME}
+)
+
+lxqt_app_translation_loader(${PROJECT_NAME}_QM_LOADER ${PROJECT_NAME})
+lxqt_translate_desktop(${PROJECT_NAME}_DESKTOP_FILES
+    SOURCES
+    ${PROJECT_NAME}.desktop.in
+)
+#************************************************
+
+set(${PROJECT_NAME}_GENERATED_FILES
+    ${${PROJECT_NAME}_FORM_FILES}
+    ${${PROJECT_NAME}_RESOURCE_FILES}
+    ${${PROJECT_NAME}_QM_FILES}
+    ${${PROJECT_NAME}_DBUS_INTERFACE_FILES}
+    ${${PROJECT_NAME}_DBUS_ADAPTOR_FILES}
+    ${${PROJECT_NAME}_DESKTOP_FILES}
+    ${${PROJECT_NAME}_QM_LOADER}
+)
+
+set(${PROJECT_NAME}_ALL_FILES
+    ${${PROJECT_NAME}_SOURCES}
+    ${${PROJECT_NAME}_HEADERS}
+    ${${PROJECT_NAME}_GENERATED_FILES}
+)
+
+add_executable(${PROJECT_NAME} ${${PROJECT_NAME}_ALL_FILES})
+target_link_libraries(${PROJECT_NAME} KF5::WindowSystem lxqt)
+
+install(TARGETS
+    ${PROJECT_NAME}
+    RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
+    COMPONENT Runtime
+)
+
+install(FILES
+    ${${PROJECT_NAME}_DESKTOP_FILES}
+    DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/applications"
+    COMPONENT Runtime
+)

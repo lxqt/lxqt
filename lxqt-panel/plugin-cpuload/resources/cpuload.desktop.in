@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=CPU monitor
+Comment=Displays the current CPU load.
+Icon=cpu
+
+#TRANSLATIONS_DIR=../translations

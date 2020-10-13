@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Quicklaunch
+Comment=Launch your favorite Applications
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations

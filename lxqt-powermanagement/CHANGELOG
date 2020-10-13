@@ -1,0 +1,304 @@
+lxqt-powermanagement-0.15.0 / 2020-04-22
+========================================
+  * Bumped version to 0.15.0.
+  * C++11 code updates.
+  * Remove (duplicated) string casts definitions.
+  * Added an option to change the display backlight when the computer is idle.
+
+lxqt-powermanagement-0.14.1 / 2019-02-25
+========================================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+lxqt-powermanagement-0.14.0 / 2019-01-25
+========================================
+
+  * Bumped version to 0.14.0
+  * Don't use automatic string conversions
+  * Improved cmake scripting
+    - set cmake_minimum_required to 3.1.0
+    - removed locale compile definitons
+  * Moved translations from lxqt-l10n back to lxqt-powermanagement
+    - removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+
+lxqt-powermanagement-0.13.0 / 2018-05-21
+========================================
+
+  * Spanish translation update
+  * CMake: Prevent in-source builds
+  * fix razor-qt -> lxqt and http -> https
+  * Fix mentions of LXDE
+  * Add Simplified Chinese translations
+  * Add support for turning monitor(s) off
+  * Add Traditional Chinese desktop entry
+  * Add Simplified Chinese desktop entry
+  * Drop Qt foreach
+
+lxqt-powermanagement-0.12.0 / 2017-10-21
+========================================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version
+  * Spell check (add "," and "-")
+  * Don't export github templates
+  * Adding missing "Comment" section to .desktop files. Fix for https://github.com/lxde/lxqt/issues/1339
+  * Added Lithuanian language
+  * Drops Qt5Core_VERSION_STRING
+  * lxqt-config-powermanagement: set Qt::AA_UseHighDpiPixmaps to true
+  * Added QCommandLineParser and basic cli interface to lxqt-config-powermanagement and lxqt-powermanagement
+  * Added default CMAKE_BUILD_TYPE and LXQT_POWERMANAGEMENT_PATCH_VERSION
+  * added *pl.desktop
+  * Fixes a FTBFS in superbuild mode
+  * Added merged autostart to CMakeLists.txt
+  * Updated *_da.desktop files and removed *_da_DK.desktop files
+  * Update desktop entries and Replace fr_FR by fr
+  * Move Italian desktop entry to correct path
+  * Update Greek translation (el) Remove country variant from language code
+  * Rename LxQt to LXQt everywhere
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Updates the build system to use the Targets infrastructure
+  * Rename Power Management module name again
+  * Rename LXQt Power Management module name
+  * Drops hardcoded /etc/xdg paths
+  * Updated german translation, replaced Qt4 by Qt in all xsession/translations
+  * Portuguese update for .desktop files
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * remove dead template lines switch OnlyShowIn from Razor -> LXQt stringchanges LxQt -> LXQt
+  * Renamed lxqt-autosuspend.desktop.in --> lxqt-powermanagement.desktop.in
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Default to no action if the action is not specified in the config file
+  * BatteryWatcher: Fix indentation
+  * Bump year
+
+lxqt-powermanagement-0.11.1 / 2017-01-01
+========================================
+
+  * Release 0.11.1: Update changelog
+  * Add lxqt-config-powermanagement_da.desktop
+  * Create lxqt-config-powermanagement_fr.desktop
+  * Make CMakeLists.txt more uniform.
+  * Remove cpack (#43)
+
+lxqt-powermanagement-0.11.0 / 2016-09-24
+========================================
+
+  * Release 0.11.0: Add changelog
+  * README.md: Replace dependency XCB with KIdleTime
+  * Idleness Watcher: rely on KIdleTime instead of XCB (#33)
+  * fix indents
+  * Update and extend README.md
+  * Add Catalan translation
+  * Add Arabic Translation for Desktop File
+  * I18N: Fix Plural Strings (#38)
+  * Removes the QEventLoop from the Watcher class
+  * build: Use external translations
+  * ts-files removal (#34)
+  * Bump year Fix licenses, lxqt-powermanagement is LGPL only
+  * Fix source language in Italian translation file
+  * Italian translation update
+  * Update Russian translation Remove ru_RU files
+  * Fix typo in Greek translation
+  * update: lxqt-powermanagement_hu.ts
+  * Add German translation
+
+lxqt-powermanagement-0.10.0 / 2015-10-31
+========================================
+
+  * Update translations
+  * Fix LICENSE file
+  * Add (re)enabling info message
+  * Rename "On Ac" to "On AC" to have a single string for both
+  * Fix typo in message
+  * Remove "LXQt " from .desktop to follow pattern
+  * Update batteryhelper.cpp
+  * Fixed typo Unkown -> Unknown
+  * lidwatcher: don't listen to Changed signal
+  * Add some missing license headers
+  * OnlyShowIn=LXQt;
+  * Add Greek (el) translation Add the 'Comment' key in desktop file
+  * Add key "Comment" to desktop entry file
+  * Rename LxQt to LXQt everywhere
+  * Handles CMake policy CMP0063
+  * Use the LXQtCompilerSettings CMake module
+  * Make built-in icon move clockwise when charging
+  * Fix red-painting of built-in icon when power low
+  * Adds Runtime install COMPONENT
+  * Coding sytle change
+  * Use GNUInstallDirs
+  * Removes non existent RESOURCES
+  * Use CMAKE_AUTOUIC, drop qt5_wrap_ui()
+  * Remove unneeded include_directories() entries
+  * Minor strings update
+  * Updates the build system to the Targets infrastructure
+  * Remove trailing whitespaces
+  * Enable screen locking from the idleness watcher
+  * Prevent a too small value for the idle watcher
+  * Correctly check for batteries on first run
+  * re-add notification about missing battery
+  * Added italian translations
+  * Hungarian translations added
+  * Support CMake 2.8.11 again
+  * Typos: fix "Idle" capitalization and misspelling
+  * Add icons to the action in the systray icon's menu
+  * Polish translation updated
+  * Only show batteries of type PrimaryBattery. Fixes #535
+  * Make lxqt-powermanagement tray's tooltip work again
+  * Fix warning from clang
+  * Fix some wrong use of Solid::Battery::capacity instead of ..::energy
+  * Align slots and connects with what signals Solid offers
+  * Make batterywatcher react to energylevel- and powersupplystate changes
+  * Port to KF5's Solid
+
+lxqt-powermanagement-0.9.0 / 2015-01-26
+=======================================
+
+  * Portuguese update
+  * Fix some translation keys
+  * Small layoutchange in batterysettings
+  * Fix strings to be easier translatable
+  * Portuguese update
+  * Add Japanese translation
+  * - Unify naming for a unique lxqt. No more suffixes
+  * Fix battery info dialog's layout
+  * Small tweak to the built-in icon
+  * Added semitransparent background to built in icon
+  * Simplified rendering of built-in icons and added a gradient to them
+  * Use SingleApplication rather than Application
+  * Handle more than one battery
+  * Reordered responsibillities between classes
+  * Some refactoring
+  * Some cleanup
+  * Remove cancel button from batteryinfodialog.ui
+  * Correct one fontsize in batteryinfo.ui
+  * Refactor battery info dialog to handle more than one battery
+  * Cleaned out a lot of old debug statements
+  * Adjusted how chargelevels are mapped to icons
+  * Added icon preview to batterywatcher config
+  * Factor out icon producing in separate class
+  * Clean up code for picking battery icon from theme
+  * Add icon to config window
+  * Fix config gui
+  * Use the new LXQtTranslate modules.
+  * Fixes translations not being loaded.
+  * Updates translations
+  * Adds and uses QtTranslate cmake module for handling .ts translations
+  * Add Russian translation
+  * Include Qt5Gui_PRIVATE_INCLUDE_DIRS for qplatformnativeinterface.h
+  * Clean up CMakeLists.txt, drop Qt4 support
+  * Adds option to disable systray icon in preferences and on the icon's context menu
+
+lxqt-powermanagement-0.8.0 / 2014-06-29
+=======================================
+
+  * Fix incorrect lib linking.
+  * Add initial Qt5 support.
+  * Add missing lgpl-headers
+  * Recognize Alec Moskvin as author in 'about' dialog
+  * Fix includes, hopefuly correct this time
+  * Clean up includes
+  * Tell logind to not handle lidswitch when lidwatcher is enabled
+  * Added contextmenu to battery systemtray icon
+  * On first run disable lidwatcher/batterywatcher if lid/battery not present
+  * Add missing ${QTXDG_INCLUDE_DIRS} to include_directories().
+  * Use preferred header style
+  * Temporary fix for #86
+  * Corrected badly formed includes. Fix for #81
+
+lxqt-powermanagement-0.7.0 / 2014-05-01
+=======================================
+
+  * Remove outdated and unused manpage
+  * Add AUTHORS
+  * Strings improvements
+  * Add CPack rules for creating tarball
+  * Fix .desktop icon (thanks, @agaida)
+  * Improvements to .desktop file
+  * Adapt to recent upower api changes
+  * Update README
+  * Fix updating of minutes and seconds in idleness settings
+  * Fix small bugs in idleness-settings, update of seconds
+  * Fix icons in configure-powermanager
+  * Slightly more userfriendly idleness-settings-dialog
+  * Added first-time-run notification with configure-button
+  * Some cleanup + fix idlenesswatcher to use power
+  * More code cleanup
+  * Minor adjustments to config ui's
+  * cleanup
+  * Code cleanup
+  * ui cleanups
+  * Clean up battery-watcher-settings ui
+  * Fixed lxqt-config-powermanagement.desktop file
+  * Renames and cleanup
+  * Lid, Idleness and Battery merged into one application
+  * Normalize imports
+  * Config for idleness and some more options for lidsettings
+  * Removed CMAKE_SOURCE_DIR usage from CMakeLists.txt files
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * rename razor to lxqt in some strings
+  * Replace lxqt with ${LXQT_LIBRARIES} when linking.
+  * Compile-time dependancy on lxqt library added
+  * Project name fixed
+  * Fix build and adopt new APIs of liblxqt.
+  * Renamed some #ifndef/#define s
+  * Make powermanagement compile and link with liblxqt and libqtxdg
+  * Changed prefix from lz to lxqt for all powermanagement apps
+  * Cleanup of old razor-autosuspend code
+  * cmake-files cleanup
+  * Initial commit
+  * Renames and cleanup in config
+  * Renames and cleanup in idleness
+  * Renames and cleanup in battery
+  * Rename and cleanup in lid
+  * Split razorautosuspend into lid and battery, make stuff compile
+  * Moved razorqt-screenlocker into razor-autosuspend
+  * X-RAZOR changed to Razor in desktop files
+  * razor-autosuspend handle more battery-icon naming schemes
+  * Fix underlinking with QtDbus
+  * Autosuspend: Force icon to update when settings change
+  * Autosuspend: Add config option to start/stop
+  * Autosuspend: Perform a first-run check for a battery
+  * Set battery info dialog title
+  * Trtanslations
+  * Fixes to razor-autosuspend trayicon drawing
+  * New, dynamically generated battery icon for razor-autosuspend
+  * preliminary manpages primary for razorqt and usefully in venenux
+  * autosuspend: fix discharging()
+  * Razor-autosuspend fix missing initialization of Battery
+  * Rename fields in razor-config-autosuspend to comply with code style
+  * Rename variables in razor-autosuspend to comply with coding standards
+  * Now possible to use theme-icons in razor-autosuspend
+  * Translations updated
+  * Translations updated
+  * first part of fixes based on Coverity Scan (code static analysis)
+  * Fix components missing translations
+  * Added copyright headers to constants.h, batteryinfo.h and batteryinfo.cpp in razor-autosuspend
+  * Typos found during translation
+  * Translations
+  * Delete bad en_GB translations
+  * Update translations
+  * Enable translations for some components that were missing them
+  * Load setting on startup and fix wrong slot
+  * razor-autosuspend watch for changes in settings
+  * Translations updated
+  * Removed line num from TS files.
+  * Make razorqt-autosuspend a module
+  * Generate translations for razorqt-autosuspend
+  * Use flexible layouts
+  * Translations
+  * Deleted old translation methods.
+  * New translation infrastructure
+  * Fixes in the debs files for the razor-config-autosuspend.desktop
+  * razor-autosuspend: When batteryinfo open it closes when trayicon clicked
+  * Detailed battery info when clicking razor-autosuspend tray icon
+  * razor-autosuspend registers as dbus-service (org.razor-qt.razor-autosuspend) - fixes #346
+  * Razor-autosuspend: power-low-level is now configurable
+  * Razor-autosuspend: Added shutdown as action on lidclosed or powerlow
+  * Added config app for razor-autosuspend
+  * Moved razor-autosuspend sourcefiles to src-dir
+  * Moved razor-autosuspend to toplevel as it is not really a part of razorqt-power

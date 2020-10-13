@@ -1,0 +1,152 @@
+lxqt-qtplugin-0.15.1 / 2020-05-31
+=================================
+  * Fixed Fusion's window color with Qt 5.15.
+  * Made the window color configurable.
+
+lxqt-qtplugin-0.15.0 / 2020-04-22
+=================================
+  * Bumped version to 0.15.0.
+  * Made libfm-qt a dependency and loaded versioned libfm-qt (for versioned ".so" handling).
+  * C++11 code updates.
+  * Use return braced init list.
+  * Removed (duplicated) string casts definitions.
+  * Removed deprecated QImage method "byteCount()" and used "sizeInBytes()" instead.
+  * Fixed "#include" for libdbusmenu-qt.
+  * Added support for flatpak to StatusNotifierItem.
+  * Added Category property to StatusNotifierItem to fix working on some DEs.
+  * Added support for working without context menu to StatusNotifierItem.
+
+lxqt-qtplugin-0.14.0 / 2019-01-25
+=================================
+
+  * Bumped version to 0.14.0
+  * Dynamically load libfm-qt on demand to create
+    the file dialog helper.
+  * Don't use automatic string conversions
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+    - Removed the superfluous libfm-qt dependency
+
+lxqt-qtplugin-0.13.0 / 2018-05-21
+=================================
+
+  * CMake: Prevent in-source builds
+  * fix http -> https
+  * Fixed mentions of LXDE
+  * lxqtplatformtheme: Initialize "folowColorScheme" once
+  * Fix icon colorizing at startup
+  * Drop Qt foreach.
+  * Handle the new hint ShowShortcutsInContextMenus
+  * Silent unused parameters warnings
+  * Remember the view mode
+
+lxqt-qtplugin-0.12.0 / 2017-10-21
+=================================
+
+  * Release 0.12.0: Update changelog
+  * Set an informal patch version
+  * Don't export github templates
+  * Flag unused vars in onServiceOwnerChanged
+  * Fix missing variable declaration
+  * Handle QML (as @PCMan suggested)
+  * Use mime functions added by @PCMan
+  * Loading and saving window/splitter size
+  * Central positioning with respect to parent
+  * Set window title correctly
+  * Qt version conditions
+  * Just made it compilable
+  * Handle mime-type filters for file dialog. Set custom file dialog labels.
+  * Update options properly.
+  * Implement a basic file dialog helper using libfm-qt's Fm::FileDialog.
+  * Avoid using Qt-specific keywords such as signal/slot and foreach. Instead, use macros.
+  * LXQtPlatformTheme: Make Qt use default palette (#22)
+  * LXQtPlatformTheme: Add icon FollowColorScheme config (#21)
+  * Prevent a possible C++11 range for detach (#20)
+  * Use the CMake MODULE library type.
+  * LXQtPlatformTheme: Propagate wheelScrollLines
+  * LXQtPlatformTheme: Do not provide own palette
+  * Fix multiple StatusNotifierItems.
+  * Bump year
+  * Updates lxqt-build-tools required version
+
+lxqt-qtplugin-0.11.1 / 2016-12-11
+=================================
+
+  * Release 0.11.1: Update changelog
+  * Use lxqt-build-tools
+  * Use the new lxqt-build-tools package
+  * Remove cpack (#14)
+
+lxqt-qtplugin-0.11.0 / 2016-09-24
+=================================
+
+  * Release 0.11.0: Add changelog
+  * Add Qt5XdgIconLoader as dependency (#13)
+  * Update README.md
+  * statusnotifieritem: Correctly handle menu
+  * Cleaned up licenses
+  * Use XdgIconLoader library (#10)
+  * xdgIconThemePaths: Use QString::SkipEmptyParts
+  * xdgIconThemePaths: Remove duplicated paths
+  * Adds $XDG_DATA_HOME to the XdgIconThemePaths
+  * Bump year in AUTHORS
+
+lxqt-qtplugin-0.10.0 / 2015-11-02
+=================================
+
+  * Remove unnecessary qDebug calls
+  * Use markdown for README
+  * Fix license file
+  * Fix mixed indents
+  * Remove Qt >= 5.3 check
+  * Removed GPL2, added Digia Qt LGPL Exception version 1.1
+  * SNI: don't create a SNI if support isn't available
+  * SNI: monitor the watcher in case the host restarts
+  * SNI: implement scroll, showMessage and improve icons
+  * SNI: create default context menu
+  * Support the StatusNotifierItem spec natively
+  * Use the standard palette of the current Qt theme
+  * Handles CMake policy CMP0063
+  * Use the LXQtCompilerSettings CMake module
+  * Add .gitignore
+  * Updates the build system to use the Targets infrastructure
+  * Remove trailing whitespaces
+  * removed debug (which makes every app too verbose)
+
+lxqt-qtplugin-0.9.0 / 2015-01-19
+================================
+
+  * Try to workaround bug #441 - All LXQt::Settings and QSettings file change monitoring stop working.
+  * - Unify naming for a unique lxqt. No more suffixes
+  * Qt5: Use XDG_DATA_DIR for themeHint::IconThemeSearchPaths
+  * CMakeLists.txt cleanuop and drop Qt4 support
+
+lxqt-qtplugin-0.8.0 / 2014-07-18
+================================
+
+  * Apply the default application font on program startup.
+  * Apply the new font to all apps correctly and fix lxde/lxde-qt bug #212 - Changing font or theme in lxqt-config-appearance has no effect.
+  * Make the code compile with Qt 5.2, fix lxde-qt bug #207.
+  * Fix lxde-qt bug #207: lxqt-qtplugin fail to build with Qt5.
+  * Use qmake to query the path of Qt5 plugin dir, which is much more reliable.
+  * Update README and provide information for usage and debugging.
+  * Use a more reliable and portable way to get the path of Qt5 plugin dir.
+  * Support setting default UI font.
+  * Make "oxygen" the default icon theme name. * Apply new style name and icon theme name when the config file is changed.
+  * Simplify the Qt5 plugin and remove liblxqt dependency from it.
+  * Correctly read config values.
+  * Try to load some Qt settings.
+  * Implement a very basic Qt5 platform theme plugin.
+  * Prepare for Qt5 support.
+  * Use preferred header style.
+  * Remove unnecessary debug messages.
+  * Fix int-to-enum casting
+
+lxqt-qtplugin-0.7.0 / 2014-04-29
+================================
+
+  * Update AUTHORS and COPYING
+  * Add CPack rules for creating tarball
+  * Support toolbar styles and activating items with single click.
+  * Initial import.

@@ -1,0 +1,15 @@
+Dialog {}
+
+#panel {
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #EFEFEF, stop:0.25 #e9e9e9, stop: 0.5 #dfdfdf, stop: 0.75 #d7d7d7, stop:1 #c0c0c0);
+    border: 1px solid #B0B0B0;
+}
+
+#closeButton {
+  qproperty-icon: url(lxqt-runner/close-48x48.png);
+}
+
+#commandList {
+  border: none;
+  margin: 0 1px 1px 1px;
+}

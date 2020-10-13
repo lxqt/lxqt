@@ -1,0 +1,71 @@
+#!/bin/sh
+usage() {
+echo "usage: ${0} -l islocaltime -n usentp -t timezone -d newdate [timewhenset]"
+exit 0;
+}
+usentp=""
+islocaltime=""
+timezone=""
+newdate=""
+[ $# -eq 0 ] && usage
+while getopts "n:l:t:d:" arg; do
+  case $arg in
+    n)
+	usentp=${OPTARG}
+	;;
+    l)
+	islocaltime=${OPTARG}
+      ;;
+    t)
+	timezone=${OPTARG}
+      ;;
+    d)
+	newdate=${OPTARG}
+      ;;
+    h | *) # Display help.
+      usage
+      exit 0;
+      ;;
+  esac
+done
+shift $(( OPTIND - 1 ))
+
+if [ "${newdate}" != "" ]; then
+	if [ "$1" != "" ]; then
+		timewhenset=$1;
+		timenow=`date +%s`;
+		timediff=$((${timenow} - ${timewhenset}));
+		settime=$((${newdate} + ${timediff}))
+		echo $timediff
+	else
+                settime=${newdate};
+	fi;
+	echo $settime
+	date -f %s ${settime}
+fi;
+if [ "${usentp}" != "" ];  then
+	if [ "$usentp" = "true" ]; then
+	sysrc ntpd_enable=YES
+	service ntpd stop
+	ntpd -g -q
+	service ntpd start
+	fi;
+	if [ "$usentp" = "false" ]; then
+		sysrc ntpd_enable=false
+		service ntpd onestop
+        fi;
+fi;
+if [ "${islocaltime}" != "" ]; then
+	if  [ $islocaltime = "false" ]; then
+	rm -f /etc/wall_cmos_clock;
+	fi;
+	if [ $islocaltime = "true" ]; then
+	touch /etc/wall_cmos_clock
+	fi
+fi;
+if [  "${timezone}" != ""  ]; then
+	/usr/sbin/tzsetup $timezone
+	/sbin/adjkerntz -a
+fi;
+
+exit $?

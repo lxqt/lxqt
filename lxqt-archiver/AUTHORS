@@ -1,0 +1,23 @@
+This is derived from the Qt port of engrampa, a gnome file-roller derivative.
+Engrampa: https://github.com/mate-desktop/engrampa/
+File Roller: http://fileroller.sourceforge.net/
+
+The original authors of engrampa and file-roller:
+
+MATE developers:
+  Perberos <perberos@gmail.com>
+  Steve Zesch <stevezesch2@gmail.com>
+  Stefano Karapetsas <stefano@karapetsas.com>
+
+Main GNOME developers:
+  Paolo Bacchilega <paolo.bacchilega@libero.it>
+
+GNOME Contributors:
+  Claudio Bley <bley@cs.uni-magdeburg.de> 	Patch to cope with systems that
+						do not have FNM_CASEFOLD 
+						defined.
+  Shaun McCance <shaunm@wolfram.com> 		Zoo archives support.
+  Daniel Brodie <daniel@brodienet.com>          ISO images support.
+
+The Qt port is done by LXQt developers:
+  Copyright 2018 Hong Jen-Yee (PCMan) <pcman.tw@gmail.com>

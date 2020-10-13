@@ -1,0 +1,252 @@
+# Esperanto translation for gnome-menus
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the gnome-menus package.
+#
+# Joop Eggen <joop_eggen@yahoo.de>, 2006
+# Guillaume Savaton <llumeao@tuxfamily.org>, 2006
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2011-09-30 16:22+0200\n"
+"Last-Translator: Kristjan <kristjan.schmidt@googlemail.com>\n"
+"Language-Team: Esperanto <eo@li.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Sono kaj video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Plurmedia menuo"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programado"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Iloj por programado"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Edukado"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Ludoj"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Ludoj kaj amuzoj"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafikoj"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafikaj aplikaĵoj"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Aparataro"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Agordoj por la aparataro"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Interreto kaj reto"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Ret-rilataj agordoj"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Aspekto"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Agordoj pri la aspekto kaj la konduto de la labortablo"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Aplikaĵoj"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Sistemo"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Personaj preferoj kaj administraj agordoj"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Interreto"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programoj por TTT-uzo, ekzemple por TTT-legado kaj retpoŝto"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Oficejo"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Oficejaj aplikaĵoj"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Alia"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Aplikaĵoj neagordaj aliajn kategoriojn"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Persona"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Personaj agordoj"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Agordaĵoj"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Personaj preferoj"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administrado"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Ŝanĝi tut-sistemajn agordojn (afektas al ĉiujn uzantojn)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Sistemaj agordoj"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Sistemaj iloj"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Agordi kaj kontroli sistemon"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Universala alireblo"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Agordoj pri alireblo"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Utilaĵoj"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Labortablaj utilaĵoj"
+
+#~ msgid "Accessibility"
+#~ msgstr "Alireblo"
+
+#~ msgid "Desktop"
+#~ msgstr "Labortablo"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "Agordoj pri alireblo"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Menua redaktilo"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Redakti menuojn"
+
+#~ msgid "_Applications:"
+#~ msgstr "Aplikaĵoj:"
+
+#~ msgid "_Defaults"
+#~ msgstr "Defaŭltoj"
+
+#~ msgid "_Menus:"
+#~ msgstr "Menuoj:"
+
+#~ msgid "Name"
+#~ msgstr "Nomo"
+
+#~ msgid "Show"
+#~ msgstr "Vidigi"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Ne eblas trovi hejman dosierujon: ne agorditan en /etc/passwd kaj mankas "
+#~ "valoro por media variablo $HOME"
+
+#~ msgid "Menu file"
+#~ msgstr "Menua dosiero"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Kontrolilo por menuaj ŝanĝoj"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Inkludu <Exclud> (ekskluditajn) elementojn"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Inkluzivi elementojn kie NoDisplay=true"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Nevalida identeco de labortabla dosiero"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Nevalida dosiernomo]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <ekskludita>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menuo ŝanĝita, reŝargado ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Menua arbo malplenas"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "testi la de GNOME realigon de la Labortabla Menua Specifo"

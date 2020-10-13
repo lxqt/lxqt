@@ -1,0 +1,9 @@
+This is the Qt port of pavucontrol <https://freedesktop.org/software/pulseaudio/pavucontrol/>.
+
+The original authors of the gtk+ version of pavucontrol are:
+* Copyright 2006-2009 Lennart Poettering
+* Copyright 2009-2011 Colin Guthrie <mzcnihpbageby (at) 0pointer (dot) de>
+
+The Qt port pavucontrol-qt is derived from the gtk+ version.
+It's done by LXQt developers:
+* Copyright 2016 Hong Jen-Yee (PCMan) <pcman.tw@gmail.com>

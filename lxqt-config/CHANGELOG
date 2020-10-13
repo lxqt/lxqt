@@ -1,0 +1,635 @@
+lxqt-config-0.15.0 / 2020-04-22
+===============================
+  * Fixed changing of shortcut for switching keyboard layout.
+  * Inserted default GTK3 themes in lxqt-config-appearance.
+  * Set cursor style in GTK2, GTK3 and xsettingsd.
+  * Don't use automatic string conversions.
+  * C++11 code updates.
+  * A better method to drag and drop monitors in lxqt-config-monitor.
+  * Removed old mouse accel/sensitivity options.
+  * Fixed warnings on applying settings in lxqt-config-monitor.
+  * Fixed forgetting of lxqt-config-monitor's config.
+  * Removed old mouse accel/sensitivity options.
+
+lxqt-config-0.14.1 / 2019-02-24
+===============================
+
+  * Apply button for appearance and input config dialogs
+  * Updated translations
+  * Note for packagers: lxqt-config now depends on liblxqt >= 0.14.1
+
+lxqt-config-0.14.0 / 2019-01-25
+===============================
+
+  * Implemented Features:
+    - Introduced GTK appearance settings
+    - Initial touchpad settings and improved input device handling
+  * Implementation fixed:
+    - lxqt-config: Removed ancient Qt workaround that creates problems now
+    - lxqt-config-appearance: Some GUI fixes
+    - lxqt-config-appearance: mkpath if settings of GTK doesn't exists.
+    - lxqt-config-brightness: Backlight control updated
+    - lxqt-config-brightness:
+      XRandrBrightness::backlight_get_with_range return value
+    - lxqt-config-monitor: Monitor name is added to output.
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Check for xi and libudev
+    - Removed QUIET from find_package
+    - Removed dependency on QtConcurrent
+    - Removed locale compile definitons
+    - Installed former missed man pages
+  * Moved translations from lxqt-l10n back to lxqt-policykit
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+
+lxqt-config-0.13.0 / 2018-05-21
+===============================
+
+  * Spanish translation uptdate
+  * Update name for shortcut component
+  * timeoutdialog.cpp: include QIcon, QStyle explicitely
+  * Remove time-out from backlight slider
+  * lxqt-config-brightness: Sets minimum backlight value to 0
+  * CMake: Prevent in-source builds
+  * lxqt-config-brightness backlight checks if backlight power is on.
+  * Backlight can not be under 2%.
+  * Backlight control updated.
+  * lxqt-config-input: Adds the ability to set the initial page
+  * Fix combo boxes
+  * fixed two typos (#146)
+  * Fixed http -> https and razor-qt -> lxqt
+  * Fixed some LXDE mentions
+  * Add gamma(brightness) reset as a cli option
+  * Remove unnecessary repeating statements
+  * Add brightness reset by right-clicking on the knob.
+  * Update Simplified Chinese translations (#139)
+  * Prevent possible container detachments
+  * Drop Qt foreach
+  * Use absolute paths for DATAROOTDIR
+  * Update Catalan translation
+  *_hu.desktops added/modified
+  * Use CMAKE_INSTALL_DATAROOTDIR
+  * Add Spanish desktop entry.
+  * Add Spanish desktop entry
+
+lxqt-config-0.12.0 / 2017-10-21
+===============================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version
+  * Use $XDG_CONFIG_HOME/mimeapps.list for mime data instead of $XDG_DATA_HOME/applications/mimeapps.list (#129)
+  * Don't export github templates
+  * Update monitorsettingsdialog.ui
+  * lxqt-config-locale: corrected/reworded Save Changed Settings dialog
+  * Add/update *lt.desktop files
+  * lxq-config-monitor: set Qt::AA_UseHighDpiPixmaps to true
+  * lxqt-config-locale: set Qt::AA_UseHighDpiPixmaps to true
+  * lxqt-config-input: set Qt::AA_UseHighDpiPixmaps to true
+  * lxqt-config-file-ass.: set Qt::AA_UseHighDpiPixmaps to true
+  * lxqt-config-brightness: set Qt::AA_UseHighDpiPixmaps to true
+  * lxqt-config-appearance: set Qt::AA_UseHighDpiPixmaps to true
+  * liblxqt-config-cursor: set Qt::AA_UseHighDpiPixmaps to true
+  * Added QCommandLineParser and basic cli interface to lxqt-config-monitor
+  * Added QCommandLineParser and basic cli interface to lxqt-config-locale
+  * Added QCommandLineParser and basic cli interface to lxqt-config-input
+  * Added QCommandLineParser and basic cli interface to lxqt-config-file-associations
+  * Added version info to lxqt-config-brightness cli
+  * Added QCommandLineParser and basic cli interface to lxqt-config-appearance
+  * Added QCommandLineParser and basic cli interface to lxqt-config
+  * Added LXQT_CONFIG_PATCH_VERSION
+  * Fixed typo in appearance_pl_PL.desktop (#124)
+  * i18n: added some *.desktop for Polish language
+  * Fixes (#121)
+  * appearance: Fix typo from @aca544479
+  * lxqt-config-file-associations: Sets the initial focus (#120)
+  * appearance: Add icon FollowColorScheme configuration (#119)
+  * Show non-primary screens in UI. (#116)
+  * Removes unneeded include_directories() entry
+  * Fixes a FTBFS with CMake v3.8
+  * Use const iterators
+  * Update AUTHORS
+
+lxqt-config-0.11.1 / 2017-01-01
+===============================
+
+  * Release 0.11.1: Update changelog
+  * lxqt-config-monitor: remove unnecessary wait before settings load (#114)
+  * Fix self icontheme update (#113)
+  * liblxqt-config-cursor: Don't check for null pointer before deleting it
+  * liblxqt-config-cursor: Explicitly ignore function return value
+  * Updated and added *_da.desktop files and removed da_DK
+  * Use FindXCB CMake module
+  * Activate items on releasing Enter instead of pressing it. (#78)
+  * Update and rename lxqt-config_fr_FR.desktop to lxqt-config_fr.desktop
+  * Fix faulty link in README.md
+  * if not set, set the build type to Release
+  * Desktop entry files: Update French translation
+  * lxqt-config: Avoid multiple spawn on auto-repeat
+  * Fix loading of translations for brightness
+  * Create lxqt-config-brightness_it.desktop
+  * Remove cpack (#104)
+  * lxqt-config-brightness: Add GenericName and Comment to desktop entry
+
+lxqt-config-0.11.0 / 2016-09-24
+===============================
+
+  * Release 0.11.0: Add changelog
+  * appearance: Avoid blocking when setting wallpaper
+  * appearance: Do (not) change wallpaper with theme
+  * all: Remove XdgIcon & XdgIconLoader usage
+  * brightness: Add change confirmation dialog
+  * brightness: Correct indentation
+  * Update README.md
+  * Replaces deprecated QStyleOptionViewItemVx
+  * Add Catalan translations
+  * Add and Update Arabic Translations for Desktop Files
+  * lxqt-config-monitor: Correct loadsettings.cpp
+  * lxqt-config-monitor: Use QGuiApplication
+  * I18n: Fix Plural String (#94)
+  * fixed crash when selecting "extended view" while second monitor is off (#91)
+  * build: Add optional build for subcomponents
+  * lxqt-config-appearance: Fix a null pointer dereference (#93)
+  * Add README.md
+  * lxqt-config-brightness: Remove compiler warning
+  * lxqt-config-brightness: Add libxcb dependency
+  * lxqt-config-brightness: Use *_LDFLAGS in target_link_libraries
+  * lxqt-config-appearance: Use fewer XdgIcon* stuff (#92)
+  * lxqt-config-appearance: Use the new XdgIconLoader library (#90)
+  * build: Use external translations (#89)
+  * ts-files removal (#88)
+  * Use const references with the foreach iterator
+  * translations: russian translation update (#85)
+  * font config: make it possible to write custom fontconfig files (#83)
+  * view: Use icon/decoration size based on styling
+  * Set grid size according to font and icon sizes.
+  * lxqt-config-brightness: Use arrow keys to change settings.
+  * Desktop file translation to Spanish added.
+  * lxqt-config-brigness: Set brightness value by command line.
+  * Removed not needed LICENSE
+  * lxqt-config-brightness: Increase or decrease brightness using command line.
+  * Create lxqt-config-locale_it.desktop
+  * Rename from lxqt-config-brightness-settings to  lxqt-config-brightness.
+  * lxqt-config-brightness-settings: Some files changes their licenses from GPL to LGPL.
+  * lxqt-config-brightness-settings lxqt translations module added.
+  * lxqt-config-brightness-settings added.
+  * fix typo skiping -> skipping
+  * build: Fix FTBFS by reverting the @a7220cb
+  * Bum year in AUTHORS
+  * lxqt-config-brightness-settings has been added. It can change brightness and gamma. It's a X11 tool because libKScreen can not change brightness or gamma yet.
+  * lxqt-config: Load/store window size on begin/end
+  * categorizedview: Use correct signature
+  * lxqt-config: Remove homemade "activation logic"
+  * Settings are saved in QSettings format instead JSON format.
+  * Set position widget used bad scale. The real widget size is not set until the widget is shown.
+  * Remove blue square in GUI position
+  * Fast options added.
+  * GUI only lets one primary output.
+  * Icons aren't installed.
+  * Check KScreen reply is OK. Changes in interface.
+  * liblxqt is used to write autostart entry.
+  * Don't track IDE settings
+  * KScreen is slow loading screen modes at starting. Wait for modes ready.
+  * KScreen sometimes changes id of modes. If mode exists and it is OK,         settings will be applied.
+  * Save settings dialog added.
+  * Initial support for different paths of xkb base.lst in different OSes.
+  * A couple of bug fixes Check if the memory was allocated after malloc() and realloc() calls Fix typo
+  * Update german translation
+  * Fix warning on translation
+  * Replace slang with a more traditional wording
+  * build: Use CMAKE_INSTALL_FULL_LIBDIR for RPATH
+  * Fixes an FTBFS on lxqt-config-locale_ru.desktop
+  * Update Russian translations
+  * apearance: Support "System" theme preview
+  * Italian translation update
+  * lxqt-config: Add CTRL+Q shortcut for closing
+  *_hu.ts files updated, *hu_HU.ts files deleted
+  * Mkdir $XDG_CONFIG_HOME/autostart or ~/.config/autostart, if not exists.
+  * lxqt-config-appearance: Choose the icon with the matching size
+
+lxqt-config-0.10.0 / 2015-11-02
+===============================
+
+  * Update translations
+  * Fix license file
+  * Set saved settings at session start.
+  * lxqt-config-monitor: Correctly link to liblxqt
+  * lxqt-config-monitor: GUI for positioning
+  * lxqt-config-monito: Handle the clone combobox
+  * lxqt-config-monitor: Fix activation of second screen
+  * lxqt-config-monitor: Screen rotation
+  * lxqt-config-monitor: Tabs to spaces
+  * lxqt-config-monitor: Remove duplicate modes from list
+  * lxqt-config-monitor: Sort output modes
+  * lxqt-config-monitor: clean-up, old code removed
+  * lxqt-config-monitor: fix for reverting to previous configuration
+  * lxqt-config-monitor: refactoring and improvements
+  * lxqt-config-monitor: Use a separate combobox for clones
+  * lxqt-config-monitor: Actually update the config on setting screen position
+  * lxqt-config-monitor: Display EDID information in an additional tab
+  * lxqt-config-monitor: Attempt at an even simpler UI (#502)
+  * lxqt-config-monitor: Replace xrandr by KScreen
+  * lxqt-config-monitor: Remove backlight/brightness support
+  * Make the lxqt-config-locale chosen settings work
+  * Fix a few typos in file “info-for-developers.txt”
+  * Removed some compile warnings
+  * OnlyShowIn=LXQt;
+  * Add an option to automatically turn on numlock after login (implemented in lxqt-session).
+  * Initial support for locale config, based on formats KCMS.
+  * Rename LxQt to LXQt everywhere
+  * Update Greek (el) translation Remove country variant from language code
+  * lxqt-config: add correct rpath into lxqt-config-input & lxqt-config-appearance to find liblxqt-config-cursor.so installed into private directory
+  * Drop country-specific Italian translations
+  * Updated and created italian .desktop files
+  * Fix mouse settings persistency
+  * fixes lxde/lxqt #785 AUTHORS changed, list the used licenses LXQt license header added
+  * Description: Install private .so file into proper directory. Author: Andrew Lee (李健秋) <ajqlee@debian.org>
+  * Add copyright headers
+  * Handles CMake policy CMP0063
+  * Uses LXQtCompilerSettings CMake module
+  * Fix cursor settings location
+  * Updates translations sources
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Removes unneeded include_directories() entries
+  * Use CMAKE_AUTORCC
+  * Get rid of qt5_wrap_cpp() MOC variables
+  * Use CMAKE_AUTOUIC
+  * Drops LIB_SUFFIX, use GNUInstallDirs
+  * fix build with qt 5.5
+  * Makes it compile in superbuild mode
+  * Updated german translation.
+  * Updates the build system to the Targets infrastructure
+  * polish regarding lxqt-config.desktop
+  * Remove trailing whitespaces
+  * Fix naming and links
+  * Include X-LXQt category in lxqt-config menu
+  * ApplyDialog renamed to SaveSettings.
+  * Rename and delete saved settings added.
+  * Bug always unify monitors fixed.
+  * lxqt-config-appearance: minimum configurable font size -> 4px
+  * Fix function name
+  * Update lxqt-config-input_it.ts
+  * Hungarian translations update, lxqt-config-monitor.desktop.in fixed
+  * Testing changes in the buttonbar of LxQt::ConfigDialog.
+  * Update Russian translation
+  * lxqt-configure-appearance: Reload icons from the user selected theme
+  * The last xrandr backend commit. Save settings added. Framebuffer screen size fixed.
+  * First save settings implementation.
+  * Update lxqt-config-cursor_it_IT.ts
+  * Framebuffer size is calculated on xrand backend.
+  * Update to keep up with our QIconLoader
+  * Added reset values.
+  * Remove testing parameters
+  * Apply page added
+  * Updated to LxQt::ConfigDialog.
+  * Added SVG icon for monitor in monitor position.
+  * Polish translation update
+  * Reorganizing the code. Support for long names in resolution modes .
+  * Reorganizing the code. Support for long names in resolution modes.
+  * Reorganizing the code. Support for long names in resolution modes.
+  * New modes name bug fixed.
+  * lxqt-config-appearance/icontheme: String performance enhancements
+  * Handles previews for inherited icon themes
+  * file-associations:Return from the busy cursor only after the Ui stuff ended
+  * Remove an unneeded dependency on KWindowSystem
+
+lxqt-config-0.9.0 / 2015-01-31
+==============================
+
+  * Delay loading of application icons in the app-chooser dialog for faster loading.
+  * Make the user aware of still ongoing work (Application Chooser)
+  * Bad English fixed
+  * Capitalize themes' names
+  * Create lxqt-config-monitor_it_IT.ts
+  * Update lxqt-config-appearance_it.desktop
+  * Added german translation for file association dialogue
+  * Added german translation for input device settings.
+  * Create lxqt-config-file-associations_it.ts
+  * Update lxqt-config-appearance_it.ts
+  * Update lxqt-config-appearance_it_IT.ts
+  * Added german translation for monitor settings.
+  * Update Japanese translation
+  * Fix PT desktop file names and paths.
+  * Portuguese language update
+  * Updates translations sources
+  * Documenting the code: Magnetic attraction without javascript.
+  * Magnetic attraction procedure has been documented.
+  * Added confirm dialog before saving.
+  * Added backlight control and position control button.
+  * Update lxqt-config-cursor_ja.ts
+  * - Unify naming for a unique lxqt. No more suffixes
+  * Write to mimeapps.list rather than defaults.list
+  * If directory ~/.config/autostart/ doesn't exists, it is created. Save doesn't close window.
+  * Use the new LxQt::SingleApplication
+  * Add windows icon
+  * CMakeLists code reformatting
+  * CMakeLists maintenance
+  * Renames .ts files that used _template in their name
+  * Moves and renames translations files around
+  * Uses the new translations cmake modules
+  * - Add option autohint - Fix compatibility with KDE fonts settings
+  * Activate System Settings items with enter key. Fixes lxde/lxde-qt#355
+  * Update Russian translation
+  * Drop Qt4 support in code
+  * Clean up CMakeLists.txt and drop Qt 4 support
+
+lxqt-config-0.8.0 / 2014-10-10
+==============================
+
+  * Adapts to translations infrastructure
+  * Option to set single-click as default and sigle-click handling in system settings' main window
+  * Qt4 and Qt5 compiling fixed
+  * Compiling in Qt4 fixed.
+  * Fix #273 - File fonts.conf is created as folder if doesn't exist.
+  * Make initial panel receive focus
+  * Adapt to use QtMimeTypes/XdgMimeType
+  * Restore translations.
+  * Use our custom TimeoutDialog to replace QProgressDialog and provide a "cancel" button and show better text in the progress bar.
+  * Little fix for the broken stacked widget.
+  * Replace the scrolled UI with a left list and a right stacked widget to provide usability.
+  * Don't use Qt QObject properties in mode changes. Use MonitorWidget class properties instead.
+  * Fixed: Some ugly code has been changed.
+  * Fixed: Error reading monitor name.
+  * Fixed: Restore position of monitor when user cancels settings.
+  * Fixed: If no relative monitor is selected, then position is disabled.
+  * Fixed: Disable position options when output is unified at start. Fixed: No cicles in relative positions at start.
+  * Fixed: Timeout dialog is now modal.
+  * Fixed: If monitor is turned off, brightness is set to 0. Fixed: Quick options close window on click.
+  * Read vendor from EDID.
+  * Fixed: Gamma error when monitor is turned off.
+  * Gamma control implemented.
+  * Added brightness control. Some bugs fixed reading xrandr properties.
+  * Little adjustment to the UI. Delete unused methods.
+  * Refactor the code, make things more OOP-style. * Slight adjustment to the UI.
+  * Add code to determine the position of monitors and their relationship on startup.
+  * Add a new parser for the output of "xrandr --verbose" to get more detailed monitor info, including gamma.
+  * Add initial translation support and an incomplete zh_TW locale to lxqt-config-monitor.
+  * Integrate the Makefile of lxqt-config-monitor to build it as part of lxqt-config.
+  * Move lxqt-config-monitor into a subdirectory.
+  * Use QWindow::windowHandle()->winId() to replace QWidget::winId() due to a bug of Qt5.
+  * Added: Save settings in autostart desktop file.
+  * Added timeout dialog. When settings are applied, a timeout dialog is shown. If user doesn't press "Yes" button, settings are restored.
+  * Monitor position can be changed. Outputs can be diferent. Position of outputs can be chosen. If system has got two monitors, wizard will be shown to config them.
+  * Modules for xrandr and GUI. Now new backends can be added.
+  * Split xrandr settings from UI.
+  * Readme updated.
+  * Remove all Glib dependencies.
+  * Initial commit
+  * Fix bug #242: lxqt-config-input: Mouse acceleration & sensitivity settings are not saved.
+  * Fix missing libxcb linking so building with llvm/clang now works.
+  * Fixes layout on the Fonts Config Ui
+  * Avoid putting system programs in "LXQt settings" category since they belong to "System settings".
+  * Add <OnlyUnallocated /> to lxqt-config.menu to avoid duplicated items in "Other Settings" section. This fixed lxde-qt bug #186.
+  * Rename lxqt-config-cursor to liblxqt-config-cursor since it's a library.
+  * Show cursors by using raw xcb calls since Qt5 does not support creating QCursor based on native cursor handle.
+  * Write Qt settings to lxqt.conf instead of the deprecated Trolltech.conf in Qt5.
+  * Make the code compile with both Qt4 and Qt5.
+  * Fix keyboard layout settings reading and writting
+  * Cleanup header style
+  * Use new LXQt header files.
+  * Use preferred header style.
+  * Make sure all enums are handled in switch
+  * Fix a null dereference
+  * Remove unnecessary use of alloca, which is not portable.
+
+lxqt-config-0.7.0 / 2014-05-07
+==============================
+
+  * Mention lxqt-config-cursor in AUTHORS
+  * Include some optional components in LXQt settings.
+  * Remove duplicate COPYING file
+  * Update COPYING
+  * Update categories to match proper ones in .desktop files
+  * String changes LxQt -> LXQt and LXDE-Qt -> LXQt without refactoring classes, namespaces and so on
+  * removal of old templates in translations
+
+lxqt-config-0.6.99 / 2014-05-01
+===============================
+
+  * Update manpages
+  * Update AUTHORS
+  * Add CPack rules for creating tarball
+  * config-input: Fix a typo
+  * Preserve the config values in lxqt-session config file. * Support setting key used to switch layouts.
+  * Add keys used to switch layout to the combox box.
+  * Add very primitive support for settings keyboard layout via setxkbmap.
+  * Add a basic skeleton for keyboard layout settings.
+  * lxqt-config-file-associations: Wording in main window
+  * Assorted improvements to .desktop files
+  * Man page improvements
+  * Correctly save the cursor theme name to lxqt session config file.
+  * Correctly write current cursor theme name to ~/.icons/default/index.theme. Deprecate the use of XCURSOR_THEME environment variable.
+  * Support changing double click interval, whell scroll lines, and cursor flash time for Qt programs. Little adjustment of UI.
+  * Fix incorrect linking to liblxqt-config-cursor.
+  * Add missing desktop entry file for lxqt-config-input. Some cleanup.
+  * Rename lxqt-config-mouse to lxqt-config-cursor to reflect what it does. Remove unnecessary desktop entry files and do some makefile cleanup.
+  * Try to integrate lxqt-config-appearance with lxqt-config-mouse so we can select cursor themes in lxqt-config-appearance, too.
+  * Total redesign of lxqt-config-input using LxQt::ConfigDialog and integrate lxqt-config-mouse.
+  * Fix lxqt-config-appearance: write config files on widget destruction properly
+  * Fix dpi settings and add a timeout to 1.5 sec delay to writing fontconfig file.
+  * Read/write ~/.config/fontconfig/fonts.conf file for settings antialias, hinting, and dpi.
+  * Write a fontconfig config file to ~/.config/fonts.conf at the same time.
+  * Fix bugs in font configurations
+  * Try to add very basic font configurations
+  * Add support for toolbar button styles and single click activation for item views
+  * Add support for Qt style selection to lxqt-config-appearance.
+  * Removed CMAKE_SOURCE_DIR usage from CMakeLists.txt files
+  * Fix XDG_MENU_PREFIX and use correct config.menu file.
+  * Support changing the wallpaper of pcmanfm-qt.
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Fix wrong config name.
+  * Project name added to cmake file
+  * Fix wrong Exec lines in desktop entry files.
+  * Fix broken build and rename binaries to lxqt-config-*.
+  * Add COPYING file for razor-config-mouse since it's GPL'd rather than using LGPL.
+  * Add COPYING and AUTHORS
+  * Make razor-config-fileassociations compile with qt 4.6
+  * Corrected include line in mimetypeviewer.cpp
+  * X-RAZOR changed to Razor in desktop files
+  * Make config-file-associations dialogs appear faster
+  * config-file-associations: removed placeholder text from search field
+  * config-file-associations: add search icon to search lineedit
+  * Removed heading from mimetypeviewer in config-file-associations
+  * razor-config-file-associations: Set focus correctly when opening applicationchooser
+  * razor-config-file-associations: remove connect to nonexisting ok-slot
+  * razor-config-file-associations: clean up qDebug lines
+  * config-file-associations, clear mimeinfo frames in mimetypeviewer, when no mimetype chosen
+  * Sorting of applications in config-file-associations
+  * config-file-associations adapt detection of applications to xdg-mime behavior
+  * razor-config: load model content after the window appears on screen (we need to provide some user feedback immediately)
+  * config-file-associations, mimetypeviewer: change tab-order and initial focus
+  * Added search functionality to config-file-associations, MimetypeViewer
+  * config-file-associations, mimetypeviewer: Replaced QTreeWidget with QTreeView and new class MimetypeItemModel as model
+  * config-file-associations: minor changes to mimetypeviewer looks
+  * config-file-associations: Changed application listwidget back to treewidget, and dropped \handles\ listwidget
+  * Improved (hopefuly) layout and look of config-fileassociations, application chooser
+  * config-file-associations: changed treewidget to listwidget in applicationchooser
+  * razor-config-file-associations, improved layout for mimetype-viewer
+  * Added application razor-config-file-associations
+  * fixed appearance icons display + huge filesystem access optimization in this area
+  * Update fixes for qcategorizedview
+  * Make config center icon labels not wrap as much
+  * fixed #488 Display a message if no cursor theme is found
+  * Fix various build falures
+  * Add translation support for qtconfig entry
+  * preliminary manpages primary for razorqt and usefully in venenux
+  * Suppressed warning "variable «currSize» set but not used" in the razorqt-config/src/qcategorizedview/qcategorizedview.cpp:496:29
+  * Suppressed warning "variable «currSize» set but not used" in the razorqt-config/src/qcategorizedview/qcategorizedview.cpp:496:29
+  * Translations updated
+  * Translations updated
+  * Translations
+  * Delete bad en_GB translations
+  * Install translations into correct places
+  * Update translations
+  * Enable translations for some components that were missing them
+  * Minor fixes
+  * Translations updated
+  * Removed line num from TS files.
+  * razor-config: wrap text
+  * Make it possible to build modules separately
+  * Translations
+  * Deleted old translation methods.
+  * New translation infrastructure
+  * Translation for razor-config-appearance
+  * Fix for Issue #290 Fails to build on BSD
+  * Updated ts.src files
+  * removed useles window title
+  * fixed #336: remove the "razor" prefix from razor-config dialog
+  * config app for notifications
+  * Remove RazorNotification classes (no license/copyright)
+  * add module names to includes and tidy up the coding style
+  * Update razorqt-config/razor-config-mouse/thememodel.h
+  * Update razorqt-config/razor-config-mouse/selectwnd.h
+  * Update razorqt-config/razor-config-mouse/previewwidget.h
+  * Update razorqt-config/razor-config-mouse/itemdelegate.h
+  * Update razorqt-config/razor-config-mouse/crtheme.h
+  * fix coding style errors
+  * fix coding style errors
+  * fix coding style errors
+  * fix coding style errors
+  * fix coding style errors
+  * fix coding style errors
+  * fix coding style errors
+  * fix coding style errors
+  * Ts.src files updated.
+  * add module name to include
+  * add module names to includes
+  * add module names to includes and fix style errors
+  * fix coding style errors
+  * add module names to includes
+  * add module names to includes
+  * add module names to includes
+  * add module names to includes
+  * Language name zh_CN.GB2312 braked cmake process.
+  * Translations updated
+  * Environments should be "Razor", not "RAZOR" Thanks Alec Moskvin
+  * Renames razor-config-notificationd window title
+  * Small fixes in the razor-config-appearance  Thanks PICCORO Lenz McKAY.   still need some fixeds:   iconthemeconfig.h:38: error: expected class-name before ‘{’ token   and also the moc ui_mainwindow.h must be renamed too in iconthemeconfig.h
+  * Fix header
+  * Small fixes in the razor-config-appearance
+  * razor-config GUI improvement
+  * razor-config based on XDG Desktop Menu Specification 2
+  * fixed #261 Fix missing icons in razor config center
+  * default arguments for notification client lib
+  * quick compilation fix
+  * razor-config based on XDG Desktop Menu Specification
+  * Composition on by default
+  * GUI for change razor theme.
+  * Fixing cmake error
+  * fixed wrongly set license for new files. It's LGPL2+
+  * much better razor-config layout for icons
+  * config center: align icons into grid; do not show self; OnlyShowIn check
+  * reworked config stuff. No more special config registering. All 'Settings' desktop files are displayed in razor-config (grouped)
+  * Typos in code. Thanks Aaron Lewis.   *  In razor-runner , providers item:  title() was typed as tile()   *  For RazorSettings class , settingsChanged() was typed as settigsChanged()
+  * Minor modifications and code cleanup
+  * Minor ui modifications. Moving default icon to notificationd instead of widget notification
+  * Setting min & max position according to QDesktopWidget
+  * Changing notification ui. Adding default notitifaction icon. Embedding icons in notification
+  * Properly install config Correct desktop file
+  * Proper default values
+  * Proper id number assigned to notifications Properly remove notification by quint32 id
+  * Proper configuration
+  * Rename file to match class name
+  * Remove custom settings, use razor ones
+  * Adding razor-config-notificationd
+  * tweaks for qtconfig installation
+  * qtconfig for razor-config
+  * Transifex desktop: sr_BA.ts should be a local
+  * Transifex desktop: local translations
+  * Transifex desktop: cmake files
+  * Transifex desktop: Translations pulled
+  * Transifex desktop: Reomove translations from desktop.in
+  * Transifex desktop: desktop->desktop.in
+  * Update Tradidtional Chinese Translations
+  * Add Traditional Chinese Translations
+  * Translations update
+  * Added support for the online translation service. www.transifex.net
+  * RazorApplication class implemented; all modules ported to this class
+  * fixed #76: razor-config should respect mouse behaviour
+  * Serbian translation files
+  * Serbian translations (2 variants)
+  * Greek translation by iosifidis
+  * Added danish translations
+  * Russian translation
+  * fix #169: italian translation
+  * Add function to use alternative icons
+  * Relicense
+  * Convert Appearance dialog to use RazorConfigDialog
+  * Fix gmail.ru -> gmail.com
+  * Czech translations (cs_CZ) Desktop files
+  * fixed #138: system settings icons
+  * SVK translation finalized
+  * Initial german [de] translation
+  * Close Issue #120
+  * License audit
+  * Add Chinese(simplified) translation files.
+  * License audit
+  * HU translation by Kristóf Kiszel
+  * Initial spanish translation
+  * Add Slovak (sk) translation
+  * Removes one empty line from .desktop file
+  * Adds newline to the end of .desktop files
+  * Czech translations (cs_CZ)
+  * Fix a few typos
+  * XdgDesktopFile is implicitly shared
+  * huge refactoring of the libraries build organization
+  * config mouse: close button as in the other tools
+  * Razor-config-appearance: incorrect translation path
+  * config: better item layouting in razor-config
+  * config appearance: make icons fully visible
+  * Razor-config: Fixes for razor-config-appearance
+  * Razor-config: New razor-config-appearance
+  * Razor-config: New razor-config-appearance
+  * display icon theme fixes
+  * forgotten debugs
+  * config icons: show progress when it searches for themes
+  * icon theme config - initial revision
+  * Razor-config-mouse: Added check for zlib in CMakeLists.txt
+  * moc warnings cleanup
+  * GPL->LGPL where I'm the author
+  * config: remove toolbars
+  * Polish translation part X
+  * Fix: Desktop Menu Specification category must be X-RAZOR.
+  * Russian translations
+  * unify razor-config look
+  * Added razor-application.menu
+  * razor-config can open items by Enter key too
+  * fixed desktop files
+  * fix donfig desktp files install for rpm
+  * razor-config-mousetheme -> razor-config-mouse rename
+  * do not use direct lib name for X11 stuff
+  * issue #37 - Config-mousetheme show not all themes, my KDE show 6 themes but razor only 1. (mHidden attribute fixed)
+  * homepage updated + auto replacement script
+  * adding missing libraries to fedora build
+  * show only in RAZOR; close/undo changes actions
+  * small refactoring in mouse config
+  * fixed #35: razor-config-mousetheme saves are not persistent
+  * final fix for build error #34
+  * potential fix for #34
+  * mouse theme configurator
+  * fix for #33: razorqt doesn't build
+  * config tools are registered in config center; desktop file for CC
+  * initial revision of "config tool". Very simple but functional.

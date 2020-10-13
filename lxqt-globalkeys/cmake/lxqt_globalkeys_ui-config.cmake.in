@@ -1,0 +1,26 @@
+# - Find the lxqt-globalkeys-ui include and library dirs and define a some macros
+#
+# The module defines the following variables
+#  LXQT_GLOBALKEYS_UI_FOUND         - Set to TRUE if all of the above has been found
+#
+# Typical usage:
+#    find_package(lxqt-globalkeys-ui)
+#    add_executable(use-lxqt-globalkeys-ui main.cpp)
+#    target_link_libraries(use-lxqt-globalkeys-ui lxqt-globalkeys-ui)
+
+@PACKAGE_INIT@
+
+if (CMAKE_VERSION VERSION_LESS 3.0.2)
+    message(FATAL_ERROR \"@PROJECT_NAME@ requires at least CMake version 3.0.2\")
+endif()
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(@LXQT_GLOBALKEYS_LIBRARY_NAME@ @LXQT_GLOBALKEYS_VERSION@)
+
+if (NOT TARGET @LXQT_GLOBALKEYS_UI_LIBRARY_NAME@)
+    if (POLICY CMP0024)
+        cmake_policy(SET CMP0024 NEW)
+    endif()
+    include("${CMAKE_CURRENT_LIST_DIR}/@LXQT_GLOBALKEYS_UI_LIBRARY_NAME@-targets.cmake")
+endif()

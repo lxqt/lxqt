@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Monitor settings
+GenericName=Monitor settings
+Comment=Configure monitors
+Exec=lxqt-config-monitor
+Icon=preferences-desktop-display
+Categories=Settings;DesktopSettings;Qt;LXQt;HardwareSettings;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=translations

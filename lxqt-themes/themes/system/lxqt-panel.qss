@@ -1,0 +1,63 @@
+/*
+ * Plain widget theme, only specific widgets are themed
+ */
+
+/*
+ * General panel settings
+ */
+
+LXQtPanel #BackgroundWidget{
+    background: palette(window);
+}
+
+/*
+ * TaskBar
+ */
+#TaskBar QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
+/*
+ * Desktopswitch
+ */
+#DesktopSwitch QToolButton[urgent="true"] {
+    color: palette(highlighted-text);
+    background: palette(highlight);
+}
+
+/*
+ * Spacer
+ */
+
+#Spacer {
+    background-position: center center;
+}
+
+#Spacer[type="lined"] {
+    background-image: url(/spacer-plugin/spacer-line.svg);
+}
+
+#Spacer[type="dotted"] {
+    background-image: url(/spacer-plugin/spacer-dots.svg);
+ }
+
+#Spacer[orientation="horizontal"] {
+    background-repeat: repeat-y;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#Spacer[orientation="vertical"] {
+    background-repeat: repeat-x;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+/*
+ * Main menu plugin
+ */
+
+#MainMenu {
+    qproperty-icon: url();
+}

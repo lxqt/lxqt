@@ -1,0 +1,65 @@
+.TH lxqt-session "1" "2015-11-05" "LXQt 0.10.0" "LXQt Session Module"
+.SH NAME
+\fBlxqt-session\fR \- Session manager of \fBLXQt\fR: The Lightweight Qt Desktop
+Environment
+.SH SYNOPSIS
+.B lxqt-session
+.br
+.SH DESCRIPTION
+This module handles session autostart application over \fBLXQt\fR desktop
+environment startup.
+.P
+The \fBLXQt modules\fR are desktop independent tools, and operate as daemons
+for the local user on desktop specific operations.
+.P
+\fBLXQt\fR is an advanced, easy-to-use, and fast desktop environment based on
+the Qt framework. It has been tailored for users who value simplicity, speed,
+and an intuitive interface, with minimal resource requirements. It comprises
+several optional desktop components:
+.P
+ * Session module (\fIthis\fR, normally invoked with \fBstartlxqt\fR)
+ * Settings configuration center
+ * Application launcher
+ * Desktop
+ * Panel with optional plugins
+ * Polkit authorization agent
+ * SSH password access
+ * Display manager module
+ * Power management module
+ * Sudo/su module (privilege elevation)
+.P
+These components perform similar actions to those available in other desktop
+environments, and their name is self-descriptive.  They are usually launched
+automatically, when choosing a \fBLXQt\fR session in the Display Manager.
+.SH BEHAVIOR
+This application manages the \fBLXQt\fR session desktop behavior, module
+loading, and related startup programs prior loading the user workspace.
+By default this module loads the panel, desktop, and power management
+modules, thus it is important for a working \fBLXQt\fR session.
+.SH AUTOSTART
+The modules are only shown by default in the \fBLXQt\fR desktop environment, but
+an autostart action can be created for other preferred desktop environments.
+.SH "REPORTING BUGS"
+Report bugs to https://github.com/lxqt/lxqt/issues
+.SH "SEE ALSO"
+.\" any module must refer to the session application, for module overview and initiation
+\fBstartlxqt.1\fR  LXQt session initialization and launch script (e.g. in \fB.xinitrc\fR)
+.P
+\fBlxqt-config-session.1\fR  LXQt default and autostart applications settings,
+plus environment settings
+.P
+\fBlxqt-config.1\fR  LXQt settings Configuration Center interface
+.P
+\fBlxqt-leave.1\fR  LXQt session logout, reboot, shutdown, suspend, hibernate
+and lock screen
+.P
+\fBlxqt-openssh-askpass.1\fR  LXQt password access over ssh cryptography toolkit
+.P
+\fBlxqt-panel.1\fR  LXQt desktop panel with optional plugins
+.P
+\fBlxqt-policykit-agent.1\fR  LXQt polkit authorization agent
+.P
+\fBlxqt-runner.1\fR  LXQt application launcher by keyboard shortcut
+.P
+\fBlxqt-sudo.1\fR  LXQt sudo/su GUI for application privilege elevation
+.P

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Volume control
+Comment=Control the system's volume and launch your preferred mixer.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[pl]=Dopasuj poziom dźwięku i uruchom preferowany mikser.
+Name[pl]=Regulacja poziomu dźwięku 

@@ -1,0 +1,317 @@
+.\" -*-nroff-*-
+.TH QPS 1 "Sept 30 1999"
+.UC 4
+.SH NAME
+qps \- Visual Process Manager
+.SH SYNOPSIS
+.B qps
+[
+.I options
+]
+.SH DESCRIPTION
+.PP
+.B qps
+is a monitor that displays the status of the processes currently in existence,
+much like top(1) or ps(1).
+The user interface uses the Qt toolkit, and most operations should be
+fairly intuitive.
+.PP
+The process list is sorted by the highlighted field. Click on another
+title to change; click again to reverse the sorting order. Rearrange the
+columns by dragging the titles.
+.PP
+Left-clicking on a process selects or deselects it. Shift-click to select
+multiple processes. The PIDs of selected processes can be pasted into other
+applications (this option can be disabled).
+.PP
+The right mouse button pops up a context menu, which duplicates some
+functions from the main menu for convenience. It works both on processes and
+on the column headings.
+.PP
+Control-clicking in the process table selects all processes with the same
+displayed value in the particular column clicked in. For instance, to select
+all processes owned by "joshua", keep Control pressed while clicking on
+"joshua". Shift and Control together produces the expected result.
+.PP
+In Tree mode, the parent-child relations between processes is shown in a
+more obvious way. Click on the triangles to show or hide an entire subtree.
+Sorting only affects siblings; the tree structure imposes the global order.
+.PP
+To change the time-sharing priority of the selected processes, type the new
+priority in the
+.I Renice...
+dialog. The new nice value should be in the range -20 to 20; 0 is the
+default. A larger number means that the process gets less CPU time.
+Only the super-user may decrease the nice value.
+.PP
+The
+.I Change Scheduling...
+dialog allows the super-user to change the scheduling policy of the
+selected processes (using Posix.1b scheduling control).
+Normal processes are set to SCHED_OTHER and have static priority 0;
+(soft) real-time processes have the policy SCHED_FIFO or SCHED_RR and
+a static priority in the range of 1 to 99. (See
+sched_setscheduler(2).) Solaris has additional scheduling policies,
+but right now qps doesn't allow setting these.
+.PP
+By default, the process display updates every 5 seconds. To change, type the
+new update period in the
+.I Update Period...
+dialog. The units min, s and ms may be used (if none, seconds are
+assumed). You can force an update by pressing the space bar or
+clicking the
+.I Update
+button. qps will consume a lot of CPU time if the update period is
+short or zero. If iconified, however, qps will use very little CPU.
+.PP
+The USER field shows the real user ID. If the effective user ID of a
+process is different from its real user ID, a plus sign (+) is appended to
+the user name; if it is the super-user, an asterisk (*) is appended.
+.PP
+The load, CPU, memory and swap displays in the status bar can be
+toggled between graphic and text representations by clicking on them,
+or by settings in the
+.I Preferences...
+dialog. The load numbers shown are the number of jobs in the run queue
+averaged over 1, 5 and 15 minutes.
+.PP
+The swap bar will turn red if free swap space falls below a certain value,
+which can be changed in the
+.I Preferences...
+dialog. The number can be entered in K, M (megabytes) or % (percent of total
+swap space). The default is 10%.
+.PP
+On SMP (multi-CPU) machines running Solaris 2.6 or Linux 2.1.x or
+later, the CPU stats will be shown for each processor in vertical
+mode, and the average of all CPUs in horizontal mode.
+.PP
+For displaying the WCHAN field as symbols, the kernel symbol file
+System.map is needed. qps will search for it in the following
+locations:
+.PP
+.nf
+	/boot/System.map-\c
+.I RELEASE
+	/boot/System.map
+	/lib/modules/\c
+.I RELEASE\c
+/System.map
+	/usr/src/linux-\c
+.I RELEASE\c
+/System.map
+	/usr/src/linux/System.map
+	/usr/local/src/linux-\c
+.I RELEASE\c
+/System.map
+	/usr/local/src/linux/System.map
+.fi
+.PP
+where
+.I RELEASE
+is the kernel release number, for instance "2.0.29". If the
+System.map file isn't found or unreadable, hexadecimal addresses will be
+displayed instead. The prefixes "sys_" and "do_" are stripped from the
+symbols before they are displayed.
+Under Solaris, symbolic names are currently not supported and hexadecimal
+addresses will always be shown.
+.PP
+The
+.I View Details
+menu item opens a window that shows different aspects of the selected
+processes. Double-clicking on a process has the same effect. All
+information is only available to the owner of the process (and to the
+super-user).
+.PP
+The
+.I Sockets
+table (Linux only) shows the currently used TCP and UDP sockets. If
+.I Host Name Lookup
+is checked in the
+.I Preferences
+dialog, a host name lookup will be done for each IP address. This is
+done by a background process but can take a while for difficult cases
+(but once looked up, addresses are cached).
+.PP
+The
+.I Memory Maps
+table shows the process's memory mappings. In Linux 2.0.x and Solaris,
+the file names are not given. Anonymous mappings (allocated memory not
+bound to a file or device) are marked (anonymous).
+.PP
+The
+.I Files
+table shows the process's open files. In Linux 2.0.x, the files
+are given on the form [\c
+.I AABB\c
+]:\c
+.I inode,
+where
+.I AA
+and
+.I BB
+are the device major/minor numbers in hexadecimal.
+.PP
+The
+.I Environment
+table shows the process's environment variables. Note that this is the
+environment with which the process was started, not necessarily
+incorporating later changes. Some processes that modify their command
+line, notably sendmail(8) and ftpd(8), may use the environment space
+for this, showing nonsense in this table. Clicking on the field
+headings changes sorting order as usual. (On Solaris, only the first
+8K of the environment are shown. It will be fixed if it turns out to
+be a limitation.)
+.PP
+.I Find Parent
+and
+.I Find Children
+will select the parent/children of the selected processes, and center the
+table on the first of them.
+.I Find Descendants
+will select the tree of all children of the selected processes.
+.PP
+If
+.I Include Child Times
+is selected in the
+.I Options
+menu, the TIME field will show the sum of the CPU times used by the process
+and all of its children.
+.PP
+You can specify commands to be run on the selected processes by bringing
+up the
+.I Edit Commands...
+dialog. The "Description" of each command is what appears in the menu;
+the "Command Line" is a shell command (executed with /bin/sh). Before the
+command is passed to the shell, the following substitutions are made:
+.TP
+.B %p
+with the PID (Process ID) of the selected process
+.TP
+.B %c
+with the short command name of the process
+.TP
+.B %C
+with the complete command line of the process
+.TP
+.B %u
+with the name of the (real) owner of the process
+.TP
+.B %%
+with a literal '%'.
+.PP
+Any other % + letter combination is removed. The command line will be run
+once for each selected process (in unspecified order).
+.PP
+.SH KEYBOARD ACCELERATORS
+(valid in most contexts)
+.TP
+.B "Meta-W"
+Close the active window (except the main window)
+.TP
+.B "Q, Meta-Q"
+Quit qps.
+.TP
+.B "Space"
+Force an update of the displayed tables.
+.TP
+.B "Control-Z"
+Iconify qps.
+.SH OPTIONS
+.TP
+.RI \-display \ display
+sets the X display (default is $DISPLAY)
+.TP
+.RI \-geometry \ geometry
+sets the geometry of the main window of qps
+.TP
+.RI \-background \ color
+sets the default background color and an application palette (light and dark
+shades are calculated). This doesn't work very well at the moment.
+.TP
+.RI \-foreground \ color
+sets the default foreground color. This has limited use as well.
+.TP
+.RI \-title \ title
+sets the application title (caption).
+.TP
+.RI \-style \ style
+sets the application GUI style. Possible styles are
+.I motif
+and
+.I windows.
+(If you are using Qt 2.x, the styles
+.I cde
+and
+.I platinum
+are also available.)
+.TP
+.RI \-font \ font
+sets the application font
+.TP
+.RI \-iconic
+starts the application iconified.
+.TP
+.RI \-version
+prints the version of qps and the Qt library, and exits.
+.TP
+.RI \-help
+prints a summary of command-line options and exits.
+.PP
+.SH ENVIRONMENT
+QPS_COLORS contains color specifications of comma-separated
+.I name\c
+:\c
+.I value
+pairs, where
+.I name
+is one of the following:
+.PP
+cpu-user, cpu-nice (Linux), cpu-sys, cpu-wait (Solaris), cpu-idle,
+mem-used, mem-buff, mem-cache, mem-free,
+swap-used, swap-free, swap-warn,
+load-bg, load-fg, load-lines,
+selection-bg, selection-fg
+.PP
+.I value
+is an X11 color name, either a symbolic name like "salmon" or an RGB color
+like #c5b769.
+.PP
+.SH FILES
+.br
+.DT
+.ta \w'$HOME/.qps-settings\ \ \ 'u
+/proc	kernel information pseudo-filesystem
+.br
+$HOME/.qps-settings	saved settings between invocations
+.br
+/etc/services	port number to service name mapping (Linux)
+.br
+System.map	kernel symbol map for WCHAN (Linux)
+.br
+.SH SEE ALSO
+ps(1), top(1), kill(1), free(1), renice(8), proc(5), sched_setscheduler(2)
+.SH AUTHOR
+.PP
+Mattias Engdegard (f91-men@nada.kth.se)
+.SH LICENSE
+qps is free software and may be redistributed under certain
+conditions. See the GNU General Public License for details.
+.PP
+.SH BUGS
+qps is too big and too slow.
+
+The %CPU number isn't accurate at very short update intervals due to
+timer granularity.
+
+The %WCPU field isn't recalculated when qps is iconified, so it might take
+a while to readjust when the window is deiconified again.
+
+The WCHAN field doesn't show a function name if a process sleeps in a
+location outside those in System.map (for instance, in a kernel
+module), but a hex address instead. The function name can then be
+found in /proc/ksyms but has to be found by hand right now.
+
+The CPU indicator in the status bar will display nonsense in SMP systems
+running Linux 2.0.x due to a kernel bug.
+
+Adding/removing CPUs at runtime will probably confuse qps.

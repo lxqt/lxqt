@@ -1,0 +1,255 @@
+# translation of lt.po to Lithuanian
+# Lithuanian translation of gnome-menus.
+# Copyright (C) 2004-2007, 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-menus package.
+#
+# I'm a rolling thunder, a pouring rain
+# I'm comin' on like a hurricane
+#
+# Justina Klingaitė <justina.klingaite@gmail.com>, 2005.
+# Žygimantas Beručka <zygis@gnome.org>, 2004-2007.
+# Gintautas Miliauskas <gintas@akl.lt>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: lt\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2017-05-31 22:17+0000\n"
+"Last-Translator: Moo <hazap@hotmail.com>\n"
+"Language-Team: Lithuanian <gnome-lt@lists.akl.lt>\n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1496269044.246942\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Garsas ir vaizdas"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multimedijos meniu"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programavimas"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Programinės įrangos kūrimo įrankiai"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Švietimas"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Žaidimai"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Žaidimai ir pramogos"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafika"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafikos programos"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Aparatinė įranga"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Kai kurių aparatinės įrangos įrenginių nustatymai"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internetas ir tinklas"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Su tinklu susiję nustatymai"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Išvaizda ir turinys"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Nustatymai, valdantys darbalaukio išvaizdą ir elgseną"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Programos"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Sistema"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Asmeninės nuostatos ir administravimo nustatymai"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internetas"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programos, skirtos prieigai prie interneto (saityno ir el. pašto)"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Raštinė"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Raštinės programos"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Kitos"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Programos, kurios netiko kitose kategorijose"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Asmeniniai"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Asmeniniai nustatymai"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Nuostatos"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Asmeninės nuostatos"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administravimas"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Keisti nustatymus sistemos mastu (paveikia visus naudotojus)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Sistemos nustatymai"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Sistemos įrankiai"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Sistemos konfigūravimas ir stebėjimas"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Universalioji prieiga"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Universaliosios prieigos nustatymai"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Reikmenys"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Darbalaukio reikmenys"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Su universalia prieiga susiję nustatymai"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Asmeniniai nustatymai"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Meniu redaktorius"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Redaguoti meniu"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Programos:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Numatytieji"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Meniu:"
+
+#~ msgid "Name"
+#~ msgstr "Pavadinimas"
+
+#~ msgid "Show"
+#~ msgstr "Rodyti"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Nepavyko rasti namų aplanko: /etc/passwd nenurodyta ir aplinkoje nėra "
+#~ "$HOME reikšmės"
+
+#~ msgid "Menu file"
+#~ msgstr "Meniu failas"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENIU_FAILAS"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Stebėti meniu pakeitimus"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Įtraukti <Pašalint>us įrašus"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Įtraukti NoDisplay=true įrašus"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Netinkamas darbastalio failo ID"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Netaisyklingas failo vardas]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <pašalintas>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Meniu pakeistas, perkraunama ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Meniu medis yra tuščias"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- patikrinti GNOME darbo aplinkos meniu specifikacijos įgyvendinimą"

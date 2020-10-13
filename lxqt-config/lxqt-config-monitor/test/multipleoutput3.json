@@ -1,0 +1,190 @@
+{
+    "screen" :
+    {
+        "id" : 1,
+        "maxSize" : {
+            "width" : 8192,
+            "height" : 8192
+        },
+        "minSize" : {
+            "width" : 320,
+            "height" : 200
+        },
+        "currentSize" : {
+            "width" : 3200,
+            "height" : 1880
+        },
+        "maxActiveOutputsCount": 2
+    },
+    "outputs" :
+    [
+        {
+            "id" : 1,
+            "name" : "LVDS1",
+            "type" : "LVDS",
+            "modes" :
+            [
+                {
+                    "id" : 3,
+                    "name" : "1280x800",
+                    "refreshRate" : 59.9,
+                    "size" : {
+                        "width" : 1280,
+                        "height" : 800
+                    }
+                },
+                {
+                    "id" : 2,
+                    "name" : "1024x768",
+                    "refreshRate" : 59.9,
+                    "size" : {
+                        "width" : 1024,
+                        "height" : 768
+                    }
+                },
+                {
+                    "id" : 1,
+                    "name" : "800x600",
+                    "refreshRate" : 60,
+                    "size" : {
+                        "width" : 800,
+                        "height" : 600
+                    }
+                }
+            ],
+            "pos" : {
+                "x" : 0,
+                "y" : 0
+            },
+            "size" : {
+                "width" : 1280,
+                "height" : 800
+            },
+            "currentModeId" : 3,
+            "preferredModes" : [2],
+            "rotation" : 1,
+            "connected" : true,
+            "enabled" : true,
+            "primary" : true,
+            "edid" : "AP///////wBMLcMFMzJGRQkUAQMOMx14Ku6Ro1RMmSYPUFQjCACBAIFAgYCVAKlAswABAQEBAjqAGHE4LUBYLEUA/h8RAAAeAAAA/QA4PB5REQAKICAgICAgAAAA/ABTeW5jTWFzdGVyCiAgAAAA/wBIOU1aMzAyMTk2CiAgAC4="
+        },
+        {
+            "id" : 2,
+            "name" : "HDMI1",
+            "type" : "HDMI",
+            "modes" :
+            [
+                {
+                    "id" : 4,
+                    "name" : "1920x1080",
+                    "refreshRate" : 60,
+                    "size" : {
+                        "width" : 1920,
+                        "height" : 1080
+                    }
+                },
+                {
+                    "id" : 3,
+                    "name" : "1600x1200",
+                    "refreshRate" : 60,
+                    "size" : {
+                        "width" : 1600,
+                        "height" : 1200
+                    }
+                },
+                {
+                    "id" : 2,
+                    "name" : "1024x768",
+                    "refreshRate" : 59.9,
+                    "size" : {
+                        "width" : 1024,
+                        "height" : 768
+                    }
+                },
+                {
+                    "id" : 1,
+                    "name" : "800x600",
+                    "refreshRate" : 59.9,
+                    "size" : {
+                        "width" : 800,
+                        "height" : 600
+                    }
+                }
+            ],
+            "pos" : {
+                "x" : 1280,
+                "y" : 0
+            },
+            "size" : {
+                "width" : 1920,
+                "height" : 1080
+            },
+            "currentModeId" : 4,
+            "preferredModes" : [4],
+            "rotation" : 1,
+            "connected" : true,
+            "enabled" : true,
+            "primary" : false,
+            "edid" : "AP///////wAQrBbwTExLQQ4WAQOANCB46h7Frk80sSYOUFSlSwCBgKlA0QBxTwEBAQEBAQEBKDyAoHCwI0AwIDYABkQhAAAaAAAA/wBGNTI1TTI0NUFLTEwKAAAA/ABERUxMIFUyNDEwCiAgAAAA/QA4TB5REQAKICAgICAgAToCAynxUJAFBAMCBxYBHxITFCAVEQYjCQcHZwMMABAAOC2DAQAA4wUDAQI6gBhxOC1AWCxFAAZEIQAAHgEdgBhxHBYgWCwlAAZEIQAAngEdAHJR0B4gbihVAAZEIQAAHowK0Iog4C0QED6WAAZEIQAAGAAAAAAAAAAAAAAAAAAAPg=="
+        },
+        {
+            "id" : 3,
+            "name" : "HDMI2",
+            "type" : "HDMI",
+            "modes" :
+            [
+                {
+                    "id" : 4,
+                    "name" : "1920x1080",
+                    "refreshRate" : 60,
+                    "size" : {
+                        "width" : 1920,
+                        "height" : 1080
+                    }
+                },
+                {
+                    "id" : 3,
+                    "name" : "1600x1200",
+                    "refreshRate" : 60,
+                    "size" : {
+                        "width" : 1600,
+                        "height" : 1200
+                    }
+                },
+                {
+                    "id" : 2,
+                    "name" : "1024x768",
+                    "refreshRate" : 59.9,
+                    "size" : {
+                        "width" : 1024,
+                        "height" : 768
+                    }
+                },
+                {
+                    "id" : 1,
+                    "name" : "800x600",
+                    "refreshRate" : 59.9,
+                    "size" : {
+                        "width" : 800,
+                        "height" : 600
+                    }
+                }
+            ],
+            "pos" : {
+                "x" : 1280,
+                "y" : 0
+            },
+            "size" : {
+                "width" : 1920,
+                "height" : 1080
+            },
+            "currentModeId" : 4,
+            "preferredModes" : [4],
+            "rotation" : 1,
+            "connected" : true,
+            "enabled" : true,
+            "primary" : false,
+            "edid" : "AP///////1234BbwTExLQQ4WAQOANCB46h7Frk80sSYOUFSlSwCBgKlA0QBxTwEBAQEBAQEBKDyAoHCwI0AwIDYABkQhAAAaAAAA/wBGNTI1TTI0NUFLTEwKAAAA/ABERUxMIFUyNDEwCiAgAAAA/QA4TB5REQAKICAgICAgAToCAynxUJAFBAMCBxYBHxITFCAVEQYjCQcHZwMMABAAOC2DAQAA4wUDAQI6gBhxOC1AWCxFAAZEIQAAHgEdgBhxHBYgWCwlAAZEIQAAngEdAHJR0B4gbihVAAZEIQAAHowK0Iog4C0QED6WAAZEIQAAGAAAAAAAAAAAAAAAAAAAPg=="
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Sensors
+Comment=View readings from hardware sensors.
+
+
+#TRANSLATIONS_DIR=../translations
+
+# Translations
+Name[da]=Sensorer
+Comment[da]=Vis målinger fra hardware-sensorer.

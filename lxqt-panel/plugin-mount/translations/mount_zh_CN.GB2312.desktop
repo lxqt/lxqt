@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Removable media
+Comment=Removable media handler (USB, CD, DVD, ...)
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations

@@ -1,0 +1,247 @@
+# Friulian translation of gnome-menus.
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# Massimo Furlani <massimo.furlani@libero.it>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2008-03-10 13:15+0100\n"
+"Last-Translator: Massimo Furlani <massimo.furlani@libero.it>\n"
+"Language-Team: FRIULIAN <massimo.furlani@libero.it>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Friulian\n"
+"X-Poedit-Country: ITALY\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Audio e video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Menu multimediâl"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programazion"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Imprescj par il svilup dal software"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Istruzion"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Zûcs"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Zûcs e golosets"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafiche"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Aplicazions di grafiche"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Impostazions par cetancj dispositîfs hardware"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet e Rêt"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Impostazions de rêt"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Aspiet e stîl"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Impostazions ch'a controlin l'aspiet e il compuartament dal desktop"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Aplicazions"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Sisteme"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Preferencis personâls e impostazions di aministrazion"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programs par internet come web e mail"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Ufici"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Aplicazions di ufici"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Altri"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Aplicazions ch'a no jentrin ta chês altres categoriis"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Personâl"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Impostazions personâls"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Preferencis"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Preferencis personâls"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Aministrazion"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Modifiche impostazions di sisteme (par ducj i utents)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Impostazions di sisteme"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Imprescj di sisteme"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Configurazion e monitoragjo di sisteme"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Acess Universâl"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Impostazions Acess Universâl"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Robutis"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Robutis dal desktop"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Preferencis relativis a l'acess universâl"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Preferencis e impostazions personâls"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Modificadôr di menu"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Modifiche i menu"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Aplicazions:"
+
+#~ msgid "_Defaults"
+#~ msgstr "Pre_definidis"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menu:"
+
+#~ msgid "Name"
+#~ msgstr "Nom"
+
+#~ msgid "Show"
+#~ msgstr "Mostre"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Impussibil cjatâ la directory home: no je impostade in /etc/passwd e la "
+#~ "variabil di ambient $HOME no a nissun valôr"
+
+#~ msgid "Menu file"
+#~ msgstr "File di menu"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "FILE_MENU"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Monitorê i gambiaments di menu"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Meti dentri  lis vôs <Exclude>"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Meti dentri lis vôs NoDisplay=true"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "ID di file desktop nô valid"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Nom di file no valid]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu gambiât, lu torni a cjamâ ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "L'arbul dai menu al è vueit"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr ""
+#~ "- test da implementazion di GNOME da specifiche par i menu dal desktop"

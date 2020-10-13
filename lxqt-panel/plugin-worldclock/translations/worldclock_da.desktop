@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=World clock
+Comment=World clock plugin.
+Icon=clock
+
+#TRANSLATIONS_DIR=../translations
+
+# Translations
+Name[da]=Verdensur
+Comment[da]=Verdensur-plugin.

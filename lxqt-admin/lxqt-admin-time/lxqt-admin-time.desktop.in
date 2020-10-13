@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Date and Time
+GenericName=Date and Time Settings
+Comment=Configure the date and time of your system
+Exec=lxqt-admin-time
+Icon=preferences-system-time
+Categories=LXQt;Settings;DesktopSettings;Qt;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=translations

@@ -1,0 +1,251 @@
+# Breton translation of gnome-menus.
+# Copyright (C) 2004-2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-menu package.
+#
+# Jérémy Ar Floc'h <jeremy.lefloch@gmail.com>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menu 2.14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2006-03-12 14:40+0100\n"
+"Last-Translator: Jérémy Le Floc'h <jeremy.lefloch@gmail.com>\n"
+"Language-Team: GNOME Breton Team <jeremy.lefloch@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Son ha video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Liesvedia"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Gouleviñ"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Ar binvioù da ziorren ar poelladoù"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Deskadurezh"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "C'hoarioù"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "C'hoarioù ha diduelloù"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafikoù"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Poelladoù grafikoù"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr ""
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr ""
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr ""
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr ""
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr ""
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr ""
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Arloadoù"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+#, fuzzy
+msgid "System"
+msgstr "Binvioù reizhiad"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Pezh a blij deoc'h ar muiañ ha neuziadoù ar mererezh"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Kenrouedad"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Ar poelladoù da dizhout ar Genrouedad evel web ha postelerezh"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Bureveg"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Arloadoù bureveg all"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "All"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "An arloadoù n'int ket staget ouzh ur rummad bennak all"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr ""
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+#, fuzzy
+msgid "Personal settings"
+msgstr "Pezh a blij deoc'h ar muiañ ha neuziadoù"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Dibaboù gwellañ"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Pezh a blij deoc'h ar muiañ"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Mererezh"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+#, fuzzy
+msgid "Change system-wide settings (affects all users)"
+msgstr ""
+"Kemmañ an arventennoù war ar reizhiad (sell diouzh an holl implijerien)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr ""
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Binvioù reizhiad"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Neuziadur hag eveshaerezh ar reizhiad"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr ""
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+#, fuzzy
+msgid "Universal Access Settings"
+msgstr "Neuziadoù an haezadusted"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Mavegoù"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Mavegoù ar burev"
+
+#~ msgid "Accessibility"
+#~ msgstr "Haezadusted"
+
+#~ msgid "Desktop"
+#~ msgstr "Burev"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "Dibaboù an haezadusted"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Aozer al lañseroù"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Aozañ ar rolloù"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Arloadoù :"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Dre ziouer"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Rolloù :"
+
+#~ msgid "Name"
+#~ msgstr "Anv"
+
+#~ msgid "Show"
+#~ msgstr "Diskouez"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "N'eus ket tu da gavout ar renkell ar gêr : n'eo ket e-barzh /etc/passwd "
+#~ "ha n'eus ket gwerzh evit $HOME en endro"
+
+#~ msgid "Menu file"
+#~ msgstr "Restr ur roll"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "RESTR_D'UR_ROLL"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Eveshaat kemmoù ar rolloù"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Ensoc'hañ enkasoù forc'het gant <Exclude>"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Ensoc'hañ enkasoù NoDisplay=true"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Hennad (ID) ar restr .desktop a zo siek"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Anv restr siek]"
+
+#~ msgid " <excluded>"
+#~ msgstr "<forc'het>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Roll kemmet, oc'h adkargañ ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Gwez ar roll zo goullo"

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=System tray
+Comment=Display applications minimized to the system tray.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[es_VE]=Acceder aplicaciones minimizadas en la barra de iconos de sistema
+Name[es_VE]=Barra de sistema

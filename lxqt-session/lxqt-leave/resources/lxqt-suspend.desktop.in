@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Suspend
+GenericName=Suspend
+Comment=suspend the machine
+Exec=lxqt-leave --suspend
+Icon=system-suspend
+Categories=System;X-Leave;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=../translations

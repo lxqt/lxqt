@@ -1,0 +1,8 @@
+translations='./liblxqt-config-cursor
+              ./lxqt-config-appearance
+              ./lxqt-config-brightness
+              ./lxqt-config-file-associations
+              ./lxqt-config-input
+              ./lxqt-config-locale
+              ./lxqt-config-monitor
+              ./src'

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Color picker
+Comment=Get the color under the cursor. For web developers.
+
+
+# Translations
+Comment[pt_BR]=Obter a cor sob o cursor. Para desenvolvedores web.
+Name[pt_BR]=Seletor de cores

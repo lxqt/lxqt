@@ -1,0 +1,34 @@
+[Desktop Entry]
+Type=Application
+Name=qps
+GenericName=Qt process manager
+GenericName[ca]=Gestor de processos Qt
+GenericName[cs]=Správce procesů, založený na Qt
+GenericName[da]=Qt-proceshåndtering
+GenericName[hr]=Upravljač Qt-procesa
+GenericName[lt]=Qt procesų tvarkytuvė
+GenericName[pl]=Menedżer procesów Qt
+GenericName[pt]=Gestor de processos em Qt
+GenericName[ru]=Менеджер процессов Qt
+GenericName[tr]=Qt İşlem Yöneticisi
+GenericName[ja]=プロセスマネージャー Qt
+Comment=Qt application to display and manage running processes
+Comment[ca]=Aplicació Qt per visualitzar i gestionar els processos en execució
+Comment[cs]=Qt aplikace pro zobrazení a správu spuštěných procesů
+Comment[da]=Qt-program til at vise og håndtere kørende processer
+Comment[de]=Qt-Anwendung um die laufenden Prozesse zu verwalten und aufzulisten 
+Comment[hr]=Qt-program za prikaz i upravljanje pokrenutih procesa 
+Comment[lt]=Qt programa, skirta rodyti ir tvarkyti vykdomus procesus
+Comment[pl]=Aplikacja Qt do wyświetlania i zarządzania uruchomionymi procesami
+Comment[pt]=Aplicação em Qt para mostrar e gerir os processos em execução
+Comment[ru]=Приложение Qt, позволяющее просматривать процессы и управлять ими
+Comment[tr]=Çalışan işlemleri görüntülemek ve yönetmek için Qt uygulaması
+Comment[ja]=実行中のプロセスを表示および管理する Qt アプリケーションです
+Icon=qps
+Categories=System;
+TryExec=qps
+Exec=qps
+Terminal=false
+StartupNotify=false
+
+#TRANSLATIONS_DIR=src/translations

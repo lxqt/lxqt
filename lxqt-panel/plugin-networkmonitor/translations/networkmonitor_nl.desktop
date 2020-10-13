@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+
+Name=Network monitor
+Comment=Displays network status and activity.
+
+# Translations
+Name[nl]=Netwerkmonitor
+Comment[nl]=Toont netwerkstatus en -activiteit

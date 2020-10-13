@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Desktopswitch
+Comment=Allow to switch virtual desktops
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations

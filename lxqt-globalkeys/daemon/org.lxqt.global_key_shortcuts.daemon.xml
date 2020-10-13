@@ -1,0 +1,174 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+	<interface name="org.lxqt.global_key_shortcuts.daemon">
+		<method name="addMethodAction">
+			<arg name="shortcut" type="s" direction="in"/>
+			<arg name="service" type="s" direction="in"/>
+			<arg name="path" type="o" direction="in"/>
+			<arg name="interface" type="s" direction="in"/>
+			<arg name="method" type="s" direction="in"/>
+			<arg name="description" type="s" direction="in"/>
+			<arg name="usedShortcut" type="s" direction="out"/>
+			<arg name="id" type="t" direction="out"/>
+		</method>
+		<method name="addCommandAction">
+			<arg name="shortcut" type="s" direction="in"/>
+			<arg name="command" type="s" direction="in"/>
+			<arg name="arguments" type="as" direction="in"/>
+			<arg name="description" type="s" direction="in"/>
+			<arg name="usedShortcut" type="s" direction="out"/>
+			<arg name="id" type="t" direction="out"/>
+		</method>
+		<signal name="actionAdded">
+			<arg name="id" type="t"/>
+		</signal>
+
+		<method name="modifyActionDescription">
+			<arg name="id" type="t" direction="in"/>
+			<arg name="description" type="s" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="modifyMethodAction">
+			<arg name="id" type="t" direction="in"/>
+			<arg name="service" type="s" direction="in"/>
+			<arg name="path" type="o" direction="in"/>
+			<arg name="interface" type="s" direction="in"/>
+			<arg name="method" type="s" direction="in"/>
+			<arg name="description" type="s" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="modifyCommandAction">
+			<arg name="id" type="t" direction="in"/>
+			<arg name="command" type="s" direction="in"/>
+			<arg name="arguments" type="as" direction="in"/>
+			<arg name="description" type="s" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<signal name="actionModified">
+			<arg name="id" type="t"/>
+		</signal>
+
+		<method name="enableAction">
+			<arg name="id" type="t" direction="in"/>
+			<arg name="enabled" type="b" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="isActionEnabled">
+			<arg name="id" type="t" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<signal name="actionEnabled">
+			<arg name="id" type="t"/>
+			<arg name="enabled" type="b"/>
+		</signal>
+
+		<method name="getClientActionSender">
+			<arg name="id" type="t" direction="in"/>
+			<arg type="s" direction="out"/>
+		</method>
+		<signal name="clientActionSenderChanged">
+			<arg name="id" type="t"/>
+			<arg name="sender" type="s"/>
+		</signal>
+
+		<method name="changeShortcut">
+			<arg name="id" type="t" direction="in"/>
+			<arg name="shortcut" type="s" direction="in"/>
+			<arg name="usedShortcut" type="s" direction="out"/>
+		</method>
+		<signal name="actionShortcutChanged">
+			<arg name="id" type="t"/>
+		</signal>
+
+		<method name="swapActions">
+			<arg name="id1" type="t" direction="in"/>
+			<arg name="id2" type="t" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<signal name="actionsSwapped">
+			<arg name="id1" type="t"/>
+			<arg name="id2" type="t"/>
+		</signal>
+
+		<method name="removeAction">
+			<arg name="id" type="t" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<signal name="actionRemoved">
+			<arg name="id" type="t"/>
+		</signal>
+
+		<method name="setMultipleActionsBehaviour">
+			<arg name="behaviour" type="u" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="getMultipleActionsBehaviour">
+			<arg type="u" direction="out"/>
+		</method>
+		<signal name="multipleActionsBehaviourChanged">
+			<arg name="behaviour" type="u"/>
+		</signal>
+
+		<method name="getAllActionIds">
+			<annotation name="@QT_DBUS_PREFIX@.QtDBus.QtTypeName.Out0" value="QList&lt;qulonglong&gt;"/>
+			<arg type="at" direction="out"/>
+		</method>
+		<method name="getActionById">
+			<arg name="id" type="t" direction="in"/>
+			<arg type="b" direction="out"/>
+			<arg name="shortcut" type="s" direction="out"/>
+			<arg name="description" type="s" direction="out"/>
+			<arg name="enabled" type="b" direction="out"/>
+			<arg name="type" type="s" direction="out"/>
+			<arg name="info" type="s" direction="out"/>
+		</method>
+		<method name="getAllActions">
+			<annotation name="@QT_DBUS_PREFIX@.QtDBus.QtTypeName.Out0" value="QMap_qulonglong_GeneralActionInfo"/> <!-- QMap<qulonglong,GeneralActionInfo> -->
+			<arg name="info" type="a{t(ssbss)}" direction="out"/>
+			<!-- GeneralActionInfo = s:shortcut, s:description, b:enabled, s:type, s:info -->
+		</method>
+		<method name="getClientActionInfoById">
+			<arg name="id" type="t" direction="in"/>
+			<arg type="b" direction="out"/>
+			<arg name="shortcut" type="s" direction="out"/>
+			<arg name="description" type="s" direction="out"/>
+			<arg name="enabled" type="b" direction="out"/>
+			<arg name="path" type="o" direction="out"/>
+		</method>
+		<method name="getMethodActionInfoById">
+			<arg name="id" type="t" direction="in"/>
+			<arg type="b" direction="out"/>
+			<arg name="shortcut" type="s" direction="out"/>
+			<arg name="description" type="s" direction="out"/>
+			<arg name="enabled" type="b" direction="out"/>
+			<arg name="service" type="s" direction="out"/>
+			<arg name="path" type="o" direction="out"/>
+			<arg name="interface" type="s" direction="out"/>
+			<arg name="method" type="s" direction="out"/>
+		</method>
+		<method name="getCommandActionInfoById">
+			<arg name="id" type="t" direction="in"/>
+			<arg type="b" direction="out"/>
+			<arg name="shortcut" type="s" direction="out"/>
+			<arg name="description" type="s" direction="out"/>
+			<arg name="enabled" type="b" direction="out"/>
+			<arg name="command" type="s" direction="out"/>
+			<arg name="arguments" type="as" direction="out"/>
+		</method>
+
+		<method name="grabShortcut">
+			<arg name="timeout" type="u" direction="in"/>
+			<arg name="shortcut" type="s" direction="out"/>
+			<arg name="failed" type="b" direction="out"/>
+			<arg name="cancelled" type="b" direction="out"/>
+			<arg name="timedout" type="b" direction="out"/>
+		</method>
+
+		<method name="cancelShortcutGrab"/>
+
+		<method name="quit">
+			<annotation name="org.freedesktop.DBus.Method.NoReply" value="true"/>
+		</method>
+	</interface>
+</node>

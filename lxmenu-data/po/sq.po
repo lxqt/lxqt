@@ -1,0 +1,253 @@
+# Përkthimi i mesazheve të gnome-menus në shqip
+# Copyright (C) 2005 THE gnome-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-menus package.
+# Elian Myftiu <elian@alblinux.net>, 2005-2007.
+# Laurent Dhima <laurenti@alblinux.net>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus gnome-2-22\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2008-07-15 19:21+0200\n"
+"Last-Translator: Laurent Dhima <laurenti@alblinux.net>\n"
+"Language-Team: albanian <gnome-albanian-perkthyesit@lists.sourceforge.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Zë & Video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Menu multimediale"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Programim"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Vegla për zhvillim programesh"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Edukim"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Lojra"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Lojra dhe argëtime"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafikë"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Programe grafiku"
+
+# (pofilter) unchanged: please translate
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Rregullime për dispozitivë të ndryshëm"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet dhe Rrjet"
+
+# (pofilter) simplecaps: checks the capitalisation of two strings isn't wildly different
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Rregullime lidhur me Rrjetin"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Pamje dhe Ndjesi"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Rregullime që kontrollojnë pamjen e hapësirës së punës dhe sjelljen"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Programe"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Sistemi"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Preferimet vetjake dhe rregullimet administrative"
+
+# (pofilter) unchanged: please translate
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+# (pofilter) brackets: translation has extra '(', ')'
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Programe për hyrje në Internet (si p.sh. rrjeti dhe posta elektronike)"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Zyrë"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Programe Zyre"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Tjetër"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Programe që nuk gjejnë vend në kategori të tjera"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Vetjake"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Rregullime vetjake"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Preferime"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Preferime vetjake"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administrim"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Ndrysho rregullimet në rang sistemi (ndikon tek të gjithë përdoruesit)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Rregullime sistemi"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Vegla Sistemi"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Konfigurim dhe vëzhgim sistemi"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Hyrje universale"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Rregullimet për hyrjen universale"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Aksesorë"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Aksesorë hapësire pune"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Preferime në lidhje me hyrjen universale"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Preferime dhe rregullime vetjake"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Ndryshues Menuje"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Ndrysho Menutë"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Programe:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Parazgjedhur"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menutë:"
+
+#~ msgid "Name"
+#~ msgstr "Emri"
+
+#~ msgid "Show"
+#~ msgstr "Shfaq"
+
+# (pofilter) filepaths: checks that file paths have not been translated
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "E pamundur gjetja e kartelës shtëpi. e pacaktuar në /etc/password dhe "
+#~ "asnjë vlerë për $HOME në mjedis"
+
+# (pofilter) simplecaps: checks the capitalisation of two strings isn't wildly different
+#~ msgid "Menu file"
+#~ msgstr "File Menuje"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Vëzhgues ndryshuesi menuje"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Përfshi <Exclude>d zërat"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Përfshi zërat NoDisplay=true"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "ID file hapësire pune i pavlefshëm"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Emër i pavlefshëm file]"
+
+# (pofilter) unchanged: please translate
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "=== Menuja ndryshoi, duke ringarkuar ===\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Pema e menusë është bosh"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- provo implementimin e Specifikimit të Menuve GNOME"

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Application menu
+Comment=A menu of all your applications.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[ro_RO]=Lansator de aplicații bazat pe meniuri
+Name[ro_RO]=Meniu aplicații

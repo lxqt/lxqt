@@ -1,0 +1,267 @@
+lxqt-notificationd-0.15.0 / 2020-04-22
+======================================
+  * Bumped version to 0.15.0.
+  * Used nullptr.
+  * Removed (duplicated) string casts definitions.
+  * Use async calls to query server status information.
+
+lxqt-notificationd-0.14.1 / 2019-02-25
+======================================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+lxqt-notificationd-0.14.0 / 2019-01-25
+======================================
+
+  * Bumped version to 0.14.0
+  * Notification history implemented
+  * Implementations fixed:
+    - Fixed notification styles
+    - Don't use automatic string conversions
+    - Use QLatin1String where it is more efficient
+    - Test app updated
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+  * Moved translations from lxqt-l10n back to lxqt-notificationd
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+
+lxqt-notificationd-0.13.0 / 2018-05-21
+======================================
+
+  * Spanish translation update
+  * Include QStyle and QStyleOption to fix compilation with Qt5.11
+  * CMake: Prevent in-source builds
+  * notificationlayout: Remove the "on top" hint
+  * fix razor-qt -> lxqt and http -> https
+  * Fix mentions of LXDE
+  * Fix typo
+  * Fix spanish translation
+  * Update Simplified Chinese desktop entry
+  * Update Traditional Chinese translation
+  * Drop Qt foreach
+  * cmake: Handle CMP0071
+  * Change icon to preferences-desktop-notification
+
+lxqt-notificationd-0.12.0 / 2017-10-21
+======================================
+
+  * Release 0.12.0: Update changelog
+  * Set patch version
+  * Don't export github templates
+  * Improvement for notification settings, see https://github.com/lxde/lxqt/issues/744#issuecomment-138601402
+  * Updated Lithuanian language
+  * Drops Qt5Core_VERSION_STRING
+  * lxqt-config-notificationd: set Qt::AA_UseHighDpiPixmaps to true
+  * Add a basic cli to lxqt-config-notificationd Add a basic cli to lxqt-notificationd
+  * Added default CMAKE_BUILD_TYPE and LXQT_NOTIFICATION_PATCH_VERSION
+  * Create lxqt-config-notificationd_pl_PL.desktop
+  * Fixes a FTBFS in superbuild mode
+  * Added merged autostart to CMakeLists.txt
+  * Updated *_da.desktop files and removed *_da_DK.desktop files
+  * Update desktop entries and Replace fr_FR by fr
+  * Update Greek translation (el) Remove country variant from language code
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Updates the build system to use the Targets infrastructure
+  * Drops hardcoded /etc/xdg paths
+  * Updated german translation, replaced Qt4 by Qt in all xsession/translations
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * remove dead template lines switch OnlyShowIn from Razor -> LXQt stringchanges LxQt -> LXQt
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Fix a typo: singals -> signals
+  * Bump year
+
+lxqt-notificationd-0.11.1 / 2017-01-01
+======================================
+
+  * Release 0.11.1: Update changelog
+  * Updated da translation. Removed da_DK
+  * Update and rename French .desktop file
+  * Make CMakeList.txt more uniform.
+  * Remove cpack (#53)
+
+lxqt-notificationd-0.11.0 / 2016-09-24
+======================================
+
+  * Release 0.11.0: Add changelog
+  * Update and extend README.md
+  * Add Catalan translation
+  * build: Use external translations
+  * ts-files removal (#50)
+  * Clean up qDebugs/comments in notification.cpp
+  * config: Use our specific icon for demo
+  * Fix used licenses in AUTHORS, lxqt-notificationd is pure LGPL Bump year in AUTHORS
+  * Italian translation update
+  * Updated Russian translation Removed ru_RU files
+  * notification: Default icon
+  * notification: Fill background
+  * update lxqt-config-notificationd_hu.ts
+  * Update lxqt-config-notificationd_it.ts
+
+lxqt-notificationd-0.10.0 / 2015-10-31
+======================================
+
+  * Update translations
+  * Remove docs/notification-spec-latest.html in favour of an upstream link
+  * Fix license file
+  * Switch all connect() calls to the new-style syntax
+  * Handle clicks on text labels properly (workaround for QTBUG-49025)
+  * Don't force rich text formatting on app, summary and body labels.
+  * Fix and improve action buttons.
+  * lxqt-config-notificationd: Fix Advanced Settings Ui Layout
+  * OnlyShowIn=LXQt;
+  * Update Greek (el) translation Remove country variant from language code
+  * Rename LxQt to LXQt everywhere
+  * Handles CMake policy CMP0063
+  * Use the LXQtCompilerSettings CMake module
+  * Adds Runtime install COMPONENT
+  * Coding style changes
+  * Use GNUInstallDirs
+  * Use CMAKE_AUTOUIC, drop qt5_wrap_ui()
+  * Removes unneeded include_directories() entries
+  * Updated german translation.
+  * Updated template for new translations.
+  * Updates the build system to use the Targets infrastructure
+  * fix building
+  * Remove trailing whitespaces
+  * Replace LXDE-Qt with LXQt in documentation/comment
+  * lxqt_translate_ts: Fixes wrong argument position
+  * config-nototification_hu.ts modified
+  *_hu.ts added
+  * Hungarian translatons
+  * Update lxqt-config-notificationd_it.desktop
+  * Create lxqt-config-notificationd_it.ts
+  * Create lxqt-config-notificationd_hr.ts
+  * Fix image format for images with 3 channels
+  * Easier selection of notifications stop
+  * Fix notifications disappearing on mouse leave
+  * lxqt-config-notificationd_fr_FR.desktop: french translation update
+  * notification: set fixed width of text labels for correct sizeHint after setText
+  * config: more options to configure notification placement (added center ver/hor)
+  * Fix Russian duplicated entries on .desktop files
+  * Update lxqt-config-notificationd_it_IT.desktop
+  * notification: multilined plain text formatting
+  * Remove KF5/ prefix    as done in lxde/liblxqt#36
+  * settings: possibility to configure more than 99s shown time
+  * Unified german translation
+  * Updated german translation
+  * Added german translation.
+
+lxqt-notificationd-0.9.0 / 2015-01-06
+=====================================
+
+  * Portuguese language update
+  * Fix typos in tests
+  * - Unify naming for a unique lxqt. No more suffixes
+  * Add icon to config window
+  * Use the new LxQt::SingleApplication
+  * CMakeLists.txt maintenance.
+  * fix a translation mistake for zh_CN
+  * Uses the new translations cmake modules
+  * Update Russian translation
+  * Display a clearer test notification right after changing the settings
+  * Notifications must not cover the panel. Fixes lxde/lxde-qt#315.
+  * Port to KWindowSystem
+  * Update deprecated dbus annotation
+  * Use lxqt.org as vendor
+  * Drop Qt4 support in code
+  * Clean up CMakeLists.txt and drop Qt 4 support
+
+lxqt-notificationd-0.8.0 / 2014-10-13
+=====================================
+
+  * Adapt to the translation infrastructure
+  * Fix xde/lxde-qt #67 - Notifications are shown in the wrong location.
+  * Make the notification stay on top, fix bug lxde/lxde-qt #6 - Notifications show up under calendar plugin.
+  * Cleanup for Qt5 ready includes
+  * Use cmake 2.8.9 by default and use 2.8.11 for qt5. * Simplify qt5 support.
+  * Initial Qt5 support.
+  * Use new LXQt header files.
+  * Swap Spacing and Width
+
+lxqt-notificationd-0.7.0 / 2014-05-07
+=====================================
+
+  * Update COPYING
+
+lxqt-notificationd-0.6.99 / 2014-04-30
+======================================
+
+  * remove old templates from translations remove icon translations from desktop file translations
+  * Style fixes to the advanced config
+  * Update AUTHORS
+  * Add CPack rules for creating tarball
+  * Rename main window to Desktop Notifications
+  * Better wording in desktop files
+  * fixed: worng (and debug) qlabel color qss; moving bottom-left notification out of screen in some conditions
+  * Removed CMAKE_SOURCE_DIR usage from CMakeLists.txt files
+  * Add a dirty hack to workaround repainting issues and fix razor-qt bug 536. See https://github.com/Razor-qt/razor-qt/issues/536 for details.
+  * Use the correct updated org.freedesktop.Notifications.xml file from razor-resources.
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * rename razor to lxqt in strings
+  * Add missing files.
+  * Rename binaries and replace razor with lxqt. * Use the latest liblxqt and libqtxdg.
+  * Add COPYING and AUTHORS
+  * X-RAZOR changed to Razor in desktop files
+  * fixed #611 Notifications HTML rendering and buttons versus combo-box
+  * Set foreground colors for dark themes
+  * Fix CMakeLists.txt for 'Unknown CMake command "razor_translate_ts"'
+  * Translations updated
+  * first part of fixes based on Coverity Scan (code static analysis)
+  * Generate translation files
+  * Fix components missing translations
+  * Delete bad en_GB translations
+  * Update translations
+  * Translations updated
+  * Replace <p> tag with newlines since it's not valid notification markup
+  * notifications: fix button/combobox displaying for actions (stringlist should be checked divided by 2)
+  * Translations
+  * Deleted old translation methods.
+  * notifications: do not grow height in time (after days of use we were getting higher notification widgets)
+  * fixed #383 Identical notifications get increasingly large
+  * New translation infrastructure
+  * notification, dbus: no need for ReloadSettings anymore because it works out of the box now
+  * Fix variable (Issue #387)
+  * Fix for Issue #290 Fails to build on BSD
+  * fixed #324 Add a notification queue
+  * Fix for fix for commit 1c31b24 "compiles with qt 4.6.x as well"
+  * Fix for commit 1c31b24f3b43de5d6fb82f26e41d1a183d0c61e0 "compiles with qt 4.6.x as well"
+  * compiles with qt 4.6.x as well
+  * ad #329 - default actions and docs
+  * part of #329: on-click on notification launces default action or it tries to find appropariate window to raise; xfitman method renamed + one new
+  * don't display summary if its content equals appLabel
+  * issue #325: do not display default app icon if there is no icon found for notification
+  * fixed #327 Focused notifications should not time out
+  * suggestion for #325 - notifications are much smaller now. And it can be set to use smaller fornt in theme as well
+  * Add warning if a different notifications daemon is running
+  * Fix for #308
+  * notifications: devel docs
+  * notifications: settings are synced with config tool (dbus); layouting fixes
+  * razorqt-notificationd: Fix the placement restore configuration Ui
+  * Add Hints support
+  * Add license headers
+  * notification icon fix
+  * proper actions handling
+  * notification widget expands as required
+  * notif: final fix for signals and slots
+  * notif. config: do not limit notification to 99px by default
+  * notiications test app
+  * port icon code for qt4.6.x
+  * Fix issue 308 Calling setMinimumSize and setMaximumSize when widget is not shown will do nothing
+  * slot name fix
+  * fixed action handling
+  * Let CMake generate the adaptor
+  * Add use parts of razor-runner theme for notifications
+  * Fix .desktop file generation
+  * notifications: vrious fixes; more options (hardcoded values removed); layouting
+  * fixes; begin of movabe notifications
+  * config app for notifications
+  * xdg notification actions implemented
+  * notifications: razorapplication used (theming); qtxdg used; spec icon loading implemented
+  * new notification solution (initial import)

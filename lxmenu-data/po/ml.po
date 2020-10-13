@@ -1,0 +1,251 @@
+# translation of gnome-menus to Malayalam
+# This file is distributed under the same license as the gnome-menus package.
+# Copyright (C) 2007-2008 gnome-menus' COPYRIGHT HOLDER.
+# Ani Peter <peter.ani@gmail.com>, 2006.
+# Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>, 2007,2008.
+# Ani Peter <apeter@redhat.com>, 2007.
+# Reviewed by  Santhosh Thottingal <santhosh00@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus.HEAD.ml\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2008-03-01 15:53+0530\n"
+"Last-Translator: Praveen|പ്രവീണ്‍ A|എ <pravi.a@gmail.com>\n"
+"Language-Team: Swathanthra|സ്വതന്ത്ര Malayalam|മലയാളം Computing|കമ്പ്യൂട്ടിങ്ങ് <smc-"
+"discuss@googlegroups.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "ശബ്ദവും ചലച്ചിത്രവും"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "മള്‍ട്ടീമീഡിയ മെനു"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "പ്രോഗ്രാമിങ്"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "സോഫ്റ്റ്‌വെയര്‍ വികസനത്തിനു് ആവശ്യമുളള പണിയായുധങ്ങള്‍"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "വിദ്യാഭ്യാസം"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "കളികള്‍"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "കളികളും വിനോദങ്ങളും"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "ഗ്രാഫിക്സ്"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "ഗ്രാഫിക്സ് പ്രയോഗങ്ങള്‍"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "ഹാര്‍ഡ്‌വെയര്‍"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "പലയിനം ഹാര്‍ഡ്‌വെയര്‍ ഉപകരണങ്ങള്‍ക്കുള്ള  സജ്ജീകരണങ്ങള്‍"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "ഇന്റര്‍നെറ്റും ശൃംഖലയും"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "ശൃംഖലയുമായി ബന്ധപ്പെട്ട സജ്ജീകരണങ്ങള്‍"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "ചമയം"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "പണിയിടത്തിന്റെ കാഴ്ചയും പെരുമാറ്റവും നിയന്ത്രിയ്ക്കുന്ന സജ്ജീകരണങ്ങള്‍"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "പ്രയോഗങ്ങള്‍"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "സിസ്റ്റം"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "സ്വകാര്യ മുന്‍ഗണനകളും ഭരണ സജ്ജീകരണങ്ങളും"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "ഇന്റര്‍നെറ്റ്"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "ഇന്റര്‍നെറ്റ് ലഭ്യതയ്ക്കാവശ്യമുളള പ്രോഗ്രാമുകളായ വെബും ഇമെയിലും"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "ഓഫീസ്"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "ഓഫീസ് പ്രയോഗങ്ങള്‍"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "മറ്റുളളവ"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "മറ്റു് വിഭാഗങ്ങളില്‍ ഉള്‍‌പ്പെടാത്ത പ്രയോഗങ്ങള്‍"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "സ്വകാര്യം"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "സ്വകാര്യ സജ്ജീകരണങ്ങള്‍"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "മുന്‍ഗണനകള്‍"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "സ്വകാര്യ മുന്‍ഗണനകള്‍"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "ഭരണം"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "സിസ്റ്റം മുഴുവനുളള സജ്ജീകരണങ്ങളില്‍ മാറ്റം വരുത്തുക (എല്ലാ ഉപയോക്താക്കളേയും ബാധിക്കുന്നു)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "സിസ്റ്റത്തിന്റെ സജ്ജീകരണങ്ങള്‍"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "സിസ്റ്റത്തിലെ പണിയായുധങ്ങള്‍"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "സിസ്റ്റത്തിന്റെ ക്രമീകരണവും നിരീക്ഷണവും"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "സാര്‍വ്വജനികലഭ്യത"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "സാര്‍വ്വജനികലഭ്യതാ സജ്ജീകരണങ്ങള്‍"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "ഉപകരണങ്ങള്‍"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "പണിയിടോപകരണങ്ങള്‍"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "സാര്‍വ്വജനിക ലഭ്യതയെ സംബന്ധിച്ചുളള മുന്‍ഗണനകള്‍"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "സ്വകാര്യ മുന്‍ഗണനകളും സജ്ജീകരണങ്ങളും"
+
+#~ msgid "Menu Editor"
+#~ msgstr "മെനു മാറ്റുന്നിടം"
+
+#~ msgid "Edit Menus"
+#~ msgstr "മെനുകള്‍ മാറ്റുക"
+
+#~ msgid "_Applications:"
+#~ msgstr "_പ്രയോഗങ്ങള്‍:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_സഹജമായവ"
+
+#~ msgid "_Menus:"
+#~ msgstr "_മെനുകള്‍:"
+
+#~ msgid "Name"
+#~ msgstr "പേരു്"
+
+#~ msgid "Show"
+#~ msgstr "കാണിയ്ക്കുക"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "സ്വന്തം തട്ടു് കണ്ടുകിട്ടിയില്ല: /etc/passwd ല്‍ മാത്രമല്ല പരിസരത്തും $HOME നു് വിലയില്ല"
+
+#~ msgid "Menu file"
+#~ msgstr "മെനു ഫയല്‍"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "മെനു _ഫയല്‍"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "മെനുവില്‍ വരുത്തുന്ന മാറ്റങ്ങള്‍ നിരീക്ഷിയ്ക്കുക"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "<Exclude> ചെയ്ത എന്‍ട്രികളും ഉള്‍‌പ്പെടുത്തുക"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "NoDisplay=true എന്ന എന്‍ട്രികളും ഉള്‍‌പ്പെടുത്തുക"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "അസാധുവായ പണിയിട ഫയലിന്റെ ഐഡി"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[ഫയലിന്റെ പേരു് അസാധുവാണു്]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== മെനു മാറ്റിയിരിക്കുന്നു, വീണ്ടും ലഭ്യമാക്കിക്കൊണ്ടിരിയ്ക്കുന്നു ====\n"
+#~ "\n"
+#~ ", \n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "മെനു ട്രീ ശൂന്യമാണു്"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr ""
+#~ "- ഗ്നോമിന്റെ പണിയിട മെനു സ്പെസിഫിക്കേഷന്‍ നടപ്പിലാക്കിയിരിയ്ക്കുന്നതെങ്ങനെയാണെന്നു് "
+#~ "പരീക്ഷിയ്ക്കുക"

@@ -1,0 +1,247 @@
+# translation of gnome-menus.HEAD.po to Korean
+# Sung-Hyun Nam <namsh@kldp.org>, 2000.
+# Young-Ho Cha <ganadist@chollian.net>, 2000,2001,2003, 2007.
+# Eunju Kim <eukim@redhat.com>, 2007.
+# Changwoo Ryu <cwryu@debian.org>, 1998, 2002, 2003, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2008-03-03 09:05+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: GNOME Korea <gnome-kr-hackers@lists.kldp.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "음악과 비디오"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "멀티미디어 메뉴"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "개발"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "소프트웨어 개발을 위한 도구"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "교육"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "게임"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "게임 메뉴"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "그래픽"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "그래픽 응용프로그램"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "하드웨어"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "하드웨어 장치를 설정합니다"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "인터넷과 네트워크"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "네트워크와 관련된 설정을 합니다"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "모양새"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "바탕환경의 모양새와 행동을 설정합니다"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "프로그램"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "시스템"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "개인 기본 설정과 관리자 설정"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "인터넷"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "웹과 전자메일 같은 인터넷에 접근 가능한 프로그램"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "오피스"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "오피스 응용프로그램"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "기타"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "어떤 범주에도 해당되지 않는 프로그램"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "개인"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "개인 설정"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "기본 설정"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "개인 기본 설정"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "관리"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "시스템 전체 설정을 바꿉니다 (모든 사용자에게 영향을 미칩니다)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "시스템 설정"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "시스템 도구"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "시스템 설정과 감시"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "보편적 접근성"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "보편적 접근성 설정"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "보조 프로그램"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "바탕환경의 보조 프로그램"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "보편적 접근성과 관련된 기본 설정"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "개인 기본 설정"
+
+#~ msgid "Menu Editor"
+#~ msgstr "메뉴 편집기"
+
+#~ msgid "Edit Menus"
+#~ msgstr "메뉴 편집"
+
+#~ msgid "_Applications:"
+#~ msgstr "프로그램(_A):"
+
+#~ msgid "_Defaults"
+#~ msgstr "기본값(_D)"
+
+#~ msgid "_Menus:"
+#~ msgstr "메뉴(_M):"
+
+#~ msgid "Name"
+#~ msgstr "이름"
+
+#~ msgid "Show"
+#~ msgstr "보이기"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "홈 디렉토리를 찾을 수 없습니다: /etc/passwd와 $HOME 환경변수가 설정이 되"
+#~ "어 있지 않습니다"
+
+#~ msgid "Menu file"
+#~ msgstr "메뉴 파일"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "메뉴 바꿈 감시"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "<차단>된 항목 포함"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "NoDisplay=true 항목 포함"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "잘못된 바탕 화면 파일 ID"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[잘못된 파일 이름]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <차단됨>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== 메뉴가 바뀌었습니다, 다시 읽습니다 ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "메뉴 트리가 비었습니다"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- 그놈의 바탕화면 메뉴 명세의 구현 테스트"

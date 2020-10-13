@@ -1,0 +1,25 @@
+language: cpp
+
+sudo: required
+
+dist: bionic
+
+services:
+  - docker
+
+script:
+  - "curl -s https://raw.githubusercontent.com/mikkeloscar/arch-travis/master/arch-travis.sh | bash"
+
+archlinux:
+  repos:
+    - archlinuxcn=https://repo.archlinuxcn.org/$arch
+  packages:
+    # See *depends in https://github.com/archlinuxcn/repo/blob/master/archlinuxcn/pcmanfm-qt-git/PKGBUILD
+    - git
+    - cmake
+    - qt5-tools
+    - lxqt-build-tools-git
+    - libfm-qt-git
+    - lxmenu-data
+    - qt5-x11extras
+  script: 'cmake -B build -S . && make -C build'

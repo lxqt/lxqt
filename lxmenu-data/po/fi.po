@@ -1,0 +1,256 @@
+# Finnish messages for gnome-menus
+# Copyright (C) 2004-2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gail package.
+# Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2004-2005.
+# Ilkka Tuohela <hile@iki.fi>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-02-12 20:26+0300\n"
+"Last-Translator: Ilkka Tuohela <hile@iki.fi>\n"
+"Language-Team: Finnish <gnome-fi-laatu@lists.sourceforge.net>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Ääni & video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multimediavalikko"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Ohjelmointi"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Työkaluja sovelluskehitykseen"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Opetusohjelmat"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Pelit"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Pelit ja viihde"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafiikka"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Grafiikkasovellukset"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Laitteisto"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Laitteiston asetukset"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet ja verkko"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Verkkoon liittyvät asetukset"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Ulkoasu ja käyttötuntuma"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Työpöytäympäristön ulkoasua ja toimintaa ohjaavat asetukset"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Sovellukset"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Järjestelmä"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Henkilökohtaiset ja järjestelmän asetukset"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Internet-sovellukset kuten selain ja sähköposti"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Toimisto"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Toimistosovellukset"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Muut"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Muihin luokkiin sopimattomat sovellukset"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Henkilökohtaiset"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Henkilökohtaiset asetukset"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Asetukset"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Henkilökohtaiset valinnat"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Ylläpito"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Muuta järjestelmänlaajuisia asetuksia (vaikuttaa joka käyttäjään)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Järjestelmän asetukset"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Järjestelmätyökalut"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Järjestelmäasetukset ja -seuranta"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Esteettömyys"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Esteettömän käytön asetukset"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Apuohjelmat"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Työpöydän apuohjelmat"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Esteettömyyteen liittyvät asetukset"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Henkilökohtaiset asetukset"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Valikkomuokkain"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Muokkaa valikkoja"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Sovellukset:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Oletukset"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Valikot:"
+
+#~ msgid "Name"
+#~ msgstr "Nimi"
+
+#~ msgid "Show"
+#~ msgstr "Näytä"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Kotihakemistoa ei löydy: ei asetettu tiedostossa /etc/passwd eikä $HOME "
+#~ "muuttujalla ole arvoa"
+
+#~ msgid "Menu file"
+#~ msgstr "Valikkotiedosto"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Tarkkaile valikkomuutoksia"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Näytä myös piilotetut (<Exclude>) kohdat"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Näytä myös \"NoDisplay=true\"-kohdat"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Virheellinen työpöytätiedoston tunniste"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Virheellinen tiedostonimi]"
+
+#~ msgid " <excluded>"
+#~ msgstr "<piilotettu>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Valikko on muuttunut, ladataan uudelleen ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Valikkopuu on tyhjä"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- testaa Gnomen toteutusta Työpöytävalikkojen määrittelystä"
+
+#~ msgid "Accessibility"
+#~ msgstr "Esteettömyys"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Esteettömyysasetukset"
+
+#~ msgid "Desktop"
+#~ msgstr "Työpöytä"

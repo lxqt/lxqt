@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+
+Name=Network monitor
+Comment=Displays network status and activity.
+
+# Translations
+Name[eo]=Ret-observilo
+Comment[eo]=Elmontras ret-staton kaj -aktivecon

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Appearance
+GenericName=Appearance settings
+Comment=Appearance settings for LXQt
+Exec=lxqt-config-appearance
+Icon=preferences-desktop-theme
+Categories=Settings;DesktopSettings;Qt;LXQt;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=translations

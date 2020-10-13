@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Locale
+GenericName=Locale settings
+Comment=Locale settings for LXQt
+Exec=lxqt-config-locale
+Icon=preferences-desktop-locale
+Categories=Settings;DesktopSettings;Qt;LXQt;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=translations

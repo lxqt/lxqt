@@ -1,0 +1,258 @@
+# Georgian translation for gnome-menus
+# Copyright (c) (c) 2005 Canonical Ltd, and Rosetta Contributors 2005
+# This file is distributed under the same license as the gnome-menus package.
+# <>, 2005.
+# , fuzzy
+#  <>, 2006.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2006-03-16 19:00+0100\n"
+"Last-Translator: Vladimer Sichinava <alinux@siena.linux.it>\n"
+"Language-Team: Georgian <http://geoubuntu.cjb.net/>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "ხმა და ვიდეო"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "მულტიმედიის მენუ"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "პროგრამირება"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "პროგრამირების ხელსაწყოები"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "განათლება"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "თამაშები"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "თამაშები და სხვა"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "გრაფიკა"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "გრაფიკული პროგრამები"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr ""
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr ""
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr ""
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr ""
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr ""
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr ""
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "პროგრამები"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+#, fuzzy
+msgid "System"
+msgstr "სისტემური ხელსაწყოები"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "საკუთარი პარამეტრები და ადმინისტრაცია"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "ინტერნეტი"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "პროგრამები ინტერნეტისათვის, ვები და მეილი"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "ოფისი"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "საოფისე პროგრამები"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "სხვა"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "პროგრამები რომლებიც არც ერთ კატეგორიაში არ შედიან"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr ""
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+#, fuzzy
+msgid "Personal settings"
+msgstr "პერსონალური პარამეტრები"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "პარამეტრები"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "პერსონალური პარამეტრები"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "ადმინისტრაცია"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+#, fuzzy
+msgid "Change system-wide settings (affects all users)"
+msgstr "გლობალური სისტემური ცვლილებები (ვრცელდება ყველა მომხმარებელზე)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr ""
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "სისტემური ხელსაწყოები"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "სისტემის კონფიგურაცია და მონიტორინგი"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr ""
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+#, fuzzy
+msgid "Universal Access Settings"
+msgstr "დამხმარე საშუალებათა პარამეტრები"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "აქსესუარები"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "სამუშაო მაგიდის აქსესუარები"
+
+#~ msgid "Accessibility"
+#~ msgstr "დამხმარე საშუალებები"
+
+#~ msgid "Desktop"
+#~ msgstr "სამუშაო მაგიდა"
+
+#~ msgid "Accessibility related preferences"
+#~ msgstr "სპეც შესაძლებლობების პარამეტრები"
+
+#~ msgid "Menu Editor"
+#~ msgstr "მენუს ედიტორი"
+
+#~ msgid "Edit Menus"
+#~ msgstr "მენუს დამუშავება"
+
+#~ msgid "_Applications:"
+#~ msgstr "_პროგრამები:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_ნაგულისხმევი პარამეტრები"
+
+#~ msgid "_Menus:"
+#~ msgstr "_მენუ"
+
+#~ msgid "Name"
+#~ msgstr "სახელი"
+
+#~ msgid "Show"
+#~ msgstr "ანახე"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr "ვერ ვპოულობ სახლის დირექტორიას: არ იქნება დაყენებული /etc/passwd-ში"
+
+#~ msgid "Menu file"
+#~ msgstr "მენუ ფაილი"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "მენუში ცვლილებათა მონიტორინგი"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "<ჩაუმატებელი> ელემენტების ჩამატება"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "ჩართე NoDisplay=true ელემენტები"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "არასწორი ID დესკტოპ ფაილისა"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[მცდარი ფაილსახელი]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "↵\n"
+#~ "↵\n"
+#~ "↵\n"
+#~ "==== მენუ შეიცვალა, გადათვირთვა ====↵\n"
+#~ "↵\n"
+#~ "↵\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "მენუს ხე ცარიელია"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "-·test·GNOME's·implementation·of·the·Desktop·Menu·Specification"

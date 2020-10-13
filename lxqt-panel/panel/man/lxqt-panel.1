@@ -1,0 +1,35 @@
+.TH lxqt-panel "1" "2015-11-05" "LXQt 0.10.0" "LXQt Desktop Panel Module"
+.SH NAME
+lxqt-panel \- Desktop panel for \fBLXQt\fR: The Lightweight Qt Desktop Environment
+.SH SYNOPSIS
+.B lxqt-panel
+.br
+.SH DESCRIPTION
+This module adds a panel, with optional plugins, to the desktop.
+.SH BEHAVIOR
+The panel can be run independently of \fBLXQt\fR, autostarted at logon, and have
+multiple instances. A horizontal bottom panel shows by default on the desktop,
+but the alignment, size, autohide, transparency (requires compositor), and other
+attributes are user configurable.
+.P
+The panel is comprised of plugins which provide a visual widget; like the menu,
+clock, or volume. They can be added or removed in the panel Widget settings.
+.P
+Several plugins are loaded by default; the desktop menu and windows workspaces
+are also managed here.
+.SH CONFIGURATIONS
+Right-click over any plugin to reach the panel Configure settings option, or
+that of each respective plugin.
+.SH "REPORTING BUGS"
+Report bugs to https://github.com/lxqt/lxqt/issues
+.SH "SEE ALSO"
+.\" any module must refer to the session application, for module overview and initiation
+\fBstartlxqt.1\fR  LXQt session initialization and launch script (e.g. in \fB.xinitrc\fR)
+.P
+\fBlxqt-session.1\fR  LXQt \fIoverview\fR and complete session environment
+.P
+\fBlxqt-config-session.1\fR  LXQt default and autostart applications settings,
+plus environment settings
+.P
+\fBlxqt-config.1\fR  LXQt settings Configuration Center interface
+.P

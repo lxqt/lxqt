@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Application menu
+Comment=Menu based application launcher
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations

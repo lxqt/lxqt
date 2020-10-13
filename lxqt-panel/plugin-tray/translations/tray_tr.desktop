@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=System tray
+Comment=Display applications minimized to the system tray.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[tr]=Sistem çekmecesinde gizli uygulamalara erişin
+Name[tr]=Sistem çekmecesi

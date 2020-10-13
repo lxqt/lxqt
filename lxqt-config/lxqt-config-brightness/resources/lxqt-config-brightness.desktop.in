@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Brightness
+GenericName=Brightness Settings
+Comment=Configure brightness
+Exec=lxqt-config-brightness
+Terminal=false
+Type=Application
+Icon=brightnesssettings
+Categories=Settings;DesktopSettings;Qt;LXQt;HardwareSettings;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=translations

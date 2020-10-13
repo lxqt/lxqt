@@ -1,0 +1,56 @@
+#panel {
+    background:rgba(240, 240, 240, 100%);
+    border: 1px solid rgba(155, 155, 155, 100%);
+}
+
+QToolButton {
+    margin: 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    padding: 4px;
+    qproperty-iconSize: 24px;
+}
+
+QToolButton:hover {
+    color: rgba(54, 54, 54, 100%);
+    background: rgba(30, 145, 255, 30%);
+    border: 1px solid rgba(30, 145, 255, 100%);
+}
+
+QToolButton::menu-indicator {
+   image: none;
+}
+
+#closeButton {
+    qproperty-icon: url(lxqt-runner/window-close.svg);
+}
+
+#actionButton {
+    qproperty-icon: url(lxqt-runner/application-menu.svg);
+}
+
+#commandList {
+    background:rgba(240, 240, 240, 100%);
+    border: 1px solid rgba(155, 155, 155, 100%);
+    margin: 0 1px 1px 1px;
+}
+
+QMenu {
+    border: 1px solid rgba(155, 155, 155, 100%);
+    background:rgba(240, 240, 240, 100%);
+    margin: 0px;
+}
+
+QMenu::item {
+    color: #313639;
+}
+
+QMenu::item:selected {
+    background: rgba(30, 145, 255, 50%);
+    color: #313639;
+}
+
+QMenu::right-arrow {
+    image: url(right-arrow.svg);
+}
+

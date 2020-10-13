@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Application menu
+Comment=A menu of all your applications.
+Icon=start-here-lxqt
+
+#TRANSLATIONS_DIR=../translations

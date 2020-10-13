@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Sensors
+Comment=View readings from hardware sensors.
+
+
+# Translations
+Name[fi]=Sensorit
+Comment[fi]=Katso laitteistosensorien tuottamia lukuja (tällä hetkellä lm_sensors)

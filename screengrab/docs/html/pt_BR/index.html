@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>ScreenGrab -- programa para captura rápida de imagens</title>
+<link href="../default.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<a name='main'></a>
+<div id="header">
+    <h1>ScreenGrab</h1> <div id="version">versão 1.0</div>
+    <!--<h2>By DOOMer</h2>-->
+</div>
+<div id="menu">
+    <ul>
+        <li><a href="#main">Descrição</a></li>
+        <li><a href="#usage">Uso</a></li>
+		<li><a href="#license">Licença</a></li>
+        <li><a href="#versions">Histórico das versões</a></li>
+    </ul>
+</div>
+<div id="content">
+    <div id="left">
+        <h2>ScreenGrab - rápida criação de capturas de telas</h2>
+        <p>
+Esta é uma aplicação multi-plataforma projetada para obter rapidamente capturas de telas.
+O ScreenGrab foi criado usando o Framework Qt, graças a qual o programa pode trabalhar no
+Microsoft Windows e GNU/Linux.
+                </p>
+        <p>
+                    Principais características:
+                </p>
+        <ul>
+                    <li>Funciona no Windows &amp; Linux</li>
+                    <li>Obtém captura de telas do desktop</li>
+                    <li>Obtém captura de tela da janela ativa</li>
+		    <li>Obtém captura de tela de uma região do desktop</li>
+		    <li>Copia a captura de tela para a área de transferência</li>
+                    <li>Salva seus arquivos de imagens no formato PNG ou JPEG</li>
+                    <li>Ability to view and edit screenshots in an external editor</li>
+                    <li>Ability to upload screenshots on several image hostings (mediacru.sh, imgur.com)</li>
+                    <li>Habilidade em definir atraso ao obter as capturas de telas
+(de 1 até 90 segundos)</li>
+                    <li>Ocultando a janela principal (com recuperação) do
+ScreenGrab no momento da captura de tela</li>
+
+                    <li>Habilidade para minimizar o programa para a área de notificação do sistema, e
+controlá-lo via menu de contexto</li>
+	    <li>Obtém a captura de tela usando atalhos globais</li>
+	    <li>Salva automaticamente a captura de tela ao ser recebido</li>
+	    <li>Habilidade de inserir data e hora no nome do arquivo e salvar</li>
+        </ul>
+
+<a name='usage'></a>
+
+            <h2>Uso  <a href='#main'>Para o início da página</a></h2>
+            <p>
+                É muito simples.
+            </p>
+            <p>
+                Na primeira execução do programa, obtém-se o estado atual do seu desktop.
+                                          É mostrada a tela atual na janela principal.
+
+Todo o gerenciamento do programa pode ser realizado
+através dos botões ou pelo menu de contexto na área de notificação do desktop.
+            </p>
+            <p>
+                Botões na janela principal:
+            </p>
+        <ul>
+                    <li><b>Nova tela</b> [Ctrl+N] -- obtém nova captura de tela.</li>
+                    <li><b>Salvar tela</b> [Ctrl+S] -- salva a captura da tela obtida no disco rígido (no formato PNG ou JPEG).</li>
+<li><b>Copiar tela</b> [Ctrl+C] -- copia tela para a área de transferência.</li>
+				<li><b>Upload</b> - upload screenshots on several image hosting services, currently ScreenGrab supports <a href='http://mediacru.sh/' target='_blank'>mediacru.sh</a>, <a href='http://imgur.com/' target='_blank'>imgur.com</a> and <a href='http://imageshack.us/' target='_blank'>imageshack.us</a>, in the future, the list will be expanded.</li>
+				<li><b>Edit in ...</b> - the ability to open (and edit) screenshots in an image editor.
+				<br />
+				<br />
+				<u>NOTE:</u> In the current version for Microsoft Windows only MS Paint is supported.
+				</li>
+                    <li><b>Opções</b> [Ctrl+O] -- mostra a janela de opções do programa.</li>
+		    <li><b>Ajuda</b> [Ctrl+H] -- exibe informações de ajuda e exibe informações sobre o ScreenGrab, desenvolvedor e licença.</li>
+                    <li><b>Sair</b> [Ctrl+Q] -- sai do programa.</li>
+        </ul>
+            <p>
+                Estes botões também estão disponíveis no menu do programa na área de notficação do sistema.
+            </p>
+            <p>
+                Controles adicionais, localizado na janela principal.
+            </p>
+        <ul>
+						<li><b>Atraso</b> -- atrasa em segundos antes de capturar a tela.</li>
+                    <li><b>Tipo</b> -- tipo de obtenção [tela cheia
+ou janela ativa]. </li>
+        </ul>
+            <p>
+                <b><u>Configurações principais:</u></b>
+            </p>
+        <ul>
+                    <li><b>Diretório padrão</b> -- diretório padrão para salvar as capturas de telas.</li>
+                    <li><b>Nome do arquivo padrão</b> -- nome do arquivo salvo por padrão.</li>
+                    <li><b>Formato</b> -- padrão do formato da imagem salva (você pode selecionar outro formato ao salvar).</li>
+<li><b>Nenhuma decoração da janela</b> -- captura a janela ativa sem as decoraçãos da janela (only for linux version).</li>
+	</ul>
+            <p>
+                <b><u>Configurações avançadas:</u></b>
+            </p>
+        <ul>
+                    <li><b>Inserir Data/Hora no nome do arquivo</b> -- inseri data e hora no nome do arquivo salvo.
+<br />
+<br />Estas expressões podem ser utilizadas como parte dos caracteres do formato da data::
+<br />
+<table class="generic" align="center" cellpadding="2" cellspacing="1" border="0">
+<thead><tr valign="top" class="qt-style"><th>Saída das</th><th>expressões</th></tr></thead>
+<tr valign="top" class="odd"><td>d</td><td>o dia como número sem um zero à esquerda (1 a 31)</td></tr>
+
+<tr valign="top" class="even"><td>dd</td><td>o dia como número com um zero à esquerda (01 a 31)</td></tr>
+<tr valign="top" class="odd"><td>ddd</td><td>o nome abreviado do dia localizado. (ex. 'Seg' a 'Dog')</td></tr>
+<tr valign="top" class="even"><td>dddd</td><td>o nome longo do dia localizado (ex. 'Segunda' a 'Domingo')</td></tr>
+<tr valign="top" class="odd"><td>M</td><td>o mês como número sem um zero à esquerda (1-12)</td></tr>
+<tr valign="top" class="even"><td>MM</td><td>o mês como número com um zero à esquerda (01-12)</td></tr>
+
+<tr valign="top" class="odd"><td>MMM</td><td>o nome abrevido do mês localizado (ex. 'Jan' a 'Dez')</td></tr>
+<tr valign="top" class="even"><td>MMMM</td><td>o nome longo do mês localizado (ex. 'Janeiro' a 'Dezembro')</td></tr>
+<tr valign="top" class="odd"><td>yy</td><td>o ano como número de dois dígitos (00-99)</td></tr>
+<tr valign="top" class="even"><td>yyyy</td><td>o ano como número de quatro dígitos</td></tr>
+</table>
+<br />
+<br />Estas exepressões podem ser utilizadas como parte dos caracteres do formato da hora::
+<br /><br />
+<table class="generic" align="center" cellpadding="2" cellspacing="1" border="0">
+<thead><tr valign="top" class="qt-style"><th>Saída das</th><th>expressões</th></tr></thead>
+<tr valign="top" class="odd"><td>h</td><td>a hora sem um zero à esquerda (0 a 23 ou 1 a 12 se AM/PM for exibido)</td></tr>
+<tr valign="top" class="even"><td>hh</td><td>a hora com um zero à esquerda (00 a 23 ou 01 a 12 se AM/PM for exibido)</td></tr>
+<tr valign="top" class="odd"><td>H</td><td>a hora sem um zero à esquerda (0 a 23, até quando AM/PM for exibido)</td></tr>
+
+<tr valign="top" class="even"><td>HH</td><td>a hora com um zero à esquerda (00 a 23, até quando AM/PM for exibido)</td></tr>
+<tr valign="top" class="odd"><td>m</td><td>o minuto sem um zero à esquerda (0 a 59)</td></tr>
+<tr valign="top" class="even"><td>mm</td><td>o minuto com um zero à esquerda (00 a 59)</td></tr>
+<tr valign="top" class="odd"><td>s</td><td>o segunddo sem um zero à esquerda (0 a 59)</td></tr>
+<tr valign="top" class="even"><td>ss</td><td>o segundo com um zero à esquerda (00 a 59)</td></tr>
+<tr valign="top" class="odd"><td>z</td><td>os milisegundos sem unz zeros à esquerda (0 a 999)</td></tr>
+
+<tr valign="top" class="even"><td>zzz</td><td>os milisegundos com unz zeros à esquerda (000 a 999)</td></tr>
+<tr valign="top" class="odd"><td>AP ou A</td><td>interpreta com uma hora AM/PM. <i>AP</i> deve ser um "AM" or "PM"</td></tr>
+<tr valign="top" class="even"><td>ap ou a</td><td>interpreta com uma hora AM/PM. <i>ap</i> deve ser um "am" ou "pm"</td></tr>
+</table>
+<br />
+				</li>
+                    <li><b>Auto-salvar tela</b> -- salva automaticamente capturas de telas no processo de captura.</li>
+		    <li><b>Salvar a primeira captura de tela</b> -- habilitado | desabilitado automaticamente ao salvar a primeira captura de tela, que se obtém ao executar o programa.</li>
+		<li><b>Filenames to clipboard on saving</b> - send to the clipboard name of the saved file. You can select these params:</li>
+			<ul>
+				<li><b>No copy</b> - the name of saved file will not be transferred to the clipboard.</li>
+				<li><b>Only filename</b> - send to the clipboard only the file name.</li>
+				<li><b>Full path to file</b> - send to the clipboard full path to the file.</li>
+			</ul>
+                  <li><b>Permitir múltiplas instâncias</b> -- permite executar múltiplas instâncias do ScreenGrab.</li>
+                  <li><b>Enable external viewer</b> -- enable or disable ability for preview screenshot in default image viewer (by double click on screenshot area in main window).</li>
+	</ul>
+            <p>
+                <b><u>Exibir configurações:</u></b>
+            </p>
+        <ul>
+                    <li><b>Salvar o tamanho da janela ao sair</b> -- salva o tamanho da janela principal ao sair (e restaura na próxima execução).</li>
+		    <li><b>Zoom da área ao redor do mouse no modo de seleção</b> -- a capacidade de exibir a área ampliada em torno do ponteiro do mouse ao receber uma tela de área selecionada.</li>
+	</ul>
+            <p>
+                <b><u>Configurações da área de notificação dos sistema:</u></b>
+            </p>
+        <ul>
+		    <li><b>Usar a área de notificação</b> -- usar a área de notificação (system tray) do sistema operacional (ambiente de trabalho) para mostrar as mensagens e gerenciar o programa.
+                    <li><b>Mensagens na área de notificação</b> -- modo de exibir as mensagens na área de notificação ao tirar|salvar os eventos. Pode ser "nenhum" ou "ocultar" ou "sempre".</li>
+                    <li><b>Tempo de exibição das mensagens na área de notificação</b> -- tempo em que as mensagens são exibidas.</li>
+                    <li><b>Fechar para área de notificação</b> -- minimiza a janela principal para a área de notificação ao clicar no botão fechar da janela.</li>
+        </ul>
+	<p>
+	    <u><b>configurações dos atalhos:</u></b>
+	</p>
+	<p>
+	    Na aba "Atalhos" na janela opções, você pode definir teclas de atalho para o acesso rápido das funções do programa. Existem dois tipos de combinações de teclas usadas no Screengrab - local e global.
+	</p>
+	<p>
+	    Local duplica as ações executadas ao pressionar o botão na janela principal. Eles só funcionam quando a janela principal do Screengrab está ativa.
+	</p>
+	<p>
+	    Atalhos globais podem ser usados para se obter uma nova captura de tela, ao trabalhar com outra aplicação no seu sistema operacional.
+	</p>
+			<p>
+                <u><b>Parâmetros da linha de comando:</u></b>
+            </p>
+                      <ul>
+                        <li><b>--fullscreen</b> -- define o modo tela cheia [padrão].</li>
+                        <li><b>--active</b> -- define o modo janela ativa.</li>
+                        <li><b>--region</b> -- define o modo selecionar área da tela.</li>
+                        <li><b>--minimized</b> -- run in minimized to the tray (or taskar, if tray is disabled).</li>
+                        <li><b>--upload</b> -- automatically uploading screenshot on selected image hosting. And display after  it direct link to image.</li>
+                        <li><b>--version</b> -- exibe informações da versão {somente linux].</li>
+                        <li><b>--help</b> -- mostra informações dos parâmetros de linha de comando {somente linux].</li>
+                      </ul>
+
+<a name='license'></a>
+
+            <h2>Licença  <a href='#main'>Para o início da página</a></h2>
+<p>
+  <strong>Copyright:</strong>
+</p>
+<p>
+  Artem 'DOOMer' Galichkin <a href=mailto:doomer3d@gmail.com>doomer3d@gmail.com</a>
+</p>
+<p>
+<strong>Licença:</strong>
+</p>
+<p>
+  ScreenGrab é um freeware licenciado sob os termos da <a href=http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ target=_blank>Licença Pública Geral GNU versão 2</a>
+</p>
+<p>
+  <strong>Agradecimentos aos:</strong>:
+</p>
+
+<p>
+      <strong>Tradutores:</strong>
+</p>
+<ul>
+      <li><strong>Márcio Moraes</strong> -- Tradução para o Português do Brasil</strong> </li>
+	<li><strong>Gennadi Motsyo</strong> -- Tradução para o Ucraniano</strong> </li>
+</ul>
+<p>
+      <strong>Beta-testers:</strong>
+<ul>
+      <li><strong>Alexantia</strong> </li>
+      <li><strong>iNight</strong> </li>
+</ul>
+
+<p>
+E a todos aqueles que utilizam ScreenGrab :)
+</p>
+<a name='versions'></a>
+            <h2>Histórico das versões  <a href='#main'>Para o início da página</a></h2>
+            <p>
+                <strong>Versão  1.2:</strong>
+            </p>
+            <ul>
+                <li>Added ability for autosaving type of the last created screenshot.</li>
+                <li>Some small fixes.</li>
+            </ul>
+            <p>
+                <strong>Version 1.1.1:</strong>
+            </p>
+            <ul>
+                    <li>Fixed wrong 'imgur' uploading result string for bb-code with preview.</li>
+                    <li>Fixed segfault when exist configuration file contains "showTrayIcon=false".</li>
+            </ul>
+            <p>
+                    <strong>Version 1.1:</strong>
+            </p>
+            <ul>
+                    <li>Added ability to upload to MediaCrush (http://mediacru.sh).</li>
+                    <li>Option "Always save the window size" replaced by "autosave window size on exit ScreenGrab".</li>
+                    <li>Reworked main window UI (the order of the buttons).</li>
+                    <li>Reworked the configuration dialog (some UI elements moved between sections, and increment count of the sections).</li>
+            </ul>
+            <p>
+                <strong>Versão 1.0:</strong>
+            </p>
+		<ul>
+			<li>Fixed dual monitor support</li>
+			<li>Added XDG_CONFIG_HOME support, by a build option SG_XDG_CONFIG_SUPPORT</li>
+			<li>Added ability to upload to some image hosts (imgur.com and imgshack.us)</li>
+			<li>Added build option for compile without upload feature (SG_EXT_UPLOADS bulld option)</li>
+			<li>Added "Previous selection" mode</li>
+			<li>Added ability to edit screenshot in external editor</li>
+			<li>Added option for preview screenshot in default image viewer by double click on screenshot area</li>
+			<li>Fixed non-minimize main window on &quot;Exit&quot; shortcut, when use &quot;Minimize to tray&quot; option</li>
+			<li>Fixed bug with cut button text on mainwindow</li>
+			<li>Fixed regression with not capture screenshot when second instance running</li>
+			<li>Fixed bug with not create path to autosave screenshots (when it is typed manually in configuration dialog)</li>
+			<li>Added build option SG_GLOBALSHORTCUTS for turn on/off build with global shortcuts support</li>
+			<li>Autoincrement filenames when saving screenshots in manual mode (in one running session)</li>
+			<li>Added the ability to customize shortcut to close the application</li>
+			<li>Added ability to run in minimized to tray (or taskar, if tray is disabled) with "--minimized" comand line option</li>
+			<li>Added ability to automatically upload the screenshot via the command line "--upload" param</li>
+		</ul>
+            <p>
+                <strong>Versão 0.9.1:</strong>
+            </p>
+        <ul>
+            <li>Corrigido a não-mudança da caixa de combinação "Tipo de Screeen" quando obtido a captura de tela a partir de um sinal por outra instância do programa.</li>
+            <li>Corrigida a incorreta captura de tela da janela ativa no GNOME (quando desativada a opção "Permitir múltiplas cópias" e executar outra instância do programa).</li>
+        </ul>
+	    <p>
+                <strong>Versão 0.9:</strong>
+			</p>
+			<ul>
+				<li>adicionados atalhos globais. </li>
+				<li>adicionado a opção habilitar|desabilitar na área de notificação do sistema. </li>
+				<li>adicionado alternar para a instância já em execução do programa quando você iniciar uma segunda instância (modo de operação não permitir múltiplas instâncias). </li>
+				<li>adicionado salvar automaticmente a primeira captura de tela que foi obtida no início do programa (ocional habilitar | desabilitar). </li>
+				<li>redesenhada a interface do diálogo de configuração. </li>
+			</ul>
+
+            <p>
+            <p>
+                <strong>Versão 0.8.1:</strong>
+			</p>
+		<ul>
+		    <li>[Linux] corrigido a incorreta seleção padrão ao salvar o formato no KDE 4.4.x no diálogo salvar arquivo. </li>
+		    <li>adicionada a tradução de_DE. </li>
+		</ul>
+            <p>
+            <p>
+                <strong>Versão 0.8:</strong>
+                        </p>
+                        <ul>
+                                <li>adicionado parâmetros de linha de comando
+                  para obtenção dos modos (tela cheia, janela ativa, área da seleção). </li>
+                                <li>adicionado o suporte a BMP. </li>
+                                <li>adicionado a tradução para o Português do Brasil. </li>
+                                <li>adicionado ocultando automaticamente janela principal no processo de captura. </li>
+                                <li>{linux] corrigido obtenção da captura da janela sem decorações. </li>
+                                <li>[linux] adicionado opção "sem decoração da janela". </li>
+                                <li>adicionado atalhos para os botões da janela principal. </li>
+                        </ul>
+
+            <p>
+                <strong>Versão 0.6.2 [Somente Linux]:</strong>
+                        </p>
+                        <ul>
+                          <li>corrigido o não traduzido menu da área de notificação (publicação fechada #7). </li>
+                        </ul>
+            <p>
+                <strong>Versão 0.6.1 [Somente Linux]:</strong>
+                        </p>
+                        <ul>
+                          <li>corrido a incorreta detecção do idioma do sistema em algumas distribuições Linux. </li>
+                        </ul>
+            <p>
+                <strong>Versão 0.6:</strong>
+            </p>
+        <ul>
+                    <li>o valor padrão de "ocultar janela principal" foi alterado para true (ativado).</li>
+                    <li>adicionado entrada modelo para inserir data-hora no nome do arquivo salvo.</li>
+                    <li>adicionado zoom ao redor do cursor do mouse no modo de seleção de área.</li>
+                    <li>pequena moficaição no diálogo de configuração.</li>
+		    <li>adicionado ajuda html em (inglês & russo).</li>
+        </ul>
+
+
+            <p>
+                <strong>Versão 0.5:</strong>
+            </p>
+        <ul>
+                    <li>adicionado inserir data|hora ao salvar nome do arquivo [opcional].</li>
+                    <li>adicionado auto salvar telas no processo de obtenção [opção].</li>
+                    <li>adicionado alterar tempo de exibição das mensagenas na área de notificação [1 - 10 src].</li>
+                    <li>adicionado informações de ajuda.</li>
+		    <li>adicionado dicas de ferramentas para os elementos UI.</li>
+		    <li>pequenas correções na sintaxe do arquivo de configuração.</li>
+
+        </ul>
+
+
+
+            <p>
+                <strong>Versão 0.4:</strong>
+            </p>
+        <ul>
+                    <li>adicionado obter região de uma área selecionada.</li>
+                    <li>adicionado copiar para a área de transferência.</li>
+                    <li>adicionado salvar tamanho da janela principal ao sair [padrão está desabilitado].</li>
+                    <li>decrementado em 2 tempos os volumes ocupados pela memória ao iniciar.</li>
+                    <li>[win32] falha corrigida com a localização de screengrab.ini.</li>
+		    <li>alterada estrutura de algumas linhas do código fonte (para trabalhar com configuração de data).</li>
+		    <li>alterada a ordem da aba dos botões da janela principal.</li>
+		    <li>novo ícone do programa.</li>
+		    <li>algumas correções.</li>
+        </ul>
+
+            <p>
+                <strong>Versão 0.3.1:</strong>
+            </p>
+        <ul>
+                    <li>corrigida falha com a não exibição do ícone da janela principal.</li>
+        </ul>
+
+            <p>
+                <strong>Versão 0.3:</strong>
+            </p>
+        <ul>
+                    <li>janela principal agora baseada no arquivo UI (recriado UI).</li>
+                    <li>adicionado captura da janela ativa.</li>
+                    <li>adicionado opção para permitir múltiplas instâncias do ScreenGrab.</li>
+                    <li>adicionado opção para selecionar entre minimiizar no área de notificação e fechar (botão fechar da janela).</li>
+        </ul>
+
+            <p>
+                <strong>Versão 0.2:</strong>
+            </p>
+        <ul>
+                    <li>adicionado suporte a JPEG.</li>
+                    <li>adicionado diálogo de opções.</li>
+                    <li>adicionado configurações ao salvar diretório, nome do arquivo e formato da imagem por padrão.</li>
+                    <li>adicionado opções de salvar no arquivo INI.</li>
+                    <li>adicionado suporte a i18n e localização Russa.</li>
+                    <li>algumas correções e alterações no código.</li>
+                    <li>disponível agora com um instalador (Windows) e pacotes deb (ubuntu 9.04).</li>
+        </ul>
+            <p>
+                <strong>Versão 0.1:</strong>
+            </p>
+        <ul>
+                    <li>primeira versão pública.</li>
+                    <li>adicionado ícone e menu na área de notificação do sistema.</li>
+                    <li>adicionado ocultar na área de notificação do sistema.</li>
+                    <li>adicionado o bloqueio de uma segunda instância do programa.</li>
+        </ul>
+            <p>
+                <strong>Versão 0.0.3:</strong>
+            </p>
+        <ul>
+                    <li>primeira construção trabalhada com recursos mínimos.</li>
+        </ul>
+
+    </div>
+
+
+</div>
+<div id="footer">
+    <p>Copyright &copy; 2009 - 2013, <a href="http://mapper.ru/" class="link1">DOOMer</a></p>
+</div>
+</body>
+</html>

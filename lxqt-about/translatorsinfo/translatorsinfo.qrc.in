@@ -1,0 +1,5 @@
+<RCC>
+    <qresource>
+        <file alias="translatorsInfo">${TRANSLATORS_INFO_FILE}</file>
+    </qresource>
+</RCC>

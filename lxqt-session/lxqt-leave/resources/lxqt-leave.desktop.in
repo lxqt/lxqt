@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Leave
+GenericName=Leave
+Comment=Leave dialog
+Exec=lxqt-leave
+Icon=system-shutdown
+Categories=System;X-Leave;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=../translations

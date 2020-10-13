@@ -1,0 +1,253 @@
+# translation of gnome-menus.HEAD.ne.po to Nepali
+# Nepali Translation Project.
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2005.
+# Ganesh Ghimire <gghimire@gmail.com>, 2005.
+# Nabin Gautam <nabin@mpp.org.np>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus.HEAD.ne\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-10-16 14:50+0545\n"
+"Last-Translator: Nabin Gautam <nabin@mpp.org.np>\n"
+"Language-Team: Nepali <info@mpp.org.np>\n"
+"Language: ne\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Nepali\n"
+"X-Poedit-Country: NEPAL\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=n !=1\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "ध्वनि र भिडियो"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "मल्टिमिडिया मेनु"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "प्रोग्रामिङ"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "सफ्टवेर विकासका लागि उपकरण"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "शिक्षा"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "खेल"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "खेल र मनोरञ्जन"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "ग्राफिक्स"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "ग्राफिक्स अनुप्रयोग"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "हार्डवेयर"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "विभिन्न हार्डवेयर यन्त्रका लागि सेटिङ"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "इन्टरनेट र सञ्जाल"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "सञ्जाल सम्बन्धि सेटिङ"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "हेर्नुहोस् अनुभव गर्नुहोस्"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "डेस्कटप देखावट र व्यवहार नियन्त्रण गर्ने सेटिङ"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "अनुप्रयोग"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "प्रणाली"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "व्यक्तिगत प्राथमिकता र प्रशासकिय सेटिङ"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "इन्टरनेट"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "वेब र इमेल जस्तो इन्टरनेट पहुँचका लागि कार्यक्रम"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "कार्यालय"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "कार्यालय अनुप्रयोग"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "अन्य"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "अन्य कोटिमा नमिलेका अनुप्रयोग"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "व्यक्तिगत"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "व्यक्तिगत सेटिङ"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "प्राथमिकता"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "व्यक्तिगत प्राथमिकता"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "प्रशासन"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "सम्पूर्ण प्रणालीका सेटिङ परिवर्तन गर्नुहोस् ( सबै प्रयोगकर्तालाई प्रभाव पार्छ)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "प्रणाली सेटिङ"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "प्रणाली उपकरण"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "प्रणाली कन्फिगरेसन र अनुगमन"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "विश्वब्यापी पहुँच"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "विश्वब्यापी पहुँच सेटिङ"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "सहायक उपकरण"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "डेस्कटप सहायक उपकरण"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "विश्वब्यापी पहुँच सम्बन्धि प्राथमिकता"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "व्यक्तिगत प्राथमिकता र सेटिङ"
+
+#~ msgid "Menu Editor"
+#~ msgstr "मेनु सम्पादक"
+
+#~ msgid "Edit Menus"
+#~ msgstr "मेनु सम्पादन गर्नुहोस्"
+
+#~ msgid "_Applications:"
+#~ msgstr "अनुप्रयोग:"
+
+#~ msgid "_Defaults"
+#~ msgstr "पुर्वनिर्धारित"
+
+#~ msgid "_Menus:"
+#~ msgstr "मेनु:"
+
+#~ msgid "Name"
+#~ msgstr "नाम"
+
+#~ msgid "Show"
+#~ msgstr "देखाउनुहोस्"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "गृह डाइरेक्टरी फेला पार्न सकिँदैन: /etc/passwd मा सेट छैन र परिवेशमा $HOME का लागि "
+#~ "मान छैन"
+
+#~ msgid "Menu file"
+#~ msgstr "मेनु फाइल"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "मेनु परिवर्तनका लागि मोनिटर"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "समाविष्ट <Exclude> प्रविष्टि"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "NoDisplay=ठीक प्रविष्टि सम्मिलित गर्नुहोस्"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "अवैध डेस्कटप फाइल आईडी"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[अवैध फाइलनाम]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <excluded>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== मेनु परिवर्तन गरियो, रिलोडिङ ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "मेनु ट्री खाली छ"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- डेस्कटप मेनु विशिष्टिकरणको जिनोम कार्यान्वयनको परीक्षण गर्नुहोस्"

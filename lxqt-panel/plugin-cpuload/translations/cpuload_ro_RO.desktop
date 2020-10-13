@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+
+Name=Cpu monitor
+Comment=Displays the current CPU load.
+
+
+
+
+# Translations
+Comment[ro_RO]=Monitor de încărcare a procesorului
+Name[ro_RO]=Afișează gradul de încărcare al procesorului

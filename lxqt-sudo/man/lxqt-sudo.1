@@ -1,0 +1,32 @@
+.TH lxqt-sudo 1 "" "" "LXQt\ Module"
+.SH NAME
+\fBlxqt-sudo\fR, \fBlxsu\fR \- execute a command as privileged user
+.SH SYNOPSIS
+\fBlxqt-sudo\fR \fIoption\fR [\fIcommand\fR [\fIarguments\fR]]
+.br
+\fBlxsu\fR [\fIoption\fR] [\fIcommand\fR [\fIarguments\fR]]
+.br
+\fBlxsudo\fR [\fIoption\fR] [\fIcommand\fR [\fIarguments\fR]]
+.SH DESCRIPTION
+\fBlxqt-sudo\fR (and symlinks \fBlxsu\fR, \fBlxsudo\fR) is a graphical QT frontend for plain \fBsudo(8)\fR or \fBsu(1)\fR (for requesting optional password in GUI fashion).
+.br
+When invoked it simply spawns child \fIsudo\fR or \fIsu\fR process with requested \fIcommand\fR (and optional \fIarguments\fR). If \fIsudo\fR/\fIsu\fR requests user's password,
+the GUI password dialog is shown and (after submit) the password is provided to backend.
+.br
+.SH OPTIONS
+\fBoption\fR is one of:
+.br
+  -h|--help      Print help.
+.br
+  -v|--version   Print version information.
+.br
+  -s|--su        Use \fIsu\fR as backend (default for \fBlxqt-sudo\fR & \fBlxsudo\fR is \fIsudo\fR, for \fBlxsu\fR is \fIsu\fR).
+.br
+  -d|--sudo      Use \fIsudo\fR as backend (default for \fBlxqt-sudo\fR & \fBlxsudo\fR is \fIsudo\fR, for \fBlxsu\fR is \fIsu\fR).
+.SH "REPORTING BUGS"
+Report bugs to https://github.com/lxqt/lxqt/issues
+.SH "SEE ALSO"
+\fBsudo(8)\fR \fBsu(1)\fR
+.SH AUTHOR
+This manual page was created by \fBPalo Kisa\fR \fI<palo.kisa@gmail.com>\fR
+for \fBLXQt\fR project.

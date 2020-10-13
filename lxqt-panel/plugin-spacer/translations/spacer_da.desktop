@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Spacer
+Comment=Space between widgets
+Icon=bookmark-new
+
+#TRANSLATIONS_DIR=../translations
+
+# Translations
+Name[da]=Mellemrum
+Comment[da]=Mellemrum mellem widgets

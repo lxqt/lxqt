@@ -1,0 +1,253 @@
+# Indonesian translation of gnome-menus.
+# Copyright (C) 2005 THE gnome-menus's COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-menus package.
+# ahmad riza h nst <ari@160c.afraid.org>, 2005.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2014-09-04 14:13+0000\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <sukarelawan@gnome.linux.or.id>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.6.0-rc1\n"
+"X-POOTLE-MTIME: 1409840027.000000\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Suara & Video"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Menu multimedia"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Pemrograman"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Perkakas untuk pengembangan perangkat lunak"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Pendidikan"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Permainan"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Permainan dan hiburan"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafis"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Aplikasi grafis"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Perangkat Keras"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Penataan untuk beberapa peralatan perangkat keras"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet dan Jaringan"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Penataan terkait jaringan"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Tampilan dan Rasa"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Penataan mengendalikan tampilan dan perilaku desktop"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Aplikasi"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Sistem"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Preferensi pribadi dan penataan administrasi"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Program untuk mengakses internet seperti web dan email"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Perkantoran"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Aplikasi Perkantoran"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Lainnya"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Aplikasi yang tidak termasuk dalam kategori lain"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Pribadi"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Penataan pribadi"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Preferensi"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Preferensi pribadi"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administrasi"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Ubah pengaturan sistem (mempengaruhi seluruh pengguna)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Penataan sistem"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Peralatan Sistem"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Konfigurasi sistem dan pemantauan"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Akses Universal"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Penataan Akses Universal"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Aksesoris"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Aksesoris desktop"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Preferensi terkait akses universal"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Preferensi dan penataan pribadi"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Penyunting Menu"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Penyunting Menu"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Aplikasi:"
+
+#~ msgid "_Defaults"
+#~ msgstr "Stan_dar"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menu:"
+
+#~ msgid "Name"
+#~ msgstr "Nama"
+
+#~ msgid "Show"
+#~ msgstr "Tampilkan"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Tidak dapat menemukan direktori rumah: tidak tercantum dalam berkas /etc/"
+#~ "passwd dan juga tidak ada nilai $HOME dalam lingkungan"
+
+#~ msgid "Menu file"
+#~ msgstr "Berkas menu"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "MENU_FILE"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Pantau perubahan menu"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Ikutkan menu yang <tidak termasuk>"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Sertakan entri NoDisplay=true"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Kode berkas desktop tidak benar"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Nama berkas salah]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <tidak termasuk>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu berubah, memuat ulang ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Pohon menu masih kosong"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- uji implementasi Spesifikasi Menu Desktop pada GNOME"
+
+#~ msgid "Accessibility"
+#~ msgstr "Kemudahan Akses"
+
+#~ msgid "Desktop"
+#~ msgstr "Desktop"

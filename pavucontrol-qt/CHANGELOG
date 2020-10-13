@@ -1,0 +1,543 @@
+pavucontrol-qt-0.15.0 / 2020-04-23
+==================================
+  * Bumped version to 0.15.0.
+  * Avoid char raw strings literals memory allocations.
+  * Don't use automatic string conversions.
+  * Removed (duplicated) string casts definitions.
+
+pavucontrol-qt-0.14.1 / 2019-02-25
+==================================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+pavucontrol-qt-0.14.0 / 2019-01-25
+==================================
+
+  * Bumped version to 0.14.0
+  * Added FreeBSD installation instructions
+  * Implementation fixed:
+    - Some code modernizations like range based loops,
+      auto declared iterators and use of nullptr
+    - Don't use automatic string conversions
+    - Remove unused Makefile.am
+    - Treat the 'off' card profile specifically
+    - Mainwindow: Don't use deprecated libpulse members
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+  * Moved translations from lxqt-l10n back to pavucontrol-qt
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+  * Translation updates
+
+pavucontrol-qt-0.4.0 / 2018-05-21
+=================================
+
+  * Bumped minor version to 4
+  * Spanish translation update
+  * Qt5.11 beta: xxxwidget: include QAction explicitely
+  * CMake: Prevent in-source builds
+  * build: Use pkg-config's *_LDFLAGS
+  * fix http -> https
+  * Fixed mentions of LXDE
+  * pavucontrol: Remove unique application constraint
+  * Add Simplified Chinese desktop entry
+
+pavucontrol-qt-0.3.0 / 2017-09-24
+=================================
+
+  * Release 0.3.0: Update changelog
+  * Bump version to 0.3.0
+  * correct spelling mistake
+  * Added Lithuanian .desktop file
+  * liblxqt make no sense here
+  * Copied issue template
+  * set Qt::AA_UseHighDpiPixmaps to true
+  * Added version to cli options
+  * Added default CMAKE_BUILD_TYPE and versioning
+  * added pl.desktop
+  * ui: Use "changes-prevent-symbolic" icon
+  * MainWindow: Remove old GTK remnants
+  * Add Catalan translation
+  * Channel: Add slider snapping to 100%
+  * Channel: Address compiler warnings
+  * Channel: Align slider controls correclty
+  * Channel: Add ticks to volume slider
+  * Channel: Use percentage for volume scale
+  * devicewidgte: Re-add device renaming
+  * MainWindow: Force using the size from previous run
+  * MainWindow: Add quit shortcut
+  * Added pavucontrol-qt_da.desktop
+
+pavucontrol-qt-0.2.0 / 2016-12-11
+=================================
+
+  * Release 0.2.0: Update changelog
+  * Release 0.2.0: Update changelog
+  * Use QSettings for storing configuration
+  * Create pavucontrol-qt_pt.desktop
+  * Use the new lxqt-build-tools package
+  * - Add a simple single instance controller to avoid run multiple simultaneous applications
+  * Use same approach as avidemux
+  * Simply differentiate the namnig to avoid menu duplication
+  * CMakeLists: Remove XdgUserDirs requirement
+  * mainwindow: Set icon for eventRoleWidget
+
+pavucontrol-qt-0.1.0 / 2016-09-24
+=================================
+
+  * Release 0.1.0: Add changelog
+  * devicewidget: Remove debug
+  * Address compiler warnings
+  * streamwidget: Fix specific termination text
+  * Re-add support for changing source output
+  * streamwidget: Re-add "Terminate" context menu
+  * Re-add support for changing sink input
+  * ui: Lock channels by default
+  * ui: Enable sink's advanced options only if digital
+  * ui: Condense device advanced settings
+  * ui: Align titles left
+  * ui: Use "changes-prevent" icon for "Lock channels.."
+  * ui: Don't stretch content horizontaly
+  * ui: Simplify peak bar
+  * channels: Align channel sliders
+  * Add README.md
+  * devicewidget: Set the PCM encoding always enabled
+  * Properly install pavucontrol-qt.desktop file.
+  * Prevent recursive signal handler invocation. * Replace some push buttons with tool buttons.
+  * Add authors information.
+  * Remove glibmm dependency.
+  * Fix translations.
+  * Replace GNU gettext with Qt tr() in all places.
+  * Add missing ui files to CMakeLists.txt
+  * Trivial fix for Timeout handlers.
+  * Porting to Qt 5 - Finish the basic UI.
+  * Make all source code compile with Qt5.
+  * Port DeviceWidget and ChannelWidget to Qt5.
+  * Add missing file.
+  * Fix broken combo box in CardWidget. Remove unused code.
+  * Port the sound card configuration page to Qt.
+
+start-qt / 2016-08-31
+=====================
+
+  * Start working on a Qt5 port.
+  * mainwindow: force icons to have sane size
+  * Add checkbutton for disabling volume meters
+  * .gitignore: add compile
+  * mainwindow: Don't add a border on the outermost vbox
+  * build-sys: Add m4 file for AX_CXX_COMPILE_STDCXX_11
+  * doc: Update link to git repository
+  * build-sys: Use C++11 for building
+  * Remove Encoding key from .desktop file
+  * i18n: improve one Italian string
+  * i18n: Some fixes for the Italian translation
+  * Add --version command line option
+  * build-sys: Depend on libpulse >= 5.0
+  * mainwindow: unavailable profiles are marked as such in their description
+  * i18n: Updated Polish translation
+  * build-sys: Release pavucontrol 3.0
+  * doc: Adapt the sed expression for cleaning up links
+  * build-sys: Don't dist m4/ChangeLog
+  * build-sys: Fix README building
+  * mainwindow: Remember device visibility selections
+  * devicewidget, streamwidget: Show only one volume slider when channels are locked
+  * mainwindow: Catch Gdk::PixbufError
+  * Handle IO errors in icon setting code
+  * Don't crash if pa_stream_peek returns NULL
+  * Do not instantiate cardwidget, devicewidget and rolewidget with a type of EventBox
+  * Reference the widget before returning it from ::create methods
+  * Add horizontal scrollbars automatically
+  * Add TRANSLATORS_README.txt
+  * Add a --maximize command line option
+  * pavucontrol: ellipsize labels to fix window resizing
+  * build-sys: Use autoreconf in bootstrap.sh
+  * sinkwidget: add support for AAC pass-through
+  * added back support for gtkmm-2.4 builds
+  * build-sys: Drop ChangeLog generation from git
+  * build-sys: Prepare for a 2.0 release
+  * sinkwidget: Move format selection options to 'Advanced' expander
+  * devicewidget: Move latency offset into an expander
+  * mainwindow: Fix iterator dereferencing style.
+  * mainwindow: Show the availability of the ports and profiles.
+  * mainwindow: Don't clear the "updating" flag in updateCard() too early.
+  * Enable Automake's silent-rules option.
+  * Add a few known peak-detect stream clients to a source-output blacklist
+  * devicewidget: Add a latency offset spinbutton
+  * sink/sourcewidget: Move the index and card_index to the devicewidget
+  * cardwidget: Add a port class
+  * bootstrap: Enable the pre-commit hook.
+  * gitignore: Add *.swp.
+  * Add --retry command line option
+  * Fix theme under gtk3
+  * build-sys: Prepare 1.0
+  * build-sys: Switch to the tar-ustar format (as per a lot of GNOME stuff for 3.2) and distribute .xz files.
+  * i18n: Add devicewidget to POTFILES.in
+  * source: Only autosuspend network sources
+  * build-sys: Prepare 0.99.2
+  * Update device format stuff for (pre-release) API changes.
+  * Check if PA_SINK_SET_FORMATS is defined before using it
+  * Use sink flags to figure out if we can set formats
+  * Add UI to select the formats supported by the receiver attached to a digitial sink
+  * build-sys: Prepare 0.99.1
+  * Fix strange vertical alignment of sinks/source/cards
+  * Fix GTK Warnings under GTK3 due to combo box sizes
+  * source-output: We will officially support source output volumes in 0.99
+  * source-output: Don't set the channel map for the SO if we do not support SO volumes.
+  * sink: Oops. I didn't mean to comment this out in the previous commit.
+  * stream-volumes: Support source-output volume controls now available in PA.
+  * i18n: Fix markup error in de translation.
+  * Handle simple key events.
+  * Deal more gracefully with disconnections.
+  * Add support for gtkmm-3.0 and prefer it over gtkmm-2.* by default.
+  * Ensure the marker for base volume is set on all channels.
+  * volume: Don't bother setting the steps.
+  * volume: Support volumes up to 11.
+  * ui: Remove ellipsize attribute from some labels (causes ellipsis to be displayed rather than real text)
+  * ui: Resave glade file without any changes to tidy it up
+  * Drop the need to use libglademm
+  * Add DONT_INHIBIT_AUTO_SUSPEND flag to monitor streams
+  * source-outputs: Source outputs do not support volume control, so hide the mute and lock channels buttons
+  * main: Format string fixes
+  * main: Add a --tab command line argument to force a given tab to be displayed.
+  * mainwindow: Fix clearing out of clients
+  * mainwindow: Save/restore window size
+  * mainwindow: Compact iterator decls
+  * main: Cleanup labels after connection rework
+  * source-outputs: Fix a bug where the 'no streams' label is sometimes shown along with the actual widget.
+  * connection: Show a nice label when connecting to PA.
+  * main: Automatically reconnect to PA upon disconnection
+  * mainwindow: Add a method to remove all widgets (e.g. on disconnect)
+  * streamwidget: Fix a compile warning.
+  * Split out the creation of the PA context a little.
+  * glade: ellipsize user supplied text strings
+  * Allow for the sink input peak detect to survive across sink moves.
+  * Update for the latest incarnation of module-device-manager
+  * Use the correct update mode for device-restore database write
+  * Add support for the device-manager module.
+  * build-sys: prepare 0.9.10
+  * add ja to LINGUAS
+  * run make update-po
+  * Sending translation for Hungarian
+  * volume: Set the scale properly for delta changes via mouse/keyboard.
+  * events: Hide output streams with a stream restore designator for the event widget.
+  * Sending translation for Czech
+  * Sending translation for Kannada
+  * Sending translation for Japanese
+  * Sending translation for French
+  * Sending translation for Brazilian Portuguese
+  * Sending translation for Hindi
+  * Sending translation for Slovak
+  * Require at least PulseAudio 0.9.16.
+  * Sending translation for Danish
+  * Sending translation for Portuguese
+  * Sending translation for Serbian (Latin)
+  * Sending translation for Serbian
+  * Sending translation for Finnish
+  * Sending translation for German
+  * Sending translation for Ukrainian
+  * build-sys: require at least gtkmn 2.16
+  * Add missing source file to POTFILES.in.
+  * Sending translation for Catalan
+  * Sending translation for Polish
+  * Sending translation for Spanish
+  * Sending translation for Oriya
+  * Sending translation for Dutch
+  * Sending translation for po/ja.po
+  * Sending translation for Telugu
+  * Sending translation for Bengali (India)
+  * Sending translation for Hindi
+  * Sending translation for Marathi
+  * Sending translation for Tamil
+  * Sending translation for Malayalam
+  * Sending translation for Gujarati
+  * Sending translation for Malayalam
+  * Sending translation for Punjabi
+  * i18n: run make update-po
+  * i18n: drop ko.po since it does not include a single translated string
+  * Prepare 0.9.9 relase
+  * drop reference to beepDevice
+  * Sending translation for Tamil
+  * Sending translation for Finnish
+  * Sending translation for po/LINGUAS
+  * fix event sound generation for volume changes
+  * only assume that the minimal volume is silence for devices that can do dB volumes
+  * use fallback icon scheme for stream icons, too
+  * Sending translation for po/uk.po
+  * Sending translation for po/ko.po
+  * Sending translation for Swedish
+  * Sending translation for Hungarian
+  * glade: minor alignment fixes
+  * Restructure the class inheritance a bit.
+  * Rename event method to be more indicative of what it does.
+  * Rename a variable to make it more generic
+  * Add support for changing ports.
+  * Don't use a hyperlink to display the device, just use a regular button.
+  * Do not disable the default button when it's set.
+  * Hide the terminate button.
+  * More changes in the UI to try and make things neater.
+  * Create the event role widget early so that it's always top of the list.
+  * Change 'Default' to 'Use as fallback'
+  * Move the setBaseVolume()/setSteps() methods to devicewidget (problem found after rebasing)
+  * Include config.h in the cc file (after rebase)
+  * Add a tooltip
+  * Wire up all the new UI code.
+  * Wire up the default toggle button (replaces the old menu)
+  * Hook up the device combo box on change event
+  * Remove the 'Default [Out|In]put' option from the combo for now.
+  * Set the correct combo index for display purposes
+  * Record in a map the combobox indexes vs. the sink/source indexes
+  * Add setter/getter methods for sink/source indexes so we can update our combo boxes current item
+  * Remove the kill menu item now we have a dedicated button
+  * Wire up the terminate button
+  * Set the pack_start on the deviceCombo
+  * Set the mainwindow pointer via an init() method rather than directly via public member variable.
+  * Adapt to new UI
+  * Rebase the sink/source widgets on the device widget
+  * Create a devicewidget based on streamwidget.
+  * Glade UI changes. Code still needs to be updated
+  * update po/
+  * make sure that two card profiles with the same priority don't collide with each other
+  * don't abort when icon is missing from the theme
+  * Fix my name.
+  * Sending translation for Punjabi
+  * Sending translation for po/hi.po
+  * Sending translation for Punjabi
+  * Sending translation for Punjabi
+  * Sending translation for Bengali (India)
+  * Sending translation for Malayalam
+  * Sending translation for Slovak
+  * Sending translation for po/sr@latin.po
+  * Sending translation for Serbian
+  * Sending translation for French
+  * Sending translation for French
+  * Sending translation for Portuguese
+  * Sending translation for Czech
+  * Sending translation for Assamese
+  * Sending translation for po/ru.po
+  * Sending translation for Italian
+  * Sending translation for Brazilian Portuguese
+  * Sending translation for French
+  * Sending translation for German
+  * Sending translation for Danish
+  * Sending translation for Dutch
+  * Sending translation for Polish
+  * Sending translation for Telugu
+  * Sending translation for Marathi
+  * Sending translation for Gujarati
+  * Sending translation for Oriya
+  * Sending translation for Kannada
+  * Sending translation for Spanish
+  * fix year
+  * update screenshot
+  * fix POTFILES.in
+  * update README
+  * bump version
+  * don't show failure msgbox twice
+  * reenable monitor streams
+  * sort LINGUAS
+  * add missing languages to LINGUAS
+  * run make update-po
+  * Sending translation for Portuguese
+  * Sending translation for Portuguese
+  * Sending translation for Polish
+  * Sending translation for Assamese
+  * don't show wait cursor forever if stream_restore extension is not available
+  * Sending translation for po/LINGUAS
+  * Sending translation for Portuguese
+  * Sending translation for po/bn_IN.po
+  * Sending translation for po/ta.po
+  * Sending translation for po/as.po
+  * Sending translation for po/te.po
+  * Sending translation for po/kn.po
+  * Sending translation for po/gu.po
+  * Sending translation for po/sr@latin.po
+  * Sending translation for Serbian
+  * Sending translation for Portuguese
+  * Sending translation for Serbian
+  * Sending translation for Finnish
+  * Sending translation for po/da.po
+  * Sending translation for Dutch
+  * Sending translation for po/mr.po
+  * Sending translation for Portuguese
+  * Sending translation for Portuguese
+  * Sending translation for po/pt.po
+  * Sending translation for po/or.po
+  * Sending translation for Slovak
+  * Sending translation for po/ml.po
+  * Sending translation for po/it.po
+  * Sending translation for Chinese (Simplified)
+  * Order the card profiles by their priority
+  * Silence a warning
+  * Sending translation for Hungarian
+  * configure steps for scales
+  * visualize base volume
+  * Updated catalan po
+  * Shuffle some headers around a bit so that some systems don't have build errors
+  * Use C style comments as per Lennart's fetish :p
+  * Move config.h inclusion to the .cc files
+  * Split mainwindow into it's own files.
+  * Split rolewidget into it's own files.
+  * Split sourceoutputwidget out into it's own files.
+  * Split sinkinputwidget into it's own files.
+  * Split sourcewidget into it's own files.
+  * Split sinkwidget into it's own files.
+  * Split cardwidget out into it's own files.
+  * Move common setup into a shared header
+  * Split out streamwidget into it's own files.
+  * Split channelwidget into separate files. Also separate out the definition of streamwidget into it's own header
+  * Include config.h in minimalstreamwidget.h
+  * Split the minimalstreamwidget into it's own file
+  * Updated Thai translation
+  * Adding Punjabi (pa) Language to LINGUAS
+  * updated Spanish translation
+  * Remove the minimalStreamWindow. It's no longer used
+  * Updated Polish translation
+  * use the server provided icons
+  * Initialise our dropdown at contruction and just repopulate it when the cardinfo callback is received
+  * various small glade updates
+  * fix version of libcanberra dependency, fixes PA bug #494
+  * Fix the number of outstanding operations.
+  * Typo: spell configuration right
+  * Add a new widget for the card configuration and use it.
+  * Create a new 'Configuration' tab
+  * Silence some warnings
+  * Initial support for changing card profiles.
+  * run make update-po
+  * Add 'Mixer' categorization to .desktop file
+  * deal with non-initialized data from m-s-r
+  * Punjabi translation for Module: A S Alam
+  * Add fi (Finnish) to LINGUAS.
+  * Add Finnish (fi) translation by Timo Jyrinki.
+  * Added zh_CN to LINGUAS
+  * Add zh_CN.po
+  * Added sr and sr@latin to LINGUAS
+  * Initial Serbian Latin translation
+  * Initial Serbian translation
+  * Updated LINGUAS
+  * LINGUAS: Added cs.
+  * Added Czech translation.
+  * updated spanish translation
+  * Added tr to LINGUAS
+  * Added Turkish Translation
+  * remove debug output
+  * Added ca locale
+  * Add sk to LINGUAS
+  * First Slovak translation.
+  * Updated Greek translation
+  * Added catalan po
+  * Add pt_BR to LINGUAS
+  * Initial Brazilian Portuguese translation
+  * Add nl to LINGUAS
+  * Initial Dutch translation by Reinout van Schouwen
+  * Updated de translation with input from gnome-de (thanks Hendrik Richter).
+  * prepare release 0.9.7
+  * initialize maximum buffer length to automatic value (uint32_t) -1 instead of smallest value 0
+  * Updated de translation with input from gnome-de (thanks andre klapper).
+  * Added sv to LINGUAS.
+  * Added Swedish translation.
+  * Updated Polish translation
+  * Added el, fr, hu, pl to LINGUAS
+  * Initial German translation
+  * Added Hungarian translation
+  * Updated French translation
+  * Initial Polish translation
+  * Started Greek translation
+  * beep when changing volume
+  * Install README files in doc/html directories.
+  * Make use of common ZP_LYNX_DOC macro.
+  * Create m4 directory, and set it up.
+  * Bump autoconf requirement to 2.62 (latest released version).
+  * Remove gettext macro, the package uses intltool instead.
+  * improve german translation
+  * add basic german translation
+  * internationalize pavucontrol.cc
+  * hide .desktop file from git
+  * add i18n
+  * generate changelog from git history
+  * use system installed glade file
+  * update license headers for GPL 2.0+
+  * update bootstrap.sh a bit
+  * add a special track for controlling event sound volume
+  * bump required version
+  * fix glade widget name case
+  * hide tarballs from git
+  * change 'git' tag in tarball name to 'svn'
+  * bump revision
+  * bump deps
+  * remove $Id$
+  * add gitignore
+  * fix a typo spotted by Romain Tartière
+  * Make icons work
+  * show stream icons, don't show our own monitor streams, initialize client proplist properly
+  * add volume meter support to each sink/source/record stream
+  * more intelligent initial page selection
+  * Also point the minimalStreamWindow downward
+  * move no_xxx labels in the middle of the dialogs
+  * properly initialize source output type dropdown; show string for record streams properly
+  * switch to sink page by default if no streams are active
+  * unclutter UI, remove redundant hint bar
+  * show volume in decibel
+  * Remove the white header, drop all references to PulseAudio to become a more normal program
+  * move the lock/mute buttons to the same spot as the menu buttons
+  * Merge patch from sjoerd that adds a new panel for listing recording streams, and makes the menu more visible by adding a button for it
+  * prepare next pavucontrol release
+  * don't crash if server has no default sink/source set
+  * show radio buttons for the the sink menu items
+  * prepare next release
+  * add changelog to tarball
+  * make stream title selectable, Closes #140 in pa trac
+  * add option to kill a stream to popup menu
+  * add popup menu to sink/source view to choose default device
+  * use pretty channel names
+  * add a combobox to the streams page, to filter application streams
+  * Don't pass the button index to popup() for the GtkMenu to avoid strange GTK behaviour in newer versions. Identified by coling
+  * add fedora-snapshot target
+  * bump deps
+  * support muting sink inputs, avoid duplicate events
+  * fix button tooltips
+  * fix lock icon
+  * minor tweaks
+  * Fix license mess: change everything to GPL
+  * fix typo
+  * update docs for 0.9.5
+  * bump requirements
+  * add lightbulb
+  * - add new option "All Except Monitor Sources" to sources option menu - show a nice hint that one can right click on a stream
+  * use the sink descripion instead of the name for the stream popup menu
+  * In times where the sink/source names are generated from HAL UDIs don't show the cryptic device name any more
+  * optimize redraw a little
+  * add popup menu to stream list, allowing "hot" moving of playback streams between sinks
+  * add focus target
+  * show an watch cursor while loading device data
+  * add combobox to show only a subset of sinks/sources, replacing the old monitor expander
+  * prepare release 0.9.3
+  * bump version
+  * Make jhbuild happy by adding a file autgen.sh
+  * show client name only if we have it
+  * prepare 0.9.2 release
+  * include config.h properly
+  * s/polyp/pulse/ in README
+  * s/polyp/pulse/g
+  * update docs for 0.9.1
+  * bump version number to 0.9.1
+  * actually ship the .desktop file
+  * use gtk_widget_queue_redraw() to try to workaround an issues that the sources are not shown
+  * Add .desktop file.
+  * set icon for the main window
+  * use some icons from the icon spec
+  * minor updates
+  * prepare release 0.9.0
+  * Show client name for playback streams
+  * change scale behaviour to be more resposive * make "Streams" page the default
+  * bump version number for polypaudio 0.9.0
+  * bump for polypadio 0.8.1
+  * make SIGPIPE warning disappear
+  * fix glade file path
+  * add screenshot for website
+  * build system updates
+  * add coumentation and license
+  * show proper message boxes in case of error instead of printing just to STDERR
+  * initial commit
+  * Create trunk directory

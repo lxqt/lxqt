@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PowerKeysSettings</class>
+ <widget class="QWidget" name="PowerKeysSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Handle Power Keys</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="powerKeyLabel">
+        <property name="text">
+         <string>Power Key Action</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="powerKeyActionComboBox"/>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="suspendKeyActionComboBox"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="hibernateKeyActionComboBox"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="suspendKeyLabel">
+        <property name="text">
+         <string>Suspend Key Action</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="hibernateKeyLabel">
+        <property name="text">
+         <string>Hibernate Key Action</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

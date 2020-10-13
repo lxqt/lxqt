@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Quick launch
+Comment=Easy access to your favourite applications.
+Icon=quickopen
+
+#TRANSLATIONS_DIR=../translations

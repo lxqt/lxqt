@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HiddenShortcutsDialog</class>
+ <widget class="QDialog" name="HiddenShortcutsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hidden Shortcuts</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTreeWidget" name="treeWidget">
+     <column>
+      <property name="text">
+       <string>Shortcut</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Action</string>
+      </property>
+     </column>
+     <item>
+      <property name="text">
+       <string>Esc</string>
+      </property>
+      <property name="text">
+       <string>Focus view, clear filter bar</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ctrl+Esc</string>
+      </property>
+      <property name="text">
+       <string>Focus side-pane</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ctrl+L</string>
+      </property>
+      <property name="text">
+       <string>Focus path entry</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Alt+D</string>
+      </property>
+      <property name="text">
+       <string>Focus path entry</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ctrl+Tab</string>
+      </property>
+      <property name="text">
+       <string>Next tab</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ctrl+Shift+Tab</string>
+      </property>
+      <property name="text">
+       <string>Previous tab</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ctrl+PageDown</string>
+      </property>
+      <property name="text">
+       <string>Next tab</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ctrl+PageUp</string>
+      </property>
+      <property name="text">
+       <string>Previous tab</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ctrl+Number</string>
+      </property>
+      <property name="text">
+       <string>Jump to tab</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Alt+Number</string>
+      </property>
+      <property name="text">
+       <string>Jump to tab</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Backspace</string>
+      </property>
+      <property name="text">
+       <string>Go up</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ctrl+F</string>
+      </property>
+      <property name="text">
+       <string>Search dialog</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Shift+Insert</string>
+      </property>
+      <property name="text">
+       <string>Paste into transient filter bar</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Drag+Shift</string>
+      </property>
+      <property name="text">
+       <string>Move file on dropping</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Drag+Ctrl</string>
+      </property>
+      <property name="text">
+       <string>Copy file on dropping</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Drag+Shift+Ctrl</string>
+      </property>
+      <property name="text">
+       <string>Make a symlink on dropping</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox_shortcut">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox_shortcut</sender>
+   <signal>accepted()</signal>
+   <receiver>HiddenShortcutsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox_shortcut</sender>
+   <signal>rejected()</signal>
+   <receiver>HiddenShortcutsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,254 @@
+# Chinese (Taiwan) translation of gnome-menu.
+# Copyright (C) 2005, 06, 07 Free Software Foundation, Inc.
+# Woodman Tuen <wmtuen@gmail.com>, 2005-07.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menu 2.21.91\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2012-04-16 05:38+0200\n"
+"Last-Translator: Walter <wwycheuk@gmail.com>\n"
+"Language-Team: Chinese/Traditional <zh-l10n@linux.org.tw>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.0.5\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "影音"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "多媒體選單"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "軟體開發"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "軟體開發工具"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "教育"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "遊戲"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "遊戲及娛樂"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "美工繪圖"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "繪圖工具"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "硬體"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "多種硬體的設定"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "網際網路及網路"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "網路相關設定"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "外觀與感覺"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "控制桌面顯示方式及行為的設定"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "應用程式"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "系統"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "個人偏好及管理設定"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "網際網路"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "如瀏覽網頁及收發電郵等網路軟體"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "辦公"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "辦公室軟體"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "其他"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "不符合其他分類的軟體"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "個人"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "個人設定"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "偏好設定"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "個人偏好設定"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "管理"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "更改全系統設定值（影響所有用戶）"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "系統設定"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "系統工具"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "系統配置及監察"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "無障礙功能"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "無障礙功能設定值"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "附屬應用程式"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "桌面附屬應用程式"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "普及近用相關偏好設定"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "個人偏好及設定"
+
+#~ msgid "Menu Editor"
+#~ msgstr "選單編輯器"
+
+#~ msgid "Edit Menus"
+#~ msgstr "編輯選單"
+
+#~ msgid "_Applications:"
+#~ msgstr "應用程式(_A)："
+
+#~ msgid "_Defaults"
+#~ msgstr "預設(_D)"
+
+#~ msgid "_Menus:"
+#~ msgstr "選單(_M)："
+
+#~ msgid "Name"
+#~ msgstr "名稱"
+
+#~ msgid "Show"
+#~ msgstr "顯示"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr "找不到個人資料夾：沒有設定在 /etc/passwd 及環境變數 $HOME 中。"
+
+#~ msgid "Menu file"
+#~ msgstr "選單檔案"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "選單檔案"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "監視選單變更"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "包含 <不包括> 條目"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "包含不顯示=正確條目"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "無效的桌面檔案 ID"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[無效的檔案名稱]"
+
+#~ msgid " <excluded>"
+#~ msgstr "<不包括>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== 選單已變更，重新載入中 ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "選單樹是空白的"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- 測試 GNOME 在桌面選單規格的實現"
+
+#~ msgid "Accessibility"
+#~ msgstr "無障礙環境"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "無障礙環境設定"
+
+#~ msgid "Desktop"
+#~ msgstr "桌面"

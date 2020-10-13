@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name[ru]=Мировое время
+Comment[ru]=Плагин мирового времени.
+
+#TRANSLATIONS_DIR=../translations

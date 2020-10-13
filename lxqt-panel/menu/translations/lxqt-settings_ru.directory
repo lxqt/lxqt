@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Directory
+Name=LXQt settings
+Icon=preferences-system
+
+#TRANSLATIONS_DIR=translations
+
+# Translations
+
+Name[ru]=Настройки LXQt
+
+Name[ru_RU]=Настройки LXQt

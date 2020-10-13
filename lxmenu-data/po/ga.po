@@ -1,0 +1,241 @@
+# Irish translations for gnome-menus package.
+# Copyright (C) 2007-2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the gnome-menus package.
+# Seán de Búrca <leftmostcat@gmail.com>, 2007-2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2008-09-06 23:59-0500\n"
+"Last-Translator: Seán de Búrca <leftmostcat@gmail.com>\n"
+"Language-Team: Irish <gaeilge-gnulinux@lists.sourceforge.net>\n"
+"Language: ga\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=5; plural=n==1 ? 0 : (n%10==1 || n%10==2) ? 1 : (n"
+"%10>=3 && n%10<= 6) ? 2 : ((n%10>=7 && n%10<=9) || n==10) ? 3 : 4;\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Fuaim & Fís"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Roghchlár ilmheán"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Ríomhchlárú"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Uirlisí d'fhorbairt bogearraí"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Oideachas"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Cluichí"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Cluichí agus siamsaíochtaí"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Grafaic"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Feidhmchláir grafaice"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Crua-Earraí"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Socruithe do roinnt ghléasanna crua-earraí"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Idirlíon agus Líonra"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Socruithe líonra-gaolta"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Cuma agus Mothú"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Socruithe ag rialú cuma agus oibrithe na deisce"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Feidhmchláir"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Córas"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Sainroghanna pearsanta agus socruithe riaracháin"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Idirlíon"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Feidhmchláir do rochtain an Idirlín mar ghréasán agus ríomhphost"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Oifig"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Feidhmchláir Oifige"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Eile"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Feidhmchláir nár oiriúnaigh i gcatagóirí eile"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Pearsanta"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Socruithe pearsanta"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Sainroghanna"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Sainroghanna pearsanta"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Riarachán"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Athraigh socruithe ar fud an chórais (tionchar ar gach úsáideoir)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Socruithe an chórais"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Uirlisí Córais"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Cumraíocht agus monatóireacht an chórais"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Rochtain Uilíoch"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Socruithe Rochtana Uilíoch"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Oiriúintí"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Oiriúintí deisce"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Eagarthóir na Roghchlár"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Cuir Roghchláir in Eagar"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Feidhmchláir:"
+
+#~ msgid "_Defaults"
+#~ msgstr "Réamh_shocruithe"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Roghchláir:"
+
+#~ msgid "Name"
+#~ msgstr "Ainm"
+
+#~ msgid "Show"
+#~ msgstr "Taispeáin"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Ní féidir comhadlann baile a aimsiú: níl sí socraithe i /etc/passwd agus "
+#~ "níl luach do $HOME ann sa timpealleacht"
+
+#~ msgid "Menu file"
+#~ msgstr "Comhad roghchláir"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "COMHAD_ROGHCHLÁIR"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Déan monatóireacht ar athruithe roghchlár"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Cuir iontrálacha <Exclude>áilte san áireamh"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Cuir iontrálacha NoDisplay=true san áireamh"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "CA chomhaid deisce neamhbhailí"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Ainm Comhaid Neamhbhailí]"
+
+#~ msgid " <excluded>"
+#~ msgstr "<eisiata>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Athraíodh an roghchlár, á athluchtú ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Tá an crann roghchlár folamh"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "- tastáil feidhmiú GNOME den tSonraíocht Roghchláir Deisce"

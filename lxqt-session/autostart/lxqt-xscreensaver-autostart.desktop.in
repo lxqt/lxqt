@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=XScreenSaver
+TryExec=xscreensaver
+Exec=xscreensaver -no-splash
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=translations

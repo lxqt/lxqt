@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Application menu
+Comment=A menu of all your applications.
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[sl]=Zaganjalnik programov, temelječ na meniju
+Name[sl]=Programski meni

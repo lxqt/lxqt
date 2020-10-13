@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome/menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2005-10-11 11:15+0200\n"
+"Last-Translator: Abduxukur Abdurixit <abdurixit@gmail.com>\n"
+"Language-Team: Gnome Uighur Translation Project <gnome-uighur@yahoogroups."
+"com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "ئۈن ۋە سىن"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "كۆپ ۋاسىتە تىزىملىكى"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "پروگراممىچىلىق"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "يۇمشاق دېتال ئىجادىيەت قوراللىرى"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "مائارىپ"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "ئويۇنلار"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "ئويۇن ۋە كۆڭۈل ئېچىش پروگراممىلىرى"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "گرافىك"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "گرافىك پروگراممىلىرى"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "قاتتىق دېتال"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "قاتتىق دېتاللار تەڭشىكى"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "ئىنتېرنېت ۋە تور"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "تورغا مۇناسىۋەتلىك تەڭشەك"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "كۆرۈنۈش ۋە تۇيغۇ"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "ئۈستەلئۈستى ئۇسلۇبى ۋە ھەرىكىتىنى كونترول قىلىش تەڭشىكى"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "پروگراممىلار"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "سىستېما"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "شەخسىي مايىللىق ۋە باشقۇرۇش تەڭشىكى"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "ئىنتېرنېت"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "تور ۋە ئېلخەتكە ئوخشاش ئىنتېرنېت زىيارەت پروگراممىلىرى"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "ئىشخانا"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "ئىشخانا پروگراممىلىرى"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "باشقا"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "باشقا تۈرلەرگە تەۋە بولمىغان پروگراممىلار"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "شەخسىي"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "شەخسىي تەڭشەكلەر"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "مايىللىق"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "شەخسىي مايىللىق"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "باشقۇرۇش"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "سىستېما تەڭشىكىنى ئۆزگەرتىش (ھەممە ئىشلەتكۈچىگە تەسىر كۆرسىتىدۇ)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "سىستېما تەڭشەكلىرى"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "سىستېما قوراللىرى"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "سىستېما سەپلەش ۋە كۆزىتىش"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "ئۇنىۋېرسال زىيارەت"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "ئۇنىۋېرسال زىيارەت تەڭشىكى"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "قوشۇمچە دېتاللار"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "ئۈستەلئۈستى قوشۇمچە دېتاللىرى"
+
+#~ msgid "Accessibility"
+#~ msgstr "ياردەمچى قوراللار"
+
+#~ msgid "Desktop"
+#~ msgstr "ئۈستەل ئۈستى"
+
+#~ msgid "Menu Editor"
+#~ msgstr "تەھرىرلىگۈچ Menu"
+
+#~ msgid "Edit Menus"
+#~ msgstr "نى ئېدىتلاش Menu"
+
+#~ msgid "_Applications:"
+#~ msgstr "قوللىنىش پروگراممىلىرى"
+
+#~ msgid "_Menus:"
+#~ msgstr "لار Menu"
+
+#~ msgid "Name"
+#~ msgstr "نامى"
+
+#~ msgid "Show"
+#~ msgstr "كۆرسىتىش"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "دا بەلگىلەنمىگەن /etc/passwd :مۇندەرىجىسى تېپىلمىدى homeھەم سىستېما "
+#~ "مۇھىتىدا $HOME نىڭ قىممىتى بەلگىلەنمىگەن"
+
+#~ msgid "Menu file"
+#~ msgstr "ھۆججىتى Menu"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "ھۆججىتى MENU"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "ئۆزگىرىشلىرىنى كۆزىتىش Menu"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "قانۇنسىز ئۈستەل ئۈستى ھۆججەت نومۇرى"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[قانۇنسىز ھۆججەت ئىسمى]"
+
+#~ msgid " <excluded>"
+#~ msgstr "<سىقىپ چىقىرىلدى>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== تىزىملىك ئۆزگەردى، قايتىدىن يۈكلىنىۋاتىدۇ ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "زەنجىرى قۇرۇق Menu"

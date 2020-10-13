@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Shortcut Keys
+GenericName=Keyboard Shortcut Settings
+Comment=Configure shortcut keys in LXQt
+Exec=lxqt-config-globalkeyshortcuts
+Icon=preferences-desktop-keyboard
+Categories=Settings;DesktopSettings;Qt;LXQt;
+OnlyShowIn=LXQt;
+
+#TRANSLATIONS_DIR=translations

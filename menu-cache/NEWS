@@ -1,0 +1,198 @@
+Changes in 1.1.0 since 1.0.2:
+
+* Fixed crash with invalid <Name> tag in a menu.
+
+* Added new API menu_cache_app_get_generic_name() to get generic
+    name for application.
+
+* Fixed potential access violation, use runtime user dir instead of tmp dir.
+    It limits libmenu-cache compatibility to menu-cached >= 0.7.0.
+
+* Directory $XDG_DATA_HOME/applications will be created if it does not
+    exist so it will be monitored in any case.
+
+* Fixed issue when subdirectories added would be skipped in monitoring.
+
+* Fixed potential file descriptors leak.
+
+* Reduced inactivity timer to 6 seconds (from 600 seconds).
+
+* Fixed an issue with multiple daemons started: test if daemon is already
+    running on socket before killing old socket file.
+
+* Fixed 100% CPU load by menu-cached due to invalid dup2() call.
+
+
+Changes in 1.0.2 since 1.0.1:
+
+* Fixed crash in menu-cached if cache regeneration fails.
+
+* Fixed 100% CPU load by menu-cached in some rare conditions.
+
+* Invalid empty <DefaultLayout> should be ignored, see specification.
+
+* Fixed crash in menu-cache-gen on <MergeFile type="parent"/> if no file
+    to merge found.
+
+* Fixed showing empty Other menu in some cases.
+
+* The option --disable-debug is now default, instead of --enable-debug.
+
+
+Changes in 1.0.1 since 1.0.0:
+
+* Fixed crash on generating menu with both tags <DefaultAppDirs/> and
+    <KDELegacyDirs/> present.
+
+* Fixed crash when menu-cache-gen ran manually without CACHE_GEN_VERSION.
+
+* Fixed crash in menu-cache-gen on <Filename/> in menu layout with
+    <OnlyUnallocated/> tag present.
+
+* Fixed incorrect processing of <Merge type="files"> in menu-cache-gen.
+
+* Added safeguards against environment variables containing newlines.
+
+* Fixed case when cache was not updated while it should, it was claimed
+    to be fixed in 1.0.0 but apparently fix was incomplete.
+
+* Fixed ignored <Filename> tags inside of <Layout> tag.
+
+* Fixed memory corruption in scanning <LegacyDir> addressed directory.
+
+
+Changes in 1.0.0 since 0.7.0:
+
+* Added new cache file format generation support with changes:
+    - invisible directories (NoDisplay=true or empty) can be put into the
+        cache too but with flag (not displayed) set;
+    - content of TryExec field is added to contents of cache file;
+    - the working dir to execute application is added to cache file;
+    - list of categories is added to contents of cache file;
+    - list of keywords is added to contents of cache file.
+
+* Fixed crash in menu_cache_item_get_file_dirname() for a non-existent
+    file (might happen for directories without .directory file).
+
+* Made menu_cache_app_get_working_dir() actually work.
+
+* Made menu_cache_lookup() faster (do not load cache immediately but on
+    idle instead).
+
+* Eliminated secondary cache reload in menu_cache_lookup_sync() - server
+    response in such case will be ahead of idle reload (since main thread
+    is in wait ATM) and therefore idle call will be supressed.
+
+* Added new API menu_cache_app_get_categories() to get list of categories
+    for the application.
+
+* Added new APIs for applications: menu_cache_list_all_for_category() and
+    menu_cache_list_all_for_keyword() that return list of applications
+    matching criteria.
+
+* Fixed problem if some string in the desktop entry file contained a new
+    line character. That broke cache file format, now it's replaced with
+    a "\n" string and converted back into new line in the library.
+
+* Fixed bug when cache was not updated while it should: check if the last
+    modification time for directory is more recent than modification time
+    for cache may not always be valid - some .desktop entry might be just
+    changed by update and that will lead to falsed cache contents.
+
+* Added Log Domain "Menu-Cache" for better library logging messages.
+
+
+Changes in 0.7.0 since 0.6.1:
+
+* Added bit of support for multiple supported cache file versions, using
+    CACHE_GEN_VERSION environment variable to the generator. This may be
+    useful in future when 1.2 cache file version will be implemented.
+
+* The menu-cache-gen libexec binary is rewritten from scratch. No that
+    Red Hat / GNOME code anymore. New menu-cache-gen uses libfm-extra XML
+    manipulation functions therefore it is required now for build.
+
+* Added a parameter for menu-cached to specify socket path instead of
+    calculating one, that is definitely more safe.
+
+* Libmenu-cache handles menu-cached failure more gracefully now, don't
+    tries to restart it so fast that it clones many times.
+
+* Fixed menu-cached crash after menu-cache-gen failure.
+
+
+Changes in 0.6.1 since 0.6.0:
+
+* Fixed invalid memory access after cache reload.
+
+* A little cleanup of dist tarball: removed unused files menu-cache.h and
+    libmenu-cache-uninstalled.pc.in.
+
+
+Changes in 0.6.0 since 0.5.1:
+
+* Fixed few GLIB compatibility issues.
+
+* Changed default tarball format to XZ instead of GZIP.
+
+* Fixed build without --enable-gtk-doc.
+
+* Fixed crash on access root_dir with empty cache (no menu).
+
+* Allowed menu_cache_get_desktop_env_flag() accept colon-separated list
+    in accordance to freedesktop.org specification for the environment
+    variable XDG_CURRENT_DESKTOP.
+
+* The case if user deleted cache file is handled: it will be regenerated.
+
+
+Changes in 0.5.1 since 0.5.0:
+
+* Fixed build on systems where MAXSYMLINKS isn't defined.
+
+* Fixed menu-cached crash in some rare cases.
+
+
+Changes in 0.5.0 since 0.4.1:
+
+* Added a possibility to include NoDisplay files into cache file. This
+    can be achieved by adding suffix '+hidden' to requested name in call
+    to menu_cache_lookup(). The hidden items will be returned along with
+    visible ones by any API that returns listing of cache directory. The
+    menu_cache_app_get_is_visible() API will return FALSE for hidden item
+    with any DE mask passed to the API.
+
+* New macro MENU_CACHE_CHECK_VERSION() to test version of library.
+
+* Added new APIs: menu_cache_find_item_by_id, menu_cache_find_child_by_id,
+    menu_cache_find_child_by_name.
+
+* Two bugfixes for crashes, and for some another bugs.
+
+
+Changes in 0.4.1 since 0.4.0:
+
+* Minor bugfix, the resulting tar file was not complete.
+
+Changes in 0.4.0 since 0.3.3:
+
+* The libmenu-cache is made thread-safe. Thread-unsafe APIs are marked
+    as deprecated now and should be never used in any multithreaded
+    application.
+
+* Added creation of HTML developers documentation. It is triggered by
+    configure script option --enable-gtk-doc.
+
+* The libmenu-cache is made more responsible by moving some time-critical
+    operations into thread. Also it preloads saved cache file if it
+    exists so it is available near instantly after menu_cache_lookup().
+    Caller still will get updates by adding notifier to the cache.
+
+* Added automatic shutdown of menu-cached server after some inactivity
+    timeout (i.e. all clients were unregistered).
+
+* Fixed few memory problems (referencing errors and memory leaks).
+
+* Fix for bug #3501347: use g_get_tmp_dir() instead of hardcoded "/tmp".
+
+* The libmenu-cache ABI bumped to 2.

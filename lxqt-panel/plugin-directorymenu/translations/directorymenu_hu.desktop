@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=LXQtPanel/Plugin
+Name=Directory Menu
+Comment=Displays a menu showing the contents of a directory
+
+#TRANSLATIONS_DIR=../translations
+
+
+# Translations
+Comment[hu]=Egy könyvtár tartalmát mutató menü
+Name[hu]=Könyvtármenü

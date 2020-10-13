@@ -1,0 +1,257 @@
+# Biełaruski pierakład gnome-menus.
+# Copyright (C) 2005 THE gnome-menus'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the gnome-menus package.
+# Alaksandar Navicki <zolak@lacinka.org>, 2006.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-menus\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-13 23:49+0100\n"
+"PO-Revision-Date: 2007-05-06 00:41+0300\n"
+"Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
+"Language-Team: Belarusian Latin <i18n@mova.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Belarsian Latin\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:1
+msgid "Sound & Video"
+msgstr "Aŭdyjo j videa"
+
+#: ../desktop-directories/lxde-audio-video.directory.in.h:2
+msgid "Multimedia menu"
+msgstr "Multymedyi"
+
+#: ../desktop-directories/lxde-development.directory.in.h:1
+msgid "Programming"
+msgstr "Prahramavańnie"
+
+#: ../desktop-directories/lxde-development.directory.in.h:2
+msgid "Tools for software development"
+msgstr "Pryłady prahramavańnia"
+
+#: ../desktop-directories/lxde-education.directory.in.h:1
+msgid "Education"
+msgstr "Adukacyja"
+
+#: ../desktop-directories/lxde-game.directory.in.h:1
+msgid "Games"
+msgstr "Hulni"
+
+#: ../desktop-directories/lxde-game.directory.in.h:2
+msgid "Games and amusements"
+msgstr "Hulni j zabavy"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:1
+msgid "Graphics"
+msgstr "Hrafika"
+
+#: ../desktop-directories/lxde-graphics.directory.in.h:2
+msgid "Graphics applications"
+msgstr "Hrafičnyja aplikacyi"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:1
+msgid "Hardware"
+msgstr "Aparatura"
+
+#: ../desktop-directories/lxde-hardware.directory.in.h:2
+msgid "Settings for several hardware devices"
+msgstr "Niekatoryja aparaturnyja nałady"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:1
+msgid "Internet and Network"
+msgstr "Internet i sietka"
+
+#: ../desktop-directories/lxde-internet-and-network.directory.in.h:2
+msgid "Network-related settings"
+msgstr "Sietkavyja nałady"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:1
+msgid "Look and Feel"
+msgstr "Vyhlad"
+
+#: ../desktop-directories/lxde-look-and-feel.directory.in.h:2
+msgid "Settings controlling the desktop appearance and behavior"
+msgstr "Nałady vyhladu j pavodzinaŭ"
+
+#: ../desktop-directories/lxde-menu-applications.directory.in.h:1
+msgid "Applications"
+msgstr "Aplikacyi"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:1
+#: ../desktop-directories/lxde-system.directory.in.h:1
+msgid "System"
+msgstr "Systema"
+
+#: ../desktop-directories/lxde-menu-system.directory.in.h:2
+msgid "Personal preferences and administration settings"
+msgstr "Asabistyja i administracyjnyja nałady"
+
+#: ../desktop-directories/lxde-network.directory.in.h:1
+msgid "Internet"
+msgstr "Internet"
+
+#: ../desktop-directories/lxde-network.directory.in.h:2
+msgid "Programs for Internet access such as web and email"
+msgstr "Prahramy dla internetu"
+
+#: ../desktop-directories/lxde-office.directory.in.h:1
+msgid "Office"
+msgstr "Ofis"
+
+#: ../desktop-directories/lxde-office.directory.in.h:2
+msgid "Office Applications"
+msgstr "Ofisnyja prahramy"
+
+#: ../desktop-directories/lxde-other.directory.in.h:1
+msgid "Other"
+msgstr "Inšyja"
+
+#: ../desktop-directories/lxde-other.directory.in.h:2
+msgid "Applications that did not fit in other categories"
+msgstr "Prahramy, jakija nie ŭvajšli ŭ inšyja kategoryi"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:1
+msgid "Personal"
+msgstr "Asabistaje"
+
+#: ../desktop-directories/lxde-personal.directory.in.h:2
+msgid "Personal settings"
+msgstr "Asabistyja nałady"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:1
+msgid "Preferences"
+msgstr "Nałady"
+
+#: ../desktop-directories/lxde-settings.directory.in.h:2
+msgid "Personal preferences"
+msgstr "Asabistyja nałady"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:1
+msgid "Administration"
+msgstr "Administravańnie"
+
+#: ../desktop-directories/lxde-settings-system.directory.in.h:2
+msgid "Change system-wide settings (affects all users)"
+msgstr "Źmiani systemnyja nałady (upłyvaje na ŭsich karystalnikaŭ)"
+
+#: ../desktop-directories/lxde-system.directory.in.h:2
+msgid "System settings"
+msgstr "Systemnyja nałady"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:1
+msgid "System Tools"
+msgstr "Systemnaje pryładździe"
+
+#: ../desktop-directories/lxde-system-tools.directory.in.h:2
+msgid "System configuration and monitoring"
+msgstr "Manitorynh i kanfihuracyja systemy"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:1
+msgid "Universal Access"
+msgstr "Universalny dostup"
+
+#: ../desktop-directories/lxde-utility-accessibility.directory.in.h:2
+msgid "Universal Access Settings"
+msgstr "Nałady ŭniversalnaha dostupu"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:1
+msgid "Accessories"
+msgstr "Aksesuary"
+
+#: ../desktop-directories/lxde-utility.directory.in.h:2
+msgid "Desktop accessories"
+msgstr "Aksesuary stała"
+
+#~ msgid "Universal access related preferences"
+#~ msgstr "Nałady dla ŭniversalnaha dostupu"
+
+#~ msgid "Personal preferences and settings"
+#~ msgstr "Asabistyja nałady"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Redaktar menu"
+
+#~ msgid "Edit Menus"
+#~ msgstr "Madyfikuje menu"
+
+#~ msgid "_Applications:"
+#~ msgstr "_Aplikacyi:"
+
+#~ msgid "_Defaults"
+#~ msgstr "_Zmoŭčanaje"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menu:"
+
+#~ msgid "Name"
+#~ msgstr "Nazva"
+
+#~ msgid "Show"
+#~ msgstr "Pakažy"
+
+#~ msgid ""
+#~ "Cannot find home directory: not set in /etc/passwd and no value for $HOME "
+#~ "in environment"
+#~ msgstr ""
+#~ "Niemahčyma znajści chatniaj tečki: jana nie akreślenaja ŭ /etc/passwd, a "
+#~ "vartaść źmiennaj asiarodździa $HOME nia vyznačanaja"
+
+#~ msgid "Menu file"
+#~ msgstr "Fajł menu"
+
+#~ msgid "MENU_FILE"
+#~ msgstr "FAJŁ_MENU"
+
+#~ msgid "Monitor for menu changes"
+#~ msgstr "Adsočka źmienaŭ menu"
+
+#~ msgid "Include <Exclude>d entries"
+#~ msgstr "Uklučna z <Vyklučanymi> elementami"
+
+#~ msgid "Include NoDisplay=true entries"
+#~ msgstr "Uklučna ź nie pakazanymi elementami (NoDisplay=true)"
+
+#~ msgid "Invalid desktop file ID"
+#~ msgstr "Niapravilny ID fajłu stała"
+
+#~ msgid "[Invalid Filename]"
+#~ msgstr "[Niapravilnaja nazva fajłu]"
+
+#~ msgid " <excluded>"
+#~ msgstr " <vyklučanaje>"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu changed, reloading ====\n"
+#~ "\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "\n"
+#~ "==== Menu źmianiłasia, zahružajecca znoŭ ====\n"
+#~ "\n"
+#~ "\n"
+
+#~ msgid "Menu tree is empty"
+#~ msgstr "Dreva menu pustoje"
+
+#~ msgid "- test GNOME's implementation of the Desktop Menu Specification"
+#~ msgstr "– testuje zaimplementavanuju ŭ GNOME Specyfikacyju menu stała"
+
+#~ msgid "Accessibility"
+#~ msgstr "Dastupnaść"
+
+#~ msgid "Accessibility Settings"
+#~ msgstr "Nałady dastupnaści"
+
+#~ msgid "Desktop"
+#~ msgstr "Stoł"

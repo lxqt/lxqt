@@ -1,0 +1,259 @@
+set(PROJECT_NAME ${LXQT_GLOBALKEYS_LIBRARY_NAME})
+project(${PROJECT_NAME})
+
+set(QT_DBUS_PREFIX "org.qtproject")
+
+set(${PROJECT_NAME}_HEADER_NAMESPACE "LXQtGlobalKeys")
+
+set(${PROJECT_NAME}_PATH_TO_DAEMON "${LXQT_GLOBALKEYS_SOURCE_DIR}/daemon")
+
+set(${PROJECT_NAME}_SOURCES
+    client.cpp
+    action.cpp
+)
+
+#
+# WARNING: Changing stuff here implies changing this:
+#           install(FILES ${${PROJECT_NAME}_MAIN_HEADER} DESTINATION include/${PROJECT_NAME} COMPONENT Devel RENAME "lxqtglobalkeys.h")
+#
+set(${PROJECT_NAME}_MAIN_HEADER
+    lxqt-globalkeys.h
+)
+
+set(${PROJECT_NAME}_PUBLIC_CPP_HEADERS
+    client.h
+    action.h
+)
+
+set(${PROJECT_NAME}_PUBLIC_CLASSES
+    Client
+    Action
+    LXQtGlobalKeys
+)
+
+set(${PROJECT_NAME}_PRIVATE_CPP_HEADERS
+    client_p.h
+    action_p.h
+)
+
+set(${PROJECT_NAME}_FORMS
+)
+
+set(${PROJECT_NAME}_RESOURCES
+)
+
+set(${PROJECT_NAME}_TRANSLATIONS
+)
+
+set(${PROJECT_NAME}_DBUS_ADAPTORS
+    "${${PROJECT_NAME}_PATH_TO_DAEMON}/org.lxqt.global_key_shortcuts.client.xml"
+)
+
+set_source_files_properties("${${PROJECT_NAME}_PATH_TO_DAEMON}/org.lxqt.global_key_shortcuts.client.xml" PROPERTIES
+    INCLUDE action_p.h
+    PARENT_CLASSNAME GlobalKeyShortcut::ActionImpl
+    BASENAME org.lxqt.global_key_shortcuts.client
+    CLASSNAME OrgLxqtActionClientAdaptor
+)
+
+set(${PROJECT_NAME}_DBUS_INTERFACES
+    "${${PROJECT_NAME}_PATH_TO_DAEMON}/org.lxqt.global_key_shortcuts.native.xml"
+)
+
+set_source_files_properties("${${PROJECT_NAME}_PATH_TO_DAEMON}/org.lxqt.global_key_shortcuts.native.xml" PROPERTIES
+    BASENAME org.lxqt.global_key_shortcuts.native
+)
+
+set(${PROJECT_NAME}_PUBLIC_HEADERS
+    ${${PROJECT_NAME}_PUBLIC_CPP_HEADERS}
+)
+
+set(${PROJECT_NAME}_PRIVATE_HEADERS
+    ${${PROJECT_NAME}_PRIVATE_CPP_HEADERS}
+)
+
+set(${PROJECT_NAME}_CPP_HEADERS
+    ${${PROJECT_NAME}_PUBLIC_CPP_HEADERS}
+    ${${PROJECT_NAME}_PRIVATE_CPP_HEADERS}
+)
+
+set(${PROJECT_NAME}_HEADERS
+    ${${PROJECT_NAME}_PUBLIC_HEADERS}
+    ${${PROJECT_NAME}_PRIVATE_HEADERS}
+)
+
+set(${PROJECT_NAME}_TRANSLATABLE
+    ${${PROJECT_NAME}_SOURCES}
+    ${${PROJECT_NAME}_HEADERS}
+    ${${PROJECT_NAME}_FORMS}
+)
+
+foreach(DBUS_ADAPTOR ${${PROJECT_NAME}_DBUS_ADAPTORS})
+    get_filename_component(DBUS_ADAPTOR_FILENAME ${DBUS_ADAPTOR} NAME)
+    configure_file(
+        ${DBUS_ADAPTOR}
+        "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_ADAPTOR_FILENAME}"
+        @ONLY
+    )
+    get_source_file_property(DBUS_ADAPTOR_INCLUDE ${DBUS_ADAPTOR} INCLUDE)
+    get_source_file_property(DBUS_ADAPTOR_PARENT_CLASSNAME ${DBUS_ADAPTOR} PARENT_CLASSNAME)
+    get_source_file_property(DBUS_ADAPTOR_BASENAME ${DBUS_ADAPTOR} BASENAME)
+    get_source_file_property(DBUS_ADAPTOR_CLASSNAME ${DBUS_ADAPTOR} CLASSNAME)
+    if(DBUS_ADAPTOR_BASENAME)
+        if(DBUS_ADAPTOR_CLASSNAME)
+            qt5_add_dbus_adaptor(${PROJECT_NAME}_DBUS_ADAPTOR_FILES "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_ADAPTOR_FILENAME}" ${DBUS_ADAPTOR_INCLUDE} ${DBUS_ADAPTOR_PARENT_CLASSNAME} ${DBUS_ADAPTOR_BASENAME} ${DBUS_ADAPTOR_CLASSNAME})
+        else()
+            qt5_add_dbus_adaptor(${PROJECT_NAME}_DBUS_ADAPTOR_FILES "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_ADAPTOR_FILENAME}" ${DBUS_ADAPTOR_INCLUDE} ${DBUS_ADAPTOR_PARENT_CLASSNAME} ${DBUS_ADAPTOR_BASENAME})
+        endif()
+    else()
+        qt5_add_dbus_adaptor(${PROJECT_NAME}_DBUS_ADAPTOR_FILES "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_ADAPTOR_FILENAME}" ${DBUS_ADAPTOR_INCLUDE} ${DBUS_ADAPTOR_PARENT_CLASSNAME})
+    endif()
+endforeach()
+
+foreach(DBUS_INTERFACE ${${PROJECT_NAME}_DBUS_INTERFACES})
+    get_filename_component(DBUS_INTERFACE_FILENAME ${DBUS_INTERFACE} NAME)
+    configure_file(
+        ${DBUS_INTERFACE}
+        "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_INTERFACE_FILENAME}"
+        @ONLY
+    )
+    get_source_file_property(DBUS_INTERFACE_BASENAME ${DBUS_INTERFACE} BASENAME)
+    get_source_file_property(DBUS_INTERFACE_INCLUDE ${DBUS_INTERFACE} INCLUDE)
+    get_source_file_property(DBUS_INTERFACE_CLASSNAME ${DBUS_INTERFACE} CLASSNAME)
+    get_source_file_property(DBUS_INTERFACE_NO_NAMESPACE ${DBUS_INTERFACE} NO_NAMESPACE)
+    set_source_files_properties("${CMAKE_CURRENT_BINARY_DIR}/${DBUS_INTERFACE_FILENAME}" PROPERTIES
+        INCLUDE ${DBUS_INTERFACE_INCLUDE}
+        CLASSNAME ${DBUS_INTERFACE_CLASSNAME}
+        NO_NAMESPACE ${DBUS_INTERFACE_NO_NAMESPACE}
+    )
+    qt5_add_dbus_interface(${PROJECT_NAME}_DBUS_INTERFACE_FILES "${CMAKE_CURRENT_BINARY_DIR}/${DBUS_INTERFACE_FILENAME}" ${DBUS_INTERFACE_BASENAME})
+endforeach()
+
+set_property(SOURCE
+        ${${PROJECT_NAME}_DBUS_INTERFACE_FILES}
+        ${${PROJECT_NAME}_DBUS_ADAPTOR_FILES}
+    PROPERTY SKIP_AUTOGEN ON
+)
+
+qt5_add_resources(${PROJECT_NAME}_RESOURCE_FILES ${${PROJECT_NAME}_RESOURCES})
+
+set(${PROJECT_NAME}_GENERATED_FILES
+    ${${PROJECT_NAME}_FORM_FILES}
+    ${${PROJECT_NAME}_RESOURCE_FILES}
+    ${${PROJECT_NAME}_QM_FILES}
+    ${${PROJECT_NAME}_DBUS_INTERFACE_FILES}
+    ${${PROJECT_NAME}_DBUS_ADAPTOR_FILES}
+)
+
+set(${PROJECT_NAME}_ALL_FILES
+    ${${PROJECT_NAME}_SOURCES}
+    ${${PROJECT_NAME}_HEADERS}
+    ${${PROJECT_NAME}_GENERATED_FILES}
+)
+
+set(${PROJECT_NAME}_PKG_CONFIG_REQUIRES "Qt5Widgets, Qt5DBus")
+
+add_library(${PROJECT_NAME} SHARED ${${PROJECT_NAME}_ALL_FILES})
+target_link_libraries(${PROJECT_NAME}
+    PUBLIC
+        Qt5::Widgets
+        Qt5::DBus
+)
+set_target_properties(${PROJECT_NAME}
+    PROPERTIES
+    VERSION ${LXQT_VERSION}
+    SOVERSION ${LXQT_MAJOR_VERSION}
+)
+target_include_directories(${PROJECT_NAME}
+    INTERFACE "$<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/${LXQT_GLOBALKEYS_LIBRARY_NAME}>"
+)
+target_include_directories(${PROJECT_NAME}
+    INTERFACE "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_FILES_DIRECTORY}/include>"
+    INTERFACE "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_FILES_DIRECTORY}/include/${PROJECT_NAME}>"
+)
+
+target_compile_definitions(${PROJECT_NAME}
+    PRIVATE
+        "SHARED_EXPORT=Q_DECL_EXPORT"
+)
+
+export(TARGETS ${PROJECT_NAME} FILE "${CMAKE_BINARY_DIR}/${PROJECT_NAME}-targets.cmake")
+
+
+lxqt_create_portable_headers(${PROJECT_NAME}_PORTABLE_HEADERS
+    PATH_PREFIX ".."
+    NAME_PREFIX "${${PROJECT_NAME}_NAMESPACE}"
+    HEADER_NAMES ${${PROJECT_NAME}_PUBLIC_CLASSES}
+)
+
+# Copy public headers for intree building
+foreach(h ${${PROJECT_NAME}_PUBLIC_HEADERS})
+    get_filename_component(bh ${h} NAME)
+    configure_file(${h} "${CMAKE_CURRENT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/include/${PROJECT_NAME}/${bh}" COPYONLY)
+endforeach()
+
+foreach(h ${${PROJECT_NAME}_PORTABLE_HEADERS})
+    get_filename_component(bh ${h} NAME)
+    configure_file(${h} "${CMAKE_CURRENT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/include/${PROJECT_NAME}/${${PROJECT_NAME}_HEADER_NAMESPACE}/${bh}" COPYONLY)
+endforeach()
+
+configure_file(
+    "${${PROJECT_NAME}_MAIN_HEADER}"
+    "${CMAKE_CURRENT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/include/${PROJECT_NAME}/${${PROJECT_NAME}_MAIN_HEADER}"
+    COPYONLY
+)
+
+configure_file(
+    "${${PROJECT_NAME}_MAIN_HEADER}"
+    "${CMAKE_CURRENT_BINARY_DIR}${CMAKE_FILES_DIRECTORY}/include/${PROJECT_NAME}/lxqtglobalkeys.h"
+    COPYONLY
+)
+
+install(TARGETS
+    ${PROJECT_NAME}
+    DESTINATION "${CMAKE_INSTALL_LIBDIR}"
+    EXPORT ${PROJECT_NAME}-targets
+    COMPONENT Runtime
+)
+
+install(EXPORT
+    ${PROJECT_NAME}-targets
+    DESTINATION "${LXQT_INSTALL_CMAKE_DIR}/${LXQT_GLOBALKEYS_CMAKE_NAME}"
+    COMPONENT Devel
+)
+
+install(FILES
+    ${${PROJECT_NAME}_MAIN_HEADER}
+    DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}"
+    COMPONENT Devel
+)
+
+install(FILES
+    ${${PROJECT_NAME}_MAIN_HEADER}
+    DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}"
+    COMPONENT Devel
+    RENAME "lxqtglobalkeys.h"
+)
+
+install(FILES
+    ${${PROJECT_NAME}_PORTABLE_HEADERS}
+    DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}/${${PROJECT_NAME}_HEADER_NAMESPACE}"
+    COMPONENT Devel
+)
+
+install(FILES
+    ${${PROJECT_NAME}_PUBLIC_HEADERS}
+    DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/${PROJECT_NAME}"
+    COMPONENT Devel
+)
+
+lxqt_create_pkgconfig_file(
+    PACKAGE_NAME ${PROJECT_NAME}
+    DESCRIPTIVE_NAME ${PROJECT_NAME}
+    DESCRIPTION "LXQt global key shortcuts client library"
+    INCLUDEDIRS ${PROJECT_NAME}
+    LIBS ${PROJECT_NAME}
+    REQUIRES ${${PROJECT_NAME}_PKG_CONFIG_REQUIRES}
+    VERSION ${LXQT_VERSION}
+    INSTALL
+)

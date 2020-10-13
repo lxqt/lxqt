@@ -1,0 +1,33 @@
+language: cpp
+
+sudo: required
+
+dist: bionic
+
+services:
+  - docker
+
+script:
+  - "curl -s https://raw.githubusercontent.com/mikkeloscar/arch-travis/master/arch-travis.sh | bash"
+
+archlinux:
+  repos:
+    - archlinuxcn=https://cdn.repo.archlinuxcn.org/$arch
+  packages:
+    # See *depends in https://github.com/archlinuxcn/repo/blob/master/archlinuxcn/lxqt-panel-git/PKGBUILD
+    - git
+    - cmake
+    - qt5-tools
+    - lxqt-build-tools-git
+    - alsa-lib
+    - libpulse
+    - lm_sensors
+    - libstatgrab
+    - libsysstat-git
+    - solid
+    - menu-cache
+    - libxcomposite
+    - lxmenu-data
+    - libdbusmenu-qt5
+    - lxqt-globalkeys-git
+  script: bash ./.ci/build.sh
