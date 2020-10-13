@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+               "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY % local.common.attrib "xmlns:xi  CDATA  #FIXED 'http://www.w3.org/2003/XInclude'">
+  <!ENTITY version SYSTEM "version.xml">
+]>
+<book id="index">
+  <bookinfo>
+    <title>Libfm Reference Manual</title>
+    <releaseinfo>
+      for Libfm &version;
+      The latest version of this documentation can be found on-line at
+      <ulink role="online-location" url="http://sf.net/projects/pcmanfm/">http://sf.net/projects/pcmanfm/</ulink>.
+    </releaseinfo>
+  </bookinfo>
+
+  <part id="libfm">
+    <title>Libfm Overview</title>
+    <para>
+Libfm is a library built on top of glib/gio for developing file managers.
+It provides some useful file management utilities and related-widgets
+missing in gtk+/glib. It's originally developed for use in PCManFM, but
+it's carefully designed to be desktop environment-independent and can be
+used to develop other file manager-related tools as well.
+    </para>
+    <chapter id="libfm-core">
+      <title>Libfm Core Reference.</title>
+      <xi:include href="xml/fm.xml"/>
+      <xi:include href="xml/fm-action.xml"/>
+      <xi:include href="xml/fm-app-info.xml"/>
+      <xi:include href="xml/fm-archiver.xml"/>
+      <xi:include href="xml/fm-bookmarks.xml"/>
+      <xi:include href="xml/fm-config.xml"/>
+      <xi:include href="xml/fm-dummy-monitor.xml"/>
+      <xi:include href="xml/fm-file.xml"/>
+      <xi:include href="xml/fm-file-info.xml"/>
+      <xi:include href="xml/fm-file-launcher.xml"/>
+      <xi:include href="xml/fm-folder.xml"/>
+      <xi:include href="xml/fm-folder-config.xml"/>
+      <xi:include href="xml/fm-icon.xml"/>
+      <xi:include href="xml/fm-list.xml"/>
+      <xi:include href="xml/fm-mime-type.xml"/>
+      <xi:include href="xml/fm-monitor.xml"/>
+      <xi:include href="xml/fm-nav-history.xml"/>
+      <xi:include href="xml/fm-path.xml"/>
+      <xi:include href="xml/fm-templates.xml"/>
+      <xi:include href="xml/fm-terminal.xml"/>
+      <xi:include href="xml/fm-thumbnail-loader.xml"/>
+      <xi:include href="xml/fm-thumbnailer.xml"/>
+      <xi:include href="xml/fm-module.xml"/>
+      <xi:include href="xml/fm-utils.xml"/>
+    </chapter>
+    <chapter id="libfm-extra">
+      <title>Libfm Extra.</title>
+      <xi:include href="xml/fm-xml-file.xml"/>
+    </chapter>
+    <chapter id="libfm-jobs">
+      <title>Libfm Jobs.</title>
+      <xi:include href="xml/fm-deep-count-job.xml"/>
+      <xi:include href="xml/fm-dir-list-job.xml"/>
+      <xi:include href="xml/fm-file-info-job.xml"/>
+      <xi:include href="xml/fm-file-ops-job.xml"/>
+      <xi:include href="xml/fm-job.xml"/>
+      <xi:include href="xml/fm-simple-job.xml"/>
+    </chapter>
+    <chapter id="libfm-gtk">
+      <title>Libfm Gtk+ Widgets and Objects.</title>
+      <xi:include href="xml/fm-gtk.xml"/>
+      <xi:include href="xml/fm-app-chooser-combo-box.xml"/>
+      <xi:include href="xml/fm-app-chooser-dlg.xml"/>
+      <xi:include href="xml/fm-app-menu-view.xml"/>
+      <xi:include href="xml/fm-cell-renderer-pixbuf.xml"/>
+      <xi:include href="xml/fm-cell-renderer-text.xml"/>
+      <xi:include href="xml/fm-clipboard.xml"/>
+      <xi:include href="xml/fm-dir-tree-model.xml"/>
+      <xi:include href="xml/fm-dir-tree-view.xml"/>
+      <xi:include href="xml/fm-dnd-auto-scroll.xml"/>
+      <xi:include href="xml/fm-dnd-dest.xml"/>
+      <xi:include href="xml/fm-dnd-src.xml"/>
+      <xi:include href="xml/fm-file-menu.xml"/>
+      <xi:include href="xml/fm-file-properties.xml"/>
+      <xi:include href="xml/fm-folder-model.xml"/>
+      <xi:include href="xml/fm-standard-view.xml"/>
+      <xi:include href="xml/fm-folder-view.xml"/>
+      <xi:include href="xml/fm-gtk-file-launcher.xml"/>
+      <xi:include href="xml/fm-gtk-utils.xml"/>
+      <xi:include href="xml/fm-icon-pixbuf.xml"/>
+      <xi:include href="xml/fm-menu-tool-item.xml"/>
+      <xi:include href="xml/fm-path-bar.xml"/>
+      <xi:include href="xml/fm-path-entry.xml"/>
+      <xi:include href="xml/fm-places-model.xml"/>
+      <xi:include href="xml/fm-places-view.xml"/>
+      <xi:include href="xml/fm-progress-dlg.xml"/>
+      <xi:include href="xml/fm-side-pane.xml"/>
+      <xi:include href="xml/fm-sortable.xml"/>
+      <xi:include href="xml/fm-tab-label.xml"/>
+      <xi:include href="xml/fm-thumbnail.xml"/>
+    </chapter>
+  </part>
+  <part id="object-tree">
+    <title>Object Hierarchy</title>
+    <xi:include href="xml/tree_index.sgml"/>
+  </part>
+  <index id="api-index-full">
+    <title>API Index</title>
+    <xi:include href="xml/api-index-full.xml"><xi:fallback /></xi:include>
+  </index>
+  <index id="api-index-deprecated">
+    <title>Index of deprecated symbols</title>
+    <xi:include href="xml/api-index-deprecated.xml"><xi:fallback/></xi:include>
+  </index>
+  <index role="1.0.0">
+    <title>Index of symbols included in 1.0.0</title>
+    <xi:include href="xml/api-index-0.1.0.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.1.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.5.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.9.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.10.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.11.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.12.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.14.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.15.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.16.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.17.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-0.1.99.xml"><xi:fallback/></xi:include>
+    <xi:include href="xml/api-index-1.0.0.xml"><xi:fallback/></xi:include>
+  </index>
+  <index role="1.0.1">
+    <title>Index of new symbols in 1.0.1</title>
+    <xi:include href="xml/api-index-1.0.1.xml"><xi:fallback/></xi:include>
+  </index>
+  <index role="1.1.0">
+    <title>Index of new symbols in 1.1.0</title>
+    <xi:include href="xml/api-index-1.0.2.xml"><xi:fallback/></xi:include>
+  </index>
+  <index role="1.2.0">
+    <title>Index of new symbols in 1.2.0</title>
+    <xi:include href="xml/api-index-1.2.0.xml"><xi:fallback/></xi:include>
+  </index>
+  <index role="1.3.0">
+    <title>Index of new symbols in 1.3.0</title>
+    <xi:include href="xml/api-index-1.3.0.xml"><xi:fallback/></xi:include>
+  </index>
+  <xi:include href="xml/annotation-glossary.xml"><xi:fallback /></xi:include>
+</book>

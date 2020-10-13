@@ -1,0 +1,23 @@
+# - Find the sysstat include and library dirs and define a some macros
+#
+# The module defines the following variables
+#
+#  SYSSTAT_FOUND         - Set to TRUE if all of the above has been found
+
+
+@PACKAGE_INIT@
+
+set(SYSSTAT_MAJOR_VERSION @MAJOR_VERSION@)
+set(SYSSTAT_MINOR_VERSION @MINOR_VERSION@)
+set(SYSSTAT_PATCH_VERSION @PATCH_VERSION@)
+set(SYSSTAT_VERSION       @SYSSTAT_VERSION@)
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(Qt5Core @QT_MINIMUM_VERSION@)
+if (NOT TARGET @SYSSTAT_LIBRARY_NAME@)
+    if (POLICY CMP0024)
+        cmake_policy(SET CMP0024 NEW)
+    endif()
+    include("${CMAKE_CURRENT_LIST_DIR}/@SYSSTAT_LIBRARY_NAME@-targets.cmake")
+endif()

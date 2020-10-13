@@ -1,0 +1,291 @@
+lximage-qt-0.15.0 / 2020-04-21
+==============================
+  * Hide annotations toolbar by default (it's buggy) but add an option to show/hide it on startup.
+  * No auto-selection in thumbnail view.
+  * Fixed showing the first image on loading a directory.
+  * String optimizations.
+  * Optionally show image outline.
+  * More complete transformation based on EXIF.
+  * Prevent blurry images with HDPI.
+  * Jump forward when the image is deleted/renamed.
+  * Added command-line option `-d` to take a screenshot and save it to the directory  without showing the GUI.
+  * Remove X11 screenshot under Wayland.
+  * Made maximum number of recent files configurable.
+  * Support uploading of unsaved images.
+  * No multiple Preferences dialogs.
+  * Keep zooming state on switching image.
+  * Removed deprecated `QDesktopWidget`.
+  * Added "Open With.." to File menu.
+  * Added shortcut editor to Preferences.
+  * Fixed maximization at startup with SVG and GIF images.
+
+lximage-qt-0.14.1 / 2019-02-25
+==============================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+lximage-qt-0.14.0 / 2019-01-15
+==============================
+
+  * Bumped version to 0.14.0 - the big bump was needed
+    to prevent packaging conflicts with the merged back
+    translations
+  * Set the required version of libfm-qt to 0.14.0.
+  * New Features:
+    - Render image EXIF data (by Rndevfx)
+    - Added confirmation dialog when using "Save as" with a
+      filename without extension.
+    - Add ImgBB upload provider
+    - Add ability to annotate images
+    - Add copy button to upload dialog
+    - Implement MRU list
+  * Fixed implementations:
+    - Several codestyle improvements like null pointers as nullptr,
+      const references, indent fixes
+    - Settings: add const to getters
+    - Fixed a FTBFS due to libfm header inclusion
+    - Update copyright block in source files
+    - Fixed thumbnail selection (with deletion)
+    - Don't use automatic string conversions
+  * Translation updates
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+    - Use XFIXES_LDFLAGS instead of XFIXES_LIBRARIES
+  * Moved translations from lxqt-l10n back to lximage-qt
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+
+lximage-qt-0.7.0 / 2018-05-21
+=============================
+
+  * Bumped minor version to 7
+  * Spanish translation update
+  * Just made it compilable again
+  * Removed not needed release.sh
+  * CMake: Prevent in-source builds
+  * fix some http->https
+  * Fix some mentions of LXDE
+  * Drop Qt foreach
+  * cmake: Handle CMP0071
+  * Add Spanish desktop entries
+
+lximage-qt-0.6.0 / 2017-10-21
+==================
+
+  * Release 0.6.0: Update changelog
+  * Add ImageShack upload provider.
+  * Fix warnings issued by GCC and Clang.
+  * Ensure file is closed when upload finishes.
+  * Make image URL read-only.
+  * Update copyright in initial file comment for new additions.
+  * Make QNetworkAccessManager static and fix initialization order in UploadDialog.
+  * Add support for uploading files (fixes #98).
+  * Bump versions
+  * Don't export github templates
+  * Don't use hardcoded install dir
+  * Update CMakeLists.txt
+  * Fix regression in thumbnail view
+  * Add Lithuanian .desktop files
+  * liblxqt don't fit here
+  * Copied issue-template
+  * Drops Qt5Core_VERSION_STRING
+  * set Qt::AA_UseHighDpiPixmaps to true
+  * MainWindow: Fix crash for quick image changes
+  * Use GNUInstallDirs
+  * jobs: Do proper error handling
+  * Adapt to changes in libfm-qt(the c++11 port)
+  * Use the new lxqt-build-tools new FindExif CMake module
+  * Simpler code for ScreenshotSelectAreaGraphicsView class.
+  * Change Screenshot select area green color by actual hightlight color. Use lximage-qt private variables style.
+  * Adapt to C++11 and RAM improvements.
+  * Screenshot captures an area of the screen.
+  * Use const iterators
+  * Bump year
+  * File and folder DND Fixes https://github.com/lxde/lximage-qt/issues/69.
+
+lximage-qt-0.5.1 / 2016-12-21
+==================
+
+  * Release 0.5.1: Update changelog
+  * Bump patch version and (#82)
+  * Create lximage-qt-screenshot_it.desktop (#83)
+  * Add *da.desktop files
+  * Desktop entry files: Fix typo in French translation
+  * [MRG] Display first image when loading a directory (v2) (#75)
+  * Desktop entry files: Add French translation
+  * Use lxqt-build-tools
+  * Use the new lxqt-build-tools package
+  * Fixed A Cast (#71)
+  * Remove cpack (#70)
+
+lximage-qt-0.5.0 / 2016-09-24
+==================
+
+  * Release 0.5.0: Add changelog
+  * Bump version to 0.5.0 (#67)
+  * Remove Core and Qt from Categories in desktop file (#64)
+  * Extend README.md
+  * Fix broken compatibility introduced by libfm-qt API changes. This closes lxde/lximage-qt#63.
+  * Add Catalan translations
+  * Quieten compiler warning
+  * Code cleanup
+  * Use LXQtCompilerSettings cmake module
+  * Treat SVG files separately as SVG images
+  * build: Update translations based on *.ui
+  * Fix typo in Portuguese translation for desktop file
+  * Fix typo in German translation for desktop file (#55)
+  * build: Use external translations (#54)
+  * ts-files removal (#53)
+  * Hide cursor smartly in fullscreen mode
+  * build: Use liblxqt's TranslateDesktop module
+  * Adds support for GIF animation.
+  * Implement an EOG-like behavior on starting By clicking on an image for the first time, the user wants to see it clearly with lximage-qt. So, the following behavior is implemented here:
+  * Add --version command line option
+  * Fix missing Russian translation in desktop file
+  * Fix memory leak if taking screenshot with cursor
+  * Polish translation updated
+  * Another update
+  * Improved Russian translation - thanks to uazure
+  * Fix typo
+  * Add Russian translation
+  * Italian translation update
+  * CMake: Adapt to libfm-qt Targets
+  * Turn on C++11 support. This closes bug lxde/lximage-qt #36.
+  * Exec should have an argument
+  * all GPL files are (or any later)
+  * Add release script
+  * Update translations
+  * Set the color table properly for scaled images
+  * Add Greek (el) translation Remove needless country variant from language code
+  * Corrected language code (de_DE -> de) of german translation, marked translations as done.
+  * replace tabs with spaces
+  * remove trailing spaces
+  * replace glib with Qt for command-line parsing
+  * Don't save file in private mode
+  * Prevents the slideshow timeout to be set to 0 in the UI
+  * Correctly include CMake modules in intree/superbuild mode
+  * Remove lximage-qt from the Utilities category
+  * Update README
+  * Update .gitignore
+  * Hungarian translations added
+  * save and restore window size and maximized state
+
+lximage-qt-0.4.0 / 2015-02-18
+==================
+
+  * Release v0.4.0
+  * src/CMakeLists.txt: do not completely overwrite CMAKE_CXX_FLAGS
+  * Create lximage-qt_it.desktop
+  * Create lximage-qt_it.ts
+  * CMakeLists cleanups
+  * Portuguese update
+  * Added german translation, re-generated all other .ts files.
+  * Added keyboard shortcut to print.
+  * Adds .desktop translation support
+  * Portuguese language update
+  * Remove debian directory (Close #9)
+  * Fix typo Zoomo -> Zoom
+  * Use proper naming conventions for translations
+  * Clean up CMakeLists, dropping support for Qt 5
+
+lximage-qt-0.3.0 / 2014-10-15
+==================
+
+  * Release v0.3.0
+  * Rename preferencedialog.ui to preferencesdialog.ui
+  * Ignore build dir.
+  * debian: enable qt5 by default
+  * Fix lxde/lxde-qt #269 - Screenshots are not saved aedequately unless file extension is chosen manually.
+  * Support Qt5 and libfm-qt5.
+  * Make sure all enums are handled in switch
+
+lximage-qt-0.2.0 / 2014-05-09
+==================
+
+  * Release 0.2.0
+  * Update desktop files
+  * Update README/COPYING/AUTHORS
+  * Add some missing link_directories()
+  * Commit from LXDE Pootle server by user yinghua_wang.: 70 of 70 strings translated (0 fuzzy).
+  * Add CPack rules for creating tarball
+  * Avoid creating a scaled image cache if current scale factor is 1.0 (original size).
+  * Rewrite the scaled image caching code in LxImage::ImageView to improve its readability and correctness.
+  * Add LxImage::Job class as a base class for multi-threading jobs.
+  * Avoid copying subimages to speed up scaling images.
+  * Limit the size of pixmap cache.
+  * Limit the size of pixmap cache.
+  * Create a cache for the high-quality scaled image of the currently viewport and use it to override the default paintEvent() of QGraphicsView as needed. This improves the image quality a lot when we scale down large photos.
+  * Cancel autoZoomFit when calling zoomOriginal(), zoomIn(), and zoomOut().
+  * Add copy and paste buttons to the toolbar.
+  * Automatically zoom to fit current window size by default.
+  * Make the preferences dialog non-modal and apply the settings to all existing windows.
+  * Add "Delete file" and "File properties" actions to the file menu.
+  * Add a very basic thumbnails pane based on Fm::FolderView of libfm-qt.
+  * Implement the preferences dialog. * Enable keyboard shortcuts in fullscreen mode.
+  * Implement very basic slide show functionality.
+  * Jump to the previous or the next image by using mouse wheel.
+  * Avoid scaling up an image while zoomFit() if it's smaller than the current view.
+  * Support grabbing mouse cursor when taking a screenshot.
+  * Add very basic printing support.
+  * Commit from LXDE Pootle server by user adrianoh2.: 70 of 70 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user Fitoschido.: 70 of 70 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user hirkmt.: 70 of 70 strings translated (0 fuzzy).
+  * Remove xsettings support and add an option in the preference dialog to set a fallback icon theme instead.
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * Improve cmake integration for translations. The *.ts files are only updated when UPDATE_TRANSLATIONS cmake option is turned on.
+  * Commit from LXDE Pootle server by user zvacet.: 65 of 70 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user zvacet.: 50 of 70 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user wwycheuk.: 65 of 70 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user mbouzada.: 70 of 70 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * Commit from LXDE Pootle server by user Fitoschido.: 68 of 70 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * Corrected caml cased string toolBar.
+  * Commit from LXDE Pootle server by user smarquespt.: 70 of 70 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user brother.: 24 of 24 strings translated (0 fuzzy).
+  * Correct misspelled 'Zoom'.
+  * Commit from LXDE Pootle server by user andika.: 70 of 70 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * Commit from LXDE Pootle server by user strebski.: 70 of 70 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * Commit from LXDE Pootle server by user LStranger.: 70 of 70 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user brother.: 70 of 70 strings translated (0 fuzzy).
+  * Commit from LXDE Pootle server by user LStranger.: 2 of 70 strings translated (0 fuzzy).
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * New files added from LXDE Pootle server based on templates
+  * Add zh_TW translation and a template ts file.
+  * Add a desktop entry file for the built-in screenshot tool.
+  * Add --screenshot command line argument to launch the built-in screenshot utility.
+  * Improve the screenshot tool. Implement pasting from clipboard.
+  * Add ability to taking screenshots to lximage-qt.
+  * debian : Add missing libx11 build-depend
+  * Add missing files.
+  * Add Xdg::DesktopSettings for detecting desktop-specific settings. Get icon theme name via XSettings or config files when available.
+  * Supporting saving files. (needs some more polishing, though).
+  * Add a basic debian directory to enable daily builds.
+  * Add a context menu.
+  * Use libexif to read EXIF orientation tags then apply them to images loaded.
+  * Refactor - move image loading code to LxImage::LoadImageJob class.
+  * Remove unused data member.
+  * Add a preferences dialog (not working yet). Little adjustment for menu positions and add placeholders for features not implemented.
+  * Fix filename encoding handling so non-English filenames can be passed correctly from command line arguments.
+  * Canonicalize filenames passed through command line arguments. Add an icon borrowed from GPicView. Rearrange menus and implement "fullscreen" and "copy to clipboard".
+  * Implement basic single instance support and command line argument parsing.
+  * Properly cancel pending tasks and make going back/forward more smooth. Enhance window title display.
+  * Little fix to avoid loading a cancelled image.
+  * Supports rotation of images.
+  * Use the latest libfm-qt APIs to filter out non-image files. Implement jumping to first and last file in the folder.
+  * Fix incorrect reference couting of GCancellable objects to avoid crashes. Add some shortcut keys to improve usability.
+  * Use glib/gio GInputStream + GIOSchedulerJob to load the images with multi-threading. Refactor, simplify class methods of LxImage::MainWindow.
+  * Use libfm to load folders containing the specified image. Add dependency on libexif for future implementation of EXIF related stuff. Add LxImage::Applcation class to handle application initiation.
+  * Initial import into git

@@ -1,0 +1,1898 @@
+# Indonesian translation of libfm
+# Copyright (C) 2010 THE libfm'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the libfm package.
+# Andika Triwidada <andika@gmail.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: libfm 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-13 00:10+0300\n"
+"PO-Revision-Date: 2015-08-17 01:28+0000\n"
+"Last-Translator: Anonymous Pootle User\n"
+"Language-Team: Indonesian Translation Team <id@li.org>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.7\n"
+"X-POOTLE-MTIME: 1439774900.161716\n"
+
+#: ../data/libfm-pref-apps.desktop.in.h:1 ../data/ui/preferred-apps.glade.h:1
+msgid "Preferred Applications"
+msgstr "Aplikasi Pilihan"
+
+#: ../data/libfm-pref-apps.desktop.in.h:2
+msgid "Select applications called on click on Web link or e-mail address"
+msgstr "Pilih aplikasi yang dipanggil saat mengklik taut Web atau alamat surel"
+
+#: ../data/lxshortcut.desktop.in.h:1
+msgid "Shortcut Editor"
+msgstr "Penyunting Pintasan"
+
+#: ../data/lxshortcut.desktop.in.h:2
+msgid "Create new or change existing desktop entry"
+msgstr "Buat baru atau ubah entri desktop yang ada"
+
+#: ../data/ui/app-chooser.glade.h:1
+msgid "Choose Application"
+msgstr "Pilih Aplikasi"
+
+#: ../data/ui/app-chooser.glade.h:2
+msgid "Use selected application to open files"
+msgstr "Gunakan aplikasi yang dipilih untuk membuka berkas"
+
+#: ../data/ui/app-chooser.glade.h:3
+msgid "_Installed Applications"
+msgstr "Apl_ikasi Terpasang"
+
+#: ../data/ui/app-chooser.glade.h:4
+msgid "<b>C_ommand line to execute:</b>"
+msgstr "<b>Perintah b_aris yang akan dieksekusi:</b>"
+
+#: ../data/ui/app-chooser.glade.h:5
+#: ../src/modules/gtk-fileprop-x-desktop.c:275
+msgid "_Browse..."
+msgstr "Ram_ban..."
+
+#. row 1: "Terminal" GtkCheckButton
+#: ../data/ui/app-chooser.glade.h:6
+#: ../src/modules/gtk-fileprop-x-desktop.c:294
+msgid "_Execute in terminal emulator"
+msgstr "Jalankan di _emulator terminal"
+
+#. row 2: "X-KeepTerminal" GtkCheckButton
+#: ../data/ui/app-chooser.glade.h:7
+#: ../src/modules/gtk-fileprop-x-desktop.c:306
+msgid "_Keep terminal window open after command execution"
+msgstr "Biar_kan jendela terminal tetap terbuka setelah eksekusi perintah"
+
+#: ../data/ui/app-chooser.glade.h:9
+#, no-c-format
+msgid ""
+"<b>These special codes can be used in the command line:</b>\n"
+"  <b>%f</b>: Represents a single file name\n"
+"  <b>%F</b>: Represents multiple file names\n"
+"  <b>%u</b>: Represents a single URI of the file\n"
+"  <b>%U</b>: Represents multiple URIs"
+msgstr ""
+"<b>Kode-kode khusus ini dapat dipakai di baris perintah:</b>\n"
+"  <b>%f</b>: Menyatakan sebuah nama berkas\n"
+"  <b>%F</b>: Menyatakan banyak nama berkas\n"
+"  <b>%u</b>: Menyatakan sebuah URI dari berkas\n"
+"  <b>%U</b>: Menyatakan banyak URI"
+
+#: ../data/ui/app-chooser.glade.h:14
+msgid "<b>_Application name (optional, set it to keep association)</b>"
+msgstr "<b>N_ama aplikasi (opsional, isilah untuk menjaga asosiasi)</b>"
+
+#: ../data/ui/app-chooser.glade.h:15
+msgid "Execute custom command line to open files"
+msgstr "Jalankan baris perintah ubahan untuk membuka berkas"
+
+#: ../data/ui/app-chooser.glade.h:16
+msgid "C_ustom Command Line"
+msgstr "Perintah Baris G_ubahan"
+
+#: ../data/ui/app-chooser.glade.h:17
+msgid "_Set selected application as default action for this file type"
+msgstr "Tata aplika_si yang dipilih sebagai aksi bawaan dari jenis berkas ini"
+
+#: ../data/ui/ask-rename.glade.h:1
+msgid "Confirm File Replacing"
+msgstr "Konfirmasi Untuk Menggantikan Berkas"
+
+#: ../data/ui/ask-rename.glade.h:2
+msgid "_Skip"
+msgstr "_Lewati"
+
+#: ../data/ui/ask-rename.glade.h:3
+msgid "_Rename"
+msgstr "_Ganti nama"
+
+#: ../data/ui/ask-rename.glade.h:4
+msgid "_Overwrite"
+msgstr "_Timpa"
+
+#: ../data/ui/ask-rename.glade.h:5
+msgid ""
+"<b>There is already a file with the same name in this location.</b>\n"
+"\n"
+"Do you want to replace the existing file"
+msgstr ""
+"<b>Telah ada berkas dengan nama sama di lokasi ini.</b>\n"
+"\n"
+"Anda ingin menimpa"
+
+#: ../data/ui/ask-rename.glade.h:8
+msgid "with the following file?"
+msgstr "dengan berkas berikut?"
+
+#: ../data/ui/ask-rename.glade.h:9
+msgid "_File name:"
+msgstr "Nama _berkas:"
+
+#: ../data/ui/ask-rename.glade.h:10
+msgid "_Apply this option to all existing files"
+msgstr "Ter_apkan opsi ini atas semua berkas yang telah ada"
+
+#: ../data/ui/choose-icon.ui.h:1
+msgid "Choose An Icon..."
+msgstr "Pilih Suatu Ikon..."
+
+#. genitive case is here: Choose icon from: ...
+#: ../data/ui/choose-icon.ui.h:3
+msgid "system icon theme"
+msgstr "tema ikon sistem"
+
+#. genitive case is here: Choose icon from: ...
+#: ../data/ui/choose-icon.ui.h:5
+msgid "image files"
+msgstr "berkas gambar"
+
+#: ../data/ui/choose-icon.ui.h:6
+msgid "<b>Choose icon from:</b>"
+msgstr "<b>Pilih ikon dari:</b>"
+
+#: ../data/ui/exec-file.glade.h:1
+msgid "Execute File"
+msgstr "Jalankan Berkas"
+
+#: ../data/ui/exec-file.glade.h:2
+msgid "Execute in _Terminal"
+msgstr "Jalankan di _Terminal"
+
+#: ../data/ui/file-prop.glade.h:1
+msgid "File Properties"
+msgstr "Properti Berkas"
+
+#: ../data/ui/file-prop.glade.h:2
+msgid "Icon of the file in folder view"
+msgstr "Ikon dari berkas dalam tilikan folder"
+
+#: ../data/ui/file-prop.glade.h:3
+msgid "<b>_Name:</b>"
+msgstr "<b>_Nama:</b>"
+
+#: ../data/ui/file-prop.glade.h:4
+msgid "<b>Location:</b>"
+msgstr "<b>Lokasi:</b>"
+
+#: ../data/ui/file-prop.glade.h:5
+msgid "<b>Target file:</b>"
+msgstr "<b>Berkas target:</b>"
+
+#: ../data/ui/file-prop.glade.h:6
+msgid "<b>File type:</b>"
+msgstr "<b>Tipe berkas:</b>"
+
+#: ../data/ui/file-prop.glade.h:7
+msgid "<b>Open _with:</b>"
+msgstr "<b>B_uka dengan:</b>"
+
+#: ../data/ui/file-prop.glade.h:8
+msgid "Select the application used to open files of this type "
+msgstr "Pilih aplikasi yang dipakai untuk membuka berkas jenis ini"
+
+#: ../data/ui/file-prop.glade.h:9
+msgid "<b>Total count of files:</b>"
+msgstr "<b>Cacah total berkas:</b>"
+
+#: ../data/ui/file-prop.glade.h:10
+msgid "<b>Total size of files:</b>"
+msgstr "<b>Ukuran total dari berkas:</b>"
+
+#: ../data/ui/file-prop.glade.h:11
+msgid "<b>Size on disk:</b>"
+msgstr "<b>Ukuran di disk:</b>"
+
+#: ../data/ui/file-prop.glade.h:12
+msgid "<b>Last modification:</b>"
+msgstr "<b>Terakhir diubah:</b>"
+
+#: ../data/ui/file-prop.glade.h:13
+msgid "<b>Last access:</b>"
+msgstr "<b>Terakhir diakses:</b>"
+
+#: ../data/ui/file-prop.glade.h:14
+msgid "<b>Last permissions change:</b>"
+msgstr "<b>Terakhir ijin berubah:</b>"
+
+#: ../data/ui/file-prop.glade.h:15
+msgid "_General"
+msgstr "_Umum"
+
+#: ../data/ui/file-prop.glade.h:16
+msgid "<b>O_wner:</b>"
+msgstr "<b>Pe_milik:</b>"
+
+#: ../data/ui/file-prop.glade.h:17
+msgid "<b>G_roup:</b>"
+msgstr "<b>G_rup:</b>"
+
+#: ../data/ui/file-prop.glade.h:18
+msgid "<b>_View content:</b>"
+msgstr "<b>Tili_k isi:</b>"
+
+#: ../data/ui/file-prop.glade.h:19
+msgid "<b>C_hange content:</b>"
+msgstr "<b>Uba_h isi:</b>"
+
+#: ../data/ui/file-prop.glade.h:20
+msgid "<b>_Execute:</b>"
+msgstr "<b>_Eksekusi:</b>"
+
+#: ../data/ui/file-prop.glade.h:21
+msgid "<b>Special bits:</b>"
+msgstr "<b>Bit khusus:</b>"
+
+#: ../data/ui/file-prop.glade.h:22
+msgid "Who can read content of the file/directory"
+msgstr "Siapa yang dapat membaca isi berkas/direktori"
+
+#: ../data/ui/file-prop.glade.h:23
+msgid "Who can change content of the file/directory"
+msgstr "Siapa yang dapat mengubah isi berkas/direktori"
+
+#: ../data/ui/file-prop.glade.h:24
+msgid "Who can execute the file or enter the directory"
+msgstr "Siapa yang dapat menjalankan berkas atau memasuki direktori"
+
+#: ../data/ui/file-prop.glade.h:25
+msgid "Special flags for file execution"
+msgstr "Flag khusus bagi eksekusi berkas"
+
+#: ../data/ui/file-prop.glade.h:26
+msgid "Special flags for directory access"
+msgstr "Flag khusus bagi akses direktori"
+
+#: ../data/ui/file-prop.glade.h:27
+msgid "<b>Access Control</b>"
+msgstr "<b>Kendali Akses</b>"
+
+#: ../data/ui/file-prop.glade.h:28
+msgid "Hidden file"
+msgstr "Berkas tersembunyi"
+
+#: ../data/ui/file-prop.glade.h:29
+msgid "_Permissions"
+msgstr "_Hak akses"
+
+#: ../data/ui/file-prop.glade.h:30
+msgid "---"
+msgstr "---"
+
+#: ../data/ui/file-prop.glade.h:31
+msgid "None"
+msgstr "Tak ada"
+
+#: ../data/ui/file-prop.glade.h:32
+msgctxt ""
+"It is a directory access bit - 'sticky' - where only owner can delete a file "
+"from it"
+msgid "Sticky"
+msgstr "Lengket"
+
+#: ../data/ui/file-prop.glade.h:33
+msgid "Set GID"
+msgstr "Set GID"
+
+#: ../data/ui/file-prop.glade.h:34
+msgid "Sticky & set GID"
+msgstr "Lengket & set GID"
+
+#: ../data/ui/file-prop.glade.h:35
+msgctxt "this is a file access mode bit, also known as 'suid'"
+msgid "Set UID"
+msgstr "Set UID"
+
+#: ../data/ui/file-prop.glade.h:36
+msgid "Set UID & GID"
+msgstr "Set UID & GID"
+
+#: ../data/ui/file-prop.glade.h:37
+msgctxt ""
+"this is a file access mode - only owner can access the file, for others "
+"access is denied"
+msgid "Only owner"
+msgstr "Hanya pemilik"
+
+#: ../data/ui/file-prop.glade.h:38
+msgid "Only owner and group"
+msgstr "Hanya pemilik dan grup"
+
+#: ../data/ui/file-prop.glade.h:39
+msgid "Anyone"
+msgstr "Siapapun"
+
+#: ../data/ui/file-prop.glade.h:40
+msgid "Nobody"
+msgstr "Tak seorangpun"
+
+#: ../data/ui/filesearch.glade.h:1
+msgid "Bytes"
+msgstr "Byte"
+
+#: ../data/ui/filesearch.glade.h:2
+msgid "KB"
+msgstr "KB"
+
+#: ../data/ui/filesearch.glade.h:3 ../src/base/fm-utils.c:143
+msgid "MB"
+msgstr "MB"
+
+#: ../data/ui/filesearch.glade.h:4 ../src/base/fm-utils.c:149
+msgid "GB"
+msgstr "GB"
+
+#: ../data/ui/filesearch.glade.h:5
+msgid "Choose Date"
+msgstr "Pilih Tanggal"
+
+#: ../data/ui/filesearch.glade.h:6
+msgid "Choose a date from the following calendar"
+msgstr "Pilih suatu tanggal dari kalender berikut"
+
+#: ../data/ui/filesearch.glade.h:7
+msgid "Search Files"
+msgstr "Cari Berkas"
+
+#: ../data/ui/filesearch.glade.h:8
+msgid "<b>File _Name Patterns:</b>"
+msgstr "<b>Pola _Nama Berkas</b>"
+
+#: ../data/ui/filesearch.glade.h:9
+msgid ""
+"Pattern may be either POSIX shell pattern list (with ',' as separator) or "
+"POSIX regular expression."
+msgstr ""
+"Pola boleh daftar pola shell POSIX (dengan ',' sebagai pemisah) atau "
+"ekspresi reguler POSIX."
+
+#: ../data/ui/filesearch.glade.h:10
+msgid "Case insensiti_ve"
+msgstr "A_baikan besar kecil"
+
+#: ../data/ui/filesearch.glade.h:11
+msgid "_Use regular expression"
+msgstr "Gunakan ekpresi reg_uler"
+
+#: ../data/ui/filesearch.glade.h:12
+msgid "<b>Plac_es to Search:</b>"
+msgstr "<b>T_empat yang akan Dicari:</b>"
+
+#: ../data/ui/filesearch.glade.h:13
+msgid "_Search in sub directories"
+msgstr "Cari dalam _sub direktori"
+
+#: ../data/ui/filesearch.glade.h:14
+msgid "Search _hidden files"
+msgstr "Cari berkas terse_mbunyi"
+
+#: ../data/ui/filesearch.glade.h:15
+msgid "Name/_Location"
+msgstr "Nama/_Lokasi"
+
+#: ../data/ui/filesearch.glade.h:16
+msgid "<b>File Type</b>"
+msgstr "<b>Tipe Berkas</b>"
+
+#: ../data/ui/filesearch.glade.h:17
+msgid "Only search for files of following types:"
+msgstr "Hanya cari berkas dengan tipe berikut:"
+
+#: ../data/ui/filesearch.glade.h:18
+msgid "Te_xt files"
+msgstr "Berkas te_ks"
+
+#: ../data/ui/filesearch.glade.h:19
+msgid "_Image files"
+msgstr "Berkas _gambar"
+
+#: ../data/ui/filesearch.glade.h:20
+msgid "_Audio files"
+msgstr "Berkas _audio"
+
+#: ../data/ui/filesearch.glade.h:21
+msgid "_Video files"
+msgstr "Berkas _video"
+
+#: ../data/ui/filesearch.glade.h:22
+msgid "_Documents"
+msgstr "_Dokumen"
+
+#: ../data/ui/filesearch.glade.h:23
+msgid "Folde_rs"
+msgstr "Folde_r"
+
+#: ../data/ui/filesearch.glade.h:24
+msgid "Ot_her:"
+msgstr "L_ainnya:"
+
+#: ../data/ui/filesearch.glade.h:25
+msgid ""
+"Any valid content type can be entered here. Wildcard '*' is allowed at end "
+"of the type. Multiple types should be separated with ';'."
+msgstr ""
+"Sebarang tipe isi yang valid dapat dimasukkan di sini. Wildcard '*' "
+"diijinkan di akhir tipe. Tipe berganda mesti dipisah dengan ';'."
+
+#: ../data/ui/filesearch.glade.h:26
+msgid "File _Type"
+msgstr "_Tipe Berkas"
+
+#: ../data/ui/filesearch.glade.h:27
+msgid "<b>File Contain_s:</b>"
+msgstr "<b>Berka_s Memuat:</b>"
+
+#: ../data/ui/filesearch.glade.h:28
+msgid "C_ontent"
+msgstr "_Isi"
+
+#: ../data/ui/filesearch.glade.h:29
+msgid "<b>File Size</b>"
+msgstr "<b>Ukuran Berkas</b>"
+
+#: ../data/ui/filesearch.glade.h:30
+msgid "_Smaller than:"
+msgstr "_Kurang dari:"
+
+#: ../data/ui/filesearch.glade.h:31
+msgid "_Bigger than:"
+msgstr "Le_bih dari:"
+
+#: ../data/ui/filesearch.glade.h:32
+msgid "<b>Last Modified Time</b>"
+msgstr "<b>Waktu Terakhir Diubah</b>"
+
+#: ../data/ui/filesearch.glade.h:33 ../src/gtk/fm-gtk-file-launcher.c:670
+#: ../src/gtk/fm-gtk-file-launcher.c:677
+msgid "(None)"
+msgstr "(Nihil)"
+
+#: ../data/ui/filesearch.glade.h:34
+msgid "_Earlier than:"
+msgstr "S_ebelum:"
+
+#: ../data/ui/filesearch.glade.h:35
+msgid "L_ater than:"
+msgstr "Setel_ah:"
+
+#: ../data/ui/filesearch.glade.h:36
+msgid "_Properties"
+msgstr "_Properti"
+
+#: ../data/ui/preferred-apps.glade.h:2
+msgid "<b>Web Browser</b>"
+msgstr "<b>Peramban Web</b>"
+
+#: ../data/ui/preferred-apps.glade.h:3
+msgid "The preferred Web Browser will be used to open hyperlinks."
+msgstr "Peramban Web yang disukai akan dipakai untuk membuka hyperlink."
+
+#: ../data/ui/preferred-apps.glade.h:4
+msgid "<b>Mail Client</b>"
+msgstr "<b>Klien Surat</b>"
+
+#: ../data/ui/preferred-apps.glade.h:5
+msgid ""
+"The preferred Mail Client will be used to compose emails when you click on e-"
+"mail addresses."
+msgstr ""
+"Klien Surat yang disukai akan dipakai untuk menyusun surel ketika Anda "
+"mengklik alamat surel."
+
+#: ../data/ui/preferred-apps.glade.h:6
+msgid "<b>Terminal Emulator</b>"
+msgstr "<b>Emulator Terminal</b>"
+
+#: ../data/ui/preferred-apps.glade.h:7
+msgid "Command line:"
+msgstr "Baris perintah:"
+
+#: ../data/ui/preferred-apps.glade.h:8
+msgid "System Applications"
+msgstr "Aplikasi Sistem"
+
+#: ../data/ui/preferred-apps.glade.h:9
+msgid "File Associations"
+msgstr "Asosiasi Berkas"
+
+#. To: <Destination folder> ex. Copy file to..., Move file to...etc.
+#: ../data/ui/progress.glade.h:2
+msgid "<b>To:</b>"
+msgstr "<b>Ke:</b> "
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/progress.glade.h:4
+msgid "Preparing..."
+msgstr "Mempersiapkan..."
+
+#: ../data/ui/progress.glade.h:5
+#, fuzzy
+msgid "<b>Data transferred:</b>"
+msgstr "<b>Berkas target:</b>"
+
+#: ../data/ui/progress.glade.h:6
+msgid "<b>Time remaining:</b>"
+msgstr "<b>Sisa waktu:</b>"
+
+#: ../data/ui/progress.glade.h:7
+msgid "<b>Errors occurred:</b>"
+msgstr "<b>Terjadi beberapa galat:</b>"
+
+#: ../src/base/fm-action.c:272
+#, fuzzy
+msgid "Empty value"
+msgstr "Berkas Kosong"
+
+#: ../src/base/fm-action.c:280
+#, fuzzy
+msgid "Invalid selection"
+msgstr "Tujuan tak valid"
+
+#. ---- GFile implementation ----
+#: ../src/base/fm-action.c:807 ../src/job/fm-file-ops-job.c:271
+#: ../src/modules/vfs-menu.c:1176 ../src/modules/vfs-search.c:928
+msgid "Operation not supported"
+msgstr "Operasi tak didukung"
+
+#: ../src/base/fm-file-launcher.c:87
+#, c-format
+msgid "Invalid desktop entry file: '%s'"
+msgstr "Berkas entri desktop tak valid: '%s'"
+
+#: ../src/base/fm-file-launcher.c:253 ../src/base/fm-file-launcher.c:407
+#, c-format
+msgid "Could not determine content type of file '%s' to launch it"
+msgstr "Tak bisa menentukan tipe isi dari berkas '%s' untuk meluncurkannya"
+
+#: ../src/base/fm-file-launcher.c:292
+#, c-format
+msgid "No default application is set to launch URIs %s://"
+msgstr "Tak ada aplikasi baku yang ditata untuk meluncurkan URI %s://"
+
+#: ../src/base/fm-file-launcher.c:360
+#, c-format
+msgid "Cannot set working directory to '%s': %s"
+msgstr "Tak bisa menata direktori kerja ke '%s': %s"
+
+#: ../src/base/fm-file-launcher.c:454 ../src/base/fm-templates.c:1104
+#, c-format
+msgid "No default application is set for MIME type %s"
+msgstr "Tak ada aplikasi baku yang diatur bagi tipe MIME %s"
+
+#: ../src/base/fm-path.c:179 ../src/gtk/fm-places-model.c:848
+#: ../src/gtk/fm-places-model.c:1016
+msgid "Devices"
+msgstr "Perangkat"
+
+#: ../src/base/fm-path.c:185 ../src/gtk/fm-places-model.c:866
+#: ../src/gtk/fm-places-model.c:1031
+msgid "Network"
+msgstr "Jaringan"
+
+#: ../src/base/fm-path.c:1316 ../src/gtk/fm-places-model.c:898
+msgid "Trash Can"
+msgstr "Tong Sampah"
+
+#: ../src/base/fm-mime-type.c:89
+msgid "shortcut to URI"
+msgstr "pintasan ke URI"
+
+#: ../src/base/fm-templates.c:1043
+msgid "fm_template_create_file: invalid argument"
+msgstr "fm_template_create_file: argumen tak valid"
+
+#: ../src/base/fm-terminal.c:256
+msgid "No terminal emulator is set in libfm config"
+msgstr "Tak ada emulator terminal yang diatur dalam konfig libfm"
+
+#: ../src/base/fm-thumbnailer.c:285
+msgid "Invalid description of thumbnailer application"
+msgstr "Deskripsi tak valid dari aplikasi pembuat gambar mini"
+
+#: ../src/base/fm-utils.c:137
+msgid "kB"
+msgstr "kB"
+
+#: ../src/base/fm-utils.c:154
+msgid "TB"
+msgstr "TB"
+
+#: ../src/base/fm-utils.c:165
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] "%u byte"
+
+#: ../src/base/fm-utils.c:174
+msgid "KiB"
+msgstr "KiB"
+
+#: ../src/base/fm-utils.c:180
+msgid "MiB"
+msgstr "MiB"
+
+#: ../src/base/fm-utils.c:186
+msgid "GiB"
+msgstr "GiB"
+
+#: ../src/base/fm-utils.c:191
+msgid "TiB"
+msgstr "TiB"
+
+#: ../src/base/fm-utils.c:573
+#, c-format
+msgid "The URI subpath '%s' contains invalid escaped characters"
+msgstr "Subpath URI '%s' memuat karakter ter-escape yang tak valid"
+
+#: ../src/extra/fm-xml-file.c:206
+#, c-format
+msgid "Duplicate handler for tag <%s>"
+msgstr "Penangan duplikat bagi tag <%s>"
+
+#: ../src/extra/fm-xml-file.c:300
+#, c-format
+msgid ""
+"Failed to parse '%-.*s', which should have been a digit inside a character "
+"reference (&#234; for example) - perhaps the digit is too large"
+msgstr ""
+"Gagal mengurai '%-.*s'. yang seharusnya sebuah digit dalam karakter acuan "
+"(misalnya &#234;) - mungkin digitnya terlalu besar"
+
+#: ../src/extra/fm-xml-file.c:311
+#, c-format
+msgid ""
+"Character reference did not end with a semicolon; most likely you used an "
+"ampersand character without intending to start an entity - escape ampersand "
+"as &amp;"
+msgstr ""
+"Acuan karakter tidak diakhiri dengan titik koma; mungkin Anda menggunakan "
+"karakter ampersand tanpa bermaksud menjadikannya sebagai entitas - silakan "
+"gunakan &amp; saja"
+
+#: ../src/extra/fm-xml-file.c:337
+#, c-format
+msgid "Character reference '%-.*s' does not encode a permitted character"
+msgstr "Acuan karakter '%-.*s' tidak mengenkodekan karakter yang diperbolehkan"
+
+#: ../src/extra/fm-xml-file.c:374
+#, c-format
+msgid ""
+"Empty entity '&;' seen; valid entities are: &amp; &quot; &lt; &gt; &apos;"
+msgstr ""
+"Terlihat entitas '&;' yang kosong; entitas yang valid adalah: &amp; &quot; "
+"&lt; &gt; &apos;"
+
+#: ../src/extra/fm-xml-file.c:381
+#, c-format
+msgid "Entity name '%-.*s' is not known"
+msgstr "Nama entitas '%-.*s' tak dikenal"
+
+#: ../src/extra/fm-xml-file.c:385
+#, c-format
+msgid ""
+"Entity did not end with a semicolon; most likely you used an ampersand "
+"character without intending to start an entity - escape ampersand as &amp;"
+msgstr ""
+"Entitas tidak diakhiri dengan titik koma; mungkin Anda menggunakan karakter "
+"ampersand tanpa bermaksud menjadikannya sebagai entitas - silakan pakai "
+"&amp; saja"
+
+#: ../src/extra/fm-xml-file.c:595
+msgid "Space isn't allowed in the close tag"
+msgstr "Spasi tak diijinkan dalam tag tutup"
+
+#: ../src/extra/fm-xml-file.c:604
+#, c-format
+msgid "Element '%s' was closed but no element was opened"
+msgstr "Elemen '%s' ditutup tapi tak ada elemen yang dibuka"
+
+#: ../src/extra/fm-xml-file.c:620
+#, c-format
+msgid "Element '%s' was closed but the currently open element is '%s'"
+msgstr "Elemen '%s' ditutup, tapi elemen yang sedang terbuka adalah '%s'"
+
+#: ../src/extra/fm-xml-file.c:676
+#, c-format
+msgid "Invalid char '%c' at start of attribute value"
+msgstr "Karakter tak valid '%c' di awal nilai atribut"
+
+#: ../src/extra/fm-xml-file.c:687
+#, c-format
+msgid "Invalid char '%c' at end of attribute value, expected '%c'"
+msgstr "Karakter tak valid '%c' di akhir nilai atribut, yang diharapkan '%c'"
+
+#: ../src/extra/fm-xml-file.c:835
+msgid "Document ended unexpectedly"
+msgstr "Dokumen berakhir tak disangka-sangka"
+
+#: ../src/extra/fm-xml-file.c:843
+msgid "Document was empty or contained only whitespace"
+msgstr "Dokumen kosong atau berisi whitespace saja"
+
+#: ../src/extra/fm-xml-file.c:1259
+msgid "fm_xml_file_to_data: XML data error"
+msgstr "fm_xml_file_to_data: kesalahan data XML"
+
+#: ../src/gtk/fm-app-chooser-combo-box.c:217
+msgid "Customize"
+msgstr "Sesuaikan"
+
+#: ../src/gtk/fm-app-chooser-dlg.c:325
+#, c-format
+msgid "<b>Select an application to open \"%s\" files</b>"
+msgstr "<b>Pilih aplikasi untuk membuka berkas \"%s\"</b>"
+
+#: ../src/gtk/fm-app-menu-view.c:207
+msgid "Installed Applications"
+msgstr "Aplikasi Terpasang"
+
+#: ../src/gtk/fm-dir-tree-model.c:421 ../src/gtk/fm-dir-tree-model.c:1213
+msgid "<No subfolders>"
+msgstr "<Tak ada sub folder>"
+
+#: ../src/gtk/fm-dir-tree-model.c:423 ../src/gtk/fm-dir-tree-model.c:1214
+msgid "Loading..."
+msgstr "Memuat..."
+
+#: ../src/gtk/fm-dir-tree-view.c:546 ../src/gtk/fm-side-pane.c:647
+msgid "Shows tree of directories in sidebar"
+msgstr "Tunjukkan pohon direktori di bilah sisi"
+
+#: ../src/gtk/fm-dnd-dest.c:412
+msgid "_Cancel"
+msgstr "_Batal"
+
+#: ../src/gtk/fm-dnd-dest.c:413
+msgid "C_opy Here"
+msgstr "S_alin Di Sini"
+
+#: ../src/gtk/fm-dnd-dest.c:414
+msgid "_Move Here"
+msgstr "_Pindah Ke Sini"
+
+#. Note to translators: Link in not noun but verb here
+#: ../src/gtk/fm-dnd-dest.c:416
+msgid "_Link Here"
+msgstr "_Tautkan Ke Sini"
+
+#: ../src/gtk/fm-dnd-dest.c:876
+msgid "XDirectSave failed."
+msgstr "XDirectSave gagal."
+
+#: ../src/gtk/fm-file-menu.c:151
+msgid "_Open"
+msgstr "_Buka"
+
+#: ../src/gtk/fm-file-menu.c:152
+msgid "Open _With..."
+msgstr "Buka _Dengan..."
+
+#: ../src/gtk/fm-file-menu.c:153
+msgid "Open _With"
+msgstr "Buka _Dengan"
+
+#: ../src/gtk/fm-file-menu.c:158
+msgid "Copy Pa_th(s)"
+msgstr "Salin Pa_th"
+
+#: ../src/gtk/fm-file-menu.c:159
+msgid "H_ide"
+msgstr "Sembuny_ikan"
+
+#: ../src/gtk/fm-file-menu.c:160
+msgid "Unh_ide"
+msgstr "Muncu_lkan"
+
+#: ../src/gtk/fm-file-menu.c:161
+msgid "_Add to Bookmarks"
+msgstr "T_ambah ke Penanda Taut"
+
+#: ../src/gtk/fm-file-menu.c:162
+msgid "_Rename..."
+msgstr "_Ubah Nama..."
+
+#: ../src/gtk/fm-file-menu.c:163
+msgid "Co_mpress..."
+msgstr "_Mampatkan..."
+
+#: ../src/gtk/fm-file-menu.c:164
+msgid "Extract _Here"
+msgstr "Ekstrak Di _Sini"
+
+#: ../src/gtk/fm-file-menu.c:165
+msgid "E_xtract To..."
+msgstr "E_kstrak Ke..."
+
+#: ../src/gtk/fm-file-menu.c:166 ../src/gtk/fm-folder-view.c:198
+msgid "Prop_erties"
+msgstr "Prop_erti"
+
+#. Note to translators: Trash in not noun but verb here
+#: ../src/gtk/fm-file-menu.c:272 ../src/gtk/fm-file-menu.c:533
+msgid "Move to _Trash"
+msgstr "Buang ke _Tong Sampah"
+
+#: ../src/gtk/fm-file-menu.c:794
+msgid "Your bookmarks already have a bookmark for this folder."
+msgstr "Tanda taut Anda telah ada untuk folder ini."
+
+#: ../src/gtk/fm-file-properties.c:368
+msgid "Image files"
+msgstr "Berkas gambar"
+
+#: ../src/gtk/fm-file-properties.c:494 ../src/gtk/fm-file-properties.c:503
+msgid "byte"
+msgid_plural "bytes"
+msgstr[0] "byte"
+
+#: ../src/gtk/fm-file-properties.c:510
+#, c-format
+msgid "scanning... %d"
+msgstr "memindai... %d"
+
+#: ../src/gtk/fm-file-properties.c:588
+msgid "Please enter a valid user name or numeric id."
+msgstr "Silakan masukkan suatu nama pengguna yang valid atau id numerik."
+
+#: ../src/gtk/fm-file-properties.c:618
+msgid "Please enter a valid group name or numeric id."
+msgstr "Silakan masukkan suatu nama grup yang valid atau id numerik."
+
+#. FIXME: may special bits and exec flags still be messed up?
+#: ../src/gtk/fm-file-properties.c:827
+msgid ""
+"Do you want to recursively apply these changes to all files and sub-folders?"
+msgstr ""
+"Apakah Anda ingin menerapkan perubahan ini secara rekursif pada semua berkas "
+"dan sub folder?"
+
+#: ../src/gtk/fm-file-properties.c:960
+msgid "Hide or unhide the file"
+msgstr "Sembunyikan atau munculkan berkas"
+
+#: ../src/gtk/fm-file-properties.c:965
+msgid "This file is hidden because its name starts with a dot ('.')."
+msgstr "Berkas tersebut tersembunyi karena namanya dimulai dengan titik ('.')."
+
+#: ../src/gtk/fm-file-properties.c:969
+msgid ""
+"Files on this system are hidden if their name starts with a dot ('.'). Hit "
+"<Ctrl+H> to toggle displaying hidden files."
+msgstr ""
+"Berkas pada sistem ini tersembunyi bila namanya diawali dengan titik ('.'). "
+"Tekan <Ctrl+H> untuk menjungkitkan penampilan berkas tersembunyi."
+
+#: ../src/gtk/fm-file-properties.c:1026
+msgid "scanning..."
+msgstr "memindai..."
+
+#: ../src/gtk/fm-file-properties.c:1088
+msgid "<b>_Access content:</b>"
+msgstr "<b>_Akses isi:</b>"
+
+#: ../src/gtk/fm-file-properties.c:1239
+msgid "Files of different types"
+msgstr "Berkas yang berbeda jenis"
+
+#: ../src/gtk/fm-file-properties.c:1283
+msgid "<b>File:</b>"
+msgstr "<b>Berkas:</b>"
+
+#: ../src/gtk/fm-file-properties.c:1349
+msgid "Multiple files"
+msgstr "Berkas berganda"
+
+#. columns visible to the users
+#: ../src/gtk/fm-folder-model.c:190
+msgid "Name"
+msgstr "Nama"
+
+#: ../src/gtk/fm-folder-model.c:191
+msgid "Description"
+msgstr "Keterangan"
+
+#: ../src/gtk/fm-folder-model.c:192
+msgid "Size"
+msgstr "Ukuran"
+
+#: ../src/gtk/fm-folder-model.c:193
+msgid "Permissions"
+msgstr "Hak akses"
+
+#: ../src/gtk/fm-folder-model.c:194
+msgid "Owner"
+msgstr "Pemilik"
+
+#: ../src/gtk/fm-folder-model.c:195
+msgid "Modified"
+msgstr "Diubah"
+
+#: ../src/gtk/fm-folder-model.c:196
+msgid "Location"
+msgstr "Lokasi"
+
+#: ../src/gtk/fm-folder-model.c:197
+msgid "Extension"
+msgstr "Ekstensi"
+
+#: ../src/gtk/fm-folder-view.c:178
+msgid "Create _New..."
+msgstr "Buat _Baru..."
+
+#: ../src/gtk/fm-folder-view.c:179
+msgid "Folder"
+msgstr "Folder"
+
+#: ../src/gtk/fm-folder-view.c:182
+msgid "Empty File"
+msgstr "Berkas Kosong"
+
+#: ../src/gtk/fm-folder-view.c:194
+msgid "_Invert Selection"
+msgstr "Bal_ik Pilihan"
+
+#: ../src/gtk/fm-folder-view.c:195
+msgid "_Sort Files"
+msgstr "_Urutkan Berkas"
+
+#: ../src/gtk/fm-folder-view.c:196
+msgid "_Rename Folder..."
+msgstr "Ubah Nama Folde_r..."
+
+#: ../src/gtk/fm-folder-view.c:197
+msgid "Folder Prop_erties"
+msgstr "Prop_erti Folder"
+
+#: ../src/gtk/fm-folder-view.c:205
+msgid "Show _Hidden"
+msgstr "Tampilkan Yang _Tersembunyi"
+
+#. Note to translators: "Mingle..." means "Do not put folders before files" but make the translation as short as possible, please!
+#: ../src/gtk/fm-folder-view.c:207
+msgid "Mingle _Files and Folders"
+msgstr "Campurkan Berkas dan _Folder"
+
+#: ../src/gtk/fm-folder-view.c:208
+msgid "_Ignore Name Case"
+msgstr "Aba_ikan Besar Kecil Huruf Nama Berkas"
+
+#: ../src/gtk/fm-folder-view.c:219
+msgid "By _Name"
+msgstr "Menurut _Nama"
+
+#: ../src/gtk/fm-folder-view.c:220
+msgid "By _Modification Time"
+msgstr "Menurut Waktu _Modifikasi"
+
+#: ../src/gtk/fm-folder-view.c:221
+msgid "By _Size"
+msgstr "Menurut _Ukuran"
+
+#: ../src/gtk/fm-folder-view.c:222
+msgid "By File _Type"
+msgstr "Menurut _Tipe Berkas"
+
+#: ../src/gtk/fm-folder-view.c:845
+msgid "Enter a name for the newly created folder:"
+msgstr "Masukkan nama untuk folder yang baru dibuat:"
+
+#: ../src/gtk/fm-folder-view.c:846
+msgid "Creating New Folder"
+msgstr "Membuat Folder Baru"
+
+#: ../src/gtk/fm-folder-view.c:859
+msgid "Enter a name for empty file:"
+msgstr "Masukkan suatu nama untuk berkas kosong:"
+
+#: ../src/gtk/fm-folder-view.c:860
+msgid "Creating ..."
+msgstr "Membuat..."
+
+#: ../src/gtk/fm-folder-view.c:866
+msgid "New"
+msgstr "Baru"
+
+#: ../src/gtk/fm-folder-view.c:876
+#, c-format
+msgid "Enter a name for the new %s:"
+msgstr "Masukkan suatu nama untuk %s yang baru:"
+
+#: ../src/gtk/fm-folder-view.c:879
+#, c-format
+msgid "Creating %s"
+msgstr "Membuat %s"
+
+#: ../src/gtk/fm-folder-view.c:883
+msgid "_Run default application on file after creation"
+msgstr "Jalankan aplikasi baku pada be_rkas setelah pembuatan"
+
+#: ../src/gtk/fm-gtk-file-launcher.c:144
+#, c-format
+msgid ""
+"This text file '%s' seems to be an executable script.\n"
+"What do you want to do with it?"
+msgstr ""
+"Berkas teks '%s' ini sepertinya sebuah skrip yang dapat dijalankan.\n"
+"Apa yang ingin Anda lakukan dengannya?"
+
+#: ../src/gtk/fm-gtk-file-launcher.c:151
+#, c-format
+msgid "This file '%s' is executable. Do you want to execute it?"
+msgstr "Berkas '%s' ini dapat dijalankan. Anda ingin mengeksekusinya?"
+
+#. show error if no paths are added
+#: ../src/gtk/fm-gtk-file-launcher.c:736
+msgid "No folders are specified."
+msgstr "Tak ada folder yang dinyatakan."
+
+#: ../src/gtk/fm-gtk-file-launcher.c:775 ../src/gtk/fm-gtk-utils.c:555
+msgid "Select Folder"
+msgstr "Pilih Folder"
+
+#. g_message("(!) %s", msg);
+#: ../src/gtk/fm-gtk-utils.c:71
+msgid "Error"
+msgstr "Galat"
+
+#: ../src/gtk/fm-gtk-utils.c:100 ../src/gtk/fm-gtk-utils.c:131
+msgid "Confirm"
+msgstr "Konfirmasi"
+
+#: ../src/gtk/fm-gtk-utils.c:185
+msgid "Question"
+msgstr "Pertanyaan"
+
+#: ../src/gtk/fm-gtk-utils.c:709
+msgid "Only system administrators have the permission to do this."
+msgstr "Hanya administrator sistem yang punya hak untuk melakukan ini."
+
+#: ../src/gtk/fm-gtk-utils.c:924
+#, c-format
+msgid "Do you want to move the file '%s' to trash can?"
+msgstr "Anda ingin memindah berkas '%s' ke tong sampah?"
+
+#: ../src/gtk/fm-gtk-utils.c:929
+#, c-format
+msgid "Do you want to move the %d selected file to trash can?"
+msgid_plural "Do you want to move the %d selected files to trash can?"
+msgstr[0] "Anda ingin memindah %d berkas yang dipilih ke tong sampah?"
+
+#: ../src/gtk/fm-gtk-utils.c:989
+#, c-format
+msgid "Do you want to delete the file '%s'?"
+msgstr "Anda ingin menghapus berkas '%s'?"
+
+#: ../src/gtk/fm-gtk-utils.c:994
+#, c-format
+msgid "Do you want to delete the %d selected file?"
+msgid_plural "Do you want to delete the %d selected files?"
+msgstr[0] "Anda ingin menghapus %d berkas yang dipilih?"
+
+#: ../src/gtk/fm-gtk-utils.c:1093
+msgid "Rename File"
+msgstr "Ganti Nama Berkas"
+
+#: ../src/gtk/fm-gtk-utils.c:1094
+msgid "Please enter a new name:"
+msgstr "Silakan masukkan sebuah nama baru:"
+
+#: ../src/gtk/fm-gtk-utils.c:1166
+msgid "Are you sure you want to empty the trash can?"
+msgstr "Anda yakin ingin mengosongkan tong sampah?"
+
+#: ../src/gtk/fm-path-entry.c:675
+msgid "Pa_ste and Go"
+msgstr "Tem_pel dan Pergi"
+
+#: ../src/gtk/fm-path-entry.c:734
+msgid "Folder location bar"
+msgstr "Bilah lokasi folder"
+
+#: ../src/gtk/fm-places-model.c:781 ../src/gtk/fm-places-model.c:995
+msgid "Home Folder"
+msgstr "Folder Rumah"
+
+#: ../src/gtk/fm-places-model.c:797 ../src/gtk/fm-places-model.c:1003
+msgid "Desktop"
+msgstr "Desktop"
+
+#: ../src/gtk/fm-places-model.c:815 ../src/gtk/fm-places-model.c:1023
+#: ../src/modules/vfs-menu.c:1538
+msgid "Applications"
+msgstr "Aplikasi"
+
+#: ../src/gtk/fm-places-model.c:831 ../src/gtk/fm-places-model.c:1009
+msgid "Filesystem Root"
+msgstr "Root Sistem Berkas"
+
+#: ../src/gtk/fm-places-view.c:131
+msgid "_Mount Volume"
+msgstr "Kaitkan Volu_me"
+
+#: ../src/gtk/fm-places-view.c:132
+msgid "_Unmount Volume"
+msgstr "Lepas Kaitan Vol_ume"
+
+#: ../src/gtk/fm-places-view.c:133
+msgid "_Eject Removable Media"
+msgstr "Keluarkan M_edia Lepas Pasang"
+
+#: ../src/gtk/fm-places-view.c:134
+msgid "_Format Volume"
+msgstr "_Format Volume"
+
+#: ../src/gtk/fm-places-view.c:150
+msgid "_Rename Bookmark Item"
+msgstr "Ubah Nama Buti_r Penanda Taut"
+
+#: ../src/gtk/fm-places-view.c:151
+msgid "Re_move from Bookmarks"
+msgstr "Hapus _dari Penanda Taut"
+
+#: ../src/gtk/fm-places-view.c:152
+msgid "Move Bookmark _Up"
+msgstr "Pindah Penanda Ta_ut Naik"
+
+#: ../src/gtk/fm-places-view.c:153
+msgid "Move Bookmark _Down"
+msgstr "Pin_dah Penanda Taut Turun"
+
+#: ../src/gtk/fm-places-view.c:166 ../src/modules/gtk-menu-trash.c:87
+#: ../src/modules/gtk-menu-trash.c:114
+msgid "_Empty Trash Can"
+msgstr "_Kosongkan Tong Sampah"
+
+#: ../src/gtk/fm-places-view.c:533 ../src/gtk/fm-side-pane.c:645
+msgid "Shows list of common places, devices, and bookmarks in sidebar"
+msgstr ""
+"Tunjukkan daftar penanda taut, perangkat, dan lokasi umum di bilah sisi"
+
+#: ../src/gtk/fm-places-view.c:1124
+msgid "Rename Bookmark Item"
+msgstr "Ubah Nama Butir Penanda Tautan"
+
+#: ../src/gtk/fm-places-view.c:1125
+msgid "Enter a new name:"
+msgstr "Masukkan nama baru:"
+
+#: ../src/gtk/fm-progress-dlg.c:135
+msgid ": "
+msgstr ": "
+
+#: ../src/gtk/fm-progress-dlg.c:213 ../src/gtk/fm-progress-dlg.c:231
+#, c-format
+msgid ""
+"Type: %s\n"
+"Size: %s\n"
+"Modified: %s"
+msgstr ""
+"Jenis: %s\n"
+"Ukuran: %s\n"
+"Diubah: %s"
+
+#: ../src/gtk/fm-progress-dlg.c:219 ../src/gtk/fm-progress-dlg.c:244
+#, c-format
+msgid ""
+"Type: %s\n"
+"Modified: %s"
+msgstr ""
+"Jenis: %s\n"
+"Diubah: %s"
+
+#: ../src/gtk/fm-progress-dlg.c:343
+#, fuzzy
+msgid "<b>Errors occurred before file operation was stopped.</b>"
+msgstr "<b>Terjadi galat sebelum operasi berkas dihentikan.</b>"
+
+#: ../src/gtk/fm-progress-dlg.c:345
+msgid "Cancelled"
+msgstr "Dibatalkan"
+
+#: ../src/gtk/fm-progress-dlg.c:349
+msgid "<b>The file operation was completed with errors.</b>"
+msgstr "<b>Operasi berkas selesai dengan galat.</b>"
+
+#: ../src/gtk/fm-progress-dlg.c:351
+msgid "Finished"
+msgstr "Selesai"
+
+#: ../src/gtk/fm-progress-dlg.c:373
+msgid ""
+"Some files cannot be moved to trash can because the underlying file systems "
+"don't support this operation.\n"
+"Do you want to delete them instead?"
+msgstr ""
+"Beberapa berkas tak bisa dipindah ke tong sampah karena sistem berkas "
+"dibawahnya tak mendukung operasi ini.\n"
+"Apakah Anda mau menghapus saja berkasnya? "
+
+#: ../src/gtk/fm-progress-dlg.c:414 ../src/gtk/fm-progress-dlg.c:563
+msgid "_Pause"
+msgstr "_Jeda"
+
+#: ../src/gtk/fm-progress-dlg.c:422
+msgid "_Resume"
+msgstr "_Lanjutkan"
+
+#: ../src/gtk/fm-progress-dlg.c:597
+msgid ", "
+msgstr ", "
+
+#. translators: it is part of "Moving files:" or "Moving xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:617
+msgid "Moving"
+msgstr "Memindah"
+
+#. translators: it is part of "Copying files:" or "Copying xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:621
+msgid "Copying"
+msgstr "Menyalin"
+
+#. translators: it is part of "Trashing files:" or "Trashing xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:625
+msgid "Trashing"
+msgstr "Membuang"
+
+#. translators: it is part of "Deleting files:" or "Deleting xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:629
+msgid "Deleting"
+msgstr "Menghapus"
+
+#. translators: it is part of "Creating link /path/xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:633
+msgid "Creating link"
+msgstr "Membuat tautan"
+
+#. translators: 'In:' string is followed by destination folder path
+#: ../src/gtk/fm-progress-dlg.c:635
+msgid "<b>In:</b>"
+msgstr "<b>Dalam:</b> "
+
+#: ../src/gtk/fm-progress-dlg.c:636
+msgid "Creating links to files"
+msgstr "Membuat tautan ke berkas"
+
+#. translators: it is part of "Changing attributes of xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:643
+msgid "Changing attributes of"
+msgstr "Mengubah atribut"
+
+#: ../src/gtk/fm-progress-dlg.c:644
+msgid "Changing attributes of files"
+msgstr "Mengubah atribut berkas"
+
+#. translators: it is part of "Restoring files:" or "Restoring xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:650
+msgid "Restoring"
+msgstr "Memulihkan"
+
+#. note to translators: resulting string is such as "Deleting files"
+#: ../src/gtk/fm-progress-dlg.c:660
+#, c-format
+msgid "%s files"
+msgstr "%s berkas"
+
+#: ../src/gtk/fm-progress-dlg.c:663
+msgid "<b>File operation is in progress...</b>"
+msgstr "<b>Operasi berkas tengah berlangsung...</b>"
+
+#. note to translators: resulting string is such as "Deleting file"
+#: ../src/gtk/fm-progress-dlg.c:669
+#, c-format
+msgid "<b>%s file:</b>"
+msgstr "<b>%s berkas:</b>"
+
+#. note to translators: resulting string is such as "Deleting files"
+#: ../src/gtk/fm-progress-dlg.c:672
+#, c-format
+msgid "<b>%s files:</b>"
+msgstr "<b>%s berkas:</b>"
+
+#: ../src/gtk/fm-side-pane.c:66
+msgid "_Off"
+msgstr "_Mati"
+
+#: ../src/gtk/fm-side-pane.c:67
+msgid "_Places"
+msgstr "_Tempat"
+
+#: ../src/gtk/fm-side-pane.c:68
+msgid "_Directory Tree"
+msgstr "Pohon _Direktori"
+
+#: ../src/gtk/fm-side-pane.c:69
+msgid "_Remote"
+msgstr "Ja_rak Jauh"
+
+#: ../src/gtk/fm-side-pane.c:428 ../src/gtk/fm-side-pane.c:621
+msgid "Places"
+msgstr "Lokasi"
+
+#: ../src/gtk/fm-side-pane.c:438 ../src/gtk/fm-side-pane.c:623
+msgid "Directory Tree"
+msgstr "Pohon Direktori"
+
+#: ../src/gtk/fm-standard-view.c:255
+msgid "View of folder contents"
+msgstr "Tilikan dari isi folder"
+
+#: ../src/gtk/fm-standard-view.c:818
+#, c-format
+msgid "_Hide %s"
+msgstr "Sem_bunyikan %s"
+
+#: ../src/gtk/fm-standard-view.c:826
+msgid "_Move Left"
+msgstr "Pindah Ke K_iri"
+
+#: ../src/gtk/fm-standard-view.c:832
+msgid "Move _Right"
+msgstr "Pindah Ke K_anan"
+
+#: ../src/gtk/fm-standard-view.c:855
+#, c-format
+msgid "Show %s"
+msgstr "Tampilkan %s"
+
+#: ../src/gtk/fm-standard-view.c:867
+msgid "_Forget Width"
+msgstr "_Lupakan Lebar"
+
+#: ../src/gtk/fm-standard-view.c:1859
+msgid "_Icon View"
+msgstr "Tilikan _Ikon"
+
+#: ../src/gtk/fm-standard-view.c:1860
+msgid "_Compact View"
+msgstr "Tilikan _Kompak"
+
+#: ../src/gtk/fm-standard-view.c:1861
+msgid "_Thumbnail View"
+msgstr "_Tilikan Gambar Mini"
+
+#: ../src/gtk/fm-standard-view.c:1862
+msgid "Detailed _List View"
+msgstr "Ti_likan Daftar Terrinci"
+
+#: ../src/gtk/fm-tab-label.c:159
+msgid "Changes active tab"
+msgstr "Mengubah tab aktif"
+
+#: ../src/job/fm-dir-list-job.c:238 ../src/job/fm-dir-list-job.c:251
+#: ../src/job/fm-dir-list-job.c:363
+#, c-format
+msgid "The specified directory '%s' is not valid"
+msgstr "Direktori '%s' yang dinyatakan tak valid"
+
+#: ../src/job/fm-file-ops-job.c:529 ../src/job/fm-file-ops-job.c:604
+msgid "Cannot access destination file"
+msgstr "Tak bisa mengakses berkas tujuan"
+
+#: ../src/job/fm-file-ops-job.c:650
+msgid "Cannot create a link on non-native filesystem"
+msgstr "Tak bisa membuat taut pada sistem berkas bukan native"
+
+#: ../src/job/fm-file-ops-job-delete.c:501
+#, c-format
+msgid "Cannot untrash file '%s': original path not known"
+msgstr ""
+"Tak bisa mengembalikan berkas '%s' yang dibuang ke tong sampah: path asli "
+"tak diketahui"
+
+#: ../src/job/fm-file-ops-job-xfer.c:58
+msgid "Destination does not exist"
+msgstr ""
+
+#: ../src/job/fm-file-ops-job-xfer.c:63
+msgid "Source and destination are the same."
+msgstr "Sumber dan tujuan sama."
+
+#: ../src/job/fm-file-ops-job-xfer.c:70
+msgid "Cannot move a folder into its sub folder"
+msgstr "Tak bisa memindah folder ke dalam sub foldernya"
+
+#: ../src/job/fm-file-ops-job-xfer.c:72
+msgid "Cannot copy a folder into its sub folder"
+msgstr "Tak bisa menyalin folder ke dalam sub foldernya"
+
+#: ../src/job/fm-file-ops-job-xfer.c:74
+msgid "Destination is a sub folder of source"
+msgstr "Tujuan adalah sub folder dari sumber"
+
+#: ../src/job/fm-file-ops-job-xfer.c:391
+#, c-format
+msgid "Cannot copy file '%s': not supported"
+msgstr "Tak bisa menyalin berkas '%s': tak didukung"
+
+#: ../src/job/fm-file-ops-job-change-attr.c:314
+#, c-format
+msgid "Setting display name can be done only for single file"
+msgstr "Penataan nama tampilan hanya dapat dilakukan bagi berkas tunggal"
+
+#: ../src/job/fm-file-ops-job-change-attr.c:317
+#, c-format
+msgid "Setting target can be done only for single file"
+msgstr "Penataan target hanya dapat dilakukan bagi berkas tunggal"
+
+#: ../src/modules/vfs-menu.c:299
+#, c-format
+msgid "XML file '%s' error (%d:%d): "
+msgstr "Kesalahan berkas XML '%s' (%d:%d): "
+
+#: ../src/modules/vfs-menu.c:309
+msgid "XML file doesn't contain Applications root"
+msgstr "Berkas XML tak memuat Akar aplikasi"
+
+#: ../src/modules/vfs-menu.c:384 ../src/modules/vfs-menu.c:464
+#: ../src/modules/vfs-menu.c:568 ../src/modules/vfs-menu.c:682
+#, c-format
+msgid "Cannot create XML definition for '%s'"
+msgstr "Tak bisa membuat definisi XML bagi '%s'"
+
+#: ../src/modules/vfs-menu.c:449 ../src/modules/vfs-menu.c:2634
+#, c-format
+msgid "Menu path '%s' already exists"
+msgstr "Path menu '%s' telah ada"
+
+#: ../src/modules/vfs-menu.c:1102 ../src/modules/vfs-menu.c:1407
+#: ../src/modules/vfs-menu.c:1493
+msgid "Menu cache error"
+msgstr "Galat singgahan menu"
+
+#: ../src/modules/vfs-menu.c:1367
+msgid "Invalid menu directory"
+msgstr "Direktori menu tak valid"
+
+#: ../src/modules/vfs-menu.c:1430 ../src/modules/vfs-menu.c:1706
+msgid "Menu item name cannot be empty"
+msgstr "Nama butir menu tak boleh kosong"
+
+#: ../src/modules/vfs-menu.c:1480
+#, c-format
+msgid "Invalid menu directory '%s'"
+msgstr "Direktori menu tak valid '%s'"
+
+#: ../src/modules/vfs-menu.c:1623 ../src/modules/vfs-menu.c:1764
+msgid "Invalid menu item"
+msgstr "Butir menu tak valid"
+
+#: ../src/modules/vfs-menu.c:1627 ../src/modules/vfs-menu.c:1768
+#, c-format
+msgid "The menu item '%s' doesn't have appropriate entry file"
+msgstr "Butir menu '%s' tak memiliki berkas entri yang sesuai"
+
+#: ../src/modules/vfs-menu.c:1790
+msgid "Change hidden status isn't supported for menu directory"
+msgstr "Mengubah status tersembunyi tak didukung bagi direktori menu"
+
+#: ../src/modules/vfs-menu.c:1948
+#, c-format
+msgid "Setting attribute '%s' not supported"
+msgstr "Penataan atribut '%s' tak didukung"
+
+#: ../src/modules/vfs-menu.c:1958
+#, c-format
+msgid "Invalid value for attribute '%s'"
+msgstr "Nilai tak valid bagi atribut '%s'"
+
+#: ../src/modules/vfs-menu.c:1995
+#, c-format
+msgid "The '%s' is a menu directory"
+msgstr "'%s' adalah direktori menu"
+
+#: ../src/modules/vfs-menu.c:1998 ../src/modules/vfs-menu.c:2627
+#, c-format
+msgid "The '%s' isn't a menu item"
+msgstr "'%s' bukan suatu butir menu"
+
+#: ../src/modules/vfs-menu.c:2022
+#, c-format
+msgid "The '%s' entry file is broken"
+msgstr "Berkas entri '%s' rusak"
+
+#: ../src/modules/vfs-menu.c:2308 ../src/modules/vfs-menu.c:2397
+#, c-format
+msgid "Cannot create menu item '%s'"
+msgstr "Tak bisa membuat butir menu '%s'"
+
+#: ../src/modules/vfs-menu.c:2542
+msgid "Name of menu directory should not end with \".desktop\""
+msgstr "Nama direktori menu tak boleh berakhir dengan \".desktop\""
+
+#: ../src/modules/vfs-menu.c:2587
+msgid "Invalid operation with menu root"
+msgstr "Operasi tak valid dengan akar menu"
+
+#: ../src/modules/vfs-menu.c:2676
+msgid "Invalid destination"
+msgstr "Tujuan tak valid"
+
+#: ../src/modules/vfs-menu.c:2952
+#, c-format
+msgid "FmMenuVFileMonitor: folder '%s' not found in menu cache"
+msgstr "FmMenuVFileMonitor: folder '%s' tak ditemukan di singgahan menu"
+
+#. FIXME: need name to be converted to UTF-8?
+#: ../src/modules/vfs-search.c:991
+msgid "Search"
+msgstr "Cari"
+
+#: ../src/modules/vfs-search.c:1053
+msgid "Search Results"
+msgstr "Hasil Pencarian"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:66
+msgid "Choose Executable File"
+msgstr "Pilih Berkas Executable"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:72
+msgid "Executable files"
+msgstr "Berkas yang dapat dijalankan"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:267
+msgid "<b>Co_mmand:</b>"
+msgstr "<b>Peri_ntah:</b> "
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:288
+msgid "Command to execute when the application icon is activated"
+msgstr "Perintah yang dijalankan ketika ikon aplikasi diaktifkan"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:322
+msgid "<b>D_escription:</b>"
+msgstr "<b>D_eskripsi:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:332
+msgid "Generic name of the application"
+msgstr "Nama generik dari aplikasi"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:340
+msgid "<b>_Working directory:</b>"
+msgstr "<b>Direktori _kerja:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:351
+msgid "The working directory to run the program in"
+msgstr "Direktori kerja tempat menjalankan program"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:359
+msgid "<b>_Tooltip:</b>"
+msgstr "<b>_Tooltip:</b> "
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:369
+msgid "Tooltip to show on application"
+msgstr "Tooltip yang ditunjukkan pada aplikasi"
+
+#. TODO: handle "TryExec" field ?
+#. row 7: "StartupNotify" GtkCheckButton
+#: ../src/modules/gtk-fileprop-x-desktop.c:375
+msgid "_Use startup notification"
+msgstr "G_unakan pemberitahuan awal mula"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:388
+msgid "_Desktop Entry"
+msgstr "Entri _Desktop"
+
+#: ../src/modules/gtk-menu-trash.c:74
+msgid "_Restore"
+msgstr "_Pulihkan"
+
+#: ../src/modules/gtk-menu-trash.c:75
+msgid "Restore trashed files to original paths"
+msgstr "Kembalikan berkas yang dibuang ke tong sampah ke path aslinya"
+
+#: ../src/tools/lxshortcut.c:42
+msgid "source file name or desktop id"
+msgstr "nama berkas sumber atau id desktop"
+
+#: ../src/tools/lxshortcut.c:42
+msgid "SOURCE"
+msgstr "SUMBER"
+
+#: ../src/tools/lxshortcut.c:43
+msgid "result file name"
+msgstr "nama berkas hasil"
+
+#: ../src/tools/lxshortcut.c:43
+msgid "RESULT"
+msgstr "HASIL"
+
+#. Translator: The word "blank" is used as an adjective, e.g. we are decsribing discs that are already blank
+#: ../src/udisks/g-udisks-device.c:41
+msgid "CD-ROM Disc"
+msgstr "Cakram CD-ROM"
+
+#: ../src/udisks/g-udisks-device.c:41
+msgid "Blank CD-ROM Disc"
+msgstr "Cakram CD-ROM Kosong"
+
+#: ../src/udisks/g-udisks-device.c:42
+msgid "CD-R Disc"
+msgstr "Cakram CD-R"
+
+#: ../src/udisks/g-udisks-device.c:42
+msgid "Blank CD-R Disc"
+msgstr "Cakram CD-R Kosong"
+
+#: ../src/udisks/g-udisks-device.c:43
+msgid "CD-RW Disc"
+msgstr "Cakram CD-RW"
+
+#: ../src/udisks/g-udisks-device.c:43
+msgid "Blank CD-RW Disc"
+msgstr "Cakram CD-RW Kosong"
+
+#: ../src/udisks/g-udisks-device.c:44 ../src/udisks/g-udisks-device.c:45
+msgid "DVD-ROM Disc"
+msgstr "Cakram DVD-ROM"
+
+#: ../src/udisks/g-udisks-device.c:44 ../src/udisks/g-udisks-device.c:45
+msgid "Blank DVD-ROM Disc"
+msgstr "Cakram DVD-ROM Kosong"
+
+#: ../src/udisks/g-udisks-device.c:46
+msgid "DVD-RW Disc"
+msgstr "Cakram DVD-RW"
+
+#: ../src/udisks/g-udisks-device.c:46
+msgid "Blank DVD-RW Disc"
+msgstr "Cakram DVD-RW Kosong"
+
+#: ../src/udisks/g-udisks-device.c:47
+msgid "DVD-RAM Disc"
+msgstr "Cakram DVD-RAM"
+
+#: ../src/udisks/g-udisks-device.c:47
+msgid "Blank DVD-RAM Disc"
+msgstr "Cakram DVD-RAM Kosong"
+
+#: ../src/udisks/g-udisks-device.c:48
+msgid "DVD+R Disc"
+msgstr "Cakram DVD+R"
+
+#: ../src/udisks/g-udisks-device.c:48
+msgid "Blank DVD+R Disc"
+msgstr "Cakram DVD+R Kosong"
+
+#: ../src/udisks/g-udisks-device.c:49
+msgid "DVD+RW Disc"
+msgstr "Cakram DVD+RW"
+
+#: ../src/udisks/g-udisks-device.c:49
+msgid "Blank DVD+RW Disc"
+msgstr "Cakram DVD+RW Kosong"
+
+#: ../src/udisks/g-udisks-device.c:50
+msgid "DVD+R DL Disc"
+msgstr "Cakram DVD+R DL "
+
+#: ../src/udisks/g-udisks-device.c:50
+msgid "Blank DVD+R DL Disc"
+msgstr "Cakram DVD+R DL Kosong"
+
+#: ../src/udisks/g-udisks-device.c:51
+msgid "DVD+RW DL Disc"
+msgstr "Cakram DVD+RW DL "
+
+#: ../src/udisks/g-udisks-device.c:51
+msgid "Blank DVD+RW DL Disc"
+msgstr "Cakram DVD+RW DL Kosong"
+
+#: ../src/udisks/g-udisks-device.c:52
+msgid "Blu-Ray Disc"
+msgstr "Cakram Blu-Ray"
+
+#: ../src/udisks/g-udisks-device.c:52
+msgid "Blank Blu-Ray Disc"
+msgstr "Cakram Blu-Ray Kosong"
+
+#: ../src/udisks/g-udisks-device.c:53
+msgid "Blu-Ray R Disc"
+msgstr "Cakram Blu-Ray R"
+
+#: ../src/udisks/g-udisks-device.c:53
+msgid "Blank Blu-Ray R Disc"
+msgstr "Cakram Blu-Ray R Kosong"
+
+#: ../src/udisks/g-udisks-device.c:54
+msgid "Blu-Ray RW Disc"
+msgstr "Cakram Blu-Ray RW"
+
+#: ../src/udisks/g-udisks-device.c:54
+msgid "Blank Blu-Ray RW Disc"
+msgstr "Cakram Blu-Ray RW Kosong"
+
+#: ../src/udisks/g-udisks-device.c:55
+msgid "HD DVD Disc"
+msgstr "Cakram HD DVD"
+
+#: ../src/udisks/g-udisks-device.c:55
+msgid "Blank HD DVD Disc"
+msgstr "Cakram HD DVD Kosong"
+
+#: ../src/udisks/g-udisks-device.c:56
+msgid "HD DVD-R Disc"
+msgstr "Cakram HD DVD-R"
+
+#: ../src/udisks/g-udisks-device.c:56
+msgid "Blank HD DVD-R Disc"
+msgstr "Cakram HD DVD-R Kosong"
+
+#: ../src/udisks/g-udisks-device.c:57
+msgid "HD DVD-RW Disc"
+msgstr "Cakram HD DVD-RW"
+
+#: ../src/udisks/g-udisks-device.c:57
+msgid "Blank HD DVD-RW Disc"
+msgstr "Cakram HD DVD-RW Kosong"
+
+#: ../src/udisks/g-udisks-device.c:58
+msgid "MO Disc"
+msgstr "Cakram MO"
+
+#: ../src/udisks/g-udisks-device.c:58
+msgid "Blank MO Disc"
+msgstr "Cakram MO Kosong"
+
+#: ../src/udisks/g-udisks-device.c:59
+msgid "MRW Disc"
+msgstr "Cakram MRW"
+
+#: ../src/udisks/g-udisks-device.c:59
+msgid "Blank MRW Disc"
+msgstr "Cakram MRW Kosong"
+
+#: ../src/udisks/g-udisks-device.c:60
+msgid "MRW/W Disc"
+msgstr "Cakram MRW/W"
+
+#: ../src/udisks/g-udisks-device.c:60
+msgid "Blank MRW/W Disc"
+msgstr "Cakram MRW/W Kosong"
+
+#: ../src/udisks/g-udisks-device.c:299
+msgid "Blank Optical Disc"
+msgstr "Cakram Optik Kosong"
+
+#: ../src/udisks/g-udisks-device.c:301
+msgid "Optical Disc"
+msgstr "Cakram Optik"
+
+#~ msgid "Symlinking"
+#~ msgstr "Membuat symlink"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "Sticky"
+#~ msgstr "Lengket"
+
+#~ msgid "Set UID"
+#~ msgstr "Set UID"
+
+#~ msgid "Only owner"
+#~ msgstr "Hanya pemilik"
+
+#~ msgid "<b>Processing:</b>"
+#~ msgstr "<b>Memroses:</b>"
+
+#~ msgid "<b>Progress:</b>"
+#~ msgstr "<b>Kemajuan:</b>"
+
+#~ msgid "<b>Some errors occurred:</b>"
+#~ msgstr "<b>Terjadi beberapa galat:</b>"
+
+#~ msgid "Re_move from Bookmark"
+#~ msgstr "Hapus _dari Penanda Taut"
+
+#~ msgid "The file operation is cancelled and there are some errors."
+#~ msgstr "Operasi berkas dibatalkan dan ada beberapa galat."
+
+#~ msgid "The file operation is finished, but there are some errors."
+#~ msgstr "Operasi berkas selesai, tapi ada beberapa galat."
+
+#~ msgid "Moving Files"
+#~ msgstr "Memindahkan Berkas"
+
+#~ msgid "Copying Files"
+#~ msgstr "Menyalin Berkas"
+
+#~ msgid "Trashing Files"
+#~ msgstr "Membuang Berkas Ke Tong Sampah"
+
+#~ msgid "Deleting Files"
+#~ msgstr "Menghapus Berkas"
+
+#~ msgid "Creating Symlinks"
+#~ msgstr "Membuat Symlink"
+
+#~ msgid "Changing File Attributes"
+#~ msgstr "Mengubah Atribut Berkas"
+
+#~ msgid "_Rename Folder"
+#~ msgstr "Ganti Nama Folde_r"
+
+#~ msgid "<b>File type to be opened:</b>"
+#~ msgstr "<b>Tipe berkas yang akan dibuka:</b>"
+
+#~ msgid "_Installed Application"
+#~ msgstr "Apl_ikasi Terpasang"
+
+#~ msgid "_Set selected application as default action of this file type"
+#~ msgstr ""
+#~ "Tata aplika_si yang dipilih sebagai aksi bawaan dari jenis berkas ini"
+
+#~ msgid "_Browse"
+#~ msgstr "Ram_ban"
+
+#~ msgid "My Computer"
+#~ msgstr "Komputerku"
+
+#~ msgid "_Only for this folder"
+#~ msgstr "Hanya bagi f_older ini"
+
+#~ msgid "Check to remember sort as folder setting rather than global one"
+#~ msgstr ""
+#~ "Contreng untuk mengingat pengurutan sebagai pengaturan folder bukan untuk "
+#~ "global"
+
+#~ msgid "Please select a folder"
+#~ msgstr "Silakan pilih sebuah folder"
+
+#, fuzzy
+#~ msgid "Entry for folder path"
+#~ msgstr "Hanya bagi f_older ini"
+
+#, fuzzy
+#~ msgid "Computer"
+#~ msgstr "Komputerku"
+
+#, fuzzy
+#~ msgid "Network Drives"
+#~ msgstr "Jaringan"
+
+#, fuzzy
+#~ msgid "_Run in terminal emulator"
+#~ msgstr "Jalankan di _emulator terminal"
+
+#~ msgid "Shortcuts"
+#~ msgstr "Pintas"
+
+#~ msgid "Mount Point"
+#~ msgstr "Titik Kait"
+
+#~ msgid "Create _Symlink"
+#~ msgstr "Buat _Symlink"
+
+#~ msgid "Se_nd To"
+#~ msgstr "Kiri_m Ke"
+
+#~ msgid "Blank File"
+#~ msgstr "Berkas Kosong"
+
+#~ msgid "Error, lxshortcut not installed"
+#~ msgstr "Galat, lxshortcut tak dipasang"
+
+#~ msgid "Failed to start lxshortcut"
+#~ msgstr "Gagal memulai lxshortcut"

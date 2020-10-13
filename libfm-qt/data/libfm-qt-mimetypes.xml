@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Additional mime-types provided by libfm, adding some
+    missing but frequently seen globs for some common mime-types.
+-->
+<mime-info xmlns='http://www.freedesktop.org/standards/shared-mime-info'>
+
+  <mime-type type="text/plain">
+    <glob pattern="*.ini"/>
+    <glob pattern="*.inf"/>
+  </mime-type>
+
+  <mime-type type="application/x-ms-dos-executable">
+    <glob pattern="*.com" />
+  </mime-type>
+
+  <mime-type type="application/x-ms-win-installer">
+    <comment>Windows installer</comment>
+    <comment xml:lang="zh_TW">Windows 安裝程式</comment>
+    <glob pattern="*.msi" />
+  </mime-type>
+
+  <mime-type type="application/x-vbscript">
+    <comment>MS VBScript</comment>
+    <glob pattern="*.vbs" />
+  </mime-type>
+
+  <mime-type type="text/x-csharp">
+    <comment xml:lang="en">C# source</comment>
+    <comment xml:lang="zh_TW">C# 程式碼</comment>
+    <glob pattern="*.cs"/>
+  </mime-type>
+
+  <mime-type type="application/x-desktop">
+    <comment xml:lang="zh_TW">應用程式捷徑</comment>
+  </mime-type>
+
+  <mime-type type="application/x-sharedlib">
+    <!--
+        This pattern matching is not very accurate ,but the probability that
+        a file is named like this and it's not a shared lib, is very low.
+     -->
+    <glob pattern="*.dll"/> <!-- Windows dll are shared libs, too -->
+    <glob pattern="*.so.[0-9]" />
+    <glob pattern="*.so.[0-9].*" />
+  </mime-type>
+
+  <mime-type type="application/x-desktop">
+    <glob pattern="*.directory"/>
+  </mime-type>
+
+</mime-info>

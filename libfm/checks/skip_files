@@ -1,0 +1,8 @@
+base/fm-marshal.c
+base/fm-marshal.h
+gtk/fm-gtk-marshal.c
+gtk/fm-gtk-marshal.h
+gtk-compat.h
+gtk-compat.c
+glib-compat.h
+glib-compat.c

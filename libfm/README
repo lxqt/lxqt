@@ -1,0 +1,36 @@
+Notes for compilation:
+1. This library requires:
+   - Libtool.
+   - Intltool 0.40.0 or newer.
+   - GLib 2.22.0 or newer.
+   - GTK+ 2.18.0 or newer.
+   - Libmenu-cache 0.3.2 or newer.
+
+2. Optional dependencies:
+   - Gtk-doc-tools 1.14 or newer.
+   - Dbus-Glib-1.
+   - Libexif.
+
+
+Notes for runtime environment:
+1. The file alteration monitor is done via GFileMonitor built into glib.
+   It relies on inotify on Linux, kqueue on FreeBSD, and FAM or gamin
+   on others. On Linux, no additional dependency is needed. However,
+   for systems like NetBSD, you may need a working FAM daemon.
+
+2. To get remote filesystem support, trash:///, and computer:/// support,
+   libfm needs gvfs. Please install gvfs and its related backends
+   if you need these features.
+
+3. Volume management is done with glib, which relies on gvfs.
+   If you don't want to use gvfs, try the --enable-udisks configure option.
+   Libfm has a built-in volume management implementation done with udisks.
+   However, it's still experimental and may be unstable.
+   Use gvfs whenever possible.
+
+4. If you're using Linux, mounting volumes without root privileges is
+   supported by gvfs and udisks, given you have correct policy-kit
+   configurations. If you have problems mounting/unmounting devices,
+   check your policykit configurations. Either your permission settings
+   are wrong, or there is no policykit agent running. There must be 
+   something wrong and it's not a bug of libfm/pcmanfm.

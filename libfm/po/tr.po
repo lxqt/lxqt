@@ -1,0 +1,1920 @@
+# Turkish translation of libfm.
+# Copyright (C) 2010 PCmanFM & Mehmet Gülmenen.
+# This file is distributed under the same license as the libfm package.
+# Mehmet Gülmen <memetgulmen@gmail.com>, 2010
+msgid ""
+msgstr ""
+"Project-Id-Version: LibFM 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-13 00:10+0300\n"
+"PO-Revision-Date: 2018-12-13 17:14+0000\n"
+"Last-Translator: nyucel <necdetyucel@gmail.com>\n"
+"Language-Team: tr <tr@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1544721259.662684\n"
+
+#: ../data/libfm-pref-apps.desktop.in.h:1 ../data/ui/preferred-apps.glade.h:1
+msgid "Preferred Applications"
+msgstr "Tercih Edilen Uygulamalar"
+
+#: ../data/libfm-pref-apps.desktop.in.h:2
+msgid "Select applications called on click on Web link or e-mail address"
+msgstr ""
+"Web bağlantısı veya e-posta adresine tıklanıldığında çağrılacak uygulamaları "
+"seçin"
+
+#: ../data/lxshortcut.desktop.in.h:1
+msgid "Shortcut Editor"
+msgstr "Kısayol Düzenleyici"
+
+#: ../data/lxshortcut.desktop.in.h:2
+msgid "Create new or change existing desktop entry"
+msgstr "Yeni bir masaüstü girdisi oluştur veya mevcutu değiştir"
+
+#: ../data/ui/app-chooser.glade.h:1
+msgid "Choose Application"
+msgstr "Uygulamayı Seç"
+
+#: ../data/ui/app-chooser.glade.h:2
+msgid "Use selected application to open files"
+msgstr "Dosyaları seçilen uygulamayla aç"
+
+#: ../data/ui/app-chooser.glade.h:3
+msgid "_Installed Applications"
+msgstr "_Kurulu Uygulama"
+
+#: ../data/ui/app-chooser.glade.h:4
+msgid "<b>C_ommand line to execute:</b>"
+msgstr "<b>Ç_alıştırılacak komut satırı:</b>"
+
+#: ../data/ui/app-chooser.glade.h:5
+#: ../src/modules/gtk-fileprop-x-desktop.c:275
+msgid "_Browse..."
+msgstr "_Gözat..."
+
+#. row 1: "Terminal" GtkCheckButton
+#: ../data/ui/app-chooser.glade.h:6
+#: ../src/modules/gtk-fileprop-x-desktop.c:294
+msgid "_Execute in terminal emulator"
+msgstr "_Uçbirimde çalıştır"
+
+#. row 2: "X-KeepTerminal" GtkCheckButton
+#: ../data/ui/app-chooser.glade.h:7
+#: ../src/modules/gtk-fileprop-x-desktop.c:306
+msgid "_Keep terminal window open after command execution"
+msgstr "_Komut çalıştırmanın ardından terminal penceresini açık tut"
+
+#: ../data/ui/app-chooser.glade.h:9
+#, no-c-format
+msgid ""
+"<b>These special codes can be used in the command line:</b>\n"
+"  <b>%f</b>: Represents a single file name\n"
+"  <b>%F</b>: Represents multiple file names\n"
+"  <b>%u</b>: Represents a single URI of the file\n"
+"  <b>%U</b>: Represents multiple URIs"
+msgstr ""
+"<b>Komut satırında şu özel kodlar kullanılabilir:</b>\n"
+"  <b>%f</b>: Tek dosya adını temsil eder\n"
+"  <b>%F</b>: Birden fazla dosya adını temsil eder\n"
+"    <b>%u</b>: Tek bir dosya URI'sini temsil eder\n"
+"  <b>%U</b>: Birden fazla dosya URI'sini temsil eder"
+
+#: ../data/ui/app-chooser.glade.h:14
+msgid "<b>_Application name (optional, set it to keep association)</b>"
+msgstr "<b>Uygulama _adı (isteğe bağlı)</b>"
+
+#: ../data/ui/app-chooser.glade.h:15
+msgid "Execute custom command line to open files"
+msgstr "Dosyaları açmak için özel bir komut çalıştır"
+
+#: ../data/ui/app-chooser.glade.h:16
+msgid "C_ustom Command Line"
+msgstr "_Özel Komut Satırı"
+
+#: ../data/ui/app-chooser.glade.h:17
+msgid "_Set selected application as default action for this file type"
+msgstr "_Seçili uygulamayı bu dosya türü için varsayılan olarak ayarla"
+
+#: ../data/ui/ask-rename.glade.h:1
+msgid "Confirm File Replacing"
+msgstr "Dosyayı Değiştirmeyi Onayla"
+
+#: ../data/ui/ask-rename.glade.h:2
+msgid "_Skip"
+msgstr "_Atla"
+
+#: ../data/ui/ask-rename.glade.h:3
+msgid "_Rename"
+msgstr "_Yeniden Adlandır"
+
+#: ../data/ui/ask-rename.glade.h:4
+msgid "_Overwrite"
+msgstr "Ü_zerine Yaz"
+
+#: ../data/ui/ask-rename.glade.h:5
+msgid ""
+"<b>There is already a file with the same name in this location.</b>\n"
+"\n"
+"Do you want to replace the existing file"
+msgstr ""
+"<b>Bu konumda aynı isimde başka bir dosya bulunuyor.</b>\n"
+"\n"
+"Varolan dosyayı değiştirmek istiyor musunuz"
+
+# Doesn't this line need some explanation?
+#: ../data/ui/ask-rename.glade.h:8
+msgid "with the following file?"
+msgstr "şu dosyayla?"
+
+#: ../data/ui/ask-rename.glade.h:9
+msgid "_File name:"
+msgstr "_Dosya adı:"
+
+#: ../data/ui/ask-rename.glade.h:10
+msgid "_Apply this option to all existing files"
+msgstr "Bu seçeneği bütün dosyalar için _uygula"
+
+#: ../data/ui/choose-icon.ui.h:1
+msgid "Choose An Icon..."
+msgstr "Bir Simge Seç..."
+
+#. genitive case is here: Choose icon from: ...
+#: ../data/ui/choose-icon.ui.h:3
+msgid "system icon theme"
+msgstr "sistem simge teması"
+
+#. genitive case is here: Choose icon from: ...
+#: ../data/ui/choose-icon.ui.h:5
+msgid "image files"
+msgstr "resim dosyaları"
+
+#: ../data/ui/choose-icon.ui.h:6
+msgid "<b>Choose icon from:</b>"
+msgstr "<b>Şuradan bir simge seç:</b>"
+
+#: ../data/ui/exec-file.glade.h:1
+msgid "Execute File"
+msgstr "Dosyayı Çalıştır"
+
+#: ../data/ui/exec-file.glade.h:2
+msgid "Execute in _Terminal"
+msgstr "Uçbirimde _Çalıştır"
+
+#: ../data/ui/file-prop.glade.h:1
+msgid "File Properties"
+msgstr "Dosya Özellikleri"
+
+#: ../data/ui/file-prop.glade.h:2
+msgid "Icon of the file in folder view"
+msgstr "Dizin görünümünde dosyanın simgesi"
+
+#: ../data/ui/file-prop.glade.h:3
+msgid "<b>_Name:</b>"
+msgstr "<b>_İsim:</b>"
+
+#: ../data/ui/file-prop.glade.h:4
+msgid "<b>Location:</b>"
+msgstr "<b>Konumu:</b>"
+
+#: ../data/ui/file-prop.glade.h:5
+msgid "<b>Target file:</b>"
+msgstr "<b>Hedef dosya:</b>"
+
+#: ../data/ui/file-prop.glade.h:6
+msgid "<b>File type:</b>"
+msgstr "<b>Dosya türü:</b>"
+
+#: ../data/ui/file-prop.glade.h:7
+msgid "<b>Open _with:</b>"
+msgstr "<b>Ş_ununla Aç:</b>"
+
+#: ../data/ui/file-prop.glade.h:8
+msgid "Select the application used to open files of this type "
+msgstr "Bu dosya türünü açmak için uygulama seç "
+
+#: ../data/ui/file-prop.glade.h:9
+msgid "<b>Total count of files:</b>"
+msgstr "<b>Toplam dosya sayısı:</b>"
+
+#: ../data/ui/file-prop.glade.h:10
+msgid "<b>Total size of files:</b>"
+msgstr "<b>Dosyaların toplam boyutu:</b>"
+
+#: ../data/ui/file-prop.glade.h:11
+msgid "<b>Size on disk:</b>"
+msgstr "<b>Diskteki boyutu:</b>"
+
+#: ../data/ui/file-prop.glade.h:12
+msgid "<b>Last modification:</b>"
+msgstr "<b>Son değişiklik:</b>"
+
+#: ../data/ui/file-prop.glade.h:13
+msgid "<b>Last access:</b>"
+msgstr "<b>Son erişim:</b>"
+
+#: ../data/ui/file-prop.glade.h:14
+msgid "<b>Last permissions change:</b>"
+msgstr "<b>Son izin değişikliği:</b>"
+
+#: ../data/ui/file-prop.glade.h:15
+msgid "_General"
+msgstr "_Genel"
+
+#: ../data/ui/file-prop.glade.h:16
+msgid "<b>O_wner:</b>"
+msgstr "<b>_Sahibi:</b>"
+
+#: ../data/ui/file-prop.glade.h:17
+msgid "<b>G_roup:</b>"
+msgstr "<b>Gr_ubu:</b>"
+
+#: ../data/ui/file-prop.glade.h:18
+msgid "<b>_View content:</b>"
+msgstr "<b>İçe_riği göster:</b>"
+
+#: ../data/ui/file-prop.glade.h:19
+msgid "<b>C_hange content:</b>"
+msgstr "<b>İçeriği _değiştir:</b>"
+
+#: ../data/ui/file-prop.glade.h:20
+msgid "<b>_Execute:</b>"
+msgstr "<b>_Çalıştır:</b>"
+
+#: ../data/ui/file-prop.glade.h:21
+msgid "<b>Special bits:</b>"
+msgstr "<b>Özel bitler:</b>"
+
+#: ../data/ui/file-prop.glade.h:22
+msgid "Who can read content of the file/directory"
+msgstr "Dosyanın/dizinin içeriğini kimler okuyabilir"
+
+#: ../data/ui/file-prop.glade.h:23
+msgid "Who can change content of the file/directory"
+msgstr "Dosyanın/dizinin içeriğini kimler değiştirebilir"
+
+#: ../data/ui/file-prop.glade.h:24
+msgid "Who can execute the file or enter the directory"
+msgstr "Dosyayı kimler çalıştırabilir veya dizine kimler girebilir"
+
+#: ../data/ui/file-prop.glade.h:25
+msgid "Special flags for file execution"
+msgstr "Dosya çalıştırma için özel bayraklar"
+
+#: ../data/ui/file-prop.glade.h:26
+msgid "Special flags for directory access"
+msgstr "Dizin erişimi için özel bayraklar"
+
+#: ../data/ui/file-prop.glade.h:27
+msgid "<b>Access Control</b>"
+msgstr "<b>Erişim Kontrolü</b>"
+
+#: ../data/ui/file-prop.glade.h:28
+msgid "Hidden file"
+msgstr "Gizli dosya"
+
+#: ../data/ui/file-prop.glade.h:29
+msgid "_Permissions"
+msgstr "İ_zinler"
+
+#: ../data/ui/file-prop.glade.h:30
+msgid "---"
+msgstr "---"
+
+#: ../data/ui/file-prop.glade.h:31
+msgid "None"
+msgstr "Hiçbiri"
+
+#: ../data/ui/file-prop.glade.h:32
+msgctxt ""
+"It is a directory access bit - 'sticky' - where only owner can delete a file "
+"from it"
+msgid "Sticky"
+msgstr "Sticky"
+
+#: ../data/ui/file-prop.glade.h:33
+msgid "Set GID"
+msgstr "Set GID"
+
+#: ../data/ui/file-prop.glade.h:34
+msgid "Sticky & set GID"
+msgstr "Sticky & set GID"
+
+#: ../data/ui/file-prop.glade.h:35
+msgctxt "this is a file access mode bit, also known as 'suid'"
+msgid "Set UID"
+msgstr "Set UID"
+
+#: ../data/ui/file-prop.glade.h:36
+msgid "Set UID & GID"
+msgstr "Set UID & GID"
+
+#: ../data/ui/file-prop.glade.h:37
+msgctxt ""
+"this is a file access mode - only owner can access the file, for others "
+"access is denied"
+msgid "Only owner"
+msgstr "Sadece sahibi"
+
+#: ../data/ui/file-prop.glade.h:38
+msgid "Only owner and group"
+msgstr "Sadece sahibi ve grubu"
+
+#: ../data/ui/file-prop.glade.h:39
+msgid "Anyone"
+msgstr "Herkes"
+
+#: ../data/ui/file-prop.glade.h:40
+msgid "Nobody"
+msgstr "Hiçkimse"
+
+#: ../data/ui/filesearch.glade.h:1
+msgid "Bytes"
+msgstr "Bytes"
+
+#: ../data/ui/filesearch.glade.h:2
+msgid "KB"
+msgstr "KB"
+
+#: ../data/ui/filesearch.glade.h:3 ../src/base/fm-utils.c:143
+msgid "MB"
+msgstr "MB"
+
+#: ../data/ui/filesearch.glade.h:4 ../src/base/fm-utils.c:149
+msgid "GB"
+msgstr "GB"
+
+#: ../data/ui/filesearch.glade.h:5
+msgid "Choose Date"
+msgstr "Bir Tarih Seçin"
+
+#: ../data/ui/filesearch.glade.h:6
+msgid "Choose a date from the following calendar"
+msgstr "Aşağıdaki takvimden bir tarih seçin"
+
+#: ../data/ui/filesearch.glade.h:7
+msgid "Search Files"
+msgstr "Dosyaları Ara"
+
+#: ../data/ui/filesearch.glade.h:8
+msgid "<b>File _Name Patterns:</b>"
+msgstr "<b>Dosya Adı _Kalıpları:</b>"
+
+#: ../data/ui/filesearch.glade.h:9
+msgid ""
+"Pattern may be either POSIX shell pattern list (with ',' as separator) or "
+"POSIX regular expression."
+msgstr ""
+"Desen bir POSIX kabuk desen listesi (ayraç olarak ',') veya POSIX düzenli "
+"ifadesi olabilir."
+
+#: ../data/ui/filesearch.glade.h:10
+msgid "Case insensiti_ve"
+msgstr "Büyük _küçük harfe duyarlı"
+
+#: ../data/ui/filesearch.glade.h:11
+msgid "_Use regular expression"
+msgstr "Düzenli _ifade kullan"
+
+#: ../data/ui/filesearch.glade.h:12
+msgid "<b>Plac_es to Search:</b>"
+msgstr "<b>Ara_ma Alanları:</b>"
+
+#: ../data/ui/filesearch.glade.h:13
+msgid "_Search in sub directories"
+msgstr "_Alt dizinlerde ara"
+
+#: ../data/ui/filesearch.glade.h:14
+msgid "Search _hidden files"
+msgstr "_Gizli dosyaları ara"
+
+#: ../data/ui/filesearch.glade.h:15
+msgid "Name/_Location"
+msgstr "İsim/_Konum"
+
+#: ../data/ui/filesearch.glade.h:16
+msgid "<b>File Type</b>"
+msgstr "<b>Dosya Türü:</b>"
+
+#: ../data/ui/filesearch.glade.h:17
+msgid "Only search for files of following types:"
+msgstr "Sadece aşağıdaki dosya türleri için ara:"
+
+#: ../data/ui/filesearch.glade.h:18
+msgid "Te_xt files"
+msgstr "_Metin dosyaları"
+
+#: ../data/ui/filesearch.glade.h:19
+msgid "_Image files"
+msgstr "_Resim dosyaları"
+
+#: ../data/ui/filesearch.glade.h:20
+msgid "_Audio files"
+msgstr "_Ses dosyaları"
+
+#: ../data/ui/filesearch.glade.h:21
+msgid "_Video files"
+msgstr "_Video dosyaları"
+
+#: ../data/ui/filesearch.glade.h:22
+msgid "_Documents"
+msgstr "_Belgeler"
+
+#: ../data/ui/filesearch.glade.h:23
+msgid "Folde_rs"
+msgstr "Klasör_ler"
+
+#: ../data/ui/filesearch.glade.h:24
+msgid "Ot_her:"
+msgstr "_Diğer:"
+
+#: ../data/ui/filesearch.glade.h:25
+msgid ""
+"Any valid content type can be entered here. Wildcard '*' is allowed at end "
+"of the type. Multiple types should be separated with ';'."
+msgstr ""
+"Buraya geçerli herhangi bir tür girilebilir. Her türün sonunda '*' joker "
+"karakteri kullanılabilir. Birden fazla girdi ';' ile ayrılmalıdır."
+
+#: ../data/ui/filesearch.glade.h:26
+msgid "File _Type"
+msgstr "Dosya _Türü"
+
+#: ../data/ui/filesearch.glade.h:27
+msgid "<b>File Contain_s:</b>"
+msgstr "<b>Do_sya içeriği:</b>"
+
+#: ../data/ui/filesearch.glade.h:28
+msgid "C_ontent"
+msgstr "İç_erik"
+
+#: ../data/ui/filesearch.glade.h:29
+msgid "<b>File Size</b>"
+msgstr "<b>Dosya Boyutu</b>"
+
+#: ../data/ui/filesearch.glade.h:30
+msgid "_Smaller than:"
+msgstr "En _fazla:"
+
+#: ../data/ui/filesearch.glade.h:31
+msgid "_Bigger than:"
+msgstr "En _az:"
+
+#: ../data/ui/filesearch.glade.h:32
+msgid "<b>Last Modified Time</b>"
+msgstr "<b>Son Düzenlenme Zamanı:</b>"
+
+#: ../data/ui/filesearch.glade.h:33 ../src/gtk/fm-gtk-file-launcher.c:670
+#: ../src/gtk/fm-gtk-file-launcher.c:677
+msgid "(None)"
+msgstr "(Hiç)"
+
+#: ../data/ui/filesearch.glade.h:34
+msgid "_Earlier than:"
+msgstr "_En geç:"
+
+#: ../data/ui/filesearch.glade.h:35
+msgid "L_ater than:"
+msgstr "E_n erken:"
+
+#: ../data/ui/filesearch.glade.h:36
+msgid "_Properties"
+msgstr "_Özellikler"
+
+#: ../data/ui/preferred-apps.glade.h:2
+msgid "<b>Web Browser</b>"
+msgstr "<b>Web Tarayıcısı</b>"
+
+#: ../data/ui/preferred-apps.glade.h:3
+msgid "The preferred Web Browser will be used to open hyperlinks."
+msgstr "Tercih edilen Web Tarayıcısı bağlantılara açmak üzere kullanılacak."
+
+#: ../data/ui/preferred-apps.glade.h:4
+msgid "<b>Mail Client</b>"
+msgstr "<b>Posta İstemcisi</b>"
+
+#: ../data/ui/preferred-apps.glade.h:5
+msgid ""
+"The preferred Mail Client will be used to compose emails when you click on e-"
+"mail addresses."
+msgstr ""
+"Tercih edilen Posta İstemcisi E-posta adreslerine tıkladığınızda posta "
+"oluşturmak için kullanılacak."
+
+#: ../data/ui/preferred-apps.glade.h:6
+msgid "<b>Terminal Emulator</b>"
+msgstr "<b>Uçbirim Öykünücüsü</b>"
+
+#: ../data/ui/preferred-apps.glade.h:7
+msgid "Command line:"
+msgstr "Komut satırı:"
+
+#: ../data/ui/preferred-apps.glade.h:8
+msgid "System Applications"
+msgstr "Sistem Uygulamaları"
+
+#: ../data/ui/preferred-apps.glade.h:9
+msgid "File Associations"
+msgstr "İlişkilendirilmiş Dosya Türleri"
+
+# Not all languages belong to Indo-European language family.
+#. To: <Destination folder> ex. Copy file to..., Move file to...etc.
+#: ../data/ui/progress.glade.h:2
+msgid "<b>To:</b>"
+msgstr "<b>Şuraya:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/progress.glade.h:4
+msgid "Preparing..."
+msgstr "Hazırlanıyor..."
+
+#: ../data/ui/progress.glade.h:5
+msgid "<b>Data transferred:</b>"
+msgstr "<b>Taşınan veri:</b>"
+
+#: ../data/ui/progress.glade.h:6
+msgid "<b>Time remaining:</b>"
+msgstr "<b>Kalan Süre:</b>"
+
+#: ../data/ui/progress.glade.h:7
+msgid "<b>Errors occurred:</b>"
+msgstr "<b>Oluşan hatalar:</b>"
+
+#: ../src/base/fm-action.c:272
+msgid "Empty value"
+msgstr "Boş değer"
+
+#: ../src/base/fm-action.c:280
+msgid "Invalid selection"
+msgstr "Geçersiz seçim"
+
+#. ---- GFile implementation ----
+#: ../src/base/fm-action.c:807 ../src/job/fm-file-ops-job.c:271
+#: ../src/modules/vfs-menu.c:1176 ../src/modules/vfs-search.c:928
+msgid "Operation not supported"
+msgstr "İşlem desteklenmiyor"
+
+#: ../src/base/fm-file-launcher.c:87
+#, c-format
+msgid "Invalid desktop entry file: '%s'"
+msgstr "Geçersiz masaüstü girdi dosyası: '%s'"
+
+#: ../src/base/fm-file-launcher.c:253 ../src/base/fm-file-launcher.c:407
+#, c-format
+msgid "Could not determine content type of file '%s' to launch it"
+msgstr "Çalıştırmak üzere '%s' dosyası içerik türü tespit edilemedi"
+
+#: ../src/base/fm-file-launcher.c:292
+#, c-format
+msgid "No default application is set to launch URIs %s://"
+msgstr "%s:// URI'lerini çalıştırmak için öntanımlı bir uygulama ayarlanmamış"
+
+#: ../src/base/fm-file-launcher.c:360
+#, c-format
+msgid "Cannot set working directory to '%s': %s"
+msgstr "Çalışma dizini '%s' olarak ayarlanamıyor: %s"
+
+#: ../src/base/fm-file-launcher.c:454 ../src/base/fm-templates.c:1104
+#, c-format
+msgid "No default application is set for MIME type %s"
+msgstr "%s MIME türü için öntanımlı bir uygulama ayarlanmadı"
+
+#: ../src/base/fm-path.c:179 ../src/gtk/fm-places-model.c:848
+#: ../src/gtk/fm-places-model.c:1016
+msgid "Devices"
+msgstr "Aygıtlar"
+
+#: ../src/base/fm-path.c:185 ../src/gtk/fm-places-model.c:866
+#: ../src/gtk/fm-places-model.c:1031
+msgid "Network"
+msgstr "Ağ"
+
+#: ../src/base/fm-path.c:1316 ../src/gtk/fm-places-model.c:898
+msgid "Trash Can"
+msgstr "Çöp Kutusu"
+
+#: ../src/base/fm-mime-type.c:89
+msgid "shortcut to URI"
+msgstr "URI için kısayol"
+
+#: ../src/base/fm-templates.c:1043
+msgid "fm_template_create_file: invalid argument"
+msgstr "fm_template_create_file: geçersiz argüman"
+
+#: ../src/base/fm-terminal.c:256
+msgid "No terminal emulator is set in libfm config"
+msgstr "Libfm yapılandırmasında bir teminal öykünücüsü atanmamış"
+
+#: ../src/base/fm-thumbnailer.c:285
+msgid "Invalid description of thumbnailer application"
+msgstr "Küçük resim uygulamasının geçersiz açıklaması"
+
+#: ../src/base/fm-utils.c:137
+msgid "kB"
+msgstr "kB"
+
+#: ../src/base/fm-utils.c:154
+msgid "TB"
+msgstr "TB"
+
+#: ../src/base/fm-utils.c:165
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] "%u bayt"
+
+#: ../src/base/fm-utils.c:174
+msgid "KiB"
+msgstr "KiB"
+
+#: ../src/base/fm-utils.c:180
+msgid "MiB"
+msgstr "MiB"
+
+#: ../src/base/fm-utils.c:186
+msgid "GiB"
+msgstr "GiB"
+
+#: ../src/base/fm-utils.c:191
+msgid "TiB"
+msgstr "TiB"
+
+#: ../src/base/fm-utils.c:573
+#, c-format
+msgid "The URI subpath '%s' contains invalid escaped characters"
+msgstr "URI alt yolu '%s' geçersiz olarak çıkış yapılmış karakterler içeriyor"
+
+#: ../src/extra/fm-xml-file.c:206
+#, c-format
+msgid "Duplicate handler for tag <%s>"
+msgstr "<%s> etiketi için yinelenmiş çalıştırıcı"
+
+#: ../src/extra/fm-xml-file.c:300
+#, c-format
+msgid ""
+"Failed to parse '%-.*s', which should have been a digit inside a character "
+"reference (&#234; for example) - perhaps the digit is too large"
+msgstr ""
+"Karakter referansı içinde bir rakam olması gereken '%-.*s' ayrıştırılamadı "
+"(örneğin; &#234;) - rakam çok büyük olabilir"
+
+#: ../src/extra/fm-xml-file.c:311
+#, c-format
+msgid ""
+"Character reference did not end with a semicolon; most likely you used an "
+"ampersand character without intending to start an entity - escape ampersand "
+"as &amp;"
+msgstr ""
+"Karakter referansı noktalı virgül ile bitmemiş; büyük ihtimalle bir özvarlık "
+"başlatmak istemeksizin ve karakteri kullandınız - ve işaretini &amp; olarak "
+"kullanabilirsiniz"
+
+#: ../src/extra/fm-xml-file.c:337
+#, c-format
+msgid "Character reference '%-.*s' does not encode a permitted character"
+msgstr "Karakter referansı '%-.*s' izin verilen karakteri kodlamıyor"
+
+#: ../src/extra/fm-xml-file.c:374
+#, c-format
+msgid ""
+"Empty entity '&;' seen; valid entities are: &amp; &quot; &lt; &gt; &apos;"
+msgstr "Boş girdi '&;' görüldü; geçerli ögeler: &amp; &quot; &lt; &gt; &apos;"
+
+#: ../src/extra/fm-xml-file.c:381
+#, c-format
+msgid "Entity name '%-.*s' is not known"
+msgstr "Varlık adı '%-.*s' bilinmiyor"
+
+#: ../src/extra/fm-xml-file.c:385
+#, c-format
+msgid ""
+"Entity did not end with a semicolon; most likely you used an ampersand "
+"character without intending to start an entity - escape ampersand as &amp;"
+msgstr ""
+"Özvarlık noktalı virgül ile bitmiyor; büyük ihtimalle bir özvarlık başlatmak "
+"istemeksizin ve karakteri kullandınız - ve işaretini &amp; olarak "
+"kullanabilirsiniz"
+
+#: ../src/extra/fm-xml-file.c:595
+msgid "Space isn't allowed in the close tag"
+msgstr "Kapatma etiketinde boşluğa izin verilmiyor"
+
+#: ../src/extra/fm-xml-file.c:604
+#, c-format
+msgid "Element '%s' was closed but no element was opened"
+msgstr "'%s' öğesi kapatıldı ama açık öğe yoktu"
+
+#: ../src/extra/fm-xml-file.c:620
+#, c-format
+msgid "Element '%s' was closed but the currently open element is '%s'"
+msgstr "'%s' öğesi kapatılmış, fakat şu an açık öğe '%s'"
+
+#: ../src/extra/fm-xml-file.c:676
+#, c-format
+msgid "Invalid char '%c' at start of attribute value"
+msgstr "Değer niteliği başlangıcında geçersiz '%c' char değeri"
+
+#: ../src/extra/fm-xml-file.c:687
+#, c-format
+msgid "Invalid char '%c' at end of attribute value, expected '%c'"
+msgstr "Nitelik değerinin sonunda geçersiz char '%c' değeri, '%c' beklendi"
+
+#: ../src/extra/fm-xml-file.c:835
+msgid "Document ended unexpectedly"
+msgstr "Belge beklenmedik şekilde sonlandı"
+
+#: ../src/extra/fm-xml-file.c:843
+msgid "Document was empty or contained only whitespace"
+msgstr "Belge boş veya sadece boşluk karakteri içeriyor"
+
+#: ../src/extra/fm-xml-file.c:1259
+msgid "fm_xml_file_to_data: XML data error"
+msgstr "fm_xml_file_to_data: XML veri hatası"
+
+#: ../src/gtk/fm-app-chooser-combo-box.c:217
+msgid "Customize"
+msgstr "Özelleştir"
+
+#: ../src/gtk/fm-app-chooser-dlg.c:325
+#, c-format
+msgid "<b>Select an application to open \"%s\" files</b>"
+msgstr "<b>\"%s\" dosyalarını açmak için bir uygulama seç</b>"
+
+#: ../src/gtk/fm-app-menu-view.c:207
+msgid "Installed Applications"
+msgstr "Kurulu Uygulamalar"
+
+#: ../src/gtk/fm-dir-tree-model.c:421 ../src/gtk/fm-dir-tree-model.c:1213
+msgid "<No subfolders>"
+msgstr "<Alt dizin yok>"
+
+#: ../src/gtk/fm-dir-tree-model.c:423 ../src/gtk/fm-dir-tree-model.c:1214
+msgid "Loading..."
+msgstr "Yükleniyor..."
+
+#: ../src/gtk/fm-dir-tree-view.c:546 ../src/gtk/fm-side-pane.c:647
+msgid "Shows tree of directories in sidebar"
+msgstr "Dizin ağacını kenar çubuğunda göster"
+
+#: ../src/gtk/fm-dnd-dest.c:412
+msgid "_Cancel"
+msgstr "_İptal"
+
+#: ../src/gtk/fm-dnd-dest.c:413
+msgid "C_opy Here"
+msgstr "Buraya K_opyala"
+
+#: ../src/gtk/fm-dnd-dest.c:414
+msgid "_Move Here"
+msgstr "_Buraya Taşı"
+
+#. Note to translators: Link in not noun but verb here
+#: ../src/gtk/fm-dnd-dest.c:416
+msgid "_Link Here"
+msgstr "_Buraya Bağlantı Oluştur"
+
+#: ../src/gtk/fm-dnd-dest.c:876
+msgid "XDirectSave failed."
+msgstr "XDirectSave başarısız."
+
+#: ../src/gtk/fm-file-menu.c:151
+msgid "_Open"
+msgstr "_Aç"
+
+#: ../src/gtk/fm-file-menu.c:152
+msgid "Open _With..."
+msgstr "_Birlikte Aç..."
+
+#: ../src/gtk/fm-file-menu.c:153
+msgid "Open _With"
+msgstr "_Birlikte Aç..."
+
+#: ../src/gtk/fm-file-menu.c:158
+msgid "Copy Pa_th(s)"
+msgstr "Yolları Ko_pyala"
+
+#: ../src/gtk/fm-file-menu.c:159
+msgid "H_ide"
+msgstr "G_izle"
+
+#: ../src/gtk/fm-file-menu.c:160
+msgid "Unh_ide"
+msgstr "Gös_ter"
+
+#: ../src/gtk/fm-file-menu.c:161
+msgid "_Add to Bookmarks"
+msgstr "_Yer İmlerine Ekle"
+
+#: ../src/gtk/fm-file-menu.c:162
+msgid "_Rename..."
+msgstr "_Yeniden Adlandır"
+
+#: ../src/gtk/fm-file-menu.c:163
+msgid "Co_mpress..."
+msgstr "_Sıkıştır..."
+
+#: ../src/gtk/fm-file-menu.c:164
+msgid "Extract _Here"
+msgstr "Buraya _Çıkar"
+
+#: ../src/gtk/fm-file-menu.c:165
+msgid "E_xtract To..."
+msgstr "Çıkarılacak _Konum..."
+
+#: ../src/gtk/fm-file-menu.c:166 ../src/gtk/fm-folder-view.c:198
+msgid "Prop_erties"
+msgstr "_Özellikler"
+
+#. Note to translators: Trash in not noun but verb here
+#: ../src/gtk/fm-file-menu.c:272 ../src/gtk/fm-file-menu.c:533
+msgid "Move to _Trash"
+msgstr "Çöpe _Taşı"
+
+#: ../src/gtk/fm-file-menu.c:794
+msgid "Your bookmarks already have a bookmark for this folder."
+msgstr "Yer imleriniz zaten bu klasör için bir yer imine sahip."
+
+#: ../src/gtk/fm-file-properties.c:368
+msgid "Image files"
+msgstr "Resim dosyaları"
+
+#: ../src/gtk/fm-file-properties.c:494 ../src/gtk/fm-file-properties.c:503
+msgid "byte"
+msgid_plural "bytes"
+msgstr[0] "bayt"
+
+#: ../src/gtk/fm-file-properties.c:510
+#, c-format
+msgid "scanning... %d"
+msgstr "taranıyor... %d"
+
+#: ../src/gtk/fm-file-properties.c:588
+msgid "Please enter a valid user name or numeric id."
+msgstr "Lütfen geçerli bir kullanıcı adı ya da sayısal kimliği giriniz."
+
+#: ../src/gtk/fm-file-properties.c:618
+msgid "Please enter a valid group name or numeric id."
+msgstr "Lütfen geçerli bir grup adı ya da sayısal kimliği giriniz."
+
+#. FIXME: may special bits and exec flags still be messed up?
+#: ../src/gtk/fm-file-properties.c:827
+msgid ""
+"Do you want to recursively apply these changes to all files and sub-folders?"
+msgstr ""
+"Bu değişiklikleri bütüm dosyalara ve alt dizinlere uygulamak istiyor musunuz?"
+
+#: ../src/gtk/fm-file-properties.c:960
+msgid "Hide or unhide the file"
+msgstr "Dosyayı gizle veya göster"
+
+#: ../src/gtk/fm-file-properties.c:965
+msgid "This file is hidden because its name starts with a dot ('.')."
+msgstr "Bu dosya ismi bir nokta ('.') ile başladığından gizli."
+
+#: ../src/gtk/fm-file-properties.c:969
+msgid ""
+"Files on this system are hidden if their name starts with a dot ('.'). Hit "
+"<Ctrl+H> to toggle displaying hidden files."
+msgstr ""
+"Bu sistemdeki dosyalar, isimleri nokta ('.') ile başlarsa gizlidirler. Gizli "
+"dosyaların görünürlüğünü değiştirmek için <Ctrl+H> tuşlarına basın."
+
+#: ../src/gtk/fm-file-properties.c:1026
+msgid "scanning..."
+msgstr "taranıyor..."
+
+#: ../src/gtk/fm-file-properties.c:1088
+msgid "<b>_Access content:</b>"
+msgstr "<b>_Erişim içeriği:</b>"
+
+#: ../src/gtk/fm-file-properties.c:1239
+msgid "Files of different types"
+msgstr "Farklı türlerdeki dosyalar"
+
+#: ../src/gtk/fm-file-properties.c:1283
+msgid "<b>File:</b>"
+msgstr "<b>Dosya:</b>"
+
+#: ../src/gtk/fm-file-properties.c:1349
+msgid "Multiple files"
+msgstr "Birden çok dosya"
+
+#. columns visible to the users
+#: ../src/gtk/fm-folder-model.c:190
+msgid "Name"
+msgstr "İsim"
+
+#: ../src/gtk/fm-folder-model.c:191
+msgid "Description"
+msgstr "Tanım"
+
+#: ../src/gtk/fm-folder-model.c:192
+msgid "Size"
+msgstr "Boyut"
+
+#: ../src/gtk/fm-folder-model.c:193
+msgid "Permissions"
+msgstr "İzinler"
+
+#: ../src/gtk/fm-folder-model.c:194
+msgid "Owner"
+msgstr "Sahibi"
+
+#: ../src/gtk/fm-folder-model.c:195
+msgid "Modified"
+msgstr "Son Değişiklik"
+
+#: ../src/gtk/fm-folder-model.c:196
+msgid "Location"
+msgstr "Konum"
+
+#: ../src/gtk/fm-folder-model.c:197
+msgid "Extension"
+msgstr "Uzantı"
+
+#: ../src/gtk/fm-folder-view.c:178
+msgid "Create _New..."
+msgstr "Yeni _Oluştur..."
+
+#: ../src/gtk/fm-folder-view.c:179
+msgid "Folder"
+msgstr "Dizin"
+
+#: ../src/gtk/fm-folder-view.c:182
+msgid "Empty File"
+msgstr "Boş Dosya"
+
+#: ../src/gtk/fm-folder-view.c:194
+msgid "_Invert Selection"
+msgstr "_Seçimi Tersine Çevir"
+
+#: ../src/gtk/fm-folder-view.c:195
+msgid "_Sort Files"
+msgstr "_Dosyaları Sırala"
+
+#: ../src/gtk/fm-folder-view.c:196
+msgid "_Rename Folder..."
+msgstr "_Klasörü Yeniden Adlandır"
+
+#: ../src/gtk/fm-folder-view.c:197
+msgid "Folder Prop_erties"
+msgstr "Klasör _Özellikleri"
+
+#: ../src/gtk/fm-folder-view.c:205
+msgid "Show _Hidden"
+msgstr "Gizlileri _Göster"
+
+#. Note to translators: "Mingle..." means "Do not put folders before files" but make the translation as short as possible, please!
+#: ../src/gtk/fm-folder-view.c:207
+msgid "Mingle _Files and Folders"
+msgstr "Dos_ya ve Dizinleri Karıştır"
+
+#: ../src/gtk/fm-folder-view.c:208
+msgid "_Ignore Name Case"
+msgstr "_Büyük Küçük Harfi Önemseme"
+
+#: ../src/gtk/fm-folder-view.c:219
+msgid "By _Name"
+msgstr "_İsme göre"
+
+#: ../src/gtk/fm-folder-view.c:220
+msgid "By _Modification Time"
+msgstr "_Düzenlenme zamanına göre"
+
+#: ../src/gtk/fm-folder-view.c:221
+msgid "By _Size"
+msgstr "_Boyuta göre"
+
+#: ../src/gtk/fm-folder-view.c:222
+msgid "By File _Type"
+msgstr "Dosya _Türüne göre"
+
+#: ../src/gtk/fm-folder-view.c:845
+msgid "Enter a name for the newly created folder:"
+msgstr "Yeni oluşturulan dizin için bir isim girin:"
+
+#: ../src/gtk/fm-folder-view.c:846
+msgid "Creating New Folder"
+msgstr "Yeni Dizin Oluşturuluyor"
+
+#: ../src/gtk/fm-folder-view.c:859
+msgid "Enter a name for empty file:"
+msgstr "Dosya için bir isim girin:"
+
+#: ../src/gtk/fm-folder-view.c:860
+msgid "Creating ..."
+msgstr "Oluşturuluyor ..."
+
+#: ../src/gtk/fm-folder-view.c:866
+msgid "New"
+msgstr "Yeni"
+
+#: ../src/gtk/fm-folder-view.c:876
+#, c-format
+msgid "Enter a name for the new %s:"
+msgstr "Yeni %s için bir isim girin:"
+
+#: ../src/gtk/fm-folder-view.c:879
+#, c-format
+msgid "Creating %s"
+msgstr "%s oluşturuluyor"
+
+#: ../src/gtk/fm-folder-view.c:883
+msgid "_Run default application on file after creation"
+msgstr "_Oluşturma işleminden sonra dosyayı öntanımlı uygulama ile çalıştır"
+
+#: ../src/gtk/fm-gtk-file-launcher.c:144
+#, c-format
+msgid ""
+"This text file '%s' seems to be an executable script.\n"
+"What do you want to do with it?"
+msgstr ""
+"Bu metin dosyası '%s' çalıştırılabilir olarak görünüyor.\n"
+"Dosya ile ne yapmak istiyorsunuz?"
+
+#: ../src/gtk/fm-gtk-file-launcher.c:151
+#, c-format
+msgid "This file '%s' is executable. Do you want to execute it?"
+msgstr "'%s' çalıştırılabilir bir dosya. Çalıştırmak istiyor musunuz?"
+
+#. show error if no paths are added
+#: ../src/gtk/fm-gtk-file-launcher.c:736
+msgid "No folders are specified."
+msgstr "Dizin belirtilmedi."
+
+#: ../src/gtk/fm-gtk-file-launcher.c:775 ../src/gtk/fm-gtk-utils.c:555
+msgid "Select Folder"
+msgstr "Klasör Seçin"
+
+#. g_message("(!) %s", msg);
+#: ../src/gtk/fm-gtk-utils.c:71
+msgid "Error"
+msgstr "Hata"
+
+#: ../src/gtk/fm-gtk-utils.c:100 ../src/gtk/fm-gtk-utils.c:131
+msgid "Confirm"
+msgstr "Onayla"
+
+#: ../src/gtk/fm-gtk-utils.c:185
+msgid "Question"
+msgstr "Soru"
+
+#: ../src/gtk/fm-gtk-utils.c:709
+msgid "Only system administrators have the permission to do this."
+msgstr "Bunu sadece sistem yöneticisinin yapmaya yetkisi var."
+
+#: ../src/gtk/fm-gtk-utils.c:924
+#, c-format
+msgid "Do you want to move the file '%s' to trash can?"
+msgstr "'%s' dosyasını çöp kutusuna göndermek istiyor musunuz?"
+
+#: ../src/gtk/fm-gtk-utils.c:929
+#, c-format
+msgid "Do you want to move the %d selected file to trash can?"
+msgid_plural "Do you want to move the %d selected files to trash can?"
+msgstr[0] "Seçilen %d dosyayı çöp kutusuna göndermek istiyor musunuz?"
+
+#: ../src/gtk/fm-gtk-utils.c:989
+#, c-format
+msgid "Do you want to delete the file '%s'?"
+msgstr "Seçilen '%s' dosyasını silmek istiyor musunuz?"
+
+#: ../src/gtk/fm-gtk-utils.c:994
+#, c-format
+msgid "Do you want to delete the %d selected file?"
+msgid_plural "Do you want to delete the %d selected files?"
+msgstr[0] "Seçilen %d dosyayı silmek istiyor musunuz?"
+
+#: ../src/gtk/fm-gtk-utils.c:1093
+msgid "Rename File"
+msgstr "Dosyayı Yeniden Adlandır"
+
+#: ../src/gtk/fm-gtk-utils.c:1094
+msgid "Please enter a new name:"
+msgstr "Lütfen yeni bir isim girin:"
+
+#: ../src/gtk/fm-gtk-utils.c:1166
+msgid "Are you sure you want to empty the trash can?"
+msgstr "Çöp kutusunu gerçekten boşaltmak istiyor musunuz?"
+
+#: ../src/gtk/fm-path-entry.c:675
+msgid "Pa_ste and Go"
+msgstr "Ya_pıştır ve Git"
+
+#: ../src/gtk/fm-path-entry.c:734
+msgid "Folder location bar"
+msgstr "Dizin konum çubuğu"
+
+#: ../src/gtk/fm-places-model.c:781 ../src/gtk/fm-places-model.c:995
+msgid "Home Folder"
+msgstr "Ev Dizini"
+
+#: ../src/gtk/fm-places-model.c:797 ../src/gtk/fm-places-model.c:1003
+msgid "Desktop"
+msgstr "Masaüstü"
+
+#: ../src/gtk/fm-places-model.c:815 ../src/gtk/fm-places-model.c:1023
+#: ../src/modules/vfs-menu.c:1538
+msgid "Applications"
+msgstr "Uygulamalar"
+
+#: ../src/gtk/fm-places-model.c:831 ../src/gtk/fm-places-model.c:1009
+msgid "Filesystem Root"
+msgstr "Dosya Sistemi Kök Dizini"
+
+#: ../src/gtk/fm-places-view.c:131
+msgid "_Mount Volume"
+msgstr "Hac_mi Bağla"
+
+#: ../src/gtk/fm-places-view.c:132
+msgid "_Unmount Volume"
+msgstr "Hacmi _Ayır"
+
+#: ../src/gtk/fm-places-view.c:133
+msgid "_Eject Removable Media"
+msgstr "_Çıkarılabilir Aygıtı Çıkar"
+
+#: ../src/gtk/fm-places-view.c:134
+msgid "_Format Volume"
+msgstr "Birimi B_içimlendir"
+
+#: ../src/gtk/fm-places-view.c:150
+msgid "_Rename Bookmark Item"
+msgstr "Yer İmini Yeniden Adlandı_r"
+
+#: ../src/gtk/fm-places-view.c:151
+msgid "Re_move from Bookmarks"
+msgstr "Yer İ_mlerinden Kaldır"
+
+#: ../src/gtk/fm-places-view.c:152
+msgid "Move Bookmark _Up"
+msgstr "_Yer İmini Yukarı Taşı"
+
+#: ../src/gtk/fm-places-view.c:153
+msgid "Move Bookmark _Down"
+msgstr "Yer İmini _Aşağı Taşı"
+
+#: ../src/gtk/fm-places-view.c:166 ../src/modules/gtk-menu-trash.c:87
+#: ../src/modules/gtk-menu-trash.c:114
+msgid "_Empty Trash Can"
+msgstr "Çöp Kutusunu _Boşalt"
+
+#: ../src/gtk/fm-places-view.c:533 ../src/gtk/fm-side-pane.c:645
+msgid "Shows list of common places, devices, and bookmarks in sidebar"
+msgstr ""
+"Kenar çubuğunda ortak yerlerin, aygıtların ve yer imlerinin bir listesini "
+"gösterir"
+
+#: ../src/gtk/fm-places-view.c:1124
+msgid "Rename Bookmark Item"
+msgstr "Yer İmini Yeniden Adlandır"
+
+#: ../src/gtk/fm-places-view.c:1125
+msgid "Enter a new name:"
+msgstr "Yeni bir isim girin:"
+
+#: ../src/gtk/fm-progress-dlg.c:135
+msgid ": "
+msgstr ": "
+
+#: ../src/gtk/fm-progress-dlg.c:213 ../src/gtk/fm-progress-dlg.c:231
+#, c-format
+msgid ""
+"Type: %s\n"
+"Size: %s\n"
+"Modified: %s"
+msgstr ""
+"Türü: %s\n"
+"Boyutu: %s\n"
+"Son değişiklik: %s"
+
+#: ../src/gtk/fm-progress-dlg.c:219 ../src/gtk/fm-progress-dlg.c:244
+#, c-format
+msgid ""
+"Type: %s\n"
+"Modified: %s"
+msgstr ""
+"Türü: %s\n"
+"Son değişiklik: %s"
+
+#: ../src/gtk/fm-progress-dlg.c:343
+msgid "<b>Errors occurred before file operation was stopped.</b>"
+msgstr "<b>Dosya işlemi durmadan önce hatalar meydana geldi.</b>"
+
+#: ../src/gtk/fm-progress-dlg.c:345
+msgid "Cancelled"
+msgstr "İptal edildi"
+
+#: ../src/gtk/fm-progress-dlg.c:349
+msgid "<b>The file operation was completed with errors.</b>"
+msgstr "<b>Dosya işlemi bazı hatalar ile tamamlandı.</b>"
+
+#: ../src/gtk/fm-progress-dlg.c:351
+msgid "Finished"
+msgstr "Tamamlandı"
+
+#: ../src/gtk/fm-progress-dlg.c:373
+msgid ""
+"Some files cannot be moved to trash can because the underlying file systems "
+"don't support this operation.\n"
+"Do you want to delete them instead?"
+msgstr ""
+"Bazı dosyalar dosya sistemi bu eylemi desteklemediğinden dolayı çöp kutusuna "
+"gönderilemiyor.\n"
+"Bunun yerine kalıcı olarak silmek ister misiniz?"
+
+#: ../src/gtk/fm-progress-dlg.c:414 ../src/gtk/fm-progress-dlg.c:563
+msgid "_Pause"
+msgstr "_Duraklat"
+
+#: ../src/gtk/fm-progress-dlg.c:422
+msgid "_Resume"
+msgstr "_Devam et"
+
+#: ../src/gtk/fm-progress-dlg.c:597
+msgid ", "
+msgstr ", "
+
+#. translators: it is part of "Moving files:" or "Moving xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:617
+msgid "Moving"
+msgstr "Taşınıyor"
+
+#. translators: it is part of "Copying files:" or "Copying xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:621
+msgid "Copying"
+msgstr "Kopyalanıyor"
+
+#. translators: it is part of "Trashing files:" or "Trashing xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:625
+msgid "Trashing"
+msgstr "Çöpe taşınıyor"
+
+#. translators: it is part of "Deleting files:" or "Deleting xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:629
+msgid "Deleting"
+msgstr "Siliniyor"
+
+#. translators: it is part of "Creating link /path/xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:633
+msgid "Creating link"
+msgstr "Bağlantı oluşturuluyor"
+
+# Not all languages belong to Indo-European language family.
+#. translators: 'In:' string is followed by destination folder path
+#: ../src/gtk/fm-progress-dlg.c:635
+msgid "<b>In:</b>"
+msgstr "<b>Konum:</b>"
+
+#: ../src/gtk/fm-progress-dlg.c:636
+msgid "Creating links to files"
+msgstr "Dosyalara bağlantılar oluşturuluyor"
+
+#. translators: it is part of "Changing attributes of xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:643
+msgid "Changing attributes of"
+msgstr "Dosya öznitelikleri değiştiriliyor:"
+
+#: ../src/gtk/fm-progress-dlg.c:644
+msgid "Changing attributes of files"
+msgstr "Dosya öznitelikleri değiştiriliyor"
+
+#. translators: it is part of "Restoring files:" or "Restoring xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:650
+msgid "Restoring"
+msgstr "Geri yükleniyor"
+
+#. note to translators: resulting string is such as "Deleting files"
+#: ../src/gtk/fm-progress-dlg.c:660
+#, c-format
+msgid "%s files"
+msgstr "Dosyalar %s"
+
+#: ../src/gtk/fm-progress-dlg.c:663
+msgid "<b>File operation is in progress...</b>"
+msgstr "<b>Dosya işlemi sürüyor...</b>"
+
+#. note to translators: resulting string is such as "Deleting file"
+#: ../src/gtk/fm-progress-dlg.c:669
+#, c-format
+msgid "<b>%s file:</b>"
+msgstr "<b>Dosya %s:</b>"
+
+#. note to translators: resulting string is such as "Deleting files"
+#: ../src/gtk/fm-progress-dlg.c:672
+#, c-format
+msgid "<b>%s files:</b>"
+msgstr "<b>Dosyalar %s:</b>"
+
+#: ../src/gtk/fm-side-pane.c:66
+msgid "_Off"
+msgstr "_Kapalı"
+
+#: ../src/gtk/fm-side-pane.c:67
+msgid "_Places"
+msgstr "_Yerler"
+
+#: ../src/gtk/fm-side-pane.c:68
+msgid "_Directory Tree"
+msgstr "_Dizin Ağacı"
+
+#: ../src/gtk/fm-side-pane.c:69
+msgid "_Remote"
+msgstr "_Uzak"
+
+#: ../src/gtk/fm-side-pane.c:428 ../src/gtk/fm-side-pane.c:621
+msgid "Places"
+msgstr "Yerler"
+
+#: ../src/gtk/fm-side-pane.c:438 ../src/gtk/fm-side-pane.c:623
+msgid "Directory Tree"
+msgstr "Dizin Ağacı"
+
+#: ../src/gtk/fm-standard-view.c:255
+msgid "View of folder contents"
+msgstr "Klasör içeriklerinin görünümü"
+
+#: ../src/gtk/fm-standard-view.c:818
+#, c-format
+msgid "_Hide %s"
+msgstr "_Gizle %s"
+
+#: ../src/gtk/fm-standard-view.c:826
+msgid "_Move Left"
+msgstr "_Sola Taşı"
+
+#: ../src/gtk/fm-standard-view.c:832
+msgid "Move _Right"
+msgstr "Sağa _Taşı"
+
+#: ../src/gtk/fm-standard-view.c:855
+#, c-format
+msgid "Show %s"
+msgstr "%s Göster"
+
+#: ../src/gtk/fm-standard-view.c:867
+msgid "_Forget Width"
+msgstr "_Genişliği Unut"
+
+#: ../src/gtk/fm-standard-view.c:1859
+msgid "_Icon View"
+msgstr "_Simge Görünümü"
+
+#: ../src/gtk/fm-standard-view.c:1860
+msgid "_Compact View"
+msgstr "_Sıkı Görünüm"
+
+#: ../src/gtk/fm-standard-view.c:1861
+msgid "_Thumbnail View"
+msgstr "_Küçük Resim Görünümü"
+
+#: ../src/gtk/fm-standard-view.c:1862
+msgid "Detailed _List View"
+msgstr "Ayrıntılı _Liste Görünümü"
+
+#: ../src/gtk/fm-tab-label.c:159
+msgid "Changes active tab"
+msgstr "Etkin sekmeyi değiştirir"
+
+#: ../src/job/fm-dir-list-job.c:238 ../src/job/fm-dir-list-job.c:251
+#: ../src/job/fm-dir-list-job.c:363
+#, c-format
+msgid "The specified directory '%s' is not valid"
+msgstr "Belirtilen '%s' dizini geçersiz"
+
+#: ../src/job/fm-file-ops-job.c:529 ../src/job/fm-file-ops-job.c:604
+msgid "Cannot access destination file"
+msgstr "Hedef dosyaya erişilemiyor"
+
+#: ../src/job/fm-file-ops-job.c:650
+msgid "Cannot create a link on non-native filesystem"
+msgstr "Tam uyumlu olmayan dosya sisteminde bir bağlantı oluşturulamaz"
+
+#: ../src/job/fm-file-ops-job-delete.c:501
+#, c-format
+msgid "Cannot untrash file '%s': original path not known"
+msgstr "Çöpteki '%s' dosyası geri alınamadı: özgün yol bilinmiyor"
+
+#: ../src/job/fm-file-ops-job-xfer.c:58
+msgid "Destination does not exist"
+msgstr "Hedef mevcut değil"
+
+#: ../src/job/fm-file-ops-job-xfer.c:63
+msgid "Source and destination are the same."
+msgstr "Kaynak ve hedef dosyalar aynı."
+
+#: ../src/job/fm-file-ops-job-xfer.c:70
+msgid "Cannot move a folder into its sub folder"
+msgstr "Dizin kendi alt-dizinine taşınamaz"
+
+#: ../src/job/fm-file-ops-job-xfer.c:72
+msgid "Cannot copy a folder into its sub folder"
+msgstr "Dizin kendi alt-dizinine kopyalanamaz"
+
+#: ../src/job/fm-file-ops-job-xfer.c:74
+msgid "Destination is a sub folder of source"
+msgstr "Hedef, kaynağın bir alt klasörü"
+
+#: ../src/job/fm-file-ops-job-xfer.c:391
+#, c-format
+msgid "Cannot copy file '%s': not supported"
+msgstr "Dosya kopyalanamıyor '%s': desteklenmiyor"
+
+#: ../src/job/fm-file-ops-job-change-attr.c:314
+#, c-format
+msgid "Setting display name can be done only for single file"
+msgstr "Görüntü adı belirlemek sadece tek bir dosya için yapılabilir"
+
+#: ../src/job/fm-file-ops-job-change-attr.c:317
+#, c-format
+msgid "Setting target can be done only for single file"
+msgstr "Hedef belirlemek sadece tek bir dosya için yapılabilir"
+
+#: ../src/modules/vfs-menu.c:299
+#, c-format
+msgid "XML file '%s' error (%d:%d): "
+msgstr "XML dosyası '%s' hatası (%d:%d): "
+
+#: ../src/modules/vfs-menu.c:309
+msgid "XML file doesn't contain Applications root"
+msgstr "XML dosyası Applications kökü içermiyor"
+
+#: ../src/modules/vfs-menu.c:384 ../src/modules/vfs-menu.c:464
+#: ../src/modules/vfs-menu.c:568 ../src/modules/vfs-menu.c:682
+#, c-format
+msgid "Cannot create XML definition for '%s'"
+msgstr "'%s' için XML tanımlaması oluşturulamıyor"
+
+#: ../src/modules/vfs-menu.c:449 ../src/modules/vfs-menu.c:2634
+#, c-format
+msgid "Menu path '%s' already exists"
+msgstr "'%s' menü yolu zaten mevcut"
+
+#: ../src/modules/vfs-menu.c:1102 ../src/modules/vfs-menu.c:1407
+#: ../src/modules/vfs-menu.c:1493
+msgid "Menu cache error"
+msgstr "Menü önbellek hatası"
+
+#: ../src/modules/vfs-menu.c:1367
+msgid "Invalid menu directory"
+msgstr "Geçersiz menü dizini"
+
+#: ../src/modules/vfs-menu.c:1430 ../src/modules/vfs-menu.c:1706
+msgid "Menu item name cannot be empty"
+msgstr "Menu öge adı boş olamaz"
+
+#: ../src/modules/vfs-menu.c:1480
+#, c-format
+msgid "Invalid menu directory '%s'"
+msgstr "Geçersiz menü dizini '%s'"
+
+#: ../src/modules/vfs-menu.c:1623 ../src/modules/vfs-menu.c:1764
+msgid "Invalid menu item"
+msgstr "Geçersiz menü ögesi"
+
+#: ../src/modules/vfs-menu.c:1627 ../src/modules/vfs-menu.c:1768
+#, c-format
+msgid "The menu item '%s' doesn't have appropriate entry file"
+msgstr "'%s' menü ögesi, uygun girdi dosyasına sahip değil"
+
+#: ../src/modules/vfs-menu.c:1790
+msgid "Change hidden status isn't supported for menu directory"
+msgstr "Menü dizini için gizlilik durumunu değiştirmek desteklenmiyor"
+
+#: ../src/modules/vfs-menu.c:1948
+#, c-format
+msgid "Setting attribute '%s' not supported"
+msgstr "'%s' niteliğini ayarlamak desteklenmiyor"
+
+#: ../src/modules/vfs-menu.c:1958
+#, c-format
+msgid "Invalid value for attribute '%s'"
+msgstr "'%s' niteliği için geçersiz değer"
+
+#: ../src/modules/vfs-menu.c:1995
+#, c-format
+msgid "The '%s' is a menu directory"
+msgstr "'%s' bir menü dizini"
+
+#: ../src/modules/vfs-menu.c:1998 ../src/modules/vfs-menu.c:2627
+#, c-format
+msgid "The '%s' isn't a menu item"
+msgstr "'%s' bir menü ögesi değil"
+
+#: ../src/modules/vfs-menu.c:2022
+#, c-format
+msgid "The '%s' entry file is broken"
+msgstr "'%s' girdi dosyası bozuk"
+
+#: ../src/modules/vfs-menu.c:2308 ../src/modules/vfs-menu.c:2397
+#, c-format
+msgid "Cannot create menu item '%s'"
+msgstr "'%s' menü ögesi oluşturulamıyor"
+
+#: ../src/modules/vfs-menu.c:2542
+msgid "Name of menu directory should not end with \".desktop\""
+msgstr "Menu dizininin adı \".desktop\" ile bitmemeli"
+
+#: ../src/modules/vfs-menu.c:2587
+msgid "Invalid operation with menu root"
+msgstr "Kök menüsü ile geçersiz işlem"
+
+#: ../src/modules/vfs-menu.c:2676
+msgid "Invalid destination"
+msgstr "Geçersiz hedef"
+
+#: ../src/modules/vfs-menu.c:2952
+#, c-format
+msgid "FmMenuVFileMonitor: folder '%s' not found in menu cache"
+msgstr "FmMenuVFileMonitor: '%s' dizini menü önbelleğinde bulunamadı"
+
+#. FIXME: need name to be converted to UTF-8?
+#: ../src/modules/vfs-search.c:991
+msgid "Search"
+msgstr "Ara"
+
+#: ../src/modules/vfs-search.c:1053
+msgid "Search Results"
+msgstr "Arama Sonuçları"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:66
+msgid "Choose Executable File"
+msgstr "Çalıştırılabilir Dosyayı Seçin"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:72
+msgid "Executable files"
+msgstr "Uygulama dosyaları"
+
+# Not all languages belong to Indo-European language family.
+#: ../src/modules/gtk-fileprop-x-desktop.c:267
+msgid "<b>Co_mmand:</b>"
+msgstr "<b>K_omut:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:288
+msgid "Command to execute when the application icon is activated"
+msgstr "Uygulama simgesi etkinleştirildiğinde çalıştırılacak komut"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:322
+msgid "<b>D_escription:</b>"
+msgstr "<b>_Tanım:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:332
+msgid "Generic name of the application"
+msgstr "Uygulamanın genel adı"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:340
+msgid "<b>_Working directory:</b>"
+msgstr "<b>_Çalışma dizini:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:351
+msgid "The working directory to run the program in"
+msgstr "Programın çalıştırılacağı çalışma dizini"
+
+# Not all languages belong to Indo-European language family.
+#: ../src/modules/gtk-fileprop-x-desktop.c:359
+msgid "<b>_Tooltip:</b>"
+msgstr "<b>_Araç ipucu:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:369
+msgid "Tooltip to show on application"
+msgstr "Uygulamada gösterilecek araç ipucu"
+
+#. TODO: handle "TryExec" field ?
+#. row 7: "StartupNotify" GtkCheckButton
+#: ../src/modules/gtk-fileprop-x-desktop.c:375
+msgid "_Use startup notification"
+msgstr "_Başlangıç bildirimini kullan"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:388
+msgid "_Desktop Entry"
+msgstr "_Masaüstü Girdisi"
+
+#: ../src/modules/gtk-menu-trash.c:74
+msgid "_Restore"
+msgstr "_Geri al"
+
+#: ../src/modules/gtk-menu-trash.c:75
+msgid "Restore trashed files to original paths"
+msgstr "Çöpteki dosyaları yerlerine al"
+
+#: ../src/tools/lxshortcut.c:42
+msgid "source file name or desktop id"
+msgstr "kaynak dosya adı veya masaüstü no"
+
+#: ../src/tools/lxshortcut.c:42
+msgid "SOURCE"
+msgstr "KAYNAK"
+
+#: ../src/tools/lxshortcut.c:43
+msgid "result file name"
+msgstr "sonuç dosya adı"
+
+#: ../src/tools/lxshortcut.c:43
+msgid "RESULT"
+msgstr "SONUÇ"
+
+#. Translator: The word "blank" is used as an adjective, e.g. we are decsribing discs that are already blank
+#: ../src/udisks/g-udisks-device.c:41
+msgid "CD-ROM Disc"
+msgstr "CD-ROM Disk"
+
+#: ../src/udisks/g-udisks-device.c:41
+msgid "Blank CD-ROM Disc"
+msgstr "Boş CD-ROM Disk"
+
+#: ../src/udisks/g-udisks-device.c:42
+msgid "CD-R Disc"
+msgstr "CD-R Disk"
+
+#: ../src/udisks/g-udisks-device.c:42
+msgid "Blank CD-R Disc"
+msgstr "Boş CD-R Disk"
+
+#: ../src/udisks/g-udisks-device.c:43
+msgid "CD-RW Disc"
+msgstr "CD-RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:43
+msgid "Blank CD-RW Disc"
+msgstr "Boş CD-RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:44 ../src/udisks/g-udisks-device.c:45
+msgid "DVD-ROM Disc"
+msgstr "DVD-ROM Disk"
+
+#: ../src/udisks/g-udisks-device.c:44 ../src/udisks/g-udisks-device.c:45
+msgid "Blank DVD-ROM Disc"
+msgstr "Boş DVD-ROM Disk"
+
+#: ../src/udisks/g-udisks-device.c:46
+msgid "DVD-RW Disc"
+msgstr "DVD-RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:46
+msgid "Blank DVD-RW Disc"
+msgstr "Boş DVD-RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:47
+msgid "DVD-RAM Disc"
+msgstr "DVD-RAM Disk"
+
+#: ../src/udisks/g-udisks-device.c:47
+msgid "Blank DVD-RAM Disc"
+msgstr "Boş DVD-RAM Disk"
+
+#: ../src/udisks/g-udisks-device.c:48
+msgid "DVD+R Disc"
+msgstr "DVD+R Disk"
+
+#: ../src/udisks/g-udisks-device.c:48
+msgid "Blank DVD+R Disc"
+msgstr "Boş DVD+R Disk"
+
+#: ../src/udisks/g-udisks-device.c:49
+msgid "DVD+RW Disc"
+msgstr "DVD+RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:49
+msgid "Blank DVD+RW Disc"
+msgstr "Boş DVD+RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:50
+msgid "DVD+R DL Disc"
+msgstr "DVD+R DL Disk"
+
+#: ../src/udisks/g-udisks-device.c:50
+msgid "Blank DVD+R DL Disc"
+msgstr "Boş DVD+R DL Disk"
+
+#: ../src/udisks/g-udisks-device.c:51
+msgid "DVD+RW DL Disc"
+msgstr "DVD+RW DL Disk"
+
+#: ../src/udisks/g-udisks-device.c:51
+msgid "Blank DVD+RW DL Disc"
+msgstr "Boş DVD+RW DL Disk"
+
+#: ../src/udisks/g-udisks-device.c:52
+msgid "Blu-Ray Disc"
+msgstr "Blu-Ray Disk"
+
+#: ../src/udisks/g-udisks-device.c:52
+msgid "Blank Blu-Ray Disc"
+msgstr "Boş Blu-Ray Disk"
+
+#: ../src/udisks/g-udisks-device.c:53
+msgid "Blu-Ray R Disc"
+msgstr "Blu-Ray R Disk"
+
+#: ../src/udisks/g-udisks-device.c:53
+msgid "Blank Blu-Ray R Disc"
+msgstr "Boş Blu-Ray R Disk"
+
+#: ../src/udisks/g-udisks-device.c:54
+msgid "Blu-Ray RW Disc"
+msgstr "Blu-Ray RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:54
+msgid "Blank Blu-Ray RW Disc"
+msgstr "Boş Blu-Ray RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:55
+msgid "HD DVD Disc"
+msgstr "HD DVD Disk"
+
+#: ../src/udisks/g-udisks-device.c:55
+msgid "Blank HD DVD Disc"
+msgstr "Boş HD DVD Disk"
+
+#: ../src/udisks/g-udisks-device.c:56
+msgid "HD DVD-R Disc"
+msgstr "HD DVD-R Disk"
+
+#: ../src/udisks/g-udisks-device.c:56
+msgid "Blank HD DVD-R Disc"
+msgstr "Boş HD DVD-R Disk"
+
+#: ../src/udisks/g-udisks-device.c:57
+msgid "HD DVD-RW Disc"
+msgstr "HD DVD-RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:57
+msgid "Blank HD DVD-RW Disc"
+msgstr "Boş HD DVD-RW Disk"
+
+#: ../src/udisks/g-udisks-device.c:58
+msgid "MO Disc"
+msgstr "MO Disk"
+
+#: ../src/udisks/g-udisks-device.c:58
+msgid "Blank MO Disc"
+msgstr "Boş MO Disk"
+
+#: ../src/udisks/g-udisks-device.c:59
+msgid "MRW Disc"
+msgstr "MRW Disk"
+
+#: ../src/udisks/g-udisks-device.c:59
+msgid "Blank MRW Disc"
+msgstr "Boş MRW Disk"
+
+#: ../src/udisks/g-udisks-device.c:60
+msgid "MRW/W Disc"
+msgstr "MRW/W Disk"
+
+#: ../src/udisks/g-udisks-device.c:60
+msgid "Blank MRW/W Disc"
+msgstr "Boş MRW/W Disk"
+
+#: ../src/udisks/g-udisks-device.c:299
+msgid "Blank Optical Disc"
+msgstr "Boş Optik Disk"
+
+#: ../src/udisks/g-udisks-device.c:301
+msgid "Optical Disc"
+msgstr "Optik Disk"
+
+#~ msgid "Symlinking"
+#~ msgstr "Sembolik bağlantı oluşturuluyor"
+
+#, fuzzy
+#~ msgid "<b>File type to be opened:</b>"
+#~ msgstr "<b>Açılacak Dosya Türü:</b>"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "<b>Processing:</b>"
+#~ msgstr "<b>İşlenen Dosya:</b>"
+
+#~ msgid "<b>Progress:</b>"
+#~ msgstr "<b>İlerleme:</b>"
+
+#~ msgid "The file operation is finished, but there are some errors."
+#~ msgstr "Eylem tamamlandı ve bazı hatalar ortaya çıktı."
+
+#, fuzzy
+#~ msgid "Creating Symlinks"
+#~ msgstr "Bağlantı Oluşturuluyor"
+
+#~ msgid "_Browse"
+#~ msgstr "_Tara"
+
+#~ msgid "My Computer"
+#~ msgstr "Bilgisayarım"
+
+#~ msgid "_Move"
+#~ msgstr "_Taşı"
+
+#~ msgid "_Trash"
+#~ msgstr "Çö_p"
+
+#~ msgid "_Only for this folder"
+#~ msgstr "_Sadece bu dizin için"
+
+#~ msgid "Check to remember sort as folder setting rather than global one"
+#~ msgstr ""
+#~ "Ayarın genel değil sadece dizin için olmasını istiyorsanız işaretleyin"
+
+#~ msgid "Please select a folder"
+#~ msgstr "Lütfen bir dizin seçin"
+
+#~ msgid "Entry for folder path"
+#~ msgstr "Dizin yolu için girdi"
+
+#~ msgid "Computer"
+#~ msgstr "Bilgisayar"
+
+#~ msgid "Network Drives"
+#~ msgstr "Ağ Sürücüleri"
+
+#~ msgid "_Run in terminal emulator"
+#~ msgstr "_Uçbirimde öykünücüsünde çalıştır"
+
+#~ msgid "_Keep terminal window open after run"
+#~ msgstr "_Uçbirim penceresini çalıştırıldıktan sonra açık tut"
+
+#~ msgid "Shortcuts"
+#~ msgstr "Kısayollar"
+
+#~ msgid "Mount Point"
+#~ msgstr "Bağlama Noktası"
+
+#~ msgid "Create _Symlink"
+#~ msgstr "Bağlantı _Oluştur"
+
+#~ msgid "Se_nd To"
+#~ msgstr "_Gönder"
+
+#~ msgid "empty <Name> tag"
+#~ msgstr "boş <Name> etiketi"
+
+#~ msgid "tag <Not> should have exactly one children"
+#~ msgstr "<Not> etiketi, tam olarak bir çocuğa sahip olmalı"
+
+#~ msgid "tag <Not> may contain only <And>, <Or>, <Filename> or <Category> tag"
+#~ msgstr ""
+#~ "<Not> etiketi sadece <And>, <Or>, <Filename> veya <Category> etiketi "
+#~ "içerebilir"
+
+#~ msgid "merging file may contain only <Menu> top level tag, got <%s>"
+#~ msgstr ""
+#~ "birleştirilen dosya sadece <Menu> üst seviye etiketine sahip olabilir, <"
+#~ "%s> bulundu"
+
+#~ msgid "failed to insert tag <%s> from merging file"
+#~ msgstr "birleştirilen dosyadan <%s> etiketi ekleme başarısız"
+
+#~ msgid "invalid <MergeFile> tag"
+#~ msgstr "geçersiz <MergeFile> etiketi"
+
+#~ msgid "invalid <MergeDir> tag"
+#~ msgstr "geçersiz <MergeDir> etiketi"
+
+#~ msgid "cannot find path %s in XML definitions"
+#~ msgstr "XML tanımlamalarında %s yolu bulunamıyor"
+
+#~ msgid "category manipulation internal error"
+#~ msgstr "kategori değiştirme dahili hatası"
+
+#~ msgid "Blank File"
+#~ msgstr "Boş Dosya"
+
+#~ msgid "Error, lxshortcut not installed"
+#~ msgstr "Hata, lxshortcut kurulu değil"
+
+#~ msgid "Failed to start lxshortcut"
+#~ msgstr "lxshortcut başlatılamadı"
+
+#~ msgid "<b>_Group:</b>"
+#~ msgstr "<b>_Grubu:</b>"
+
+#~ msgid "Rename"
+#~ msgstr "Yeniden Adlandır"
+
+#~ msgid "Make the file executable"
+#~ msgstr "Dosya çalıştırılabilir yap"
+
+#~ msgid "Operations that all other users can do"
+#~ msgstr "Tüm kullanıcıların gerçekleştirebileceği eylemler"
+
+#~ msgid "Operations that the owner of the file can do"
+#~ msgstr "Sadece dosya sahibinin gerçekleştirebileceği eylemler"
+
+#~ msgid ""
+#~ "Operations that users in the same group as the owner of the file can do"
+#~ msgstr ""
+#~ "Dosya sahibi ile aynı grupta yer alanların gerçekleştirebileceği eylemler"
+
+#~ msgid "Read and Write"
+#~ msgstr "Okuma ve Yazma"
+
+#~ msgid "Read only"
+#~ msgstr "Sadece okunabilir"
+
+#~ msgid "Write only"
+#~ msgstr "Sadece yazılabilir"

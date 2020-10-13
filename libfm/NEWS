@@ -1,0 +1,819 @@
+Changes on 1.3.1 since 1.3.0.2:
+
+* Fixed crash on reload while directory changes (folder might be not ready yet).
+
+* Changed size of large thumbnails to 512 since 256*256 appears to be small on
+    hi-res displays.
+
+* Added application/gzip to archivers.list file next to application/x-gzip.
+
+* Added image/x-compressed-xcf to archivers.list file for xarchiver.
+
+
+Changes on 1.3.0.2 since 1.3.0:
+
+* Fixed launching menu entries shortcuts on desktop which was broken by making
+    them all executable in 1.3.0 - those should be launchable still.
+
+* Fixed installing modules into non-standard path: libtool couldn't relink them
+    properly.
+
+
+Changes on 1.3.0 since 1.2.5:
+
+* Added emblem support by reading the "metadata::emblems" attribute provided by
+    GFileInfo. The metadata is provided by gio/gvfs and are currently stored in
+    $XDG_DATA_HOME/gvfs-metadata.
+
+* Fixed typo: occured -> occurred.
+
+* Made desktop entries treaten as executables. Now clicking on a native desktop
+    file opens a confirmation dialog instead of executing it. Trashed desktop
+    files are only opened as text files and desktop files under system menu
+    (i.e. menu://applications/) are executed without prompt as before.
+
+* Fixed build error with vala 0.36.1.
+
+* Fixed crash on launching nonexistent link targets.
+
+* Added tooltips for attributes of copying files.
+
+* Fixed thumbnails generation for files in the thumbnails cache directory which
+    actually should never be done.
+
+* Fixed crash on pasting large string when completion matches.
+
+* Prevented creation corrupted image thumbnails with gdk-pixbuf2 >= 2.36.1.
+
+* Fixed crash in fm_config_load_from_file().
+
+* Dropped displaying "extension" for a directory.
+
+* Fixed crash on pasting a file into the search folder, show an error message
+    when the copy destination doesn't exist instead.
+
+* Added new API for FmAction new object type, to replace old VALA-generated
+    code. New API is more convenient, C instead of VALA, and should support all
+    DES-API specification features, not just limited set.
+
+* Migrated module 'gtk-menu-actions' to new DES-EMA actions API.
+
+* Added display of data transferred to progress dialog.
+
+* Fixed wrong names for files, copied from Google Drive and similar places.
+
+
+Changes on 1.2.5 since 1.2.4:
+
+* Fixed 'Launch in Terminal' issue when custom args were ignored.
+
+* Fixed crash with non-UTF regex search pattern.
+
+* Added 'termite' into the terminals database.
+
+* Fixed possible crash on FmPlacesView.
+
+* Fixed crash on non-existent directory listing job.
+
+* Added conversion of all URIs schemes to file:/// by mapping them to
+    FUSE-mounted local paths if that is possible. This is required for
+    non-gio applications to open files mounted by gvfs.
+
+* Added new MIME type for rar files to the archivers.list file.
+
+* Fixed crash in _fm_template_update().
+
+* Fixed incorrect initialization of FmPlacesViewClass, it should not call
+    fm_get_home_dir() but initialized with NULL, that will do the same at
+    runtime.
+
+* Fixed FTBFS when libmenu-cache was installed to non-standard location.
+
+* Added check for edit name "/" for remote root directory so display name
+    should be used in such cases as more sensible one.
+
+* Fixed wrong width requested by FmCellRendererText (1.2.4 regression).
+
+* Updated list of MIME types handled by xarchiver.
+
+* Don't show error message when attempting to rename file into the same.
+
+* Fixed crash after file info job finished on a folder that already left.
+
+* Changed limitations on libfm-pref-apps.desktop to show only in LXDE.
+
+* Fixed incomplete file copy job pausing in some cases.
+
+* Fixed missing 'Empty Trash Can' option in desktop's trash context menu.
+
+
+Changes on 1.2.4 since 1.2.3:
+
+* Fixed crash in templates on file that was deleted instantly after
+    creation.
+
+* Fixed handling %c in desktop entry Exec key: launch may fail if the
+    application name contains spaces so it needs quoting.
+
+* Fixed missing folder info update on folder attributes change.
+
+* Use G_SPAWN_DO_NOT_REAP_CHILD on application launch, that should fix
+    a problem with pkexec.
+
+* Corrected missing newline at end of generated shortcut desktop entry.
+
+* Improved file type detection, it failed in some cases such as DOCX.
+
+* Returned back the workaround on thumbnailers which don't save any of
+    Thumb::MTime or Thumb::URI in the thumbnail.
+
+* Fixed wrong treating files like ".purple" as having extension "purple".
+
+* Fixed invalid desktop entry save if 'Cancel' was pressed in the file
+    properties dialog window.
+
+* Fixed issues on dropping folders into Places for bookmarking them.
+
+* Fixed crash in expand_exec_macros() on missing Exec line.
+
+* Rewritten broken rubberband rendering in icon view for GTK3.
+
+* Eliminated usage of GVolumeMonitor if no FmFolder object was created.
+
+* Fixed renaming of desktop entries on copy operation error: it was the
+    file name which was set in renaming dialog but it was compared with
+    display name instead when decided whether "Rename" button should be
+    active or not.
+
+* Fixed dropping files onto applications shortcuts on the desktop: those
+    should be not "inode/x-shortcut" but "application/x-desktop" instead
+    and therefore handled as any other applications, i.e. allow drop.
+
+* Added 'urxvtc' into the terminals database.
+
+* Fixed adding user-defined MIME associations into mimeapps.list config.
+
+* Few UI adaptations to work with GTK+ 3.10 or newer.
+
+* Fixed creating shortcuts on paths with basename started with '?'.
+
+* Fixed pointer-related issues with GTK+ 3.10 or newer.
+
+* Added 'terminology' into the terminals database.
+
+* Fixed stuck tooltip on entering empty folder.
+
+* Fixed crash on cancelling FmDirListJob while retrieving is in progress.
+
+* Fixed incomplete cleanup on folder reloading.
+
+* Corrected autoscrolling to position in view to not include extra space
+    (so not show all the column/row at once but only fully show exactly
+    the item). This may fix a problem with double-click at the end of the
+    file name which is already visible so no scrolling is needed, but if
+    another file in the column/row has longer name then it could bring a
+    scrolling of the column/row, and second click lands out of item area.
+
+* Fixed timer shown in progress dialog, it should show 01:00, not 00:60.
+
+* Fixed stuck tooltip after right-click on file in view, seen rarely.
+
+* Disabled following symlinked directories on recursive search, that may
+    give undesired results duplicating files and in some rare cases even
+    may lead to endless recursion and endless number of files found.
+
+* Fixed few small issues with icon view interactive search:
+    - search should be not activated by space key;
+    - cursor was missing in the entry.
+
+* Fixed the background of the name of selected file with GTK+ 3.0.
+
+* Fixed not-ignored invalid Path= line on launch a desktop entry.
+
+* Fixed testing URIs like http://some.host.com for MIME type.
+
+* Dropped using shortcuts to URIs like http://host/ as directories, no
+    directory should be in principle used in shortcuts.
+
+* Fixed possible data loss on cross-partition data movement.
+
+* Fixed incorrect data in the search dialog date selection window.
+
+
+Changes on 1.2.3 since 1.2.2:
+
+* Changed licence for libfm-extra and libfm components from GPL-2 to
+    LGPL-2.1.
+
+* Fixed crash on dropping URL queries into some folder.
+
+* Fixed filename on dropping URI queries into folder: URI query like
+    http://some.site/path/query.php?new=yes&mine=0 should be never saved
+    with file name path/query.php?new=yes&mine=0 but as query.php instead
+    like all the web browsers do.
+
+* Disabled debug messages in XML parser, it spammed a lot.
+
+* Fixed content type detection which was broken in last release.
+
+* Fixed incorrect call to g_environ_setenv() in the terminal call.
+
+* Replaced deprecated atk_component_get_position() calls.
+
+* Fixed invalid callback get_image_position() on ATK icon of ExoIconView,
+    it could loop and therefore hang the application.
+
+* Disabled deprecated atk_focus_tracker_notify() with new libatk.
+
+* Fixed installation of headers with parallel install, it could create
+    invalid symlink /usr/share/libfm/libfm in some conditions.
+
+* Corrected handling of application launch failure - launch content have
+    to be informed about failure if startup notify id was retrieved from
+    it before.
+
+* Fixed usage of POSIX.1-2001 declaration `environ' with GLib < 2.28.
+
+* Fixed "out-of-tree" build (e.g. make distcheck).
+
+* Corrected menu cache to sync in fm_app_chooser_dlg_dup_selected_app(),
+    otherwise it would not work without menu preloaded.
+
+* Fixed launch of applications with %f or %u argument - it should launch
+    not just first file but all of them with the same command.
+
+* Fixed unneeded fm-folder-config save even if no changes were made.
+
+* Fixed not updated file in FmFolder if file was not changed within last
+    2 seconds. In case of fast download it was not updated in time. This
+    may cause a little performance issue though due to thumbnails update.
+
+* Fixed crash if g_file_get_basename() returns NULL.
+
+* Fixed issue with desktop entry file selected in the Application chooser
+    dialog, it tried to execute the desktop entry directly. Now it setups
+    dialog fields from that desktop entry instead.
+
+* Fixed problem with unwanted application substitution in the Application
+    chooser dialog: if user selected no name then no replacements should
+    be attempted.
+
+* Fixed default app detection in Application chooser combo box.
+
+
+Changes on 1.2.2 since 1.2.1:
+
+* Fixed display name of created shortcut after dropping from another
+    application.
+
+* Fixed the screen for context in fm_launch_command_simple().
+
+* Added KDE archiver "Ark" into archivers list.
+
+* Fixed parsing order of directories in XDG_DATA_DIRS and XDG_CONFIG_DIRS.
+
+* Added a possibility for application that was started (by PCManFM or any
+    other application that uses LibFM) to never die after our application
+    (i.e. its parent) was closed.
+
+* Fixed possible memory leak in fm_config_load_from_file().
+
+* Corrected g_content_type_guess() call with file sample. This may help
+    with correct file type detection.
+
+* When calculate total file sizes in directory, filesize of directory now
+    is skipped.
+
+* Fixed problem with memory consumption in case image has big dimension
+    but not so big filesize - in that case loading may consume all the
+    available memory to create bitmap. The file dimensions should also be
+    checked against thumbnail_max configuration variable.
+
+* Fixed problem with starting custom command from application selection
+    dialog. This stopped to work with new GLib versions.
+
+
+Changes on 1.2.1 since 1.2.0:
+
+* Fixed incorrect presence of LXShortcut in menus.
+
+* Fixed context menu on right-click on column header, it was not always
+    shown, especially with GTK3.
+
+* Fixed incorrect mime-type of mount points under computer:///.
+
+* Few fixes in internal thumbnail generator.
+
+* Changed info message on usage of x-terminal-emulator as terminal.
+
+* Added sakura, qterminal and lilyterm into terminals database.
+
+* Don't create ~/Templates if it does not exist on application start.
+
+* Fixed installing extra files with different values for --with-gtk.
+
+* Fixed file renaming if it's name is illegal on destination filesystem.
+
+* An error window after user pressed 'Cancel' on app selection should be
+    not shown anymore.
+
+* Fixed menu positioning if it's placed near monitor edge and also on
+    non-first monitor, also ensured menu UI update before calculating its
+    position.
+
+* Fixed cancellation of loading row after FmDirTreeView chdir.
+
+* The "link" mark on icons of small size (< 20 px) now scaled properly.
+
+* Fixed positioning of search box in ExoIconView widget.
+
+* Fixed fm_terminal_launch(), some terminals need PWD environment set.
+
+* Fixed invalid rubberbanding after doubleclick on ExoIconView items.
+
+* Corrected drag cursor, it should correctly show dragged item icon, not
+    generic drag cursor.
+
+* Fixed crash in fm_folder_view_scroll_to_path() if path is not available.
+
+* Fixed unitialized variable usage in folder view context menu positioning
+    code.
+
+* Prevented path entry from containing "(invalid encoding)" string since
+    it will prevent that path from being used.
+
+* Fixed path completion listing for display names in paths.
+
+* One-time custom application isn't added anymore into list of last used.
+
+* Added a workaround on duplicated loop devices in Places sidebar.
+
+* If quick_exec option is set to true, launching will always start the
+    application, not try a terminal for it.
+
+* Changed ExoIconView rubberbanding the same way as it's done in GTK+.
+
+* Fixed invalid renaming files on moving them around virtual FS.
+
+* Fixed crash in vfs-menu module with libmenu-cache 0.3.x.
+
+
+Changes on 1.2.0 since 1.1.0:
+
+* ABI bumped to 4.
+
+* Added 'auto_selection_delay' option into config file, defaulted to 600,
+    which defines interval in milliseconds before folder item is selected
+    in single-click mode. Setting to 0 disables autoselection.
+
+* Added 'drop_default_action' option into config file, which defines how
+    to act when some file(s) were dropped onto destination widget and no
+    modificator key was pressed. Default is 0 (Auto).
+
+* Added 'confirm_trash' option into config file, defaulted to true, which
+    defines whether moving files to trash can should be confirmed by the
+    user. Previously this confirmation was defined by the 'confirm_del'
+    option but now those two are separated.
+
+* Added 'show_full_names' option into config file, defaulted to false,
+    which defines whether long names in icon view should be shown as it
+    is or truncated to reasonable height.
+
+* The Places View made customizable. New section '[places]' added into
+    config file with an option for each standard item (Home, Desktop,
+    Trash, and Applications).
+
+* Added new Places View items: File system, Computer, and Network. All
+    new items are disabled by default.
+
+* The option 'places_unmounted' in config file defines whether volumes
+    from /etc/fstab that aren't mounted should be shown in Places View
+    sidebar or not. This option should be not present in the Preferences
+    dialog the same as 'advanced_mode' one. Defaulted to true therefore
+    default behavior is the same as before.
+
+* Context Menu on folder now available by Ctrl+Menu keypress while the
+    selection context menu is available by Menu (or Shift+F10) keypress.
+
+* Implemented reordering bookmarks in Places View via context menu.
+
+* Greatly improved accessibility on every widget.
+
+* Added an option 'Add to Bookmarks' into file context menu. Available
+    only if exactly one file is selected and that file is a directory.
+
+* Implemented dropping files onto Directory Tree View (sidebar) items.
+
+* Added terminal list file. There is no need to add '-e %s' or similar
+    to 'terminal' config file statement, it will be ignored from now on
+    but predefined command line options from terminal list file will be
+    used instead.
+
+* Added possibility to keep terminal window open after command execution.
+    It depends on chosen terminal though: some terminals allow this (such
+    as xterm, konsole, urxvt) but some doesn't (lxterminal).
+
+* Added optional program name for custom application. If no program name
+    is entered then application's association with mime type will be not
+    remembered and created application desktop entry file will be removed
+    from user's applications directory. Otherwise entered name will be
+    shown in list of applications for that mime type instead of file name
+    (that was old behavior).
+
+* New class FmTemplate for full templates support. Templates support also
+    added into folder context menu replacing old hardcoded menu for the
+    Empty Text File and Shortcut. To be more lightweight it is created
+    once per folder view and isn't updated if user added or removed some
+    template while the view window is still opened. If this will cause
+    any inconveniences this behavior may be changed but that will make
+    the folder context menu less lightweight to appear.
+
+* Added 'only_user_templates' option into config file, defaulted to false,
+    which defines whether only user defined templates should be shown in
+    the folder context menu or system defined should be shown too.
+
+* Added 'template_run_app' option into config file, defaulted to false,
+    which defines whether default application for appropriate MIME type
+    should be ran after successful creation of file from template. There
+    is also button in the dialog to change this default per creation.
+
+* Added 'template_type_once' option into config file, defaulted to false,
+    which defines two modes for templates appearance. If this option is
+    set to false then only those duplicates will be ignored which have
+    the same file name, and label in popup list will be set to template
+    file name without last suffix. If this option is set to true then
+    only one template of each MIME type will be shown, it will have label
+    from MIME type description. In both cases if any search directory has
+    desktop entry matching this template (or template itself is defined
+    by the desktop entry file) then value of 'Name' from it will override
+    that autogenerated label.
+
+* Added a possibility to have tooltips in popups (GTK itself has no such
+    possibility).
+
+* Added menu item "Empty File" back into folder context menu.
+
+* The 'no_usb_trash' option now has default to 1 (true).
+
+* Added support to remember columns width for FmFolverView. The columns
+    widths are changeable only in Detailed List View though. Any change
+    in columns layout will emit a "columns-changed" signal so application
+    may connect handler to it and save columns layout into config file.
+
+* Implemented columns extension APIs which allows application to add own
+    custom columns into any FmFolderModel - it registers handler for such
+    column and any view which uses the model can use it after that.
+
+* Thumbnails loader code moved from libfm-gtk into libfm. Application
+    can use custom image callbacks therefore external thumbnailers can be
+    called independent from application-specific image representation,
+    thumbnail generator will create thumbnail file and that thumbnail
+    will be loaded outside of libfm.
+
+* Setting 'thumbnail_max' to 0 will mean unlimited size from now on.
+
+* Added file properties dialog extension API. Application can add own
+    handler to modify file properties dialog for certain MIME type files.
+
+* Implemented file properties dialog extension for desktop entry file
+    type - opening file properties dialog for single desktop entry will
+    be extended by third tab ('Desktop Entry') with few desktop entry
+    properties such as command to execute. Icon also becomes clickable
+    (and focusable as well, can be activated by Space key when focused),
+    activation will present icon choose dialog. The implementation was
+    partially taken from LXShortcut utility. Icon change dialog is also
+    available for any single file which allows icon change.
+
+* Disallowed default desktop path (by fm_path_get_desktop()) to be equal
+    to home directory since it may be too dangerous. If it is set to home
+    directory then it will be shifted to ~/Desktop.
+
+* Added 'shadow_hidden' option into config file, defaulted to false,
+    which allows icons of hidden files to be shadowed in view.
+
+* Added GFileMonitor implementation for menu:// VFS.
+
+* The 'Permissions' tab in the file properties dialog will be hidden if
+    permissions (owner/group and access flags) aren't available to get
+    for the selected file(s).
+
+* Added file operations for menu:// VFS, therefore any application which
+    uses libfm can do desktop menu editing. Supported operations are now:
+    - create new application in any menu folder;
+    - change some application properties (contents of desktop entry);
+    - delete some application from menu;
+    - move the application from some menu folder to another one;
+    - create new folder in the menu (it is hidden initially);
+    - delete some folder from the menu.
+    Folder creation and deletion operations are disabled if used with
+    libmenu-cache older than 0.5.0 because you cannot see hidden folders
+    with older libmenu-cache and therefore you cannot see newly created
+    folder too (empty folders are hidden from menu in accordance with XDG
+    menu specification).
+
+* New class FmXmlFile which is simple container which allows to load and
+    parse XML text, do desired changes, and finally compose changed data
+    into XML text back. It has very few simplifications:
+    - only UTF-8 encoding is supported;
+    - no user-defined entities (those should be converted externally);
+    - processing instructions, comments and the doctype declaration are
+      parsed but are not interpreted in any way.
+
+* Added one more library: libfm-extra. It contains only FmXmlFile for
+    now. The purpose for separated library is that it can be used where
+    libfm cannot be - for example in menu-cache utilities. This library
+    can be compiled separatedly from other libraries, use the configure
+    script option --with-extra-only for that.
+
+* Implemented support for hidden menu applications and folders. Those are
+    visible in folder view only when 'Show hidden' is on. This will work
+    only with libmenu-cache 0.5.0 or newer.
+
+* Default behavior of drag and drop files on desktop is changed: if file
+    dropped to desktop is some remote URI (a web link for example) then
+    shortcut will be created; if file is a file under home directory (so
+    it is most likely some special directory and should be never moved)
+    then a symlink will be created; otherwise the file will be copied or
+    moved as usual. This "smart link" behavior is applied only if option
+    'drop_default_action' is set to 'auto'.
+
+* Added 'smart_desktop_autodrop' option into config file to enable or not
+    abovementioned "smart link" behavior. Its default is true to protect
+    inexperienced users, the old behavior can be returned by setting this
+    option to false.
+
+* Implemented creating shortcuts (desktop entries with Type=Link) so it
+    is possible now to drop a link from browser to desktop, for example,
+    and that link will be opened with default browser when you click on
+    it. And you can edit display name and icon of created shortcut to
+    your preference.
+
+* Added basic support for detecting target type of shortcuts. If type of
+    target content cannot be determined then content type of shortcut
+    will be set to "inode/x-shortcut".
+
+* Added APIs to test possibility and change display name, icon, "hidden"
+    attribute of file, and target of shortcut.
+
+* File name is shown if file properties dialog window along with display
+    name if it is different from displayable one.
+
+* If access or modification time aren't available for the file then they
+    will be not shown instead of stupid "01 Jan 1970" date.
+
+* File can be renamed in the file properties dialog now. The entry will
+    be disabled if target file system doesn't support file renaming.
+
+* The "link" icon mark in left upper corner of icon is shown on shortcuts
+    the same way as it is shown for symlinks. It is reasonable since any
+    shortcut is the same thing - link to another resource.
+
+* New interface for loadable modules (plugins). Modules can be made by
+    third party as well. Modules will be loaded on first demand and never
+    reloaded so if you add or remove some module then you have to restart
+    your application.
+
+* Added 'modules_blacklist' option into config file to disallow certain
+    modules to load. The wildcard char '*' is allowed and matches any
+    number of characters. To match '*' itself it should be escaped with
+    two backslashes (\\), due to key file format. The option is a string
+    list, each string may be just a type to blacklist, or type mask and
+    name mask, divided by a colon (:).
+
+* Added 'modules_whitelist' option into config file as a exceptions list
+    from the 'modules_blacklist' option. Format is the same.
+
+* Created interfaces for loadable modules:
+    - vfs (virtual file system)
+    - gtk_file_prop (GTK file properties dialog extension)
+    - gtk_folder_col (FmFolderModel custom column)
+    - gtk_menu_scheme (GTK context menu extension for URI scheme)
+    - gtk_menu_mime (GTK context menu extension for file MIME type)
+
+* Moved all VFS into loadable modules.
+
+* Moved desktop entry file properties extension into loadable module.
+
+* Rewritten context menu creation with loadable modules. Loadable modules
+    have key either URI scheme, or MIME type.
+
+* Customized Trash Can context menus with separate module.
+
+* Added test if the directory is read-only and update context menus
+    appropriately.
+
+* FmPathEntry shows real display name now instead of forged UTF-8 one. It
+    is more logical if we enter directory "Multimedia" and end up in the
+    "Multimedia" rather then in "AudioVideo". It works for entry path and
+    for path completion as well (naturally, it was impossible before).
+
+* The fm_path_display_name() API now returns real display name in most of
+    cases instead of forged UTF-8 one.
+
+* Added 'defer_content_test' options into config file which defined if
+    deferred content type test should be applied. Deferred content type
+    test means the MIME type and icons of FmFolder items will be based
+    only on file name for native files but their actual content will be
+    tested later, after signal "finish-loading" was already emitted. If
+    verified content type differs from early estimation then the signal
+    "files-changed" will be emitted later. If option 'defer_content_test'
+    is unset then old behavior (emit "finish-loading" only after all the
+    info is retrieved) will happen.
+
+* The option 'drop_default_action' is saved in more portable way - not
+    the number but text. Therefore if that list will be ever changed then
+    it will be still accepted by libfm right way.
+
+* Added support for 'hidden' file attribute into file context menu and
+    file properties dialog.
+
+* Added options 'SortIgnoreCase' and 'MingleDirs' into folder context
+    menu.
+
+* The FmIcon class is implemented using GIcon instead, greatly reducing
+    number of APIs used for cached icons support.
+
+* Implemented extensions for context menu on Sidebar items, similar to
+    those that are done for FmFileMenu or FmFolderMenu. Application must
+    remember file on which menu was activated and use it in own callback
+    if it was activated.
+
+* Disabled attempt to drop files into folders on read-only file system.
+
+* The item "Delete" in context menu now changes appearance between Trash
+    and Remove in dependency if Shift key is pressed.
+
+* Implemented little popup menu if option 'drop_default_action' is set to
+    'ask' - it shows 'Copy', 'Move', 'Link', and 'Cancel' choices when
+    some files are dropped onto widget controllable by libfm drag&drop.
+
+* Added support for <Alt> + drop: it will show the abovementioned menu
+    with choices.
+
+* Allowed dropping file into the same directory if 'drop_default_action'
+    is set to 'ask' - it shows 'Link' and 'Cancel' choices therefore it
+    is possible to create symbolic link onto the file by drag&drop.
+
+* If last access right change time is available for file then it will be
+    shown in the file properties dialog.
+
+* Broken symlinks are shown with appropriate icon "dialog-warning".
+
+* Added API to suspend execution of running FmJob. This API applied to
+    progress dialog therefore it will be possible to pause and resume any
+    file operations jobs in middle. This may be useful in some cases.
+
+* Added 'list_view_size_units' option into config file, unset by default,
+    if set then defines which units will be used in the Size column in
+    Detailed List View mode, similar to those used in 'du' Unix utility:
+    'h' for ISO units, 'H' for SI units, 'k' for KiB, 'm' for MiB, 'g'
+    for GiB, 'K' for kB, 'M' for MB, 'G' for GB. If not set then default
+    mode (by 'si_unit' config option) will be used.
+
+* Added 'quick_exec' option into config file, false by default. If set to
+    true then libfm-gtk will not ask for options on launching executable
+    file but will do default action: run in terminal for any executable
+    script or run directly for other executable files.
+
+* Implemented hiding items in Places View (Applications, Trash Can, etc.)
+    if appropriate support is missing (no GVFS support or no module).
+
+* Implemented advanced version of lxshortcut application as one more tool
+    based on libfm-gtk.
+
+* Sealed all the private data in objects. Applications should exclude use
+    of sealed data and use accessor functions instead. For old code the
+    workaround may be used - define FM_DISABLE_SEAL in compiler options.
+
+* Added 'format_cmd' option into config file. If set then "Format volume"
+    option will appear on local non-mounted volumes which allows user to
+    reformat USB stick for example. The example of setting for the option
+    is "/usr/lib/gnome-disk-utility/gdu-format-tool -d", that will call
+    well known component of Gnome Disk Utility.
+
+* Implemented internal workaround for GIO inotify delay - operations with
+    files are reflected in view instantly now, without delay of 1 second.
+
+* Added new class FmMenuToolItem - simplified GtkMenuToolButton with only
+    menu button arrow without button that it is bound to.
+
+* Applied common human interface guidelines to capitalization of strings.
+    Changed some names that might be ambiguous: 'Computer' to 'Devices'.
+
+* Added new object FmFolderConfig for abstract access for folder-specific
+    configuration values as key/value pairs (similarly to GKeyFile).
+
+* Added support for adding an optional icon in FmTabLabel before the text
+    in the label.
+
+* New API fm_side_pane_set_show_hidden() for change visibility of hidden
+    file in side pane (if the mode supports that).
+
+* Implemented support for hidden files in FmDirTreeModel.
+
+* Implemented more flex access to FmSidePane modes to allow extensions
+    in the future.
+
+* Added option 'Copy Path(s)' into selection context menu to allow user
+    copy text representation of path(s) as simple text list delimited by
+    newline into the clipboard.
+
+* Changed search:// paths delimiter to be ',' instead of ':'.
+
+* Corrected strings in the application chooser dialog.
+
+* Config file isn't enforced to be rewritten anymore when fm_finalize()
+    is called. The application should control that process instead. This
+    will speed up application termination because when config is changed
+    then the application will save config. Doing it on exit is a plain
+    waste of resources: we rewrite what is already written but spend both
+    CPU and disk I/O on it.
+
+* Press <Tab> in FmPathEntry in case if completion ended in single match
+    will append a slash to the completed directory name.
+
+* New API fm_side_pane_set_home_dir() for change the directory path which
+    will be used on activating 'Home' item in side pane.
+
+* New API fm_folder_view_scroll_to_path() to scroll folder view to some
+    path and optionally focus it.
+
+* If files that file properties dialog is open for contain a directory
+    then file properties dialog will show file counting progress with
+    total number of files involved.
+
+* Added new built-in column in FmFolderModel - Extension (last suffix of
+    the displayable name) as alternative to file type for some old-style
+    users.
+
+* Search dialog options are remembered now between searches. Search path
+    and 'Properties' tab are not saved though.
+
+* Added fallback icons for folder and file in case if no usable theme was
+    set in user GTK environment.
+
+* A whole lot of bugfixes.
+
+
+Changes on 1.1.0 since 1.0.1:
+
+* Added 'no_usb_trash' option into config file, defaulted to 0, which
+    defines whether skip trashing files on removable media or not. If
+    defined to skip then files will go into "trash-unsupported" and user
+    will be asked by fm_file_ops_job_run_with_progress() to remove them
+    instead.
+
+* Added 'no_child_non_expandable' option into config file, defaulted to
+    0, which adds feature to hide expanders on non-expandable rows so no
+    extra 'No Sub Folder' rows are shown. No automation on that is done
+    still since it may be expensive sometimes.
+
+* Corrected underscores (mnemonics) on every menu and dialog.
+
+* Fixed GTK+ 3.0 compatibility problems. Libfm can be compiled with Gtk
+    2.18 ... 3.x and Glib 2.22+ currently (if glib < 2.26 or vala < 0.13
+    still requires run configure --disable-actions). Added new switch to
+    configure script --with-gtk=N where N is GTK+ generation to be used,
+    may be either 2 or 3. Default is 2.
+
+* Enabled option to Unmount removable media without ejecting it.
+
+* Migrated menu:// support into built-in VFS. There will be support for
+    menu editing functions later.
+
+* Added search engine. Supports search:// URIs and has the UI represented
+    by API fm_launch_search_simple().
+
+* Full name in Icon View mode now shown in tooltip while long names are
+    placed under icons in truncated form.
+
+* Added ability to change columns of view. Works only for Detailed List
+    View in FmStandardView widget for now. Implementation for other modes
+    and widgets will come later on demand.
+
+* Added a FmSortMode enumerator (similar to GtkSortType) with few modes
+    specific fo file manager (ascending/descending is one of new modes).
+
+* Sorting set/get functions moved from FmFolderView into FmFolderModel.
+    Sorting isn't remembered by implementations of FmFolderView anymore
+    so application should set sorting explicitly after creation of new
+    FmFolderModel instance. Previously FmFolderView remembered it and no
+    explicit setting was required.
+
+* A lot of lesser bugfixes.
+
+
+Changes on 1.0.1 since 1.0.0:
+
+* Fixed slowness on loading and changing of very large folders.
+
+* FmFolderView is converted into generic interface. Former FmFolderView
+    is renamed into FmStandardView so APIs specific to it have changed
+    their names and arguments. Old APIs left for compatibility reasons.
+    New FmFolderView interface now contains methods to handle popups,
+    keyboard and mouse gestures, including Cut/Copy/Paste operations.
+
+* Fixed compatibility with systems that are a bit old so have neither
+    decent Vala compiler nor GLib 2.26.
+
+* Few lesser bugfixes.

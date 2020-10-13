@@ -1,0 +1,33 @@
+.\" -*-nroff-*-
+.TH LXSHORTCUT 1 "August 2013" "@PACKAGE@ @VERSION@" "lxshortcut manual"
+.SH NAME
+lxshortcut \- desktop entry file editor
+.SH SYNOPSIS
+.B lxshortcut
+[ \-i
+.I input-file
+] [ \-o
+.I output-file
+]
+.SH DESCRIPTION
+lxshortcut is a simple application that uses LibFM file properties dialog
+window to change properties of a desktop entry - icon, display name, path
+and arguments of execution, etc.
+.SH OPTIONS
+At least one option should be specified and if \fIoutput-file\fP isn't
+specified then \fIinput-file\fP will be used to make a result - either
+full path or path in XDG specified user data directory for menu entries.
+.TP 20
+.BI \-i " input-file" "\fR,\fP \-\^\-input=" input-file
+use \fIinput-file\fP as source for editing, it may be some XDG menu entry
+if no full path is specified or custom path to some file
+.TP
+.BI \-o " output-file" "\fR,\fP \-\^\-output=" output-file
+write result into \fIoutput-file\fP
+.SH SEE ALSO
+XDG Desktop Entry Specification
+.SH AUTHOR
+lxshortcut was written by Hong Jen Yee <pcman.tw@gmail.com> and modified
+by Andriy Grytsenko <andrej@rep.kiev.ua>.
+.PP
+This manual page was written by Andriy Grytsenko <andrej@rep.kiev.ua>.

@@ -1,0 +1,7 @@
+These files under exo subdir are taken from libexo of XFCE.
+License: LGPL version 2
+The original authors are:
+ * Copyright (c) 2008       Jannis Pohlmann <jannis@xfce.org>
+ * Copyright (c) 2004-2006  os-cillation e.K.
+ * Copyright (c) 2002,2004  Anders Carlsson <andersca@gnu.org>
+This modified copy is based on exo git: b896ca3c980a087aea4931ed16c59c4f444e0dac

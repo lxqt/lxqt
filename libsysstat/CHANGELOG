@@ -1,0 +1,126 @@
+libsysstat-0.4.3 / 2020-04-22
+=============================
+  * Bumped version to 0.4.3.
+  * C++11 code updates.
+  * Removed (duplicated) string casts definitions.
+
+libsysstat-0.4.2 / 2019-01-25
+=============================
+
+  * Bumped version to 0.4.2
+  * Improved cmake scripting and set cmake_minimum_required to 3.1.0
+  * Don't use automatic string conversions
+  * Removes local compile definition
+
+libsysstat-0.4.1 / 2018-05-21
+=============================
+
+  * Bump patch version to 1
+  * CMake: Prevent in-source builds
+  * Fixed year and https
+  * Fixes some lxde mentions
+  * Bump LXQTBT_MINIMUM_VERSION  to 0.4.1
+  * Drop Qt foreach.
+  * Handle CMake CMP0024
+  * Don't export github templates
+
+0.4.0 / 2017-09-23
+==================
+
+  * Release 0.4.0: Update changelog
+  * correct spelling mistake
+  * bump version and needed version of lxqt-build-tools
+  * liblxqt make no sense here
+  * Copied issue template
+  * Drops Qt5Core_VERSION_STRING
+  * Fixes (#17)
+  * Bump years
+
+0.3.3 / 2016-12-11
+==================
+
+  * Release 0.3.3: Update changelog
+  * Bump patch version to 3
+  * Simplify include_directories and compile definitions
+  * Adds Building project name and Qt version message
+  * Adds a minimum Qt minimum version requirement
+  * README.md: Add build dependency lxqt-build-tools
+  * Use the lxqt-build-tools LXQtCreatePkgConfigFile
+  * Use the lxqt-build-tools LXQtCreatePortableHeaders module
+  * Use the new lxqt-build-tools package
+  * Remove cpack (#14)
+
+0.3.2 / 2016-09-17
+==================
+
+  * Release 0.3.2: Add changelog
+  * Bump version to 0.3.2
+  * Add README.md
+  * fixes lxde/libsysstat/issues/11
+  * Bump year and change listed licenses
+  * Fix rare file descriptor leak in readAllFile()
+
+0.3.1 / 2015-10-31
+==================
+
+  * Release 0.3.1
+  * Remove duplicate LICENSE file
+  * Remove leftover translation comments
+  * Fix license file
+  * Add release script
+  * Handles CMake policy CMP0063
+  * Uses a local copy of LXQCompilerSettings
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Use target_compile_definitions()
+  * Use CMAKE_INCLUDE_CURRENT_DIR
+  * Use GNUInstallDirs
+  * Coding style cleanups
+  * Disables translations support
+  * Use CMAKE_AUTOMOC, drops qt5_wrap_cpp()
+  * Adapts the buildsystem to use CMake Targets
+  * Fix warnings about using uninitialized variables
+  * - Bump missing versioning
+
+0.3.0 / 2014-10-21
+==================
+
+  * Adds the Requires field to the .pc confile file
+  * Generate .pc file with the proper version value
+  * Clean up CMakeLists.txt, drop Qt4 support
+
+0.2.0 / 2014-10-19
+==================
+
+  * Release 0.2.0
+  * simplify QT switching, use ENV
+  * Use QString::fromLatin1() instead of QString::fromAscii()
+  * Adapt the build system to handle Qt4 and Qt5
+  * Improve FreeBSD support
+
+0.1.0 / 2014-04-29
+==================
+
+  * Update AUTHORS and COPYING
+  * Add CPack rules for creating tarball
+  * Don't append library suffix to library install path, but use it by default
+  * Allow installation path configuration with standard CMake X_INSTALL_DIR
+  * Retain old CMAKE_CXX_FLAGS while setting visibility.
+  * Install cmake files.
+  * Use gcc visibility to avoid unecessary symbol exports.
+  * Make the lib buildable independently. Fix AUTHORS file.
+  * Add COPYING and AUTHORS files
+  * libraries: Removes unneeded include(RazorLibSuffix)
+  * libraries: Removes unneeded cmake_minimum_required(VERSION 2.6)
+  * libraries: Removes unneeded find_package(Qt4)
+  * Style follows the Coding Standard
+  * Sysstat lib: version number functions renamed to avoid conflicts
+  * SysStat: license updated & unused files removed
+  * Time zone list built from ICU
+  * SysStat lib: Better CPU stat handling (possible fix for issue #480)
+  * Revert "Sysstat lib: default c-tors fixed (issue #480)"
+  * Sysstat lib: default c-tors fixed (issue #480)
+  * Relicensing again
+  * Parent folder added for inclusion
+  * Relicensing
+  * code style is up to Coding Standards
+  * SysStat library and plugin

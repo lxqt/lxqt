@@ -1,0 +1,202 @@
+[High Priority]
+
+* File operations: move, copy, trashing, ...
+     Improve error handling.
+     should provide multiple destination files for recovering trashed files.
+     Check available disk size prior to moving/copying.
+     Do mounting on demand.
+     Calculate speed and show remaining time.
+
+* Fix idle handlers with proper g_source_is_destroyed().
+
+* File monitor:
+     Queue files which are already processed in file operations, and send
+     change notifications in timeout handlers to improve performance.
+
+* Dnd
+     Dnd destination, drop site handling. => Almost done
+     For drag source, use file:///~/.gvfs/ rather than its original
+     URL scheme to be compatible with other programs => need more survey
+         => g_file_new_for_uri, and then g_file_get_path can return gvfs fuse path.
+     Refuse drop if the user doesn't has access to destination dir.
+     Fix incorrect drop target item of icon view mode. => done
+     Fix incorrect design of 'query-info' signal.
+     Implement XDS support => done, but in a quite dirty way.
+
+* Thumbnails, may be cached with hash table to speed up loading.
+     Need to support external thumbnailers.
+     Thunar can directly load embedded thumbnail in jpeg files, we need that, too.
+     Size of cell renderers and ExoIconView item size must be adjusted for Thumbnail View.
+
+* Mount volumes and mount points when needed
+     This already works with remote URLs.
+     Need to be done for removable devices. => partially done
+     Now mounting works when the user click on a volume in side pane.
+     Not available yet in computer:///
+
+* path resolution and canonicalization: convert ../ and ./ gracefully
+     Partially done. fm_path_new_relative and fm_path_new_child handles . and ..
+     Need to show canonicalized paths in location bar.
+
+* FmFileMenu should provide special menu items for special paths
+     For example:
+     Provide totally different menus for items in computer:///
+     Provide "Uninstall" for items in applications:/// (requires integration with package-kit)
+
+* File searching utility => Subclass FmFolder and provide FmSearchFiles
+     The search result can be given to a GtkTreeModel for display.
+
+* Add filter to FmFolderModel, so we can only show specific files.
+     The API can be compatible with GtkFileFilter used by GtkFileChooser.
+     The hidden parts can be stored in model->hidden GSequence.
+
+* Select destination files when copy or move is finished.
+  Can use g_object_set_data to associate a FmFolderView with FmJob.
+
+* Support symlink creation.
+
+* Add reserved data members to structs to padding for future expansion.
+
+* Use a forked version of xdg_mime included in glib/gio to do faster mime-type detection.
+
+* Bug: clicking on detailed view's column to change sorting didn't update the sort sub menu in main menu.
+
+* Implement our own empty trash API since delete a file in trash:/// with g_file_delete really sucks.
+
+* Implement our own trash can since the one provided by gvfs really sucks!
+
+* Maybe we can add a gtk+ module and register our own implementation of GtkFileChooserWidget.
+
+* Handle self-mangled symlinks.
+
+* Make fm_launch_paths more user-friendly so pcmanfm can use it to handle files_to_open.
+
+* Refactor FmFolderView and make a separate class named FmListView, which
+    encapsulate a generic composite widget combining ExoIconView and GtkTreeView.
+    Then, derive FmFolderView from it.
+
+
+[Medium Priority]
+
+* API renaming:
+     when a returned value was allocated or ref_count is increased,
+     the API should use _dup_ rather than _get_.
+
+     currently there are inconsistent naming convention among different
+     modules. _get_for_, new_from_, _get_from_, and simply _get_ are used
+     in different places where APIs have similar behaviors.
+
+* API redesign: maybe abstract classes like FmBasicView or FmBasicWin were needed.
+     in this way, both desktop window and folder views can have the same behavior
+     through the same interface.
+
+     example:
+     FmBasicView
+     {
+         sort();
+         show_hidden();
+         get_popup_menu_ui();
+         get_selected_files();
+         select_all();
+     }
+
+* Better clipboard handling => almost done
+     Can we be more compatible with GNOME and XFCE?
+     Already compatible with KDE/Dolphin
+     Partially compatible with gnome and xfce.
+     Clipboard operation done by libfm doesn't seem to be noticed by
+     nautilus. Cause? maybe related to clipboard monitoring?
+
+* Custom actions for specific file types.
+     integration with archivers is a must have, but how?
+     Maybe we can use the implementation proposed by KDE.
+     (Compress / Extract are now supported in another way.)
+
+* GtkFileChooser style path button bar. (can take the one in gtk)
+
+* Bring some fallback icons (application-x-generic and folder) along with
+     the package of libfm to work without icon themes.
+
+* Warn the user for insufficient disk space before file operations.
+     GFileInfo:G_FILE_ATTRIBUTE_FILESYSTEM_FREE before calculating
+     total size, and store this value in FmFileOpsJob.
+     During calculation, if total size already exceeds free space available,
+     prompt the user, and also provide an option to skip this.
+
+* Support "Send To..." => Need to see how thunar does this.
+
+* Auto-mounting => partially done
+
+* Support mount specific filesystem encoding in the future. Now we only
+     handle UTF-8 for simplicity.
+     Those settings can be stored in FmConfig?
+
+* Inter-process config change notifications:
+     fm_config_notify should cache all notfications.
+     Then, pack all changed values in a buffer and pass it to a notifier
+     function set with fm_config_set_notify_hook.
+     fm-gtk can use this hook to send the changed values via X11
+     root window properties or dbus.
+
+* Implement our own gio extension points to override some bad stuff in gio/gvfs.
+     Pass highest priority value to g_io_extension_point_implement() if we're
+     under LXDE might be a good idea.
+
+* Add "Create New" to popup menu of folder. => partially done, quite dirty.
+     ==> need refactor
+
+* Show available disk space in status bar => done, but in a slightly dirty way.
+     ==> need refactor
+
+* While create user-custom desktop files, search for existing ones, and only
+     add new mime-types to existing user-custom desktop files to prevent creating
+     too many duplicated desktop files for the same app.
+
+
+[Low Priority]
+
+* Constraint memory usage of FmIcon cache. Periodically removed rarely
+     used items might be needed.
+
+* Add FmGesture to support mouse gesture. (low priority)
+     Maybe this should in another lib to be used in other programs, too.
+
+* Hide computer:///, network:///, and disable trash:/// if gvfs is not
+     available.
+
+* Implement fm_list_concat_glist to add a GList* to FmList or to convert
+     a GList to FmList by fm_list_new followed by fm_list_concat_glist()
+
+* Expose a set of dbus interfaces/services so other applications can call
+     libfm to do file operations without being linked with it.
+     Or, this should be implemented in the level of file managers, like in pcmanfm?
+     If this is going to be supported, write a freedesktop.org spec for it.
+
+* Display tooltips for folder items
+
+* Documentation, can be done with gtk-doc
+
+
+
+[Very Low Priority]
+
+* Fork gvfs to make it gnome-free.
+
+* Add gio extension modules to override the ones provided by gvfs.
+
+* Provide a wizard to clean temporary files from the filesystem to get more
+     usable disk space. => a disk cleaner is needed.
+     This can be showed to the user when there is not available disk space.
+
+* Periodically remove thumbnail caches
+     Maybe it's a better idea to handle this in disk cleaner wizard.
+
+* Enable showing .. in list view mode.
+
+* Add a right pane to list all opened folders instead of using tabs.
+     Quite useful for wide screen and can save taskbar space.
+     Very convinient when you need to work with files in many different folders
+
+* Support saving currently opened folders as a session, and the saved session
+     file can be loaded later by double click on it.
+     This is especially useful for developers and can be used for project management

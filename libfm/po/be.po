@@ -1,0 +1,1955 @@
+# Belarusian translations for libfm package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: LibFM 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-13 00:10+0300\n"
+"PO-Revision-Date: 2015-05-07 11:29+0000\n"
+"Last-Translator: Jerome Leclanche <jerome@leclan.ch>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: be\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Pootle 2.7\n"
+"X-POOTLE-MTIME: 1430998183.000000\n"
+
+#: ../data/libfm-pref-apps.desktop.in.h:1 ../data/ui/preferred-apps.glade.h:1
+msgid "Preferred Applications"
+msgstr "Пераважныя праграмы"
+
+#: ../data/libfm-pref-apps.desktop.in.h:2
+msgid "Select applications called on click on Web link or e-mail address"
+msgstr ""
+
+#: ../data/lxshortcut.desktop.in.h:1
+#, fuzzy
+msgid "Shortcut Editor"
+msgstr "Цэтлік"
+
+#: ../data/lxshortcut.desktop.in.h:2
+msgid "Create new or change existing desktop entry"
+msgstr ""
+
+#: ../data/ui/app-chooser.glade.h:1
+#, fuzzy
+msgid "Choose Application"
+msgstr "Выберыце праграму"
+
+#: ../data/ui/app-chooser.glade.h:2
+msgid "Use selected application to open files"
+msgstr "Ужываць выбраную праграму для адкрыцця файлаў"
+
+#: ../data/ui/app-chooser.glade.h:3
+#, fuzzy
+msgid "_Installed Applications"
+msgstr "_Устаноўленая праграма"
+
+#: ../data/ui/app-chooser.glade.h:4
+#, fuzzy
+msgid "<b>C_ommand line to execute:</b>"
+msgstr "<b>Радок загада для выканання:</b>"
+
+#: ../data/ui/app-chooser.glade.h:5
+#: ../src/modules/gtk-fileprop-x-desktop.c:275
+#, fuzzy
+msgid "_Browse..."
+msgstr "_Аглядаць"
+
+#. row 1: "Terminal" GtkCheckButton
+#: ../data/ui/app-chooser.glade.h:6
+#: ../src/modules/gtk-fileprop-x-desktop.c:294
+msgid "_Execute in terminal emulator"
+msgstr "Выканаць _у эмулятары тэрмінала"
+
+#. row 2: "X-KeepTerminal" GtkCheckButton
+#: ../data/ui/app-chooser.glade.h:7
+#: ../src/modules/gtk-fileprop-x-desktop.c:306
+msgid "_Keep terminal window open after command execution"
+msgstr ""
+
+#: ../data/ui/app-chooser.glade.h:9
+#, no-c-format
+msgid ""
+"<b>These special codes can be used in the command line:</b>\n"
+"  <b>%f</b>: Represents a single file name\n"
+"  <b>%F</b>: Represents multiple file names\n"
+"  <b>%u</b>: Represents a single URI of the file\n"
+"  <b>%U</b>: Represents multiple URIs"
+msgstr ""
+"<b>Спецыяльныя коды загаднага радка:</b>\n"
+"  <b>%f</b>: назва аднаго файла\n"
+"  <b>%F</b>: назвы некалькіх файлаў\n"
+"  <b>%u</b>: шлях аднаго файла\n"
+"  <b>%U</b>: шляхі некалькіх файлаў"
+
+#: ../data/ui/app-chooser.glade.h:14
+msgid "<b>_Application name (optional, set it to keep association)</b>"
+msgstr ""
+
+#: ../data/ui/app-chooser.glade.h:15
+msgid "Execute custom command line to open files"
+msgstr "Выканаць уласны загад для адкрыцця файлаў"
+
+#: ../data/ui/app-chooser.glade.h:16
+#, fuzzy
+msgid "C_ustom Command Line"
+msgstr "Ула_сны загад"
+
+#: ../data/ui/app-chooser.glade.h:17
+#, fuzzy
+msgid "_Set selected application as default action for this file type"
+msgstr ""
+"Устанавіць в_ылучаную праграму як прадвызначаную для гэтага тыпу файлаў"
+
+#: ../data/ui/ask-rename.glade.h:1
+#, fuzzy
+msgid "Confirm File Replacing"
+msgstr "Пацверджанне перазапісу файлаў"
+
+#: ../data/ui/ask-rename.glade.h:2
+msgid "_Skip"
+msgstr "Пра_мінуць"
+
+#: ../data/ui/ask-rename.glade.h:3
+msgid "_Rename"
+msgstr "_Перайменаваць"
+
+#: ../data/ui/ask-rename.glade.h:4
+msgid "_Overwrite"
+msgstr "_Замяніць"
+
+#: ../data/ui/ask-rename.glade.h:5
+msgid ""
+"<b>There is already a file with the same name in this location.</b>\n"
+"\n"
+"Do you want to replace the existing file"
+msgstr ""
+"<b>Файл з такой назвай ужо існуе ў выбраным месцы</b>\n"
+"\n"
+"Замяніць наяўны файл"
+
+#: ../data/ui/ask-rename.glade.h:8
+msgid "with the following file?"
+msgstr "наступным файлам?"
+
+#: ../data/ui/ask-rename.glade.h:9
+#, fuzzy
+msgid "_File name:"
+msgstr "Н_азва файла:"
+
+#: ../data/ui/ask-rename.glade.h:10
+msgid "_Apply this option to all existing files"
+msgstr "Ужыць да ўсіх _файлаў"
+
+#: ../data/ui/choose-icon.ui.h:1
+#, fuzzy
+msgid "Choose An Icon..."
+msgstr "Выберыце праграму"
+
+#. genitive case is here: Choose icon from: ...
+#: ../data/ui/choose-icon.ui.h:3
+#, fuzzy
+msgid "system icon theme"
+msgstr "Сістэмныя праграмы"
+
+#. genitive case is here: Choose icon from: ...
+#: ../data/ui/choose-icon.ui.h:5
+#, fuzzy
+msgid "image files"
+msgstr "Файлы выя_ў"
+
+#: ../data/ui/choose-icon.ui.h:6
+#, fuzzy
+msgid "<b>Choose icon from:</b>"
+msgstr "<b>_Змяняць змест:</b>"
+
+#: ../data/ui/exec-file.glade.h:1
+msgid "Execute File"
+msgstr "Выканаць файл"
+
+#: ../data/ui/exec-file.glade.h:2
+msgid "Execute in _Terminal"
+msgstr "Выканаць у эмулятары _тэрмінала"
+
+#: ../data/ui/file-prop.glade.h:1
+msgid "File Properties"
+msgstr "Уласцівасці файла"
+
+#: ../data/ui/file-prop.glade.h:2
+msgid "Icon of the file in folder view"
+msgstr ""
+
+#: ../data/ui/file-prop.glade.h:3
+#, fuzzy
+msgid "<b>_Name:</b>"
+msgstr "<b>_Уладальнік:</b>"
+
+#: ../data/ui/file-prop.glade.h:4
+msgid "<b>Location:</b>"
+msgstr "<b>Месцазнаходжанне:</b>"
+
+#: ../data/ui/file-prop.glade.h:5
+#, fuzzy
+msgid "<b>Target file:</b>"
+msgstr "<b>Мэта:</b>"
+
+#: ../data/ui/file-prop.glade.h:6
+#, fuzzy
+msgid "<b>File type:</b>"
+msgstr "<b>Тып файла:</b>"
+
+#: ../data/ui/file-prop.glade.h:7
+msgid "<b>Open _with:</b>"
+msgstr "<b>Адкрываць:</b>"
+
+#: ../data/ui/file-prop.glade.h:8
+msgid "Select the application used to open files of this type "
+msgstr "Выберыце праграму для адкрыцця файлаў гэтага тыпу "
+
+#: ../data/ui/file-prop.glade.h:9
+#, fuzzy
+msgid "<b>Total count of files:</b>"
+msgstr "<b>Агульны памер файлаў:</b>"
+
+#: ../data/ui/file-prop.glade.h:10
+#, fuzzy
+msgid "<b>Total size of files:</b>"
+msgstr "<b>Агульны памер файлаў:</b>"
+
+#: ../data/ui/file-prop.glade.h:11
+#, fuzzy
+msgid "<b>Size on disk:</b>"
+msgstr "<b>Памер на дыску:</b>"
+
+#: ../data/ui/file-prop.glade.h:12
+#, fuzzy
+msgid "<b>Last modification:</b>"
+msgstr "<b>Апошняе змяненне:</b>"
+
+#: ../data/ui/file-prop.glade.h:13
+#, fuzzy
+msgid "<b>Last access:</b>"
+msgstr "<b>Апошні доступ:</b>"
+
+#: ../data/ui/file-prop.glade.h:14
+#, fuzzy
+msgid "<b>Last permissions change:</b>"
+msgstr "<b>Апошні доступ:</b>"
+
+#: ../data/ui/file-prop.glade.h:15
+msgid "_General"
+msgstr "_Агульныя"
+
+#: ../data/ui/file-prop.glade.h:16
+msgid "<b>O_wner:</b>"
+msgstr "<b>_Уладальнік:</b>"
+
+#: ../data/ui/file-prop.glade.h:17
+msgid "<b>G_roup:</b>"
+msgstr "<b>Гру_па:</b>"
+
+#: ../data/ui/file-prop.glade.h:18
+msgid "<b>_View content:</b>"
+msgstr "<b>Глядзець з_мест:</b>"
+
+#: ../data/ui/file-prop.glade.h:19
+msgid "<b>C_hange content:</b>"
+msgstr "<b>_Змяняць змест:</b>"
+
+#: ../data/ui/file-prop.glade.h:20
+msgid "<b>_Execute:</b>"
+msgstr "<b>_Выконваць:</b>"
+
+#: ../data/ui/file-prop.glade.h:21
+msgid "<b>Special bits:</b>"
+msgstr "<b>Адмысловыя біты:</b>"
+
+#: ../data/ui/file-prop.glade.h:22
+msgid "Who can read content of the file/directory"
+msgstr "Хто можа чытаць змест файла/каталога"
+
+#: ../data/ui/file-prop.glade.h:23
+msgid "Who can change content of the file/directory"
+msgstr "Хто можа змяняць змест файла/каталога"
+
+#: ../data/ui/file-prop.glade.h:24
+msgid "Who can execute the file or enter the directory"
+msgstr "Хто можа выконваць файл ці адкрываць каталог"
+
+#: ../data/ui/file-prop.glade.h:25
+msgid "Special flags for file execution"
+msgstr "Адмысловыя сцягі для выканання файла"
+
+#: ../data/ui/file-prop.glade.h:26
+msgid "Special flags for directory access"
+msgstr "Адмысловыя сцягі для доступу да каталога"
+
+#: ../data/ui/file-prop.glade.h:27
+msgid "<b>Access Control</b>"
+msgstr "<b>Правы доступу</b>"
+
+#: ../data/ui/file-prop.glade.h:28
+#, fuzzy
+msgid "Hidden file"
+msgstr "_Відэа файлы"
+
+#: ../data/ui/file-prop.glade.h:29
+msgid "_Permissions"
+msgstr "Правы _доступу"
+
+#: ../data/ui/file-prop.glade.h:30
+msgid "---"
+msgstr "---"
+
+#: ../data/ui/file-prop.glade.h:31
+msgid "None"
+msgstr "Нічога"
+
+#: ../data/ui/file-prop.glade.h:32
+#, fuzzy
+msgctxt ""
+"It is a directory access bit - 'sticky' - where only owner can delete a file "
+"from it"
+msgid "Sticky"
+msgstr "Ліпучы"
+
+#: ../data/ui/file-prop.glade.h:33
+msgid "Set GID"
+msgstr "Устаноўлены GID"
+
+#: ../data/ui/file-prop.glade.h:34
+msgid "Sticky & set GID"
+msgstr "Ліпучы & устаноўлены GID"
+
+#: ../data/ui/file-prop.glade.h:35
+#, fuzzy
+msgctxt "this is a file access mode bit, also known as 'suid'"
+msgid "Set UID"
+msgstr "Устаноўлены UID"
+
+#: ../data/ui/file-prop.glade.h:36
+msgid "Set UID & GID"
+msgstr "Устаноўлены UID & GID"
+
+#: ../data/ui/file-prop.glade.h:37
+#, fuzzy
+msgctxt ""
+"this is a file access mode - only owner can access the file, for others "
+"access is denied"
+msgid "Only owner"
+msgstr "Толькі ўладальнік"
+
+#: ../data/ui/file-prop.glade.h:38
+msgid "Only owner and group"
+msgstr "Толькі ўладальнік і група"
+
+#: ../data/ui/file-prop.glade.h:39
+msgid "Anyone"
+msgstr "Хто-хоця"
+
+#: ../data/ui/file-prop.glade.h:40
+msgid "Nobody"
+msgstr "Ніхто"
+
+#: ../data/ui/filesearch.glade.h:1
+msgid "Bytes"
+msgstr "Байтаў"
+
+#: ../data/ui/filesearch.glade.h:2
+msgid "KB"
+msgstr "КБ"
+
+#: ../data/ui/filesearch.glade.h:3 ../src/base/fm-utils.c:143
+msgid "MB"
+msgstr "МБ"
+
+#: ../data/ui/filesearch.glade.h:4 ../src/base/fm-utils.c:149
+msgid "GB"
+msgstr "ГБ"
+
+#: ../data/ui/filesearch.glade.h:5
+#, fuzzy
+msgid "Choose Date"
+msgstr "Выберыце дату"
+
+#: ../data/ui/filesearch.glade.h:6
+msgid "Choose a date from the following calendar"
+msgstr "Выберыце дату ў наступным календары"
+
+#: ../data/ui/filesearch.glade.h:7
+msgid "Search Files"
+msgstr "Шукаць файлы"
+
+#: ../data/ui/filesearch.glade.h:8
+#, fuzzy
+msgid "<b>File _Name Patterns:</b>"
+msgstr "<b>Шаблон _назвы файла:</b>"
+
+#: ../data/ui/filesearch.glade.h:9
+msgid ""
+"Pattern may be either POSIX shell pattern list (with ',' as separator) or "
+"POSIX regular expression."
+msgstr ""
+
+#: ../data/ui/filesearch.glade.h:10
+msgid "Case insensiti_ve"
+msgstr "Ігнараваць _рэгістр"
+
+#: ../data/ui/filesearch.glade.h:11
+msgid "_Use regular expression"
+msgstr "Ужыць рэ_гулярны выраз"
+
+#: ../data/ui/filesearch.glade.h:12
+#, fuzzy
+msgid "<b>Plac_es to Search:</b>"
+msgstr "<b>Месцы пошуку</b>"
+
+#: ../data/ui/filesearch.glade.h:13
+msgid "_Search in sub directories"
+msgstr "_Шукаць у падкаталогах"
+
+#: ../data/ui/filesearch.glade.h:14
+msgid "Search _hidden files"
+msgstr "Шукаць сярод схаваных файлаў"
+
+#: ../data/ui/filesearch.glade.h:15
+msgid "Name/_Location"
+msgstr "Назва/_Шлях"
+
+#: ../data/ui/filesearch.glade.h:16
+msgid "<b>File Type</b>"
+msgstr "<b>Тып файла</b>"
+
+#: ../data/ui/filesearch.glade.h:17
+#, fuzzy
+msgid "Only search for files of following types:"
+msgstr "Шукаць толькі файлы наступных тыпаў"
+
+#: ../data/ui/filesearch.glade.h:18
+msgid "Te_xt files"
+msgstr "Т_экставыя файлы"
+
+#: ../data/ui/filesearch.glade.h:19
+msgid "_Image files"
+msgstr "Файлы выя_ў"
+
+#: ../data/ui/filesearch.glade.h:20
+msgid "_Audio files"
+msgstr "Гукавыя _файлы"
+
+#: ../data/ui/filesearch.glade.h:21
+msgid "_Video files"
+msgstr "_Відэа файлы"
+
+#: ../data/ui/filesearch.glade.h:22
+msgid "_Documents"
+msgstr "_Дакументы"
+
+#: ../data/ui/filesearch.glade.h:23
+#, fuzzy
+msgid "Folde_rs"
+msgstr "Каталог"
+
+#: ../data/ui/filesearch.glade.h:24
+msgid "Ot_her:"
+msgstr ""
+
+#: ../data/ui/filesearch.glade.h:25
+msgid ""
+"Any valid content type can be entered here. Wildcard '*' is allowed at end "
+"of the type. Multiple types should be separated with ';'."
+msgstr ""
+
+#: ../data/ui/filesearch.glade.h:26
+msgid "File _Type"
+msgstr "_Тып файла"
+
+#: ../data/ui/filesearch.glade.h:27
+#, fuzzy
+msgid "<b>File Contain_s:</b>"
+msgstr "<b>Файл утрымлівае</b>"
+
+#: ../data/ui/filesearch.glade.h:28
+msgid "C_ontent"
+msgstr "_Змест"
+
+#: ../data/ui/filesearch.glade.h:29
+msgid "<b>File Size</b>"
+msgstr "<b>Памер файла</b>"
+
+#: ../data/ui/filesearch.glade.h:30
+msgid "_Smaller than:"
+msgstr "_Меншы за:"
+
+#: ../data/ui/filesearch.glade.h:31
+msgid "_Bigger than:"
+msgstr "_Большы за:"
+
+#: ../data/ui/filesearch.glade.h:32
+msgid "<b>Last Modified Time</b>"
+msgstr "<b>Апошняе змяненне</b>"
+
+#: ../data/ui/filesearch.glade.h:33 ../src/gtk/fm-gtk-file-launcher.c:670
+#: ../src/gtk/fm-gtk-file-launcher.c:677
+msgid "(None)"
+msgstr "(Няма)"
+
+#: ../data/ui/filesearch.glade.h:34
+msgid "_Earlier than:"
+msgstr "_Раней за:"
+
+#: ../data/ui/filesearch.glade.h:35
+msgid "L_ater than:"
+msgstr "_Пазней за:"
+
+#: ../data/ui/filesearch.glade.h:36
+msgid "_Properties"
+msgstr "_Уласцівасці"
+
+#: ../data/ui/preferred-apps.glade.h:2
+msgid "<b>Web Browser</b>"
+msgstr "<b>Веб-браўзер</b>"
+
+#: ../data/ui/preferred-apps.glade.h:3
+msgid "The preferred Web Browser will be used to open hyperlinks."
+msgstr "Пераважны вэб-браўзер, які будзе ужыты для адкрыцця інтэрнэт-спасылак."
+
+#: ../data/ui/preferred-apps.glade.h:4
+#, fuzzy
+msgid "<b>Mail Client</b>"
+msgstr "<b>Паштовы кліент</b>"
+
+#: ../data/ui/preferred-apps.glade.h:5
+#, fuzzy
+msgid ""
+"The preferred Mail Client will be used to compose emails when you click on e-"
+"mail addresses."
+msgstr ""
+"Пераважны паштовы кліент, які будзе ўжыты для стварэння электроннага ліста, "
+"калі вы націсніце на адрас e-mail."
+
+#: ../data/ui/preferred-apps.glade.h:6
+msgid "<b>Terminal Emulator</b>"
+msgstr "<b>Эмулятар тэрмінала</b>"
+
+#: ../data/ui/preferred-apps.glade.h:7
+msgid "Command line:"
+msgstr "Загадны радок:"
+
+#: ../data/ui/preferred-apps.glade.h:8
+msgid "System Applications"
+msgstr "Сістэмныя праграмы"
+
+#: ../data/ui/preferred-apps.glade.h:9
+msgid "File Associations"
+msgstr "Файлавыя асацыяцыі"
+
+#. To: <Destination folder> ex. Copy file to..., Move file to...etc.
+#: ../data/ui/progress.glade.h:2
+msgid "<b>To:</b>"
+msgstr "<b>У:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/progress.glade.h:4
+msgid "Preparing..."
+msgstr "Падрыхтоўка..."
+
+#: ../data/ui/progress.glade.h:5
+#, fuzzy
+msgid "<b>Data transferred:</b>"
+msgstr "<b>Мэта:</b>"
+
+#: ../data/ui/progress.glade.h:6
+msgid "<b>Time remaining:</b>"
+msgstr "<b>Астатні час:</b>"
+
+#: ../data/ui/progress.glade.h:7
+#, fuzzy
+msgid "<b>Errors occurred:</b>"
+msgstr "<b>Узніклі памылкі:</b>"
+
+#: ../src/base/fm-action.c:272
+#, fuzzy
+msgid "Empty value"
+msgstr "Выканаць файл"
+
+#: ../src/base/fm-action.c:280
+#, fuzzy
+msgid "Invalid selection"
+msgstr "_Інвертаваць вылучэнне"
+
+#. ---- GFile implementation ----
+#: ../src/base/fm-action.c:807 ../src/job/fm-file-ops-job.c:271
+#: ../src/modules/vfs-menu.c:1176 ../src/modules/vfs-search.c:928
+msgid "Operation not supported"
+msgstr "Аперацыя не падтрымліваецца"
+
+#: ../src/base/fm-file-launcher.c:87
+#, fuzzy, c-format
+msgid "Invalid desktop entry file: '%s'"
+msgstr "Недапушчальная назва файла %s"
+
+#: ../src/base/fm-file-launcher.c:253 ../src/base/fm-file-launcher.c:407
+#, c-format
+msgid "Could not determine content type of file '%s' to launch it"
+msgstr ""
+
+#: ../src/base/fm-file-launcher.c:292
+#, c-format
+msgid "No default application is set to launch URIs %s://"
+msgstr ""
+
+#: ../src/base/fm-file-launcher.c:360
+#, c-format
+msgid "Cannot set working directory to '%s': %s"
+msgstr ""
+
+#: ../src/base/fm-file-launcher.c:454 ../src/base/fm-templates.c:1104
+#, c-format
+msgid "No default application is set for MIME type %s"
+msgstr ""
+
+#: ../src/base/fm-path.c:179 ../src/gtk/fm-places-model.c:848
+#: ../src/gtk/fm-places-model.c:1016
+msgid "Devices"
+msgstr ""
+
+#: ../src/base/fm-path.c:185 ../src/gtk/fm-places-model.c:866
+#: ../src/gtk/fm-places-model.c:1031
+msgid "Network"
+msgstr "Сетка"
+
+#: ../src/base/fm-path.c:1316 ../src/gtk/fm-places-model.c:898
+msgid "Trash Can"
+msgstr "Сметніца"
+
+#: ../src/base/fm-mime-type.c:89
+#, fuzzy
+msgid "shortcut to URI"
+msgstr "Цэтлік"
+
+#: ../src/base/fm-templates.c:1043
+msgid "fm_template_create_file: invalid argument"
+msgstr ""
+
+#: ../src/base/fm-terminal.c:256
+msgid "No terminal emulator is set in libfm config"
+msgstr ""
+
+#: ../src/base/fm-thumbnailer.c:285
+#, fuzzy
+msgid "Invalid description of thumbnailer application"
+msgstr "Недапушчальны каталог меню"
+
+#: ../src/base/fm-utils.c:137
+msgid "kB"
+msgstr ""
+
+#: ../src/base/fm-utils.c:154
+msgid "TB"
+msgstr "ТБ"
+
+#: ../src/base/fm-utils.c:165
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] "%u байт"
+msgstr[1] "%u байты"
+msgstr[2] "%u байтаў"
+
+#: ../src/base/fm-utils.c:174
+msgid "KiB"
+msgstr "КіБ"
+
+#: ../src/base/fm-utils.c:180
+msgid "MiB"
+msgstr "МіБ"
+
+#: ../src/base/fm-utils.c:186
+msgid "GiB"
+msgstr "ГіБ"
+
+#: ../src/base/fm-utils.c:191
+msgid "TiB"
+msgstr "ТіБ"
+
+#: ../src/base/fm-utils.c:573
+#, c-format
+msgid "The URI subpath '%s' contains invalid escaped characters"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:206
+#, c-format
+msgid "Duplicate handler for tag <%s>"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:300
+#, c-format
+msgid ""
+"Failed to parse '%-.*s', which should have been a digit inside a character "
+"reference (&#234; for example) - perhaps the digit is too large"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:311
+#, c-format
+msgid ""
+"Character reference did not end with a semicolon; most likely you used an "
+"ampersand character without intending to start an entity - escape ampersand "
+"as &amp;"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:337
+#, c-format
+msgid "Character reference '%-.*s' does not encode a permitted character"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:374
+#, c-format
+msgid ""
+"Empty entity '&;' seen; valid entities are: &amp; &quot; &lt; &gt; &apos;"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:381
+#, c-format
+msgid "Entity name '%-.*s' is not known"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:385
+#, c-format
+msgid ""
+"Entity did not end with a semicolon; most likely you used an ampersand "
+"character without intending to start an entity - escape ampersand as &amp;"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:595
+msgid "Space isn't allowed in the close tag"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:604
+#, c-format
+msgid "Element '%s' was closed but no element was opened"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:620
+#, c-format
+msgid "Element '%s' was closed but the currently open element is '%s'"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:676
+#, c-format
+msgid "Invalid char '%c' at start of attribute value"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:687
+#, c-format
+msgid "Invalid char '%c' at end of attribute value, expected '%c'"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:835
+msgid "Document ended unexpectedly"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:843
+msgid "Document was empty or contained only whitespace"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:1259
+msgid "fm_xml_file_to_data: XML data error"
+msgstr ""
+
+#: ../src/gtk/fm-app-chooser-combo-box.c:217
+msgid "Customize"
+msgstr "Наставіць"
+
+#: ../src/gtk/fm-app-chooser-dlg.c:325
+#, fuzzy, c-format
+msgid "<b>Select an application to open \"%s\" files</b>"
+msgstr "Ужываць выбраную праграму для адкрыцця файлаў"
+
+#: ../src/gtk/fm-app-menu-view.c:207
+msgid "Installed Applications"
+msgstr "Устаноўленыя праграмы"
+
+#: ../src/gtk/fm-dir-tree-model.c:421 ../src/gtk/fm-dir-tree-model.c:1213
+#, fuzzy
+msgid "<No subfolders>"
+msgstr "<Няма падкаталогаў>"
+
+#: ../src/gtk/fm-dir-tree-model.c:423 ../src/gtk/fm-dir-tree-model.c:1214
+msgid "Loading..."
+msgstr "Чытанне..."
+
+#: ../src/gtk/fm-dir-tree-view.c:546 ../src/gtk/fm-side-pane.c:647
+msgid "Shows tree of directories in sidebar"
+msgstr ""
+
+#: ../src/gtk/fm-dnd-dest.c:412
+#, fuzzy
+msgid "_Cancel"
+msgstr "Скасавана"
+
+#: ../src/gtk/fm-dnd-dest.c:413
+msgid "C_opy Here"
+msgstr ""
+
+#: ../src/gtk/fm-dnd-dest.c:414
+msgid "_Move Here"
+msgstr ""
+
+#. Note to translators: Link in not noun but verb here
+#: ../src/gtk/fm-dnd-dest.c:416
+msgid "_Link Here"
+msgstr ""
+
+#: ../src/gtk/fm-dnd-dest.c:876
+msgid "XDirectSave failed."
+msgstr "Памылка XDirectSave."
+
+#: ../src/gtk/fm-file-menu.c:151
+msgid "_Open"
+msgstr "А_дкрыць"
+
+#: ../src/gtk/fm-file-menu.c:152
+msgid "Open _With..."
+msgstr "Адкры_ць з дапамогай..."
+
+#: ../src/gtk/fm-file-menu.c:153
+#, fuzzy
+msgid "Open _With"
+msgstr "Адкры_ць з дапамогай..."
+
+#: ../src/gtk/fm-file-menu.c:158
+msgid "Copy Pa_th(s)"
+msgstr ""
+
+#: ../src/gtk/fm-file-menu.c:159
+msgid "H_ide"
+msgstr ""
+
+#: ../src/gtk/fm-file-menu.c:160
+msgid "Unh_ide"
+msgstr ""
+
+#: ../src/gtk/fm-file-menu.c:161
+#, fuzzy
+msgid "_Add to Bookmarks"
+msgstr "_Сцерці з закладак"
+
+#: ../src/gtk/fm-file-menu.c:162
+#, fuzzy
+msgid "_Rename..."
+msgstr "_Перайменаваць"
+
+#: ../src/gtk/fm-file-menu.c:163
+msgid "Co_mpress..."
+msgstr "Сціснуц_ь..."
+
+#: ../src/gtk/fm-file-menu.c:164
+msgid "Extract _Here"
+msgstr "_Распакаваць сюды"
+
+#: ../src/gtk/fm-file-menu.c:165
+msgid "E_xtract To..."
+msgstr "Распакаваць _у..."
+
+#: ../src/gtk/fm-file-menu.c:166 ../src/gtk/fm-folder-view.c:198
+msgid "Prop_erties"
+msgstr "_Уласцівасці файла"
+
+#. Note to translators: Trash in not noun but verb here
+#: ../src/gtk/fm-file-menu.c:272 ../src/gtk/fm-file-menu.c:533
+#, fuzzy
+msgid "Move to _Trash"
+msgstr "Сметніца"
+
+#: ../src/gtk/fm-file-menu.c:794
+msgid "Your bookmarks already have a bookmark for this folder."
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:368
+#, fuzzy
+msgid "Image files"
+msgstr "Файлы выя_ў"
+
+#: ../src/gtk/fm-file-properties.c:494 ../src/gtk/fm-file-properties.c:503
+msgid "byte"
+msgid_plural "bytes"
+msgstr[0] "байт"
+msgstr[1] "байты"
+msgstr[2] "байтаў"
+
+#: ../src/gtk/fm-file-properties.c:510
+#, c-format
+msgid "scanning... %d"
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:588
+msgid "Please enter a valid user name or numeric id."
+msgstr "Увядзіце дзейснае імя карыстальніка ці лічбавы ідэнтыфікатар."
+
+#: ../src/gtk/fm-file-properties.c:618
+msgid "Please enter a valid group name or numeric id."
+msgstr "Увядзіце дзейсную назву групы ці лічбавы ідэнтыфікатар."
+
+#. FIXME: may special bits and exec flags still be messed up?
+#: ../src/gtk/fm-file-properties.c:827
+msgid ""
+"Do you want to recursively apply these changes to all files and sub-folders?"
+msgstr "Прымяніць змены рэкурсіўна да ўсіх файлаў і падкаталогаў?"
+
+#: ../src/gtk/fm-file-properties.c:960
+msgid "Hide or unhide the file"
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:965
+msgid "This file is hidden because its name starts with a dot ('.')."
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:969
+msgid ""
+"Files on this system are hidden if their name starts with a dot ('.'). Hit "
+"<Ctrl+H> to toggle displaying hidden files."
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:1026
+#, fuzzy
+msgid "scanning..."
+msgstr "Чытанне..."
+
+#: ../src/gtk/fm-file-properties.c:1088
+msgid "<b>_Access content:</b>"
+msgstr "<b>_Доступ да зместу:</b>"
+
+#: ../src/gtk/fm-file-properties.c:1239
+msgid "Files of different types"
+msgstr "Файлы розных тыпаў"
+
+#: ../src/gtk/fm-file-properties.c:1283
+#, fuzzy
+msgid "<b>File:</b>"
+msgstr "<b>Тып файла:</b>"
+
+#: ../src/gtk/fm-file-properties.c:1349
+#, fuzzy
+msgid "Multiple files"
+msgstr "Некалькі файлаў"
+
+#. columns visible to the users
+#: ../src/gtk/fm-folder-model.c:190
+msgid "Name"
+msgstr "Назва"
+
+#: ../src/gtk/fm-folder-model.c:191
+msgid "Description"
+msgstr "Апісанне"
+
+#: ../src/gtk/fm-folder-model.c:192
+msgid "Size"
+msgstr "Памер"
+
+#: ../src/gtk/fm-folder-model.c:193
+msgid "Permissions"
+msgstr "Правы доступу"
+
+#: ../src/gtk/fm-folder-model.c:194
+msgid "Owner"
+msgstr "Уладальнік"
+
+#: ../src/gtk/fm-folder-model.c:195
+msgid "Modified"
+msgstr "Зменены"
+
+#: ../src/gtk/fm-folder-model.c:196
+msgid "Location"
+msgstr "Месцазнаходжанне"
+
+#: ../src/gtk/fm-folder-model.c:197
+msgid "Extension"
+msgstr ""
+
+#: ../src/gtk/fm-folder-view.c:178
+msgid "Create _New..."
+msgstr "С_тварыць..."
+
+#: ../src/gtk/fm-folder-view.c:179
+msgid "Folder"
+msgstr "Каталог"
+
+#: ../src/gtk/fm-folder-view.c:182
+#, fuzzy
+msgid "Empty File"
+msgstr "Выканаць файл"
+
+#: ../src/gtk/fm-folder-view.c:194
+msgid "_Invert Selection"
+msgstr "_Інвертаваць вылучэнне"
+
+#: ../src/gtk/fm-folder-view.c:195
+msgid "_Sort Files"
+msgstr "_Парадкаваць файлы"
+
+#: ../src/gtk/fm-folder-view.c:196
+#, fuzzy
+msgid "_Rename Folder..."
+msgstr "Перайменаванне файла"
+
+#: ../src/gtk/fm-folder-view.c:197
+#, fuzzy
+msgid "Folder Prop_erties"
+msgstr "Уласцівасці файла"
+
+#: ../src/gtk/fm-folder-view.c:205
+msgid "Show _Hidden"
+msgstr "Паказваць _схаваныя"
+
+#. Note to translators: "Mingle..." means "Do not put folders before files" but make the translation as short as possible, please!
+#: ../src/gtk/fm-folder-view.c:207
+#, fuzzy
+msgid "Mingle _Files and Folders"
+msgstr "_Адзіны парадак для файлаў і каталогаў"
+
+#: ../src/gtk/fm-folder-view.c:208
+#, fuzzy
+msgid "_Ignore Name Case"
+msgstr "_Не ўлічваць рэгістр"
+
+#: ../src/gtk/fm-folder-view.c:219
+msgid "By _Name"
+msgstr "Па _назве"
+
+#: ../src/gtk/fm-folder-view.c:220
+msgid "By _Modification Time"
+msgstr "Па _часу змянення"
+
+#: ../src/gtk/fm-folder-view.c:221
+msgid "By _Size"
+msgstr "Па _памеру"
+
+#: ../src/gtk/fm-folder-view.c:222
+msgid "By File _Type"
+msgstr "Па _тыпу файла"
+
+#: ../src/gtk/fm-folder-view.c:845
+msgid "Enter a name for the newly created folder:"
+msgstr "Увядзіце назву новага каталога:"
+
+#: ../src/gtk/fm-folder-view.c:846
+#, fuzzy
+msgid "Creating New Folder"
+msgstr "Перайменаванне файла"
+
+#: ../src/gtk/fm-folder-view.c:859
+#, fuzzy
+msgid "Enter a name for empty file:"
+msgstr "Увядзіце назву новага файла:"
+
+#: ../src/gtk/fm-folder-view.c:860
+#, fuzzy
+msgid "Creating ..."
+msgstr "Стварыць..."
+
+#: ../src/gtk/fm-folder-view.c:866
+msgid "New"
+msgstr "Новы"
+
+#: ../src/gtk/fm-folder-view.c:876
+#, fuzzy, c-format
+msgid "Enter a name for the new %s:"
+msgstr "Увядзіце назву новага файла:"
+
+#: ../src/gtk/fm-folder-view.c:879
+#, fuzzy, c-format
+msgid "Creating %s"
+msgstr "Стварэнне сімвальных спасылак"
+
+#: ../src/gtk/fm-folder-view.c:883
+msgid "_Run default application on file after creation"
+msgstr ""
+
+#: ../src/gtk/fm-gtk-file-launcher.c:144
+#, c-format
+msgid ""
+"This text file '%s' seems to be an executable script.\n"
+"What do you want to do with it?"
+msgstr ""
+"Гэты файл '%s' - выканальны скрыпт.\n"
+"Што вы хочаце з ім зрабіць?"
+
+#: ../src/gtk/fm-gtk-file-launcher.c:151
+#, c-format
+msgid "This file '%s' is executable. Do you want to execute it?"
+msgstr "Гэты файл '%s' - выканальны. Хочаце запусціць яго?"
+
+#. show error if no paths are added
+#: ../src/gtk/fm-gtk-file-launcher.c:736
+msgid "No folders are specified."
+msgstr "Не зададзены каталог."
+
+#: ../src/gtk/fm-gtk-file-launcher.c:775 ../src/gtk/fm-gtk-utils.c:555
+#, fuzzy
+msgid "Select Folder"
+msgstr "Выберыце каталог"
+
+#. g_message("(!) %s", msg);
+#: ../src/gtk/fm-gtk-utils.c:71
+msgid "Error"
+msgstr "Памылка"
+
+#: ../src/gtk/fm-gtk-utils.c:100 ../src/gtk/fm-gtk-utils.c:131
+msgid "Confirm"
+msgstr "Пацверджанне"
+
+#: ../src/gtk/fm-gtk-utils.c:185
+msgid "Question"
+msgstr "Пытанне"
+
+#: ../src/gtk/fm-gtk-utils.c:709
+msgid "Only system administrators have the permission to do this."
+msgstr "Толькі сістэмны адміністратар мае дазвол на гэта."
+
+#: ../src/gtk/fm-gtk-utils.c:924
+#, fuzzy, c-format
+msgid "Do you want to move the file '%s' to trash can?"
+msgstr "Перамясціць вылучаныя файлы ў сметніцу?"
+
+#: ../src/gtk/fm-gtk-utils.c:929
+#, fuzzy, c-format
+msgid "Do you want to move the %d selected file to trash can?"
+msgid_plural "Do you want to move the %d selected files to trash can?"
+msgstr[0] "Перамясціць вылучаныя файлы ў сметніцу?"
+msgstr[1] "Перамясціць вылучаныя файлы ў сметніцу?"
+msgstr[2] "Перамясціць вылучаныя файлы ў сметніцу?"
+
+#: ../src/gtk/fm-gtk-utils.c:989
+#, fuzzy, c-format
+msgid "Do you want to delete the file '%s'?"
+msgstr "Хочаце сцерці вылучаныя файлы?"
+
+#: ../src/gtk/fm-gtk-utils.c:994
+#, fuzzy, c-format
+msgid "Do you want to delete the %d selected file?"
+msgid_plural "Do you want to delete the %d selected files?"
+msgstr[0] "Хочаце сцерці вылучаныя файлы?"
+msgstr[1] "Хочаце сцерці вылучаныя файлы?"
+msgstr[2] "Хочаце сцерці вылучаныя файлы?"
+
+#: ../src/gtk/fm-gtk-utils.c:1093
+msgid "Rename File"
+msgstr "Перайменаванне файла"
+
+#: ../src/gtk/fm-gtk-utils.c:1094
+msgid "Please enter a new name:"
+msgstr "Увядзіце новую назву:"
+
+#: ../src/gtk/fm-gtk-utils.c:1166
+msgid "Are you sure you want to empty the trash can?"
+msgstr "Хочаце ачысціць сметніцу?"
+
+#: ../src/gtk/fm-path-entry.c:675
+msgid "Pa_ste and Go"
+msgstr ""
+
+#: ../src/gtk/fm-path-entry.c:734
+#, fuzzy
+msgid "Folder location bar"
+msgstr "Файлавыя асацыяцыі"
+
+#: ../src/gtk/fm-places-model.c:781 ../src/gtk/fm-places-model.c:995
+#, fuzzy
+msgid "Home Folder"
+msgstr "Перайменаванне файла"
+
+#: ../src/gtk/fm-places-model.c:797 ../src/gtk/fm-places-model.c:1003
+msgid "Desktop"
+msgstr "Працоўная прастора"
+
+#: ../src/gtk/fm-places-model.c:815 ../src/gtk/fm-places-model.c:1023
+#: ../src/modules/vfs-menu.c:1538
+msgid "Applications"
+msgstr "Праграмы"
+
+#: ../src/gtk/fm-places-model.c:831 ../src/gtk/fm-places-model.c:1009
+#, fuzzy
+msgid "Filesystem Root"
+msgstr "_Тып файла"
+
+#: ../src/gtk/fm-places-view.c:131
+msgid "_Mount Volume"
+msgstr "Прымацавац_ь дыск"
+
+#: ../src/gtk/fm-places-view.c:132
+msgid "_Unmount Volume"
+msgstr "_Размацаваць дыск"
+
+#: ../src/gtk/fm-places-view.c:133
+msgid "_Eject Removable Media"
+msgstr "Вызваліць р_ухомы носнік"
+
+#: ../src/gtk/fm-places-view.c:134
+#, fuzzy
+msgid "_Format Volume"
+msgstr "Прымацавац_ь дыск"
+
+#: ../src/gtk/fm-places-view.c:150
+msgid "_Rename Bookmark Item"
+msgstr "_Перайменаваць закладку"
+
+#: ../src/gtk/fm-places-view.c:151
+#, fuzzy
+msgid "Re_move from Bookmarks"
+msgstr "_Сцерці з закладак"
+
+#: ../src/gtk/fm-places-view.c:152
+#, fuzzy
+msgid "Move Bookmark _Up"
+msgstr "_Сцерці з закладак"
+
+#: ../src/gtk/fm-places-view.c:153
+#, fuzzy
+msgid "Move Bookmark _Down"
+msgstr "_Сцерці з закладак"
+
+#: ../src/gtk/fm-places-view.c:166 ../src/modules/gtk-menu-trash.c:87
+#: ../src/modules/gtk-menu-trash.c:114
+msgid "_Empty Trash Can"
+msgstr "Ачысціць сметніц_у"
+
+#: ../src/gtk/fm-places-view.c:533 ../src/gtk/fm-side-pane.c:645
+msgid "Shows list of common places, devices, and bookmarks in sidebar"
+msgstr ""
+
+#: ../src/gtk/fm-places-view.c:1124
+msgid "Rename Bookmark Item"
+msgstr "Перайменаваць закладку"
+
+#: ../src/gtk/fm-places-view.c:1125
+msgid "Enter a new name:"
+msgstr "Увядзіце новую назву:"
+
+#: ../src/gtk/fm-progress-dlg.c:135
+msgid ": "
+msgstr ": "
+
+#: ../src/gtk/fm-progress-dlg.c:213 ../src/gtk/fm-progress-dlg.c:231
+#, c-format
+msgid ""
+"Type: %s\n"
+"Size: %s\n"
+"Modified: %s"
+msgstr ""
+"Тып: %s\n"
+"Памер: %s\n"
+"Зменены: %s"
+
+#: ../src/gtk/fm-progress-dlg.c:219 ../src/gtk/fm-progress-dlg.c:244
+#, c-format
+msgid ""
+"Type: %s\n"
+"Modified: %s"
+msgstr ""
+"Тып: %s\n"
+"Зменены: %s"
+
+#: ../src/gtk/fm-progress-dlg.c:343
+#, fuzzy
+msgid "<b>Errors occurred before file operation was stopped.</b>"
+msgstr "Файлавая аперацыя скасавана, ёсць некаторыя памылкі."
+
+#: ../src/gtk/fm-progress-dlg.c:345
+msgid "Cancelled"
+msgstr "Скасавана"
+
+#: ../src/gtk/fm-progress-dlg.c:349
+#, fuzzy
+msgid "<b>The file operation was completed with errors.</b>"
+msgstr "Файлавая аперацыя скасавана, ёсць некаторыя памылкі."
+
+#: ../src/gtk/fm-progress-dlg.c:351
+msgid "Finished"
+msgstr "Закончана"
+
+#: ../src/gtk/fm-progress-dlg.c:373
+msgid ""
+"Some files cannot be moved to trash can because the underlying file systems "
+"don't support this operation.\n"
+"Do you want to delete them instead?"
+msgstr ""
+"Некаторыя файлы не могуць быць змешчаны ў сметніцу, таму што файлавая "
+"сістэма не падтрымлівае гэту аперацыю.\n"
+"Хочаце сцерці іх назусім?"
+
+#: ../src/gtk/fm-progress-dlg.c:414 ../src/gtk/fm-progress-dlg.c:563
+msgid "_Pause"
+msgstr ""
+
+#: ../src/gtk/fm-progress-dlg.c:422
+#, fuzzy
+msgid "_Resume"
+msgstr "_Узнавіць"
+
+#: ../src/gtk/fm-progress-dlg.c:597
+msgid ", "
+msgstr ", "
+
+#. translators: it is part of "Moving files:" or "Moving xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:617
+#, fuzzy
+msgid "Moving"
+msgstr "Перамяшчэнне файлаў"
+
+#. translators: it is part of "Copying files:" or "Copying xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:621
+#, fuzzy
+msgid "Copying"
+msgstr "Капіраванне файлаў"
+
+#. translators: it is part of "Trashing files:" or "Trashing xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:625
+#, fuzzy
+msgid "Trashing"
+msgstr "Перанос файлаў у сметніцу"
+
+#. translators: it is part of "Deleting files:" or "Deleting xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:629
+#, fuzzy
+msgid "Deleting"
+msgstr "Сціранне файлаў"
+
+#. translators: it is part of "Creating link /path/xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:633
+#, fuzzy
+msgid "Creating link"
+msgstr "Стварэнне сімвальных спасылак"
+
+#. translators: 'In:' string is followed by destination folder path
+#: ../src/gtk/fm-progress-dlg.c:635
+#, fuzzy
+msgid "<b>In:</b>"
+msgstr "<b>У:</b>"
+
+#: ../src/gtk/fm-progress-dlg.c:636
+#, fuzzy
+msgid "Creating links to files"
+msgstr "Стварэнне сімвальных спасылак"
+
+#. translators: it is part of "Changing attributes of xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:643
+#, fuzzy
+msgid "Changing attributes of"
+msgstr "Змяненне атрыбутаў файла"
+
+#: ../src/gtk/fm-progress-dlg.c:644
+#, fuzzy
+msgid "Changing attributes of files"
+msgstr "Змяненне атрыбутаў файла"
+
+#. translators: it is part of "Restoring files:" or "Restoring xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:650
+#, fuzzy
+msgid "Restoring"
+msgstr "_Узнавіць"
+
+#. note to translators: resulting string is such as "Deleting files"
+#: ../src/gtk/fm-progress-dlg.c:660
+#, fuzzy, c-format
+msgid "%s files"
+msgstr "Файлы выя_ў"
+
+#: ../src/gtk/fm-progress-dlg.c:663
+msgid "<b>File operation is in progress...</b>"
+msgstr ""
+
+#. note to translators: resulting string is such as "Deleting file"
+#: ../src/gtk/fm-progress-dlg.c:669
+#, fuzzy, c-format
+msgid "<b>%s file:</b>"
+msgstr "<b>Тып файла:</b>"
+
+#. note to translators: resulting string is such as "Deleting files"
+#: ../src/gtk/fm-progress-dlg.c:672
+#, fuzzy, c-format
+msgid "<b>%s files:</b>"
+msgstr "<b>Тып файла:</b>"
+
+#: ../src/gtk/fm-side-pane.c:66
+msgid "_Off"
+msgstr "_Выкл"
+
+#: ../src/gtk/fm-side-pane.c:67
+msgid "_Places"
+msgstr "_Месцы"
+
+#: ../src/gtk/fm-side-pane.c:68
+msgid "_Directory Tree"
+msgstr "_Дрэва каталогаў"
+
+#: ../src/gtk/fm-side-pane.c:69
+msgid "_Remote"
+msgstr "_Аддалены"
+
+#: ../src/gtk/fm-side-pane.c:428 ../src/gtk/fm-side-pane.c:621
+msgid "Places"
+msgstr "Месцы"
+
+#: ../src/gtk/fm-side-pane.c:438 ../src/gtk/fm-side-pane.c:623
+msgid "Directory Tree"
+msgstr "Дрэва каталогаў"
+
+#: ../src/gtk/fm-standard-view.c:255
+msgid "View of folder contents"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:818
+#, c-format
+msgid "_Hide %s"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:826
+msgid "_Move Left"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:832
+msgid "Move _Right"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:855
+#, c-format
+msgid "Show %s"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:867
+msgid "_Forget Width"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:1859
+msgid "_Icon View"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:1860
+msgid "_Compact View"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:1861
+msgid "_Thumbnail View"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:1862
+msgid "Detailed _List View"
+msgstr ""
+
+#: ../src/gtk/fm-tab-label.c:159
+msgid "Changes active tab"
+msgstr ""
+
+#: ../src/job/fm-dir-list-job.c:238 ../src/job/fm-dir-list-job.c:251
+#: ../src/job/fm-dir-list-job.c:363
+#, fuzzy, c-format
+msgid "The specified directory '%s' is not valid"
+msgstr "Указаны каталог не існуе"
+
+#: ../src/job/fm-file-ops-job.c:529 ../src/job/fm-file-ops-job.c:604
+msgid "Cannot access destination file"
+msgstr ""
+
+#: ../src/job/fm-file-ops-job.c:650
+msgid "Cannot create a link on non-native filesystem"
+msgstr ""
+
+#: ../src/job/fm-file-ops-job-delete.c:501
+#, fuzzy, c-format
+msgid "Cannot untrash file '%s': original path not known"
+msgstr "Узнавіць файлы са сметніцы да пачатковага стану"
+
+#: ../src/job/fm-file-ops-job-xfer.c:58
+msgid "Destination does not exist"
+msgstr ""
+
+#: ../src/job/fm-file-ops-job-xfer.c:63
+msgid "Source and destination are the same."
+msgstr "Старое і новае месца супадаюць."
+
+#: ../src/job/fm-file-ops-job-xfer.c:70
+msgid "Cannot move a folder into its sub folder"
+msgstr "Немагчыма перамясціць каталог у яго падкаталог"
+
+#: ../src/job/fm-file-ops-job-xfer.c:72
+msgid "Cannot copy a folder into its sub folder"
+msgstr "Немагчыма скапіраваць каталог у яго падкаталог"
+
+#: ../src/job/fm-file-ops-job-xfer.c:74
+msgid "Destination is a sub folder of source"
+msgstr "Каталог прызначэння - падкаталог выточнага каталога"
+
+#: ../src/job/fm-file-ops-job-xfer.c:391
+#, fuzzy, c-format
+msgid "Cannot copy file '%s': not supported"
+msgstr "Немагчыма скапіраваць каталог у яго падкаталог"
+
+#: ../src/job/fm-file-ops-job-change-attr.c:314
+#, c-format
+msgid "Setting display name can be done only for single file"
+msgstr ""
+
+#: ../src/job/fm-file-ops-job-change-attr.c:317
+#, c-format
+msgid "Setting target can be done only for single file"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:299
+#, c-format
+msgid "XML file '%s' error (%d:%d): "
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:309
+msgid "XML file doesn't contain Applications root"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:384 ../src/modules/vfs-menu.c:464
+#: ../src/modules/vfs-menu.c:568 ../src/modules/vfs-menu.c:682
+#, c-format
+msgid "Cannot create XML definition for '%s'"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:449 ../src/modules/vfs-menu.c:2634
+#, c-format
+msgid "Menu path '%s' already exists"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:1102 ../src/modules/vfs-menu.c:1407
+#: ../src/modules/vfs-menu.c:1493
+msgid "Menu cache error"
+msgstr "Памылка кэшу меню"
+
+#: ../src/modules/vfs-menu.c:1367
+msgid "Invalid menu directory"
+msgstr "Недапушчальны каталог меню"
+
+#: ../src/modules/vfs-menu.c:1430 ../src/modules/vfs-menu.c:1706
+msgid "Menu item name cannot be empty"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:1480
+#, fuzzy, c-format
+msgid "Invalid menu directory '%s'"
+msgstr "Недапушчальны каталог меню"
+
+#: ../src/modules/vfs-menu.c:1623 ../src/modules/vfs-menu.c:1764
+#, fuzzy
+msgid "Invalid menu item"
+msgstr "Недапушчальны каталог меню"
+
+#: ../src/modules/vfs-menu.c:1627 ../src/modules/vfs-menu.c:1768
+#, c-format
+msgid "The menu item '%s' doesn't have appropriate entry file"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:1790
+msgid "Change hidden status isn't supported for menu directory"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:1948
+#, fuzzy, c-format
+msgid "Setting attribute '%s' not supported"
+msgstr "Аперацыя не падтрымліваецца"
+
+#: ../src/modules/vfs-menu.c:1958
+#, fuzzy, c-format
+msgid "Invalid value for attribute '%s'"
+msgstr "Недапушчальная назва файла %s"
+
+#: ../src/modules/vfs-menu.c:1995
+#, fuzzy, c-format
+msgid "The '%s' is a menu directory"
+msgstr "Недапушчальны каталог меню"
+
+#: ../src/modules/vfs-menu.c:1998 ../src/modules/vfs-menu.c:2627
+#, fuzzy, c-format
+msgid "The '%s' isn't a menu item"
+msgstr "Недапушчальны каталог меню"
+
+#: ../src/modules/vfs-menu.c:2022
+#, c-format
+msgid "The '%s' entry file is broken"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:2308 ../src/modules/vfs-menu.c:2397
+#, fuzzy, c-format
+msgid "Cannot create menu item '%s'"
+msgstr "Недапушчальная назва файла %s"
+
+#: ../src/modules/vfs-menu.c:2542
+msgid "Name of menu directory should not end with \".desktop\""
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:2587
+msgid "Invalid operation with menu root"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:2676
+msgid "Invalid destination"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:2952
+#, c-format
+msgid "FmMenuVFileMonitor: folder '%s' not found in menu cache"
+msgstr ""
+
+#. FIXME: need name to be converted to UTF-8?
+#: ../src/modules/vfs-search.c:991
+msgid "Search"
+msgstr "Пошук"
+
+#: ../src/modules/vfs-search.c:1053
+#, fuzzy
+msgid "Search Results"
+msgstr "Шукаць файлы"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:66
+#, fuzzy
+msgid "Choose Executable File"
+msgstr "Выканаць файл"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:72
+#, fuzzy
+msgid "Executable files"
+msgstr "Выканаць файл"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:267
+#, fuzzy
+msgid "<b>Co_mmand:</b>"
+msgstr "<b>У:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:288
+msgid "Command to execute when the application icon is activated"
+msgstr ""
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:322
+#, fuzzy
+msgid "<b>D_escription:</b>"
+msgstr "<b>Месцазнаходжанне:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:332
+msgid "Generic name of the application"
+msgstr ""
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:340
+#, fuzzy
+msgid "<b>_Working directory:</b>"
+msgstr "<b>_Уладальнік:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:351
+msgid "The working directory to run the program in"
+msgstr ""
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:359
+#, fuzzy
+msgid "<b>_Tooltip:</b>"
+msgstr "<b>У:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:369
+#, fuzzy
+msgid "Tooltip to show on application"
+msgstr "Выберыце праграму"
+
+#. TODO: handle "TryExec" field ?
+#. row 7: "StartupNotify" GtkCheckButton
+#: ../src/modules/gtk-fileprop-x-desktop.c:375
+msgid "_Use startup notification"
+msgstr ""
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:388
+#, fuzzy
+msgid "_Desktop Entry"
+msgstr "Працоўная прастора"
+
+#: ../src/modules/gtk-menu-trash.c:74
+msgid "_Restore"
+msgstr "_Узнавіць"
+
+#: ../src/modules/gtk-menu-trash.c:75
+msgid "Restore trashed files to original paths"
+msgstr "Узнавіць файлы са сметніцы да пачатковага стану"
+
+#: ../src/tools/lxshortcut.c:42
+msgid "source file name or desktop id"
+msgstr ""
+
+#: ../src/tools/lxshortcut.c:42
+msgid "SOURCE"
+msgstr ""
+
+#: ../src/tools/lxshortcut.c:43
+msgid "result file name"
+msgstr ""
+
+#: ../src/tools/lxshortcut.c:43
+msgid "RESULT"
+msgstr ""
+
+#. Translator: The word "blank" is used as an adjective, e.g. we are decsribing discs that are already blank
+#: ../src/udisks/g-udisks-device.c:41
+msgid "CD-ROM Disc"
+msgstr "Дыск CD-ROM"
+
+#: ../src/udisks/g-udisks-device.c:41
+msgid "Blank CD-ROM Disc"
+msgstr "Пусты дыск CD-ROM"
+
+#: ../src/udisks/g-udisks-device.c:42
+msgid "CD-R Disc"
+msgstr "Дыск CD-R"
+
+#: ../src/udisks/g-udisks-device.c:42
+msgid "Blank CD-R Disc"
+msgstr "Пусты дыск CD-R"
+
+#: ../src/udisks/g-udisks-device.c:43
+msgid "CD-RW Disc"
+msgstr "Дыск CD-RW"
+
+#: ../src/udisks/g-udisks-device.c:43
+msgid "Blank CD-RW Disc"
+msgstr "Пусты дыск CD-RW"
+
+#: ../src/udisks/g-udisks-device.c:44 ../src/udisks/g-udisks-device.c:45
+msgid "DVD-ROM Disc"
+msgstr "Дыск DVD-ROM"
+
+#: ../src/udisks/g-udisks-device.c:44 ../src/udisks/g-udisks-device.c:45
+msgid "Blank DVD-ROM Disc"
+msgstr "Пусты дыск DVD-ROM"
+
+#: ../src/udisks/g-udisks-device.c:46
+msgid "DVD-RW Disc"
+msgstr "Дыск DVD-RW"
+
+#: ../src/udisks/g-udisks-device.c:46
+msgid "Blank DVD-RW Disc"
+msgstr "Пусты дыск DVD-RW"
+
+#: ../src/udisks/g-udisks-device.c:47
+msgid "DVD-RAM Disc"
+msgstr "Дыск DVD-RAM"
+
+#: ../src/udisks/g-udisks-device.c:47
+msgid "Blank DVD-RAM Disc"
+msgstr "Пусты дыск DVD-RAM"
+
+#: ../src/udisks/g-udisks-device.c:48
+msgid "DVD+R Disc"
+msgstr "Дыск DVD+R"
+
+#: ../src/udisks/g-udisks-device.c:48
+msgid "Blank DVD+R Disc"
+msgstr "Пусты дыск DVD+R"
+
+#: ../src/udisks/g-udisks-device.c:49
+msgid "DVD+RW Disc"
+msgstr "Дыск DVD+RW"
+
+#: ../src/udisks/g-udisks-device.c:49
+msgid "Blank DVD+RW Disc"
+msgstr "Пусты дыск DVD+RW"
+
+#: ../src/udisks/g-udisks-device.c:50
+msgid "DVD+R DL Disc"
+msgstr "Дыск DVD+R DL"
+
+#: ../src/udisks/g-udisks-device.c:50
+msgid "Blank DVD+R DL Disc"
+msgstr "Пусты дыск DVD+R DL"
+
+#: ../src/udisks/g-udisks-device.c:51
+msgid "DVD+RW DL Disc"
+msgstr "Дыск DVD+RW DL"
+
+#: ../src/udisks/g-udisks-device.c:51
+msgid "Blank DVD+RW DL Disc"
+msgstr "Пусты дыск DVD+RW DL"
+
+#: ../src/udisks/g-udisks-device.c:52
+msgid "Blu-Ray Disc"
+msgstr "Дыск Blu-Ray"
+
+#: ../src/udisks/g-udisks-device.c:52
+msgid "Blank Blu-Ray Disc"
+msgstr "Пусты дыск Blu-Ray"
+
+#: ../src/udisks/g-udisks-device.c:53
+msgid "Blu-Ray R Disc"
+msgstr "Дыск Blu-Ray R"
+
+#: ../src/udisks/g-udisks-device.c:53
+msgid "Blank Blu-Ray R Disc"
+msgstr "Пусты дыск Blu-Ray R"
+
+#: ../src/udisks/g-udisks-device.c:54
+msgid "Blu-Ray RW Disc"
+msgstr "Дыск Blu-Ray RW"
+
+#: ../src/udisks/g-udisks-device.c:54
+msgid "Blank Blu-Ray RW Disc"
+msgstr "Пусты дыск Blu-Ray RW"
+
+#: ../src/udisks/g-udisks-device.c:55
+msgid "HD DVD Disc"
+msgstr "Дыск HD DVD"
+
+#: ../src/udisks/g-udisks-device.c:55
+msgid "Blank HD DVD Disc"
+msgstr "Пусты дыск HD DVD"
+
+#: ../src/udisks/g-udisks-device.c:56
+msgid "HD DVD-R Disc"
+msgstr "Дыск HD DVD-R"
+
+#: ../src/udisks/g-udisks-device.c:56
+msgid "Blank HD DVD-R Disc"
+msgstr "Пусты дыск HD DVD-R"
+
+#: ../src/udisks/g-udisks-device.c:57
+msgid "HD DVD-RW Disc"
+msgstr "Дыск HD DVD-RW"
+
+#: ../src/udisks/g-udisks-device.c:57
+msgid "Blank HD DVD-RW Disc"
+msgstr "Пусты дыск HD DVD-RW"
+
+#: ../src/udisks/g-udisks-device.c:58
+msgid "MO Disc"
+msgstr "Дыск MO"
+
+#: ../src/udisks/g-udisks-device.c:58
+msgid "Blank MO Disc"
+msgstr "Пусты дыск MO"
+
+#: ../src/udisks/g-udisks-device.c:59
+msgid "MRW Disc"
+msgstr "Дыск MRW"
+
+#: ../src/udisks/g-udisks-device.c:59
+msgid "Blank MRW Disc"
+msgstr "Пусты дыск MRW"
+
+#: ../src/udisks/g-udisks-device.c:60
+msgid "MRW/W Disc"
+msgstr "Дыск MRW/W"
+
+#: ../src/udisks/g-udisks-device.c:60
+msgid "Blank MRW/W Disc"
+msgstr "Пусты дыск MRW/W"
+
+#: ../src/udisks/g-udisks-device.c:299
+msgid "Blank Optical Disc"
+msgstr "Пусты аптычны дыск"
+
+#: ../src/udisks/g-udisks-device.c:301
+msgid "Optical Disc"
+msgstr "Аптычны дыск"
+
+#, fuzzy
+#~ msgid "<b>File type to be opened:</b>"
+#~ msgstr "<b>Тып файла для адкрыцця:</b>"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "<b>Processing:</b>"
+#~ msgstr "<b>Выконваецца:</b>"
+
+#~ msgid "<b>Progress:</b>"
+#~ msgstr "<b>Выканана:</b>"
+
+#~ msgid "The file operation is finished, but there are some errors."
+#~ msgstr "Файлавая аперацыя скончана, але ёсць некаторыя памылкі."
+
+#~ msgid "_Browse"
+#~ msgstr "_Аглядаць"
+
+#~ msgid "My Computer"
+#~ msgstr "Камп'ютар"
+
+#~ msgid "_Only for this folder"
+#~ msgstr "_Толькі ў гэтым каталогу"
+
+#~ msgid "Check to remember sort as folder setting rather than global one"
+#~ msgstr ""
+#~ "Пазначце, каб запомніць парадкаванне як настаўленне каталога, а не "
+#~ "агульнае"
+
+#~ msgid "Please select a folder"
+#~ msgstr "Калі ласка, выберыце каталог"
+
+#, fuzzy
+#~ msgid "Entry for folder path"
+#~ msgstr "_Толькі ў гэтым каталогу"
+
+#, fuzzy
+#~ msgid "Computer"
+#~ msgstr "Камп'ютар"
+
+#, fuzzy
+#~ msgid "Network Drives"
+#~ msgstr "Сетка"
+
+#, fuzzy
+#~ msgid "_Run in terminal emulator"
+#~ msgstr "Выканаць _у эмулятары тэрмінала"
+
+#~ msgid "Shortcuts"
+#~ msgstr "Цэтлікі"
+
+#~ msgid "Mount Point"
+#~ msgstr "Пункт мацавання"
+
+#~ msgid "Create _Symlink"
+#~ msgstr "Ствар_ыць сімвальную спасылку"
+
+#~ msgid "Se_nd To"
+#~ msgstr "Адп_равіць"
+
+#~ msgid "Blank File"
+#~ msgstr "Пусты файл"
+
+#~ msgid "Error, lxshortcut not installed"
+#~ msgstr "Памылка, lxshortcut не ўстаноўлены"
+
+#~ msgid "Failed to start lxshortcut"
+#~ msgstr "Не ўдалося запусціць lxshortcut"
+
+#~ msgid "<b>_Group:</b>"
+#~ msgstr "<b>_Група:</b>"
+
+#~ msgid "Rename"
+#~ msgstr "Перайменаваць"
+
+#~ msgid "Make the file executable"
+#~ msgstr "Выканальны файл"
+
+#~ msgid "Operations that all other users can do"
+#~ msgstr "Аперацыі, дазволеныя ўсім астатнім карыстальнікам"
+
+#~ msgid "Operations that the owner of the file can do"
+#~ msgstr "Аперацыі, якія можа выконваць уладальнік файла"
+
+#~ msgid ""
+#~ "Operations that users in the same group as the owner of the file can do"
+#~ msgstr ""
+#~ "Аперацыі, дазволеныя карыстальнікам - удзельнікам той жа групы, што і "
+#~ "ўладальнік файла"
+
+#~ msgid "Read and Write"
+#~ msgstr "Чытанне і запіс"
+
+#~ msgid "Read only"
+#~ msgstr "Толькі чытанне"
+
+#~ msgid "Write only"
+#~ msgstr "Толькі запіс"

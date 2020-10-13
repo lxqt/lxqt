@@ -1,0 +1,4 @@
+An example of how to write an CMakeLists.txt to use libqtxdg.
+
+To build this example just use:
+    cmake ..

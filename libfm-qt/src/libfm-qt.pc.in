@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libfm-qt
+Description: A Qt/glib/gio-based lib used to develop file managers providing some file management utilities.
+URL: https://github.com/lxqt/libfm-qt
+Requires: @REQUIRED_QT@
+Version: @LIBFM_QT_API_VERSION@
+Libs: -L${libdir} -l@LIBFM_QT_LIBRARY_NAME@
+Cflags: -I${includedir}

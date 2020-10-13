@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/draw-arrow.svg</file>
+        <file>img/draw-circle.svg</file>
+        <file>img/draw-none.svg</file>
+        <file>img/draw-number.svg</file>
+        <file>img/draw-rectangle.svg</file>
+    </qresource>
+</RCC>

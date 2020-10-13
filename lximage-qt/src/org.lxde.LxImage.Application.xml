@@ -1,0 +1,15 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.lxde.LxImage.Application">
+
+    <!-- ask lximage to open a new window -->
+    <method name="newWindow">
+      <!-- file paths to open in new windows -->
+      <arg type="as" direction="in"/>
+    </method>
+
+    <!-- launch a tool to take a screenshot -->
+    <method name="screenshot" />
+
+  </interface>
+</node>

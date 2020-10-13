@@ -1,0 +1,218 @@
+{
+	"BUILD_DIR" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/sysstat-qt5_autogen",
+	"CMAKE_BINARY_DIR" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/CMakeLists.txt",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/3.18.4/CMakeSystem.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/3.18.4/CMakeCCompiler.cmake",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/3.18.4/CMakeCXXCompiler.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake",
+		"/usr/share/cmake-3.18/Modules/Platform/Linux.cmake",
+		"/usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeCInformation.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake",
+		"/usr/share/cmake-3.18/Modules/Compiler/GNU-C.cmake",
+		"/usr/share/cmake-3.18/Modules/Compiler/GNU.cmake",
+		"/usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/usr/share/cmake-3.18/Modules/Internal/CMakeCheckCompilerFlag.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake",
+		"/usr/share/cmake-3.18/Modules/Platform/Linux-GNU-C.cmake",
+		"/usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake",
+		"/usr/share/cmake-3.18/Modules/Compiler/GNU-CXX.cmake",
+		"/usr/share/cmake-3.18/Modules/Compiler/GNU.cmake",
+		"/usr/share/cmake-3.18/Modules/Platform/Linux-GNU-CXX.cmake",
+		"/usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake",
+		"/usr/local/share/cmake/lxqt-build-tools/lxqt-build-tools-config-version.cmake",
+		"/usr/local/share/cmake/lxqt-build-tools/lxqt-build-tools-config.cmake",
+		"/usr/lib64/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"/usr/lib64/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"/usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"/usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"/usr/lib64/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeParseArguments.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakePackageConfigHelpers.cmake",
+		"/usr/share/cmake-3.18/Modules/WriteBasicConfigVersionFile.cmake",
+		"/usr/share/cmake-3.18/Modules/GNUInstallDirs.cmake",
+		"/usr/local/share/cmake/lxqt-build-tools/modules/LXQtPreventInSourceBuilds.cmake",
+		"/usr/local/share/cmake/lxqt-build-tools/modules/LXQtCreatePkgConfigFile.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeParseArguments.cmake",
+		"/usr/share/cmake-3.18/Modules/GNUInstallDirs.cmake",
+		"/usr/local/share/cmake/lxqt-build-tools/modules/LXQtCreatePortableHeaders.cmake",
+		"/usr/local/share/cmake/lxqt-build-tools/modules/LXQtCompilerSettings.cmake",
+		"/usr/share/cmake-3.18/Modules/CheckCXXCompilerFlag.cmake",
+		"/usr/share/cmake-3.18/Modules/CheckCXXSourceCompiles.cmake",
+		"/usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/Version",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/Global",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/BaseStat",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CpuStat",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/MemStat",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/NetStat",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/version.h",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/sysstat_global.h",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/basestat.h",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/cpustat.h",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/memstat.h",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/netstat.h",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/cmake/sysstat-config.cmake.in",
+		"/usr/share/cmake-3.18/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/basestat.h",
+			"Mu",
+			"EWIEGA46WW/moc_basestat.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/basestat_p.h",
+			"Mu",
+			"EWIEGA46WW/moc_basestat_p.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/cpustat.h",
+			"Mu",
+			"EWIEGA46WW/moc_cpustat.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/cpustat_p.h",
+			"Mu",
+			"EWIEGA46WW/moc_cpustat_p.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/memstat.h",
+			"Mu",
+			"EWIEGA46WW/moc_memstat.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/memstat_p.h",
+			"Mu",
+			"EWIEGA46WW/moc_memstat_p.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/netstat.h",
+			"Mu",
+			"EWIEGA46WW/moc_netstat.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/netstat_p.h",
+			"Mu",
+			"EWIEGA46WW/moc_netstat_p.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/sysstat_global.h",
+			"Mu",
+			"EWIEGA46WW/moc_sysstat_global.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/version.h",
+			"Mu",
+			"EWIEGA46WW/moc_version.cpp"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/version_p.h",
+			"Mu",
+			"EWIEGA46WW/moc_version_p.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/sysstat-qt5_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/sysstat-qt5_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"MAJOR_VERSION=0",
+		"MINOR_VERSION=4",
+		"PATCH_VERSION=3",
+		"QT_CORE_LIB",
+		"QT_NO_CAST_FROM_ASCII",
+		"QT_NO_CAST_FROM_BYTEARRAY",
+		"QT_NO_CAST_TO_ASCII",
+		"QT_NO_FOREACH",
+		"QT_NO_URL_CAST_FROM_STRING",
+		"QT_USE_QSTRINGBUILDER",
+		"SYSSTAT_LIBRARY",
+		"sysstat_qt5_EXPORTS"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build",
+		"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat",
+		"/usr/include/qt",
+		"/usr/include/qt/QtCore",
+		"/usr/lib/qt/mkspecs/linux-g++",
+		"/usr/include/c++/10.2.0",
+		"/usr/include/c++/10.2.0/x86_64-pc-linux-gnu",
+		"/usr/include/c++/10.2.0/backward",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include",
+		"/usr/local/include",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/sysstat-qt5_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/sysstat-qt5_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/sysstat-qt5_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/basestat.cpp",
+			"Mu"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/cpustat.cpp",
+			"Mu"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/memstat.cpp",
+			"Mu"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/netstat.cpp",
+			"Mu"
+		],
+		[
+			"/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/version.cpp",
+			"Mu"
+		]
+	],
+	"VERBOSITY" : 0
+}

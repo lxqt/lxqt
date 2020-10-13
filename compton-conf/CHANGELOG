@@ -1,0 +1,146 @@
+compton-conf-0.15.0 / 2020-04-25
+================================
+
+  * Bumped version to 0.15.0.
+  * Remove (duplicated) string casts definitions.
+
+compton-conf-0.14.1 / 2019-02-25
+================================
+
+  * Bumped version to 0.14.1
+  * Only translations was changed.
+
+compton-conf-0.14.0 / 2019-01-25
+================================
+
+  * Bumped version to 0.14.0
+    - the big bump was needed to prevent version conflicts
+      with the merged back translations
+  * Updated Translations
+  * Improved cmake scripting
+    - set cmake_minimum_required to 3.1.0
+    - removed locale compile definitons
+    - improved ldflags handling
+  * Moved translations from lxqt-l10n back to compton-conf
+    - removed obsolete translation fuctionality
+  * Added translation state to README.md
+
+compton-conf-0.4.0 / 2018-05-21
+===============================
+
+  * Bumped minor version to 4
+  * Spanish translation update
+  * CMake: Prevent in-source builds
+  * http -> https
+  * Fixed repo pathes
+  * Update zh_TW desktop entry
+  * Add Traditional Chinese desktop entry
+  * Add Simplified Chinese desktop entry
+  * Drop Qt foreach
+  * Fix FTBFS with Qt4
+  * Add checkbox for option xinerama-shadow-crop
+  * Remove categories for Gnome
+  * Use default icon of compton for compton-conf
+  * Add Categories for Xfce and Gnome
+  * cmake: Handle CMP0071
+  * cmake: Use LXQtCompilerSettings
+  * cmake: Update minimum required version
+  * Add Catalan translation
+  * Add RadioButtons for setting the rendering backend
+  * Don't export github templates
+
+0.3.0 / 2017-09-24
+==================
+
+  * Release 0.3.0: Update changelog
+  * .github added to .gitattributes
+  * bump version to 0.3.0 and tools version to 0.4.0
+  * Added *lt.desktop
+  * Added Lithuanian language
+  * liblxqt don't make sense here
+  * Copied issue template
+  * Fixed typo
+  * set Qt::AA_UseHighDpiPixmaps to true
+  * Added basic cli interface to compton-conf
+  * Added default CMAKE_BUILD_TYPE and proper version
+  * added *pl.desktop
+  * Included LXQtConfigVars in CMakeLists.txt
+  * Added subdirectory autostart (merged from lxqt-common)
+  * Updated *_da.desktop files and removed *_da_DK.desktop files
+  * Update Greek translation (el) Remove country variant from language code
+  * CMake: Adds Runtime and Devel install COMPONENTs
+  * Coding style changes
+  * Updates the build system to use the Targets infrastructure
+  * Drops hardcoded /etc/xdg paths
+  * Updated german translation, replaced Qt4 by Qt in all xsession/translations
+  * Portuguese update for .desktop files
+  * Updates translations infrastructure
+  * Update the required minimum cmake version
+  * Add compton to autostart (turned off by default).
+  * Support lxqt-session and add necessary xdg autostart desktop entry files.
+  * Bump year
+  * Added *da.desktop
+
+0.2.1 / 2016-12-11
+==================
+
+  * Release 0.2.1: Update changelog
+  * Created compton-conf_it.desktop, removed unused lines (#36)
+  * Create compton-conf_fr.desktop
+  * Use the new lxqt-build-tools package
+  * Remove cpack (#34)
+
+0.2.0 / 2016-09-24
+==================
+
+  * Release 0.2.0: Add changelog
+  * Bump release to 0.2.0 (#33)
+  * Set default opacity for active windows to 1
+  * Extend README.md
+  * Delete compton-conf_ru_RU.desktop
+  * build: Use external translations
+  * ts-files removal
+  *  bump years
+  * Work around grep 2.23 new behaviour
+  * compton-conf is LGPL only
+  * don't track $IDE settings
+  * Fix language tag
+  * Update translations
+  * Fix LICENSE file
+  * Fix mixed indents
+  * fixed Comment[ru_RU] -> Comment[hu]
+  * Correctly include the CMake modules in intree/superbuild mode
+  * Hungarian translation
+  * .desktop: icon change
+  * Make Qt5 default Change the option to USE_QT4, defaulting to No
+  * CMakeLists.txt: do not completely overwrite CMAKE_CXX_FLAGS
+  * Corrected language code (de_DE -> de) of german translation, marked translations as done.
+  * README.md: fix download URL
+  * Add Portuguese language to GUI
+  * Added german translation.
+  * i18n/i10n: Fixes mistakes in the documentation
+  * lxqt_translate_desktop: pass -h instead of --no-filename to grep which is compatible with Busybox
+  * Portuguese update fixed
+  * add Japanese translation
+  * lxqt_translate_desktop: Updates code to cope with the cmake-policy CMP0054
+  * Replace colon : with semicolon ; in README.md
+  * Adds .gitignore
+  * Add Russian translation
+  * Handles localization of .desktop files
+  * Updates translations
+  * Adds translations support
+  * Updates path to README.md
+  * Adds file-extension, screenshot & build instructios
+  * Add Qt5 support.
+
+0.1.0 / 2014-05-07
+==================
+
+  * Update desktop file
+  * Update README/COPYING/AUTHORS
+  * add desktop file for compron-conf
+  * Add a basic about dialog. Try to load translation files.
+  * Re-gain focus after reloading compton.
+  * Support chaging shadow color. Set correct ranges on spiin buttons.
+  * Add default configs, Implement saving config files.
+  * Initial commit.

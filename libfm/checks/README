@@ -1,0 +1,6 @@
+This directory contains files or tools used to check the source code.
+The files inside this directory should not be included in any distributed tarballs.
+
+Files skip_files and skip_symbols are used with min-lib-ver.py in lxde/devtools.
+It's a tool used to check minimal required gtk+ version.
+Usage: min-lib-ver.py -F skip_files -S skip_symbols ../src

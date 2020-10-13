@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=LXImage
+GenericName=Image Viewer
+Comment=The LXQt image viewer
+Icon=lximage-qt
+Exec=lximage-qt %F
+StartupNotify=true
+Terminal=false
+Categories=Graphics;Viewer;RasterGraphics;2DGraphics;Photography;
+MimeType=image/bmp;image/gif;image/jpeg;image/jpg;image/png;image/tiff;image/x-bmp;image/x-pcx;image/x-tga;image/x-portable-pixmap;image/x-portable-bitmap;image/x-targa;image/x-portable-greymap;application/pcx;image/svg+xml;image/svg-xml;

@@ -1,0 +1,529 @@
+libqtxdg-3.5.0 / 2020-04-22
+===========================
+  * Removed dead Qt4 Mac code from XdgIconLoader.
+  * Removed obsolete qSwap.
+  * Silenced clazy warnings
+  * Sharp SVG icons with scale factors > 1.
+
+libqtxdg-3.4.0 / 2019-10-27
+===========================
+
+  * Adds an command line MimeType (mimetype) tool
+  * Adds a command line Open (open) Tool
+  * Adds a command line Default App (defapp) Tool
+  * Adds a MIME Applications Associations (XdgMimeApps) class
+  * XdgDesktopFile:
+    - Deprecates XdgDesktopFileCache and drop XdgDesktopFileCache use
+    - Add explanation comment
+    - Avoid freeze for DBusActivatable apps
+  * CMake:
+    - Remove string conversion flags
+    - Removes not used helper function
+  * test:
+    - Use qAsConst()
+  * Build and Implementation:
+    - Don't use automatic string conversion
+    - Prevent a c++11 range-loop possible detach
+    - Fixed icon cache with absolute paths
+    - Use more precise wording
+    - Use the QString multi-arg overload
+    - Use qEnvironmentVariableIntValue()
+    - Use qAsConst
+    - Drop QRegExp.
+    - Port even more towards C++ raw string literal
+    - Port towards return with a braced init list
+    - Port towards raw string literal use.
+    - Use bool literals
+    - Ports towards C++11 override specifiers
+    - Port towards C++ headers
+    - Port towards C++11 nullptr
+  * Reworded github issue template
+
+libqtxdg-3.3.1 / 2019-02-24
+===========================
+
+  * Bumped version to 3.3.1
+  * Silenced compiler warnings about not used variables.
+  * Dropped not needed MOC stuff, we already use CMAKE_AUTOMOC.
+  * Dropped using libqtxdg's own versions of things that are in
+    lxqt-build-tools
+  * Updated translations
+  * Note to maintainers: lxqt-build-tools is now a build dependency
+
+libqtxdg-3.3.0 / 2019-01-25
+===========================
+
+  * Bumped version to 3.3.0
+  * Set cmake_minimum_required to 3.1.0
+  * Use C++ ISO Standard 14, removed support for < 14
+  * Added Qt Strings abbreviations macros
+  * Added Qt Strings abbreviations macros to reduce clutter
+  * Restructured source code directory layout
+  * Implementation fixes:
+    - XdgDesktopFile: Simplify scheme handling
+    - XdgDesktopFile: Clear internal data before loading a new file
+    - XdgDesktopFile: Don't try read non existent files
+    - xdgaction: Set icon in updateIcon() only if needed
+    - xdgiconloader: Support more classes for "FollowColors" icons
+    - xdgiconloader: Consider device pixel ratio when painting
+    - xdgiconloader: Cover all KDE colors schemes for symbolic icons
+    - xdgiconloader: Fixes pedantic warning
+    - xdgmenuwidget: Fix menu-item drag url
+
+libqtxdg-3.2.0 / 2018-05-21
+===========================
+
+  * Bump minor version to 2
+  * xdgaction: Remove unneeded processEvents() call
+  * CMake: Prevent in-source builds
+  * Set genericName as tooltip
+  * Use Qt5 new signal slot syntax
+  * Fixed project uris to https://lxqt.org
+  * Fix some  lxde mentions
+  * fixup...correct context object for disconnection
+  * fixup...only one watcher object & invalidate key
+  * xdgiconloader: Add GTK cache revalidation
+  * xdgiconloader: Cache ScalableFollowsColorEntry properly
+  * Prevent a possible container detach
+  * Fixed a typo in searching gtk icon cache
+  * Normalize signal/slot signatures
+  * Fix symbolic SVG icons with Qt5.10
+  * Don't allow Q_FOREACH to be used
+  * xdgdesktopfile: Fix typo made in 24c9845
+
+3.1.0 / 2017-10-21
+==================
+
+  * Release 3.1.0: Update changelog
+  * Bump version to 3.1.0
+  * xdgdesktopfile: Add API for getting actions info
+  * xdgdesktopfile: Add support for activating actions
+  * xdgdesktopfile: Add getting actions
+  * Check $XDG_CONFIG_HOME and $XDG_CONFIG_DIRS for mimeapps.list first.
+  * Fix reading and writing mimeapps.list file.
+  * Don't export github templates
+
+3.0.0 / 2017-09-22
+==================
+
+  * Release 3.0.0: Update changelog
+  * Backport support for Scale directory key according to Icon Theme spec
+  * Bump Major to 3
+  * test: Drop Q_FOREACH
+  * Drop Q_FOREACH
+  * liblxqt make no sense here
+  * Copied issue template
+  * Drops Qt5Core_VERSION_STRING
+  * Avoid Qt special keywords collision
+  * XdgDesktopFile: Stops allocating unneeded QMap::keys()
+  * XdgDesktopFile: Stop allocating unneeded QHash:values()
+  * XdgDesktopFile: Improve const-ness
+  * xdgiconloader: Reworks the unthemed/pixmap search
+  * xdgiconloader: Puts the hicolor at the end of the theme hierarchy
+  * XdgIcon: Add flag for "FollowsColorScheme" processing
+  * xdgiconloader: Honor "FolowsColorScheme" theme hint
+  * xdgiconloader: Support symbolic SVG icons
+  * More fixes (#131)
+  * xdgiconloader: Correct hierarchy of fallbacks (#116)
+  * xdgiconloader: Fix XdgIconLoaderEngine::actualSize() (#130)
+  * Update CMakeLists.txt
+  * It adds loadIcon() timing measurements.
+  * xdgiconloader: Consider all existing files/images
+  * Check QTXDGX_ICONENGINEPLUGIN_INSTALL_PATH existence
+  * Mark QTXDGX_ICONENGINEPLUGIN_INSTALL_PATH as advanced
+  * xdgiconloader: Implement QIconEnginePlugin interface
+  * Disables uninstall target
+  * Remove last uses of Java-style (non-mutable) iterators from QtBase
+  * Adds a development qtxdg-iconfinder utility tool
+  * Enable strict iterators for debug builds
+  * Removes extra semi-colons
+  * Improve build warnings
+  * Bump year
+  * QtGui: eradicate Q_FOREACH loops [already const]
+  * Optimize QIconLoader::findIconHelper()
+  * Remove unused variable in QIconLoader::findIconHelper()
+  * Improve use of QHash to minimize double hashing
+  * QIconLoaderEngine: add missing Q_DECL_OVERRIDEs
+  * Replace QLatin1Literal with QLatin1String
+  * QIconCacheGtkReader: use QStringRef more
+  * Gui: use const (and const APIs) more
+  * Adds Link Time Optimization
+  * Replaces CMAKE_SOURCE_DIR by PROJECT_SOURCE_DIR
+  * Refactors superbuild support
+  * Remove duplicate use of source header files
+  * Use AUTOMOC everywhere
+  * Stop using include_directories()
+  * Removes test project definition
+  * Use CMAKE_INCLUDE_CURRENT_DIR
+  * Adds PROJECT_NAME to the build Qt version message
+  * Simplify target_compile_definitions() and target_include_directories()
+  * qiconloader: Reuse Qt implementation
+  * XdgIconLoader: Fix FTBFS in super-build/in-tree builds
+  * Allow xdg-user-dirs in the realpath of $HOME. On some systems /home is a symlink and $HOME points to the symlink. This commit allows the xdg-user-dirs to start with the real/canonical path.
+  * Updates version requirements in pkg-config (.pc) stuff
+  * Make Qt5Xdg use only the same version Qt5XdgIconLoader
+  * Adds minimum Qt version requirement (5.4.2)
+  * test: Fixes false positive in tst_xdgdesktopfile::testReadLocalized()
+  * Remove cpack (#106)
+
+2.0.0 / 2016-09-17
+==================
+
+  * Release 2.0.0: Add changelog
+  * Bump version to 2.0.0
+  * Extend README.md
+  * Updates dependencies
+  * Fixes QIcon::hasThemeIcon() behavior with our Icon Loader Engine
+  * Adds Qt5Svg explicitly to the required packages
+  * QIconLoader: Use the GTK+ icon caches
+  * QIcon: add a hook in the engine so a non null QIconEngine can still be a null icon
+  * QIconLoader: don't make QIconDirInfo::type a bit-field
+  * Do not support static QIcon instances
+  * Respect manual set icon themes.
+  * Remove <qhash.h> where it's not used
+  * Make it more obvious that Q_WS_ is dead code, and should perhaps be ported
+  * XdgDesktopFileData: Explicitly initialize members (#91)
+  * build: Create separate Qt5XdgIconLoader target
+  * XdgDesktopFile: Adds tests
+  * xdgdesktopfile: Removes an not needed debug info
+  * xdgdesktopfile: Removes double QLatin1String's contruction
+  * XdgDesktopFileCache: Check if a file isValid() only when needed
+  * XdgDesktopFile: Reworks XdgDesktopFileCache::getFile()
+  * XdgDesktopFileCache: Check new acquired objects before using it
+  * XdgDesktopFile: Removes unneeded assignment
+  * XdgDesktopFile: Add break to switch case
+  * qtxdg: Get the HOME environment variable just one time
+  * Replace the QString % operator by the + operator
+  * No more implicit string conversions
+  * Moves QT_USE_QSTRINGBUILDER to the compiler_settings CMake module
+  * XdgDesktopFileCache: Fixes an coding typing error
+  * xdgiconloader: Fix typo in directoryMatchesSize
+  * Xdgiconloader (#84)
+  * Improve foreach iteraror performance
+  * XdgDesktopFile: Improve the performance of the foreach loop
+  * XdgDesktopFile: Use XdgDirs::userDir(), drop QStandardPaths()
+  * XdgDesktopFile: Standardize text strings scope
+  * XdgDesktopFile: Adds a Desktop File ID calculator method
+  * XdgDesktopFile: Document Exec fallback when DBusActivatable fails
+  * Adds QT_USE_QSTRINGBUILDER to the compile definitions
+  * Adds the BUILD_DEV_UTILS to README.md
+  * Makes the development utils build/install optional
+  * XdgDesktopFile: Adds Exec fallback when DBusActivatable fails
+  * Adds an .desktop file start tester
+  * XdgDirs: Use Q_ASSERT to check for XdgDirs::userDirectory invalid values
+  * XdgDirs: Use XdgDirs::UserDirectory enum instead of int
+  * XdgDirs: Makes XdgDirs::userDir use userDirectoryFallback()
+  * XdgDirs: Adds userDirDefault() method.
+  * Adds XdgDesktopFile::mimeTypes() member
+  * build: Enable C++11 usage
+  * iconloader: Fix actualSize() for non-themed icons
+  * desktopfile: Change validity check
+  * Added Digia-Qt-LGPL-Exception-1.1
+  * Update years and Licenses
+  * desktopfile: Check validity of DBus object path
+  * desktopfile: Don't invoke DBus call on invalid interface
+  * XdgUserDirs: Return a fallback when the path is empty
+  * README.md: Fix grammatical error, adjust wording
+  * Update and rename README to README.md
+  * xdgdesktopfile: handle 'Path' entry for application's working directory
+  * Fix possible use of cachedIcon after free
+  * Update release.sh server url
+
+1.3.0 / 2015-10-27
+==================
+
+  * Release 1.3.0
+  * desktopfile: Remove support for $XDG_MOVIES_DIR (which doesn't exist)
+  * Assorted style cleanups
+  * Adds XdgDesktopFile != operator
+  * Fixes the XdgMimeType == operator
+  * Handles CMake policy CMP0063
+  * Adds an compiler_settings CMake "module"
+  * CMake: Adds Runtime install COMPONENT
+  * Drops find_package(), use find_dependency()
+  * Marks link libraries as PUBLIC
+  * Handles in-tree builds headers the right way.
+  * Narrows the scope of compile definitions
+  * Improves create_pkgconfig_file.cmake
+  * Use the Targets CMake stuff
+  * Adds package version config info file
+  * Code reordering
+  * Use Qt5 style library names
+  * Remove unneeded add_definitions()
+  * Simplifies version variables a little bit
+  * Removes unneeded include_directories()
+  * Uses standard GNUInstallDirs instead of FindLibSuffix
+  * Remove trailing whitespaces
+  * added missing licensing headers
+  * Backports Fixed icons lookup in QIcon::fromTheme
+  * Adds XdgDirs tests
+  * Adds XdgDirs::configHome() fallback default locations
+  * XdgDesktopFile: Handles NotShowIn correctly
+  * Fixes XdgDirs::dataHome() regression
+  * QIconLoader: Change the order fallback icon lookup order
+  * Gets rid of translations stuff
+  * Cleans up empty comment lines
+  * Remove Qt4 stuff from the documentation
+  * Remove Qt4 stuff from the example and tests
+  * Remove Qt4 stuff from the source files
+  * Get rid of Qt4 stuff in the build system
+
+1.2.0 / 2015-03-29
+==================
+
+  * Release 1.2.0
+  * Fixes XdgDesktop::isShow() caching mechanism
+  * Add QtDBus/Qt5DBus dependency
+  * Adds support for X-Categories
+  * Adds support for X-OnlyShowIn and X-NotShowIn
+  * Fixes an Qt4 FTBFS
+  * Use QLatin1Char()
+  * Adds platform-data handling
+  * Make DBusActivatable work for Qt4 too
+  * desktopfile: support for DBusActivatable applications
+  * Adds a list of special non detachable execs
+  * desktopfile: run new process as a direct child
+  * Qt5: Use QStandardPaths() where possible
+  * XdgDirs: Updates documentation.
+  * String manipulation enhancements
+  * Make sure returned directories don't have an trailing '/'
+  * XdgDirs: postfix should always start with an /
+  * XdgDirs::configHome() handle postfix slash
+  * Fix XdgDirs::dataDirs() postfix handling
+  * Replace empty quotes by QString()
+  * XdgDesktopFileCache: Retrieve apps of a category
+  * Quote all paths in the CMake stuff
+  * Qt5: Use Qt5 private headers
+  * Ignore empty dirs in xdgDirList()
+  * Makes needed helper functions available to tests
+  * - Fix compilation when using internal mime
+  * Release with a proper versioned prefix
+  * Avoid adding empty parent icon theme
+  * Update license headers and add new license files
+  * Use QPlatformTheme::SystemIconFallbackThemeName in static QString fallbackTheme()
+  * QIconLoader: enable an easy case of transactional processing
+  * QIconLoader: don't inherit QObject
+  * QIconLoader: replace an inefficient QList with a QVector
+  * QIconLoader: mark virtual overrides
+  * QIconLoader: mark a helper type as movable
+  * QIconLoader: replace while(!empty()) delete takeLast() with qDeleteAll()
+  * QIconLoader: don't re-evaluate container.size() all the time (II)
+  * QIconLoader: don't re-evaluate container.size() all the time
+  * QIconLoader: remove another unused variable
+  * QIconLoader: remove an unused variable
+
+1.1.0 / 2015-02-07
+==================
+
+  * Update the release script to sign packages
+  * Sets visibility to hidden symbols for Clang
+  * Move static const variable from a public .h file to the .cpp
+  * Use gcc visibility attribute and Q_DECL_EXPORT macro to avoid exporting private symbols in the lib. This greatly reduced the size of dynamic symbol table and might potentially speed up loading. Also, turn off exception handling to save more since we don't use it. For non-gcc compilers, this change does nothing.
+  * Makes the Qt5 build the default
+  * Qt5: Updates CMake minimum required version
+  * Qt4: Backport add fallback for unthemed app icons
+  * add fallback for unthemed app icons
+  * XdgDesktopFileCache::getFile(): Don't insert/removes non existent files
+  * Enhance the loading of a .desktop file.
+  * Adds helper functions prototypes
+  * Fixes issue #7
+  * Updates .gitignore
+  * Removes i18n/i10n
+  * Updates translations
+  * Updates the translation infrastructure
+  * Update Russian translation
+  * Qt4: Fixes an FTBFS on Gentoo x86_64 when USE_QTMIMETYPES=On
+  * Add a release script
+
+1.0.0 / 2014-09-06
+==================
+
+  * Release 1.0.0
+  * Replaces XdgMimeInfo with XdgMimeType
+  * Updates the cmake_minimum_required() version
+  * Build system maintenance
+  * if QT_VERSION < 5 load the qt4 header
+  * Allows QIconLoader to search in multiple theme directories.
+  * Fixes an FTBFS in the Qt4 build
+  * Merge branch 'use-qt5-qiconloader'
+  * Revert "Merge branch 'use-qt5-qiconloader'"
+  * Revert "Fixes an FTBFS in the Qt4 build"
+  * Fixes an FTBFS in the Qt4 build
+  * Get and set XDG user dirs variables in config file
+  * Honors /usr/share/pixmaps when searching for icons.
+  * Adds xpm icon support
+  * Adds Qt5 QIconLoader for the Qt5 build
+  * Ports Qt5 commit: Make sure QIconLoader is always initialized
+  * Use environment to trigger Qt5 builds
+  * Fixes an XdgMimeInfo memory leak
+  * Use case insensitive comparisons with desktop environment names
+  * Updates some XdgDesktopFile methods documentation
+  * Make desktop enviroment names comparisons case insensitive
+  * solve failed comp LXQT with LXQt (OnlyShowIn=LXQt;) in desktop files
+  * Re-adds Support XDG_CURRENT_DESKTOP in autostart handling
+  * Deprecates non desktop environment neutral XdgDesktopFile methods
+  * Revert "Support XDG_CURRENT_DESKTOP in autostart handling."
+  * Adds QTXDG_DEPRECATED macro
+  * Install pkgconfig files to /usr/local/libdata/pkgconfig in FreeBSD.
+  * Set library dirs properly in qtxdg-config and use files.
+
+0.5.3 / 2014-05-08
+==================
+
+  * Release 0.5.3
+  * Update some comments
+
+0.5.1 / 2014-05-05
+==================
+
+  * libqtxdg 0.5.1
+  * Revert "Change default environment to LXQt"
+  * Revert "Check for lxqt-applications instead of razor-applications"
+  * Support XDG_CURRENT_DESKTOP in autostart handling.
+  * Update .gitignore
+  * Check for lxqt-applications instead of razor-applications
+  * Change default environment to LXQt
+  * Avoid XdgAction mnemonics caused by '&' symbol in the name of desktop app.
+
+0.1.0 / 2014-04-29
+==================
+
+  * Update AUTHORS and COPYING
+  * Add CPack rules for creating tarball
+  * Put iconloaderfix into own namespace
+  * Adds an uninstall target
+  * Fixes an FTBFS on the test target
+  * Fixes an FTBFS when a mix of PIC and PIE compiler flags are used
+  * Updates CMake's minimum required version
+  * Adds Qt5Widgets to the required pkg-config required packages
+  * test: Removes meaningless add_dependencies(..... razorqt)
+  * Don't use STREQUAL to test the BUILD_TESTS option
+  * Removed CMAKE_SOURCE_DIR usage from test/CMakeLists.txt
+  * Adds missing ${CMAKE_INSTALL_PREFIX}
+  * Fixes bugs in create_pkgconfig_file cmake macro
+  * Use GNU installation directories
+  * prefix parameter for autostartDirs, configDirs and dataDirs. (part2)
+  * prefix parameter for autostartDirs, configDirs and dataDirs.
+  * Updates buildsystem typical use documentation
+  * Reformatting for an easy reading in a 80x24 terminal
+  * Documents the QTXDG_QT_LIBRARIES variable
+  * Adds an tiny example on how to use the lib
+  * RazorLibSuffix.cmake -> ../cmake/FindLibSuffix.cmake and QUIET mode for find_package
+  * Adds ${CMAKE_CURRENT_BINARY_DIR} to the include_directories list
+  * Fix qtxdg_use.cmake and qtxdg-config.cmake generation location
+  * Replace QDomNodeList::length() by QDomNodeList::size()
+  * Portable headers
+  * Adds pkg-config to Qt5Xdg
+  * Renames the Qt5 build
+  * Packs Qt version specific stuff
+  * Removes unneeded set(QT_USE_QTXML TRUE)
+  * qtxdg/test: Adapts the build system to support Qt4 and Qt5
+  * qtxdg/test: Removes Qt4 CMake stuff
+  * Adds missing library (Qt5Xml) to qtxdg target
+  * qtxdg/test: Removes the project command and cmake_minimum_required()
+  * Explicitly requires QtTest module
+  * Make BUILD_TESTS an option
+  * Replace Q_GLOBAL_STATIC_WITH_INITIALIZER
+  * Replaces QIconEngineV2 with QIconEngine
+  * Adds QMimeData include file
+  * Port QString::toAscii()
+  * Port QDesktopServices
+  * Ran fixqt4headers
+  * Adds support to Qt5 in the buildsystem
+  * Adds test target to CMake
+  * Use the QtTestLib facilities
+  * Cmake find_package files for the QtXdg
+  * Revert "Cmake find_package files"
+  * Cmake find_package files
+  * Add COPYING and AUTHORS files
+  * X-RAZOR changed to Razor in desktop files
+  * config-file-associations, mimetypeviewer: Replaced QTreeWidget with QTreeView and new class MimetypeItemModel as model
+  * Improved (hopefuly) layout and look of config-fileassociations, application chooser
+  * Clang complained about type mismatch
+  * application-x-executable now fallback icon for desktopfiles of type Application
+  * Added XdgMimeInfoCache
+  * Added more info to XdgMime
+  * XdgDesktopFileCache now holds list of all apps that can handle a given mimetype
+  * Make QtXdg build by itself again
+  * libraries: Removes unneeded include(RazorLibSuffix)
+  * libraries: Removes unneeded cmake_minimum_required(VERSION 2.6)
+  * libraries: Removes unneeded find_package(Qt4)
+  * xdgdesktopfilecache now looks in <datadir or datahome>/applications/defaults.list for default app
+  * Add getApps method to XdgDesktopFileCache - returns all applications that can handle a mimetype
+  * Fix building with C++11
+  * XdgDesktopFile: Don't strip quotes
+  * initial fix for #520 XdgDesktopFileCache::getDefaultApp cache wrong behavior
+  * Closes Issue #487
+  * Set minimum percent to 1% for transifex in cmake
+  * Translations updated
+  * Translations updated
+  * Soname was changed
+  * Update translations
+  * Translations updated
+  * Removed line num from TS files.
+  * Fix autostart dir detection when the env var is set
+  * Updated .tx file
+  * version bump to 0.4.99 (public "release candiates") for qtxdg
+  * Translation for razor-sesion
+  * Fixes in the qtxdg translations
+  * Transifex resource renamed qtxdg->libqtxdg
+  * Fix for Issue #290 Fails to build on BSD
+  * New translations for libqtxdg
+  * Starting the razor-confupdate from the razor-session.
+  * Razor-confupdate:  fixes and .upd file for 0.4.1-0.5
+  * Language name zh_CN.GB2312 braked cmake process.
+  * Translations updated
+  * Add operator== for XdgDesktopFile
+  * Don't replace space with \s
+  * Fixed for Preloading menu
+  * Cleaning the code.
+  * Move autostart directory code to XdgDirs
+  * Improvements to the XdgMenu. Added changed signal.
+  * Small speed opetimistaion in the qiconloader
+  * Add function to remove entries from desktop files
+  * Transifex desktop: sr_BA.ts should be a local
+  * Transifex desktop: local translations
+  * Transifex desktop: Translations pulled
+  * Icons for the desktop menu
+  * Add Traditional Chinese Translations
+  * Translations update
+  * Added support for the online translation service. www.transifex.net
+  * Serbian translation files
+  * Class documentation for XdgMimeInfo
+  * Greek translation by iosifidis
+  * Fix for issue #170. Escaping.
+  * Fix for issue #170. Escaping.
+  * Fix for issue #170
+  * Fix for issue #170
+  * Added danish translations
+  * X-RAZOR -> Razor for autostart
+  * Russian translation
+  * RAZOR -> X-RAZOR
+  * MINOR_VERSION & PATCH_VERSION for libraries
+  * fix #169: italian translation
+  * XdgAutoStart rewriten (lgpl2+)
+  * Closes #158
+  * Support icons with absolute path file names
+  * LGPL2+ for qtxdg
+  * Escape &'s to prevent Qt from using them for mnemonics
+  * Revert "XdgDesktopFile: Display an actual ampersand character"
+  * Update german [de] translation
+  * Add setLocalizedValue() function
+  * fixed qtxdg/translations/translate.sh
+  * Add a constructor to generate basic XdgDesktopFiles
+  * Correct the XdgAutoStart behavior
+  * SVK translation finalized
+  * Replaces return"" by return QString()
+  * License audit
+  * implemented #70: pkg-config for libs
+  * Add Chinese(simplified) translation files.
+  * fix #119 qtxdg bug and patch
+  * License audit
+  * Add Slovak (sk) translation
+  * Czech translations (cs_CZ)
+  * Fix doxygen documentation in xdgdesktopfile
+  * New doxygen ifrastructure
+  * devel-docs generated in CMAKE_BINARY_DIR/docs includig dummy index.html
+  * missing translations in CMakeLists
+  * XdgDesktopFile is implicitly shared
+  * huge refactoring of the libraries build organization

@@ -1,0 +1,8 @@
+/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/install/strip.dir
+/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/install/local.dir
+/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/install.dir
+/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/list_install_components.dir
+/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/rebuild_cache.dir
+/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/edit_cache.dir
+/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/sysstat-qt5.dir
+/home/hangsia/Downloads/Project From Sunny/lxqt/libsysstat/build/CMakeFiles/sysstat-qt5_autogen.dir

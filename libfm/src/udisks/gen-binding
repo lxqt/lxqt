@@ -1,0 +1,3 @@
+#!/bin/sh
+dbus-binding-tool --mode=glib-client /usr/share/dbus-1/interfaces/org.freedesktop.UDisks.xml > udisks.h
+dbus-binding-tool --mode=glib-client /usr/share/dbus-1/interfaces/org.freedesktop.UDisks.Device.xml > udisks-device.h

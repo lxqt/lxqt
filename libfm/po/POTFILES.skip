@@ -1,0 +1,15 @@
+# The strings in demo program shouldn't be added to the lib.
+src/demo/main-win.c
+src/demo/main-win-ui.c
+src/gtk/exo/exo-tree-view.c
+src/gtk/exo/exo-icon-view.c
+src/gtk/exo/exo-private.c
+
+# these files are generated
+data/ui/app-chooser.ui
+data/ui/ask-rename.ui
+data/ui/exec-file.ui
+data/ui/file-prop.ui
+data/ui/preferred-apps.ui
+data/ui/progress.ui
+data/ui/filesearch.ui

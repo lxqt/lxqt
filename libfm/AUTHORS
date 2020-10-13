@@ -1,0 +1,38 @@
+洪任諭 (Hong Jen Yee, aka PCMan) <pcman.tw@gmail.com>
+Jürgen Hötzel <juergen@archlinux.org>
+Andriy Grytsenko (LStranger) <andrej@rep.kiev.ua>
+
+External source code taken from other projects:
+ * ExoIconView, ExoTreeView, along with the source code in src/exo:
+        os-cillation e.K, Anders Carlsson, Jannis Pohlmann <jannis@xfce.org>,
+        Nick Schermer <nick@xfce.org> and Benedikt Meurer
+ * Udisks support contains several lines of source code from
+        gnome-disk-utility(gdu-volume.c):
+        Copyright (C) 2007 David Zeuthen, licensed under GNU LGPL
+
+Big thanks to all other contributors:
+Martin Bagge <brother@bsnet.se>
+Shae Smittle <starfall87@gmail.com>
+Vadim Ushakov <igeekless@gmail.com>
+Andrea Florio <andrea@opensuse.org>
+Christoph Wickert <cwickert@fedoraproject.org>
+galtgendo <galt_gendo@sourceforge.net>
+Eugene Tretyak <etretyak@gmail.com>
+Mateusz Loskot <mateusz@loskot.net>
+Samuel Stirtzel <s.stirtzel@googlemail.com>
+Martin Kortkamp <martin.kortkamp@gmx.de>
+Abel Fírvida Donéstevez <aafirvida@gmail.com>
+pavel <korzhpavel@users.sourceforge.net>
+Richard Grenville <richardgv@users.sourceforge.net>
+Mamoru TASAKA <mtasaka@fedoraproject.org>
+Jekyll Wu <adaptee@gmail.com>
+David Schalig <github@schalig.org>
+Jonathan Marsden <jmarsden@fastmail.fm>
+Evangelos Foutras <evangelos@foutrelis.com>
+Daniele Forsi <daniele@forsi.it>
+Mario J. Rugiero <mrugiero@gmail.com>
+Tsu Jan <tsujan2000@gmail.com>
+Nathan Osman <nathan@quickmediasolutions.com>
+Nikita Sirgienko <warquark@gmail.com>
+
+Also big thanks to our great translation team.

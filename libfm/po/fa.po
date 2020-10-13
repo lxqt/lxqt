@@ -1,0 +1,1941 @@
+# Persian translation for libfm package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the libfm package.
+# Hamidreza <n3gb0y@gmail.com>, 2010.
+# Ali Yousefi Sabzevar <aysabzevar@gmail.com>, 2011-2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: libfm 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-13 00:10+0300\n"
+"PO-Revision-Date: 2017-10-24 12:24+0000\n"
+"Last-Translator: Ali Yousefi Sabzevar <aysabzevar@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1508847843.316089\n"
+
+#: ../data/libfm-pref-apps.desktop.in.h:1 ../data/ui/preferred-apps.glade.h:1
+msgid "Preferred Applications"
+msgstr "نرم‌افزارهای برگزیده"
+
+#: ../data/libfm-pref-apps.desktop.in.h:2
+msgid "Select applications called on click on Web link or e-mail address"
+msgstr ""
+
+#: ../data/lxshortcut.desktop.in.h:1
+#, fuzzy
+msgid "Shortcut Editor"
+msgstr "میانبر"
+
+#: ../data/lxshortcut.desktop.in.h:2
+msgid "Create new or change existing desktop entry"
+msgstr ""
+
+#: ../data/ui/app-chooser.glade.h:1
+#, fuzzy
+msgid "Choose Application"
+msgstr "یک برنامه ی انتخاب کنید"
+
+#: ../data/ui/app-chooser.glade.h:2
+msgid "Use selected application to open files"
+msgstr "از نرم‌افزارهای انتخابی برای باز کردن پرونده ها استفاده کن"
+
+#: ../data/ui/app-chooser.glade.h:3
+msgid "_Installed Applications"
+msgstr "_برنامه‌های نصب شده"
+
+#: ../data/ui/app-chooser.glade.h:4
+msgid "<b>C_ommand line to execute:</b>"
+msgstr "<b>خط فرمان برای اجرا:</b>"
+
+#: ../data/ui/app-chooser.glade.h:5
+#: ../src/modules/gtk-fileprop-x-desktop.c:275
+msgid "_Browse..."
+msgstr "_مرور..."
+
+#. row 1: "Terminal" GtkCheckButton
+#: ../data/ui/app-chooser.glade.h:6
+#: ../src/modules/gtk-fileprop-x-desktop.c:294
+msgid "_Execute in terminal emulator"
+msgstr "_اجرا در پایانه شبیه ساز"
+
+#. row 2: "X-KeepTerminal" GtkCheckButton
+#: ../data/ui/app-chooser.glade.h:7
+#: ../src/modules/gtk-fileprop-x-desktop.c:306
+msgid "_Keep terminal window open after command execution"
+msgstr ""
+
+#: ../data/ui/app-chooser.glade.h:9
+#, no-c-format
+msgid ""
+"<b>These special codes can be used in the command line:</b>\n"
+"  <b>%f</b>: Represents a single file name\n"
+"  <b>%F</b>: Represents multiple file names\n"
+"  <b>%u</b>: Represents a single URI of the file\n"
+"  <b>%U</b>: Represents multiple URIs"
+msgstr ""
+"<b>این کدهای ویژه می توانند در خط فرمان استفاده شوند: </b>\n"
+"<b>%f</b>: نشان دهنده ی یک نام پرونده است.\n"
+"<b>%F</b>:نشان دهنده‌ی چندین نام پرونده است.\n"
+"<b>%u</b>: نشان دهنده ی یک URI به تنهایی است.\n"
+"<b>%U</b>: نشان دهنده ی چندین URI است."
+
+#: ../data/ui/app-chooser.glade.h:14
+msgid "<b>_Application name (optional, set it to keep association)</b>"
+msgstr ""
+
+#: ../data/ui/app-chooser.glade.h:15
+msgid "Execute custom command line to open files"
+msgstr "اجرای سفارشی خط فرمان برای باز کردن پرونده ها"
+
+#: ../data/ui/app-chooser.glade.h:16
+msgid "C_ustom Command Line"
+msgstr "خط فرمان سفارشی"
+
+#: ../data/ui/app-chooser.glade.h:17
+#, fuzzy
+msgid "_Set selected application as default action for this file type"
+msgstr ""
+"برنامه‌های انتخابی را به عنوان حالت اجرایی پیشفرض این نوع پرونده تنظیم کن"
+
+#: ../data/ui/ask-rename.glade.h:1
+#, fuzzy
+msgid "Confirm File Replacing"
+msgstr "تایید جایگزین کردن پرونده ها"
+
+#: ../data/ui/ask-rename.glade.h:2
+msgid "_Skip"
+msgstr "گذشتن"
+
+#: ../data/ui/ask-rename.glade.h:3
+msgid "_Rename"
+msgstr "تغییر نام"
+
+#: ../data/ui/ask-rename.glade.h:4
+msgid "_Overwrite"
+msgstr "رونوشت"
+
+#: ../data/ui/ask-rename.glade.h:5
+msgid ""
+"<b>There is already a file with the same name in this location.</b>\n"
+"\n"
+"Do you want to replace the existing file"
+msgstr ""
+"<b> از قبل پروندهی با همین نام در این آدرس وجود داشته.</b>\n"
+"\n"
+"ایا می خواهید با پرونده موجود جایگزین کنید ؟"
+
+#: ../data/ui/ask-rename.glade.h:8
+msgid "with the following file?"
+msgstr "همراه با پرونده پیش رو؟"
+
+#: ../data/ui/ask-rename.glade.h:9
+#, fuzzy
+msgid "_File name:"
+msgstr "نام پرونده:"
+
+#: ../data/ui/ask-rename.glade.h:10
+msgid "_Apply this option to all existing files"
+msgstr "به‌کار بردن این گزینه‌ را بر روی تمام پرونده‌های موجود"
+
+#: ../data/ui/choose-icon.ui.h:1
+#, fuzzy
+msgid "Choose An Icon..."
+msgstr "یک برنامه ی انتخاب کنید"
+
+#. genitive case is here: Choose icon from: ...
+#: ../data/ui/choose-icon.ui.h:3
+#, fuzzy
+msgid "system icon theme"
+msgstr "نرم‌افزارهای سیستمی"
+
+#. genitive case is here: Choose icon from: ...
+#: ../data/ui/choose-icon.ui.h:5
+#, fuzzy
+msgid "image files"
+msgstr "پرونده‌های تصویری"
+
+#: ../data/ui/choose-icon.ui.h:6
+#, fuzzy
+msgid "<b>Choose icon from:</b>"
+msgstr "<b>تغییر محتویات:</b>"
+
+#: ../data/ui/exec-file.glade.h:1
+msgid "Execute File"
+msgstr "اجرای پرونده"
+
+#: ../data/ui/exec-file.glade.h:2
+msgid "Execute in _Terminal"
+msgstr "اجرا در ترمینال"
+
+#: ../data/ui/file-prop.glade.h:1
+msgid "File Properties"
+msgstr "مشخصات پرونده"
+
+#: ../data/ui/file-prop.glade.h:2
+msgid "Icon of the file in folder view"
+msgstr ""
+
+#: ../data/ui/file-prop.glade.h:3
+#, fuzzy
+msgid "<b>_Name:</b>"
+msgstr "<b>مالک</b>"
+
+#: ../data/ui/file-prop.glade.h:4
+msgid "<b>Location:</b>"
+msgstr "<b>محل:</b>"
+
+#: ../data/ui/file-prop.glade.h:5
+#, fuzzy
+msgid "<b>Target file:</b>"
+msgstr "<b>هدف:</b>"
+
+#: ../data/ui/file-prop.glade.h:6
+#, fuzzy
+msgid "<b>File type:</b>"
+msgstr "<b>نوع پرونده:</b>"
+
+#: ../data/ui/file-prop.glade.h:7
+msgid "<b>Open _with:</b>"
+msgstr "<b>باز کن با:</b>"
+
+#: ../data/ui/file-prop.glade.h:8
+msgid "Select the application used to open files of this type "
+msgstr "برنامه مورد استفاده برای باز کردن پرونده‌های از این دست را انتخاب کنید"
+
+#: ../data/ui/file-prop.glade.h:9
+#, fuzzy
+msgid "<b>Total count of files:</b>"
+msgstr "<b>مجموع اندازه ی پروندهها:</b>"
+
+#: ../data/ui/file-prop.glade.h:10
+#, fuzzy
+msgid "<b>Total size of files:</b>"
+msgstr "<b>مجموع اندازه ی پروندهها:</b>"
+
+#: ../data/ui/file-prop.glade.h:11
+#, fuzzy
+msgid "<b>Size on disk:</b>"
+msgstr "<b>حجم روی دیسک:</b>"
+
+#: ../data/ui/file-prop.glade.h:12
+#, fuzzy
+msgid "<b>Last modification:</b>"
+msgstr "<b>آخرین تغییردهی:</b>"
+
+#: ../data/ui/file-prop.glade.h:13
+#, fuzzy
+msgid "<b>Last access:</b>"
+msgstr "<b>آخرین دسترسی:</b>"
+
+#: ../data/ui/file-prop.glade.h:14
+#, fuzzy
+msgid "<b>Last permissions change:</b>"
+msgstr "<b>آخرین دسترسی:</b>"
+
+#: ../data/ui/file-prop.glade.h:15
+msgid "_General"
+msgstr "_عمومی"
+
+#: ../data/ui/file-prop.glade.h:16
+msgid "<b>O_wner:</b>"
+msgstr "<b>مالک:</b>"
+
+#: ../data/ui/file-prop.glade.h:17
+msgid "<b>G_roup:</b>"
+msgstr "<b>گروه:</b>"
+
+#: ../data/ui/file-prop.glade.h:18
+msgid "<b>_View content:</b>"
+msgstr "<b>مشاهده محتویات</b>"
+
+#: ../data/ui/file-prop.glade.h:19
+msgid "<b>C_hange content:</b>"
+msgstr "<b>تغییر محتویات:</b>"
+
+#: ../data/ui/file-prop.glade.h:20
+msgid "<b>_Execute:</b>"
+msgstr "<b>اجرا:</b>"
+
+#: ../data/ui/file-prop.glade.h:21
+msgid "<b>Special bits:</b>"
+msgstr "<b>بیت‌های مخصوص:</b>"
+
+#: ../data/ui/file-prop.glade.h:22
+msgid "Who can read content of the file/directory"
+msgstr "چه کسی می‌تواند محتویات پرونده/پوشه را بخواند"
+
+#: ../data/ui/file-prop.glade.h:23
+msgid "Who can change content of the file/directory"
+msgstr "چه کسی می‌تواند محتویات پرونده/پوشه را تغییر دهد"
+
+#: ../data/ui/file-prop.glade.h:24
+msgid "Who can execute the file or enter the directory"
+msgstr "چه کسی می‌تواند پرونده را اجرا کند یا وارد پوشه شود"
+
+#: ../data/ui/file-prop.glade.h:25
+msgid "Special flags for file execution"
+msgstr "پرچم‌های مخصوص برای اجرای پرونده"
+
+#: ../data/ui/file-prop.glade.h:26
+msgid "Special flags for directory access"
+msgstr "پرچم‌های مخصوص برای دسترسی به پوشه"
+
+#: ../data/ui/file-prop.glade.h:27
+msgid "<b>Access Control</b>"
+msgstr "<b>کنترل دسترسی</b>"
+
+#: ../data/ui/file-prop.glade.h:28
+#, fuzzy
+msgid "Hidden file"
+msgstr "پرونده‌های ویدیویی"
+
+#: ../data/ui/file-prop.glade.h:29
+msgid "_Permissions"
+msgstr "_مجوزها"
+
+#: ../data/ui/file-prop.glade.h:30
+msgid "---"
+msgstr "---"
+
+#: ../data/ui/file-prop.glade.h:31
+msgid "None"
+msgstr "هیچ"
+
+#: ../data/ui/file-prop.glade.h:32
+#, fuzzy
+msgctxt ""
+"It is a directory access bit - 'sticky' - where only owner can delete a file "
+"from it"
+msgid "Sticky"
+msgstr "چسبناک"
+
+#: ../data/ui/file-prop.glade.h:33
+msgid "Set GID"
+msgstr "تنظیم GID"
+
+#: ../data/ui/file-prop.glade.h:34
+msgid "Sticky & set GID"
+msgstr " چسبناک و تنظیم GID"
+
+#: ../data/ui/file-prop.glade.h:35
+#, fuzzy
+msgctxt "this is a file access mode bit, also known as 'suid'"
+msgid "Set UID"
+msgstr "تنظیم UID"
+
+#: ../data/ui/file-prop.glade.h:36
+msgid "Set UID & GID"
+msgstr "تنظیم UID و GID"
+
+#: ../data/ui/file-prop.glade.h:37
+#, fuzzy
+msgctxt ""
+"this is a file access mode - only owner can access the file, for others "
+"access is denied"
+msgid "Only owner"
+msgstr "فقط مالک"
+
+#: ../data/ui/file-prop.glade.h:38
+msgid "Only owner and group"
+msgstr "فقط مالک و گروه کاربری"
+
+#: ../data/ui/file-prop.glade.h:39
+msgid "Anyone"
+msgstr "هر کسی"
+
+#: ../data/ui/file-prop.glade.h:40
+msgid "Nobody"
+msgstr "هیچ کس"
+
+#: ../data/ui/filesearch.glade.h:1
+msgid "Bytes"
+msgstr "بایت"
+
+#: ../data/ui/filesearch.glade.h:2
+msgid "KB"
+msgstr "کیلوبایت"
+
+#: ../data/ui/filesearch.glade.h:3 ../src/base/fm-utils.c:143
+msgid "MB"
+msgstr "مگابایت"
+
+#: ../data/ui/filesearch.glade.h:4 ../src/base/fm-utils.c:149
+msgid "GB"
+msgstr "گیگابایت"
+
+#: ../data/ui/filesearch.glade.h:5
+#, fuzzy
+msgid "Choose Date"
+msgstr "یک زمان انتخاب کنید"
+
+#: ../data/ui/filesearch.glade.h:6
+msgid "Choose a date from the following calendar"
+msgstr "از تقویم که در ادامه است کی تاریخ انتخاب کنید"
+
+#: ../data/ui/filesearch.glade.h:7
+msgid "Search Files"
+msgstr "جستجو در پرونده‌ها"
+
+#: ../data/ui/filesearch.glade.h:8
+#, fuzzy
+msgid "<b>File _Name Patterns:</b>"
+msgstr "<b>الگوهای نام پرونده:</b>"
+
+#: ../data/ui/filesearch.glade.h:9
+msgid ""
+"Pattern may be either POSIX shell pattern list (with ',' as separator) or "
+"POSIX regular expression."
+msgstr ""
+
+#: ../data/ui/filesearch.glade.h:10
+msgid "Case insensiti_ve"
+msgstr "غیر حساس به بزرگی و کوچکی حروف"
+
+#: ../data/ui/filesearch.glade.h:11
+msgid "_Use regular expression"
+msgstr ""
+
+#: ../data/ui/filesearch.glade.h:12
+#, fuzzy
+msgid "<b>Plac_es to Search:</b>"
+msgstr "<b>مکان‌های مورد جستجو</b>"
+
+#: ../data/ui/filesearch.glade.h:13
+msgid "_Search in sub directories"
+msgstr "جستجو در زیر پوشه‌ها"
+
+#: ../data/ui/filesearch.glade.h:14
+msgid "Search _hidden files"
+msgstr "جستجو در پرونده‌های مخفی"
+
+#: ../data/ui/filesearch.glade.h:15
+msgid "Name/_Location"
+msgstr "نام/ محل"
+
+#: ../data/ui/filesearch.glade.h:16
+msgid "<b>File Type</b>"
+msgstr "<b>نوع پرونده:</b>"
+
+#: ../data/ui/filesearch.glade.h:17
+#, fuzzy
+msgid "Only search for files of following types:"
+msgstr "فقط جستجو برای پرونده‌های از این نوع"
+
+#: ../data/ui/filesearch.glade.h:18
+msgid "Te_xt files"
+msgstr "پرونده‌های متنی"
+
+#: ../data/ui/filesearch.glade.h:19
+msgid "_Image files"
+msgstr "پرونده‌های تصویری"
+
+#: ../data/ui/filesearch.glade.h:20
+msgid "_Audio files"
+msgstr "پرونده‌های صوتی"
+
+#: ../data/ui/filesearch.glade.h:21
+msgid "_Video files"
+msgstr "پرونده‌های ویدیویی"
+
+#: ../data/ui/filesearch.glade.h:22
+msgid "_Documents"
+msgstr "مستندات"
+
+#: ../data/ui/filesearch.glade.h:23
+#, fuzzy
+msgid "Folde_rs"
+msgstr "پوشه"
+
+#: ../data/ui/filesearch.glade.h:24
+msgid "Ot_her:"
+msgstr ""
+
+#: ../data/ui/filesearch.glade.h:25
+msgid ""
+"Any valid content type can be entered here. Wildcard '*' is allowed at end "
+"of the type. Multiple types should be separated with ';'."
+msgstr ""
+
+#: ../data/ui/filesearch.glade.h:26
+msgid "File _Type"
+msgstr "نوع پرونده"
+
+#: ../data/ui/filesearch.glade.h:27
+#, fuzzy
+msgid "<b>File Contain_s:</b>"
+msgstr "<b>محتوای پرونده</b>"
+
+#: ../data/ui/filesearch.glade.h:28
+msgid "C_ontent"
+msgstr "محتویات"
+
+#: ../data/ui/filesearch.glade.h:29
+msgid "<b>File Size</b>"
+msgstr "<b>حجم پرونده:</b>"
+
+#: ../data/ui/filesearch.glade.h:30
+msgid "_Smaller than:"
+msgstr "کوچکتر از"
+
+#: ../data/ui/filesearch.glade.h:31
+msgid "_Bigger than:"
+msgstr "بزرگتر از:"
+
+#: ../data/ui/filesearch.glade.h:32
+msgid "<b>Last Modified Time</b>"
+msgstr "<b>آخرین تاریخ تغییردهی:</b>"
+
+#: ../data/ui/filesearch.glade.h:33 ../src/gtk/fm-gtk-file-launcher.c:670
+#: ../src/gtk/fm-gtk-file-launcher.c:677
+msgid "(None)"
+msgstr "(هیچ)"
+
+#: ../data/ui/filesearch.glade.h:34
+msgid "_Earlier than:"
+msgstr "پیش از:"
+
+#: ../data/ui/filesearch.glade.h:35
+msgid "L_ater than:"
+msgstr "پس از:"
+
+#: ../data/ui/filesearch.glade.h:36
+msgid "_Properties"
+msgstr "ویژگی‌ها"
+
+#: ../data/ui/preferred-apps.glade.h:2
+msgid "<b>Web Browser</b>"
+msgstr "<b>مرورگر وب</b>"
+
+#: ../data/ui/preferred-apps.glade.h:3
+msgid "The preferred Web Browser will be used to open hyperlinks."
+msgstr "مرورگر برگزیده برای باز گردن فرا لینک ها استفاده خواهد شد."
+
+#: ../data/ui/preferred-apps.glade.h:4
+#, fuzzy
+msgid "<b>Mail Client</b>"
+msgstr "<b>رایانامه بر</b>"
+
+#: ../data/ui/preferred-apps.glade.h:5
+#, fuzzy
+msgid ""
+"The preferred Mail Client will be used to compose emails when you click on e-"
+"mail addresses."
+msgstr ""
+"وقتی روی نام رایانامه ای کلیک کنید رایانه‌بر برگزیده برای رساندن نامه استفاده "
+"خواهد شد."
+
+#: ../data/ui/preferred-apps.glade.h:6
+msgid "<b>Terminal Emulator</b>"
+msgstr "<b>پایانه‌ی شبیه ساز</b>"
+
+#: ../data/ui/preferred-apps.glade.h:7
+msgid "Command line:"
+msgstr "خط فرمان:"
+
+#: ../data/ui/preferred-apps.glade.h:8
+msgid "System Applications"
+msgstr "نرم‌افزارهای سیستمی"
+
+#: ../data/ui/preferred-apps.glade.h:9
+msgid "File Associations"
+msgstr "روابط بین پروندهی"
+
+#. To: <Destination folder> ex. Copy file to..., Move file to...etc.
+#: ../data/ui/progress.glade.h:2
+msgid "<b>To:</b>"
+msgstr "<b>به:</b>"
+
+#. Preparing to do some file operation (Copy, Move, Delete...)
+#: ../data/ui/progress.glade.h:4
+msgid "Preparing..."
+msgstr "در حال آماده سازی..."
+
+#: ../data/ui/progress.glade.h:5
+#, fuzzy
+msgid "<b>Data transferred:</b>"
+msgstr "<b>هدف:</b>"
+
+#: ../data/ui/progress.glade.h:6
+msgid "<b>Time remaining:</b>"
+msgstr "<b>زمان باقی مانده:</b>"
+
+#: ../data/ui/progress.glade.h:7
+#, fuzzy
+msgid "<b>Errors occurred:</b>"
+msgstr "<b>تعدادی خطا رخ داده است:</b>"
+
+#: ../src/base/fm-action.c:272
+#, fuzzy
+msgid "Empty value"
+msgstr "اجرای پرونده"
+
+#: ../src/base/fm-action.c:280
+#, fuzzy
+msgid "Invalid selection"
+msgstr "معکوس کردن انتخاب"
+
+#. ---- GFile implementation ----
+#: ../src/base/fm-action.c:807 ../src/job/fm-file-ops-job.c:271
+#: ../src/modules/vfs-menu.c:1176 ../src/modules/vfs-search.c:928
+msgid "Operation not supported"
+msgstr "عملیات پشتبانی نمی‌شود"
+
+#: ../src/base/fm-file-launcher.c:87
+#, fuzzy, c-format
+msgid "Invalid desktop entry file: '%s'"
+msgstr "نام پرونده نامعتبر %s"
+
+#: ../src/base/fm-file-launcher.c:253 ../src/base/fm-file-launcher.c:407
+#, c-format
+msgid "Could not determine content type of file '%s' to launch it"
+msgstr ""
+
+#: ../src/base/fm-file-launcher.c:292
+#, c-format
+msgid "No default application is set to launch URIs %s://"
+msgstr ""
+
+#: ../src/base/fm-file-launcher.c:360
+#, c-format
+msgid "Cannot set working directory to '%s': %s"
+msgstr ""
+
+#: ../src/base/fm-file-launcher.c:454 ../src/base/fm-templates.c:1104
+#, c-format
+msgid "No default application is set for MIME type %s"
+msgstr ""
+
+#: ../src/base/fm-path.c:179 ../src/gtk/fm-places-model.c:848
+#: ../src/gtk/fm-places-model.c:1016
+msgid "Devices"
+msgstr ""
+
+#: ../src/base/fm-path.c:185 ../src/gtk/fm-places-model.c:866
+#: ../src/gtk/fm-places-model.c:1031
+msgid "Network"
+msgstr "شبکه"
+
+#: ../src/base/fm-path.c:1316 ../src/gtk/fm-places-model.c:898
+msgid "Trash Can"
+msgstr "سطل زباله"
+
+#: ../src/base/fm-mime-type.c:89
+#, fuzzy
+msgid "shortcut to URI"
+msgstr "میانبر"
+
+#: ../src/base/fm-templates.c:1043
+msgid "fm_template_create_file: invalid argument"
+msgstr ""
+
+#: ../src/base/fm-terminal.c:256
+msgid "No terminal emulator is set in libfm config"
+msgstr ""
+
+#: ../src/base/fm-thumbnailer.c:285
+#, fuzzy
+msgid "Invalid description of thumbnailer application"
+msgstr "منوی پوشه نامعتبر"
+
+#: ../src/base/fm-utils.c:137
+msgid "kB"
+msgstr ""
+
+#: ../src/base/fm-utils.c:154
+msgid "TB"
+msgstr "ترا بایت"
+
+#: ../src/base/fm-utils.c:165
+#, c-format
+msgid "%u byte"
+msgid_plural "%u bytes"
+msgstr[0] "%u بایت"
+
+#: ../src/base/fm-utils.c:174
+msgid "KiB"
+msgstr "کیبی بایت"
+
+#: ../src/base/fm-utils.c:180
+msgid "MiB"
+msgstr "میبی بایت"
+
+#: ../src/base/fm-utils.c:186
+msgid "GiB"
+msgstr "گیبی بایت"
+
+#: ../src/base/fm-utils.c:191
+msgid "TiB"
+msgstr "تی‌ای بی"
+
+#: ../src/base/fm-utils.c:573
+#, c-format
+msgid "The URI subpath '%s' contains invalid escaped characters"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:206
+#, c-format
+msgid "Duplicate handler for tag <%s>"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:300
+#, c-format
+msgid ""
+"Failed to parse '%-.*s', which should have been a digit inside a character "
+"reference (&#234; for example) - perhaps the digit is too large"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:311
+#, c-format
+msgid ""
+"Character reference did not end with a semicolon; most likely you used an "
+"ampersand character without intending to start an entity - escape ampersand "
+"as &amp;"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:337
+#, c-format
+msgid "Character reference '%-.*s' does not encode a permitted character"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:374
+#, c-format
+msgid ""
+"Empty entity '&;' seen; valid entities are: &amp; &quot; &lt; &gt; &apos;"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:381
+#, c-format
+msgid "Entity name '%-.*s' is not known"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:385
+#, c-format
+msgid ""
+"Entity did not end with a semicolon; most likely you used an ampersand "
+"character without intending to start an entity - escape ampersand as &amp;"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:595
+msgid "Space isn't allowed in the close tag"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:604
+#, c-format
+msgid "Element '%s' was closed but no element was opened"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:620
+#, c-format
+msgid "Element '%s' was closed but the currently open element is '%s'"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:676
+#, c-format
+msgid "Invalid char '%c' at start of attribute value"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:687
+#, c-format
+msgid "Invalid char '%c' at end of attribute value, expected '%c'"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:835
+msgid "Document ended unexpectedly"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:843
+msgid "Document was empty or contained only whitespace"
+msgstr ""
+
+#: ../src/extra/fm-xml-file.c:1259
+msgid "fm_xml_file_to_data: XML data error"
+msgstr ""
+
+#: ../src/gtk/fm-app-chooser-combo-box.c:217
+msgid "Customize"
+msgstr "سفارشی سازی"
+
+#: ../src/gtk/fm-app-chooser-dlg.c:325
+#, c-format
+msgid "<b>Select an application to open \"%s\" files</b>"
+msgstr "<b>یک برنامه برای باز کردن پرونده‌های \"%s\" انتخاب کنید</b>"
+
+#: ../src/gtk/fm-app-menu-view.c:207
+msgid "Installed Applications"
+msgstr "برنامه‌های نصب‌شده"
+
+#: ../src/gtk/fm-dir-tree-model.c:421 ../src/gtk/fm-dir-tree-model.c:1213
+#, fuzzy
+msgid "<No subfolders>"
+msgstr "<هیچ زیر پوشه‌ای نیست>"
+
+#: ../src/gtk/fm-dir-tree-model.c:423 ../src/gtk/fm-dir-tree-model.c:1214
+msgid "Loading..."
+msgstr "در حال بارگزاری..."
+
+#: ../src/gtk/fm-dir-tree-view.c:546 ../src/gtk/fm-side-pane.c:647
+msgid "Shows tree of directories in sidebar"
+msgstr ""
+
+#: ../src/gtk/fm-dnd-dest.c:412
+#, fuzzy
+msgid "_Cancel"
+msgstr "لغو شده"
+
+#: ../src/gtk/fm-dnd-dest.c:413
+msgid "C_opy Here"
+msgstr ""
+
+#: ../src/gtk/fm-dnd-dest.c:414
+msgid "_Move Here"
+msgstr ""
+
+#. Note to translators: Link in not noun but verb here
+#: ../src/gtk/fm-dnd-dest.c:416
+msgid "_Link Here"
+msgstr ""
+
+#: ../src/gtk/fm-dnd-dest.c:876
+msgid "XDirectSave failed."
+msgstr "XDirectSave ناموفق بود."
+
+#: ../src/gtk/fm-file-menu.c:151
+msgid "_Open"
+msgstr "باز کردن"
+
+#: ../src/gtk/fm-file-menu.c:152
+msgid "Open _With..."
+msgstr "باز کن با..."
+
+#: ../src/gtk/fm-file-menu.c:153
+#, fuzzy
+msgid "Open _With"
+msgstr "باز کن با..."
+
+#: ../src/gtk/fm-file-menu.c:158
+msgid "Copy Pa_th(s)"
+msgstr ""
+
+#: ../src/gtk/fm-file-menu.c:159
+msgid "H_ide"
+msgstr ""
+
+#: ../src/gtk/fm-file-menu.c:160
+msgid "Unh_ide"
+msgstr ""
+
+#: ../src/gtk/fm-file-menu.c:161
+#, fuzzy
+msgid "_Add to Bookmarks"
+msgstr "حذف از نشانک "
+
+#: ../src/gtk/fm-file-menu.c:162
+#, fuzzy
+msgid "_Rename..."
+msgstr "تغییر نام"
+
+#: ../src/gtk/fm-file-menu.c:163
+msgid "Co_mpress..."
+msgstr "فشرده سازی..."
+
+#: ../src/gtk/fm-file-menu.c:164
+msgid "Extract _Here"
+msgstr "همینجا استخراج کن"
+
+#: ../src/gtk/fm-file-menu.c:165
+msgid "E_xtract To..."
+msgstr "استخراج در..."
+
+#: ../src/gtk/fm-file-menu.c:166 ../src/gtk/fm-folder-view.c:198
+msgid "Prop_erties"
+msgstr "ویژگی‌ها"
+
+#. Note to translators: Trash in not noun but verb here
+#: ../src/gtk/fm-file-menu.c:272 ../src/gtk/fm-file-menu.c:533
+#, fuzzy
+msgid "Move to _Trash"
+msgstr "زباله"
+
+#: ../src/gtk/fm-file-menu.c:794
+msgid "Your bookmarks already have a bookmark for this folder."
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:368
+#, fuzzy
+msgid "Image files"
+msgstr "پرونده‌های تصویری"
+
+#: ../src/gtk/fm-file-properties.c:494 ../src/gtk/fm-file-properties.c:503
+msgid "byte"
+msgid_plural "bytes"
+msgstr[0] "بایت"
+
+#: ../src/gtk/fm-file-properties.c:510
+#, c-format
+msgid "scanning... %d"
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:588
+msgid "Please enter a valid user name or numeric id."
+msgstr "لطفا یک نام کاربری یا مشخصه‌ی عددی وارد کنید."
+
+#: ../src/gtk/fm-file-properties.c:618
+msgid "Please enter a valid group name or numeric id."
+msgstr "لطفا یک نام گروه یا مشخصه‌ی عددی وارد کنید."
+
+#. FIXME: may special bits and exec flags still be messed up?
+#: ../src/gtk/fm-file-properties.c:827
+msgid ""
+"Do you want to recursively apply these changes to all files and sub-folders?"
+msgstr ""
+"آیا می خواهید این تغییرات بر روی تمامی پرونده‌ها و زیر پوشه‌ها اعمال شود؟"
+
+#: ../src/gtk/fm-file-properties.c:960
+msgid "Hide or unhide the file"
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:965
+msgid "This file is hidden because its name starts with a dot ('.')."
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:969
+msgid ""
+"Files on this system are hidden if their name starts with a dot ('.'). Hit "
+"<Ctrl+H> to toggle displaying hidden files."
+msgstr ""
+
+#: ../src/gtk/fm-file-properties.c:1026
+#, fuzzy
+msgid "scanning..."
+msgstr "در حال بارگزاری..."
+
+#: ../src/gtk/fm-file-properties.c:1088
+msgid "<b>_Access content:</b>"
+msgstr "<b> دسترسی محتویات:</b>"
+
+#: ../src/gtk/fm-file-properties.c:1239
+msgid "Files of different types"
+msgstr "پرونده‌هایی از نوع متفاوت"
+
+#: ../src/gtk/fm-file-properties.c:1283
+#, fuzzy
+msgid "<b>File:</b>"
+msgstr "<b>نوع پرونده:</b>"
+
+#: ../src/gtk/fm-file-properties.c:1349
+#, fuzzy
+msgid "Multiple files"
+msgstr "چندین پرونده"
+
+#. columns visible to the users
+#: ../src/gtk/fm-folder-model.c:190
+msgid "Name"
+msgstr "نام"
+
+#: ../src/gtk/fm-folder-model.c:191
+msgid "Description"
+msgstr "توضیحات"
+
+#: ../src/gtk/fm-folder-model.c:192
+msgid "Size"
+msgstr "اندازه"
+
+#: ../src/gtk/fm-folder-model.c:193
+msgid "Permissions"
+msgstr "مجوزها"
+
+#: ../src/gtk/fm-folder-model.c:194
+msgid "Owner"
+msgstr "مالک"
+
+#: ../src/gtk/fm-folder-model.c:195
+msgid "Modified"
+msgstr "تغییر"
+
+#: ../src/gtk/fm-folder-model.c:196
+msgid "Location"
+msgstr "محل"
+
+#: ../src/gtk/fm-folder-model.c:197
+msgid "Extension"
+msgstr ""
+
+#: ../src/gtk/fm-folder-view.c:178
+msgid "Create _New..."
+msgstr "ساخت ...جدید"
+
+#: ../src/gtk/fm-folder-view.c:179
+msgid "Folder"
+msgstr "پوشه"
+
+#: ../src/gtk/fm-folder-view.c:182
+#, fuzzy
+msgid "Empty File"
+msgstr "اجرای پرونده"
+
+#: ../src/gtk/fm-folder-view.c:194
+msgid "_Invert Selection"
+msgstr "معکوس کردن انتخاب"
+
+#: ../src/gtk/fm-folder-view.c:195
+msgid "_Sort Files"
+msgstr "دسته‌بندی پرونده‌ها"
+
+#: ../src/gtk/fm-folder-view.c:196
+#, fuzzy
+msgid "_Rename Folder..."
+msgstr "تغییر نام پرونده"
+
+#: ../src/gtk/fm-folder-view.c:197
+#, fuzzy
+msgid "Folder Prop_erties"
+msgstr "مشخصات پرونده"
+
+#: ../src/gtk/fm-folder-view.c:205
+msgid "Show _Hidden"
+msgstr "نمایش مخفی‌ها"
+
+#. Note to translators: "Mingle..." means "Do not put folders before files" but make the translation as short as possible, please!
+#: ../src/gtk/fm-folder-view.c:207
+#, fuzzy
+msgid "Mingle _Files and Folders"
+msgstr "در هم آمیختن پرونده‌ها و پوشه‌ها"
+
+#: ../src/gtk/fm-folder-view.c:208
+#, fuzzy
+msgid "_Ignore Name Case"
+msgstr "نادیده گرفتن بزرگی و کوچکی حروف در نام"
+
+#: ../src/gtk/fm-folder-view.c:219
+msgid "By _Name"
+msgstr "با نام"
+
+#: ../src/gtk/fm-folder-view.c:220
+msgid "By _Modification Time"
+msgstr "با تاریخ تغییر"
+
+#: ../src/gtk/fm-folder-view.c:221
+msgid "By _Size"
+msgstr "با اندازه"
+
+#: ../src/gtk/fm-folder-view.c:222
+msgid "By File _Type"
+msgstr "با نوع پرونده"
+
+#: ../src/gtk/fm-folder-view.c:845
+msgid "Enter a name for the newly created folder:"
+msgstr "یک نام برای پوشه جدید ساخته شده وارد کنید:"
+
+#: ../src/gtk/fm-folder-view.c:846
+#, fuzzy
+msgid "Creating New Folder"
+msgstr "تغییر نام پرونده"
+
+#: ../src/gtk/fm-folder-view.c:859
+#, fuzzy
+msgid "Enter a name for empty file:"
+msgstr "یک نام برای پرونده جدید ساخته شده وارد کنید:"
+
+#: ../src/gtk/fm-folder-view.c:860
+#, fuzzy
+msgid "Creating ..."
+msgstr "ایجاد ... جدید"
+
+#: ../src/gtk/fm-folder-view.c:866
+msgid "New"
+msgstr "جدید"
+
+#: ../src/gtk/fm-folder-view.c:876
+#, c-format
+msgid "Enter a name for the new %s:"
+msgstr "یک نام برای %s جدید ساخته شده وارد کنید:"
+
+#: ../src/gtk/fm-folder-view.c:879
+#, c-format
+msgid "Creating %s"
+msgstr "ساخت %s"
+
+#: ../src/gtk/fm-folder-view.c:883
+msgid "_Run default application on file after creation"
+msgstr ""
+
+#: ../src/gtk/fm-gtk-file-launcher.c:144
+#, c-format
+msgid ""
+"This text file '%s' seems to be an executable script.\n"
+"What do you want to do with it?"
+msgstr ""
+"این پرونده متنی '%s' به نظر یک اسکریپت اجرایی است.\n"
+"می خواهید با او چکار کنید؟"
+
+#: ../src/gtk/fm-gtk-file-launcher.c:151
+#, c-format
+msgid "This file '%s' is executable. Do you want to execute it?"
+msgstr "این پرونده '%s' اجرایی است. آیا می خواهید اجرایش کنید؟"
+
+#. show error if no paths are added
+#: ../src/gtk/fm-gtk-file-launcher.c:736
+msgid "No folders are specified."
+msgstr "هیچ پوشه‌ای مشخص نشده است"
+
+#: ../src/gtk/fm-gtk-file-launcher.c:775 ../src/gtk/fm-gtk-utils.c:555
+#, fuzzy
+msgid "Select Folder"
+msgstr "یک پوشه انتخاب کنید"
+
+#. g_message("(!) %s", msg);
+#: ../src/gtk/fm-gtk-utils.c:71
+msgid "Error"
+msgstr "خطا"
+
+#: ../src/gtk/fm-gtk-utils.c:100 ../src/gtk/fm-gtk-utils.c:131
+msgid "Confirm"
+msgstr "تایید"
+
+#: ../src/gtk/fm-gtk-utils.c:185
+msgid "Question"
+msgstr "پرسش"
+
+#: ../src/gtk/fm-gtk-utils.c:709
+msgid "Only system administrators have the permission to do this."
+msgstr "فقط مدیران سیستم اجازه ی اینکار را دارند."
+
+#: ../src/gtk/fm-gtk-utils.c:924
+#, c-format
+msgid "Do you want to move the file '%s' to trash can?"
+msgstr "آیا می خواهید پرونده‌ '%s' را به زباله‌دان منتقل کنید؟"
+
+#: ../src/gtk/fm-gtk-utils.c:929
+#, c-format
+msgid "Do you want to move the %d selected file to trash can?"
+msgid_plural "Do you want to move the %d selected files to trash can?"
+msgstr[0] "آیا می خواهید %d را به زباله‌دان منتقل کنید؟"
+
+#: ../src/gtk/fm-gtk-utils.c:989
+#, c-format
+msgid "Do you want to delete the file '%s'?"
+msgstr "آیا می خواهید پرونده‌ '%s' را حذف کنید؟"
+
+#: ../src/gtk/fm-gtk-utils.c:994
+#, c-format
+msgid "Do you want to delete the %d selected file?"
+msgid_plural "Do you want to delete the %d selected files?"
+msgstr[0] "آیا می خواهید %d را حذف کنید؟"
+
+#: ../src/gtk/fm-gtk-utils.c:1093
+msgid "Rename File"
+msgstr "تغییر نام پرونده"
+
+#: ../src/gtk/fm-gtk-utils.c:1094
+msgid "Please enter a new name:"
+msgstr "لطفا یک نام جدید وارد کنید:"
+
+#: ../src/gtk/fm-gtk-utils.c:1166
+msgid "Are you sure you want to empty the trash can?"
+msgstr "آیا از خالی کردن زباله دان  اطمینان دارید؟"
+
+#: ../src/gtk/fm-path-entry.c:675
+msgid "Pa_ste and Go"
+msgstr ""
+
+#: ../src/gtk/fm-path-entry.c:734
+#, fuzzy
+msgid "Folder location bar"
+msgstr "روابط بین پروندهی"
+
+#: ../src/gtk/fm-places-model.c:781 ../src/gtk/fm-places-model.c:995
+#, fuzzy
+msgid "Home Folder"
+msgstr "تغییر نام پرونده"
+
+#: ../src/gtk/fm-places-model.c:797 ../src/gtk/fm-places-model.c:1003
+msgid "Desktop"
+msgstr "میزکار"
+
+#: ../src/gtk/fm-places-model.c:815 ../src/gtk/fm-places-model.c:1023
+#: ../src/modules/vfs-menu.c:1538
+msgid "Applications"
+msgstr "برنامه‌ها"
+
+#: ../src/gtk/fm-places-model.c:831 ../src/gtk/fm-places-model.c:1009
+#, fuzzy
+msgid "Filesystem Root"
+msgstr "نوع پرونده"
+
+#: ../src/gtk/fm-places-view.c:131
+msgid "_Mount Volume"
+msgstr "اتصال بخش"
+
+#: ../src/gtk/fm-places-view.c:132
+msgid "_Unmount Volume"
+msgstr "قطع بخش"
+
+#: ../src/gtk/fm-places-view.c:133
+msgid "_Eject Removable Media"
+msgstr "در آوردن رسانه‌ی قابل حمل"
+
+#: ../src/gtk/fm-places-view.c:134
+#, fuzzy
+msgid "_Format Volume"
+msgstr "اتصال بخش"
+
+#: ../src/gtk/fm-places-view.c:150
+msgid "_Rename Bookmark Item"
+msgstr "تغییر نام مورد نشانک"
+
+#: ../src/gtk/fm-places-view.c:151
+#, fuzzy
+msgid "Re_move from Bookmarks"
+msgstr "حذف از نشانک "
+
+#: ../src/gtk/fm-places-view.c:152
+#, fuzzy
+msgid "Move Bookmark _Up"
+msgstr "حذف از نشانک "
+
+#: ../src/gtk/fm-places-view.c:153
+#, fuzzy
+msgid "Move Bookmark _Down"
+msgstr "حذف از نشانک "
+
+#: ../src/gtk/fm-places-view.c:166 ../src/modules/gtk-menu-trash.c:87
+#: ../src/modules/gtk-menu-trash.c:114
+msgid "_Empty Trash Can"
+msgstr "خالی کردن زباله دان"
+
+#: ../src/gtk/fm-places-view.c:533 ../src/gtk/fm-side-pane.c:645
+msgid "Shows list of common places, devices, and bookmarks in sidebar"
+msgstr ""
+
+#: ../src/gtk/fm-places-view.c:1124
+msgid "Rename Bookmark Item"
+msgstr "تغییر نام مورد نشانک"
+
+#: ../src/gtk/fm-places-view.c:1125
+msgid "Enter a new name:"
+msgstr "یک نام جدید وارد کنید:"
+
+#: ../src/gtk/fm-progress-dlg.c:135
+msgid ": "
+msgstr ":"
+
+#: ../src/gtk/fm-progress-dlg.c:213 ../src/gtk/fm-progress-dlg.c:231
+#, c-format
+msgid ""
+"Type: %s\n"
+"Size: %s\n"
+"Modified: %s"
+msgstr ""
+"نوع: %s\n"
+"بزرگی: %s\n"
+"تغییر: %s"
+
+#: ../src/gtk/fm-progress-dlg.c:219 ../src/gtk/fm-progress-dlg.c:244
+#, c-format
+msgid ""
+"Type: %s\n"
+"Modified: %s"
+msgstr ""
+"نوع: %s\n"
+"تغییر: %s"
+
+#: ../src/gtk/fm-progress-dlg.c:343
+#, fuzzy
+msgid "<b>Errors occurred before file operation was stopped.</b>"
+msgstr "<b>عملیات پرونده با خطا پایان یافت.</b>"
+
+#: ../src/gtk/fm-progress-dlg.c:345
+msgid "Cancelled"
+msgstr "لغو شده"
+
+#: ../src/gtk/fm-progress-dlg.c:349
+msgid "<b>The file operation was completed with errors.</b>"
+msgstr "<b>عملیات پرونده با خطا پایان یافت.</b>"
+
+#: ../src/gtk/fm-progress-dlg.c:351
+msgid "Finished"
+msgstr "به پایان رسیده"
+
+#: ../src/gtk/fm-progress-dlg.c:373
+msgid ""
+"Some files cannot be moved to trash can because the underlying file systems "
+"don't support this operation.\n"
+"Do you want to delete them instead?"
+msgstr ""
+"بعضی از پرونده ها نمی توانند به سطل زباله منتقل شوند بخاطر اینکه اساس پرونده "
+"سیستم این عمل را پشتیبانی نمی کند.\n"
+"بجای اینکار آیا می خواهید آنها را پاک کنید؟"
+
+#: ../src/gtk/fm-progress-dlg.c:414 ../src/gtk/fm-progress-dlg.c:563
+msgid "_Pause"
+msgstr ""
+
+#: ../src/gtk/fm-progress-dlg.c:422
+#, fuzzy
+msgid "_Resume"
+msgstr "_بازیابی"
+
+#: ../src/gtk/fm-progress-dlg.c:597
+msgid ", "
+msgstr "،"
+
+#. translators: it is part of "Moving files:" or "Moving xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:617
+#, fuzzy
+msgid "Moving"
+msgstr "جا‌به‌جایی پروندهها"
+
+#. translators: it is part of "Copying files:" or "Copying xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:621
+#, fuzzy
+msgid "Copying"
+msgstr "روبرداری از پروندهها"
+
+#. translators: it is part of "Trashing files:" or "Trashing xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:625
+#, fuzzy
+msgid "Trashing"
+msgstr "انتقال به زباله دان"
+
+#. translators: it is part of "Deleting files:" or "Deleting xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:629
+#, fuzzy
+msgid "Deleting"
+msgstr "پاک کردن پرونده"
+
+#. translators: it is part of "Creating link /path/xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:633
+#, fuzzy
+msgid "Creating link"
+msgstr "پیوندهای نمادین"
+
+#. translators: 'In:' string is followed by destination folder path
+#: ../src/gtk/fm-progress-dlg.c:635
+#, fuzzy
+msgid "<b>In:</b>"
+msgstr "<b>به:</b>"
+
+#: ../src/gtk/fm-progress-dlg.c:636
+#, fuzzy
+msgid "Creating links to files"
+msgstr "پیوندهای نمادین"
+
+#. translators: it is part of "Changing attributes of xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:643
+#, fuzzy
+msgid "Changing attributes of"
+msgstr "تغییر مشخصه‌های پرونده‌ها"
+
+#: ../src/gtk/fm-progress-dlg.c:644
+#, fuzzy
+msgid "Changing attributes of files"
+msgstr "تغییر مشخصه‌های پرونده‌ها"
+
+#. translators: it is part of "Restoring files:" or "Restoring xxx.txt"
+#: ../src/gtk/fm-progress-dlg.c:650
+#, fuzzy
+msgid "Restoring"
+msgstr "_بازیابی"
+
+#. note to translators: resulting string is such as "Deleting files"
+#: ../src/gtk/fm-progress-dlg.c:660
+#, c-format
+msgid "%s files"
+msgstr "پرونده‌های %s"
+
+#: ../src/gtk/fm-progress-dlg.c:663
+msgid "<b>File operation is in progress...</b>"
+msgstr ""
+
+#. note to translators: resulting string is such as "Deleting file"
+#: ../src/gtk/fm-progress-dlg.c:669
+#, c-format
+msgid "<b>%s file:</b>"
+msgstr "<b> پرونده %s:</b>"
+
+#. note to translators: resulting string is such as "Deleting files"
+#: ../src/gtk/fm-progress-dlg.c:672
+#, c-format
+msgid "<b>%s files:</b>"
+msgstr "<b>پرونده‌های %s:</b>"
+
+#: ../src/gtk/fm-side-pane.c:66
+msgid "_Off"
+msgstr "خاموش"
+
+#: ../src/gtk/fm-side-pane.c:67
+msgid "_Places"
+msgstr "مکان‌ها"
+
+#: ../src/gtk/fm-side-pane.c:68
+msgid "_Directory Tree"
+msgstr "درختواره پوشه"
+
+#: ../src/gtk/fm-side-pane.c:69
+msgid "_Remote"
+msgstr "راه دور"
+
+#: ../src/gtk/fm-side-pane.c:428 ../src/gtk/fm-side-pane.c:621
+msgid "Places"
+msgstr "مکان‌ها"
+
+#: ../src/gtk/fm-side-pane.c:438 ../src/gtk/fm-side-pane.c:623
+msgid "Directory Tree"
+msgstr "درختواره پوشه"
+
+#: ../src/gtk/fm-standard-view.c:255
+msgid "View of folder contents"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:818
+#, c-format
+msgid "_Hide %s"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:826
+msgid "_Move Left"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:832
+msgid "Move _Right"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:855
+#, c-format
+msgid "Show %s"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:867
+msgid "_Forget Width"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:1859
+msgid "_Icon View"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:1860
+msgid "_Compact View"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:1861
+msgid "_Thumbnail View"
+msgstr ""
+
+#: ../src/gtk/fm-standard-view.c:1862
+msgid "Detailed _List View"
+msgstr ""
+
+#: ../src/gtk/fm-tab-label.c:159
+msgid "Changes active tab"
+msgstr ""
+
+#: ../src/job/fm-dir-list-job.c:238 ../src/job/fm-dir-list-job.c:251
+#: ../src/job/fm-dir-list-job.c:363
+#, c-format
+msgid "The specified directory '%s' is not valid"
+msgstr "دایرکتوری '%s' مشخص شده معتبر نیست"
+
+#: ../src/job/fm-file-ops-job.c:529 ../src/job/fm-file-ops-job.c:604
+msgid "Cannot access destination file"
+msgstr ""
+
+#: ../src/job/fm-file-ops-job.c:650
+msgid "Cannot create a link on non-native filesystem"
+msgstr ""
+
+#: ../src/job/fm-file-ops-job-delete.c:501
+#, fuzzy, c-format
+msgid "Cannot untrash file '%s': original path not known"
+msgstr "بازیابی پرونده‌های زباله‌دان در مسیر اصلی"
+
+#: ../src/job/fm-file-ops-job-xfer.c:58
+msgid "Destination does not exist"
+msgstr ""
+
+#: ../src/job/fm-file-ops-job-xfer.c:63
+msgid "Source and destination are the same."
+msgstr "مبدا و مقصد یکسان است."
+
+#: ../src/job/fm-file-ops-job-xfer.c:70
+msgid "Cannot move a folder into its sub folder"
+msgstr "نمی توان یک پوشه را به پوشه زیرین خودش منتقل کرد"
+
+#: ../src/job/fm-file-ops-job-xfer.c:72
+msgid "Cannot copy a folder into its sub folder"
+msgstr "نمی توان پوشه ای راه به پوشه ی زیرین خودش کپی کرد"
+
+#: ../src/job/fm-file-ops-job-xfer.c:74
+msgid "Destination is a sub folder of source"
+msgstr "مقصد زیر پوشه‌ای از منبع است"
+
+#: ../src/job/fm-file-ops-job-xfer.c:391
+#, fuzzy, c-format
+msgid "Cannot copy file '%s': not supported"
+msgstr "نمی توان پوشه ای راه به پوشه ی زیرین خودش کپی کرد"
+
+#: ../src/job/fm-file-ops-job-change-attr.c:314
+#, c-format
+msgid "Setting display name can be done only for single file"
+msgstr ""
+
+#: ../src/job/fm-file-ops-job-change-attr.c:317
+#, c-format
+msgid "Setting target can be done only for single file"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:299
+#, c-format
+msgid "XML file '%s' error (%d:%d): "
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:309
+msgid "XML file doesn't contain Applications root"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:384 ../src/modules/vfs-menu.c:464
+#: ../src/modules/vfs-menu.c:568 ../src/modules/vfs-menu.c:682
+#, c-format
+msgid "Cannot create XML definition for '%s'"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:449 ../src/modules/vfs-menu.c:2634
+#, c-format
+msgid "Menu path '%s' already exists"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:1102 ../src/modules/vfs-menu.c:1407
+#: ../src/modules/vfs-menu.c:1493
+msgid "Menu cache error"
+msgstr "خطای حافظه نهان منو"
+
+#: ../src/modules/vfs-menu.c:1367
+msgid "Invalid menu directory"
+msgstr "منوی پوشه نامعتبر"
+
+#: ../src/modules/vfs-menu.c:1430 ../src/modules/vfs-menu.c:1706
+msgid "Menu item name cannot be empty"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:1480
+#, fuzzy, c-format
+msgid "Invalid menu directory '%s'"
+msgstr "منوی پوشه نامعتبر"
+
+#: ../src/modules/vfs-menu.c:1623 ../src/modules/vfs-menu.c:1764
+#, fuzzy
+msgid "Invalid menu item"
+msgstr "منوی پوشه نامعتبر"
+
+#: ../src/modules/vfs-menu.c:1627 ../src/modules/vfs-menu.c:1768
+#, c-format
+msgid "The menu item '%s' doesn't have appropriate entry file"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:1790
+msgid "Change hidden status isn't supported for menu directory"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:1948
+#, fuzzy, c-format
+msgid "Setting attribute '%s' not supported"
+msgstr "عملیات پشتبانی نمی‌شود"
+
+#: ../src/modules/vfs-menu.c:1958
+#, fuzzy, c-format
+msgid "Invalid value for attribute '%s'"
+msgstr "نام پرونده نامعتبر %s"
+
+#: ../src/modules/vfs-menu.c:1995
+#, fuzzy, c-format
+msgid "The '%s' is a menu directory"
+msgstr "منوی پوشه نامعتبر"
+
+#: ../src/modules/vfs-menu.c:1998 ../src/modules/vfs-menu.c:2627
+#, fuzzy, c-format
+msgid "The '%s' isn't a menu item"
+msgstr "منوی پوشه نامعتبر"
+
+#: ../src/modules/vfs-menu.c:2022
+#, c-format
+msgid "The '%s' entry file is broken"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:2308 ../src/modules/vfs-menu.c:2397
+#, fuzzy, c-format
+msgid "Cannot create menu item '%s'"
+msgstr "نام پرونده نامعتبر %s"
+
+#: ../src/modules/vfs-menu.c:2542
+msgid "Name of menu directory should not end with \".desktop\""
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:2587
+msgid "Invalid operation with menu root"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:2676
+msgid "Invalid destination"
+msgstr ""
+
+#: ../src/modules/vfs-menu.c:2952
+#, c-format
+msgid "FmMenuVFileMonitor: folder '%s' not found in menu cache"
+msgstr ""
+
+#. FIXME: need name to be converted to UTF-8?
+#: ../src/modules/vfs-search.c:991
+msgid "Search"
+msgstr "جستجو"
+
+#: ../src/modules/vfs-search.c:1053
+#, fuzzy
+msgid "Search Results"
+msgstr "جستجو در پرونده‌ها"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:66
+#, fuzzy
+msgid "Choose Executable File"
+msgstr "اجرای پرونده"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:72
+#, fuzzy
+msgid "Executable files"
+msgstr "اجرای پرونده"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:267
+#, fuzzy
+msgid "<b>Co_mmand:</b>"
+msgstr "<b>به:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:288
+msgid "Command to execute when the application icon is activated"
+msgstr ""
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:322
+#, fuzzy
+msgid "<b>D_escription:</b>"
+msgstr "<b>محل:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:332
+msgid "Generic name of the application"
+msgstr ""
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:340
+#, fuzzy
+msgid "<b>_Working directory:</b>"
+msgstr "<b>مالک</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:351
+msgid "The working directory to run the program in"
+msgstr ""
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:359
+#, fuzzy
+msgid "<b>_Tooltip:</b>"
+msgstr "<b>به:</b>"
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:369
+#, fuzzy
+msgid "Tooltip to show on application"
+msgstr "یک برنامه ی انتخاب کنید"
+
+#. TODO: handle "TryExec" field ?
+#. row 7: "StartupNotify" GtkCheckButton
+#: ../src/modules/gtk-fileprop-x-desktop.c:375
+msgid "_Use startup notification"
+msgstr ""
+
+#: ../src/modules/gtk-fileprop-x-desktop.c:388
+#, fuzzy
+msgid "_Desktop Entry"
+msgstr "میزکار"
+
+#: ../src/modules/gtk-menu-trash.c:74
+msgid "_Restore"
+msgstr "_بازیابی"
+
+#: ../src/modules/gtk-menu-trash.c:75
+msgid "Restore trashed files to original paths"
+msgstr "بازیابی پرونده‌های زباله‌دان در مسیر اصلی"
+
+#: ../src/tools/lxshortcut.c:42
+msgid "source file name or desktop id"
+msgstr ""
+
+#: ../src/tools/lxshortcut.c:42
+msgid "SOURCE"
+msgstr ""
+
+#: ../src/tools/lxshortcut.c:43
+msgid "result file name"
+msgstr ""
+
+#: ../src/tools/lxshortcut.c:43
+msgid "RESULT"
+msgstr ""
+
+#. Translator: The word "blank" is used as an adjective, e.g. we are decsribing discs that are already blank
+#: ../src/udisks/g-udisks-device.c:41
+msgid "CD-ROM Disc"
+msgstr "دیسک فشرده"
+
+#: ../src/udisks/g-udisks-device.c:41
+msgid "Blank CD-ROM Disc"
+msgstr "دیسک خالی"
+
+#: ../src/udisks/g-udisks-device.c:42
+msgid "CD-R Disc"
+msgstr "دیسک فقط خواندنی"
+
+#: ../src/udisks/g-udisks-device.c:42
+msgid "Blank CD-R Disc"
+msgstr "دیسک خالی فقط خواندنی"
+
+#: ../src/udisks/g-udisks-device.c:43
+msgid "CD-RW Disc"
+msgstr "دیسک نوشتنی و خواندنی"
+
+#: ../src/udisks/g-udisks-device.c:43
+msgid "Blank CD-RW Disc"
+msgstr "دیسک خالی نوشتنی و خواندنی"
+
+#: ../src/udisks/g-udisks-device.c:44 ../src/udisks/g-udisks-device.c:45
+msgid "DVD-ROM Disc"
+msgstr "دیسک فشرده DVD"
+
+#: ../src/udisks/g-udisks-device.c:44 ../src/udisks/g-udisks-device.c:45
+msgid "Blank DVD-ROM Disc"
+msgstr "دیسک فشرده خوان خالی"
+
+#: ../src/udisks/g-udisks-device.c:46
+msgid "DVD-RW Disc"
+msgstr "دیسک DVDفشرده‌ی خواندنی و نوشتنی"
+
+#: ../src/udisks/g-udisks-device.c:46
+msgid "Blank DVD-RW Disc"
+msgstr "دیسک DVD فشرده‌ی خالی نوشتنی و خواندنی"
+
+#: ../src/udisks/g-udisks-device.c:47
+msgid "DVD-RAM Disc"
+msgstr "دیسک DVDفشرده فقط خواندنی"
+
+#: ../src/udisks/g-udisks-device.c:47
+msgid "Blank DVD-RAM Disc"
+msgstr "دیسک DVDفشرده فقط خواندنی خام"
+
+#: ../src/udisks/g-udisks-device.c:48
+msgid "DVD+R Disc"
+msgstr "دیسک DVD+R"
+
+#: ../src/udisks/g-udisks-device.c:48
+msgid "Blank DVD+R Disc"
+msgstr "دیسک DVD+R خام"
+
+#: ../src/udisks/g-udisks-device.c:49
+msgid "DVD+RW Disc"
+msgstr "دیسک DVD+RW"
+
+#: ../src/udisks/g-udisks-device.c:49
+msgid "Blank DVD+RW Disc"
+msgstr "دیسک خام DVD+RW"
+
+#: ../src/udisks/g-udisks-device.c:50
+msgid "DVD+R DL Disc"
+msgstr "دیسک دولایه DVD+R"
+
+#: ../src/udisks/g-udisks-device.c:50
+msgid "Blank DVD+R DL Disc"
+msgstr "دیسک دولایه خام DVD+R"
+
+#: ../src/udisks/g-udisks-device.c:51
+msgid "DVD+RW DL Disc"
+msgstr "دیسک دو لایه DVD+RW"
+
+#: ../src/udisks/g-udisks-device.c:51
+msgid "Blank DVD+RW DL Disc"
+msgstr "دیسک دولایه خام DVD+RW"
+
+#: ../src/udisks/g-udisks-device.c:52
+msgid "Blu-Ray Disc"
+msgstr "دیسک Blue-Ray"
+
+#: ../src/udisks/g-udisks-device.c:52
+msgid "Blank Blu-Ray Disc"
+msgstr "دیسک Blue-Ray خام"
+
+#: ../src/udisks/g-udisks-device.c:53
+msgid "Blu-Ray R Disc"
+msgstr "دیسک Blue-Ray R"
+
+#: ../src/udisks/g-udisks-device.c:53
+msgid "Blank Blu-Ray R Disc"
+msgstr "دیسک خام Blue-Ray R"
+
+#: ../src/udisks/g-udisks-device.c:54
+msgid "Blu-Ray RW Disc"
+msgstr "دیسک خام Blue-Ray RW"
+
+#: ../src/udisks/g-udisks-device.c:54
+msgid "Blank Blu-Ray RW Disc"
+msgstr "دیسک خام Blue-Ray RW"
+
+#: ../src/udisks/g-udisks-device.c:55
+msgid "HD DVD Disc"
+msgstr "دیسک HD DVD"
+
+#: ../src/udisks/g-udisks-device.c:55
+msgid "Blank HD DVD Disc"
+msgstr "دیسک خام HD DVD"
+
+#: ../src/udisks/g-udisks-device.c:56
+msgid "HD DVD-R Disc"
+msgstr "دیسک HD DVD-R"
+
+#: ../src/udisks/g-udisks-device.c:56
+msgid "Blank HD DVD-R Disc"
+msgstr "دیسک خام HD DVD-R"
+
+#: ../src/udisks/g-udisks-device.c:57
+msgid "HD DVD-RW Disc"
+msgstr "دیسک HD DVD-RW"
+
+#: ../src/udisks/g-udisks-device.c:57
+msgid "Blank HD DVD-RW Disc"
+msgstr "دیسک خام HD DVD-RW"
+
+#: ../src/udisks/g-udisks-device.c:58
+msgid "MO Disc"
+msgstr "دیسک MO"
+
+#: ../src/udisks/g-udisks-device.c:58
+msgid "Blank MO Disc"
+msgstr "دیسک خام MO"
+
+#: ../src/udisks/g-udisks-device.c:59
+msgid "MRW Disc"
+msgstr "دیسک MRW"
+
+#: ../src/udisks/g-udisks-device.c:59
+msgid "Blank MRW Disc"
+msgstr "دیسک خام MRW"
+
+#: ../src/udisks/g-udisks-device.c:60
+msgid "MRW/W Disc"
+msgstr "دیسک MRW/W"
+
+#: ../src/udisks/g-udisks-device.c:60
+msgid "Blank MRW/W Disc"
+msgstr "دیسک خام MRW/W"
+
+#: ../src/udisks/g-udisks-device.c:299
+msgid "Blank Optical Disc"
+msgstr "دیسک نوری خام"
+
+#: ../src/udisks/g-udisks-device.c:301
+msgid "Optical Disc"
+msgstr "دیسک نوری"
+
+#, fuzzy
+#~ msgid "<b>File type to be opened:</b>"
+#~ msgstr "<b>نوع پرونده برای باز شدن:</b>"
+
+#~ msgid "*"
+#~ msgstr "*"
+
+#~ msgid "<b>Processing:</b>"
+#~ msgstr "<b>پردازش:</b>"
+
+#~ msgid "<b>Progress:</b>"
+#~ msgstr "<b>جریان:</b>"
+
+#~ msgid "The file operation is finished, but there are some errors."
+#~ msgstr "عملیات پرونده به پایان رسید ولی تعدادی خطا وجود داشته."
+
+#~ msgid "_Browse"
+#~ msgstr "مرور"
+
+#~ msgid "My Computer"
+#~ msgstr "کامپیوتر من"
+
+#~ msgid "_Only for this folder"
+#~ msgstr "فقط برای این پوشه"
+
+#~ msgid "Check to remember sort as folder setting rather than global one"
+#~ msgstr ""
+#~ "بررسی به خاطرآوری دسته بندی با تنظیمات پوشه به جای دسته بندی باتنظیمات کلی"
+
+#~ msgid "Please select a folder"
+#~ msgstr "لطفا یک پوشه انتخاب کنید"
+
+#, fuzzy
+#~ msgid "Entry for folder path"
+#~ msgstr "فقط برای این پوشه"
+
+#, fuzzy
+#~ msgid "Computer"
+#~ msgstr "کامپیوتر من"
+
+#, fuzzy
+#~ msgid "Network Drives"
+#~ msgstr "شبکه"
+
+#, fuzzy
+#~ msgid "_Run in terminal emulator"
+#~ msgstr "اجرا در پایانه شبیه ساز"
+
+#~ msgid "Shortcuts"
+#~ msgstr "میانبر ها"
+
+#~ msgid "Mount Point"
+#~ msgstr "نقطه‌ی اتصال"
+
+#~ msgid "Create _Symlink"
+#~ msgstr "پیوند نمادین بساز"
+
+#~ msgid "Se_nd To"
+#~ msgstr "بفرست به"
+
+#~ msgid "Blank File"
+#~ msgstr "پرونده خام "
+
+#~ msgid "Error, lxshortcut not installed"
+#~ msgstr "خطا، lxshortcut نصب نشده است"
+
+#~ msgid "Failed to start lxshortcut"
+#~ msgstr "شکست در اجرای lxshortcut"
+
+#~ msgid "<b>_Group:</b>"
+#~ msgstr "<b>_گروه</b>"
+
+#~ msgid "Rename"
+#~ msgstr "تغییر نام"
+
+#~ msgid "Make the file executable"
+#~ msgstr "پرونده را اجرایی کن"
+
+#~ msgid "Operations that all other users can do"
+#~ msgstr "عملیاتی که دیگر کاربران هم می توانند انجام دهند"
+
+#~ msgid "Operations that the owner of the file can do"
+#~ msgstr "عملیاتی که دارنده پرونده می تواند انجام دهد"
+
+#~ msgid ""
+#~ "Operations that users in the same group as the owner of the file can do"
+#~ msgstr ""
+#~ "عملیاتی که کاربران یک گروه یکسان به عنوان دارنده‌ی پرونده می توانند انجام "
+#~ "دهند"
+
+#~ msgid "Read and Write"
+#~ msgstr "خواندن و نوشتن"
+
+#~ msgid "Read only"
+#~ msgstr "فقط خواندنی"
+
+#~ msgid "Write only"
+#~ msgstr "فقط نوشتنی"

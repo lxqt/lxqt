@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Compton (X Compositor)
+GenericName=X compositor
+Comment=A X compositor
+TryExec=compton
+Exec=compton --dbus
+
+# turned off by default
+Hidden=true
+OnlyShowIn=LXQt;
+X-LXQt-Module=true

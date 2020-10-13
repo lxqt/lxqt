@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Icon=applications-other
+_Name=Shortcut Editor
+_Comment=Create new or change existing desktop entry
+Categories=Utility;GTK;
+Exec=lxshortcut -i %f
+StartupNotify=true
+Terminal=false
+MimeType=application/x-desktop;
+NoDisplay=true

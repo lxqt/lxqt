@@ -1,0 +1,623 @@
+liblxqt-0.15.1 / 2020-05-28
+===========================
+  * Bumped version to 0.15.1.
+  * Removed dead codes.
+  * Removed Xdg Dirs Fallback workaround.
+  * Let Qt handle dialog position.
+  * Prevent crash when closing screen saver error message.
+
+liblxqt-0.15.0 / 2020-04-22
+===========================
+  * Bumped version to 0.15.0.
+  * Fixed licenses.
+  * Removed message handler from lxqtapplication.
+  * Set default button to Yes in leave dialogs.
+  * C++11 code updates.
+  * Used braced initializer list in returns.
+  * Allow spacing to be added between items in GridLayout.
+  * Set size hint of selection widget correctly.
+  * Make macOS build possible.
+  * Fixed compilation error on the Hurd.
+  * Fixed error messages for screensavers.
+  * Fixed the wrong arguments in dbusCall.
+  * Allow custom lock command in lxqtscreensaver.
+  * Improved error messages in lxqtscreensaver.
+  * Fixed LinuxBackend backlightChanged signal.
+  * Remove deprecated QDesktopWidget.
+  * Remove (duplicated) string casts definitions.
+  * Don't use Qt keywords "emit", "signal" and "slot" (they may collide with glib).
+  * Fixed memory leak in backlight brightness driver.
+  * lxqtnotification: async API for querying serverInfo.
+
+liblxqt-0.14.1 / 2019-02-24
+===========================
+
+  * Bumped version to 0.14.1
+  * Enable/disable a standard button if it exists. This is needed for adding
+    Apply button later because Apply button should be enabled/disabled
+    appropriately.
+  * Updated translations
+  * Note for packagers: liblxqt now depend on libqtxdg 3.3.1
+
+liblxqt-0.14.0 / 2019-01-25
+===========================
+
+  * Implementation fixed:
+    - Added missing text color of our HTML delegate
+    - Use the new signal and slot syntax
+    - Don't use automatic string conversions
+    - lxqtbacklight: centralize fopen() and perform path handling with length checks
+    - lxqtbacklight: apply maximum string length to fscanf to prevent overflow
+    - lxqtbacklight: removed useless commented out code
+    - lxqtbacklight: constified char *driver, where appropriate
+    - lxqtbacklight: centralized error output on empty backlight dir
+    - lxqtbacklight: fix and improve command line parameter handling
+    - lxqtbacklight: only pass basename into open_driver_file()
+    - lxqt-backlight: Simplify string construction
+    - lxqthtmldelegate: Position, alignment and size fixes for HTML delegate
+    - lxqtpageselectwidget: Fix config dialog cell height
+    - lxqtpageselectwidget: Fixed config dialog select widget cells
+  * Improved cmake scripting
+    - Set cmake_minimum_required to 3.1.0
+    - Removed locale compile definitons
+  * Moved translations from lxqt-l10n back to liblxqt
+    - Removed obsolete translation fuctionality
+    - Added translation promo in README.md
+   * Translation updates
+
+liblxqt-0.13.0 / 2018-05-21
+===========================
+
+  * Bump minor version to 13 and fix the comment
+  * Don't find packages quietly
+  * Use PolkitQt5-1 policy files install directory
+  * build: Don't use hardcoded /usr/share path
+  * Normalize backlight value
+  * lxqtbacklight: Remove not used code
+  * CMake: Prevent in-source builds
+  * lxqtbacklight: Fix a FTBFS in superbuild mode
+  * blacklight power control has been added.
+  * Backlight::isBacklightAvailable returns false if the screen is turned off.
+  * Back light control added.
+  * Adds a ConfigDialogCommandLineOptions class
+  * ConfigDialog: Adds the ability to select the shown page by name
+  * ConfigDialog: Use d-pointer design pattern
+  * Fixed project uris to https://lxqt.org
+  * Fixed some mentions of lxde
+  * Make lxqt globals a public header
+  * Adds Qt Strings abbreviations
+  * lxqtpower: Add support for turning monitor(s) off
+  * Use qAsConst()
+  * Drop foreach use
+  * cmake: Handle CMP0071
+
+0.12.0 / 2017-10-21
+===================
+
+  * Release 0.12.0: Update changelog
+  * Bump minimum qtxdg version to 3.1.0
+  * Don't export github templates
+  * Bump version and needed versions to the final values
+  * lxqtpower: Allow disabling of lxqt-session provider
+  * Drops Qt5Core_VERSION_STRING
+  * HtmlDelegate: Fix sizeHint() computation
+  * Add some comments about the meaning of versions
+  * Move LXQt version back to liblxqt
+  * Fixes (#118)
+  * lxqtapplication: Avoid wrong signal handling
+  * Removes unneeded semicolon in namespace definition
+  * Fix format conversions [-Wformat-pedantic] warnings
+  * Suppress compiler warnings about unused function parameters
+  * Removes extra semicolons in Qt's Q macros
+  * Translator: Prefer XDG_DATA_DIRS over compiled in path
+  * Help the compiler optimizing loops
+  * Use const variables where possible
+  * Update AUTHORS
+
+0.11.1 / 2017-01-01
+===================
+
+  * Release 0.11.1: Update changelog
+  * Bump needed build tools version (#113)
+  * build: Enable/disable WITH_XDG_DIRS_FALLBACK based on Qt version (#111)
+  * Updates lxqt-build-tools required version
+  * Adds a CMake minimum version requirement to the -config.cmake
+  * Refactors superbuild support
+  * Adds PROJECT_NAME to the build with Qt version message
+  * Pack target_compile_definitions() and target_include_directories()
+  * Adds PROJECT_NAME to the build with Qt version message
+  * Pack target_compile_definitions() and target_include_directories()
+  * Use the LXQtConfigVars module
+  * Make liblxqt depend on lxqt-build-tools
+  * Use the lxqt-build-tools LXQtCreatePortableHeaders
+  * Use the new LXQt Build Tools package
+  * Sets a minimum Qt5Xdg required version
+  * Adds minimum Qt version requirement (5.4.2)
+  * Remove cpack (#107)
+
+0.11.0 / 2016-09-24
+===================
+
+  * Release 0.11.0: Add changelog
+  * Bump version ot 0.11.0 (#105)
+  * Settings: Make use of reverse_iterator conditional
+  * Application: Add <cerrno> include
+  * Settings: Add "homemade" XDG_CONFIG_DIRS support
+  * Settings: unify duplicated code
+  * Add README.md
+  * translations: Change default translations repository
+  * Update DBus Notify method annotation name
+  * Fix lupdate warning missing Q_OBJECT macro
+  * Replaces deprecated QStyleOptionViewItemV4
+  * Don't lock the screen when it's already locked.
+  * lxqtscreensaver: Makes it a opaque pointer class
+  * GridLayout: Store current animation flag
+  * lxqtgridlayout: Move private class definition
+  * HtmlDelegate: Take layoutDirection into account
+  * GridLayout: Take layoutDirection into account
+  * application: Correct signal handling & clean-up (#72)
+  * lxqtpower: Removes unused stuff
+  * SingleApplication: Only create an DBus adaptor when needed
+  * NotificationPrivate: Fixes programming typo
+  * Don't set icon theme name
+  * configdialog: Update icons in ThemeChanged event
+  * lxqtpower: Add suspend and hibernate to ConsoleKit2 provider
+  * LXQtTranslateTs.cmake: Enable PULL_TRANSLATIONS by default
+  * LXQtTranslateTs.cmake: Use/update template in remote repo
+  * .gitignore: Cleanup
+  * build: Use external translations
+  * ts-files removal (#90)
+  * GridLayout: Fix memory leak
+  * translations: Fix external translations logic
+  * translations: Add external translations support
+  * configdialog: Fix icon bar sizing
+  * configdialog: fix size of PageSelectWidget (#83)
+  * Use const references with the foreach iterator
+  * SettingsCache: Improve performance
+  * Print warning messages when using the fallback Icon Theme
+  * Use LXQT_DATA_DIR for fallback icon theme search path
+  * Sets Oxygen as the only fallback icon theme
+  * Adds CMAKE_INSTALL_PREFIX to the LXQt Theme search paths
+  * LXQtCompilerSettings: Add QT_USE_QSTRINGBUILDER to the compile definitions
+  * SingleApplication: Use QCoreApplication::exit() instead of ::exit()
+  * bump year
+  * TranslateDesktopTs: Adds UPDATE_OPTIONS options
+  * TranslateDesktop: Remove lupdate absolute option
+  * TranslateDesktop: Use -a switch in grep commands
+  * LXQtTheme: Remove (outdated) "singleclick" qss assembly
+  * settings: Upgrade emitting of "changed" signals
+  * SingleApplication: Call also QWidget::show on activate
+  * Updated Russian translation Removed ru_RU file
+  * Use QString() instead of ""
+  * Use CMAKE_INSTALL_FULL_DATAROOTDIR
+  * Add LXQT_GRAPHICS_DIR directory definition
+  * lxqt-config: Correct escaping while setting variables
+  * CMake: Removes artifact
+  * Adds FindXdgUserDirs CMake find_package module
+  * Italian translation update
+
+0.10.0 / 2015-11-02
+===================
+
+  * Release 0.10.0
+  * Update translations
+  * Fix mixed indents
+  * Fix license file
+  * Revert "Lock screen on suspend and hibernate"
+  * gridlayout: Use linear animation
+  * gridlayout: Add occupied geometry info
+  * gridlayout: Fix setting geometry info
+  * gridlayout: Add animated move support
+  * license fix for AUTHORS
+  * config dialog: Protect against null pages add.
+  * pluginTranslation: removed using QStringLiteral as it was causing SEGFAULT in static finalization time
+  * pluginTranslation: add some symbol for referencing (for file to be not stripped out in static linking time)
+  * Adds "automatic" plugin translations loader support
+  * Warn missing xscreensaver in a non-blocking way
+  * Fix typos in translations/liblxqt_fr_FR.ts
+  * Removed country variant, improved and corrected italian translation
+  * Update lxqtpower.h
+  * Lock screen on suspend and hibernate
+  * licensefix for lxqttranslator.cpp
+  * Fix typos in comments in lxqtsingleapplicatoin.h
+  * Rename LxQt to LXQt everywhere
+  * Update Greek (el) translation Remove country variant in language code
+  * Handles CMake policy CMP0063
+  * Adds an lxqt_enable_target_exceptions() CMake function
+  * Adds LXQtCompilerSettings CMake module
+  * Removes Cannot open qss file
+  * LXQtCreatePkgConfigFile.cmake: Makes install COMPONENT configurable
+  * LXQtTranslateTs.cmake Adds install COMPONENT option
+  * Adds Runtime install COMPONENT
+  * fix build with qt 5.5
+  * Fixes an SuperBuild/NormalBuild FTBFS
+  * CMake: Use CMAKE_AUTOUIC, drop qt5_wrap()
+  * CMake: Quote variables
+  * CMake: Removes unused variables
+  * configdialog: Sets the page layout margin to 0
+  * LxQt::Application: unix signal handling support & (optional) quit handling
+  * Removes LIB_INSTALL_DIR CACHE PATH variable
+  * Removes deprecated documentation
+  * Use relative paths in install DESTINATION
+  * Marks link libraries as PUBLIC
+  * Use target_compile_definitions() instead of add_definitions()
+  * Make Release the default build type
+  * Simplifies build type matching
+  * lxqt-config.cmake.in: Use find_dependency()
+  * Updates the build system to the Targets infrastructure
+  * Removes .tx transaction dir artifact
+  * Sort .desktop translations. Fix typos in the comments. Remove local dir artifact.
+  * Updated template and german translation after moving about dialog.
+  * pkg-config: Adds Qt5Xdg to the required dependencies
+  * Updates lxqt_create_pkgconfig_file()
+  * Remove trailing whitespaces
+  * Stops using Qt5Xdg dropped stuff
+  * Adds LXQT_DATA_DIR configuration variable
+  * Sort screen saver error messages
+  * Updates translations
+  * Moves the about dialog to lxqt-about
+  * debug: showing qDebug()/qWarning() only in "debug" build
+  * LxQtTheme: removed superfluous warning (can't occure)
+  * debug: strip debug messages in "release" build
+  * Remove AddPluginDialog as it is no longer used
+  * Hungarian translation update
+  * Method to change buttons in the buttonbar of ConfigDialog has been added.
+  * gridlayout: avoid array out of bounds for misused sizes configuration
+  * gridlayout: correctly recover from wrong minSize setting
+  * gridlayout: avoid empty margins when stretching is active
+  * lxqtpower: prefer systemd as a power provider
+  * ConfigDialog: allow changing page by QWidget*
+  * Add KDevelop4 project type to .gitignore
+  * addplugindialog: added managing button
+  * require c++11 support
+  * addplugindialog: support for managing plugins
+  * Updated german translation.
+  * addplugindialog: corrected <> -> "" in include
+  * addplugindialog: remember list position
+  * Prepends an '/' to LXQT_RELATIVE_SHARE_TRANSLATIONS_DIR
+  * Removes misleading "Qt translations not found!" warning
+
+0.9.0 / 2015-02-07
+==================
+
+  * Release 0.9.0
+  * - Remove KF5 from prefix. This will fix compilation when KDE framework headers are not in standard paths.
+  * Enhance the panel Add Plugin Dialog
+  * Portuguese update
+  * Workaround Qt 5.4 issue: Re-add a config file to the file watcher if it's already deleted to get proper change notifications.
+  * Update Japanese translation.
+  * i18n/i10n: Updates documentation and behavior
+  * remove lxqtleave from liblxqt
+  * lxqt_translate_desktop: pass -h instead of --no-filename to grep which is compatible with Busybox
+  * Add Portuguese for actions .desktop files
+  * add executable to handle leave actions
+  * Revert 34232018eb. Fixes #430.
+  * Update Japanese translation.
+  * lxqt_translate_desktop: Updates code to cope with the cmake-policy CMP0054
+  * german translation
+  * Fix ConsoleKit powerprovicer to handle everything but logout
+  * - Use simple approach to data dir. Current setup of code not allows both   qt4 and qt5 cohexists, and data files are same for both libraries.   If a different data dir is required for specifics reason, is possible   to set in cmake run -DLXQT_LIBRARY_NAME:STRING="string"
+  * remove not needed whitespaces
+  * Adds StartOptions to the SingleApplication class
+  * Adds the LxQt::SingleApplication class.
+  * CMakeLists.txt maintenaince
+  * Fixes yet another translations install dir mistake
+  * Get rid of USE_QT5 in lxqt-config.cmake
+  * Fixes translations install dir
+  * Use the new LXQtTranslate modules.
+  * Fixes Qt5LinguistToolsMacros file extension bug
+  * Copied Qt5LinguistToolsMacros.cmake
+  * Removes cmake commented code
+  * Removes duplicates add_definitions()
+  * Removes lxqt_translate_desktop() from the _use.cnake
+  * Adds Qt5TranslationLoader cmake module
+  * Fix HtmlDelegate and move it to its own file. Also get rid of X11 on CMakeLists.txt.
+  * Delete XfitMan class. Fixes lxde/lxde-qt#226
+  * Don't update (extract) translations by default.
+  * Includes all LXQt translation modules
+  * Adds automatic translations loaders for LXQt libs and apps
+  * Adds LXQtTranslateDesktop module
+  * Adds the LXQtranslateTs cmake module
+  * Update Russian translation
+  * Drop support for Qt4 in code
+  * Clean up CMakeLists.txt and drop Qt 4 support
+  * Add myself to the authors list
+  * Use QString default constructor instead of ""
+
+0.8.0 / 2014-10-13
+==================
+
+  * Release v0.8.0
+  * Adds a translation loader for plugins
+  * Adds Qt5 automatic load of self translations
+  * Updates translations installation and search paths
+  * Mark translations as loaded for the English locale
+  * Updates translations
+  * Generate source.ts when updating translations
+  * Don't translate uic generated files
+  * Fixes another QTranslator related memory leak
+  * Simplify translate() code
+  * Fixes an memory leak that occurs when no translation is found
+  * Fixes lxde/lxde-qt#140 and lxde/lxqt-panel#54
+  * Stop creating unused QTranslator instances.
+  * Fix top-to-bottom layout x-coord calculation
+  * Fix broken *.ts files and update to the latest strings.
+  * Replace LXDE-Qt with LXQt.
+  * Add -locations absolute option to lupdate so our *.ts files can contain informations about the source lines.
+  * Fix incorrect namespace in the *.ts files.
+  * Add code to update the *.ts files when the UPDATE_TRANSLATIONS option is turned on.
+  * Fix context names which uses C++ namespaces in all of the *.ts files.
+  * Add support for getting the hints' flags of a window
+  * Skip leave confirmation dialogs depending on session settings
+  * remove magic from cmake. USE_QT5 should be the only trigger
+  * Use the "new" CMake FIND_PACKAGE case policy
+  * Add include(${QTXDG_USE_FILE}) to Qt5 also.
+  * Use the "new" CMake FIND_PACKAGE case policy
+  * Adds missing libqtxdg dependency
+  * Don't allow #include <lxqt-qt5/lxqtxxxxx.h>
+  * Updates the Qt4 and Qt5 library names and related stuff
+  * Use the same header namespace everywhere
+  * Don't use undefined variables
+  * Find liblxqt dependencies automatically
+  * Removes another duplicated installation of a file
+  * Removes duplicate installation of a file
+  * Fixes extra misleading slashes in path names
+  * Cleans commented unneeded stuff
+  * Fix a typo in variable name
+  * Update liblxqt_pl_PL.ts
+  * Fix broken build of qt4 version
+  * Use more portable Qt and qtxdg header names
+  * Use newer version of cmake 2.8.9
+  * Detect the path of qmake correctly for Qt5.
+  * Fix internal include
+  * Fix after merging from master, by removing dupplicated items
+  * Merge branch 'master' of https://github.com/lxde/liblxqt into qt5
+  * Update qt5 porting
+  * Update Turkish tranlations
+  * Set include dirs properly.
+  * Install pkgconfig file to /usr/local/libdata/pkgconfig when FreeBSD is detected.
+  * Set link directories properly
+  * Use cmake export functionality.
+  * Qt5 support (step 1)
+  * Intree build
+
+0.7.0 / 2014-05-07
+==================
+
+  * Release 0.7.0
+
+0.6.99 / 2014-05-01
+===================
+
+  * Release 0.6.99 (0.7.0pre alpha)
+  * Update the About dialog information
+  * Update AUTHORS and COPYING
+  * Add CPack rules for creating tarball
+  * Fix incorrect arguments passing to logind
+  * Don't append library suffix to library path and use it by default
+  * CMakeLists.txt: Adds quotes to the lib string
+  * Respect standard LIB_INSTALL_DIR
+  * Reformats CMakeLists.txt to fit in an 80x24 terminal
+  * Removes blank lines
+  * Properly format about author dialog links
+  * Removed CMAKE_SOURCE_DIR and CMAKE_BINARY_DIR usages from translatorsinfo/CMakeLists.txt
+  * Retain old CMAKE_CXX_FLAGS while adding visibility stuff. Add -Wl,-no-undefined -Wall flags to ensure correctness.
+  * Add missing file.
+  * Use gcc visibility feature to decrease number of exported symbols to half.
+  * Use the correct updated org.freedesktop.Notifications.xml file from razor-resources.
+  * Restore previous XfitMan::moveWindowToDesktop() due to regression bugs.
+  * Add setIconGeometry(), getShowingDesktop(), setShowingDesktop(), and getWMState() to Xfitman.
+  * Fix renaming bugs, replacing lxqt-qt with lxde-qt
+  * Finish the crazy razor=>lxqt renaming tasks.
+  * Add logout support for lxsession.
+  * Rename razor to lxqt in settings
+  * find themes when they are located in /usr/local/...
+  * Revert "header fix"
+  * header fix
+  * Add proper namespace to signal parameters due to the limitation of Qt moc system.
+  * Rename razor to lxqt and fix XdgDir header inclusion.
+  * Add missing namespace for LxQt::PowerManager.
+  * Fix namespace for LxQt::xFitMan() to avoid undefined reference when linking with liblxqt.
+  * The Translatator class added, all translations moved to /usr/<local>/share/lxde/transalations
+  * Descriptions for translators
+  * Razor-qt => LXDE-Qt on about dialog
+  * Simplify translations script
+  * Simplify translations script
+  * All public files has lxqt prefix
+  * XfitMan => LxQt::XfitMan
+  * ScreenSaver => LxQt::ScreenSaver
+  * RotatedWidget => LxQt::RotatedWidget
+  * Razorsettings => LxQt::Settings
+  * RazorPluginInfo => LxQt::PluginInfo
+  * RazorNotification => LxQt::Notification
+  * RazorGridLayout => LxQt::GridLayout
+  * RazorAutostartEntry => LxQt::AutostartEntry
+  * RazorApplication => LxQt::Application
+  * ProgramFinder=>LxQt::ProgramFinder
+  * RazorConfigDialog=>LxQt::ConfigDialog
+  * Libtranslate => LxQt::LibTranslate
+  * TranslatorsInfo => LxQt::TranslatorsInfo
+  * Small code refactoring in the LxQt::Power
+  * AddPluginDialog => LxQt::AddPluginDialog
+  * RazorAboutDlg => LxQt::AboutDialog
+  * RazorPower => LxQt::Power
+  * Build errors, wrong include paths.
+  * Cmake find_package files
+  * Fix broken CMakeLists.txt and make the lib compile again.
+  * Make liblxqt (original librazorqt) compiles independently.
+  * Add COPYING and AUTHORS files
+  * Fix for Issue #571 [quicklaunch plugin]
+  * Renames the "Add plugin" button to "Add Widget"
+  * Removes hardcoded "Add plugin" window title
+  * razorqt-desktop: Unify plugins and widgets names. Closes #447
+  * More verbose constants
+  * Type sign fixed
+  * No dependencies on STL
+  * Typo fixed
+  * Issue #605 fixed. Double rendering removed
+  * Theme change autodetection
+  * Mouse event transparency is controllable in rotated widget
+  * Old files removed
+  * Rotated widget transits some mouse events
+  * Helper functions added to Rotated widget
+  * Rotated widget requires content
+  * Rotated widget added
+  * libraries: Removes unneeded include(RazorLibSuffix)
+  * Initial version of Razor Screenlocker
+  * ProgramFinder: a set of functions to check if programs are installed
+  * issue #473: move count/active text into item header
+  * initial implementation for #473 Highlight installed plugins. Now it needs to be "designed"
+  * Change "leave"-button in razor-lightdm-greeter to a menu button. Fix #323
+  * Fix typos
+  * Add RazorGridLayout::setCellXXXWidth, RazorGridLayout::setCellXXXHeight and RazorGridLayout::setCellFixedXXX,  functions
+  * Fix for Issues    #564 "new panel: cfg "Line size" can be set to 10px but the value is not accepted"    #563 "new panel: vertical mode makes panel too lerge (width)"
+  * Add moveItem method to RazorGridLayout
+  * Close Issue #541
+  * Close Issue #541
+  * RazorGridLayout handle new item incorrectlly
+  * Fix translators' webpage links
+  * Update layout when plugin shows.
+  * Improved razorpanellayout and new razorgridlayout.
+  * Add autostart entry API into the library
+  * xfitman: try to get window title even harder
+  * New panel layout and many changes
+  * Improve icons handling.
+  * Added missing license header in the technicalinfo
+  * Make it possible to load translations for multiple libraries
+  * About dialog: Reword authors tab
+  * Added "Copy to clipboard" button to razor-about->technical information.
+  * Don't "fail" when a dbus call returns no value
+  * Trtanslations
+  * Razor-panel: New plugin API
+  * Simplify code in the PowerManager
+  * Do not display non-urgent notifications in fallback mode
+  * razor-power: add systemd support
+  * Change license for xfitman
+  * BSD does not handle the way with two consecutive slashes.
+  * Translations updated
+  * Translations updated
+  * first part of fixes based on Coverity Scan (code static analysis)
+  * Fix components missing translations
+  * razor-about: Authors text changed
+  * Translations
+  * Delete bad en_GB translations
+  * Update translations
+  * Minor fixes
+  * Translations updated
+  * Removed line num from TS files.
+  * Translators info & refactoring of the About dialog
+  * Replace <p> tag with newlines since it's not valid notification markup
+  * Add a fallback provider for those without UPower/CK
+  * Don't write on every RazorSettings initialization
+  * Translations
+  * Fixed librazorqt.qm directory
+  * Translations for librazorqt
+  * fixed #412 Panel plugin configuration is broken
+  * optional debugging when there is RAZOR_DEBUG env.var. set
+  * fix for infinite event loop on panel start in power manager when there is no DBUS/notificationd running. The QMessageBox should not be displayed on init.
+  * fixed #349 RazorSettings settingsChanged signal is not emitted
+  * razor-desktop reworked to enable future features and fix RTTI related crashes.
+  * Update libraries/razorqt/screensaver.cpp
+  * Sort plugins in the "Add plugin dialog"
+  * Updated ts.src files
+  * part of #329: on-click on notification launces default action or it tries to find appropariate window to raise; xfitman method renamed + one new
+  * extended "razor-about" implementation. Resolves #253
+  * Add capabilities and server information functions
+  * Improve RazorNotification docs
+  * Add Hints support
+  * notifications: vrious fixes; more options (hardcoded values removed); layouting
+  * notifications: razorapplication used (theming); qtxdg used; spec icon loading implemented
+  * Implement Actions and add some more functions
+  * Implement new RazorNotification class
+  * Remove RazorNotification classes (no license/copyright)
+  * Ts.src files updated.
+  * Language name zh_CN.GB2312 braked cmake process.
+  * Translations updated
+  * Split sessionconfigwindow and remove old module config
+  * fixed #284 qmmp its not registered in window list panel and properly fixed #81 Qlipper should not appear in Task Manager
+  * fixed #277 cmake installs private class
+  * Small improvement to dialog icon sizing
+  * Don't reset when pressing Enter
+  * reduce error messages when there is no session running in razor-power
+  * QDbusError canot be print out on Ubuntu version of qt
+  * notification client library uses a QMessageBox failback message when it's not able to send a dbus message
+  * fixed #147 razorpower: things to implement - notifications
+  * default arguments for notification client lib
+  * Fix default wallpaper loading
+  * GUI for change razor theme.
+  * Moving qtservice to libraries
+  * Stylesheets are not always applied.
+  * Typos in code. Thanks Aaron Lewis.   *  In razor-runner , providers item:  title() was typed as tile()   *  For RazorSettings class , settingsChanged() was typed as settigsChanged()
+  * RazorSettings not read global settings.
+  * Changing notification ui. Adding default notitifaction icon. Embedding icons in notification
+  * Proper default values
+  * Proper id number assigned to notifications Properly remove notification by quint32 id
+  * Remove custom settings, use razor ones
+  * Adding razor-config-notificationd
+  * Moving notification client library to razorqt
+  * Don't try to print in color if it's not a terminal
+  * Use QSS for setting single-click mode
+  * Refactor desktop config to use RazorConfigDialog
+  * Revert "Global shortcuts now based on PSI code."
+  * Global shortcuts now based on PSI code
+  * better path for logging in DEBUG mode
+  * fix for theme loading when there is no theme specified in config
+  * Added localizedValue() in RazorSettings
+  * Fix: wrong path for debug log
+  * Config coresponds XDG directory specification
+  * Transifex desktop: sr_BA.ts should be a local
+  * strongly enhances debugging
+  * Transifex desktop: local translations
+  * Transifex desktop: Translations pulled
+  * fixed #218 Use <razor-dir>/session.log instead of ~/.razor-session.log
+  * Icons for the desktop menu
+  * Add Traditional Chinese Translations
+  * Translations update
+  * Added support for the online translation service. www.transifex.net
+  * RazorApplication class implemented; all modules ported to this class
+  * Serbian translation files
+  * Greek translation by iosifidis
+  * Added danish translations
+  * Russian translation
+  * Fix for issue #100
+  * Fix for issue #100
+  * fix #169: italian translation
+  * Lock the screen when "Lock Screen" is selected
+  * Update icons change when theme changes
+  * Add function to use alternative icons
+  * Env variables for plugins dirs   RAZORQT_DESKTOP_PLUGINS_DIR & RAZORQT_DESKTOP_PLUGINS_SO_DIR   RAZORQT_PANEL_PLUGINS_DIR & RAZORQT_PANEL_PLUGINS_SO_DIR
+  * Create a "standardized" configuration dialog
+  * Relicense razorqtlib
+  * XdgAutoStart rewriten (lgpl2+)
+  * Fix gmail.ru -> gmail.com
+  * Issue#147 add return value to provide a valuable feedback to user
+  * menus are adopted to the new backends; old code removed; check for running razor-session to allow/disallow "logout" item
+  * Czech translations (cs_CZ)
+  * New power engine & razor-power program
+  * Make XDG autostart fully editable
+  * unneeded code removed
+  * Update german [de] translation
+  * Let XdgAutoStart return Hidden files, and save modified files
+  * Correct the XdgAutoStart behavior
+  * SVK translation finalized
+  * Replaces return"" by return QString()
+  * Initial german [de] translation
+  * Fix issue #116
+  * License audit
+  * implemented #70: pkg-config for libs
+  * Add Chinese(simplified) translation files.
+  * License audit
+  * razorqt: add find_package(X11) as ${X11_X11_LIB} is used
+  * Add Slovak (sk) translation
+  * Typo in russian translation
+  * Czech translations (cs_CZ)
+  * A-MeGo Theme
+  * fix for crashes when there is no upower
+  * fix for powermanager. These dbus calls are pain...
+  * New doxygen ifrastructure
+  * power manager: list actions only if is user allowed to call it
+  * fixed warning: The Free Software Foundation address in this file seems to be outdated
+  * devel-docs generated in CMAKE_BINARY_DIR/docs includig dummy index.html
+  * missing translations in CMakeLists
+  * XdgDesktopFile is implicitly shared
+  * huge refactoring of the libraries build organization

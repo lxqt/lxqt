@@ -1,0 +1,20 @@
+.\" -*-nroff-*-
+.TH LIBFM-PREF-APPS 1 "June 2012" "@PACKAGE@ @VERSION@" "libfm-pref-apps manual"
+.SH NAME
+libfm-pref-apps \- sets preferred applications for programs based on libfm
+.SH SYNOPSIS
+.B libfm-pref-apps
+.SH DESCRIPTION
+libfm-pref-apps is an application that changes preferred applications \-
+web browser and mail client. Those setting are appliable for programs based
+on libfm but should work also for other XDG standard compliant programs.
+.SH FILES
+~/.local/share/applications/mimeapps.list
+.SH SEE ALSO
+.BR pcmanfm (1)
+.SH AUTHOR
+libfm-pref-apps was written by Hong Jen Yee <pcman.tw@gmail.com>.
+.PP
+This manual page was written by Sergey Slipchenko <faergeek@gmail.com>,
+for the Debian project (and may be used by others).
+Updated by Andriy Grytsenko <andrej@rep.kiev.ua>.
