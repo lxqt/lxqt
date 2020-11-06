@@ -66,10 +66,6 @@
 	path = lxqt-globalkeys
 	url = ../lxqt-globalkeys.git
 	branch = master
-[submodule "compton-conf"]
-	path = compton-conf
-	url = ../compton-conf.git
-	branch = master
 [submodule "lxmenu-data"]
 	path = lxmenu-data
 	url = ../../lxde/lxmenu-data.git
