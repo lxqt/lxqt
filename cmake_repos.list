@@ -23,7 +23,6 @@ CMAKE_REPOS=" \
 	lxqt-archiver"
 
 OPTIONAL_CMAKE_REPOS=" \
-	compton-conf \
 	obconf-qt \
 	lximage-qt \
 	qtermwidget \
