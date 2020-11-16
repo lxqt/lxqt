@@ -21,14 +21,14 @@ If you are interested in helping or joining LXQt, please take a look at our
 
 ## Translation
 
-Translations can be done in <a href="https://translate.lxqt.project.org/">LXQt-Weblate</a>.
+Translations can be done in <a href="https://translate.lxqt-project.org/">LXQt-Weblate</a>.
 
-<a href="https://translate.lxqt.project.org/">
+<a href="https://translate.lxqt-project.org/">
 <img src="https://translate.lxqt-project.org/widgets/lxqt-desktop/-/287x66-grey.png" alt="Translation status" />
 </a>  
 
 --- 
 
-<a href="https://translate.lxqt.project.org/">
+<a href="https://translate.lxqt-project.org/">
 <img src="https://translate.lxqt-project.org/widgets/lxqt-desktop/-/multi-auto.svg" alt="Translation status" />
 </a>
