@@ -29,6 +29,8 @@ Translations
 We use [Weblate](https://translate.lxqt-project.org) for all our translations. 
 QtLinguist will still work.
 
+See further instructions in [wiki page Translation](https://github.com/lxqt/lxqt/wiki/Translation).
+
 
 
 Bug reports
