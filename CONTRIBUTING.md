@@ -44,7 +44,7 @@ Some components and independent apps have their own issue tracker on GitHub:
 * components: libqtxdg (https://github.com/lxqt/libqtxdg/issues),
   libsysstat (https://github.com/lxqt/libsysstat/issues),
   menu-cache (https://github.com/lxde/menu-cache/issues)
-* GUI tools, applications: ComptonConf (https://github.com/lxqt/compton-conf/issues),
+* GUI tools, applications:
   ObConf-Qt (https://github.com/lxqt/obconf-qt/issues),
   PCManFM-Qt (https://github.com/lxqt/pcmanfm-qt/issues),
   LXImage-Qt (https://github.com/lxqt/lximage-qt/issues)
