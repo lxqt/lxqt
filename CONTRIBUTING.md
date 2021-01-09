@@ -54,7 +54,7 @@ Some components and independent apps have their own issue tracker on GitHub:
 Other
 -----
 
-For anything else, you can always drop by our forum and say hello!
-  https://forum.lxqt.org *Offline at the moment*. 
+For anything else, you can always drop by our Discussions and say hello!
+  https://github.com/lxqt/lxqt/discussions. 
 
 If you prefer IRC, we also have the channels #lxqt and #lxqt-dev on irc.oftc.net.
