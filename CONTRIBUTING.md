@@ -48,7 +48,7 @@ Some components and independent apps have their own issue tracker on GitHub:
   ObConf-Qt (https://github.com/lxqt/obconf-qt/issues),
   PCManFM-Qt (https://github.com/lxqt/pcmanfm-qt/issues),
   LXImage-Qt (https://github.com/lxqt/lximage-qt/issues)
-* web site lxqt.org (https://github.com/lxqt/lxqt.github.io/issues)
+* web site lxqt-project.org (https://github.com/lxqt/lxqt.github.io/issues)
 
 
 Other
