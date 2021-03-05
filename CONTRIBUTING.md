@@ -51,6 +51,14 @@ Some components and independent apps have their own issue tracker on GitHub:
 * web site lxqt-project.org (https://github.com/lxqt/lxqt.github.io/issues)
 
 
+Financial contributions
+-----------------------
+
+Please consider financial donations towards LXQt. Those are necessary for running our server and related infrastructure.
+
+See [the OpenCollective page](https://opencollective.com/lxqt) for more information.
+
+
 Other
 -----
 
