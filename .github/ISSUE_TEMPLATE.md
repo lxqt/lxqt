@@ -1,10 +1,11 @@
+<!--- BEFORE FILLING OUT THIS REPORT FORM:                                 --->
+<!--- Dear users of stable and LTS (Long Term Service) distributions:      --->
+<!--- Please do NOT file bugs against outdated versions of LXQt            --->
+<!--- components, which such distributions likely use; instead, use your   --->
+<!--- distribution's bugtracker. This is especially true for Ubuntu LTS!   --->
+
 <!--- Provide a general summary of the issue in the title above. You       --->
 <!--- should not delete relevant sections and/or questions in your report  --->
-
-<!--- BEFORE FILLING OUT THIS REPORT FORM:                                 --->
-<!--- Dear users of stable and LTS (long term service) distributions:      --->
-<!--- Please do NOT file bugs against old (dead) versions but use your     --->
-<!--- distribution bugtracker instead. This is esp. true for Ubuntu LTS.   --->
 
 ##### Expected Behavior
 <!--- If you're describing a bug, tell us what should happen                -->
