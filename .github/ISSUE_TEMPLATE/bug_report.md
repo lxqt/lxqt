@@ -1,38 +1,48 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Create a report to help us improve LXQt
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+<!--- BEFORE FILLING OUT THIS REPORT FORM:                                 --->
+<!--- Dear users of stable and LTS (Long Term Service) distributions:      --->
+<!--- Please do NOT file bugs against outdated versions of LXQt            --->
+<!--- components, which such distributions likely use; instead, use your   --->
+<!--- distribution's bugtracker.                                           --->
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+<!--- Provide a general summary of the issue in the title above. You       --->
+<!--- should not delete relevant sections and/or questions in your report  --->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+##### Expected Behavior
+<!--- Tell us what should happen                                            -->
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+##### Current Behavior
+<!--- Tell us what happens instead of the expected behaviour.               -->
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+##### Possible Solution
+<!--- Not obligatory, but suggest a fix/reason for the bug.                --->
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+##### Steps to Reproduce (for bugs)
+<!--- Provide a link to a live example, or an unambiguous set of steps to  --->
+<!--- reproduce this bug. Include code to reproduce, if relevant           --->
+1. 
+2. 
+3. 
+4. 
 
-**Additional context**
-Add any other context about the problem here.
+##### Context
+<!--- How has this issue affected you? What are you trying to accomplish?  --->
+<!--- Providing context helps us come up with a solution that is most      --->
+<!--- useful in the real world                                             --->
+
+##### System Information
+<!--- Include as many relevant details about the system you experienced    --->
+<!--- the bug in                                                           --->
+* Distribution & Version: 
+* Kernel: 
+* Qt Version: 
+* liblxqt Version: 
+* Package version: 
