@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: LXQt Discussions
+    url: https://github.com/lxqt/lxqt/discussions/
+    about: For general questions, problems and else.
+  - name: Instant Messaging
+    url: https://lxqt-project.org/
+    about: For Matrix, Telegram and IRC see channel list on lxqt-project.org
