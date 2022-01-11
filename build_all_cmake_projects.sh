@@ -10,6 +10,7 @@
 # DO_BUILD flag if components should be built (default 1)
 # DO_INSTALL flag if components should be installed (default 1)
 # DO_INSTALL_ROOT flag if rights should be elevated during install (default 1)
+# UPDATE flag to use the latest of lxqt
 #
 # example:
 # $ LIB_SUFFIX=64 ./build_all.sh
@@ -21,6 +22,7 @@
 
 if [ -n "$UPDATE" ]; then
     echo "Using updated master branches for building"
+    git pull
     git submodule update --init --recursive
     git submodule foreach git checkout master
 fi
