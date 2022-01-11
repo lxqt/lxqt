@@ -19,6 +19,12 @@
 
 . ./cmake_repos.list
 
+if [ -n "$UPDATE" ]; then
+    echo "Using updated master branches for building"
+    git submodule update --init --recursive
+    git submodule foreach git checkout master
+fi
+
 if [ -n "$LXQT_JOB_NUM" ]; then
     JOB_NUM="$LXQT_JOB_NUM"
 elif which nproc > /dev/null; then
@@ -38,8 +44,6 @@ fi
 
 if [ -n "$LXQT_PREFIX" ]; then
 	CMAKE_INSTALL_PREFIX="-DCMAKE_INSTALL_PREFIX=$LXQT_PREFIX"
-else
-	CMAKE_INSTALL_PREFIX=""
 fi
 
 if [ -n  "$CMAKE_GENERATOR" ]; then
@@ -54,8 +58,6 @@ fi
 
 if [ -n "$LIB_SUFFIX" ]; then
 	CMAKE_LIB_SUFFIX="-DLIB_SUFFIX=$LIB_SUFFIX"
-else
-	CMAKE_LIB_SUFFIX=""
 fi
 
 [ -n "$DO_BUILD" ] || DO_BUILD=1
@@ -67,6 +69,19 @@ fi
 
 ALL_CMAKE_FLAGS="$CMAKE_BUILD_TYPE $CMAKE_INSTALL_PREFIX $CMAKE_LIB_SUFFIX $CMAKE_GENERATOR"
 
+# so that user get's prompt for build dependencies before building starts
+# to save time wastage
+for d in $CMAKE_REPOS $OPTIONAL_CMAKE_REPOS
+do
+	mkdir -p "$d/build" \
+		&& cd "$d/build" \
+		|| exit 1
+	if [ "$DO_BUILD" = 1 ]; then
+		cmake $ALL_CMAKE_FLAGS .. || exit 1
+	fi
+	cd ../..
+done
+
 for d in $CMAKE_REPOS $OPTIONAL_CMAKE_REPOS
 do
 	echo "\n\nBuilding: $d using externally specified options: $ALL_CMAKE_FLAGS\n"
@@ -74,7 +89,7 @@ do
 		&& cd "$d/build" \
 		|| exit 1
 	if [ "$DO_BUILD" = 1 ]; then
-		cmake $ALL_CMAKE_FLAGS .. && "$CMAKE_MAKE_PROGRAM" -j$JOB_NUM || exit 1
+		"$CMAKE_MAKE_PROGRAM" -j$JOB_NUM || exit 1
 	fi
 	if [ "$DO_INSTALL" = 1 ]; then
 		if [ "$DO_INSTALL_ROOT" = 1 ]; then
