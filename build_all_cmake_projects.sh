@@ -25,6 +25,7 @@ if [ -n "$UPDATE" ]; then
     git pull
     git submodule update --init --recursive
     git submodule foreach git checkout master
+    git submodule foreach git pull
 fi
 
 if [ -n "$LXQT_JOB_NUM" ]; then
