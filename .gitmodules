@@ -111,3 +111,6 @@
 [submodule "screengrab"]
 	path = screengrab
 	url = ../screengrab
+[submodule "qtxdg-tools"]
+	path = qtxdg-tools
+	url = ../qtxdg-tools
