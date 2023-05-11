@@ -44,8 +44,7 @@ cd ..
 
 
 AUTOMAKE_REPOS=" \
-	menu-cache \
-	lxmenu-data"
+	menu-cache"
 
 
 for d in $AUTOMAKE_REPOS
