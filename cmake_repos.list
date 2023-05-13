@@ -4,6 +4,7 @@ CMAKE_REPOS=" \
 	qtxdg-tools \
 	liblxqt \
 	libsysstat \
+	lxqt-menu-data \
 	libfm-qt \
 	lxqt-themes \
 	pavucontrol-qt \

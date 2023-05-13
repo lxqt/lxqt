@@ -66,10 +66,10 @@
 	path = lxqt-globalkeys
 	url = ../lxqt-globalkeys.git
 	branch = master
-[submodule "lxmenu-data"]
-	path = lxmenu-data
-	url = ../../lxde/lxmenu-data.git
-	branch = master
+[submodule "lxqt-menu-data"]
+	path = lxqt-menu-data
+	url = ../lxqt-menu-data
+	branch = main
 [submodule "lxqt-qtplugin"]
 	path = lxqt-qtplugin
 	url = ../lxqt-qtplugin.git
