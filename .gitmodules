@@ -69,7 +69,7 @@
 [submodule "lxqt-menu-data"]
 	path = lxqt-menu-data
 	url = ../lxqt-menu-data
-	branch = main
+	branch = master
 [submodule "lxqt-qtplugin"]
 	path = lxqt-qtplugin
 	url = ../lxqt-qtplugin.git
