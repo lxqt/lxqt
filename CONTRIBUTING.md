@@ -65,7 +65,7 @@ Other
 For anything else, you can always drop by our Discussions and say hello!
   https://github.com/lxqt/lxqt/discussions. 
 
-If you prefer messengers (all are bridged):
+If you prefer messengers (all bridged except #lxqt-dev):
 * Channels #lxqt and #lxqt-dev on irc.oftc.net
 * Matrix: https://matrix.to/#/#lxqt:matrix.org
 * Telegram: https://t.me/lxqtofficial
