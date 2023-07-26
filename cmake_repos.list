@@ -22,7 +22,8 @@ CMAKE_REPOS=" \
 	pcmanfm-qt \
 	lxqt-panel \
 	lxqt-runner \
-	lxqt-archiver"
+	lxqt-archiver \
+	xdg-desktop-portal-lxqt"
 
 OPTIONAL_CMAKE_REPOS=" \
 	obconf-qt \
