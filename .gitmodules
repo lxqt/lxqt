@@ -114,3 +114,7 @@
 [submodule "qtxdg-tools"]
 	path = qtxdg-tools
 	url = ../qtxdg-tools
+[submodule "xdg-desktop-portal-lxqt"]
+	path = xdg-desktop-portal-lxqt
+	url = ../xdg-desktop-portal-lxqt
+	branch = master
