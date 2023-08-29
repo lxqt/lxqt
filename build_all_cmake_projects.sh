@@ -10,6 +10,7 @@
 # DO_BUILD flag if components should be built (default 1)
 # DO_INSTALL flag if components should be installed (default 1)
 # DO_INSTALL_ROOT flag if rights should be elevated during install (default 1)
+# UPDATE flag to use the latest of lxqt
 #
 # example:
 # $ LIB_SUFFIX=64 ./build_all.sh
@@ -18,6 +19,14 @@
 # etc.
 
 . ./cmake_repos.list
+
+if [ -n "$UPDATE" ]; then
+    echo "Using updated master branches for building"
+    git pull
+    git submodule update --init --recursive
+    git submodule foreach git checkout master
+    git submodule foreach git pull
+fi
 
 if [ -n "$LXQT_JOB_NUM" ]; then
     JOB_NUM="$LXQT_JOB_NUM"
@@ -38,8 +47,6 @@ fi
 
 if [ -n "$LXQT_PREFIX" ]; then
 	CMAKE_INSTALL_PREFIX="-DCMAKE_INSTALL_PREFIX=$LXQT_PREFIX"
-else
-	CMAKE_INSTALL_PREFIX=""
 fi
 
 if [ -n  "$CMAKE_GENERATOR" ]; then
@@ -54,8 +61,6 @@ fi
 
 if [ -n "$LIB_SUFFIX" ]; then
 	CMAKE_LIB_SUFFIX="-DLIB_SUFFIX=$LIB_SUFFIX"
-else
-	CMAKE_LIB_SUFFIX=""
 fi
 
 [ -n "$DO_BUILD" ] || DO_BUILD=1
@@ -74,7 +79,7 @@ do
 		&& cd "$d/build" \
 		|| exit 1
 	if [ "$DO_BUILD" = 1 ]; then
-		cmake $ALL_CMAKE_FLAGS .. && "$CMAKE_MAKE_PROGRAM" -j$JOB_NUM || exit 1
+		cmake $ALL_CMAKE_FLAGS .. || exit 1 && "$CMAKE_MAKE_PROGRAM" -j$JOB_NUM || exit 1
 	fi
 	if [ "$DO_INSTALL" = 1 ]; then
 		if [ "$DO_INSTALL_ROOT" = 1 ]; then
