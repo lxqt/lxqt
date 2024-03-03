@@ -1,9 +1,11 @@
 CMAKE_REPOS=" \
 	lxqt-build-tools \
+	lxqt2-build-tools \
 	libqtxdg \
 	qtxdg-tools \
 	liblxqt \
 	libsysstat \
+	libdbusmenu-lxqt \
 	lxqt-menu-data \
 	libfm-qt \
 	lxqt-themes \
