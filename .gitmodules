@@ -70,6 +70,10 @@
 	path = lxqt-menu-data
 	url = ../lxqt-menu-data
 	branch = master
+[submodule "libdbusmenu-lxqt"]
+	path = libdbusmenu-lxqt
+	url = ../libdbusmenu-lxqt
+	branch = master
 [submodule "lxqt-qtplugin"]
 	path = lxqt-qtplugin
 	url = ../lxqt-qtplugin.git

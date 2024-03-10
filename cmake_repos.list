@@ -1,6 +1,5 @@
 CMAKE_REPOS=" \
 	lxqt-build-tools \
-	lxqt2-build-tools \
 	libqtxdg \
 	qtxdg-tools \
 	liblxqt \

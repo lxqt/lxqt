@@ -16,7 +16,6 @@ option(LXQT_BUILD_QPS "Build QPS" Yes)
 option(LXQT_BUILD_SCREENGRAB "Build ScreenGrab" Yes)
 
 add_subdirectory(lxqt-build-tools)
-add_subdirectory(lxqt2-build-tools)
 add_subdirectory(lxqt-menu-data)
 add_subdirectory(libqtxdg)
 add_subdirectory(liblxqt)
