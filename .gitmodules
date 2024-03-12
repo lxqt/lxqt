@@ -118,3 +118,6 @@
 	path = xdg-desktop-portal-lxqt
 	url = ../xdg-desktop-portal-lxqt
 	branch = master
+[submodule "libdbusmenu-lxqt"]
+	path = libdbusmenu-lxqt
+	url = ../libdbusmenu-lxqt
