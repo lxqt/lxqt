@@ -3,6 +3,7 @@ CMAKE_REPOS=" \
 	libqtxdg \
 	qtxdg-tools \
 	liblxqt \
+	libdbusmenu-lxqt \
 	libsysstat \
 	lxqt-menu-data \
 	libfm-qt \
