@@ -121,3 +121,6 @@
 [submodule "libdbusmenu-lxqt"]
 	path = libdbusmenu-lxqt
 	url = ../libdbusmenu-lxqt
+[submodule "lxqt-wayland-session"]
+	path = lxqt-wayland-session
+	url = ../lxqt-wayland-session
