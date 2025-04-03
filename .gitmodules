@@ -1,7 +1,3 @@
-[submodule "libfm"]
-	path = libfm
-	url = ../../lxde/libfm.git
-	branch = master
 [submodule "menu-cache"]
 	path = menu-cache
 	url = ../../lxde/menu-cache.git
