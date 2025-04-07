@@ -1,7 +1,3 @@
-[submodule "menu-cache"]
-	path = menu-cache
-	url = ../../lxde/menu-cache.git
-	branch = master
 [submodule "liblxqt"]
 	path = liblxqt
 	url = ../liblxqt.git
