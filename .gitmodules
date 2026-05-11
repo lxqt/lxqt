@@ -120,3 +120,6 @@
 [submodule "lxqt-wayland-session"]
 	path = lxqt-wayland-session
 	url = ../lxqt-wayland-session
+[submodule "lxqt-clip"]
+	path = lxqt-clip
+	url = ../lxqt-clip
