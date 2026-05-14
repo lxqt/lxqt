@@ -41,14 +41,14 @@ Please file all general LXQt bug reports on the general LXQt bug tracker:
   https://github.com/lxqt/lxqt/issues.
 
 Some components and independent apps have their own issue tracker on GitHub:
-* components: libqtxdg (https://github.com/lxqt/libqtxdg/issues),
-  libsysstat (https://github.com/lxqt/libsysstat/issues),
-  menu-cache (https://github.com/lxde/menu-cache/issues)
+* Components:
+  - liblxqt (https://github.com/lxqt/liblxqt
+  - libqtxdg (https://github.com/lxqt/libqtxdg/issues)
 * GUI tools, applications:
-  ObConf-Qt (https://github.com/lxqt/obconf-qt/issues),
-  PCManFM-Qt (https://github.com/lxqt/pcmanfm-qt/issues),
-  LXImage-Qt (https://github.com/lxqt/lximage-qt/issues)
-* web site lxqt-project.org (https://github.com/lxqt/lxqt.github.io/issues)
+  - PCManFM-Qt (https://github.com/lxqt/pcmanfm-qt/issues)
+  - LXImage-Qt (https://github.com/lxqt/lximage-qt/issues)
+  - lxqt-config (https://github.com/lxqt/lxqt-config/issues)
+* Website: lxqt-project.org (https://github.com/lxqt/lxqt.github.io/issues)
 
 
 Financial contributions
@@ -63,7 +63,7 @@ Other
 -----
 
 For anything else, you can always drop by our Discussions and say hello!
-  https://github.com/lxqt/lxqt/discussions. 
+*  https://github.com/lxqt/lxqt/discussions
 
 If you prefer messengers (all bridged except #lxqt-dev):
 * Channels #lxqt and #lxqt-dev on irc.oftc.net
