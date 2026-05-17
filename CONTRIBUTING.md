@@ -32,22 +32,27 @@ QtLinguist will still work.
 See further instructions in [wiki page Translation](https://lxqt-project.org/wiki/Translation).
 
 
-
 Bug reports
 -----------
 
 All our issues are tracked on Github.
 Please file all general LXQt bug reports on the general LXQt bug tracker:
-  https://github.com/lxqt/lxqt/issues.
+*  https://github.com/lxqt/lxqt/issues.
 
 Some components and independent apps have their own issue tracker on GitHub:
 * Components:
-  - liblxqt (https://github.com/lxqt/liblxqt
+  - liblxqt (https://github.com/lxqt/liblxqt)
   - libqtxdg (https://github.com/lxqt/libqtxdg/issues)
+  - libfm-qt (https://github.com/lxqt/libfm-qt/issues)
+
 * GUI tools, applications:
   - PCManFM-Qt (https://github.com/lxqt/pcmanfm-qt/issues)
   - LXImage-Qt (https://github.com/lxqt/lximage-qt/issues)
+  - lxqt-panel (https://github.com/lxqt/lxqt-panel/issues)
   - lxqt-config (https://github.com/lxqt/lxqt-config/issues)
+  - lxqt-archiver (https://github.com/lxqt/lxqt-archiver/issues)
+  - lxqt-admin (https://github.com/lxqt/lxqt-admin/issues)
+
 * Website: lxqt-project.org (https://github.com/lxqt/lxqt.github.io/issues)
 
 
