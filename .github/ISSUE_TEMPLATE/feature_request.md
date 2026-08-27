@@ -23,5 +23,6 @@ assignees: ''
 ##### Context
 <!-- How has this issue affected you? What are you trying to accomplish?    -->
 <!-- Providing context helps us come up with a solution that is most        -->
-<!-- useful in the real world                                               -->
+<!-- useful in the real world.                                              -->
+<!-- Note: Feature requests should not be made by AI.                       -->
 
