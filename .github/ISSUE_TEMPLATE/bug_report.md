@@ -15,6 +15,7 @@ assignees: ''
 
 <!--- Provide a general summary of the issue in the title above. You       --->
 <!--- should not delete relevant sections and/or questions in your report  --->
+<!--- Note: Issue reports should not be made by AI.                        --->
 
 ##### Expected Behavior
 <!--- Tell us what should happen                                            -->
@@ -28,10 +29,10 @@ assignees: ''
 ##### Steps to Reproduce (for bugs)
 <!--- Provide a link to a live example, or an unambiguous set of steps to  --->
 <!--- reproduce this bug. Include code to reproduce, if relevant           --->
-1. 
-2. 
-3. 
-4. 
+1.
+2.
+3.
+4.
 
 ##### Context
 <!--- How has this issue affected you? What are you trying to accomplish?  --->
@@ -41,8 +42,6 @@ assignees: ''
 ##### System Information
 <!--- Include as many relevant details about the system you experienced    --->
 <!--- the bug in                                                           --->
-* Distribution & Version: 
-* Kernel: 
-* Qt Version: 
-* liblxqt Version: 
-* Package version: 
+* Distribution & LXQt version:  
+* Qt version:  
+* X11 Window manager or Wayland compositor:  
