@@ -32,6 +32,6 @@ OPTIONAL_CMAKE_REPOS=" \
 	lximage-qt \
 	qtermwidget \
 	qterminal \
-        qps \
-        screengrab \
-        lxqt-clip"
+	qps \
+	screengrab \
+	lxqt-clip"
