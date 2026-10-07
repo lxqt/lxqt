@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.18.0 FATAL_ERROR)
 project(LXQt)
 
 message(STATUS "Building in SuperBuild mode. Builds all non optional LXQt CMake projects at\n once. Autotools/Automake based projects not yet supported.")
