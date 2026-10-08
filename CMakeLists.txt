@@ -1,7 +1,11 @@
-cmake_minimum_required(VERSION 3.0.2 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.18.0 FATAL_ERROR)
 project(LXQt)
 
-message(STATUS "Building in SuperBuild mode. Builds all non optional LXQt CMake projects at\n once. Autotools/Automake based projects not yet supported.")
+message(STATUS "Building LXQt in SuperBuild mode")
+
+include(lxqt-build-tools/cmake/modules/LXQtPreventInSourceBuilds.cmake)
+lxqt_prevent_in_source_builds()
+
 if (NOT DEFINED CMAKE_PREFIX_PATH AND NOT DEFINED ENV{CMAKE_PREFIX_PATH})
     message(FATAL_ERROR "CMAKE_PREFIX_PATH environment variable not set. When configuring for the first time, make sure CMAKE_PREFIX_PATH is set to the root of the build directory. It can be done by passing it to cmake as an command line parameter (e.g. cmake -DCMAKE_PREFIX_PATH=path_to_your_build_dir ..) OR by setting the CMAKE_PREFIX_PATH environment variable (e.g. export CMAKE_PREFIX_PATH=path_to_your_build_dir ..).")
 endif()
