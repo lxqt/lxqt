@@ -29,6 +29,6 @@ Translations can be done in <a href="https://translate.lxqt-project.org/">LXQt-W
 
 --- 
 
-<a href="https://translate.lxqt-project.org/">
-<img src="https://translate.lxqt-project.org/widgets/lxqt-desktop/-/multi-auto.svg" alt="Translation status" />
+<a href="https://translate.lxqt-project.org/engage/lxqt-configuration/?utm_source=widget">
+<img src="https://translate.lxqt-project.org/widgets/lxqt-configuration/-/multi-auto.svg" alt="Translation status" />
 </a>
