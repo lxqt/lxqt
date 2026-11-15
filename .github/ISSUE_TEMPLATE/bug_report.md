@@ -26,7 +26,7 @@ assignees: ''
 ##### Possible Solution
 <!--- Not obligatory, but suggest a fix/reason for the bug.                --->
 
-##### Steps to Reproduce (for bugs)
+##### Steps to Reproduce (for Bugs)
 <!--- Provide a link to a live example, or an unambiguous set of steps to  --->
 <!--- reproduce this bug. Include code to reproduce, if relevant           --->
 1.
@@ -42,6 +42,6 @@ assignees: ''
 ##### System Information
 <!--- Include as many relevant details about the system you experienced    --->
 <!--- the bug in                                                           --->
-* Distribution & LXQt version:  
-* Qt version:  
-* X11 Window manager or Wayland compositor:  
+* Distribution & LXQt Version:  
+* Qt Version:  
+* X11 Window Manager or Wayland Compositor:  
